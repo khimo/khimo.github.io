@@ -144,7 +144,7 @@ In addition to being used to confirm the input function, a single press during n
 The initial page after accessing the _BLI_ via web browser shows two buttons: _WEBPANEL_ and _SETUP_.
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/init-page.png" class="img-fluid" alt="Init page"/>
+  <img src="pictures/bli-advanced-user-guide/init-page.png" class="img-fluid img-thumbnail" alt="Init page"/>
 </div>
 
 + **WEBPANEL**: This interface offers home automation control of your setup. Control of _NetworkLink_ products is not supported, only Scenes could be fired. When the _BLI_ is on _PRO_ mode, it is be possible to control all your installation.
@@ -158,7 +158,10 @@ An installer can access the _BLI_ setup interface with the _admin_ user, which h
 
 #### Upgrade to PRO {#upgrade-pro}
 
-<img src="pictures/bli-advanced-user-guide/basic.png" class="img-fluid" alt="Upgrade page"/>
+<div class="text-center">
+  <img src="pictures/bli-advanced-user-guide/upgrade.png" class="img-fluid" alt="Upgrade page"/>
+</div>
+<br>
 
 At the top menu bar, the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_ (mode).
 In _Product information_, the _License type_ shows the current license (mode) of your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect your browser to *Khimo.com* to start the upgrade process via _PayPal_.
@@ -166,6 +169,13 @@ In _Product information_, the _License type_ shows the current license (mode) of
 After the payment process finishes, your _BLI_ will be upgraded to _PRO_ mode within a minute approximately.
 
 #### Project info
+
+<!--
+<div class="text-center">
+  <img src="pictures/bli-advanced-user-guide/project-info.png" class="img-fluid" alt="Project Info"/>
+</div>
+<br>
+-->
 
 The Project information page shows information regarding the project _BeoLiving Intelligence_ is part of.
 
@@ -176,11 +186,19 @@ The Project information page shows information regarding the project _BeoLiving 
 
 #### Users
 
-<img src="pictures/bli-advanced-user-guide/users.png" class="img-fluid" alt="Users page"/>
+<div class="text-center">
+  <img src="pictures/bli-advanced-user-guide/add-user.png" class="img-fluid" alt="Add user"/>
+</div>
+<br>
 
 The Users page shows in the left column every user that can access the _BLI_. New users can be added by _admin_ by pressing the "plus" button.
 
 ##### User properties
+
+<div class="text-center">
+  <img src="pictures/bli-advanced-user-guide/edit-user.png" class="img-fluid" alt="Edit user"/>
+</div>
+<br>
 
 + **Change user password**: this can be performed only on users that were created by _admin_.
 + Enable/Disable **User management access**: when selected, the user is allowed to manage users and user rights. As a general rule, this option should be set only for the home owner.
@@ -216,13 +234,17 @@ The Firmware page allows you to check and apply updates for the _BLI_ Firmware. 
 
 #### Manual update
 
+<img src="pictures/bli-advanced-user-guide/manual-update.png" class="img-fluid" alt="Manual update"/>
+<br>
+
 Press the _Choose File_ to select your local _BLI_ firmware file, which will be uploaded to the _BLI_, beginning the update process immediately.
 
 #### Online update
 
 For performing an online update to the _BLI_ Firmware you must ensure that it has Internet access.
 
-<img src="pictures/bli-advanced-user-guide/firmware.png" class="img-fluid" alt="Online update"/>
+<img src="pictures/bli-advanced-user-guide/online-update.png" class="img-fluid" alt="Online update"/>
+<br>
 
 + **Check for latest version**: After pressed, the lastest official Firmware version will be displayed, if available and different from the current one.
 + **Start online update**: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.
