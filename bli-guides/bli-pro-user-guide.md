@@ -42,6 +42,12 @@ In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage.
 
 ### Project info
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/project-info.png" class="img-fluid" alt="Project Info"/>
+</div>
+<br>
+
 The Project page is used to state information regarding the project BeoLiving Intelligence is part of. This information could be useful in any later service situation.
 
 + **Project name**: Name for the project.
@@ -53,18 +59,19 @@ The Project page is used to state information regarding the project BeoLiving In
 
 #### Date & Time
 
-Correct time setting is important for the monitoring of events, astronomic clock events and for time stamping at error log. The system will 
-work even if the time setting is not correct. The date and time settings can be synchronized with universal time servers (recommended) if the 
-_BLI PRO_ has access to the Internet. Else date and time can be set manually. 
+Correct time setting is important for the monitoring of events, astronomic clock events and for time stamping at error log.
 
-<img src="pictures/pro-guide/setup-date-time.png" class="img-fluid" alt="Date and Time page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-date-time.png" class="img-fluid" alt="Date and Time page"/>
+</div>
+<br>
 
 ##### Date & Time settings 
 
-+ **Date**: Settings for year, month and day are entered and then press Set.
-+ **Time**: Settings for hours, minutes and seconds are entered and then press Set.
-+ **Synchronize from internet**: Synchronizing with an external time server by setting the check mark. Remove the check mark to disable the synchronization with the time server.
-+ **Time zone**: Setting for the time zone is chosen from the drop down list. Choices are made based on an appropriate match of ‘Continent’/’City’.
++ **Date**: Date corresponded with the selected **Time zone**.
++ **Time**: Time corresponded with the selected **Time zone**.
++ **Time zone**: Setting for the time zone is chosen from the drop down list. Choices are made based on an appropriate match of "Continent"/"City".
 
 ##### Location settings (Astronomical Clock and Location events)
 
@@ -75,6 +82,12 @@ Positive values are for North and East.
 Negative values are for South and West.
 
 #### Integration Protocols
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-integration-protocols.png" class="img-fluid" alt="Integration protocols page"/>
+</div>
+<br>
 
 Home Integration protocol allow other devices to interact with _BLI_. This protocol is used by mobile applications or by other 
 home automation controllers.
@@ -87,7 +100,11 @@ values above this range.
 
 Network page contains network connectivity configuration of _BLI_.
 
-<img src="pictures/pro-guide/network.png" class="img-fluid" alt="Network page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-network.png" class="img-fluid" alt="Network page"/>
+</div>
+<br>
 
 The following options are:
 
@@ -106,11 +123,25 @@ _BLI_ is configured from factory to be connected to _Khimo's_ cloud service. Thi
 voice control (e.g.: Amazon Alexa) and remote access to your installation in case _BLI_ being in _PRO_ mode. If this
  service is disabled those features will no longer work.
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-cloud-access.png" class="img-fluid" alt="Khimo cloud link page"/>
+</div>
+<br>
+
 Access restrictions regarding which zones are able for being controlled could be setted from the selection of an specific _BLI_ user. This means 
 that all accounts will share same zone access restrictions than the selected user. Zone access restriction could be modified in 
 [Interfaces](#interfaces) page.
 
 To access remotely to your installation through _BLApp_, remote access must be enabled in the application.
+
+At the bottom of this page, a list with the current remote users is displayed.
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-cloud-users.png" class="img-fluid" alt="Khimo cloud link users page"/>
+</div>
+<br>
 
 ##### Enable remote access in BeoLiving App
 
@@ -124,12 +155,18 @@ The next video shows interactively how to accomplish this feature:
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9R8mR-LxnXE?autoplay=1&loop=1&playlist=9R8mR-LxnXE"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9R8mR-LxnXE?autoplay=0&loop=1&playlist=9R8mR-LxnXE"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
   </div>
 </div>
 
 #### System modes
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/setup-system-modes.png" class="img-fluid" alt="System modes page"/>
+</div>
+<br>
 
 _BLI PRO_ can have any number of System modes, which can be used to enable or disable the execution of macros, as follows:
 
@@ -148,8 +185,6 @@ This setting only affects what is displayed on _BLI PRO_ user interfaces. It doe
 
 ### Zones
 
-<img src="pictures/pro-guide/zones.png" class="img-fluid" alt="Zones page"/>
-
 Everything in _BLI_ is organized into zones. Zones represent rooms or other locations in the home such as kitchen, hallway, garden, garage, etc.
 In order to accomodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.
 
@@ -160,10 +195,22 @@ background in the left column.
 
 #### Adding areas and zones
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/zones-edit.png" class="img-fluid" alt="Edit zone page"/>
+</div>
+<br>
+
 Areas are added using the "_Add new area_" button. When adding an area, a name for this can be stated. An area can be deleted by activating the 
 "**x**" sign in the greyed area-boxes and renamed by activating the edition-sign next to "**x**" sign. Zones are added to the areas by activating the "**+**" sign in the greyed area-boxes. 
 
 #### Zone settings
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/zones-edit-2.png" class="img-fluid" alt="Edit zone 2 page"/>
+</div>
+<br>
 
 + **Name**: Name of zone. In _BLI_ a zone can be one or more rooms in the house or even part of a room, e.g. : living room, kitchen, bedroom. The 
 Name is stated as desired.
@@ -193,9 +240,13 @@ Each system has in _BLI PRO_ a correspondant driver. There are two driver types:
 
 In this section, only _Native drivers_ will be included. Go to [External drivers](#external-drivers) section for more information.
 
-<img src="pictures/pro-guide/systems.png" class="img-fluid" alt="Systems page"/>
+#### System add
 
-#### System settings
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/system-add.png" class="img-fluid" alt="System add page"/>
+</div>
+<br>
 
 Select "**+**" sign to add a new _HA_ system from the drop down list and press _Add system_ button. A System may be added in a specific _Area/Zone_ if only serves functions there, else if a system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
 systems can be added, except internal systems, which only appear once in the installation, such as _BeoLink_ and _Virtual Resources_ that are 
@@ -204,10 +255,22 @@ zones by the installer, but they are invisible in the user interfaces. For examp
 
 #### Connection settings
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/system-settings.png" class="img-fluid" alt="System settings page"/>
+</div>
+<br>
+
 Connection settings depend on each system. Examples of Connection settings are: Connection type, Login, Password, Host, Port, Check server 
 certificate, etc. For specific details on different systems please refer to the online help. The default values must be changed according to the settings used in the installation. Press _Apply_ button to confirm settings.
 
 #### System status icons
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/system-status.png" class="img-fluid" alt="System status bar"/>
+</div>
+<br>
 
 For each system installed, a text string icon is shown in the bottom of the screen. The status of each system is indicated by a colour of the 
 background of the text string icon. 
