@@ -13,6 +13,8 @@ layout: slides
 
 #### uses the core of BeoLink Gateway but is designed for a wider audience <!-- .element: class="fragment" data-fragment-index="2" -->
 
+#### 4 times faster than BLGW <!-- .element: class="fragment" data-fragment-index="2" -->
+
 Note:
 - Meaning that if you are familiar with BeoLink Gateway you will be too with BeoLiving Intelligence
 
@@ -24,9 +26,6 @@ Note:
 - ESSENTIAL
 - PRO
 
-<br/>
-
-#### 4 times faster than BLGW <!-- .element: class="fragment" data-fragment-index="2" -->
 
 Note:
 + ESSENTIAL mode comes from factory
@@ -35,28 +34,30 @@ Note:
 ### ESSENTIAL (1/2)
 
 - Designed for the end-user (*Plug & Play*)
-- Fully configurable from the *BeoLiving App*
 - Automatically adds B&O devices
+- Fully configurable from the *BeoLiving App*
 - Password less: improves security
 
 Note:
 + Designed for the end-user, meaning that you don't need any technical knowledge
++ The idea is that when a customer buys a BLI, by itself he will by capable to install and start using it without any installer help
++ Most of its configuration is done through BeoLiving App
++ Web interface is only used for a few things. Network settings, Project info, User management, Firmware update and Service report are available. 
+Configuration upload/download is not supported
 
 ----
 ### ESSENTIAL (2/2)
  
 - Set content provider credentials
 - Products groups
-- Alexa
+- Voice control
 - Automatic firmware upgrade
 
 Note:
-- Features explained later
-- Most of the configuration is done through BeoLiving App
-- Web interface is completely limited. Network settings, Project info, User management, Firmware update and Service report are available. 
-Configuration upload/download is not supported
+- Voice control: Alexa, Google Home (on the way) and Apple HomePod (looking forward to)
 - HA systems are blocked
-- Some HA systems will be added in the future
+- Some HA systems will be added in the near future
+- Recapitulation of ESSENTIAL
 
 ----
 ## PRO
@@ -72,17 +73,16 @@ Note:
 - Its web interface and configuration is practically the same as BeoLink Gateway
 
 ----
-## What will not work!
+## Changes compared with BLGW
 
-- MasterLink devices
-- Beo4 and BeoRemote One commands
-- Manual sources
+- MasterLink devices only integrated through BLC
+- Beo4 and BeoRemote One commands deprecated from Macros
+- No more manual sources: devices' sources synchronized automatically
 - The default admin password
 
 Note:
 + By default, admin password is unknown. To set it to a known password, button function 2 must be entered. This will set admin password to "admin"for the next 5 minutes. Then, you must enter to its web interface and at first you will be asked to set a new admin password.
 + This decision is based in security matters.
-
 
 ----
 ## Some features
@@ -146,7 +146,7 @@ Only in PRO mode.
 # Alexa
 
 |||
-## Alexa (ESSENTIAL | PRO)
+## Alexa
 
 + Set modes and setpoints of thermostats
 + Select source, change channel, volume control of NetworkLink products
@@ -157,22 +157,21 @@ Only in PRO mode.
 Note:
 + Available for ESSENTIAL and PRO
 + Compatible with BLGW
-+ Google Home is on the way
 
 |||
-## Linking Alexa (1/4)
+## Linking Alexa (1/3)
 
-### Three ways <!-- .element: class="fragment" data-fragment-index="2" --> 
+### Two ways <!-- .element: class="fragment" data-fragment-index="2" --> 
 
 |||
-## Linking Alexa (2/4)
+## Linking Alexa (2/3)
 
 #### BeoLiving App goes to foreground
 
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_4cyvD2Q1Q?autoplay=0&loop=1&playlist=W_4cyvD2Q1Q"  frameborder="0" width="800" height="450" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 |||
-## Linking Alexa (3/4)
+## Linking Alexa (3/3)
 
 ### Scan QR code with BeoLiving App
 
@@ -180,11 +179,6 @@ Note:
 
 Note:
 If you start the linking procedure using your laptop or any other device that hasn't installed BLApp you can scan a QR code with it
-
-|||
-## Linking Alexa (4/4)
-
-#### Legacy User/Password login for BeoLink Gateway users
 
 |||
 ### Alexa Tips
@@ -197,7 +191,7 @@ Note:
 + Source selection sometimes becomes un-useful if device names or source name are complicated
 
 ----
-## Thinks to remember
+## Things to remember
 
 - password "admin" is not valid!
 - ESSENTIAL from factory
@@ -211,6 +205,7 @@ Note:
 - Service magic USB to recovery a "DEAD" box
 
 Note:
++ "DEAD" box is a theoretical situation
 + Useful when web interfaces is broken or dead and its not possible to create a service report.
 + Recovery: insert pendrive with specific .zip file and BLI will boot from that pendrive. Will erase all configuration and download the last firmware.
 
