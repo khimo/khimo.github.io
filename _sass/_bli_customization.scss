@@ -1,0 +1,7 @@
+
+/* As we have a fixed navbar on top just add so padding so we are sure that the text is visible when accessed from anchor link */
+.pagecontent h1, .pagecontent h2, .pagecontent h3, .pagecontent h4,
+#content h1, #content h2
+{
+  padding-top:60px;
+}

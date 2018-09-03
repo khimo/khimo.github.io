@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/vendor/reveal.js/css/reveal.css">
+      <link rel="stylesheet" href="/vendor/reveal.js/css/theme/league.css">
+    <link rel="stylesheet" href="/vendor/reveal.js/lib/css/zenburn.css">
+ <!--
+    <link rel="stylesheet" href="/vendor/reveal.js/css/theme/beige.css">
+   <link rel="stylesheet" href="/vendor/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="/vendor/reveal.js/css/theme/beige.css">
+    <link rel="stylesheet" href="/vendor/reveal.js/css/theme/moon.css">
+//-->
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <script type="text/template" data-markdown
+                data-separator="^[ \t]*\n----*$"
+                data-separator-vertical="^[ \t]*\n[|][|][|][|]*$"
+                data-separator-notes="\n^Note:"
+                >
+        {{ page.content }}
+        </script>
+      </div>
+    </div>
+    <script src="/vendor/reveal.js/lib/js/head.min.js"></script>
+    <script src="/vendor/reveal.js/js/reveal.js"></script>
+    <script>
+(function() {
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: '/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: '/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: '/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: '/vendor/reveal.js/plugin/search/search.js', async: true },
+{ src: '/vendor/reveal.js/plugin/zoom-js/zoom.js', async: true },
+{ src: '/vendor/reveal.js/plugin/notes/notes.js', async: true }
+]
+});
+})();
+
+    </script>
+  </body>
+</html>
