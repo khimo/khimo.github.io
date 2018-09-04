@@ -312,12 +312,14 @@ Resources are provided from the systems installed:
 + Home Automation system(s) (e.g. buttons, sensors) 
 + Virtual resources (programmed resources e.g. related to a button on a user interface or based on an event)
 
-In the _Resources_ page the resources related to the installed _HA_ system and related buttons (i.e. the components it comprises) can
-be fetched by using the _Capture_ function or made manually. The _Import resources_ function imports preprogrammed resources in the _HA_ system.
 
 #### BeoLink resources
 
-<img src="pictures/pro-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources"/>
+</div>
+<br>
 
 The resources have the following parameters:
 
@@ -329,7 +331,11 @@ The resources have the following parameters:
 
 #### Home Automation system resources
 
-<img src="pictures/pro-guide/resources-other.png" class="img-fluid" alt="Resources page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/resources-ha.png" class="img-fluid" alt="Home Automation resources"/>
+</div>
+<br>
 
 The resources have the following parameters:
 
@@ -340,7 +346,8 @@ etc. E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a stat
 can extend the standard button to provide extra features (see this in the drop down list). The purpose of having standard resource types is that 
 such common set of features are shared by the most supported systems.
 + **Address**: Unique identification of a resource. The format depends on the _HA_ system - using various number scheme.
-+ **Capture**: Same as [BeoLink resources](#beolink-resources).
++ **Capture**: Used to capture resources by their activity captured by _BLI_. Resource selected from the capture list are added automatically to 
+the table of defined resources. The capture functionality is supported by most systems.
 + **Import resources**: Used to import _HA_ system resources into _BLI_ uploading an specific _HA_ system file or just requesting them directly. 
 This feature depends on each _HA_ system driver. 
 
@@ -352,7 +359,11 @@ section for more information) e.g. a virtual button for cinema scene, or a boole
 directly. The _BLApp_ currently uses virtual buttons for displaying scene buttons. _Virtual Resources_ have no functionality by themselves. 
 [Macros](#macros) must be defined to link user actions on a virtual resource, with events and commands in the systems.
 
-<img src="pictures/pro-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources"/>
+</div>
+<br>
 
 The address of a _Virtual Resource_ is a unique number and if isn't setted manually, _BLI PRO_ generates automatically an un-used address for that
  resource. 
@@ -363,7 +374,11 @@ The interaction between the devices connected to the _BLI_ is defined by means o
 When any of the events that are defined in a _Macro_ occur (e.g. a key press on a keypad; a Control Command on a Bang & Olufsen remote control etc
 .), the macro will be triggered. This means that the commands in the macro will be executed in order. 
 
-<img src="pictures/pro-guide/macros.png" class="img-fluid" alt="Macros page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/macros.png" class="img-fluid" alt="macros"/>
+</div>
+<br>
 
 A _Macro_ is also assigned to an _Area/Zone_ to which it belongs even if it handles activity outside the zone. Having _Macros_ assigned to zones 
 helps when setting up user interfaces. The left column shows all _Macros_ contained in each _Area/Zone_. To add a _Macro_ in a specific _Area/Zone_ press "**+**" sign button in the column entry. 
@@ -388,6 +403,12 @@ purpose, as the meaning of their names illustrate, are for _Cut/Copy/Paste_ _Eve
 When pressing the _Add event_ button, the window expands, fields for the _Resource Event_ are shown and are filled in by making selections 
 from the drop down lists with each entry field. The illustration is an example only and the drop down list may vary depending on the choices made.
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/macros-event.png" class="img-fluid" alt="Macros event"/>
+</div>
+<br>
+
 ##### Defining Events 
 
 The list of events (for triggering a macro) can be filled in manually or selected from captured events.
@@ -403,6 +424,12 @@ more information.
 
 When pressing the _Add command_ button, the window expands, fields for the resource command are shown and are filled in by making selections 
 from the drop down lists with each entry field. The illustration is an example only, and drop down lists may vary depending on the choices made.
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/macros-command.png" class="img-fluid" alt="Macros command"/>
+</div>
+<br>
 
 Commands are the actions executed when a _Macro_ is triggered. The list of commands are executed in order, and a delay can be set before each 
 command as a combination of seconds and milliseconds. The list can be reordered by dragging the handles at the left of each row, or by clicking on
@@ -459,8 +486,8 @@ The macro screen will signal the presence of orphan commands or events by colour
 Standard events and commands apply to a single specific resource. _Generic programming_ makes it possible to refer to a whole set of resources at 
 once. E.g.: it is possible to specify:
 
-+ A single command to mute all products called "_BeoPlay V1_".
-+ An event specification that matches any button pressed that is called "_Light On_".
++ A single command to mute all products.
++ An event specification that matches any button pressed.
 
 This has the following advantages:
 
@@ -500,14 +527,18 @@ _Webpanel_.
 Configurations are synchronized in real time towards the _Webpanel_ and the _TV overlay_. Synchronization with the _BLApp_ is done 
 periodically and could be forced activating **Configuration > Quick save revision**.
 
-<img src="pictures/pro-guide/interfaces.png" class="img-fluid" alt="Interfaces page"/>
-
 #### Users - admin
 
 The user named _admin_ is a user that exists per default and is meant for the technician/installer, who has access for setting-up _BLI PRO_
 and is allowed to access all zones via browser or _BLApp_.
 
 ##### Change password for admin user
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-admin.png" class="img-fluid" alt="Interfaces admin"/>
+</div>
+<br>
 
 As said before per default, _admin_ password is unknown and could be setted to "_admin_" by activating the Setup button function (2). This 
 password will last 5 minutes (just for security purposes) for being possible to set a new one. Press the _admin_ entry in the left column to 
@@ -517,7 +548,11 @@ change password (see figure above).
 
 To add a new user press "**+**" sign in header **Users** of left column.
 
-<img src="pictures/pro-guide/interfaces-users.png" class="img-fluid" alt="User creation page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-user.png" class="img-fluid" alt="Interfaces user"/>
+</div>
+<br>
 
 ##### User properties
 
@@ -542,17 +577,32 @@ When selecting any product, the next sections are displayed.
 
 ##### NetworkLink product: area/zone/product
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-bo.png" class="img-fluid" alt="Interfaces B&O"/>
+</div>
+<br>
+
 - **Name**: Possible to rename the product.
 - **Address**: The serial number of the product.
 - **Force IP address**: Define a fixed IP address to connect to the product. This is not recommended and should only be used as a workaround in 
 situations where product discovery has shown not to be reliable.
 - **Beo4 navigation**: Whether the product is set up for the old Beo4 navigation or the new navigation with cursor keys and SELECT.
+- **Show product sources on their zone**: Hides product sources in its zone if not selected.
+- **Set new automatically synchronized sources as visible**: New synchronized sources are not setted as hidden.
 
-#### Product sources
+##### Product sources
 
-For each product all local and distributed sources are showed in _Sources in product_ table. They are synchronized automatically from the product 
-configuration if it's online. In case of any problem with automatic source synchronization, _Force synchronization with product_ button will get 
-the current sources of the product. 
+For each product all local and distributed sources are showed in _Sources in product_ table. 
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-bo-sources.png" class="img-fluid" alt="Interfaces B&O Sources"/>
+</div>
+<br>
+
+They are synchronized automatically from the product configuration if it's online. In case of any problem with automatic source synchronization, 
+_Force synchronization with product_ button will get the current sources of the product. 
 
 The information provided in the _Sources in product_  section for each source is the following:
 
@@ -567,11 +617,13 @@ The information provided in the _Sources in product_  section for each source is
 In this section the configuration for several network cameras can be added. To add a camera, press the "**+**" sign in the **Cameras** entry of 
 the left column.
 
-##### Remove a camera
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+</div>
+<br>
 
-If a camera must be removed from the list, choose the camera in the left column and press the **Remove** button.
-
-##### Camera access
+##### Camera basic configuration
 
 _BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
 
@@ -586,7 +638,19 @@ http://192.168.1.37:80.
 - **Username** and **Password**: The optional _Username_ and _Password_ fields may be used for basic HTTP authentication to access the camera from
  the user interfaces.
 
+If a camera must be removed from the list, choose the camera in the left column and press the **Remove** button.
+
 ##### Camera resources path
+
+By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to 
+copy and paste the text when setting up other similar cameras and for each of these to adapt to the actual camera, e.g. adjust to the correct 
+IP-address.
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
+</div>
+<br>
 
 ###### Video & Images
 
@@ -598,15 +662,18 @@ mjpg/video.cgi for high resolution video. All the commands will be appended to t
 If your camera is able to control lens direction and zoom, _Pan_, _Tilt_ and _Zoom_ paths could be specified and controlled through all user 
 interfaces.
 
-By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to copy and paste the text when setting up other similar cameras and for each of 
-these to adapt to the actual camera, e.g. adjust to the correct IP-address.
-
 #### Zone setup
 
 In this section of the _Interfaces_ page, for each zone it is possible to reorder, hide/show and rename the resources as they will be shown in 
 the user interfaces.
 
 ##### Resources for area/zone
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
+</div>
+<br>
 
 For the resource to be moved in the list, place the cursor over the left button (three horizontal lines), then click and hold the left-mouse 
 button and then drag the resource until the line-marking is where the resource should be placed in order and release the mouse button.
@@ -629,6 +696,12 @@ button and then drag the resource until the line-marking is where the resource s
 
 In this section of the _Interfaces_ page favourite lists, for TV channels as well as radio stations can be added. In the hand held devices the 
 favourite channels/stations are listed by name and logo if such is selected.
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
+</div>
+<br>
 
 Adding a new favourite list, press the "**+**" sign in the _Favourites Lists_ column entry. In the field on the top left of the display, enter the 
 name of the source provider. The **Clone** button (top right) is used to clone an existing source provider of favourites. A new one will show in 
@@ -683,7 +756,11 @@ The menu can be used for the following:
 monitored by the tool.
 + To check whether macros and the belonging commands are working as intended.
 
-<img src="pictures/pro-guide/monitor.png" class="img-fluid" alt="Monitor page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/monitor.png" class="img-fluid" alt="Monitor"/>
+</div>
+<br>
 
 On the upper-right side of _Monitor_'s page, it's located a filter tool to facilitate the processing of _Monitor_ information.
 
@@ -692,7 +769,11 @@ On the upper-right side of _Monitor_'s page, it's located a filter tool to facil
 _Resource states_ shows a table of all resources in the installation and their current states. For each row, you could find the resource name at 
 first column and all states in the second one. 
 
-<img src="pictures/pro-guide/resource-states.png" class="img-fluid" alt="Resource states page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/resource-states.png" class="img-fluid" alt="Resources States"/>
+</div>
+<br>
 
 In the upper-right you could find a _Filter_ tool where you could filter by resource name or state.
 
@@ -700,9 +781,6 @@ In the upper-right you could find a _Filter_ tool where you could filter by reso
 
 _Log_ shows system messages concerning the interaction between the _BLI PRO_ and external devices connected, such as application errors and 
 critical system errors.
-
-<img src="pictures/pro-guide/log.png" class="img-fluid" alt="Log page"/>
-
 
 The log menu can be used to:
 
@@ -718,7 +796,11 @@ When any hardware or software error is experienced it is possible to create a se
 
 You must fill the form showed in that page. This information is essential to reproduce and fix any issue you are experiencing.
 
-<img src="pictures/pro-guide/service-report.png" class="img-fluid" alt="Service report page"/>
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/service-report.png" class="img-fluid" alt="Service report"/>
+</div>
+<br>
 
 Service reports are created and downloaded when the _Save_ button is clicked.
 
@@ -729,6 +811,12 @@ The Firmware page allows to check and apply updates for the _BLI_ Firmware. Ther
 + Manually uploading a _BLI_ firmware file.
 + Online update via Internet. 
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/firmware.png" class="img-fluid" alt="Firmware update"/>
+</div>
+<br>
+
 #### Manual update
 
 Press the _Choose File_ button to select your local _BLI_ firmware file. Automatically will be uploaded to _BLI_ and the update should begin 
@@ -737,8 +825,6 @@ immediately.
 #### Online update
 
 To perform an online update of _BLI_'s firmware you must ensure that LAN network has Internet connection.
-
-<img src="pictures/pro-guide/firmware.png" class="img-fluid" alt="Firmware page"/>
 
 In this page you will find:
 
@@ -760,8 +846,6 @@ Logout of the current logged in user.
 
 _Programming report_ is an effective tool to find which _Macro_ interacts with a specific _Resource_ or _System_, really useful when _BLI PRO_ 
 contains many of them in his configuration. 
-
-<img src="pictures/pro-guide/programming-report.png" class="img-fluid" alt="Programming report page"/>
 
 Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in a column, the next 
 information will be displayed:
@@ -791,8 +875,6 @@ language. For more information regarding development of _BLI PRO_ custom drivers
 
 As explained in [Systems](#systems) section, external drivers are located in our own repository from where they could be installed in your _BLI 
 PRO_ if internet connection is available.
-
-<img src="pictures/pro-guide/external-drivers.png" class="img-fluid" alt="External drivers page"/>
 
 The list of all available external drivers could be obtained by pressing _Update drivers list from remote repository_ button and _Show only 
 installed drivers_ button will display external drivers currently installed. Also, next to the mentioned buttons, a _Filter_ tool is placed for 
