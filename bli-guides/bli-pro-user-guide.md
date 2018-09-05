@@ -847,6 +847,13 @@ Logout of the current logged in user.
 _Programming report_ is an effective tool to find which _Macro_ interacts with a specific _Resource_ or _System_, really useful when _BLI PRO_ 
 contains many of them in his configuration. 
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/programming-report.png" class="img-fluid" alt="Programming Report"/>
+</div>
+<br>
+
+
 Left column contains each pair of _Area/Zone_ that contains at least one resource or system. For each resource or system in a column, the next 
 information will be displayed:
 
@@ -876,6 +883,12 @@ language. For more information regarding development of _BLI PRO_ custom drivers
 As explained in [Systems](#systems) section, external drivers are located in our own repository from where they could be installed in your _BLI 
 PRO_ if internet connection is available.
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/external-drivers.png" class="img-fluid" alt="External drivers"/>
+</div>
+<br>
+
 The list of all available external drivers could be obtained by pressing _Update drivers list from remote repository_ button and _Show only 
 installed drivers_ button will display external drivers currently installed. Also, next to the mentioned buttons, a _Filter_ tool is placed for 
 filter by driver name.
@@ -900,11 +913,23 @@ to rollback your configuration. Below, the different tools of _Configuration_ pa
 
 ### Save revision
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/save-revision-1.png" class="img-fluid" alt="Save revision 1"/>
+</div>
+<br>
+
 Saving a revision means saving the current configuration internally in the _BLI_. In the _Description entry_ field, a tag can be entered which 
 will be added as the revision label with the following syntax: _rNN | Jan 25, 2015 08:55:37 PM | \<tag\>_, where _NN_ is a 
 revision number. Such savings are useful when changes have been made to the configuration. The saved revision is available in the 
 [Revision history](#revision-history) list where it is placed in the bottom of the list and from where it can be restored. The current 
 configuration is saved internally in the _BLI_ when the _Save_ button is pressed. By this the recent autosaved file (see below) will be discarded.
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/save-revision-2.png" class="img-fluid" alt="Save revision 2"/>
+</div>
+<br>
 
 Up to ten revisions of the configuration can be saved. If a manually _Save revision_ is not made the recent autosaved file will be the recent 
 saved configuration.
@@ -919,6 +944,12 @@ system occurs, the _BLI_ will - when restarted - get use of the autosaved config
 
 ### Quick save revision
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/quick-save-revision.png" class="img-fluid" alt="Quick save revision"/>
+</div>
+<br>
+
 _Quick save revision_ works similar to _Save revision_ but with the difference that in [Revision history](#revision-history) there is only one 
 _Quick save revision_ of the configuration and each _Quick save revision_ made will overwrite the previous one. This tool is useful for saving an 
 instant image of _BLI_ configuration when small changes in the programming are being made. Keys shortcut for _Quick save revision_ is 
@@ -926,22 +957,52 @@ _Ctrl+Shift+S_.
 
 ### Load from file
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/load-conf-1.png" class="img-fluid" alt="Load conf 1"/>
+</div>
+<br>
+
 Used to upload a configuration file from your local drive; where the file was saved at an earlier stage (see [Download to file](#download-to-file)
 section). By selecting **Configuration > Load from file** a configuration file can be uploaded into the _BLI_. The uploaded configuration will 
 become active immediately and substitute the current configuration.
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/load-conf-2.png" class="img-fluid" alt="Load conf 2"/>
+</div>
+<br>
+
 ### Download to file {#download-to-file}
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/download-conf.png" class="img-fluid" alt="Download conf"/>
+</div>
+<br>
 
 Used to download current configuration to your local drive. By selecting **Configuration > Download to file** the current configuration will be 
 downloaded. It is recommended to have such configuration file as a reference or as a back-up if a problem occurs.
 
 ### Revision history {#revision-history}
 
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/revision-history.png" class="img-fluid" alt="Revision history"/>
+</div>
+<br>
+
 The _BLI_ keeps a record of the latest ten configuration revisions. A new revision can be saved and marked with relevant tag information by 
 selecting **Configuration > Save revision**. Autosaved and Quick saved revisions are listed in the _Revision history_ and are marked with the tags
  _"Auto save"_ and _"Quick save"_.
 
 ## Help
+
+<br>
+<div class="text-center">
+  <img src="pictures/bli-pro-user-guide/help.png" class="img-fluid" alt="Help"/>
+</div>
+<br>
 
 _BLI_ contains an entire _Help_ section that covers every functionality, section and _HA_ system present in _BLI_. Use this section as 
 a good complement of _BeoLiving Intelligence PRO User Guide_. 
