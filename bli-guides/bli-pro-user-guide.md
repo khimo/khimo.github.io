@@ -117,7 +117,7 @@ The following options are:
 
 The settings must be applied by pressing the _Apply_ button.
 
-#### Khimo cloud connection
+#### Khimo cloud link
 
 _BLI_ is configured from factory to be connected to _Khimo's_ cloud service. This service is used to enable features like 
 voice control (e.g.: Amazon Alexa) and remote access to your installation in case _BLI_ being in _PRO_ mode. If this
