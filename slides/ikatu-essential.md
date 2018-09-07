@@ -66,10 +66,9 @@ Note:
 ### OTROS CAMBIOS RESPECTO A BLGW
 
 - Integración de **MasterLink** a partir de **BLC**
-- Camaras y sistemas HA deshabilitados (**por el momento**)
+- Ciertas camaras y sistemas HA habilitados
 
 Note:
-+ Se planea agregar algun HA y camaras
 + La idea es que se detecte el Philips Hue/Camaras automaticamente
 
 ----
