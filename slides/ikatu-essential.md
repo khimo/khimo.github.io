@@ -49,6 +49,8 @@ Note:
 + El usuario luego de comprarlo es capaz de empezar a usarlo sin ninguna ayuda de un instalador
 + Con ciertos flujos interactivos se guia al usuario en cada paso de configuracion
 + La configuración de tu casa se puede realizar por completo desde la BLApp
++ Crear escenas
++ La interfaz web solo permite pequeñas configuraciones
 
 ----
 ### ESSENTIAL
@@ -58,16 +60,17 @@ Note:
 
 Note:
 - Configuras tu casa desde la BLApp
-- Se compra un producto, se enchufa y se agrega
+- Caso de uso: Se compra un producto, se enchufa y se agrega
 
 ----
 ### OTROS CAMBIOS RESPECTO A BLGW
 
 - Integración de **MasterLink** a partir de **BLC**
-- Sistemas HA deshabilitados
+- Camaras y sistemas HA deshabilitados (**por el momento**)
 
 Note:
 + Se planea agregar algun HA y camaras
++ La idea es que se detecte el Philips Hue/Camaras automaticamente
 
 ----
 ## FEATURES
@@ -79,6 +82,8 @@ Note:
 + Agrupación de productos
 
 Note:
++ Explicar caso de uso de las credenciales, que anterioremente era un proceso muy tedioso
++ Esta hecha la funcionalidad de poder setear manualmente para cada equipo
 + El proyecto del Lawn fue el caso de uso necesario para llegar a la idea de la agrupación de productos
 
 |||
@@ -88,7 +93,10 @@ Note:
 + Actualización automática de software
 
 Note:
++ Explicar lo que se puede hacer con Alexa
 + Se necesitaba un instalador para actualizar fw en blgw
++ Esto permite estar en conocimiento de la version de software que tienen la mayoria de los BLI
++ Antes se podrian reportar errores de BLGW con fw viejos
 
 ----
 ## DEMO
