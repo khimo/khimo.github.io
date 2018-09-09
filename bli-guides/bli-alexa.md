@@ -95,10 +95,9 @@ Supported commands for each device depends in its capabilities. For example, a m
 
 ### Bang & Olfusen NetworkLink devices 
 
-+ Turn on/off: 
-  + "_Alexa, turn on/off (DEVICE-NAME)_"
-  + _Description_: Turns on device into an specific source or sets into Standby
-  + _Rules_: When turning on, selected source can not be predicted. Will be the same for each device.
++ Turn off: 
+  + "_Alexa, turn off (DEVICE-NAME)_"
+  + _Description_: Sets device into Standby
 
 + Change channel by number:
   + "_Alexa, change channel to (CHANNEL-NUMBER) on (DEVICE-NAME)_"
@@ -125,6 +124,18 @@ Supported commands for each device depends in its capabilities. For example, a m
 + Mute/Unmute:
   + "_Alexa, mute/unmute (DEVICE-NAME)_"
   + _Description_: Mute/Unmute device
+
++ Render control commands:
+  + "_Alexa, (CONTROL-COMMAND) on (DEVICE-NAME)_"
+  + _Description_: Sends render control command
+  + _Rules_: (CONTROL-COMMAND) could be any of:
+    + _FastForward_
+    + _Next_
+    + _Pause_
+    + _Play_
+    + _Previous_
+    + _Rewind_
+    + _Stop_
 
 + Select source(input):
   + "_Alexa, change the input to (SOURCE-NAME) on (DEVICE-NAME)_"
