@@ -131,8 +131,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
   </tbody>
 </table>
-<a id="Basic"/>
-<a id="Basic"/>
+<a id="Essential"/>
 
 **BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
 simplest yet most powefull way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
