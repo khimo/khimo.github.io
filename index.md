@@ -64,7 +64,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+   <!-- <tr>
       <td>IFTTT support</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -73,7 +73,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr> -->
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
       </td>
@@ -143,7 +143,7 @@ unique home automation and audio/video ecosystem will be accessible as one entit
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
 posibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like 
-_Alexa_ and _IFTTT_.
+_Alexa_. <!-- and _IFTTT_.-->
 
 <div class="row justify-content-md-center">
     <div class="col-lg-4"> 
@@ -178,7 +178,7 @@ _Alexa_ and _IFTTT_.
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-cloud fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">Link to third parties</h3>
-              <p class="text-muted mb-0">Alexa, IFTTT, etc</p>
+              <p class="text-muted mb-0">Alexa</p>
             </div>
       </a>
      </div>
