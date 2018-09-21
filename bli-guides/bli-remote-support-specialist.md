@@ -10,7 +10,7 @@ _Bang & Olufsen's NetworkLink_ products of an installation.
 
 There are two ways to invite a _Remote Support Specialist_ in _BeoLiving Intelligence_. It is possible to invite the user directly from the BeoLiving App and in the _PRO_ mode, it is also possible to invite from the setup web interface with the _admin_ user.
 
-After the invitation is accepted, when the remote specialist login into  [Khimo.com/installer](www.khimo.com/installer), the respective project will be shown.
+After the invitation is accepted, when the remote specialist login into  [Khimo.com/installer](https://www.khimo.com/installer), the respective project will be shown.
 
 
 ### Invite through BeoLiving App
@@ -30,7 +30,7 @@ Then insert the email of the remote support specialist and press _Invite_.
 </div>
 <br>
 
-After accepting the invitation, the installer will visualize the project at [Khimo.com](www.khimo.com), being able to control and get the state of all devices.
+After accepting the invitation, the installer will visualize the project at [Khimo.com](https://www.khimo.com/installer), being able to control and get the state of all devices.
 
 ### Invite through setup web-interface | _PRO_ only
 
@@ -50,7 +50,7 @@ Clicking at "**invite**", it's possible to set the email of the remote specialis
 
 ## State monitoring and support actions
 
-After loggin in at [Khimo.com/installer](www.khimo.com/installer), remote support specialist is capable to check for each device present in the installation the following _NetworkLink_ devices states:
+After loggin in at [Khimo.com/installer](https://www.khimo.com/installer), remote support specialist is capable to check for each device present in the installation the following _NetworkLink_ devices states:
 
 + _Connection state_: Connection status of the device
 + _Playing state_: Render control state of the device
