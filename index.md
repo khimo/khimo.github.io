@@ -228,6 +228,26 @@ funtionalities and features and refer to the _System drivers guide_ if you want 
    </div>
 </div>
 
+## Remote support
+
+With **BeoLiving Intelligence**, now you can invite an installer through _BeoLiving App_ or its web-interface (_PRO_) to get remote support of all
+ _Bang & Olufsen's NetworkLink products_ in your installation. This new role is what we call "_Remote support specialist_". At the following 
+document you will find how to invite a remote support specialist for your _BeoLiving Intelligence_ and which type of control and products states 
+are available.
+
+<div class="row justify-content-md-center">
+  <div class="col-lg-4"> 
+     <div align="center"> 
+        <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli-remote-support-specialist.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+          <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-area-chart fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3 text-dark">Remote support specialist</h3>
+              <p class="text-muted mb-0">How to invite, devices monitoring and control</p>
+          </div>
+        </a>
+     </div>
+   </div>
+</div>
   
 <a id="contact"/>
   
