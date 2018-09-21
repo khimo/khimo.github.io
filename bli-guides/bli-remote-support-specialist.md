@@ -1,12 +1,11 @@
 ---
 title: Remote support specialist
 ---
-# Remote support specialist
 
 In BeoLiving Intelligence, the new role "**Remote Support Specialist**" is introduced. The purpose of this specialist is to support remotely all 
 _Bang & Olufsen's NetworkLink_ products of an installation.
 
-## How to invite
+## Invite the specialist
 
 There are two ways to invite a _Remote Support Specialist_ in _BeoLiving Intelligence_. It is possible to invite the user directly from the BeoLiving App and in the _PRO_ mode, it is also possible to invite from the setup web interface with the _admin_ user.
 
