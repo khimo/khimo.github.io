@@ -1,5 +1,6 @@
 ---
 title: Remote support specialist
+layout:pagetoc
 ---
 
 In BeoLiving Intelligence, the new role "**Remote Support Specialist**" is introduced. The purpose of this specialist is to support remotely all 
