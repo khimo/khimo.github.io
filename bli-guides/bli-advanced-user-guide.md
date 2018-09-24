@@ -154,7 +154,7 @@ The initial page after accessing the _BLI_ via web browser shows two buttons: _W
 
 The Setup web interface of _BLI ESSENTIAL_ does not offer a high degree of customization. In fact, this interface should be used in exceptional cases, or for upgrading your _BLI_ to _PRO_ (see section [*Upgrade to PRO*](#upgrade-pro) for further information). After performing the upgrade, the Setup web interface becomes the most important tool for configuring and programming your setup.
 
-An installer can access the _BLI_ setup interface with the _admin_ user, which has an unknown password by default. The Setup function 2 can be used for setting the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the web interface is accessed.
+**An installer can access the _BLI_ setup interface with the _admin_ user, which has an unknown password by default. The Setup button function 2 (check [Button Functions](#button-functions))  can be used for setting the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the web interface is accessed.**
 
 #### Upgrade to PRO {#upgrade-pro}
 
@@ -163,7 +163,7 @@ An installer can access the _BLI_ setup interface with the _admin_ user, which h
 </div>
 <br>
 
-At the top menu bar, the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_ (mode).
+Being logged as "_admin_" user (following the [procedure described above](#setup-interface)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_ (mode).
 In _Product information_, the _License type_ shows the current license (mode) of your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect your browser to *Khimo.com* to start the upgrade process via _PayPal_.
 
 After the payment process finishes, your _BLI_ will be upgraded to _PRO_ mode within a minute approximately.

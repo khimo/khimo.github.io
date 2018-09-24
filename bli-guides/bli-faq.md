@@ -123,8 +123,10 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 
 ### How to upgrade _BeoLiving Intelligence_ to PRO mode?
 
-_BeoLiving Intelligence_ could be upgraded through its web interface pressing on "_ESSENTIAL_" at upper-left top bar and clicking at "_Click to 
-upgrade_" link in _Mode_.
+Being logged as "_admin_" user (check [How to set admin password](#admin-password)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_ (mode).
+In _Product information_, the _License type_ shows the current license (mode) of your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect your browser to *Khimo.com* to start the upgrade process via _PayPal_.
+
+After the payment process finishes, your _BLI_ will be upgraded to _PRO_ mode within a minute approximately.
 
 ### How do I get my _BeoLiving Intelligence_ IP address?
 
@@ -137,11 +139,14 @@ network used by the _BeoLiving Intelligence_.
 lookup for "\_hipservices.\_tcp." service and the application will discover the IP addresses of the _BeoLiving Intelligence_ in the network.
 - Access to your _LAN_ router and search for the assigned IP to _BeoLiving Intelligence_. 
 
-### How to set admin password?
+### How to set admin password? {#admin-password}
 
 An installer can access to _BeoLiving Intelligence's_ setup interface with the _admin_ user, which has an unknown password by default. The Setup 
 function 2 can be used for setting the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the 
 web interface is accessed.
+
+Refer to the specific [section](bli-advanced-user-guide.md#button-functions) of [BeoLiving Intelligence Advanced User guide](bli-advanced-user-guide.md) for more information.
+ 
 
 ### How to link Alexa with your _BeoLiving Intelligence_?
 
