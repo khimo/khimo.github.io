@@ -47,8 +47,8 @@ Note:
 Note:
 + No se necesita ningun conocimiento técnico para instalarlo y configurarlo
 + El usuario luego de comprarlo es capaz de empezar a usarlo sin ninguna ayuda de un instalador
-+ Con ciertos flujos interactivos se guia al usuario en cada paso de configuracion
 + La configuración de tu casa se puede realizar por completo desde la BLApp
++ Con ciertos flujos interactivos se guia al usuario en cada paso de configuracion
 + Crear escenas
 + La interfaz web solo permite pequeñas configuraciones
 
@@ -61,15 +61,6 @@ Note:
 Note:
 - Configuras tu casa desde la BLApp
 - Caso de uso: Se compra un producto, se enchufa y se agrega
-
-----
-### OTROS CAMBIOS RESPECTO A BLGW
-
-- Integración de **MasterLink** a partir de **BLC**
-- Ciertas camaras y sistemas HA habilitados
-
-Note:
-+ La idea es que se detecte el Philips Hue/Camaras automaticamente
 
 ----
 ## FEATURES
@@ -92,10 +83,34 @@ Note:
 + Actualización automática de software
 
 Note:
-+ Explicar lo que se puede hacer con Alexa
++ Explicar como linkear y lo que se puede hacer con Alexa
 + Se necesitaba un instalador para actualizar fw en blgw
 + Esto permite estar en conocimiento de la version de software que tienen la mayoria de los BLI
 + Antes se podrian reportar errores de BLGW con fw viejos
 
+|||
+### FEATURES
+
++ Remote support specialist: Monitoreo y Control de equipos B&O remotamente
+
+Note:
++ Estado Online/Offline, Estado de reproducción, Fuente siendo reproducida, Origen de la fuente, Volumen
++ Reboot, Standby, Volume+/-, Seleccionar fuentes
+
 ----
-## DEMO
+## PROXIMAMENTE... 
+
+Descubrimiento automático de:
+- Camaras
+- Philips Hue
+
+Note:
++ Use case: "A philips hue/camera has been detected in your installation, do you want to add it?"
+
+----
+### OTROS CAMBIOS RESPECTO A BLGW
+
+- Integración de **MasterLink** a partir de **BLC**
+
+----
+<!-- .slide: data-background-image="bli.jpg" data-background-opacity=.1 -->
