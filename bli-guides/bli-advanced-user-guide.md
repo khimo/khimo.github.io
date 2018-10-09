@@ -206,7 +206,7 @@ The Users page shows in the left column every user that can access the _BLI_. Ne
 
 ##### Select zone access for user
 
-In this section, you can configure the zones the selected user has access to. All zones of the installation are displayed as checkboxes that enable/disable access to it. _All zone access_ means that the user can control any zone of the installation.
+In this section, you can configure the zones the selected user has access to. All zones of the installation are displayed as check boxes that enable/disable access to it. _All zone access_ means that the user can control any zone of the installation.
 
 #### Network {#network-conf}
 
@@ -246,7 +246,7 @@ For performing an online update to the _BLI_ Firmware you must ensure that it ha
 <img src="pictures/bli-advanced-user-guide/online-update.png" class="img-fluid" alt="Online update"/>
 <br>
 
-+ **Check for latest version**: After pressed, the lastest official Firmware version will be displayed, if available and different from the current one.
++ **Check for latest version**: After pressed, the latest official Firmware version will be displayed, if available and different from the current one.
 + **Start online update**: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.
 + **Automatic updates**: Enable/Disable automatic _BLI_ Firmware updates. If this option is selected, then the _BLI_ firmware will be automatically kept up to date.
 

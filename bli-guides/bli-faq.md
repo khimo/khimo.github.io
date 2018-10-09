@@ -194,7 +194,7 @@ create and send a _Service report_ of your _BeoLiving Intelligence_.
 ### How can I find a specific source of an A/V device in _BLApp_?
 
 Sources showed in _BLApp_ are managed in the _Interface_ section of _BeoLiving Intelligence_ web interface. Selecting the device owner of 
-the specific source, check that the source has not the checkbox "_Hidden_" selected. For more information regarding configuration of user 
+the specific source, check that the source has not the check box "_Hidden_" selected. For more information regarding configuration of user 
 interfaces check _Interfaces_ section of [BeoLiving Intelligence PRO User Guide](bli-pro-user-guide.md). 
 
 ### What does the _BeoLiving Intelligence_ Led color/patter means?
@@ -254,7 +254,7 @@ available.
 
 ### If the power goes off, do I lost _BeoLiving Intelligence_ configuration?
 
-_BeoLiving Intelligence_'s configuration is persistent, so all configuration and programmation will be safe if any power-off occurs.
+_BeoLiving Intelligence_'s configuration is persistent, so all configuration and programming will be safe if any power-off occurs.
 
 ### What kind of devices can I control?
 
@@ -270,7 +270,7 @@ _BeoLiving Intelligence_ supports any _Bang & Olfusen NetworkLink_ TV or speaker
 
 All of these resources are called "_Standard resources_" and most of them (less the _GPIO_'s) have a graphic representation in each user 
 interface. On the other hand, _BeoLiving Intelligence_ also supports "_Custom resources_" that are system dependent and can not be represented as 
-a standard resource. Those don't have a graphic respresentation in user interfaces but could be controlled through _Scenes_ programming.
+a standard resource. Those don't have a graphic representation in user interfaces but could be controlled through _Scenes_ programming.
 
 ### How can I know which _Home Automation_ systems can be integrated?
 
@@ -282,4 +282,12 @@ are showed at [System Drivers Guide](../bli-help-files/drivers/main.md) page. Fo
 
 _BeoLiving Intelligence_ comes by default with automatic firmware updates enabled,  you can choose to turn-off that option and check for firmware 
 updates manually.  Firmware updates are highly recommended in order to avoid malfunction or abnormal operation.
+
+### How to migrate from a BeoLink Gateway to a BeoLiving Intelligence?
+
+The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Intelligence_. So it can be downloaded from the BLGW and then loaded into the BLI.
+
+### Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
+
+_BeoLiving Intelligence_ does not support MasterLink products directly, however they still can be used with the BLI by using BeoLink Converter.
 

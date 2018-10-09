@@ -91,7 +91,7 @@ Creating a group of Bang & Olufsen products lets you control all of them as if t
 + Go to _Device Settings_ and press _Group products_.
 + Press _Create group_ and select the _master_ product from the list.
 + Press the "+" button on each product you want to add to the group.
-+ Once the group is created, whenever content is reproduced in the _master_, it will be reporduced automatically in the rest of the products of the group. The same goes for volume control on the _master_.
++ Once the group is created, whenever content is reproduced in the _master_, it will be reproduced automatically in the rest of the products of the group. The same goes for volume control on the _master_.
 
 <div class="row justify-content-center">
   <div class="col-sm-5">     
@@ -105,7 +105,7 @@ Creating a group of Bang & Olufsen products lets you control all of them as if t
 
 A new feature that comes with _BeoLiving Intelligence_ included in both of its modes, is the ability to set content providers credentials (
 _TuneIn_ and _Deezer_) to all _Bang & Olufsen_ devices. _BeoLiving Intelligence_ will set credentials to every discovered device that has not been
-setted previously (this mean that _BeoLiving Intelligence_ does not override existing credentials). To set content provider credentials follow the
+set previously (this mean that _BeoLiving Intelligence_ does not override existing credentials). To set content provider credentials follow the
  next steps:
 
 + Go to the _Settings_ menu and select your _BeoLiving Intelligence_.
