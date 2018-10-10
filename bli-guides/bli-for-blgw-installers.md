@@ -91,7 +91,7 @@ _BeoLink Converter_.
 - The default '_admin_' password: From factory, _admin_ password is unknown. Refer to our [F.A.Q.](bli-faq.md#admin-password) to know how to set 
 it to a desired value.
 
-## Migrate from BLGW to BLI
+## Migrate from BLGW to BLI {#blgw-migration}
 
 Configuration file of _BeoLink Gateway_ is compatible with _BeoLiving Intelligence_, so migration process is quite simple. **The unique condition 
 is that BeoLiving Intelligence must be in PRO mode**. To do so, follow the next instructions:
