@@ -2,8 +2,6 @@
 title: BeoLiving documentation
 ---
 
-
-
 A focus on making life easier and more enjoyable has given rise to **BeoLiving Intelligence**, the first Plug & Play smart home 
 controller for _Bang & Olufsen_ products. **BeoLiving Intelligence**, [successor of _BeoLink Gateway_](http://www.ikatu.us/beolink-gateway.html), 
 is the new creation resulting from the _Bang & Olufsen_ and _Khimo_ partnership which dates back to 2006. **BeoLiving Intelligence** expands the 
@@ -136,6 +134,10 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 **BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
 simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
 unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
+
+Also, migrating from _BeoLink Gateway_ to _BeoLiving Intelligence_ in _PRO_ mode is possible and only takes a few steps. If you are a 
+_BeoLink Gateway_ installer check our [quick introduction](bli-guides/bli-for-blgw-installers.md) explaining the main differences between both 
+controllers and instructions on how to migrate from one controller to another.
 
 ## Start now!
 
