@@ -280,6 +280,10 @@ are showed at [System Drivers Guide](../bli-help-files/drivers/main.md) page. Fo
 
 ### Are the firmware updates necessary?
 
-_BeoLiving Intelligence_ comes by default with automatic firmware updates enabled,  you can choose to turn-off that option and check for firmware 
+_BeoLiving Intelligence_ comes by default with automatic firmware updates enabled, you can choose to turn-off that option and check for firmware 
 updates manually.  Firmware updates are highly recommended in order to avoid malfunction or abnormal operation.
 
+### Home Control TV app is displayed with some errors
+
+Try to clear data and cache of _HAWebPanel_ application. For TV's with Video Engine 3.0 (Android TV's), go to **Settings > Android Settings > Device - Apps > System apps - HAWebPanel**.
+ 
