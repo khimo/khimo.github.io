@@ -289,7 +289,7 @@ Try to clear data and cache of _HAWebPanel_ application. For TV's with Video Eng
  
 ### How to migrate from a BeoLink Gateway to a BeoLiving Intelligence?
 
-The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Intelligence_. So it can be downloaded from the BLGW and then loaded into the BLI.
+The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Intelligence_. Check our [detailed description](bli-for-blgw-installers.md#blgw-migration) for further information about the migration process.
 
 ### Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
 
