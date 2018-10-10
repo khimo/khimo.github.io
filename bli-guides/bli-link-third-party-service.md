@@ -1,4 +1,7 @@
-# BeoLiving Intelligence Link to Third Party Cloud Service Guide
+---
+title: BeoLiving Intelligence Link to Third Party Cloud Service Guide
+layout: pagetoc
+---
 
 ## Introduction
 
