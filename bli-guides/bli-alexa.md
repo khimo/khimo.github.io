@@ -5,7 +5,7 @@ layout: pagetoc
 
 ## Introduction
 
-The scope of this guide comprise a full description of all available voice commands and devices you can control between _Alexa_ and _BeoLiving 
+The scope of this guide comprises a full description of all available voice commands and devices you can control between _Alexa_ and _BeoLiving 
 Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)). 
 
 **This feature does not depend in BeoLiving Intelligence's mode (ESSENTIAL or PRO)**.
@@ -68,7 +68,7 @@ Supported commands for each device depends in its capabilities. For example, a m
   + "_Alexa, activate/deactivate (SCENE-NAME)_"
   + _Description_: Fires or stops macro
 
-### Themostats
+### Thermostats
 
 + Turn off: 
   + "_Alexa, turn off (THERMOSTAT-NAME)_"
@@ -76,11 +76,11 @@ Supported commands for each device depends in its capabilities. For example, a m
 
 + Set thermostat setpoint:
   + "_Alexa, set (THERMOSTAT-NAME) to (TEMPERATURE)_"
-  + _Description_: Sets thermostat setpoint to an specific temperature. 
+  + _Description_: Sets thermostat setpoint to a specific temperature. 
   + _Rules_:
     + In case the thermostat has two setpoints (THERMOSTAT\_2SP _BLI_ resource type) and being in "_Auto_" mode, upper setpoint (Cool setpoint) 
-    and lower setpoint (Heat setpoint) will be setted +/- 2 degrees of (TEMPERATURE).     
-    + In _Eco_ mode, thermostat setpoints can not be setted.
+    and lower setpoint (Heat setpoint) will be set +/- 2 degrees of (TEMPERATURE).     
+    + In _Eco_ mode, thermostat setpoints can not be set.
 
 + Relative temperature setpoint adjust:
   + "_Alexa, increase/decrease temperature of (THERMOSTAT-NAME)_"
@@ -158,7 +158,7 @@ understood with device sources. She understands possible popular sources like "_
  rare names will cause to confuse her or to not find any match with the desired source to select, provoking to not accomplish the desired control 
 instruction.
 
-When its impossible for _Alexa_ to select an specific source, try:
+When it is impossible for _Alexa_ to select a specific source, try:
 
 + Change source name through _Interfaces_ page at _BLI_ web interface (only in _PRO_ mode). Then re-discover devices.
 + Create a macro in _BLI_ that selects the source in the device and call "_Alexa, activate (SCENE-NAME)_". To start using the macro with _Alexa_, 

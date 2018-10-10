@@ -5,7 +5,7 @@ layout: pagetoc
 
 ## Introduction
 
-The scope of this guide comprise an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface used for 
+The scope of this guide comprises an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface used for 
 configuration/programming your setup and "How to's" of different features. _BeoLiving Intelligence_ in PRO mode has all of its capabilities 
 unblocked and this guide will let you exploit your Home Automation controller to its maximum.
 
@@ -38,7 +38,7 @@ TODO: Diagram
 
 Setup interface is the most important tool for configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
 
-In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage. By default, _admin_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be resetted by activating the Setup button function (2). After a successfully button function input, _admin_ password will be _"admin"_ during the next 5 mintues (also for security purposes) and after logging in you will be asked to change it.
+In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage. By default, _admin_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function (2). After a successfully button function input, _admin_ password will be _"admin"_ during the next 5 minutes (also for security purposes) and after logging in you will be asked to change it.
 
 ### Project info
 
@@ -110,7 +110,7 @@ The following options are:
 
 + **Hostname**: Name of _BLI_ as it is found in the LAN.
 + **DHCP**: Enable/Disable _DHCP_ mode. Per factory default, _DHCP_ mode is enabled.
-+ **Address**: If _DHCP_ is disabled, the static _BLI_ network address could be setted in _Address_.
++ **Address**: If _DHCP_ is disabled, the static _BLI_ network address could be set in _Address_.
 + **Mask**: Mask related to _BLI_ LAN.
 + **DNS Server**: _DNS Server_ network address in LAN.
 + **Gateway**: Gateway address in LAN.
@@ -129,7 +129,7 @@ voice control (e.g.: Amazon Alexa) and remote access to your installation in cas
 </div>
 <br>
 
-Access restrictions regarding which zones are able for being controlled could be setted from the selection of an specific _BLI_ user. This means 
+Access restrictions regarding which zones are able for being controlled could be set from the selection of an specific _BLI_ user. This means 
 that all accounts will share same zone access restrictions than the selected user. Zone access restriction could be modified in 
 [Interfaces](#interfaces) page.
 
@@ -186,7 +186,7 @@ This setting only affects what is displayed on _BLI PRO_ user interfaces. It doe
 ### Zones
 
 Everything in _BLI_ is organized into zones. Zones represent rooms or other locations in the home such as kitchen, hallway, garden, garage, etc.
-In order to accomodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.
+In order to accommodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.
 
 #### Areas & Zones
 
@@ -233,7 +233,7 @@ Is up to the installer to move those products into their respective _Area/Zone_.
 
 The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink system and _HA_ systems are ‘systems’. Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](../bli-help-files/drivers/main.md) page to know all _HA_ systems that _BLI PRO_ supports.
 
-Each system has in _BLI PRO_ a correspondant driver. There are two driver types:
+Each system has in _BLI PRO_ a correspondent driver. There are two driver types:
 
 + Native driver that is included in _BLI PRO_ firmware and is ready to be added in your _BLI_.
 + External driver located in our cloud. _BLI PRO_ will download and install the external driver if desired.
@@ -365,7 +365,7 @@ directly. The _BLApp_ currently uses virtual buttons for displaying scene button
 </div>
 <br>
 
-The address of a _Virtual Resource_ is a unique number and if isn't setted manually, _BLI PRO_ generates automatically an un-used address for that
+The address of a _Virtual Resource_ is a unique number and if isn't set manually, _BLI PRO_ generates automatically an un-used address for that
  resource. 
 
 ### Macros {#macros}
@@ -388,9 +388,9 @@ For each macro, the next buttons are available:
 + **Add event**: used to add an _Event_ to a _Macro_. The two buttons (see above) that can be used to set the cinema scene. See 
 [Resource Event](#resource-event) section.
 + **Capture**: when the _Capture_ button is pressed, all system/resource events fired from that moment will be displayed so that they can be added.
-Example of events captured could be: the press of a virtual or phisical button, the source selection in a A/V renderer device.
+Example of events captured could be: the press of a virtual or physical button, the source selection in a A/V renderer device.
 + **Add command**: used to define the commands of a _Macro_. See [Resource Command](#resource-command) section.
-+ **Clone**: creates an exact copy of the _Macro_ adding "_- Clone n_" as subfix to the cloned _Macro_ name, where _n_ is the number of clones made.
++ **Clone**: creates an exact copy of the _Macro_ adding "_- Clone n_" as suffix to the cloned _Macro_ name, where _n_ is the number of clones made.
 + **Remove**: deletes _Macro_.
 + **Fire**: fires/triggers _Macro_.
 + **Convert to code**: switches _Macro_ commands configuration into a _Lua_ editor, turning existant _Macro_ commands into _Lua_ code. _Lua_ 
@@ -520,8 +520,8 @@ the following features:
 The resources to be accessed via the user interfaces are configured in this page. The user interfaces are:
 
 + _BLApp_: _BLI_ specific user control application that could be installed at any _iOS_ based device.
-+ _Webpanel_: User control interface accesible through _BLI_ web interface.
-+ _TV overlay_: User control interface application accesible through any _Bang & Olufsen_ NetworkLink TV as _Home Control_. Same layout as 
++ _Webpanel_: User control interface accessible through _BLI_ web interface.
++ _TV overlay_: User control interface application accessible through any _Bang & Olufsen_ NetworkLink TV as _Home Control_. Same layout as 
 _Webpanel_.
 
 Configurations are synchronized in real time towards the _Webpanel_ and the _TV overlay_. Synchronization with the _BLApp_ is done 
@@ -540,7 +540,7 @@ and is allowed to access all zones via browser or _BLApp_.
 </div>
 <br>
 
-As said before per default, _admin_ password is unknown and could be setted to "_admin_" by activating the Setup button function (2). This 
+As said before per default, _admin_ password is unknown and could be set to "_admin_" by activating the Setup button function (2). This 
 password will last 5 minutes (just for security purposes) for being possible to set a new one. Press the _admin_ entry in the left column to 
 change password (see figure above).
 
@@ -589,7 +589,7 @@ When selecting any product, the next sections are displayed.
 situations where product discovery has shown not to be reliable.
 - **Beo4 navigation**: Whether the product is set up for the old Beo4 navigation or the new navigation with cursor keys and SELECT.
 - **Show product sources on their zone**: Hides product sources in its zone if not selected.
-- **Set new automatically synchronized sources as visible**: New synchronized sources are not setted as hidden.
+- **Set new automatically synchronized sources as visible**: New synchronized sources are not set as hidden.
 
 ##### Product sources
 
@@ -828,7 +828,7 @@ To perform an online update of _BLI_'s firmware you must ensure that LAN network
 
 In this page you will find:
 
-+ **Check for the latest version**: After pressed, the lastest official Firmware version will be displayed, if available.
++ **Check for the latest version**: After pressed, the latest official Firmware version will be displayed, if available.
 + **Start online update**: If a new Firmware version is available for download, pressing this button will start the Firmware download and installation process.
 + **Automatic updates**: Enable/Disable automatic _BLI_ Firmware updates. If this option is selected, then the _BLI_ firmware will be automatically kept up to date.
 

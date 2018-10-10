@@ -98,7 +98,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Control through Bang & Olufsen's TV's</td>
+      <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -134,15 +134,15 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 <a id="Essential"/>
 
 **BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
-simplest yet most powefull way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
+simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
 unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
 
 ## Start now!
 
-**BeoLiving Intelligence** does not need an installer, a few simple non technical steps and it is ready to shine.
+**BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it is ready to shine.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
-posibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like 
+possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like 
 _Alexa_. <!-- and _IFTTT_.-->
 
 <div class="row justify-content-md-center">
@@ -189,7 +189,7 @@ _Alexa_. <!-- and _IFTTT_.-->
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-comment fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">Alexa usage guide</h3>
-              <p class="text-muted mb-0">Control phrases, Tips</p>
+              <p class="text-muted mb-0">Control phrases, tips</p>
             </div>
       </a>
      </div>
@@ -201,7 +201,7 @@ _Alexa_. <!-- and _IFTTT_.-->
 ## PRO
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
-funtionalities and features and refer to the _System drivers guide_ if you want information about a specific supported driver.
+functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver.
 
 <div class="row justify-content-md-center">
   <div class="col-lg-4"> 
@@ -253,7 +253,7 @@ are available.
   
 ## Troubleshooting
 
-Do you have a question? You can find answers to the most common questions in our _Frequently Asked Question_ document. If you are experiencing 
+Do you have any question? You can find answers to the most common questions in our _Frequently Asked Question_ document. If you are experiencing 
 troubles or malfunction, please refer to our _Troubleshooting Guide_.
 
 <div class="row justify-content-md-center">

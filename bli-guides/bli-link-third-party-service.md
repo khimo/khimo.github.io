@@ -12,9 +12,9 @@ Description of your installation control capabilities through each third party c
 
 This ability is available in all modes of _BeoLiving Intelligence_, as it comes from factory and after upgrade it to _BeoLiving Intelligence PRO_.
 
-The scope of this document comprise the necessary knowledge and steps to follow to link _BeoLiving Intelligence_ with third party cloud services.
+The scope of this document comprises the necessary knowledge and steps to follow to link _BeoLiving Intelligence_ with third party cloud services.
 
-## Link process
+## Linking process
 
 To enable each cloud service with _BeoLiving Intelligence_ a linking process must be done. This linking process is established between _BeoLiving 
 Intelligence_ and the third party cloud service, with _Khimo.com_ (our own cloud service) as an intermediary. For each service, this link could be
@@ -29,13 +29,13 @@ _Enable Skill_ button.
 + **IFTTT**: using _IFTTT_ App or entering at _ifttt.com_, search by service "_BeoLink Gateway_". Press _Connect_ button.
 -->
 
-Independetly of the chosen cloud service, after enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
+Independently of the chosen cloud service, after enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
 continue the linking process in the _BeoLiving App_ will be displayed if using an _iOS_ device or QR code will be shown if not.
  
 At this point to continue with the linking process you could choose between three methods:
 
 + Accept to continue with the _BeoLiving App_ (using an _iOS_ device) and then select which _BeoLiving Intelligence_ (if there is more than one in
-your network) to link. Then to finalize with the linking process it's necessary to go back to the third party app. 
+your network) to link. Then to finish with the linking process it's necessary to go back to the third party app. 
 + Scan the QR code with the _BeoLiving App_.
 + Login with user and password to _Khimo_ (for _BeoLink Gateway_ users). 
 
@@ -50,5 +50,5 @@ The following video shows how to link _Alexa_ using the first method described:
 </div>
 <br>
 
-After acomplished one of the three methods described above, it's possible to start using the linked could service.
+After accomplished one of the three methods described above, it's possible to start using the linked could service.
 

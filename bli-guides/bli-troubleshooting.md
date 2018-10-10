@@ -36,7 +36,7 @@ Our team will study your case and will reach you as soon as possible with instru
 At the back side of _BeoLiving Intelligence_, between Ethernet port and USB port, it´s located the system reset button. After 8 seconds being 
 pressed, _BeoLiving Intelligence_ will reboot. This method must be used in case _BeoLiving Intelligence_ is not able to restore it´s proper 
 operation by it´s own. After normal operation is restored, [Service report](#service-report) method must be done to let us check what issue 
-occured in your controller.
+occurred in your controller.
 
 ## Erase all configuration and settings {#erase-configuration}
 
