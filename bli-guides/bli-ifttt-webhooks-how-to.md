@@ -1,5 +1,5 @@
 ---
-title: How to: Fire IFTTT applets through BLI commands
+title: How to Fire IFTTT applets through BLI commands
 layout: pagetoc
 ---
 
