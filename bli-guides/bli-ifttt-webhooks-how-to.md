@@ -31,7 +31,8 @@ Enter to the web-interface of _BeoLiving Intelligence_ and follow the next steps
 2. At "_Connection settings_" of _Custom HTTP_ driver insert constant prefix of your **Applet** trigger URL. For example, if the URL is 
 _https://maker.ifttt.com/trigger/myFabulousEvent/with/key/abcDFgHijK_, insert just _https://maker.ifttt.com/trigger/_.
 3. Go to _Resources_ and add a "_POST_" resource with the rest of the URL at the resource address. For example, address equal 
-"_myFabulousEvent/with/key/abcDFgHijK_". If it's necessary (depending on your Applet) add the body of the request (check _Custom HTTP_ system help
-for more information). In our case of the **Applet** that it's being described in this tutorial, body request is not necessary.
+"_myFabulousEvent/with/key/abcDFgHijK_". Add as many resources as **Applets** you desire to fire. If it's necessary (depending on your Applet) add
+ the body of the request (check _Custom HTTP_ system help for more information). In our case of the **Applet** that it's being described in this 
+tutorial, body request is not necessary.
 4. Create a _Macro_ setting a _SEND_ command on the _Custom HTTP_ resource created at 4. Add the _Event_ you prefer. In our example, this could be
  any physical button of your configuration. After pressing this button, the HTTP request will be fired and your phone will start ringing.
