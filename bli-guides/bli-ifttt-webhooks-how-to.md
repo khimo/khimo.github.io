@@ -46,3 +46,7 @@ tutorial, body request is not necessary.
 
 - Create a _Macro_ setting a _SEND_ command on the _Custom HTTP_ resource created at 4. Add the _Event_ you prefer. In our example, this could be
  any physical button of your configuration. After pressing this button, the HTTP request will be fired and your phone will start ringing.
+
+<div class="text-center">
+  <img src="pictures/bli-ifttt-webhooks-how-to/custom-http-macro.png" class="img-fluid" alt="HTTP macro"/>
+</div>
