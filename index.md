@@ -62,6 +62,15 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
+    <tr>
+      <td>Remote support specialist</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
    <!-- <tr>
       <td>IFTTT support</td>
       <td class="text-center">
@@ -121,14 +130,6 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
     <tr>
       <td>Customization of BeoLiving App</td>
-      <td class="text-center">
-      </td>
-      <td class="text-center">
-        <i class="fa fa-check" style="color: #eb5946"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Remote support specialist</td>
       <td class="text-center">
       </td>
       <td class="text-center">
