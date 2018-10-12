@@ -53,7 +53,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>IFTTT support</td>
+      <td>Remote support specialist</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
@@ -61,6 +61,15 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
+   <!-- <tr>
+      <td>IFTTT support</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr> -->
     <tr>
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
@@ -86,7 +95,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Control through Bang & Olufsen's TV's</td>
+      <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -152,9 +161,15 @@ Refer to the specific [section](bli-advanced-user-guide.md#button-functions) of 
 
 Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
 
+<!--
 ### How to link IFTTT with your _BeoLiving Intelligence_?
 
 Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
+-->
+
+### It's possible to fire IFTTT Applets with _BeoLiving Intelligence_?
+
+Yes it is possible having your _BeoLiving Intelligence_ in _PRO_ mode. Follow our guide [How to Fire IFTTT applets through BLI commands](bli-ifttt-webhooks-how-to.md).
 
 ### How can I control my devices with Alexa? What to say?
 
