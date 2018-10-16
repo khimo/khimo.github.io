@@ -38,6 +38,16 @@ title: BeoLiving Intelligence Specifications
       </td>
     </tr>
     <tr>
+      <td>Ports</td>
+      <td>
+        <ul>
+          <li>5.5mm x 2.1mm barrel jack Power input</li>
+          <li>USB 2.0 Type-A</li>
+          <li>10/100 Base-T Ethernet connector</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
       <td>Security</td>
       <td>
         <ul>
