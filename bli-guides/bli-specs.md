@@ -1,7 +1,6 @@
 ---
-title: BeoLiving Intelligence Specs
+title: BeoLiving Intelligence Specifications
 ---
-
 
 <table class="table">
   <thead>
@@ -25,6 +24,7 @@ title: BeoLiving Intelligence Specs
       <td>
         <ul>
           <li>Wi-Fi 802.11a/b/g/n/ac</li>
+          <li>10/100 Ethernet with PoE 802.3af</li>
         </ul>
       </td>
     </tr>
@@ -38,27 +38,11 @@ title: BeoLiving Intelligence Specs
       </td>
     </tr>
     <tr>
-      <td>Ethernet</td>
-      <td>
-        <ul>
-          <li>10/100 Ethernet with PoE 802.3af</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td>Security</td>
       <td>
         <ul>
           <li>Secure element hardware security module</li>
           <li>Encrypted file system & Secure Boot</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Operating Temperature Range</td>
-      <td>
-        <ul>
-          <li>0°C to 60°C</li>
         </ul>
       </td>
     </tr>
@@ -78,6 +62,14 @@ title: BeoLiving Intelligence Specs
         <ul>
           <li>Custom pad printed logo & color</li>
           <li>Outdoor / Weatherproof enclosures</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Operating Temperature Range</td>
+      <td>
+        <ul>
+          <li>0°C to 60°C</li>
         </ul>
       </td>
     </tr>
