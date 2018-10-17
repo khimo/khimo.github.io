@@ -24,9 +24,10 @@ This mode has the following features:
  - Allows the creation of _Bang & Olufsen_ [Products Groups](#products-groups), allowing the control of multiple products as one
  - [User password-less creation](#create-user) through BeoLiving App.  
 
-Moreover, at any point, _BeoLiving Intelligence_ could be upgraded to _PRO_ mode to get a full professional home automation controller through a one-time payment.
- **The features that _BeoLiving Intelligence_'s _PRO_ mode adds, are the capabilities that were already in the _BeoLink Gateway_, plus remote
-access.** Refer to our specific [BeoLiving Intelligence PRO User guide](bli-pro-user-guide.md) for a deeper understanding.
+Moreover, at any point, _BeoLiving Intelligence_ could be upgraded to _PRO_ mode to get a full professional home automation controller through a 
+one-time payment. **_PRO_ mode has all the features of the _ESSENTIAL_, all the professional capabilities that were already present in the 
+_BeoLink Gateway_, plus remote access from factory.** Refer to our specific [BeoLiving Intelligence PRO User guide](bli-pro-user-guide.md) for a 
+deeper understanding.
 
 ## New BeoLiving App {#beoliving-app}
 
