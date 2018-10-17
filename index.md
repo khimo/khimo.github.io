@@ -11,9 +11,9 @@ Together with the beautifully sculpted, simple and intuitive, companion **BeoLiv
 is directly accessible and configurable at the palm of your hand. Use the **BeoLiving App** in your phone or tablet to easily control your **Bang 
 & Olufsen** products alongside with the most popular Home Automation brands.
 
-Out of the box, **BeoLiving Intelligence** comes in **ESSENTIAL** mode: easy to configure, install and start living the experience. But this is just a
- sample of all what **BeoLiving Intelligence** can do: by upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, you 
-will have access to a full professional smart home solution.
+Out of the box, **BeoLiving Intelligence** comes in **ESSENTIAL** mode: easy to configure, install and start living the experience. But this is 
+just a sample of all what **BeoLiving Intelligence** can do: by upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, 
+you will have access to a full professional smart home solution.
 
 The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL** and **BeoLiving Intelligence PRO**:
 
@@ -153,8 +153,8 @@ controllers and instructions on how to migrate from one controller to another.
 **BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it is ready to shine.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
-possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like 
-_Alexa_. <!-- and _IFTTT_.-->
+possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
+ _Alexa_. <!-- and _IFTTT_.-->
 
 <div class="row justify-content-md-center">
     <div class="col-lg-4"> 
@@ -207,12 +207,12 @@ _Alexa_. <!-- and _IFTTT_.-->
    </div>
  </div>
 
-
 <a id="PRO"/>
 ## PRO
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
-functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver.
+functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver. _BLI for BLGW 
+installers_ shows main differences between both controllers and explains the simply way to migrate from _BeoLink Gateway_ to _BeoLiving Intelligence_.
 
 <div class="row justify-content-md-center">
   <div class="col-lg-4"> 
@@ -226,13 +226,24 @@ functionalities and features, and refer to the _System drivers guide_ if you wan
         </a>
      </div>
    </div>
-    <div class="col-lg-4">
+   <div class="col-lg-4">
      <div align="center">
      <a class="nav-link js-scroll-trigger sr-button" href="/bli-help-files/drivers/main.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-puzzle-piece fa-4x fa-square-o text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">Drivers</h3>
               <p class="text-muted mb-0">Documentation of some of the third party drivers</p>
+            </div>
+      </a>
+     </div>
+   </div>
+   <div class="col-lg-4">
+     <div align="center">
+     <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli-for-blgw-installers.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-refresh fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3 text-dark">BLI for BLGW installers</h3>
+              <p class="text-muted mb-0">Main differences and how to migrate from BeoLink Gateway to BeoLiving Intelligence</p>
             </div>
       </a>
      </div>
