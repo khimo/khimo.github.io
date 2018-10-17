@@ -609,7 +609,7 @@ The information provided in the _Sources in product_  section for each source is
 - **Source**: Type of source. 
 - **Name**: Label to show with the source in all user interfaces. 
 - **UI Type**: Reference for the mobile application about what type of user interface is needed for operating the product.
-- **Favourites list**: This makes it possible to select a favourite list defined in the [Favourites](#favourites) section.
+- **Favourites list**: This makes it possible to select a favourite list defined in the [Favourites](#fav-list) section.
 - **Hidden**: Selects if source must be hidden in all user interfaces or not.
 
 #### Cameras
@@ -692,7 +692,7 @@ button and then drag the resource until the line-marking is where the resource s
   - **On shade view**: When enabled, the button will be shown in the _Shade_ section of _BLApp_.
   - **On thermostat view**: When enabled, the button will be shown in the _Thermostat_ section of _BLApp_.
 
-#### Favourite Lists
+#### Favourite Lists {#fav-list}
 
 In this section of the _Interfaces_ page favourite lists, for TV channels as well as radio stations can be added. In the hand held devices the 
 favourite channels/stations are listed by name and logo if such is selected.
