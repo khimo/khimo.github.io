@@ -52,12 +52,8 @@ The following sections show the available commands for each device. Note that so
   + _Description_: Raises or lowers the shade.
 
 + Set level: 
-  + "_Alexa, dim (SHADE-NAME) (LEVEL)%_"
-  + _Description_: Sets shade level
-
-+ Relative level adjust: 
-  + "_Alexa, increase/decrease (SHADE-NAME) by (LEVEL)%_"
-  + _Description_: Increases/decreases relatively shade level.
+  + "_Alexa, (SHADE-NAME) to (LEVEL)%_"
+  + _Description_: Sets shade level.
 
 ### Scenes/Macros
 
