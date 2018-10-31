@@ -250,7 +250,7 @@ The LED on the _BeoLiving Intelligence_ displays it's current state, as shown in
 ### How can I control my _BeoLiving Intelligence_?
 
 _BeoLiving Intelligence_ has multiple ways of controlling your house. From factory, _BeoLiving Intelligence_ can be controlled using the _BeoLiving App_, or using your _Voice_ (linking your _BeoLiving Intelligence_ with _Alexa_, for example).
-After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be able to control you house through the web interface and the _Home Control_ native application on the Bang & Olufsen TVs.
+After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be able to control your house through the web interface and the _Home Control_ native application on the Bang & Olufsen TVs.
 
 ### Can I control my devices from outside my house?
 
