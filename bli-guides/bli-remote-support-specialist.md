@@ -3,34 +3,32 @@ title: Remote support specialist
 layout: pagetoc
 ---
 
-In BeoLiving Intelligence, the new role "**Remote Support Specialist**" is introduced. The purpose of this specialist is to support remotely all 
+In BeoLiving Intelligence, the new role "**Remote Support Specialist**" is introduced. The purpose of this specialist is to remotely support all 
 _Bang & Olufsen's NetworkLink_ products of an installation.
 
 ## Invite the specialist
 
-There are two ways to invite a _Remote Support Specialist_ in _BeoLiving Intelligence_. It is possible to invite the user directly from the BeoLiving App and in the _PRO_ mode, it is also possible to invite from the setup web interface with the _admin_ user.
+There are two ways to invite a _Remote Support Specialist_ in _BeoLiving Intelligence_: from the _BeoLiving App_ or from the setup web interface (_PRO_ only).
 
-After the invitation is accepted, when the remote specialist login into  [Khimo.com/installer](https://www.khimo.com/installer), the respective project will be shown.
-
+Once the invitation is accepted the remote specialist can access the project by logging into [Khimo.com/installer](https://www.khimo.com/installer).
 
 ### Invite through BeoLiving App
 
-Through _BeoLiving App_, the invitation could be done at _Device Settings_ of the current _BeoLiving Intelligence_. Go to _Remote support_ entry, as 
-the following image shows.
+Through _BeoLiving App_, the invitation can be sent from _Device Settings_ of the current _BeoLiving Intelligence_. Go to _Remote support_ entry, as the following image shows.
 
 <div class="text-center">
   <img src="pictures/bli-remote-support-specialist/send-invitation.png" width="30%" height="auto" class="img-fluid" alt="Remote support specialist"/>
 </div>
 <br>
 
-Then insert the email of the remote support specialist and press _Invite_.
+Insert the email of the remote support specialist and press _Invite_.
 
 <div class="text-center">
   <img src="pictures/bli-remote-support-specialist/email-input.png" width="30%" height="auto" class="img-fluid" alt="Remote support specialist insert email"/>
 </div>
 <br>
 
-After accepting the invitation, the installer will visualize the project at [Khimo.com](https://www.khimo.com/installer), being able to control and get the state of all devices.
+After accepting the invitation, the installer will visualize the project at [Khimo.com](https://www.khimo.com/installer), being able to control and check the state of all devices.
 
 ### Invite through setup web-interface | _PRO_ only
 
@@ -41,7 +39,7 @@ Invitation through _BeoLiving Intelligence_ in _PRO_ mode is done at **Setup > K
 </div>
 <br>
 
-Clicking at "**invite**", it's possible to set the email of the remote specialist you want to invite.
+By clicking at "**invite**" you can send the invitation email to the remote specialist.
 
 <div class="text-center">
   <img src="pictures/bli-remote-support-specialist/web-invitation-2.png" class="img-fluid" alt="Remote support specialist invitation"/>
@@ -50,18 +48,23 @@ Clicking at "**invite**", it's possible to set the email of the remote specialis
 
 ## State monitoring and support actions
 
-After loggin in at [Khimo.com/installer](https://www.khimo.com/installer), remote support specialist is capable to check for each device present in the installation the following _NetworkLink_ devices states:
+After logging into [Khimo.com/installer](https://www.khimo.com/installer), the remote suport specialist will be able to check the following information on the available _NetworkLink_ devices:
 
-+ _Connection state_: Connection status of the device
-+ _Playing state_: Render control state of the device
-+ _Selected source_: Source being played by the device
-+ _Source ID_: Origin Source ID being played
-+ _Volume_: Volume level of device
++ _Connection state_: Displays if the device is online or offline.
++ _Playing state_: Shows the current playing state of the device.
++ _Selected source_: Displays the source being played by the device, if any.
++ _Source ID_: Displays the Source identifier of the source being played by the device.
++ _Volume_: Shows the volume level of device.
 
 <div class="text-center">
   <img src="pictures/bli-remote-support-specialist/remote-specialist-page.png" class="img-fluid" alt="Remote specialist page"/>
 </div>
 <br>
 
-Sources that could be selected depends on each device. In some products, it is also possible to remotely trigger a _Reboot_ command from the _actions menu_.
+The remote support specialis will be able to perform the following actions on the devices:
+
++ _Volume increase or decrease_.
++ _Standby the device_.
++ _Reboot the device_, if the device supports it.
++ _Select a source on the device_.
 
