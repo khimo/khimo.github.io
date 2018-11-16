@@ -130,8 +130,10 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 </table>
 <a id="Basic"/>
 
+
+<a id="how-to-upgrade-beoliving-intelligence-to-pro-mode"/><!-- This link is used in the LaunchPackage pdf --//>
+
 ### How do I upgrade the _BeoLiving Intelligence_ to PRO mode?
-<a id="how-to-upgrade-beoliving-intelligence-to-pro-mode"/>
 
 Being logged as "_admin_" user ([How do I access the setup interface as admin?](#admin-password)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_.
 In _Product information_, the _License type_ shows the current license of your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect you to *Khimo.com*, where you can start the upgrade process via _PayPal_.
