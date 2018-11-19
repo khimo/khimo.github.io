@@ -4,7 +4,7 @@ title: BeoLiving documentation
 
 A focus on making life easier and more enjoyable has given rise to **BeoLiving Intelligence**, the first Plug & Play smart home 
 controller for _Bang & Olufsen_ products. **BeoLiving Intelligence**, [successor of _BeoLink Gateway_](http://www.ikatu.us/beolink-gateway.html), 
-is the new creation resulting from the _Bang & Olufsen_ and _Khimo_ partnership which dates back to 2006. **BeoLiving Intelligence** expands the 
+is the latest creation resulting from the _Bang & Olufsen_ and _Khimo_ partnership which dates back to 2006. **BeoLiving Intelligence** expands the 
 way _Bang & Olufsen_ products can work together, as well as allowing them to interact with many other brands of consumer electronic devices.
 
 Together with the beautifully sculpted, simple and intuitive, companion **BeoLiving App**, all the magic that **BeoLiving Intelligence** allows 
