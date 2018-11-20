@@ -12,7 +12,9 @@ is directly accessible and configurable at the palm of your hand. Use the **BeoL
 & Olufsen** products alongside with the most popular Home Automation brands.
 
 Out of the box, **BeoLiving Intelligence** comes in **ESSENTIAL** mode: easy to configure, install and start living the experience. But this is 
-just a sample of all what **BeoLiving Intelligence** can do: by upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, 
+just a sample of all what **BeoLiving Intelligence** can do. 
+
+By upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, 
 you will have access to a full professional smart home solution.
 
 The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL** and **BeoLiving Intelligence PRO**:
@@ -150,10 +152,10 @@ controllers and instructions on how to migrate from one controller to another.
 
 ## Start now!
 
-**BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it is ready to shine.
+**BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it's ready to shine.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
-possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
+possibilities **BeoLiving Intelligence** has to offer. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
  _Alexa_. <!-- and _IFTTT_.-->
 
 <div class="row justify-content-md-center">
@@ -212,7 +214,7 @@ possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide l
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
 functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver. _BLI for BLGW 
-installers_ shows main differences between both controllers and explains the simply way to migrate from _BeoLink Gateway_ to _BeoLiving Intelligence_.
+installers_ shows main differences between both controllers and explains the simple way to migrate from _BeoLink Gateway_ to _BeoLiving Intelligence_.
 
 <div class="row justify-content-md-center">
   <div class="col-lg-4"> 
@@ -275,7 +277,7 @@ are available.
   
 ## Troubleshooting
 
-Do you have any question? You can find answers to the most common questions in our _Frequently Asked Question_ document. If you are experiencing 
+Do you have any questions? You can find answers to the most common questions in our _Frequently Asked Questions_ document. If you are experiencing 
 troubles or malfunction, please refer to our _Troubleshooting Guide_.
 
 <div class="row justify-content-md-center">
