@@ -5,15 +5,14 @@ layout: pagetoc
 
 ## Introduction
 
-The scope of this guide comprises an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface used for 
-configuration/programming your setup and "How to's" of different features. _BeoLiving Intelligence_ in PRO mode has all of its capabilities 
-unblocked and this guide will let you exploit your Home Automation controller to its maximum.
+The scope of this guide is an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface (used for 
+configuration/programming your setup) and "How to's" for different features. _BeoLiving Intelligence_ in PRO mode unblocks all its capabilities,  and this guide will let you exploit your Home Automation controller to its maximum.
 
-Before reading this guide, it's recommended reading [BeoLiving Intelligence Quick Setup Guide](bli-quick-setup-guide.md) and [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) for better understanding of some concepts and useful information, not included in this guide.
+Before reading this guide, it's recommended to have read the [BeoLiving Intelligence Quick Setup Guide](bli-quick-setup-guide.md) and the [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) for a better understanding of some concepts and useful information, not included in this guide.
 
-_BeoLiving Intelligence_ in _PRO_ mode enables a unique capability of integrating Bang & Olufsen Network Link systems (audio and video products) with some of the most popular Home Automation systems such as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for _BeoLiving Intelligence_ users.
+_BeoLiving Intelligence_ in _PRO_ mode enables the unique capability of integrating Bang & Olufsen Network Link systems (audio and video products) with some of the most popular Home Automation systems such as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for _BeoLiving Intelligence_ users.
 
-_BeoLiving Intelligence PRO_'s web interface is the most important tool for configuration and programming your installation. Certain degree of configuration could be made through BeoLiving App but it's targeted for user use.
+_BeoLiving Intelligence PRO_'s web interface is the most important tool for configuration and programming your installation. Certain degree of configuration could be made through BeoLiving App but it's mainly targeted for user use.
 
 ## Terminology
 
@@ -36,9 +35,9 @@ TODO: Diagram
 
 ## Set up the BeoLiving Intelligence PRO
 
-Setup interface is the most important tool for configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
+The setup interface is the most important tool for the configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
 
-In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage. By default, _admin_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function (2). After a successfully button function input, _admin_ password will be _"admin"_ during the next 5 minutes (also for security purposes) and after logging in you will be asked to change it.
+The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage. By default, _admin's_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function number 2 ([See button functions](bli-advanced-user-guide.md)). After a successfull button function input, _admin_ password will be _"admin"_ for the next 5 minutes (also for security purposes) and as soon as you log in you will be asked to change it.
 
 ### Project info
 
@@ -51,7 +50,8 @@ In _BLI PRO_ exists a special user _admin_ meant for installer/technician usage.
 The Project page is used to state information regarding the project BeoLiving Intelligence is part of. This information could be useful in any later service situation.
 
 + **Project name**: Name for the project.
-+ **Display name**: Name of the _BLI PRO_ that will be shown in all interfaces (e.g.: BeoLiving App, Webpanel, etc.). Examples of display name are: the family name or the street address of the house.
++ **Display name**: Name of the _BLI PRO_ that will be shown in all interfaces (e.g.: BeoLiving App, Webpanel, etc.). 
+>> For example, a display name could be the family name or the street address of the house.
 + **Installer name**: Name of installer/company in charge of this project for reference.
 + **Installer contact**: Any type of contact information to reach the installer/company in charge of this project for further questions/comments.
 
@@ -59,7 +59,7 @@ The Project page is used to state information regarding the project BeoLiving In
 
 #### Date & Time
 
-Correct time setting is important for the monitoring of events, astronomic clock events and for time stamping at error log.
+Correct time setting is important for the monitoring of events, astronomic clock events and for error log time stamping.
 
 <br>
 <div class="text-center">
@@ -69,13 +69,13 @@ Correct time setting is important for the monitoring of events, astronomic clock
 
 ##### Date & Time settings 
 
-+ **Date**: Date corresponded with the selected **Time zone**.
-+ **Time**: Time corresponded with the selected **Time zone**.
++ **Date**: Date corresponing to the selected **Time zone**.
++ **Time**: Time corresponing to the selected **Time zone**.
 + **Time zone**: Setting for the time zone is chosen from the drop down list. Choices are made based on an appropriate match of "Continent"/"City".
 
 ##### Location settings (Astronomical Clock and Location events)
 
-The Location settings are used by the _BLI PRO_ to calculate, e.g. sunrise and sunset. Events can then be set relative to this. Latitude and 
+The location settings are used by the _BLI PRO_ to calculate time related events (e.g. sunrise and sunset). Events can then be set relative to this. Latitude and 
 longitude are the settings for the astronomic clock. The settings are in decimal degrees. Values are entered in format ‘degrees.minutes’. 
 Seconds are only used to round the minute-value.
 Positive values are for North and East.
@@ -92,13 +92,13 @@ Negative values are for South and West.
 Home Integration protocol allow other devices to interact with _BLI_. This protocol is used by mobile applications or by other 
 home automation controllers.
 
-Home Integration protocol provides two-way control of all resource types. This protocol can be enabled on the local network, with mandatory 
-authentication. You should provide a TCP port, which defaults to 9100. Port numbers below 1024 are reserved for standard TCP services, so use 
+Home Integration protocols provide two-way control of all resource types. This protocol can be enabled on the local network, with mandatory 
+authentication. You should provide a TCP port (default port is 9100). Port numbers below 1024 are reserved for standard TCP services, so use 
 values above this range.
 
 #### Network
 
-Network page contains network connectivity configuration of _BLI_.
+The network page contains the _BLI's_ network connectivity configuration.
 
 <br>
 <div class="text-center">
@@ -106,21 +106,21 @@ Network page contains network connectivity configuration of _BLI_.
 </div>
 <br>
 
-The following options are:
+The following options are available:
 
-+ **Hostname**: Name of _BLI_ as it is found in the LAN.
++ **Hostname**: _BLI's_ name as it's found in the LAN.
 + **DHCP**: Enable/Disable _DHCP_ mode. Per factory default, _DHCP_ mode is enabled.
 + **Address**: If _DHCP_ is disabled, the static _BLI_ network address could be set in _Address_.
-+ **Mask**: Mask related to _BLI_ LAN.
-+ **DNS Server**: _DNS Server_ network address in LAN.
++ **Mask**: Mask related to the _BLI's_ LAN.
++ **DNS Server**: _DNS Server_ network address in the LAN.
 + **Gateway**: Gateway address in LAN.
 
-The settings must be applied by pressing the _Apply_ button.
+> The settings must be confirmed by clicking on _Apply_.
 
 #### Khimo cloud link
 
 _BLI_ is configured from factory to be connected to _Khimo's_ cloud service. This service is used to enable features like 
-voice control (e.g.: Amazon Alexa) and remote access to your installation in case _BLI_ being in _PRO_ mode. If this
+voice control (e.g.: Amazon Alexa) and remote access to your installation (with _BLI PRO_ mode). If this
  service is disabled those features will no longer work.
 
 <br>
@@ -129,11 +129,11 @@ voice control (e.g.: Amazon Alexa) and remote access to your installation in cas
 </div>
 <br>
 
-Access restrictions regarding which zones are able for being controlled could be set from the selection of an specific _BLI_ user. This means 
-that all accounts will share same zone access restrictions than the selected user. Zone access restriction could be modified in 
+Access restrictions regarding which zones will be able to be controlled could be set from the selection of a specific _BLI_ user. This means 
+that all accounts will share the same zone access restrictions as the selected user. Zone access restriction could be modified in the
 [Interfaces](#interfaces) page.
 
-To access remotely to your installation through _BLApp_, remote access must be enabled in the application.
+To remotely access your installation through _BLApp_, remote access must be enabled in the application.
 
 At the bottom of this page, a list with the current remote users is displayed.
 
@@ -145,10 +145,10 @@ At the bottom of this page, a list with the current remote users is displayed.
 
 ##### Enable remote access in BeoLiving App
 
-To enable _Remote Access_ in _BLApp_ you must:
+To enable _Remote Access_ in the _BLApp_ you must:
 
-+ Go to the _Settings_ menu and select your _BLI_.
-+ Go to _Device Settings_ and press _Request Remote Access_.
+1. Go to the _Settings_ menu and select your _BLI_.
+1. Go to _Device Settings_ and press _Request Remote Access_.
 
 The next video shows interactively how to accomplish this feature:
 
@@ -171,17 +171,18 @@ The next video shows interactively how to accomplish this feature:
 _BLI PRO_ can have any number of System modes, which can be used to enable or disable the execution of macros, as follows:
 
 + System modes can be activated by the _BLI PRO_ command SET MODE.
-+ Any number of modes can exist, but at most one can be active any given time.
++ Any number of modes can exist, but only one can be active at any given time.
 + A macro can have any number of modes, and a mode can be set to any number of macros.
 + A macro with no mode set will behave normally.
 + If a macro has one or more modes set, then it will be triggered by events only if one of those modes is active.
-+ Typical example of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.
+
+>> Typical examples of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.
 
 #### Units
 
-The system temperature units can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the _BLI PRO_. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.
+The systems temperature unit can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the _BLI PRO_. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.
 
-This setting only affects what is displayed on _BLI PRO_ user interfaces. It does not affect the units displayed on the actual thermostats.
+This setting only affects what is displayed on the _BLI PRO_ user interface. It does not affect the units displayed on the actual thermostats.
 
 ### Zones
 
@@ -201,7 +202,7 @@ background in the left column.
 </div>
 <br>
 
-Areas are added using the "_Add new area_" button. When adding an area, a name for this can be stated. An area can be deleted by activating the 
+Areas are added using the "_Add new area_" button. At this point the area's name may be stated. An area can be deleted by activating the 
 "**x**" sign in the greyed area-boxes and renamed by activating the edition-sign next to "**x**" sign. Zones are added to the areas by activating the "**+**" sign in the greyed area-boxes. 
 
 #### Zone settings
@@ -214,31 +215,31 @@ Areas are added using the "_Add new area_" button. When adding an area, a name f
 
 + **Name**: Name of zone. In _BLI_ a zone can be one or more rooms in the house or even part of a room, e.g. : living room, kitchen, bedroom. The 
 Name is stated as desired.
-+ **Area**: Drop down list of all existent _Area_´s in the configuration to select where to place the _Zone_.
++ **Area**: Drop down list of all existent _Areas_ in the configuration to select where to place the _Zone_.
 + **Icon**: An icon can be assigned that will be visible in the user interfaces, for easy recognition. 
-+ **Delete**: _Zone_ selected from the structure can be deleted by activating the _Delete_ button. Systems and resources in a zone that shall be 
-deleted must be rearranged or removed.
++ **Delete**: A selected _zone_ can be deleted by activating the _Delete_ button. Systems and resources in the zone that is to be deleted must be rearranged or removed.
 
 #### Main area
 
-_Main_ area has two special zones: 
+The _main_ area has two special zones: 
 
-+ **global**: placeholder zone for systems and their resources that apply to the entire house (recommended; although systems may be placed in 
++ **global**: placeholder zone for systems (and their resources) that apply to the entire house (recommended; although systems may be placed in 
 areas/zones as desired. Likewise macros that act on several zones at a time such as ‘Party mode’, ‘Welcome’ and ‘Good Night’ may all be added 
 to the ‘Global’ zone. The _global_ zone cannot be deleted and cannot be assigned an icon).
-+ **unassigned resources**: placeholder zone for automatically discovered B&O products. _BLI_ discover and adds all products found in its network.
-Is up to the installer to move those products into their respective _Area/Zone_.
++ **unassigned resources**: placeholder zone for automatically discovered B&O products. _BLI_ discovers and adds all products found in its network.
+It's up to the installer to move those products into their respective _Area/Zone_.
 
 ### Systems
 
-The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink system and _HA_ systems are ‘systems’. Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](../bli-help-files/drivers/main.md) page to know all _HA_ systems that _BLI PRO_ supports.
+The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink system and _HA_ systems are ‘systems’. 
+> Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](../bli-help-files/drivers/main.md) page to know all _HA_ systems that _BLI PRO_ supports.
 
 Each system has in _BLI PRO_ a correspondent driver. There are two driver types:
 
-+ Native driver that is included in _BLI PRO_ firmware and is ready to be added in your _BLI_.
-+ External driver located in our cloud. _BLI PRO_ will download and install the external driver if desired.
++ _Native driver_,  included in _BLI PRO_ firmware and ready to be added to your _BLI_.
++ _External driver_, located in our cloud. _BLI PRO_ will download and install the external driver if desired.
 
-In this section, only _Native drivers_ will be included. Go to [External drivers](#external-drivers) section for more information.
+In this section, only _Native drivers_ will be included. Go to [External drivers](#external-drivers) for more information.
 
 #### System add
 
@@ -248,10 +249,10 @@ In this section, only _Native drivers_ will be included. Go to [External drivers
 </div>
 <br>
 
-Select "**+**" sign to add a new _HA_ system from the drop down list and press _Add system_ button. A System may be added in a specific _Area/Zone_ if only serves functions there, else if a system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
+Select "**+**" sign to add a new _HA_ system from the drop down list and click on _Add system_. A System may be added in a specific _Area/Zone_ if it only serves functions there. If the system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
 systems can be added, except internal systems, which only appear once in the installation, such as _BeoLink_ and _Virtual Resources_ that are 
-added by default. When selecting a system added to one zone, it is possible to select another zone in the Zone drop down list, by which the system is moved to that zone. A system can be renamed and also the configuration and connection settings can be changed. Systems are assigned to 
-zones by the installer, but they are invisible in the user interfaces. For example, assigning a System to a specific zone could be used by the installer to locate system hardware at the installation.
+added by default. When selecting a system added to a certain zone, it's possible to select another zone in the _Zone drop down list_, by which the system is moved to that zone. A system can be renamed and its configuration and connection settings can be changed. Systems are assigned to 
+zones by the installer, but they are invisible in the users interface. For example, assigning a System to a specific zone could be used by the installer to locate system hardware in the installation.
 
 #### Connection settings
 
@@ -261,8 +262,17 @@ zones by the installer, but they are invisible in the user interfaces. For examp
 </div>
 <br>
 
-Connection settings depend on each system. Examples of Connection settings are: Connection type, Login, Password, Host, Port, Check server 
-certificate, etc. For specific details on different systems please refer to the online help. The default values must be changed according to the settings used in the installation. Press _Apply_ button to confirm settings.
+Connection settings depend on each system. Examples of Connection settings are: 
++ Connection type
++ Login
++ Password
++ Host
++ Port
++ Check server certificate
+
+> For specific details on different systems please refer to the online help. The default values must be changed according to the settings used in the installation. 
+
+Press _Apply_ button to confirm settings.
 
 #### System status icons
 
@@ -272,7 +282,7 @@ certificate, etc. For specific details on different systems please refer to the 
 </div>
 <br>
 
-For each system installed, a text string icon is shown in the bottom of the screen. The status of each system is indicated by a colour of the 
+For each system installed, a text string icon is shown in the bottom of the screen. The status of each system is indicated by the colour of the 
 background of the text string icon. 
 
 <table class="table">
@@ -302,11 +312,12 @@ background of the text string icon.
   </tbody>
 </table>
 
-This gives a quick status indication on each system. Moving the mouse pointer to each icon displays a pop-up that displays specific logs for that system. If a system cannot connect, the system logs should be checked for information about the problem.
+This gives a quick status indication on each system. Moving the mouse pointer to each icon displays a pop-up that shows specific logs for that system. 
+> If a system cannot connect, the system logs should be checked for information about the problem.
 
 ### Resources
 
-Resources are provided from the systems installed:
+Resources are provided by the installed systems:
 
 + BeoLink system (_NL_ A/V products and its connected sources) 
 + Home Automation system(s) (e.g. buttons, sensors) 
@@ -326,7 +337,7 @@ The resources have the following parameters:
 + **Zone**: The zone to which the resource belongs.
 + **Name**: Enter a name to ease identification of the resources.
 + **Type**: Select type from the drop down list. The only available resource type is _NL_ product.
-+ **Address**: Unique identification of a resource. The format depends on the system. For _NL_ products is the serial number.
++ **Address**: Unique identification of a resource. The format depends on the system. For _NL_ products, address will be the serial number.
 + **Force Discovery**: Forces the product discovery in case it could not be done automatically.
 
 #### Home Automation system resources
@@ -342,22 +353,28 @@ The resources have the following parameters:
 + **Zone**: The zone to which the resource belongs.
 + **Name**: Name to ease identification of the resources.
 + **Type**: Resource type. The type of available resources depends on the actual system, for instance: button, dimmer, shade 
-etc. E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a status indication (e.g. an LED that can be On or Off). Some systems 
+etc. 
+>> E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a status indication (e.g. a LED that can be On or Off). 
+
+Some systems 
 can extend the standard button to provide extra features (see this in the drop down list). The purpose of having standard resource types is that 
-such common set of features are shared by the most supported systems.
-+ **Address**: Unique identification of a resource. The format depends on the _HA_ system - using various number scheme.
-+ **Capture**: Used to capture resources by their activity captured by _BLI_. Resource selected from the capture list are added automatically to 
+such common set of features are shared by most supported systems.
+
++ **Address**: Unique identification of a resource. The format depends on the _HA_ system - using various number schemes.
++ **Capture**: Used to capture resources by their activity, captured by the _BLI_. Resource selected from the capture list are added automatically to 
 the table of defined resources. The capture functionality is supported by most systems.
-+ **Import resources**: Used to import _HA_ system resources into _BLI_ uploading an specific _HA_ system file or just requesting them directly. 
-This feature depends on each _HA_ system driver. 
++ **Import resources**: Used to import _HA_ system resources into _BLI_ uploading a specific _HA_ system file or just requesting them directly. This feature depends on each _HA_ system driver. 
 
 #### Virtual resources
 
 An example of a _Virtual Resource_ is a button on the user interface (_BLApp_, _TV overlay_, _Webpanel_ - see [Interfaces](#interfaces) 
-section for more information) e.g. a virtual button for cinema scene, or a boolean variable to indicate that a specific condition has been reached
-. _Virtual Resources_ makes possible to define buttons and variables of String, Integer and Boolean types for systems, without implementing these 
-directly. The _BLApp_ currently uses virtual buttons for displaying scene buttons. _Virtual Resources_ have no functionality by themselves. 
-[Macros](#macros) must be defined to link user actions on a virtual resource, with events and commands in the systems.
+section for more information).
+> E.g. a virtual button for cinema scene, or a boolean variable to indicate that a specific condition has been reached. 
+_Virtual Resources_ make it possible to define buttons and variables of String, Integer and Boolean types for systems, without implementing these 
+directly. 
+
+The _BLApp_ currently uses virtual buttons to display scene buttons. _Virtual Resources_ have no functionality by themselves. 
+[Macros](#macros) must be defined to link user actions on a virtual resource, with events and commands in the system.
 
 <br>
 <div class="text-center">
@@ -370,7 +387,7 @@ The address of a _Virtual Resource_ is a unique number and if isn't set manually
 
 ### Macros {#macros}
 
-The interaction between the devices connected to the _BLI_ is defined by means of _Macros_. A _Macro_ consists in a set of events and commands. 
+The interaction between the devices connected to the _BLI_ is defined by means of a _Macro_. A _Macro_ consists in a set of events and commands. 
 When any of the events that are defined in a _Macro_ occur (e.g. a key press on a keypad; a Control Command on a Bang & Olufsen remote control etc
 .), the macro will be triggered. This means that the commands in the macro will be executed in order. 
 
@@ -381,27 +398,27 @@ When any of the events that are defined in a _Macro_ occur (e.g. a key press on 
 <br>
 
 A _Macro_ is also assigned to an _Area/Zone_ to which it belongs even if it handles activity outside the zone. Having _Macros_ assigned to zones 
-helps when setting up user interfaces. The left column shows all _Macros_ contained in each _Area/Zone_. To add a _Macro_ in a specific _Area/Zone_ press "**+**" sign button in the column entry. 
+helps when setting up user interfaces. The left column shows all _Macros_ contained in each _Area/Zone_. To add a _Macro_ in a specific _Area/Zone_ press "**+**" in the column entry. 
 
-For each macro, the next buttons are available:
+For each macro, the next options are available:
 
-+ **Add event**: used to add an _Event_ to a _Macro_. The two buttons (see above) that can be used to set the cinema scene. See 
++ **Add event**: used to add an _Event_ to a _Macro_. The two buttons (see figure above) can be used to set the cinema scene. See 
 [Resource Event](#resource-event) section.
 + **Capture**: when the _Capture_ button is pressed, all system/resource events fired from that moment will be displayed so that they can be added.
-Example of events captured could be: the press of a virtual or physical button, the source selection in a A/V renderer device.
+>> An example of captured events could be: the press of a virtual or physical button or the source selection in a A/V renderer device.
+
 + **Add command**: used to define the commands of a _Macro_. See [Resource Command](#resource-command) section.
 + **Clone**: creates an exact copy of the _Macro_ adding "_- Clone n_" as suffix to the cloned _Macro_ name, where _n_ is the number of clones made.
 + **Remove**: deletes _Macro_.
 + **Fire**: fires/triggers _Macro_.
 + **Convert to code**: switches _Macro_ commands configuration into a _Lua_ editor, turning existant _Macro_ commands into _Lua_ code. _Lua_ 
 commands help is showed after pressing _Show Help_ button. Pressing _Convert to table_ will convert _Lua_ commands into table format.
-+ **Cut/Copy/Paste**: when selecting an event/command (pressing left side of event/command), _Cut/Copy/Paste_ buttons become available to use. The
-purpose, as the meaning of their names illustrate, are for _Cut/Copy/Paste_ _Events_ or _Commands_ on the same _Macro_ or between _Macros_.     
++ **Cut/Copy/Paste**: when selecting an event/command (pressing left side of the event/command), _Cut/Copy/Paste_ buttons become available. The
+purpose, as the meaning of their names illustrate, is to _Cut/Copy/Paste_ _Events_ or _Commands_ on the same _Macro_ or between _Macros_.     
 
 #### Resource Event {#resource-event}
 
-When pressing the _Add event_ button, the window expands, fields for the _Resource Event_ are shown and are filled in by making selections 
-from the drop down lists with each entry field. The illustration is an example only and the drop down list may vary depending on the choices made.
+When pressing the _Add event_ button, the window expands, fields for the _Resource Event_ are shown and are filled in by selecting from the drop down lists with each entry field. The illustration is an example only and the drop down list may vary depending on the choices made.
 
 <br>
 <div class="text-center">
@@ -415,7 +432,7 @@ The list of events (for triggering a macro) can be filled in manually or selecte
 
 There are three types of events:
 
-+ **Generic**: Generic events apply to a number similar events throughout the house. See [Generic Programming](#generic-programming) section for
++ **Generic**: Generic events apply to a number of similar events throughout the house. See [Generic Programming](#generic-programming) section for
 more information.
 + **Resource**: Resource events match a specific event on a specific resource.
 + **System**: System events include calendar and astronomical clock events and system connectivity events.
@@ -440,22 +457,23 @@ There are four types of commands:
 + **Generic**: applies to any area or zone, with the possibility of selecting the same area or zone where the event was generated.
 + **Resource**: applies to a specific resource.
 + **System**: acts directly on the systems, which support them.
-+ **Macro**: calls other macros, or act on other macros.
++ **Macro**: calls other macros, or acts on other macros.
 
 #### Actions on macros
 
-A macro can contain delays between commands and therefore take some time to complete. What happens if during the macro execution another related 
-macro is called? Several commands act on macros:
+Several command options are available to act on macros:
 
 + **FIRE**: Call the macro, as if an event for that macro had happened. This is the default action.
-+ **CANCEL**: Will stop executing an ongoing macro.
-+ **COLLAPSE**: Will execute remaining commands in an ongoing macro, but with no delays between commands.
++ **CANCEL**: Will stop executing the ongoing macro.
++ **COLLAPSE**: Will execute remaining commands in the ongoing macro, but with no delays between commands.
 
-Firing another macro makes it possibly to take advantage of existing functionality without having to maintain several copies inside different
-macros. Although not recommended, it is possible to make a loop where a macro calls itself as the last command, e.g. switching Off growth light
-for plants; night and day temperature control etc. It is required to make a macro that stops such loops.
+> Although not recommended, it is possible to make a loop where a macro calls itself as the last command, e.g. switching Off growth light
+for plants; night and day temperature control, etc. It is required to make a macro that stops such loops.
 
 #### Macro-considerations
+
+> Firing a new macro makes it possible to take advantage of a existing functionality without having to maintain several copies inside different
+macros. 
 
 As a macro execution can take some time due to delays between commands, it is important to take care of what could happen if another macro is
 triggered during the execution. 
@@ -484,10 +502,10 @@ The macro screen will signal the presence of orphan commands or events by colour
 #### Generic programming
 
 Standard events and commands apply to a single specific resource. _Generic programming_ makes it possible to refer to a whole set of resources at 
-once. E.g.: it is possible to specify:
-
-+ A single command to mute all products.
-+ An event specification that matches any button pressed.
+once. 
+> E.g.: It's possible to specify:
+> + A single command to mute all products.
+> + An event specification that matches any button pressed.
 
 This has the following advantages:
 
@@ -497,7 +515,7 @@ can be reduced.
 
 _NOTE_: Generic events and commands are matched against all possible resources every time an event occurs or a command is executed. If the name of
  a resource is changed on a working configuration, the resource will no longer match an existing generic event or command. Therefore, it is 
-important to be consistent when naming resources. It is also important to avoid to spoil functionality by renaming resources.
+important to be consistent when naming resources. It is also important to avoid spoiling functionality by renaming resources.
 
 #### Command coding
 
