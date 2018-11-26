@@ -5,3 +5,15 @@
 {
   padding-top:60px;
 }
+
+blockquote {
+    margin: 0 0 1rem;
+    font-style: italic;
+    color: darkgray;
+    border-left: 4px solid lightgrey;
+    padding: 2px 1ex;
+}
+
+blockquote p { 
+  margin-bottom:0;
+}

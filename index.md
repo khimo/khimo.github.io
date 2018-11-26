@@ -7,12 +7,14 @@ controller for _Bang & Olufsen_ products. **BeoLiving Intelligence**, [successor
 is the latest creation resulting from the _Bang & Olufsen_ and _Khimo_ partnership which dates back to 2006. **BeoLiving Intelligence** expands the 
 way _Bang & Olufsen_ products can work together, as well as allowing them to interact with many other brands of consumer electronic devices.
 
-Together with the beautifully sculpted, simple and intuitive, companion **BeoLiving App**, all the magic that **BeoLiving Intelligence** allows 
-is directly accessible and configurable at the palm of your hand. Use the **BeoLiving App** in your phone or tablet to easily control your **Bang 
-& Olufsen** products alongside with the most popular Home Automation brands.
+Together with the beautifully sculpted, simple and intuitive, companion **BeoLiving App**, all the magic **BeoLiving Intelligence** allows 
+is directly accessible and configurable at arm's reach. Use the **BeoLiving App** in your phone or tablet to easily control your **Bang 
+& Olufsen** products alongside the most popular Home Automation brands.
 
 Out of the box, **BeoLiving Intelligence** comes in **ESSENTIAL** mode: easy to configure, install and start living the experience. But this is 
-just a sample of all what **BeoLiving Intelligence** can do: by upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, 
+just a taste of all what **BeoLiving Intelligence** can do. 
+
+By upgrading to **BeoLiving Intelligence PRO** through a one-time paid license fee, 
 you will have access to a full professional smart home solution.
 
 The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL** and **BeoLiving Intelligence PRO**:
@@ -150,10 +152,10 @@ controllers and instructions on how to migrate from one controller to another.
 
 ## Start now!
 
-**BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it is ready to shine.
+**BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it's ready to shine.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
-possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
+possibilities **BeoLiving Intelligence** has to offer. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
  _Alexa_. <!-- and _IFTTT_.-->
 
 <div class="row justify-content-md-center">
@@ -212,7 +214,7 @@ possibilities of **BeoLiving Intelligence**. The _Link to third parties_ guide l
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
 functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver. _BLI for BLGW 
-installers_ shows main differences between both controllers and explains the simply way to migrate from _BeoLink Gateway_ to _BeoLiving Intelligence_.
+installers_ shows the main differences between both controllers and explains the simplest way to migrate from _BeoLink Gateway_ to _BeoLiving Intelligence_.
 
 <div class="row justify-content-md-center">
   <div class="col-lg-4"> 
@@ -252,9 +254,9 @@ installers_ shows main differences between both controllers and explains the sim
 
 ## Remote support
 
-With **BeoLiving Intelligence**, now you can invite an installer through _BeoLiving App_ or its web-interface (_PRO_) to get remote support of all
- _Bang & Olufsen's NetworkLink products_ in your installation. This new role is what we call "_Remote support specialist_". At the following 
-document you will find how to invite a remote support specialist for your _BeoLiving Intelligence_ and which type of control and products states 
+With **BeoLiving Intelligence**, you can now invite an installer through the _BeoLiving App_ or its web-interface (_PRO_) to get remote support of all
+ _Bang & Olufsen NetworkLink products_ in your installation. This new role is what we call "_Remote support specialist_". In the following 
+document you will find out how to grant a remote support specialist access to your _BeoLiving Intelligence_ and which type of control and product states 
 are available.
 
 <div class="row justify-content-md-center">
@@ -275,7 +277,7 @@ are available.
   
 ## Troubleshooting
 
-Do you have any question? You can find answers to the most common questions in our _Frequently Asked Question_ document. If you are experiencing 
+Have any questions? You can find answers to the most common questions in our _Frequently Asked Questions_ document. If you are experiencing 
 troubles or malfunction, please refer to our _Troubleshooting Guide_.
 
 <div class="row justify-content-md-center">

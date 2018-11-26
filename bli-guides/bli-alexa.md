@@ -5,7 +5,7 @@ layout: pagetoc
 
 ## Introduction
 
-This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)). 
+This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through the _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)). 
 
 **This feature does not depend on the mode of the _BeoLiving Intelligence_ (ESSENTIAL or PRO)**.
  
@@ -16,11 +16,11 @@ This guide includes a description of the available voice commands and devices yo
 
 ## Discovery
 
-The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_". _Alexa_ will then communicate with your _BLI_ and get all the supported devices. 
+The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_". _Alexa_ will then communicate with your _BLI_ and get all supported devices. 
 
 ## Device name reference
 
-In the discovery process, _Alexa_ creates a name reference to each device as "_(BLI device zone name)_ \+ _(BLI device name)_".
+In the discovery process, _Alexa_ creates a name reference for each device as "_(BLI device zone name)_ \+ _(BLI device name)_".
 For example, if you have a light named "Light" included in a zone named "Kitchen", you can say "_Alexa, turn on kitchen light_" to turn it on.
 
 ## Commands
@@ -37,23 +37,23 @@ The following sections show the available commands for each device. Note that so
   + "_Alexa, dim (LIGHT-NAME) (BRIGHTNESS)%_"
   + _Description_: Sets the brightness level.
 
-+ Relative brightness adjust: 
++ Relative brightness adjustment: 
   + "_Alexa, increase/decrease (LIGHT-NAME) by (BRIGHTNESS)%_"
   + _Description_: Increases or decreases the brightness level.
 
 + Set color: 
   + "_Alexa, set the (LIGHT-NAME) to (COLOR)_"
-  + _Description_: Sets the light color.
+  + _Description_: Sets the light's color.
 
 ### Shades
 
-+ Turn on/off: 
-  + "_Alexa, raise/lower (SHADE-NAME)_"
-  + _Description_: Raises or lowers the shade.
++ Raise/lower: 
+  + "_Alexa, raise/lower (SHADES-NAME)_"
+  + _Description_: Raises or lowers the shades.
 
 + Set level: 
-  + "_Alexa, (SHADE-NAME) to (LEVEL)%_"
-  + _Description_: Sets shade level.
+  + "_Alexa, (SHADES-NAME) to (LEVEL)%_"
+  + _Description_: Sets the shades's level.
 
 ### Scenes/Macros
 
@@ -65,21 +65,20 @@ The following sections show the available commands for each device. Note that so
 
 + Turn off: 
   + "_Alexa, turn off (THERMOSTAT-NAME)_"
-  + _Description_: Sets thermostat into Off mode.
+  + _Description_: Sets thermostat to Off mode.
 
 + Set thermostat setpoint:
   + "_Alexa, set (THERMOSTAT-NAME) to (TEMPERATURE)_"
-  + _Description_: Sets the thermostat setpoint to a specific temperature.
+  + _Description_: Sets the thermostat's setpoint to a specific temperature.
   + _Rules_:
-    + In case the thermostat has two setpoints (THERMOSTAT\_2SP _BLI_ resource type) and being in "_Auto_" mode, upper setpoint (Cool setpoint) 
-    and lower setpoint (Heat setpoint) will be set +/- 2 degrees of (TEMPERATURE).     
-    + In _Eco_ mode, thermostat setpoints can not be set.
+    + In case the thermostat has two setpoints (THERMOSTAT\_2SP _BLI_ resource type) and it's in "_Auto_" mode, upper setpoint (Cool setpoint) will be set at +2 degrees of (TEMPERATURE) and lower setpoint (Heat setpoint) will be set at - 2 of (TEMPERATURE). 
+    + In _Eco_ mode, thermostat setpoints cannot be set.
 
 + Relative temperature setpoint adjust:
   + "_Alexa, increase/decrease temperature of (THERMOSTAT-NAME)_"
-  + _Description_: Increase/decrease the thermostat setpoints by a constant value.
+  + _Description_: Increase/decrease the thermostat's setpoints by a constant value.
   + _Rules_:
-    + Same rules than "Set thermostat setpoint" apply.
+    + Same rules as "Set thermostat setpoint" apply.
 
 + Set thermostat mode:
   + "_Alexa, set (THERMOSTAT-NAME) to (MODE)_"
@@ -95,7 +94,7 @@ The following sections show the available commands for each device. Note that so
 
 + Change channel by number:
   + "_Alexa, change channel to (CHANNEL-NUMBER) on (DEVICE-NAME)_"
-  + _Description_: Changes channel to number in the current source.
+  + _Description_: Changes channel to (CHANNEL-NUMBER) number in the current source.
 
 + Change channel by name:
   + "_Alexa, change channel to (CHANNEL-NAME) on (DEVICE-NAME)_"
@@ -115,7 +114,7 @@ The following sections show the available commands for each device. Note that so
 
 + Relative volume adjust:
   + "_Alexa, turn the volume up/down on (DEVICE-NAME) by (VOLUME-DELTA)_"
-  + _Description_: Increases or decreases the device volume by (VOLUME-DELTA).
+  + _Description_: Increases or decreases the device's volume by (VOLUME-DELTA).
 
 + Mute/Unmute:
   + "_Alexa, mute/unmute (DEVICE-NAME)_"
@@ -147,7 +146,7 @@ The ways to edit the Alexa's identifier device name are:
   
 ## Workarounds when input selection fails
 
-Alexa understands popular source names like "_YouTube_" or "_Android TV_" most of the time, but using uncommon names may prevent _Alexa_ to find the desirec match in the source list.
+Alexa understands popular source names like "_YouTube_" or "_Android TV_" most of the time, but using uncommon names may prevent _Alexa_ to find the desired match in the source list.
 
 When this happens, you can try one of the following approaches:
 
