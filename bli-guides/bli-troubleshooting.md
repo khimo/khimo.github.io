@@ -1,4 +1,7 @@
-# BeoLiving Intelligence Troubleshooting Guide
+---
+title: BeoLiving Intelligence Troubleshooting Guide
+layout: pagetoc
+---
 
 ## Introduction
 
