@@ -1,8 +1,9 @@
+---
+layout: page
+title: Help Drivers
+---
 {% for help_driver in site.help_drivers %}
-  <h2>
-    <a href="{{ help_driver.url }}">
-      {{ help_driver.title }}
-    </a>
-  </h2>
-  <p>{{ help_driver.content | markdownify }}</p>
+	<div class="help_driver">
+		<h2><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h2>
+	</div>
 {% endfor %}
