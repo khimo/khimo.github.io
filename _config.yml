@@ -15,6 +15,7 @@ markdown: kramdown
 collections:
   help_drivers:
     output: true
+    permalink: /help_drivers/:path/
   
 collections_dir: bli-help-files
 
