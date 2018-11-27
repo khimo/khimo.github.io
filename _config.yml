@@ -19,3 +19,7 @@ collections:
   
 collections_dir: bli-help-files
 
+#toc for jekyll
+plugins:
+  - jekyll-toc
+
