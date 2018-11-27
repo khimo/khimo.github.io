@@ -13,7 +13,7 @@ markdown: kramdown
 
 # Jekyll collections test
 collections:
-  drivers:
+  help_drivers:
     output: true
   
 collections_dir: bli-help-files
