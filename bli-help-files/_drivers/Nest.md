@@ -1,5 +1,7 @@
-Nest thermostat
-===============
+---
+title:  Nest thermostat
+layout: pagetoc
+---
 
 Connection to Nest REST API
 --------------------------------------
