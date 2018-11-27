@@ -10,3 +10,10 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+# Jekyll collections test
+collections:
+  - drivers
+  
+collections_dir: bli-help-files
+
