@@ -1,5 +1,6 @@
-tekmar
-===============================
+---
+title: tekmar
+---
 
 This driver supports communication with tekmar thermostats.
 
