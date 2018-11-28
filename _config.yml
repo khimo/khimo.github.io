@@ -13,8 +13,13 @@ markdown: kramdown
 
 # Jekyll collections test
 collections:
-  drivers:
+  help_drivers:
     output: true
+    permalink: /help_drivers/:path/
   
 collections_dir: bli-help-files
+
+#toc for jekyll
+plugins:
+  - jekyll-toc
 
