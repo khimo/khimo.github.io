@@ -1,5 +1,7 @@
-Clipsal
-=======
+-----
+title: Clipsal
+layout: pagetoc
+-----
 
 The Clipsal programming model defines *trigger groups* and *trigger
 actions* as a way to call lighting scenes. Any scene defined by a
