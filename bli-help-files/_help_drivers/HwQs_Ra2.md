@@ -1,5 +1,7 @@
-Lutron Homeworks QS and Radio Ra2
-===============================
+---
+title: Lutron Homeworks QS and Radio Ra2
+layout: pagetoc
+---
 
 This driver supports communication with Lutron HomeWorks QS, Lutron
 Radio RA2 and Lutron Grafik QS systems.
