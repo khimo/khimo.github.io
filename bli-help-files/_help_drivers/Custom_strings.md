@@ -1,5 +1,5 @@
 ---
-Custom strings driver
+title: Custom strings driver
 layout: pagetoc
 ---
 
