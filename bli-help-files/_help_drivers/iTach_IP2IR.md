@@ -1,5 +1,7 @@
-Global Cache iTach IP2IR
-===============================
+---
+title: Global Cache iTach IP2IR
+layout: pagetoc
+---
 
 This driver supports communication with a Global Cache iTach IP2IR system, allowing to control IR controlled devices.
 
