@@ -1,5 +1,7 @@
-OpenWeatherDriver
-=================
+---
+title: OpenWeatherDriver
+layout: pagetoc
+---
 
 This driver access current weather data for any location including over 200,000 cities.  
 It gets information from [OpenWeather's API](http://openweathermap.org/api "OpenWeather's API") and leaves it available for use by the BeoLiving Intelligence.
