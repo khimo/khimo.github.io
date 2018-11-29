@@ -1,5 +1,7 @@
-Twitter
-===============================
+---
+title: Twitter
+layout: pagetoc
+---
 
 This driver supports communication with Twitter Stream and Public API,
 allowing to post Twitter status messages, fire events and reply a message 
