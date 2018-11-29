@@ -1,5 +1,7 @@
-Smart-House
-===========
+---
+title: Smart-House
+layout: pagetoc
+---
 
 Connection to a Smart-House system
 ----------------------------------
