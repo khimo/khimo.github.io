@@ -1,5 +1,7 @@
+---
 Custom strings driver
-=====================
+layout: pagetoc
+---
 
 The Custom strings driver is intended to enable limited communication
 with unsupported home automation systems.
