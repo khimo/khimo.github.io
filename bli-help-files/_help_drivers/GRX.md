@@ -1,5 +1,7 @@
-Lutron Grafik Eye
-=================
+---
+title: Lutron Grafik Eye
+layout: pagetoc
+---
 
 Connecting to a Grafik Eye system
 ---------------------------------
