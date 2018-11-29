@@ -27,7 +27,7 @@
           <nav id="toc" class="sticky-top" style="top: 60px">
           </nav>
         </div>
-        {% include toc.html html=content sanitize=true h_min=1 h_max=2%}
+        {% include toc.html html=content sanitize=true h_min=1 h_max=2 ordered=true %}
 
         <div id="pagecontent" class="col-sm-9 pagecontent">
           {{ content }}
