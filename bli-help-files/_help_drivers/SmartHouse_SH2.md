@@ -1,5 +1,7 @@
-SmartHouse SH2
-===============
+---
+title: SmartHouse SH2
+layout: pagetoc
+---
 
 Connection to a SmartHouse SH2 system
 --------------------------------------
