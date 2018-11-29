@@ -1,5 +1,7 @@
-Lauritz Knudsen, IHC/Schneider, LexControl
-==========================================
+---
+title: Lauritz Knudsen, IHC/Schneider, LexControl
+layout: pagetoc
+---
 
 IHC/LexControl programming model consists of physical input and output
 devices plus function blocks. Function blocks implement the programming
