@@ -1,5 +1,7 @@
-Khimo
-===============================
+---
+title: Khimo
+layout: pagetoc
+---
 
 This driver supports communication with the Khimo system.
 
