@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+      {% include toc.html html=content %}
 
     </header>
 
@@ -29,7 +30,6 @@
         </div>
 
         <div id="pagecontent" class="col-sm-9 pagecontent">
-          {% include toc.html html=content %}
           {{ content }}
           </div>
       </div>
