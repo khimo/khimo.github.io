@@ -1,5 +1,7 @@
-Global Cache iTach IP2CC
-===============================
+---
+title: Global Cache iTach IP2CC
+layout: pagetoc
+---
 
 This driver supports communication with a Global Cache iTach IP2CC,
 allowing to control relay closures.
