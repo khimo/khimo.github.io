@@ -1,5 +1,7 @@
-Lutron HomeWorks Interactive
-============================
+---
+title: Lutron HomeWorks Interactive
+layout: pagetoc
+---
 
 Connecting to a HomeWorks processor
 -----------------------------------
