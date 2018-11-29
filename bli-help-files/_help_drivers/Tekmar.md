@@ -1,5 +1,6 @@
 ---
-title: tekmar
+title: Tekmar
+layout: pagetoc
 ---
 
 This driver supports communication with tekmar thermostats.
