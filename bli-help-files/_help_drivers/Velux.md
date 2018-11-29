@@ -1,5 +1,7 @@
-Velux
-=====
+---
+title: Velux
+layout: pagetoc
+---
 
 This driver provides communication with Velux systems through Ethernet interfaces.
 
