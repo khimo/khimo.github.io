@@ -1,5 +1,7 @@
-Lutron Grafik QS
-================
+---
+title: Lutron Grafik QS
+layout: pagetoc
+---
 
 Connecting to a Grafik QS system
 --------------------------------
