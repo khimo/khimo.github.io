@@ -37,14 +37,14 @@ Or,
 
 2. **Link to BLI App**
     - Independently of the chosen cloud service, after enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
-continue the linking process in the _BeoLiving App_ will be displayed if using an _iOS_ device or a QR code will be displayed if not.
+continue the linking process in the _BeoLiving App_ will be displayed if using an _iOS_ device, or a QR code will be displayed if not.
 
 
 **At this point to continue with the linking process you could choose between three methods:**
 
    - Continue with the _BeoLiving App_ (using an _iOS_ device) and then select which _BeoLiving Intelligence_ (if there is more than one in
 your network) to link. Then to finish the linking process it's necessary to go back to the third party's app. 
-   - Scan the QR code with the _BeoLiving App_.
+   - Scan the QR code with the _BeoLiving App_ following the site's instructions.
    - Login with user and password to _Khimo_ (for _BeoLink Gateway_ users). 
 
 The following video shows how to link _Alexa_ using the first method described:
