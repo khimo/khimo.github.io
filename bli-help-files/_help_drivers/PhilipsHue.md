@@ -1,5 +1,7 @@
-Philips Hue
-===============================
+---
+title: Philips Hue
+layout: pagetoc
+---
 
 This driver supports communication with a Philips Hue bridge,
 allowing to control lights and lighting groups.
