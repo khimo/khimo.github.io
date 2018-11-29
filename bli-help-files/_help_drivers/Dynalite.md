@@ -1,5 +1,7 @@
-Dynalite
-========
+---
+title: Dynalite
+layout: pagetoc
+---
 
 Connection to Dynalite systems can be made via the RS232 interfaces,
 either using BeoLiving Intelligence RS232 port or via an Ethernet to RS232
