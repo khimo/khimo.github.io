@@ -28,9 +28,12 @@ For each third party cloud service, linking process starts as follows:
     - Using the _Alexa App_ or entering _alexa.amazon.com_, head to _Skills_ and search "_BeoLiving Intelligence skill by Khimo_".
     - Press _Enable Skill_ button.
 
-<!--
-+ **IFTTT**: using _IFTTT_ App or entering at _ifttt.com_, search by service "_BeoLink Gateway_". Press _Connect_ button.
--->
+Or,
+
+1. **Add BLI service to IFTTT**
+    - Using the _IFTTT_ App or entering _ifttt.com_, search for "_BeoLivining Intelligence_" under the _services_ tab and click on the B&O logo.
+    - Once on BLI's page, press the _Connect_ button.
+
 
 2. **Link to BLI App**
     - Independently of the chosen cloud service, after enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
