@@ -265,7 +265,7 @@ _BeoLiving Intelligence_'s configuration is persistent, so all configuration and
 
 ### How do I know which _Home Automation_ systems can be integrated?
 
-The list of _Home Automation_ systems that are supported out of the box can be found here: [System Drivers Guide](../bli-help-files/drivers/main.md). However, new _Home Automation_ systems are added with each firmware update and on the online repos. For the latest news on supported systems and functionalities don't miss our [Newsletter](***LINK***).
+The list of _Home Automation_ systems that are supported out of the box can be found here: [System Drivers Guide](../bli-help-files/drivers/main.md). However, new _Home Automation_ systems are added with each firmware update and on the online repos.
 
 ### Are the firmware updates necessary?
 
