@@ -31,6 +31,7 @@ For each third party cloud service, linking process starts as follows:
 <!--
 + **IFTTT**: using _IFTTT_ App or entering at _ifttt.com_, search by service "_BeoLink Gateway_". Press _Connect_ button.
 -->
+
 2. **Link to BLI App**
     - Independently of the chosen cloud service, after enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
 continue the linking process in the _BeoLiving App_ will be displayed if using an _iOS_ device or a QR code will be displayed if not.
