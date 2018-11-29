@@ -1,5 +1,7 @@
-Custom HTTP
-===============
+---
+title: Custom HTTP
+layout: pagetoc
+---
 
 Due to the common usage in Home Automation devices with a HTTP based REST interface, the Custom HTTP driver is intended to facilitate the integration with these equipments.
 
