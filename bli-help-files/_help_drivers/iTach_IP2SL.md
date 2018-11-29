@@ -1,5 +1,7 @@
+---
 Global Cache iTach IP2SL
-===============================
+layout: pagetoc
+---
 
 This driver supports communication with a Global Cache iTach IP2SL,
 allowing to control RS232 serial devices.
