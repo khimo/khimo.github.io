@@ -1,5 +1,7 @@
-KNX / EIB
-=========
+---
+title: KNX / EIB
+layout: pagetoc
+---
 
 BeoLiving Intelligence can interact with KNX systems by means of shared variables (group
 addresses).
