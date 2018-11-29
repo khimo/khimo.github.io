@@ -1,5 +1,7 @@
-DoorBird 
-=========
+---
+title: DoorBird 
+layout: pagetoc
+---
 
 BeoLiving Intelligence can interact with DoorBird and BirdGuard units, being capable of opening door lock, turning unit light and fire an event when motion sensor detect activity or doorbell button is pressed on the camera.
 In order to get video image on the BeoLiving Intelligence from the DoorBird unit, it's necessary to add the camera on Interfaces Tab and fill the respective fields.
