@@ -1,5 +1,7 @@
-Vantage
-=======
+---
+title: Vantage
+layout: pagetoc
+---
 
 Connection to a Vantage system
 ------------------------------
