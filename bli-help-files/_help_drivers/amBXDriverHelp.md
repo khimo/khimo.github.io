@@ -1,5 +1,7 @@
-amBXDriver
-=================
+---
+title: amBXDriver
+layout: pagetoc
+---
 
 This driver allows to create resources that represents “spaces” which can run any Light-Scene in a “slot”.   
 
