@@ -29,7 +29,8 @@
         </div>
 
         <div id="pagecontent" class="col-sm-9 pagecontent">
-          {{ content | toc }}
+          {{ content }}
+          {% include toc.html html=content %}
           </div>
       </div>
     </div>
