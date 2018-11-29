@@ -1,7 +1,7 @@
-------------
-title: BTicino My Home
+--------------------------------
+title:  BTicino My Home
 layout: pagetoc
--------------
+---------------------------------
 
 Connection
 ----------
