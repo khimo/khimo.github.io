@@ -66,7 +66,7 @@ Note that only one icon per type of product will appear in the zone.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YiecxJ7fW_c?autoplay=1&loop=1&playlist=YiecxJ7fW_c"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YiecxJ7fW_c?autoplay=1&loop=1&playlist=YiecxJ7fW_c"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -95,7 +95,7 @@ Each time you execute the Scene those commands will be executed on your _BeoLivi
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R1-aekRwmR0?autoplay=1&loop=1&playlist=R1-aekRwmR0"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R1-aekRwmR0?autoplay=1&loop=1&playlist=R1-aekRwmR0"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -113,7 +113,7 @@ Creating a group of Bang & Olufsen products lets you control all of them as if t
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q04J8CAvP10?autoplay=1&loop=1&playlist=q04J8CAvP10"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q04J8CAvP10?autoplay=1&loop=1&playlist=q04J8CAvP10"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -134,7 +134,7 @@ detected device without credentials.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
