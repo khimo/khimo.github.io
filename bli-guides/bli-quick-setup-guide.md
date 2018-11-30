@@ -131,14 +131,6 @@ set previously (this mean that _BeoLiving Intelligence_ does not override existi
 > _STATUS_ will display credentials state. _BeoLiving Intelligence_ will verify if inserted credentials are valid or not after send them to a 
 detected device without credentials. 
 
-<div class="row justify-content-center">
-  <div class="col-sm-5">     
-	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA&mute=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</div>
-  </div>
-</div>
-<div id="muteYouTubeVideoPlayer"></div>
 
 <script async src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA&mute=1"></script>
 <script>
