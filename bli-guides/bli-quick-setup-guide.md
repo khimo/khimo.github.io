@@ -45,7 +45,7 @@ by the serial number located at the back side of each.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=1&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=1&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
