@@ -1,9 +1,10 @@
 ---
 title: BeoLiving Intelligence Advanced User Guide
 layout: pagetoc
+toc: true
 ---
 
-## Introduction
+Introduction
 
 This guide provides:
 - A description of all the elements you will find inside a _BeoLiving Intelligence_ box.
@@ -19,12 +20,13 @@ becomes the most important tool for installation, configuration and programming.
 
 **{#admin-sign-in}An installer can access the _BLI_ setup interface with the _admin_ user, which has an unknown password by default. The Setup button function 2 (check [Button Functions](#button-functions))  can be used for setting the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the web interface is accessed.**
 
-<div class="collections">
-	{% for adv_guid in site.bli_advanced_user_guide %}
-		<div class="adv_guide">
-			<h1><a href="{{ adv_guide.url }}">{{ adv_guide.title }}</a></h1>
-			{{ adv_guide.content }}
-		</div>
-	{% endfor %}
-</div>
+
+
+{% for adv_guid in site.bli_advanced_user_guide %}
+	<div class="adv_guide">
+		<h1><a href="{{ adv_guide.url }}">{{ adv_guide.title }}</a></h1>
+		{{ adv_guide.content }}
+	</div>
+{% endfor %}
+
 
