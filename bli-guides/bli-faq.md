@@ -5,7 +5,7 @@ layout: pagetoc
 
 ## Modes
 
-#### Q: What are the differences between _ESSENTIAL_ and _PRO_ modes?
+### Q: What are the differences between _ESSENTIAL_ and _PRO_ modes?
 
 The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL** and **BeoLiving Intelligence PRO**:
 
@@ -135,7 +135,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 
 <a id="how-to-upgrade-beoliving-intelligence-to-pro-mode"/><!-- This link is used in the LaunchPackage pdf --//>
 
-#### Q: How do I upgrade the _BeoLiving Intelligence_ to PRO mode?
+### Q: How do I upgrade the _BeoLiving Intelligence_ to PRO mode?
 
 While logged in as "_admin_" user ([How do I access the setup interface as admin?](#admin-password)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_.
 In _Product information_, the _License type_ shows the current license of your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect you to *Khimo.com*, where you can start the upgrade process via _PayPal_.
@@ -144,7 +144,7 @@ Once the payment process finishes, your _BLI_ will be automatically upgraded to 
 
 ## Setup
 
-#### Q: How do I get my _BeoLiving Intelligence_ IP address?
+### Q: How do I get my _BeoLiving Intelligence_ IP address?
 
 You can find out the IP address of your _BeoLiving Intelligence_ in several ways, some suggestions:
 
@@ -154,7 +154,7 @@ network used by the _BeoLiving Intelligence_.
 , avahi-browse), lookout for "\_hipservices.\_tcp." service.
 - Access to your _LAN_ router and search for the assigned IP to _BeoLiving Intelligence_. 
 
-#### Q: How do I access the setup interface as admin? {#admin-password}
+### Q: How do I access the setup interface as admin? {#admin-password}
 
 An installer can gain access to _BeoLiving Intelligence's_ setup interface with the _admin_ user, which has an unknown password by default. The Setup 
 function 2 can be used to set up the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the 
