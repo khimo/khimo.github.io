@@ -6,7 +6,7 @@ layout: pagetoc
 The initial page after accessing the _BLI_ via web browser shows two buttons: _WEBPANEL_ and _SETUP_.
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/init-page.png" class="img-fluid img-thumbnail" alt="Init page"/>
+  <img src="../pictures/bli-advanced-user-guide/init-page.png" class="img-fluid img-thumbnail" alt="Init page"/>
 </div>
 
 + **WEBPANEL**: This interface offers home automation control of your setup. Control of _NetworkLink_ products is not supported, only Scenes can be fired. With the _BLI_ in _PRO_ mode, it's possible to control your whole installation.
@@ -20,7 +20,7 @@ The Setup web interface for the _BLI ESSENTIAL_ does not offer a high degree of 
 #### Upgrade to PRO {#upgrade-pro}
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/upgrade.png" class="img-fluid" alt="Upgrade page"/>
+  <img src="../pictures/bli-advanced-user-guide/upgrade.png" class="img-fluid" alt="Upgrade page"/>
 </div>
 <br>
 
@@ -48,7 +48,7 @@ The Project information page shows information regarding the project _BeoLiving 
 #### Users
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/add-user.png" class="img-fluid" alt="Add user"/>
+  <img src="../pictures/bli-advanced-user-guide/add-user.png" class="img-fluid" alt="Add user"/>
 </div>
 <br>
 
@@ -57,7 +57,7 @@ The User page displays in its left column every user that can access the _BLI_. 
 ##### User properties
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/edit-user.png" class="img-fluid" alt="Edit user"/>
+  <img src="../pictures/bli-advanced-user-guide/edit-user.png" class="img-fluid" alt="Edit user"/>
 </div>
 <br>
 
@@ -73,7 +73,7 @@ In this section, you can configure the zones a selected user has access to. All 
 
 The Network page details the network connectivity configuration for the _BLI_.
 
-<img src="pictures/bli-advanced-user-guide/network.png" class="img-fluid" alt="Network page"/>
+<img src="../pictures/bli-advanced-user-guide/network.png" class="img-fluid" alt="Network page"/>
 
 The configurable settings are:
 
@@ -95,7 +95,7 @@ The Firmware page allows you to check and apply updates for the _BLI_ Firmware. 
 
 #### Manual update
 
-<img src="pictures/bli-advanced-user-guide/manual-update.png" class="img-fluid" alt="Manual update"/>
+<img src="../pictures/bli-advanced-user-guide/manual-update.png" class="img-fluid" alt="Manual update"/>
 <br>
 
 Press the _Choose File_ to select your local _BLI_ firmware file which will be uploaded to the _BLI_, the update process will commence immediately.
@@ -104,7 +104,7 @@ Press the _Choose File_ to select your local _BLI_ firmware file which will be u
 
 To perform an online update to the _BLI's_ Firmware you must ensure that it has Internet access.
 
-<img src="pictures/bli-advanced-user-guide/online-update.png" class="img-fluid" alt="Online update"/>
+<img src="../pictures/bli-advanced-user-guide/online-update.png" class="img-fluid" alt="Online update"/>
 <br>
 
 + **Check for latest version**: The latest official Firmware version will be displayed (if available and different from the current one).
@@ -117,6 +117,6 @@ When any hardware or software error is experienced it is possible to create a se
 
 You must fill the form shown in the page, which will include essential information to reproduce and fix any issue you are experiencing.
 
-<img src="pictures/bli-advanced-user-guide/service-report.png" class="img-fluid" alt="Service report page"/>
+<img src="../pictures/bli-advanced-user-guide/service-report.png" class="img-fluid" alt="Service report page"/>
 
 Service reports are created and downloaded when the _Download_ button is clicked.
