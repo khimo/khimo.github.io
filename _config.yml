@@ -16,8 +16,11 @@ collections:
   help_drivers:
     output: true
     permalink: /help_drivers/:path/
+  bli_advanced_user_guide:
+    output: true
+    permalink: /bli_advanced_user_guide/:path/
   
-collections_dir: bli-help-files
+collections_dir: bli-guides
 
 #toc for jekyll
 plugins:
