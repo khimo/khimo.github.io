@@ -18,7 +18,7 @@ collections:
     permalink: /help_drivers/:path/
   bli_advanced_user_guide:
     output: true
-    permalink: /bli_advanced_user_guide/:path/
+    permalink: /bli_advanced_user_guide/:path
   
 collections_dir: bli-guides
 
