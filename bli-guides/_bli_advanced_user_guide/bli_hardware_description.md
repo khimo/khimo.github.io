@@ -1,5 +1,5 @@
 ---
-title: _BeoLiving Intelligence_ hardware description
+title: BeoLiving Intelligence hardware description
 layout: pagetoc
 ---
 
