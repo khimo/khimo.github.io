@@ -22,8 +22,8 @@ becomes the most important tool for installation, configuration and programming.
 
 
 
-{% for adv_guid in site.bli_advanced_user_guide %}
-	<div class="adv_guide">
+{% for adv_guide in site.bli_advanced_user_guide %}
+	<div class="bli_advanced_user_guide">
 		<h1><a href="{{ adv_guide.url }}">{{ adv_guide.title }}</a></h1>
 		{{ adv_guide.content }}
 	</div>
