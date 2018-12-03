@@ -20,7 +20,7 @@ Located on the back of the _BLI_:
 + *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](#button-functions) section.
 
 <div class="text-center">
-  <img src="pictures/bli-advanced-user-guide/bli.png" class="img-fluid" alt="BLI"/>
+  <img src="../pictures/bli-advanced-user-guide/bli.png" class="img-fluid" alt="BLI"/>
 </div>
 
 ### Led States
