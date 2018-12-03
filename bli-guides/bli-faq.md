@@ -3,6 +3,8 @@ title:  BeoLiving Intelligence - FAQ
 layout: pagetoc
 ---
 
+##Modes
+
 #### Q: What are the differences between _ESSENTIAL_ and _PRO_ modes?
 
 The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL** and **BeoLiving Intelligence PRO**:
@@ -140,6 +142,8 @@ In _Product information_, the _License type_ shows the current license of your _
 
 Once the payment process finishes, your _BLI_ will be automatically upgraded to _PRO_ mode within a minute approximately.
 
+## Setup
+
 #### Q: How do I get my _BeoLiving Intelligence_ IP address?
 
 You can find out the IP address of your _BeoLiving Intelligence_ in several ways, some suggestions:
@@ -166,6 +170,7 @@ Please refer to the specific guide: [BeoLiving Intelligence link to 3rd party Cl
 
 Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
 
+## Cloud services
 
 #### Q: Is it possible to fire IFTTT Applets with _BeoLiving Intelligence_?
 
@@ -183,6 +188,9 @@ Sometimes, devices name are not suitable for _Alexa_ to understand. Some workaro
 
 Make sure you first enabled _Remote Access_ on your _BeoLiving Intelligence_ through _BeoLiving App_. Refer to [BeoLiving Intelligence Quick Setup
  guide](bli-quick-setup-guide.md) for a detailed description. 
+ 
+ 
+## Issue reporting
 
 #### Q: How do I report an issue with my _BeoLiving Intelligence_?
 
@@ -191,6 +199,8 @@ Refer to our specific guide: [BeoLiving Intelligence Troubleshooting guide](bli-
 #### Q: My _BeoLiving Intelligence_ is not responding, what should I do?
 
 Refer to our specific guide: [BeoLiving Intelligence Troubleshooting guide](bli-troubleshooting.md). You will find instructions to follow when your _BeoLiving Intelligence_ isn't responding or isn't returning to normal operation mode.
+
+## BLI Operation
 
 #### Q: I can't connect my _BeoLiving Intelligence_ to a certain HA system, what should I do? 
 
@@ -257,6 +267,8 @@ After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be ab
 #### Q: Can I control my devices from outside my house?
 
 Once your _BeoLiving Intelligence_ is on _PRO_ mode, you will be able to control your house from anywhere. You can enable remote access by going to your _BeoLiving Intelligence_ settings on the _BLApp_.
+
+## Other issues
 
 #### Q: If the power goes off, do I lose the _BeoLiving Intelligence_ configuration?
 
