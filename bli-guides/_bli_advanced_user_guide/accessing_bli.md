@@ -1,6 +1,6 @@
 ---
 title: Accessing the BeoLiving Intelligence
-layout: pagtoc
+layout: pagetoc
 ---
 
 The _BLI_ has a web interface that can be accessed from a network browser. By default, _BLI_ is configured on DHCP mode,
