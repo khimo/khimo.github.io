@@ -12,7 +12,7 @@ Located on the back of the _BLI_:
 + *System Reset Button*: Press & hold for 8 seconds for resetting the system.
 + *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
 
-<img src="pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
+<img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
 
 ### User Led and Button
 
