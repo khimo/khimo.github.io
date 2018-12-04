@@ -8,7 +8,7 @@ layout: pagetoc
 The scope of this guide is an introduction to _BeoLiving Intelligence_ in _PRO_ mode, a detailed description of its web interface (used for 
 configuration/programming your setup) and "How to's" for different features. _BeoLiving Intelligence_ in PRO mode unblocks all its capabilities,  and this guide will let you exploit your Home Automation controller to its maximum.
 
-Before reading this guide, it's recommended to have read the [BeoLiving Intelligence Quick Setup Guide](bli-quick-setup-guide.md) and the [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) for a better understanding of some concepts and useful information, not included in this guide.
+Before reading this guide, it's recommended to have read the [BeoLiving Intelligence Quick Setup Guide](bli-quick-setup-guide.md) and the [BeoLiving Intelligence Advanced User Guide](bli_advanced_user_guide/) for a better understanding of some concepts and useful information, not included in this guide.
 
 _BeoLiving Intelligence_ in _PRO_ mode enables the unique capability of integrating Bang & Olufsen Network Link systems (audio and video products) with some of the most popular Home Automation systems such as Nest, Philips Hue, KNX, Lutron, among others, creating versatile solutions and a great experience for _BeoLiving Intelligence_ users.
 
@@ -37,7 +37,7 @@ TODO: Diagram
 
 The setup interface is the most important tool for the configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
 
-The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage. By default, _admin's_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function number 2 ([See button functions](bli-advanced-user-guide.md)). After a successfull button function input, _admin_ password will be _"admin"_ for the next 5 minutes (also for security purposes) and as soon as you log in you will be asked to change it.
+The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage. By default, _admin's_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function number 2 ([See button functions](bli_advanced_user_guide/05-user_button)). After a successfull button function input, _admin_ password will be _"admin"_ for the next 5 minutes (also for security purposes) and as soon as you log in you will be asked to change it.
 
 ### Project info
 
@@ -232,7 +232,7 @@ It's up to the installer to move those products into their respective _Area/Zone
 ### Systems
 
 The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink system and _HA_ systems are ‘systems’. 
-> Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](../bli-help-files/drivers/main.md) page to know all _HA_ systems that _BLI PRO_ supports.
+> Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](../help_drivers) page to know all _HA_ systems that _BLI PRO_ supports.
 
 Each system has in _BLI PRO_ a correspondent driver. There are two driver types:
 
