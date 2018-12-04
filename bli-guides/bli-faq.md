@@ -160,7 +160,7 @@ An installer can gain access to _BeoLiving Intelligence's_ setup interface with 
 function 2 can be used to set up the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the 
 web interface is accessed.
 
-Refer to the specific [section](bli-advanced-user-guide.md#button-functions) of [BeoLiving Intelligence Advanced User guide](bli-advanced-user-guide.md) for more information.
+Refer to the specific [section](bli_advanced_user_guide/05-user_button) of [BeoLiving Intelligence Advanced User guide](bli_advanced_user_guide/) for more information.
  
 #### Q: How do I link Alexa with my _BeoLiving Intelligence_?
 
@@ -276,7 +276,7 @@ _BeoLiving Intelligence_'s configuration is persistent, so all configuration and
 
 #### Q: How do I know which _Home Automation_ systems can be integrated?
 
-The list of _Home Automation_ systems that are supported out of the box can be found here: [System Drivers Guide](../bli-help-files/drivers/main.md). However, new _Home Automation_ systems are added with each firmware update and on the online repos.
+The list of _Home Automation_ systems that are supported out of the box can be found here: [System Drivers Guide](../help_drivers). However, new _Home Automation_ systems are added with each firmware update and on the online repos.
 
 #### Q: Are the firmware updates necessary?
 
