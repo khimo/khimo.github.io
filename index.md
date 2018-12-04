@@ -156,7 +156,7 @@ controllers and instructions on how to migrate from one controller to another.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
 possibilities **BeoLiving Intelligence** has to offer. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
- _Alexa_. <!-- and _IFTTT_.-->
+ _Alexa_ and _IFTTT_.
 
 <div class="row justify-content-md-center">
     <div class="col-lg-4"> 
@@ -172,7 +172,7 @@ possibilities **BeoLiving Intelligence** has to offer. The _Link to third partie
    </div>
    <div class="col-lg-4"> 
      <div align="center">
-          <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli-advanced-user-guide.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+          <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli_advanced_user_guide/" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-book fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">User guide</h3>
@@ -230,7 +230,7 @@ installers_ shows the main differences between both controllers and explains the
    </div>
    <div class="col-lg-4">
      <div align="center">
-     <a class="nav-link js-scroll-trigger sr-button" href="/bli-help-files/drivers/main.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+     <a class="nav-link js-scroll-trigger sr-button" href="/help_drivers" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-puzzle-piece fa-4x fa-square-o text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">Drivers</h3>
