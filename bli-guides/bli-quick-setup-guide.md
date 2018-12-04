@@ -8,7 +8,7 @@ _BeoLiving Intelligence_ is a Plug & Play home automation controller. The next s
 ## Setting up the _BeoLiving Intelligence_ {#setup}
 
 > By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To 
-configure a static IP address, please refer to [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md).
+configure a static IP address, please refer to [BeoLiving Intelligence Advanced User Guide](bli_advanced_user_guide/).
 
 **Follow the next steps to set up your BeoLiving Intelligence(BLI):**
  
@@ -186,7 +186,7 @@ combinations can be found in the IFTTT page.
 
 ## Advanced usage
 
-Continue with [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) to learn web interface configuration in _ESSENTIAL_ mode. 
+Continue with [BeoLiving Intelligence Advanced User Guide](bli_advanced_user_guide/) to learn web interface configuration in _ESSENTIAL_ mode. 
 Also, you will find how to upgrade to _PRO_ mode, thus adding even more functionalities and enhancing your experience.
 
 Enjoy your smart home experience with _BeoLiving Intelligence_! 
