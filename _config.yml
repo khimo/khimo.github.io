@@ -11,7 +11,7 @@ github_username:
 # Build settings
 markdown: kramdown
 
-# Jekyll collections test
+# Jekyll collections
 collections:
   help_drivers:
     output: true
