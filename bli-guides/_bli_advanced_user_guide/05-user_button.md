@@ -15,4 +15,4 @@ To execute a function, press and hold the setup button. This will cycle through 
 
 Release the button when you get to the desired function number, where the LED will start to blink waiting for a confirmation. Press the button again in order to confirm the function execution.
 
-In addition to being used to confirm the input function, a single press during normal operation is used to fire System events (refer to [_BeoLiving Intelligence PRO User Guide_](bli-pro-user-guide.md)).
+In addition to being used to confirm the input function, a single press during normal operation is used to fire System events (refer to [_BeoLiving Intelligence PRO User Guide_](/bli-guides/bli-pro-user-guide.md)).
