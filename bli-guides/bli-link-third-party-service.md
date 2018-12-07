@@ -80,7 +80,7 @@ The following video shows how to link _IFTTT_ using an _iOS_ device:
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AvoKLEAVfH8?autoplay=1&loop=1&playlist=W_4cyvD2Q1Q"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OIz4Gq3MWAI?autoplay=1&loop=1&playlist=W_4cyvD2Q1Q"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
   </div>
 </div>
