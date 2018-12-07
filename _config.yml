@@ -10,3 +10,19 @@ github_username:
 
 # Build settings
 markdown: kramdown
+
+# Jekyll collections
+collections:
+  help_drivers:
+    output: true
+    permalink: /help_drivers/:path/
+  bli_advanced_user_guide:
+    output: true
+    permalink: /bli-guides/bli_advanced_user_guide/:path
+  
+collections_dir: bli-guides
+
+#toc for jekyll
+plugins:
+  - jekyll-toc
+

@@ -1,0 +1,36 @@
+---
+title: BeoLiving Intelligence Advanced User Guide
+layout: pagetoc
+toc: true
+---
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This guide provides:</p>
+<ul>
+  <li>A description of all the elements you will find inside a <em>BeoLiving Intelligence</em> box.</li>
+  <li>How to find and access <em>BeoLiving Intelligence</em> within the network.</li>
+  <li>An overview of different sections of its web interface in <em>ESSENTIAL</em> mode.</li>
+  <li>How to upgrade your <em>BeoLiving Intelligence</em> to <em>PRO</em> mode.</li>
+</ul>
+
+<p>Most of the <em>BeoLiving Intelligence</em> configuration and usage in <em>ESSENTIAL</em> mode is done through the <em>BeoLiving App</em>. This Smart Device application lets
+ you customize your installation and control all devices on it. <em>BeoLiving Intelligence</em> also provides a web interface, which out of the box 
+provides Network settings and User access control management. After upgrading your controller to <em>BeoLiving Intelligence PRO</em>, the web interface 
+becomes the most important tool for installation, configuration and programming.</p>
+
+<p><strong> Admin Sign-in:</strong> 
+	An installer can access the <em>BLI</em> setup interface with the <em>admin</em> user, which has an unknown password by default. The Setup button function 2 (check <a href="#button-functions">Button Functions</a>)  can be used for setting the <em>admin</em> password to <em>“admin”</em> for 5 minutes, and the <em>BLI</em> will request a password update as soon as the web interface is accessed.</p>
+
+
+
+{% for adv_guide in site.bli_advanced_user_guide %}
+{% if adv_guide.title != "BeoLiving Intelligence Advanced User Guide"  %}
+	<div class="bli_advanced_user_guide">
+		<h2><a href="{{ adv_guide.url }}">{{ adv_guide.title }}</a></h2>
+		{{ adv_guide.content }}
+	</div>
+{% endif %}
+{% endfor %}
+
+

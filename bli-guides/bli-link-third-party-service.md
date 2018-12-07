@@ -30,6 +30,7 @@ The linking process for main third party cloud services (_Alexa_ & _IFTTT_) goes
     - Using the _Alexa App_ or entering _alexa.amazon.com_, head to _Skills_ and search "_BeoLiving Intelligence skill by Khimo_".
     - Press _Enable Skill_ button.
 
+
 2. **Link to BLI App**
     - After enabling the third party app you will be redirected to _Khimo.com_, where a message asking to 
 continue the linking process in the _BeoLiving App_ will be displayed (if using an _iOS_ device), or a QR code will appear.

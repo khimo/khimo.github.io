@@ -8,7 +8,7 @@ _BeoLiving Intelligence_ is a Plug & Play home automation controller. The next s
 ## Setting up the _BeoLiving Intelligence_ {#setup}
 
 > By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To 
-configure a static IP address, please refer to [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md).
+configure a static IP address, please refer to [BeoLiving Intelligence Advanced User Guide](bli_advanced_user_guide/).
 
 **Follow the next steps to set up your BeoLiving Intelligence(BLI):**
  
@@ -27,7 +27,7 @@ by the serial number located at the back side of each.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7Sa3cIVKDeA?autoplay=1&loop=1&playlist=7Sa3cIVKDeA"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7Sa3cIVKDeA?autoplay=1&loop=1&playlist=7Sa3cIVKDeA"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -45,7 +45,7 @@ by the serial number located at the back side of each.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=1&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=1&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -66,7 +66,7 @@ Note that only one icon per type of product will appear in the zone.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YiecxJ7fW_c?autoplay=1&loop=1&playlist=YiecxJ7fW_c"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YiecxJ7fW_c?autoplay=1&loop=1&playlist=YiecxJ7fW_c"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -95,7 +95,7 @@ Each time you execute the Scene those commands will be executed on your _BeoLivi
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R1-aekRwmR0?autoplay=1&loop=1&playlist=R1-aekRwmR0"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R1-aekRwmR0?autoplay=1&loop=1&playlist=R1-aekRwmR0"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -113,7 +113,7 @@ Creating a group of Bang & Olufsen products lets you control all of them as if t
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q04J8CAvP10?autoplay=1&loop=1&playlist=q04J8CAvP10"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q04J8CAvP10?autoplay=1&loop=1&playlist=q04J8CAvP10"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
@@ -134,10 +134,11 @@ detected device without credentials.
 <div class="row justify-content-center">
   <div class="col-sm-5">     
 	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Tab-Vqt4ZA?autoplay=1&loop=1&playlist=1Tab-Vqt4ZA&mute=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
 </div>
+
 
 ## Controlling products with your voice
 
@@ -163,7 +164,7 @@ combinations can be found in the IFTTT page.
 
 ## Advanced usage
 
-Continue with [BeoLiving Intelligence Advanced User Guide](bli-advanced-user-guide.md) to learn web interface configuration in _ESSENTIAL_ mode. 
+Continue with [BeoLiving Intelligence Advanced User Guide](bli_advanced_user_guide/) to learn web interface configuration in _ESSENTIAL_ mode. 
 Also, you will find how to upgrade to _PRO_ mode, thus adding even more functionalities and enhancing your experience.
 
 Enjoy your smart home experience with _BeoLiving Intelligence_! 
