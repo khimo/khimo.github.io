@@ -16,7 +16,7 @@ This guide includes a description of the available voice commands and devices yo
 
 ## Discovery
 
-The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_". _Alexa_ will then communicate with your _BLI_ and get all supported devices. 
+The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_" to your _Alexa_-enabled device. _Alexa_ will then communicate with your _BLI_ and get all supported devices. 
 
 ## Device name reference
 

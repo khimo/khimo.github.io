@@ -142,8 +142,8 @@ In _Product information_, the _License type_ shows the current license of your _
 
 Once the payment process finishes, your _BLI_ will be automatically upgraded to _PRO_ mode within a minute approximately.
 
-## Setup
 
+## Setup
 #### Q: How do I get my _BeoLiving Intelligence_ IP address?
 
 You can find out the IP address of your _BeoLiving Intelligence_ in several ways, some suggestions:
@@ -268,8 +268,8 @@ After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be ab
 
 Once your _BeoLiving Intelligence_ is on _PRO_ mode, you will be able to control your house from anywhere. You can enable remote access by going to your _BeoLiving Intelligence_ settings on the _BLApp_.
 
-## Other issues
 
+## Other issues
 #### Q: If the power goes off, do I lose the _BeoLiving Intelligence_ configuration?
 
 _BeoLiving Intelligence_'s configuration is persistent, so all configuration and programming will be safe if any power-off occurs.
@@ -277,6 +277,7 @@ _BeoLiving Intelligence_'s configuration is persistent, so all configuration and
 #### Q: How do I know which _Home Automation_ systems can be integrated?
 
 The list of _Home Automation_ systems that are supported out of the box can be found here: [System Drivers Guide](../help_drivers). However, new _Home Automation_ systems are added with each firmware update and on the online repos.
+
 
 #### Q: Are the firmware updates necessary?
 
@@ -294,4 +295,3 @@ The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Inte
 #### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
 
 _BeoLiving Intelligence_ does not support MasterLink products directly, however they still can be used with the BLI via a BeoLink Converter.
-
