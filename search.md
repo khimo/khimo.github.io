@@ -6,9 +6,11 @@ layout: page
 <div class="row justify-content-md-center">
     <div class="col-lg-12"> 
      <div> 
-<script>
+         
+         
+         <script>
   (function() {
-    var cx = '013699539259489831773:d7hmw2ayifs';
+    var cx = '018416565019272299707:wghlqorseru';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -17,6 +19,7 @@ layout: page
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>      </div>
+<gcse:search></gcse:search>
+        </div>
     </div>
 </div>
