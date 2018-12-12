@@ -25,4 +25,4 @@ collections_dir: bli-guides
 #toc for jekyll
 plugins:
   - jekyll-toc
-
+  - jekyll-sitemap
