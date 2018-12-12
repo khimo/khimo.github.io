@@ -3,7 +3,7 @@ title:
 email:
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://khimo.github.io/" # the base hostname & protocol for your site
 
 twitter_username:
 github_username:
@@ -22,7 +22,7 @@ collections:
   
 collections_dir: bli-guides
 
-#toc for jekyll
+#jekyll plugins for TOC and sitemap
 plugins:
   - jekyll-toc
   - jekyll-sitemap
