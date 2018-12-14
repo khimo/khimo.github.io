@@ -3,7 +3,8 @@ title: How to control Your BLI with the One Controller
 layout: pagetoc
 ---
 
-##Introduction
+## Introduction
+
 Using your BeoRemote One, you may gain access to a BeoLiving Intelligence (BLI) through a Bang & Olufsen Smart TV.
 After completing the connection process detailed in this tutorial, you will be able to access the BLIS's webpanel to control all your home's equipment (i.e. lights, shades, cameras, etc.) as well as trigger any macros you may have previously set up.
 *You will also be able to configure shortcuts to trigger events and Macros by pressing a couple of buttons.*
@@ -21,10 +22,10 @@ After completing the connection process detailed in this tutorial, you will be a
 ## Part 2: Access your BLI
 - Press the LIST button on the OneRemote.
 - Go to HOME CONTROL and press the center circle.
--- If HOME CONTROL doesn't appear on the LIST menu: 
---- Go down the menu to Settings and press the center circle.
---- Select LIST for TV and then SHOW.
---- Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the OneRemote.
+ - If HOME CONTROL doesn't appear on the LIST menu: 
+  - Go down the menu to Settings and press the center circle.
+  - Select LIST for TV and then SHOW.
+  - Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the OneRemote.
 - Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 - The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
 
@@ -34,7 +35,6 @@ As with the HOME CONTROL option on your OneRemote's LIST, you can reveal other o
 To access any of these options menus, you have to select the option (e.g. LIGHT) and then press LIST again so that the command functions are displayed.
 
 By pressing any of these or any keypad digit, you are now able to fire events to the BLI that you can use to trigger Macros
-
 
 ## Tips
 One may also fire events through LIGHT by simply highlighting LIGHT on the OneRemote's LIST and pressing numbers on the keypad which have been previously assigned to trigger macros.
