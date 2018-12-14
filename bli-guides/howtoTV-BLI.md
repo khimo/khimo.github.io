@@ -22,10 +22,10 @@ After completing the connection process detailed in this tutorial, you will be a
 ## Part 2: Access your BLI
 1. Press the LIST button on the OneRemote.
 1. Go to HOME CONTROL and press the center circle.
- - If HOME CONTROL doesn't appear on the LIST menu: 
-  - Go down the menu to Settings and press the center circle.
-  - Select LIST for TV and then SHOW.
-  - Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the OneRemote.
+> If HOME CONTROL doesn't appear on the LIST menu: 
+>  - Go down the menu to Settings and press the center circle.
+>  - Select LIST for TV and then SHOW.
+>  - Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the OneRemote.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
 
