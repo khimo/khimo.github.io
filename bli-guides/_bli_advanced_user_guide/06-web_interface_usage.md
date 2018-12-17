@@ -24,7 +24,7 @@ The Setup web interface for the _BLI ESSENTIAL_ does not offer a high degree of 
 </div>
 <br>
 
-While logged in as the "_admin_" user (following the [procedure described above](#admin-sign-in)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_.
+While logged in as the "_admin_" user (following the procedure described in the [introduction](../bli_advanced_user_guide/#introduction)), at the top menu bar the **ESSENTIAL** access page contains information regarding your _BLI_ and _Licensing information_.
 In _Product information_, the _License type_ shows the current license (ESSENTIAL OR PRO) for your _BLI_, with a link for upgrading to _BLI PRO_. This link will redirect your browser to *Khimo.com* to start the upgrade process via _PayPal_.
 
 After the payment process finishes, your _BLI_ will be upgraded to _PRO_ mode within a minute approx.
