@@ -18,6 +18,6 @@ A static IP-address can be set to the _BLI_ by accessing through the web interfa
 
 ### Direct access
 
-The _BLI_ can be set to the factory default IP-address *192.168.1.10* by activating the Setup button function (3); see [Button Functions](/05-user_button). 
+The _BLI_ can be set to the factory default IP-address *192.168.1.10* by activating the Setup button function (3); see [Button Functions](./05-user_button). 
 Once this address is set, you can access it directly using a network browser and an Ethernet crossover cable. Note that the computer must
 have an IP address in the same range, e.g. 192.168.1.11 with subnet mask 255.255.255.0.
