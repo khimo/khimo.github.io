@@ -14,7 +14,7 @@ meaning that it gets the IP address from the router it's connected to.
 
 ### Set static IP address mode
 
-A static IP-address can be set to the _BLI_ by accessing through the web interface, as described in the [*Network*](#network-conf) section.
+A static IP-address can be set to the _BLI_ by accessing through the web interface, as described in the [*Network*](./06-web_interface_usage/#network-conf) section.
 
 ### Direct access
 
