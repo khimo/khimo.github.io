@@ -13,7 +13,7 @@ configure a static IP address, please refer to [BeoLiving Intelligence Advanced 
 **Follow the next steps to set up your BeoLiving Intelligence(BLI):**
  
 1. **Connect BLI** 
-    - Connect your _BeoLiving Intelligence_ to your LAN through its RJ45 ethernet port.
+    - Connect your _BeoLiving Intelligence_ to your LAN through its [RJ45 ethernet port](./bli_advanced_user_guide/03-bli_hardware_description).
 1. **Turn on BLI**
     - Power your _BeoLiving Intelligence_ using the AC power supply or by using PoE (Power over Ethernet) and wait until the _BeoLiving Intelligence_ is in normal operation mode (the User LED goes solid green).
 1. **Install the App**
@@ -59,6 +59,7 @@ Note that only one icon per type of product will appear in the zone.
 1. **Select zone**
     - Select the zone that the product you want to control is in.
 1. **Select source**
+> On a B&O product, sources are the available origins of audio/visual information (e.g. Youtube, Deezer, Line-Ins, HDMI ports, etc.).
     - In the bottom left corner press the "Source" button. A list of all the products in the zone will appear, including the available sources.
     - Select a source for the product you want to use, e.g.: "Deezer" in an M5 speaker.
     - Once a source is selected, **controls will be shown on the main screen**. What you control depends on the device and the source you have selected. You can control volume, select content, play, pause, etc.
@@ -73,7 +74,7 @@ Note that only one icon per type of product will appear in the zone.
 
 ## Creating Scenes {#create-scenes}
 
-_BeoLiving Intelligence_ Scenes are the way you can control several products at the same time. 
+_BeoLiving Intelligence_ Scenes are the way you can control actions performed on several products with one touch. 
 > For example, you can create a Scene that sets the source of a speaker on _Deezer_, while at the same time setting _YouTube_ on a TV.
 
 Each time you execute the Scene those commands will be executed on your _BeoLiving Intelligence_, and what's more, you can schedule the Scene to execute at a given time or periodically.
@@ -90,7 +91,7 @@ Each time you execute the Scene those commands will be executed on your _BeoLivi
        + For instance, if it's a _Bang & Olufsen_ product it will be similar to a remote control, if it's a light it will be similar to a switch.
     - After selecting all the products you want to control and configuring their actions press "Done".
 1. **Try it out!**
-    - To fire a scene just press the name of it, or you can click on the clock icon to schedule it for certain time or day.
+    - To fire a scene just press its name, or you can click on the clock icon to schedule it for certain time or day.
 
 <div class="row justify-content-center">
   <div class="col-sm-5">     
@@ -120,7 +121,7 @@ Creating a group of Bang & Olufsen products lets you control all of them as if t
 
 ## Setting content provider credentials {#set-credentials}
 
-A new feature that comes with _BeoLiving Intelligence_ included in both of its modes, is the ability to set your user credentials for certain content providers(
+A new feature that comes included on both of the _BeoLiving Intelligence_'s modes, is the ability to set your user credentials for certain content providers(
 _TuneIn_ and _Deezer_) to all _Bang & Olufsen_ devices. _BeoLiving Intelligence_ will set user credentials to every discovered device that has not been
 set previously (this mean that _BeoLiving Intelligence_ does not override existing credentials). **To set content provider credentials follow the
  next steps**:
