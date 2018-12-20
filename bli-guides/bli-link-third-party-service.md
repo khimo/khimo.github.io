@@ -7,12 +7,10 @@ layout: pagetoc
 
 _BeoLiving Intelligence_ has the ability to integrate with different Cloud Services, e.g.: Alexa. Integration level with 
 _BeoLiving Intelligence_ depends on each service.
-> Some examples of different capabilities: voice control of specific light or group of lights,
+> **Some examples of different capabilities are**: voice control of specific light or group of lights,
 thermostats, _Bang & Olufsen_ A/V devices or receive an email when _BeoLiving Intelligence_ fires a specific command or triggers a specific event. 
 
-Description of your installation's control capabilities through each third party cloud service can be found in their respective websites. 
-
-This ability is available in all modes of _BeoLiving Intelligence_, as it comes from factory and after upgrading to _BeoLiving Intelligence PRO_.
+This ability is available in all modes of _BeoLiving Intelligence_ (as it comes from factory and after upgrading to _BeoLiving Intelligence PRO_).
 
 The scope of this document comprises the necessary knowledge and steps to follow to link _BeoLiving Intelligence_ with third party cloud services.
 
@@ -27,8 +25,8 @@ The linking process for main third party cloud services (_Alexa_ & _IFTTT_) goes
 ### _Alexa_
 
 1. **Enable Alexa skill** 
-    - Using the _Alexa App_ or entering _alexa.amazon.com_, head to _Skills_ and search "_BeoLiving Intelligence skill by Khimo_".
-    - Press _Enable Skill_ button.
+    - Using the _Alexa App_ or entering _alexa.amazon.com_, head to _Skills & Games_ and search for "_BeoLiving Intelligence skill by Khimo_".
+    - Press _ENABLE TO USE_ button.
 
 
 2. **Link to BLI App**
@@ -37,9 +35,11 @@ continue the linking process in the _BeoLiving App_ will be displayed (if using 
 
 **At this point to continue with the linking process you could choose between three methods:**
 
-   - Continue with the _BeoLiving App_ (using an _iOS_ device) and then select which _BeoLiving Intelligence_ (if there is more than one in
-your network) to link. Then to finish the linking process it's necessary to go back to the _Alexa App_. 
+   - Continue with the _BeoLiving App_ (using an _iOS_ device) by pressing _Use the BeoLiving App_ and _Open_ and then select which _BeoLiving Intelligence_ (if there is more than one in
+your network) to link. Then **to finish the linking process it's necessary to go back to the _Alexa App_**, wait while the site refreshes and then press _Done_. 
+
    - Scan the QR code with the _BeoLiving App_ following the site's instructions.
+   
    - Login with user and password to _Khimo_ (for _BeoLink Gateway_ users). 
 
 The following video shows how to link _Alexa_ using the first method described:
@@ -86,3 +86,5 @@ The following video shows how to link _IFTTT_ using an _iOS_ device:
 </div>
 <br>
 
+
+> More description of your installation's control capabilities through each third party cloud service can be found in their respective websites. 
