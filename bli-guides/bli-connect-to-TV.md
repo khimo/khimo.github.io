@@ -1,5 +1,5 @@
 ---
-title: How to B&O TVs to a BLI
+title: How to connect B&O TVs to a BLI
 layout: pagetoc
 ---
 
