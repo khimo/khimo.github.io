@@ -49,4 +49,4 @@ controller. This could solve conflicts immediately between your current configur
 configurations if not done carefully. As in the [System button reset](#system-reset) method, this must be done in the case that _BeoLiving 
 Intelligence_ is not able to restore normal operation by itself.
 
-**Support email: _support@khimo.com**_
+**Support email: _support@khimo.com_**
