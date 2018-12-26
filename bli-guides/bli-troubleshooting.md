@@ -30,7 +30,7 @@ In this section, a form (to be completed) and the _Download_ button are found.
 
 Steps to follow are:
 
-1. Copy/Paste the form into an email addressed to _support@khimo.com_. 
+1. Copy/Paste the form into an email addressed to _**support@khimo.com**_. 
 1. Complete the form in the most detailed way in order to help us to resolve the issue quickly and effectively.
 1. Attach the _Service report_ and send.
 
@@ -48,3 +48,5 @@ An alternative, having a backed up your current _BeoLiving Intelligence_ configu
 controller. This could solve conflicts immediately between your current configuration and firmware, but has the risk of losing previous 
 configurations if not done carefully. As in the [System button reset](#system-reset) method, this must be done in the case that _BeoLiving 
 Intelligence_ is not able to restore normal operation by itself.
+
+**Support email: _support@khimo.com**_
