@@ -27,7 +27,7 @@ One may also fire events through LIGHT by simply highlighting LIGHT on the OneRe
 > By going to the _Monitor_ tool on the web setup page, it is possible to view exactly the name of the events triggered with the functions.
 
 # Example
-_Select Light->Home function to turn on all lights on_
+## _Select Light->Home function to turn on all lights on_
 1. In the setup web page go to: Tools --> Monitor
 1. On the OneRemote, press LIST, go to LIGHT, enter the menu by pressing the right arrow and select the HOME function. 
 1. The monitor will show a message like: _yy-mm-dd hh:mm:ss Event fired Test/local/AV renderer/BeoPlay-V1/Light?Action=Press&Command=FUNCTION_11_ you now know that the HOME function is recieved by the BLI as FUNCTION_11.
@@ -40,8 +40,8 @@ _Select Light->Home function to turn on all lights on_
     - Action: Press
     - Command: FUNCTION_11
 
-_Press Light->0 to turn off all lights_
-1. Repeat step 4 to 6 with two changes:
+## _Press Light->0 to turn off all lights_
+1. Repeat step 4 to 6 of the first example with two changes:
     1. Macro's commands must turn off all lights
     1. Select _Command: CIFFER_0_Digit_0_
 
