@@ -11,7 +11,8 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 
 > All these B&O products can be added as NetworkLink [Resources](./bli-pro-user-guide.html#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
 
-Adding your TV as a respource is enough to recive events from the TV. The configuration from the TV is the one that grants access to the HOME CONTROL panel.
+> Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the posibility to trigger macros through shortcuts on your control.
+
 
 
 # BeoVision Eclipse
