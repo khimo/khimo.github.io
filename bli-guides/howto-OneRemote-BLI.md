@@ -41,7 +41,7 @@ _Select Light->Home function to turn on all lights on_
     - Command: FUNCTION_11
 
 _Press Light->0 to turn off all lights_
-1. Repeat step 4 to 6 with to changes:
+1. Repeat step 4 to 6 with two changes:
     1. Macro's commands must turn off all lights
     1. Select _Command: CIFFER_0_Digit_0_
 
