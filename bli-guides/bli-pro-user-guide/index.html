@@ -46,16 +46,14 @@ TODO: Diagram
 insertar "setup the beoliving intelligence Pro"
 -->
 
-<!--
-{% for adv_guide in site.bli_advanced_user_guide %}
-{% if adv_guide.title != "BeoLiving Intelligence Advanced User Guide"  %}
-    <div class="bli_advanced_user_guide">
-        <h2><a href="{{ adv_guide.url }}">{{ adv_guide.title }}</a></h2>
-        {{ adv_guide.content }}
+{% for bli-p-u-g in site.bli-pro-user-guide %}
+    <div class="bli-p-u-g">
+        <h2><a href="{{ bli-p-u-g.url }}">{{ bli-p-u-g.title }}</a></h2>
+        {{ bli-p-u-g.content }}
     </div>
-{% endif %}
 {% endfor %}
--->
+
+
 
 <h2 id="help">Help</h2>
 
