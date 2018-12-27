@@ -10,7 +10,10 @@ The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage.
 
 ```html
 {% for setup-bli-pro in site.setup-bli-pros %}
-	{{ setup-bli-pro.output }}
+	<div class="setup-bli-pro">
+		<h1><a href="{{ setup-bli-pro.url }}">{{ setup-bli-pro.title }}</a></h1>
+		{{ setup-bli-pro.output }}
+	</div>
 {% endfor %}
 ```
 
