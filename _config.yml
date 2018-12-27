@@ -19,6 +19,12 @@ collections:
   bli_advanced_user_guide:
     output: true
     permalink: /bli-guides/bli_advanced_user_guide/:path
+  bli-pro-user-guide:
+    output: true
+    permalink: /bli-guides/bli-pro-user-guide/:path
+  setup-bli-pro:
+    output: true
+    permalink: /bli-guides/bli-pro-user-guide/setup-bli-pro/:path
   
 collections_dir: bli-guides
 
