@@ -11,11 +11,11 @@ Resources are provided by the installed systems:
 + Virtual resources (programmed resources e.g. related to a button on a user interface or based on an event)
 
 
-#### BeoLink resources
+### BeoLink resources
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources"/>
+  <img src="../../pictures/bli-pro-user-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources"/>
 </div>
 <br>
 
@@ -27,11 +27,11 @@ The resources have the following parameters:
 + **Address**: Unique identification of a resource. The format depends on the system. For _NL_ products, address will be the serial number.
 + **Force Discovery**: Forces the product discovery in case it could not be done automatically.
 
-#### Home Automation system resources
+### Home Automation system resources
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/resources-ha.png" class="img-fluid" alt="Home Automation resources"/>
+  <img src="../../pictures/bli-pro-user-guide/resources-ha.png" class="img-fluid" alt="Home Automation resources"/>
 </div>
 <br>
 
@@ -52,7 +52,7 @@ such common set of features are shared by most supported systems.
 the table of defined resources. The capture functionality is supported by most systems.
 + **Import resources**: Used to import _HA_ system resources into _BLI_ uploading a specific _HA_ system file or just requesting them directly. This feature depends on each _HA_ system driver. 
 
-#### Virtual resources
+### Virtual resources
 
 An example of a _Virtual Resource_ is a button on the user interface (_BLApp_, _TV overlay_, _Webpanel_ - see [Interfaces](../interfaces) 
 section for more information).
@@ -65,7 +65,7 @@ The _BLApp_ currently uses virtual buttons to display scene buttons. _Virtual Re
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources"/>
+  <img src="../../pictures/bli-pro-user-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources"/>
 </div>
 <br>
 

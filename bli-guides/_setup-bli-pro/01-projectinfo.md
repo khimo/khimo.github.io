@@ -5,7 +5,7 @@ layout: pagetoc
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/project-info.png" class="img-fluid" alt="Project Info"/>
+  <img src="../../pictures/bli-pro-user-guide/project-info.png" class="img-fluid" alt="Project Info"/>
 </div>
 <br>
 

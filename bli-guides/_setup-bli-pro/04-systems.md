@@ -13,11 +13,11 @@ Each system has in _BLI PRO_ a correspondent driver. There are two driver types:
 
 In this section, only _Native drivers_ will be included. Go to [External drivers](../tools#external-drivers) for more information.
 
-#### System add
+### System add
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/system-add.png" class="img-fluid" alt="System add page"/>
+  <img src="../../pictures/bli-pro-user-guide/system-add.png" class="img-fluid" alt="System add page"/>
 </div>
 <br>
 
@@ -26,11 +26,11 @@ systems can be added, except internal systems, which only appear once in the ins
 added by default. When selecting a system added to a certain zone, it's possible to select another zone in the _Zone drop down list_, by which the system is moved to that zone. A system can be renamed and its configuration and connection settings can be changed. Systems are assigned to 
 zones by the installer, but they are invisible in the users interface. For example, assigning a System to a specific zone could be used by the installer to locate system hardware in the installation.
 
-#### Connection settings
+### Connection settings
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/system-settings.png" class="img-fluid" alt="System settings page"/>
+  <img src="../../pictures/bli-pro-user-guide/system-settings.png" class="img-fluid" alt="System settings page"/>
 </div>
 <br>
 
@@ -46,11 +46,11 @@ Connection settings depend on each system. Examples of Connection settings are:
 
 Press _Apply_ button to confirm settings.
 
-#### System status icons
+### System status icons
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/system-status.png" class="img-fluid" alt="System status bar"/>
+  <img src="../../pictures/bli-pro-user-guide/system-status.png" class="img-fluid" alt="System status bar"/>
 </div>
 <br>
 

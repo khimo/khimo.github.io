@@ -24,33 +24,33 @@ _Webpanel_.
 Configurations are synchronized in real time towards the _Webpanel_ and the _TV overlay_. Synchronization with the _BLApp_ is done 
 periodically and could be forced by activating **Configuration > Quick save revision**.
 
-#### Users - admin
+### Users - admin
 
 The user named _admin_ is a user that exists per default and is meant for the technician/installer. It has access to set up the _BLI PRO_
 and is allowed to access all zones via browser or _BLApp_.
 
-##### Change password for admin user
+#### Change password for admin user
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-admin.png" class="img-fluid" alt="Interfaces admin"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-admin.png" class="img-fluid" alt="Interfaces admin"/>
 </div>
 <br>
 
 Per default, _admin_ password is unknown but it can be set to "_admin_" by activating the Setup button function No.2 ([See button functions](bli_advanced_user_guide/05-user_button)). This 
 password will last 5 minutes (for security purposes) during which a new one must be set. Press the _admin_ entry in the left column to change password (see figure above).
 
-#### Users - new user
+### Users - new user
 
 To add a new user press "**+**" sign in the **Users** header (left column).
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-user.png" class="img-fluid" alt="Interfaces user"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-user.png" class="img-fluid" alt="Interfaces user"/>
 </div>
 <br>
 
-##### User properties
+#### User properties
 
 Configure User properties by entering a name under the _Name_ field and password in the _Password_ field. 
 Then select options according to the following:
@@ -60,21 +60,21 @@ the installation or a ‘superuser’ who is responsible for managing user acces
 + **Edition of user macros**: when selected, the user is allowed to create and edit macros for the _BLApp_.  
 + **Controller**: should normally be selected. Allows the user to access _BLI_ via _BLApp_. When disabled, the only access is via the _Webpanel_.
 
-##### Select zone access for user
+#### Select zone access for user
 
 Finally, choices should be made in _Select zone access for user_. _All zone access_ may be selected or a selection of individual zones from the list presented.
 
-#### B&O products
+### B&O products
 
 For A/V products there are some basic options and a source list that can be presented to the user.
 
 When selecting any product, the next sections are displayed.
 
-##### NetworkLink product: area/zone/product
+#### NetworkLink product: area/zone/product
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-bo.png" class="img-fluid" alt="Interfaces B&O"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-bo.png" class="img-fluid" alt="Interfaces B&O"/>
 </div>
 <br>
 
@@ -86,13 +86,13 @@ situations where product discovery has shown not to be reliable.
 - **Show product sources on their zone**: Hides product sources in its zone if not selected.
 - **Set new automatically synchronized sources as visible**: New synchronized sources are not set as hidden.
 
-##### Product sources
+#### Product sources
 
 For each product all local and distributed sources are shown in the _Sources in product_ table. 
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-bo-sources.png" class="img-fluid" alt="Interfaces B&O Sources"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-bo-sources.png" class="img-fluid" alt="Interfaces B&O Sources"/>
 </div>
 <br>
 
@@ -107,17 +107,17 @@ The information provided in the _Sources in product_  section for each source is
 - **Favourites list**: This makes it possible to select a favourite list defined in the [Favourites](#fav-list) section.
 - **Hidden**: Selects if source must be hidden in all user interfaces or not.
 
-#### Cameras
+### Cameras
 
 The configuration of several network cameras is permitted. To add a camera, press the "**+**" sign in the **Cameras** header (found in the left column).
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
 </div>
 <br>
 
-##### Camera basic configuration
+#### Camera basic configuration
 
 _BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
 
@@ -134,7 +134,7 @@ To add a camera you must fill the next form:
 
 If a camera must be removed from the list, choose the _Camera_ header in the left column and press the **Remove** button.
 
-##### Camera resources path
+#### Camera resources path
 
 By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to 
 copy and paste the text when setting up other similar cameras and for each of these to adapt to the actual camera.
@@ -143,32 +143,32 @@ IP-address.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
 </div>
 <br>
 
-###### Video & Images
+##### Video & Images
 
 At least one of the resource paths for obtaining _Video & Images_ both in high and low resolution or RTSP stream must be provided.
 > E.g. mjpg/video.cgi for high resolution video. 
 
 All the commands will be appended to the correspondent base URL.
 
-###### Pan, Tilt and Zoom commands
+##### Pan, Tilt and Zoom commands
 
 If your camera is able to control lens direction and zoom, _Pan_, _Tilt_ and _Zoom_ paths could be specified and controlled through all user 
 interfaces.
 
-#### Zone setup
+### Zone setup
 
 In this section of the _Interfaces_ page, for each zone it is possible to reorder, hide/show and rename the resources to be seen in 
 the user interfaces.
 
-##### Resources for area/zone
+#### Resources for area/zone
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
 </div>
 <br>
 
@@ -189,14 +189,14 @@ For the resource to be moved in the list, place the cursor over the left button 
   - **On shade view**: When enabled, the button will be shown in the _Shade_ section of _BLApp_.
   - **On thermostat view**: When enabled, the button will be shown in the _Thermostat_ section of _BLApp_.
 
-#### Favourites Lists {#fav-list}
+### Favourites Lists {#fav-list}
 
 In this section of the _Interfaces_ page, favourites lists for TV channels as well as radio stations can be added. In the hand held devices the 
 favourite channels/stations are listed by name and logo if such is selected.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
+  <img src="../../pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
 </div>
 <br>
 
@@ -204,7 +204,7 @@ To add a new favourites list, press the "**+**" sign in the _Favourites Lists_ c
 the left column list, adding ‘Clone of’ to the name. The **Remove** button is used to remove a source provider of favourites chosen in the left 
 column.
 
-##### Commands global options
+#### Commands global options
 
 For each favourite list a global _End command_, a global _Delay_ and a global _Delay on source selection_ that will affect each favourite command 
 can be set.
@@ -214,7 +214,7 @@ can be set.
 + **Delay on source selection**: Delay that will be added previous to the first digit for each favourite command sequence, if source was 
 effectively selected (i.e.: if the source was already selected, this delay will not be set).
 
-##### List of favourites
+#### List of favourites
 
 For each listed TV channel/radio station the following information should be provided:
 
@@ -227,7 +227,7 @@ logo will be shown in the user interfaces.
 + **URL**: The full URL of the logo image to show. The URL must point out the valid image as it will be used periodically by _BLApp_ to retrieve 
 the logo. The URL will be filled in automatically when the logo picker is used. The URL can be entered manually.
 
-##### Logo picker
+#### Logo picker
 
 The logo picker shows a pop-up window for selecting logos from the B&O repository and shows up by clicking the logo. Available logos are
 shown in groups of 50. It is possible to search for a channel using the filter. A search string will immediately restrict the channels displayed 
