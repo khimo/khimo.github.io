@@ -6,11 +6,11 @@ layout: pagetoc
 
 The setup interface is the most important tool for the configuration/programming of your _BLI PRO_. The following sections will guide you through the entire web interface configuration tool.  
 
-The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage. By default, _admin's_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function number 2 ([See button functions](bli_advanced_user_guide/05-user_button)). After a successfull button function input, _admin_ password will be _"admin"_ for the next 5 minutes (also for security purposes) and as soon as you log in you will be asked to change it.
+The _BLI PRO_ has a special user -_admin_- meant for installer/technician usage. By default, _admin's_ password is unknown due to security purposes. To make use of the Setup interface, password for _admin_ user must be reset by activating the Setup button function number 2 ([See button functions](../../bli_advanced_user_guide/05-user_button)). After a successfull button function input, _admin_ password will be _"admin"_ for the next 5 minutes (also for security purposes) and as soon as you log in you will be asked to change it.
 
 ```html
 {% for setup-bli-pro in site.setup-bli-pros %}
-	{{ section.output }}
+	{{ setup-bli-pro.output }}
 {% endfor %}
 ```
 
