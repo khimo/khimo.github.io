@@ -6,12 +6,12 @@ layout: pagetoc
 Everything in _BLI_ is organized into zones. Zones represent rooms or other locations in the home such as kitchen, hallway, garden, garage, etc.
 In order to accommodate for big installations, zones themselves are organized into areas. Examples of areas are: upstairs and downstairs, guest house, barbecue.
 
-### Areas & Zones
+#### Areas & Zones
 
 Areas are indicated by text on a grey background in the left column. Zones that are subdividing the areas are indicated by text on a white 
 background in the left column.
 
-### Adding areas and zones
+#### Adding areas and zones
 
 <br>
 <div class="text-center">
@@ -22,7 +22,7 @@ background in the left column.
 Areas are added using the "_Add new area_" button. At this point the area's name may be stated. An area can be deleted by activating the 
 "**x**" sign in the greyed area-boxes and renamed by activating the edition-sign next to "**x**" sign. Zones are added to the areas by activating the "**+**" sign in the greyed area-boxes. 
 
-### Zone settings
+#### Zone settings
 
 <br>
 <div class="text-center">
@@ -36,7 +36,7 @@ Name is stated as desired.
 + **Icon**: An icon can be assigned that will be visible in the user interfaces, for easy recognition. 
 + **Delete**: A selected _zone_ can be deleted by activating the _Delete_ button. Systems and resources in the zone that is to be deleted must be rearranged or removed.
 
-### Main area
+#### Main area
 
 The _main_ area has two special zones: 
 

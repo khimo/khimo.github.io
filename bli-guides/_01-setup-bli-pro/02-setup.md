@@ -4,7 +4,7 @@ layout: pagetoc
 ---
 
 
-### Date & Time
+#### Date & Time
 
 Correct time setting is important for the monitoring of events, astronomic clock events and for error log time stamping.
 
@@ -14,13 +14,13 @@ Correct time setting is important for the monitoring of events, astronomic clock
 </div>
 <br>
 
-#### Date & Time settings 
+##### Date & Time settings 
 
 + **Date**: Date corresponing to the selected **Time zone**.
 + **Time**: Time corresponing to the selected **Time zone**.
 + **Time zone**: Setting for the time zone is chosen from the drop down list. Choices are made based on an appropriate match of "Continent"/"City".
 
-#### Location settings (Astronomical Clock and Location events)
+##### Location settings (Astronomical Clock and Location events)
 
 The location settings are used by the _BLI PRO_ to calculate time related events (e.g. sunrise and sunset). Events can then be set relative to this. Latitude and 
 longitude are the settings for the astronomic clock. The settings are in decimal degrees. Values are entered in format ‘degrees.minutes’. 
@@ -28,7 +28,7 @@ Seconds are only used to round the minute-value.
 Positive values are for North and East.
 Negative values are for South and West.
 
-### Integration Protocols
+#### Integration Protocols
 
 <br>
 <div class="text-center">
@@ -43,7 +43,7 @@ Home Integration protocols provide two-way control of all resource types. This p
 authentication. You should provide a TCP port (default port is 9100). Port numbers below 1024 are reserved for standard TCP services, so use 
 values above this range.
 
-### Network
+#### Network
 
 The network page contains the _BLI's_ network connectivity configuration.
 
@@ -64,7 +64,7 @@ The following options are available:
 
 > The settings must be confirmed by clicking on _Apply_.
 
-### Khimo cloud link
+#### Khimo cloud link
 
 _BLI_ is configured from factory to be connected to _Khimo's_ cloud service. This service is used to enable features like 
 voice control (e.g.: Amazon Alexa) and remote access to your installation (with _BLI PRO_ mode). If this
@@ -90,7 +90,7 @@ At the bottom of this page, a list with the current remote users is displayed.
 </div>
 <br>
 
-#### Enable remote access in BeoLiving App
+##### Enable remote access in BeoLiving App
 
 To enable _Remote Access_ in the _BLApp_ you must:
 
@@ -107,7 +107,7 @@ The next video shows interactively how to accomplish this feature:
   </div>
 </div>
 
-### System modes
+#### System modes
 
 <br>
 <div class="text-center">
@@ -125,7 +125,7 @@ _BLI PRO_ can have any number of System modes, which can be used to enable or di
 
 >> Typical examples of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.
 
-### Units
+#### Units
 
 The systems temperature unit can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the _BLI PRO_. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.
 

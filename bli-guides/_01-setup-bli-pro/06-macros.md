@@ -32,7 +32,7 @@ commands help is showed after pressing _Show Help_ button. Pressing _Convert to 
 + **Cut/Copy/Paste**: when selecting an event/command (pressing left side of the event/command), _Cut/Copy/Paste_ buttons become available. The
 purpose, as the meaning of their names illustrate, is to _Cut/Copy/Paste_ _Events_ or _Commands_ on the same _Macro_ or between _Macros_.     
 
-### Resource Event {#resource-event}
+#### Resource Event {#resource-event}
 
 When pressing the _Add event_ button, the window expands, fields for the _Resource Event_ are shown and are filled in by selecting from the drop down lists with each entry field. The illustration is an example only and the drop down list may vary depending on the choices made.
 
@@ -42,7 +42,7 @@ When pressing the _Add event_ button, the window expands, fields for the _Resour
 </div>
 <br>
 
-#### Defining Events 
+##### Defining Events 
 
 The list of events (for triggering a macro) can be filled in manually or selected from captured events.
 
@@ -53,7 +53,7 @@ more information.
 + **Resource**: Resource events match a specific event on a specific resource.
 + **System**: System events include calendar and astronomical clock events and system connectivity events.
 
-### Resource command {#resource-command}
+#### Resource command {#resource-command}
 
 When pressing the _Add command_ button, the window expands, fields for the resource command are shown and are filled in by making selections 
 from the drop down lists with each entry field. The illustration is an example only, and drop down lists may vary depending on the choices made.
@@ -75,7 +75,7 @@ There are four types of commands:
 + **System**: acts directly on the systems, which support them.
 + **Macro**: calls other macros, or acts on other macros.
 
-### Actions on macros
+#### Actions on macros
 
 Several command options are available to act on macros:
 
@@ -86,7 +86,7 @@ Several command options are available to act on macros:
 > Although not recommended, it is possible to make a loop where a macro calls itself as the last command, e.g. switching Off growth light
 for plants; night and day temperature control, etc. It is required to make a macro that stops such loops.
 
-### Macro-considerations
+#### Macro-considerations
 
 > Firing a new macro makes it possible to take advantage of a existing functionality without having to maintain several copies inside different
 macros. 
@@ -109,13 +109,13 @@ In the above mentioned example, the macro to switch the home theater Off should 
 4. Switch Avant to _STAND BY._
 5. Etc.
 
-### Orphan commands and events
+#### Orphan commands and events
 
 If commands and events are defined for a resource and the resource is deleted or modified to another address, events and commands will become
 orphan (without an associated resource). Orphan events and commands will still be available and refer to the original addressing of the resource.
 The macro screen will signal the presence of orphan commands or events by colour coding and text in the macro header.
 
-### Generic programming
+#### Generic programming
 
 Standard events and commands apply to a single specific resource. _Generic programming_ makes it possible to refer to a whole set of resources at 
 once. 
@@ -133,7 +133,7 @@ _NOTE_: Generic events and commands are matched against all possible resources e
  a resource is changed on a working configuration, the resource will no longer match an existing generic event or command. Therefore, it is 
 important to be consistent when naming resources. It is also important to avoid spoiling functionality by renaming resources.
 
-### Command coding
+#### Command coding
 
 Commands are also represented by a code. The main difference is that there is a new type of selector for matching the same area or
 zone as of the generating event. A command code starting with _$area/$zone/AV renderer/TV_ will act on all audio and video renderers named "_TV_" 
