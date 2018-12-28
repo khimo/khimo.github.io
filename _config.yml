@@ -22,9 +22,9 @@ collections:
   bli-pro-user-guide:
     output: true
     permalink: /bli-guides/bli-pro-user-guide/:path
-  setup-bli-pro:
+  01-setup-bli-pro:
     output: true
-    permalink: /bli-guides/bli-pro-user-guide/setup-bli-pro/:path
+    permalink: /bli-guides/bli-pro-user-guide/01-setup-bli-pro/:path
   
 collections_dir: bli-guides
 
