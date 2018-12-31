@@ -24,3 +24,9 @@ The <i>BLI PRO</i> has a special user -<i>admin</i>- meant for installer/technic
 	</div>
 {% endfor %}
 
+{% for page in site.01-setup-bli-pro %}
+	<div class="page">
+		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		{{ page.content }}
+	</div>
+{% endfor %}
