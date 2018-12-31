@@ -214,7 +214,7 @@ If the connection can't be restored, follow the instructions in [BeoLiving Intel
 #### Q: How can I find the specific source of an A/V device in _BLApp_?
 
 Sources shown in the _BLApp_ are managed in the _Interfaces_ section of the _BeoLiving Intelligence_ web interface. Select the device that contains the source, and check that the source's "_Hidden_" check box isn't selected.
-For more information regarding configuration of user interfaces check _Interfaces_ section of [BeoLiving Intelligence PRO User Guide](bli-pro-user-guide.md). 
+For more information regarding configuration of user interfaces check _Interfaces_ section of [BeoLiving Intelligence PRO User Guide](bli-pro-user-guide/#interfaces). 
 
 #### Q: What does the _BeoLiving Intelligence_ LED state mean?
 

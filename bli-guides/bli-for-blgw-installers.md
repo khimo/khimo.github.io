@@ -26,7 +26,7 @@ This mode has the following features:
 
 Moreover, at any point, _BeoLiving Intelligence_ could be upgraded to _PRO_ mode to get a full professional home automation controller through a 
 one-time payment. **_PRO_ mode has all the features of the _ESSENTIAL_, all the professional capabilities that were already present in the 
-_BeoLink Gateway_, plus remote access from factory.** Refer to our specific [BeoLiving Intelligence PRO User guide](bli-pro-user-guide.md) for a 
+_BeoLink Gateway_, plus remote access from factory.** Refer to our specific [BeoLiving Intelligence PRO User guide](bli-pro-user-guide/) for a 
 deeper understanding.
 
 ## New BeoLiving App {#beoliving-app}
@@ -45,7 +45,7 @@ In _ESSENTIAL_ mode, _BeoLiving App_ is the most important tool for configuratio
 - Create/Edit/Delete products groups
 - Alexa linking
 
-Moreover, in _PRO_ mode, remote access could be enabled through _BeoLiving App_. Refer to _Khimo Cloud link_ section at [BeoLiving Intelligence PRO User guide - Setup](bli-pro-user-guide.md#setup) to see a video explaining how to enable remote access through _BeoLiving App_.
+Moreover, in _PRO_ mode, remote access could be enabled through _BeoLiving App_. Refer to _Khimo Cloud link_ section at [BeoLiving Intelligence PRO User guide - Setup](bli-pro-user-guide/#setup) to see a video explaining how to enable remote access through _BeoLiving App_.
 
 ## User creation through BeoLiving App {#create-user}
 

@@ -100,7 +100,7 @@ The following sections show the available commands for each device. Note that so
   + "_Alexa, change channel to (CHANNEL-NAME) on (DEVICE-NAME)_"
   + _Description_: Changes the channel by name in current source.
   + _Rules_:
-    + Searchs for (CHANNEL-NAME) in all [Favourite Lists](bli-pro-user-guide.html#fav-list) assigned to device sources. Current source will have priority for a match.
+    + Searchs for (CHANNEL-NAME) in all [Favourite Lists](bli-pro-user-guide/#fav-list) assigned to device sources. Current source will have priority for a match.
 
 + Skip channels:
   + "_Alexa, channel up/down on (DEVICE-NAME)_"
