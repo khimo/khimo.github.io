@@ -37,7 +37,7 @@ and is allowed to access all zones via browser or _BLApp_.
 </div>
 <br>
 
-Per default, _admin_ password is unknown but it can be set to "_admin_" by activating the Setup button function No.2 ([See button functions](bli_advanced_user_guide/05-user_button)). This 
+Per default, _admin_ password is unknown but it can be set to "_admin_" by activating the Setup button function No.2 ([See button functions](https://khimo.github.io/bli-guides/bli_advanced_user_guide/05-user_button)). This 
 password will last 5 minutes (for security purposes) during which a new one must be set. Press the _admin_ entry in the left column to change password (see figure above).
 
 #### Users - new user
