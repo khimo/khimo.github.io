@@ -4,14 +4,14 @@ layout: pagetoc
 ---
 
 The systems settings is for setting-up systems connected to _BLI PRO_. BeoLink system and _HA_ systems are ‘systems’. 
-> Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](https://khimo.github.io/bli-guides/bli-pro-user-guide/help_drivers) page to know all _HA_ systems that _BLI PRO_ supports.
+> Example of supported systems are: Nest, Philips Hue, Lutron, KNX. Check [Systems Drivers PRO](https://khimo.github.io/help_drivers) page to know all _HA_ systems that _BLI PRO_ supports.
 
 Each system has in _BLI PRO_ a correspondent driver. There are two driver types:
 
 + _Native driver_,  included in _BLI PRO_ firmware and ready to be added to your _BLI_.
 + _External driver_, located in our cloud. _BLI PRO_ will download and install the external driver if desired.
 
-In this section, only _Native drivers_ will be included. Go to [External drivers](https://khimo.github.io/bli-guides/bli-pro-user-guide/tools#external-drivers) for more information.
+In this section, only _Native drivers_ will be included. Go to [Install external drivers](https://khimo.github.io/bli-guides/bli-pro-user-guide/#advanced) for more information.
 
 #### System add
 
