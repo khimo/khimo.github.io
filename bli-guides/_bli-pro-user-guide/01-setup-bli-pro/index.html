@@ -1,6 +1,7 @@
 ---
 title: Set up the BeoLiving Intelligence PRO
 layout: pagetoc
+toc: true
 ---
 
 
@@ -16,4 +17,10 @@ The <i>BLI PRO</i> has a special user -<i>admin</i>- meant for installer/technic
     </div>
 {% endfor %}
 
+{% for help_driver in site.help_drivers %}
+	<div class="help_driver">
+		<h1><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h1>
+		{{ help_driver.content }}
+	</div>
+{% endfor %}
 
