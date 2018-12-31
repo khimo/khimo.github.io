@@ -15,7 +15,7 @@ Resources are provided by the installed systems:
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/resources-beolink.png" class="img-fluid" alt="BeoLink resources"/>
 </div>
 <br>
 
@@ -31,7 +31,7 @@ The resources have the following parameters:
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/resources-ha.png" class="img-fluid" alt="Home Automation resources"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/resources-ha.png" class="img-fluid" alt="Home Automation resources"/>
 </div>
 <br>
 
@@ -65,7 +65,7 @@ The _BLApp_ currently uses virtual buttons to display scene buttons. _Virtual Re
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/resources-virtual.png" class="img-fluid" alt="Virtual resources"/>
 </div>
 <br>
 

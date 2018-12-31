@@ -1,5 +1,5 @@
 ---
-title: Macros {#macros}
+title: Macros
 layout: pagetoc
 ---
 
@@ -9,7 +9,7 @@ When any of the events that are defined in a _Macro_ occur (e.g. a key press on 
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/macros.png" class="img-fluid" alt="macros"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/macros.png" class="img-fluid" alt="macros"/>
 </div>
 <br>
 
@@ -38,7 +38,7 @@ When pressing the _Add event_ button, the window expands, fields for the _Resour
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/macros-event.png" class="img-fluid" alt="Macros event"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/macros-event.png" class="img-fluid" alt="Macros event"/>
 </div>
 <br>
 
@@ -60,7 +60,7 @@ from the drop down lists with each entry field. The illustration is an example o
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/macros-command.png" class="img-fluid" alt="Macros command"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/macros-command.png" class="img-fluid" alt="Macros command"/>
 </div>
 <br>
 

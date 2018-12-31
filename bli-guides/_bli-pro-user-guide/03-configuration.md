@@ -11,7 +11,7 @@ to rollback your configuration. Below, the different tools in the _Configuration
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/save-revision-1.png" class="img-fluid" alt="Save revision 1"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/save-revision-1.png" class="img-fluid" alt="Save revision 1"/>
 </div>
 <br>
 
@@ -23,7 +23,7 @@ configuration is saved internally in the _BLI_ when the _Save_ button is pressed
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/save-revision-2.png" class="img-fluid" alt="Save revision 2"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/save-revision-2.png" class="img-fluid" alt="Save revision 2"/>
 </div>
 <br>
 
@@ -41,7 +41,7 @@ If the autosaved configuration is newer than the manual _Save revision_, in the 
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/quick-save-revision.png" class="img-fluid" alt="Quick save revision"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/quick-save-revision.png" class="img-fluid" alt="Quick save revision"/>
 </div>
 <br>
 
@@ -54,7 +54,7 @@ _Ctrl+Shift+S_.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/load-conf-1.png" class="img-fluid" alt="Load conf 1"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/load-conf-1.png" class="img-fluid" alt="Load conf 1"/>
 </div>
 <br>
 
@@ -64,7 +64,7 @@ become active immediately and substitute the current configuration.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/load-conf-2.png" class="img-fluid" alt="Load conf 2"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/load-conf-2.png" class="img-fluid" alt="Load conf 2"/>
 </div>
 <br>
 
@@ -72,7 +72,7 @@ become active immediately and substitute the current configuration.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/download-conf.png" class="img-fluid" alt="Download conf"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/download-conf.png" class="img-fluid" alt="Download conf"/>
 </div>
 <br>
 
@@ -83,7 +83,7 @@ downloaded. It is recommended to have such configuration file as a reference or 
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/revision-history.png" class="img-fluid" alt="Revision history"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/revision-history.png" class="img-fluid" alt="Revision history"/>
 </div>
 <br>
 

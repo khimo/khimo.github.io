@@ -20,7 +20,7 @@ monitored by the tool.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/monitor.png" class="img-fluid" alt="Monitor"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/monitor.png" class="img-fluid" alt="Monitor"/>
 </div>
 <br>
 
@@ -33,7 +33,7 @@ first column and all states in the second one.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/resource-states.png" class="img-fluid" alt="Resources States"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/resource-states.png" class="img-fluid" alt="Resources States"/>
 </div>
 <br>
 
@@ -59,7 +59,7 @@ You must fill the form shown on the page. This information is essential to repro
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/service-report.png" class="img-fluid" alt="Service report"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/service-report.png" class="img-fluid" alt="Service report"/>
 </div>
 <br>
 
@@ -74,7 +74,7 @@ The Firmware page allows to check for and apply available updates for the _BLI_ 
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/firmware.png" class="img-fluid" alt="Firmware update"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/firmware.png" class="img-fluid" alt="Firmware update"/>
 </div>
 <br>
 
@@ -109,7 +109,7 @@ contains many of them in its configuration.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/programming-report.png" class="img-fluid" alt="Programming Report"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/programming-report.png" class="img-fluid" alt="Programming Report"/>
 </div>
 <br>
 
@@ -145,7 +145,7 @@ PRO_ if internet connection is available.
 
 <br>
 <div class="text-center">
-  <img src="pictures/bli-pro-user-guide/external-drivers.png" class="img-fluid" alt="External drivers"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/external-drivers.png" class="img-fluid" alt="External drivers"/>
 </div>
 <br>
 

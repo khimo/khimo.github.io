@@ -10,7 +10,7 @@ Correct time setting is important for the monitoring of events, astronomic clock
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-date-time.png" class="img-fluid" alt="Date and Time page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-date-time.png" class="img-fluid" alt="Date and Time page"/>
 </div>
 <br>
 
@@ -32,7 +32,7 @@ Negative values are for South and West.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-integration-protocols.png" class="img-fluid" alt="Integration protocols page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-integration-protocols.png" class="img-fluid" alt="Integration protocols page"/>
 </div>
 <br>
 
@@ -49,7 +49,7 @@ The network page contains the _BLI's_ network connectivity configuration.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-network.png" class="img-fluid" alt="Network page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-network.png" class="img-fluid" alt="Network page"/>
 </div>
 <br>
 
@@ -72,7 +72,7 @@ voice control (e.g.: Amazon Alexa) and remote access to your installation (with 
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-cloud-access.png" class="img-fluid" alt="Khimo cloud link page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-cloud-access.png" class="img-fluid" alt="Khimo cloud link page"/>
 </div>
 <br>
 
@@ -86,7 +86,7 @@ At the bottom of this page, a list with the current remote users is displayed.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-cloud-users.png" class="img-fluid" alt="Khimo cloud link users page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-cloud-users.png" class="img-fluid" alt="Khimo cloud link users page"/>
 </div>
 <br>
 
@@ -111,7 +111,7 @@ The next video shows interactively how to accomplish this feature:
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/setup-system-modes.png" class="img-fluid" alt="System modes page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/setup-system-modes.png" class="img-fluid" alt="System modes page"/>
 </div>
 <br>
 

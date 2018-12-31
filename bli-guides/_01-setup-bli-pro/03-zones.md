@@ -15,7 +15,7 @@ background in the left column.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/zones-edit.png" class="img-fluid" alt="Edit zone page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/zones-edit.png" class="img-fluid" alt="Edit zone page"/>
 </div>
 <br>
 
@@ -26,7 +26,7 @@ Areas are added using the "_Add new area_" button. At this point the area's name
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/zones-edit-2.png" class="img-fluid" alt="Edit zone 2 page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/zones-edit-2.png" class="img-fluid" alt="Edit zone 2 page"/>
 </div>
 <br>
 

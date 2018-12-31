@@ -1,5 +1,5 @@
 ---
-title: Interfaces {#interfaces}
+title: Interfaces
 layout: pagetoc
 ---
 
@@ -33,7 +33,7 @@ and is allowed to access all zones via browser or _BLApp_.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-admin.png" class="img-fluid" alt="Interfaces admin"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-admin.png" class="img-fluid" alt="Interfaces admin"/>
 </div>
 <br>
 
@@ -46,7 +46,7 @@ To add a new user press "**+**" sign in the **Users** header (left column).
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-user.png" class="img-fluid" alt="Interfaces user"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-user.png" class="img-fluid" alt="Interfaces user"/>
 </div>
 <br>
 
@@ -74,7 +74,7 @@ When selecting any product, the next sections are displayed.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-bo.png" class="img-fluid" alt="Interfaces B&O"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-bo.png" class="img-fluid" alt="Interfaces B&O"/>
 </div>
 <br>
 
@@ -92,7 +92,7 @@ For each product all local and distributed sources are shown in the _Sources in 
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-bo-sources.png" class="img-fluid" alt="Interfaces B&O Sources"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-bo-sources.png" class="img-fluid" alt="Interfaces B&O Sources"/>
 </div>
 <br>
 
@@ -113,7 +113,7 @@ The configuration of several network cameras is permitted. To add a camera, pres
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
 </div>
 <br>
 
@@ -143,7 +143,7 @@ IP-address.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
 </div>
 <br>
 
@@ -168,7 +168,7 @@ the user interfaces.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
 </div>
 <br>
 
@@ -196,7 +196,7 @@ favourite channels/stations are listed by name and logo if such is selected.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
 </div>
 <br>
 

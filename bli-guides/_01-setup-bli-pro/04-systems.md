@@ -17,7 +17,7 @@ In this section, only _Native drivers_ will be included. Go to [External drivers
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/system-add.png" class="img-fluid" alt="System add page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/system-add.png" class="img-fluid" alt="System add page"/>
 </div>
 <br>
 
@@ -30,7 +30,7 @@ zones by the installer, but they are invisible in the users interface. For examp
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/system-settings.png" class="img-fluid" alt="System settings page"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/system-settings.png" class="img-fluid" alt="System settings page"/>
 </div>
 <br>
 
@@ -50,7 +50,7 @@ Press _Apply_ button to confirm settings.
 
 <br>
 <div class="text-center">
-  <img src="../../pictures/bli-pro-user-guide/system-status.png" class="img-fluid" alt="System status bar"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/system-status.png" class="img-fluid" alt="System status bar"/>
 </div>
 <br>
 
