@@ -54,14 +54,14 @@ the table of defined resources. The capture functionality is supported by most s
 
 #### Virtual resources
 
-An example of a _Virtual Resource_ is a button on the user interface (_BLApp_, _TV overlay_, _Webpanel_ - see [Interfaces](https://khimo.github.io/bli-guides/bli-pro-guide/interfaces) 
+An example of a _Virtual Resource_ is a button on the user interface (_BLApp_, _TV overlay_, _Webpanel_ - see [Interfaces](https://khimo.github.io/bli-guides/bli-pro-user-guide/interfaces) 
 section for more information).
 > E.g. a virtual button for cinema scene, or a boolean variable to indicate that a specific condition has been reached. 
 _Virtual Resources_ make it possible to define buttons and variables of String, Integer and Boolean types for systems, without implementing these 
 directly. 
 
 The _BLApp_ currently uses virtual buttons to display scene buttons. _Virtual Resources_ have no functionality by themselves. 
-[Macros](https://khimo.github.io/bli-guides/bli-pro-guide/macros) must be defined to link user actions on a virtual resource, with events and commands in the system.
+[Macros](https://khimo.github.io/bli-guides/bli-pro-user-guide/macros) must be defined to link user actions on a virtual resource, with events and commands in the system.
 
 <br>
 <div class="text-center">

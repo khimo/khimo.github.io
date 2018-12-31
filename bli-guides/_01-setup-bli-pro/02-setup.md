@@ -78,7 +78,7 @@ voice control (e.g.: Amazon Alexa) and remote access to your installation (with 
 
 Access restrictions regarding which zones will be able to be controlled could be set from the selection of a specific _BLI_ user. This means 
 that all accounts will share the same zone access restrictions as the selected user. Zone access restriction could be modified in the
-[Interfaces](https://khimo.github.io/bli-guides/bli-pro-guide/#interfaces) page.
+[Interfaces](https://khimo.github.io/bli-guides/bli-pro-user-guide/#interfaces) page.
 
 To remotely access your installation through _BLApp_, remote access must be enabled in the application.
 
