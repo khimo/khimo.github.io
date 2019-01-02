@@ -3,7 +3,7 @@ title: How to connect B&O TVs to a BLI
 layout: pagetoc
 ---
 
-# Introduction
+## Introduction
 The connection between a Bang & Olufsen TV and a BeoLiving Intelligence enables the user to access the Home Control Panel (similar to web interface) on the TV's screen.
 It will also enable scene execution with a OneRemote as explained in the [How to control Your BLI with the One Controller](./howto-OneRemote-BLI.html).
 
@@ -15,9 +15,9 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 
 
 
-# BeoVision Eclipse
+## BeoVision Eclipse
 
-## Part 1: Connect your B&O smart TV to a BLI
+### Part 1: Connect your B&O smart TV to a BLI
 
 1. With the TV on any source, press MENU to access the main menu.
 1. Go to Settings and open by pressing the center button.
@@ -25,16 +25,16 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. Go to the BeoLink option and enter the menu by pressing the right arrow.
 1. Select the BeoLink Gateway option and choose the BeoLiving Intelligence or BeoLink Gateway you wish to connect to from the available options. 
 
-## Part 2: Access your BLI
+### Part 2: Access your BLI
 1. Press the LIST button on the OneRemote.
 1. Go to HOME CONTROL and press the center circle.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
 
 
-# BeoVision Horizon
+## BeoVision Horizon
 
-## Part 1: Connect your B&O smart TV to a BLI
+### Part 1: Connect your B&O smart TV to a BLI
 
 1. With the TV on any source, press MENU to access the main menu.
 1. Go to Settings and open by pressing the center button.
@@ -42,15 +42,15 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. In the Customer Service Menu go to Settings and press the centre button
 1. Select the BeoLink Gateway option and choose the BeoLiving Intelligence or BeoLink Gateway you wish to connect to from the available options. 
 
-## Part 2: Access your BLI
+### Part 2: Access your BLI
 1. Press the LIST button on the OneRemote.
 1. Go to HOME CONTROL and press the center circle.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
 
 
-# BeoPlay V1
-## Part 1: Connect your B&O smart TV to a BLI
+## BeoPlay V1
+### Part 1: Connect your B&O smart TV to a BLI
 
 1. With the TV on any source, press MENU to access the main menu.
 1. Go down to SETUP and open by pressing the center button.
@@ -60,7 +60,7 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. This menu shows you B&O systems available (BeoLiving Intelligences, BeoLink Gateways, Music players, etc.). Select your BLI by pressing the center button and once back in the settings menu, press the center circle to save your new settings. 
 1. Restart your TV (turn OFF and ON).
 
-## Part 2: Access your BLI
+### Part 2: Access your BLI
 1. Press the LIST button on the OneRemote.
 1. Go to HOME CONTROL and press the center circle.
 > If HOME CONTROL doesn't appear on the LIST menu: 
