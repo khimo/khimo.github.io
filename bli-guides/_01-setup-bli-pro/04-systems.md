@@ -23,7 +23,8 @@ In this section, only _Native drivers_ will be included. Go to [Install external
 
 Select "**+**" sign to add a new _HA_ system from the drop down list and click on _Add system_. A System may be added in a specific _Area/Zone_ if it only serves functions there. If the system serves more zones it may be added to the _Main/global_ zone. Any of the supported 
 systems can be added, except internal systems, which only appear once in the installation, such as _BeoLink_ and _Virtual Resources_ that are 
-added by default. When selecting a system added to a certain zone, it's possible to select another zone in the _Zone drop down list_, by which the system is moved to that zone. A system can be renamed and its configuration and connection settings can be changed. Systems are assigned to 
+added by default. When selecting a system added to a certain zone, it's possible to select another zone in the _Zone drop down list_, by which the system is moved to that zone. A system can be renamed and its configuration and connection settings can be changed. 
+> Systems are assigned to 
 zones by the installer, but they are invisible in the users interface. For example, assigning a System to a specific zone could be used by the installer to locate system hardware in the installation.
 
 #### Connection settings

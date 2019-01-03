@@ -38,6 +38,7 @@ The resources have the following parameters:
 The resources have the following parameters:
 
 + **Zone**: The zone to which the resource belongs.
+>> This defines from which zone you will be able to effectively control the resource. Independently of what zone the system is in.
 + **Name**: Name to ease identification of the resources.
 + **Type**: Resource type. The type of available resources depends on the actual system, for instance: button, dimmer, shade 
 etc. 
