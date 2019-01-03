@@ -55,7 +55,7 @@ For resources with state BeoLiving Intelligence keeps track of whether or not an
 the connection began, and sets the ONLINE state to false until some state is received from KNX.
 If ONLINE state stays false, it probably means the resource address is wrong.
 
-### Group address flags in ETS
+#### Group address flags in ETS
 
 There are several flags in the setup of KNX resources in an ETS
 project which determine the behaviour of the resources and their
@@ -84,7 +84,7 @@ In BeoLiving Intelligence help and documentation, the abbreviations *C*, *T*, *R
 *W* are used for Communication, Transmit, Read and Write flags
 respectively.
 
-## Standard and non-standard resources
+### Standard and non-standard resources
 
 BeoLiving Intelligence supports two kinds of resources for KNX: standard BeoLiving Intelligence resources,
 and native KNX resources.
@@ -103,15 +103,15 @@ As a general rule try to avoid assigning the native resource types,
 unless you need macros with precise control over these group addresses.
 
 
-System connection state
-=======================
+## System connection state
+
 The KNX system connection state can be Offline, Connected, Connecting or Online.
 Offline means the KNX is not reachable.
 Connecting means the KNX system initialized the connection.
 Online means an interaction with the KNX system succeeded for at least one command/event/state request.
 
-Resource types
-==============
+## Resource types
+
 
 ### Standard resource types
 
