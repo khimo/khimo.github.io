@@ -38,14 +38,16 @@ The resources have the following parameters:
 The resources have the following parameters:
 
 + **Zone**: The zone to which the resource belongs.
+>> This defines from which zone you will be able to effectively control the resource. Independently of what zone the system is in.
 + **Name**: Name to ease identification of the resources.
 + **Type**: Resource type. The type of available resources depends on the actual system, for instance: button, dimmer, shade 
 etc. 
->> E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a status indication (e.g. a LED that can be On or Off). 
 
 Some systems 
 can extend the standard button to provide extra features (see this in the drop down list). The purpose of having standard resource types is that 
 such common set of features are shared by most supported systems.
+
+>> E.g. a standard button supports PRESS, HOLD and RELEASE actions plus a status indication (e.g. a LED that can be On or Off). 
 
 + **Address**: Unique identification of a resource. The format depends on the _HA_ system - using various number schemes.
 + **Capture**: Used to capture resources by their activity, captured by the _BLI_. Resource selected from the capture list are added automatically to 

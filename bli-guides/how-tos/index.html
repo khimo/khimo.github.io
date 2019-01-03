@@ -1,0 +1,11 @@
+---
+title: How To's and Manuals
+layout: pagetoc
+---
+
+{% for how-to in site.how-tos %}
+    <div class="how-to">
+        <h2><a href="{{ how-to.url }}">{{ how-to.title }}</a></h2>
+        {{ how-to.content }}
+    </div>
+{% endfor %}
