@@ -16,6 +16,8 @@ When any of the events that are defined in a _Macro_ occur (e.g. a key press on 
 A _Macro_ is also assigned to an _Area/Zone_ to which it belongs even if it handles activity outside the zone. Having _Macros_ assigned to zones 
 helps when setting up user interfaces. The left column shows all _Macros_ contained in each _Area/Zone_. To add a _Macro_ in a specific _Area/Zone_ press "**+**" in the column entry. 
 
++ **Mode**: Before setting the macro up, the system mode (E.g.: Normal, Vacation, etc.) to which the Macro will belong is programable. The default _Any_ will make it available independently of the mode the system is in.
+
 For each macro, the next options are available:
 
 + **Add event**: used to add an _Event_ to a _Macro_. The two buttons (see figure above) can be used to set the cinema scene. See 

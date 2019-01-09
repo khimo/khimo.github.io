@@ -81,7 +81,8 @@ When selecting any product, the next sections are displayed.
 - **Name**: Possibilty to rename the product.
 - **Address**: The product's serial number.
 - **Force IP address**: Define a fixed IP address to connect to the product. This is not recommended and should only be used as a workaround in 
-situations where product discovery has shown not to be reliable.
+situations where product discovery has shown not to be reliable. 
+>> It may also be used to access equipment installed on another (reachable) network.
 - **Beo4 navigation**: Whether the product is set up for the old Beo4 navigation or the new navigation with cursor keys and SELECT.
 - **Show product sources on their zone**: Hides product sources in its zone if not selected.
 - **Set new automatically synchronized sources as visible**: New synchronized sources are not set as hidden.
@@ -128,7 +129,10 @@ To add a camera you must fill the next form:
 - **Base URL**: A Base URL (_URL_: _Port number_), to which all commands will be appended, must be provided. The format may vary.
 >> E.g. http://192.168.1.37:80.
 - **Base RTSP URL**: If your camera supports _RTSP_ protocol with _H264_ encoded stream format, base URL of RTSP server could be specified (as rtsp://_URL_:_Server Port_). 
->> E.g. rtsp://bigserver.com:554. 
+>> E.g. rtsp://bigserver.com:554.
+
+>> These camera _RTSP_ streams will not be available through webpanel and may only be seen on the App or by going to rtsp://$GATEWAY_HOST:554/$AREA/$ZONE/CAMERA/$NAME
+
 - **Username** and **Password**: The optional _Username_ and _Password_ fields may be used for basic HTTP authentication to access the camera from
  the user interfaces.
 
