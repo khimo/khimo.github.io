@@ -133,7 +133,8 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
 <a id="Basic"/>
 
 
-<a id="how-to-upgrade-beoliving-intelligence-to-pro-mode"/><!-- This link is used in the LaunchPackage pdf --//>
+<a id="how-to-upgrade-beoliving-intelligence-to-pro-mode"/>
+<!-- This link is used in the LaunchPackage pdf -->
 
 #### Q: How do I upgrade the _BeoLiving Intelligence_ to PRO mode?
 
