@@ -1,5 +1,5 @@
 ---
-layout: pageindextoc
+layout: page
 title: Help Drivers (BLI PRO)
 toc: true 
 ---
@@ -10,6 +10,5 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 {% for help_driver in site.help_drivers %}
 	<div class="help_driver">
 		<h1><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h1>
-		{{ help_driver.content }}
 	</div>
 {% endfor %}
