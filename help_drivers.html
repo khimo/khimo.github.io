@@ -17,13 +17,16 @@ toc: true
 <body>
 
 A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems in the market. Here you will find <em>BeoLiving Intelligence</em> help and usage guides for some of them:
+
+<br>
+
 <div class="newspaper">
-<center>
+
 	{% for help_driver in site.help_drivers %}
 		<div class="help_driver">
 			<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
 		</div>
 	{% endfor %}
-</center>
+
 </div>
 </body>
