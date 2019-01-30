@@ -1,15 +1,35 @@
 ---
-layout: pagetoc
+layout: page
 title: Help Drivers (BLI PRO)
 toc: true 
 ---
 
+<head>
+<style>
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+</style>
+</head>
+
+<body>
+
 A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems in the market. Here you will find <em>BeoLiving Intelligence</em> help and usage guides for some of them:
 
+<br>
+<p>
+ 
+</p>
 
-{% for help_driver in site.help_drivers %}
-	<div class="help_driver">
-		<h1><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h1>
-		{{ help_driver.content }}
-	</div>
-{% endfor %}
+<div class="newspaper">
+
+	{% for help_driver in site.help_drivers %}
+		<div class="help_driver">
+			<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
+		</div>
+	{% endfor %}
+
+</div>
+</body>
