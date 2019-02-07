@@ -13,13 +13,13 @@ First we will show a whole example of a LuaMacro code that compleates these acti
 
 ```lua
 function(event, engine)
-  init_status = engine.query("Main/Home Theater/AV renderer/BeoVision Eclipse_28750648")
-  init_state=tostring(init_status[1].get("state"))
-  Error(init_state,true)
-  if (init_state=="Stop" or init_state=="None") then
-    engine.fire("Main/Home Theater/AV renderer/BeoVision Eclipse_28750648/Select source?Connector=&Origin=local&Source Type=TV")
-    engine.delay(15,0)
-  end
+  init_tvs = engine.query("Reception/TVs/AV renderer/*")
+  for i=1,#init_tvs do
+    init_state=tostring(init_tvs[i].get("state"))
+    if (init_state=="Stop" or init_state=="None") then
+      engine.fire("Main/Home Theater/AV renderer/BeoVision Eclipse_28750648/Select source?Connector=&Origin=local&Source Type=TV")
+      engine.delay(15,0)
+    end
   
   engine.fire("*/*/AV renderer/*/Send command?Command=HOME CONTROL&Continue type=short_press")
   engine.wait_until("RND/TV/BUTTON/DoorState/PRESS", 80, 0)
@@ -32,4 +32,7 @@ function(event, engine)
   end
 end 
 ```
+
+
+
 
