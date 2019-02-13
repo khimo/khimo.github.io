@@ -269,6 +269,12 @@ After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be ab
 
 Once your _BeoLiving Intelligence_ is on _PRO_ mode, you will be able to control your house from anywhere. You can enable remote access by going to your _BeoLiving Intelligence_ settings on the _BLApp_.
 
+#### Q: How can I find what _FUNCTION_ number corresponds to the LIGHT list controls on my BeoRemote?
+
+The LIGHT and CONTROL lists on your BeoRemote (i.e.: GOODBYE, MORNING, etc.) correspond to different function numbers (i.e.: LIGHT FUNCTION 17, LIGHT FUNCTION 1, etc) that can be used as _Events_ to trigger _BLI Macros_.
+
+To find out what function number corresponds to each name, you may go to the Monitor tool and see what Event comes in when you press each button. Or directly on the Macro creation page, under Events, press Capture and the Events you press will now appear to add directly to your Macro.  
+
 
 ## Other issues
 #### Q: If the power goes off, do I lose the _BeoLiving Intelligence_ configuration?
