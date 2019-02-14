@@ -29,7 +29,7 @@ The workaround is to Hide the direct access to the OPEN_DOOR button on the _Inte
 The Macro for the DoorBird should simply execute two commands. One should send the command to the doorbell to open the door, the other should select PRESS on a virtual resource BUTTON.
 
 <div class="text-center">
-  <img src="www.khimo.github.io/bli-guides/pictures/ButtonStateMacro.png" class="img-fluid" alt="DoorBird Macro"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/ButtonState.png" class="img-fluid" alt="DoorBird Macro"/>
 </div>
 
 
@@ -38,7 +38,7 @@ The Macro for the DoorBird should simply execute two commands. One should send t
 **As well as the Lua code that goes in the commands section, an event has to be added that executes the _Macro_ when the DoorBird's button is pressed.**
 
 <div class="text-center">
-  <img src="www.khimo.github.io/bli-guides/pictures/DoorBellEvent.png" class="img-fluid" alt="Event to execute the Macro"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/DoorBellEvent.png" class="img-fluid" alt="Event to execute the Macro"/>
 </div>
 
 
