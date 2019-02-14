@@ -9,7 +9,7 @@ The client wanted the BLI to respond to somebody ringing the doorbell by turning
 
 This is easily set up through a LuaMacros code and implemented with the functions shown in the help section of the Macro writing page.
 
-#### Installation configuration
+### Installation configuration
 
 Let us explain our fictitious installation, we have configured an _Area_ called "Reception" and a _Zone_ where all the television resources will be (which we called "TVs").
 > The amount and name of the TVs are not relevant but the idea would be that no other B&O Audio equipment be assigned to this _Zone_.
@@ -33,7 +33,7 @@ The Macro for the DoorBird should simply execute two commands. One should send t
 </div>
 
 
-#### Lua _Macro_ code
+### Lua _Macro_ code
 
 **As well as the Lua code that goes in the commands section, an event has to be added that executes the _Macro_ when the DoorBird's button is pressed.**
 
