@@ -23,10 +23,12 @@ To try out communication with a BLI, you may use a Telnet protocol and the follo
 
 **E.g.:**
 
+```
 ~$ telnet 182.169.43.136 9100
 q */*/*/*
 f */*/*/*
 c Area/Zone/BUTTON/Name/PRESS
+```
 
 
 ### Lua commands
