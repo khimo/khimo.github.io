@@ -14,13 +14,13 @@ Assitance is available through our support email: support@khimo.com
 
 Driver development for a system will enable communication between the system and the BLI, this makes it possible to trigger events on the BLI and to send commands to your external system.
 
-+ [Driver development guide](/bli-guides/developers-guides/driverDevelopmentGuide.pdf)
++ [Driver development guide](/bli-guides/developers-guides/driverDevelopmentGuide)
 
 ## Client development
 
 Client creation would enable the user to gain control of everything the BLI controls through the system (this includes B&O products and much more. E.g: DoorBird, Dynalite, Lutron, Nest thermostat, Philips Hue, Vantage, Velux, etc.).
 
-+ [BLGW communication protocol](/bli-guides/developers-guides/BLGW_Home_Integration_Protocol.pdf)
++ [BLGW communication protocol](/bli-guides/developers-guides/BLGW_Home_Integration_Protocol)
 
 ### Example
 
