@@ -1,7 +1,12 @@
 ---
-title: Developers guide
+title: Developers guides
 layout: pagetoc
 ---
+INTEGRATION UNSUPPORTED THIRD PARTY DEVICES
+
+Developers wishing to integrate a new system or device with the BeoLiving intelligence have two options to choose from, depending of the type of control they wish to have.
+If you wish to control your system with the BLI (send commands, request system states, etc.) the _Driver Development Guide_ includes communication protocol, available functions 
+
 This section includes all available information and manuals for people wishing to develop drivers or clients to communicate or control the BeoLiving Intelligence.
 Assitance is available through our support email: support@khimo.com
 

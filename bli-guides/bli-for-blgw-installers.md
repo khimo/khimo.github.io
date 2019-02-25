@@ -8,7 +8,7 @@ The scope of this guide is intended to show to _BeoLink Gateway_ installers what
 
 <div class="row justify-content-center"> 
 	<div class="" style="padding-bottom: 0%;">
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/qqnNAh7CGmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/qqnNAh7CGmw?html5=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </div>
 
