@@ -1,3 +1,7 @@
+---
+title: BLI Home Integration Protocol
+layout: pagetoc
+---
 
 <a id="org08ee48d"></a>
 
