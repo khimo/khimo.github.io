@@ -5,11 +5,11 @@ layout: pagetoc
 
 ### Introduction
 The connection between a Bang & Olufsen TV and a BeoLiving Intelligence enables the user to access the Home Control Panel (similar to web interface) on the TV's screen.
-It will also enable scene execution with a OneRemote as explained in the [How to control Your BLI with the One Controller](./howto-OneRemote-BLI.html).
+It will also enable scene execution with a OneRemote as explained in the [How to control Your BLI with the One Controller](https://khimo.github.io/bli-guides/bli-pro-user-guide/how-tos/#howto-OneRemote-BLI).
 
 **This document gives connection instrucctions to the BeoVision Eclipse, the BeoVision Horizon and the BeoPlay V1.** 
 
-> All these B&O products can be added as NetworkLink [Resources](./bli-pro-user-guide.html#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
+> All these B&O products can be added as NetworkLink [Resources](https://khimo.github.io/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
 
 > Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the posibility to trigger macros through shortcuts on your control.
 

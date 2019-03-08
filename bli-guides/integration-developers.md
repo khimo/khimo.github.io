@@ -8,6 +8,7 @@ If you wish to control your system with the BLI (send commands, request system s
 On the other hand, if you wish to control the BLI directly, accesing all available systems through it but without using the typical interfaces (BeoLiving App, webpanel, etc.), the _Home Integration Protocol_ is available. 
 
 **This section includes all available information and manuals for people wishing to develop drivers or clients to communicate or control the BeoLiving Intelligence.**
+
 Assitance is available through our support email: support@khimo.com
 
 ## Driver development
