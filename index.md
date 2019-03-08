@@ -210,6 +210,16 @@ possibilities **BeoLiving Intelligence** has to offer. The _Link to third partie
    </div>
  </div>
 
+Watch an example of a simple home installation done in **only four minutes** using the BeoLiving Intelligence on Essential mode:
+
+<div class="row justify-content-center"> 
+  <div class="" style="padding-bottom: 0%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iLQhc2VGZVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
 <a id="PRO"/>
 ## PRO
 

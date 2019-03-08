@@ -1,13 +1,13 @@
 ---
-title: Developers guides
+title: Integration developers
 layout: pagetoc
 ---
-INTEGRATION UNSUPPORTED THIRD PARTY DEVICES
 
-Developers wishing to integrate a new system or device with the BeoLiving intelligence have two options to choose from, depending of the type of control they wish to have.
-If you wish to control your system with the BLI (send commands, request system states, etc.) the _Driver Development Guide_ includes communication protocol, available functions 
+Developers wishing to integrate a new system or unsupported device with the BeoLiving intelligence have two options to choose from depending of the type of control they wish to have.
+If you wish to control your system with the BLI (send commands, request system states, etc.) the _Driver Development Guide_ includes communication protocol, available lua functions and examples.
+On the other hand, if you wish to control the BLI directly, accesing all available systems through it but without using the typical interfaces (BeoLiving App, webpanel, etc.), the _Home Integration Protocol_ is available. 
 
-This section includes all available information and manuals for people wishing to develop drivers or clients to communicate or control the BeoLiving Intelligence.
+**This section includes all available information and manuals for people wishing to develop drivers or clients to communicate or control the BeoLiving Intelligence.**
 Assitance is available through our support email: support@khimo.com
 
 ## Driver development
@@ -16,11 +16,15 @@ Driver development for a system will enable communication between the system and
 
 + [Driver development guide](/bli-guides/developers-guides/driverDevelopmentGuide)
 
+### Available Drivers
+
+A complete list of the supported systems is available on the [Drivers](/help_drivers) page. You will find the documentation of each driver by pressing on the driver's name.
+
 ## Client development
 
 Client creation would enable the user to gain control of everything the BLI controls through the system (this includes B&O products and much more. E.g: DoorBird, Dynalite, Lutron, Nest thermostat, Philips Hue, Vantage, Velux, etc.).
 
-+ [BLGW communication protocol](/bli-guides/developers-guides/BLGW_Home_Integration_Protocol)
++ [Home integration protocol](/bli-guides/developers-guides/BLI_Home_Integration_Protocol)
 
 ### Example
 

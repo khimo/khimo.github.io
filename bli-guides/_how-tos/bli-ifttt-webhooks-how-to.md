@@ -31,7 +31,7 @@ Enter to the web-interface of _BeoLiving Intelligence_ and follow the next steps
 URL is _https://maker.ifttt.com/trigger/myFabulousEvent/with/key/abcDFgHijK_, insert just _https://maker.ifttt.com/trigger/_.
 
     <div class="text-center">
-      <img src="pictures/bli-ifttt-webhooks-how-to/custom-http.png" class="img-fluid" alt="Custom HTTP Connection Settings"/>
+      <img src="https://khimo.github.io/bli-guides/pictures/bli-ifttt-webhooks-how-to/custom-http.png" class="img-fluid" alt="Custom HTTP Connection Settings"/>
     </div>
 
 3. Go to _Resources_ and add a "_POST_" resource with the rest of the URL at the resource address. For example, address equal 
@@ -40,12 +40,12 @@ URL is _https://maker.ifttt.com/trigger/myFabulousEvent/with/key/abcDFgHijK_, in
 tutorial, body request is not necessary.
 
     <div class="text-center">
-      <img src="pictures/bli-ifttt-webhooks-how-to/custom-http-resources.png" class="img-fluid" alt="HTTP resources"/>
+      <img src="https://khimo.github.io/bli-guides/pictures/bli-ifttt-webhooks-how-to/custom-http-resources.png" class="img-fluid" alt="HTTP resources"/>
     </div>
 
 4. Create a _Macro_ setting a _SEND_ command on the _Custom HTTP_ resource created at 4. Add the _Event_ you prefer. In our example, this could be
  any physical button of your configuration. After pressing this button, the HTTP request will be fired and your phone will start ringing.
 
     <div class="text-center">
-      <img src="pictures/bli-ifttt-webhooks-how-to/custom-http-macro.png" class="img-fluid" alt="HTTP macro"/>
+      <img src="https://khimo.github.io/bli-guides/pictures/bli-ifttt-webhooks-how-to/custom-http-macro.png" class="img-fluid" alt="HTTP macro"/>
     </div>
