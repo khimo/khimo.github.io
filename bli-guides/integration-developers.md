@@ -6,14 +6,14 @@ layout: pagetoc
 ## Drivers
 Developers wishing to integrate a new system or unsupported device with the BeoLiving intelligence may create a driver for the BLI to communicate with their system. The driver development guide is available for anybody wishing to try and write their own driver in Lua programming language. 
 
-The BeoLiving Intelligence's web Setup page has a driver development tool (_Tools-->Advanced-->Custom Driver Editor_) with a _Code Check_ tool and also permits you to activate your driver on your system to see it working.
-
-Assistance is available through our support email: _support@khimo.com_
+The BeoLiving Intelligence’s web Setup page has a driver development tool (_Tools–>Advanced–>Custom Driver Editor_) that permits you to test your driver while deveoping.
 
 ### Driver development
-Driver development for a system will enable communication between it and the BLI, this makes it possible to trigger events on the BLI and to send commands to your external system.
+Driver development for a system will enable communication between it and the BLI:
 
 + [Driver development guide](/bli-guides/developers-guides/driverDevelopmentGuide)
+
+Assistance is available through our support email: _support@khimo.com_
 
 ### Available Drivers
 A complete list of the supported systems is available on the [Drivers](/help_drivers) page. You will find the documentation of each driver by pressing on the driver's name.
