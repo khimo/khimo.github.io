@@ -19,8 +19,7 @@ Assistance is available through our support email: _support@khimo.com_
 A complete list of the supported systems is available on the [Drivers](/help_drivers) page. You will find the documentation of each driver by pressing on the driver's name.
 
 
-## Clients
-Another form of integration with the BeoLiving Intelligence would be to control the BLI (and all resources on it) by creating a client interface to control the BeoLiving Intelligence through another channel (instead of through the App, web or TV).
-There is a Home Integration Protocol for this, to gain access you can send an email to _support@khimo.com_ stating interest in the system, etc.
+## Client integration
+It is also possible to control the BeoLiving Intelligence and all its resources using the Home Integration Protocol. This could be useful for third parties wishing to create APPS or to control the BeoLiving Intelligence with their own user interface. You can access this protocol by contacting us at _support@khimo.com_ explaining what your usecase would be. 
 
-Client creation would enable the user to gain control of everything the BLI controls (this includes B&O products and much more. E.g: DoorBird, Dynalite, Lutron, Nest thermostat, Philips Hue, Vantage, Velux, etc.).
+Client integration would also grant access and control to everything the BLI controls in an standarized way (this includes B&O products and much more. E.g: DoorBird, Dynalite, Lutron, Nest thermostat, Philips Hue, Vantage, Velux, etc.).
