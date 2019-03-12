@@ -86,7 +86,8 @@ Without any _user_ or _password_ to remember, link with third party cloud servic
 Intelligence_ with the service provider. Refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.html)
  for a detailed description on how to link your voice control device with _BeoLiving Intelligence_.
 
-For now, only _Alexa_ is officially supported for voice control. More voice control devices are on the way. Check [BeoLiving Intelligence Alexa's skill Guide](bli-alexa) to know all you can do with _Alexa_ and _BeoLiving Intelligence_.
+_Alexa_ is officially supported for voice control. Check [BeoLiving Intelligence Alexa's skill Guide](bli-alexa) to know all you can do with _Alexa_ and _BeoLiving Intelligence_. More voice control devices are on the way but for now Google Assistant is available for integration only through IFTTT.
+
 
 ## Other changes respect to BLGW  
 

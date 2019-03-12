@@ -38,7 +38,34 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
+      <td>Control of Philips Hue products</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
+      <td>Control of ONVIF enabled cameras</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
       <td>Control through BeoLiving App</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
+    <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
@@ -73,7 +100,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-   <!-- <tr>
+    <tr>
       <td>IFTTT support</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -81,7 +108,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
-    </tr> -->
+    </tr>
     <tr>
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
@@ -100,14 +127,6 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
     <tr>
       <td>Control through its Web interface</td>
-      <td class="text-center">
-      </td>
-      <td class="text-center">
-        <i class="fa fa-check" style="color: #eb5946"></i>
-      </td>
-    </tr>
-    <tr>
-      <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
       </td>
       <td class="text-center">
