@@ -5,11 +5,11 @@ layout: pagetoc
 
 ### Introduction
 The connection between a Bang & Olufsen TV and a BeoLiving Intelligence enables the user to access the Home Control Panel (similar to web interface) on the TV's screen.
-It will also enable scene execution with a OneRemote as explained in the [How to control Your BLI with the One Controller](https://khimo.github.io/bli-guides/how-tos/#howto-OneRemote-BLI).
+It will also enable scene execution with a BeoRemote as explained in the [How to control Your BLI with the One Controller](https://khimo.github.io/bli-guides/how-tos/#howto-OneRemote-BLI).
 
 **This document gives connection instrucctions to the BeoVision Eclipse, the BeoVision Horizon and the BeoPlay V1.** 
 
-> All these B&O products can be added as NetworkLink [Resources](https://khimo.github.io/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
+> All these B&O products can be added as NetworkLink [Resources](/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
 
 > Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the posibility to trigger macros through shortcuts on your control.
 
@@ -26,7 +26,7 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. Select the BeoLink Gateway option and choose the BeoLiving Intelligence or BeoLink Gateway you wish to connect to from the available options. 
 
 #### Part 2: Access your BLI
-1. Press the LIST button on the OneRemote.
+1. Press the LIST button on the BeoRemote.
 1. Go to HOME CONTROL and press the center circle.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
@@ -43,7 +43,7 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. Select the BeoLink Gateway option and choose the BeoLiving Intelligence or BeoLink Gateway you wish to connect to from the available options. 
 
 #### Part 2: Access your BLI
-1. Press the LIST button on the OneRemote.
+1. Press the LIST button on the BeoRemote.
 1. Go to HOME CONTROL and press the center circle.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
@@ -61,11 +61,11 @@ It will also enable scene execution with a OneRemote as explained in the [How to
 1. Restart your TV (turn OFF and ON).
 
 #### Part 2: Access your BLI
-1. Press the LIST button on the OneRemote.
+1. Press the LIST button on the BeoRemote.
 1. Go to HOME CONTROL and press the center circle.
 > If HOME CONTROL doesn't appear on the LIST menu: 
 >  - Go down the menu to Settings and press the center circle.
 >  - Select LIST for TV and then SHOW.
->  - Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the OneRemote.
+>  - Find HOME CONTROL and select it by pressing the center circle, so that the option is ticked. You will now find the HOME CONTROL option in your LIST on the BeoRemote.
 1. Input your BeoLiving Intelligence User and Password in the window that appears on your B&O TV's screen. 
 1. The BLI's control panel will appear on your TV screen, from which you will be able to trigger macros, control individual equipment (lights, shades, etc) or watch your home's cameras.
