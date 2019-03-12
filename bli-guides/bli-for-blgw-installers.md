@@ -6,6 +6,12 @@ layout: pagetoc
 The _BeoLiving Intelligence_ uses _the core_ of the _BeoLink Gateway_ but it is designed for a _wider_ audience.
 The scope of this guide is intended to show to _BeoLink Gateway_ installers what they already know and what's new regarding _BeoLiving Intelligence_.
 
+<div class="row justify-content-center"> 
+	<div class="" style="padding-bottom: 0%;">
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/qqnNAh7CGmw?html5=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+</div>
+
 ## ESSENTIAL and PRO mode
 
 The biggest and most important difference of _BeoLiving Intelligence_ is that it has two functional modes: _ESSENTIAL_ and _PRO_ modes. _BeoLiving 
@@ -80,8 +86,7 @@ Without any _user_ or _password_ to remember, link with third party cloud servic
 Intelligence_ with the service provider. Refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.html)
  for a detailed description on how to link your voice control device with _BeoLiving Intelligence_.
 
-For now, only _Alexa_ is officially supported for voice control. More voice control devices are on the way. Check [BeoLiving Intelligence Alexa's 
-skill Guide](bli-alexa.md) to know all you can do with _Alexa_ and _BeoLiving Intelligence_.
+For now, only _Alexa_ is officially supported for voice control. More voice control devices are on the way. Check [BeoLiving Intelligence Alexa's skill Guide](bli-alexa) to know all you can do with _Alexa_ and _BeoLiving Intelligence_.
 
 ## Other changes respect to BLGW  
 

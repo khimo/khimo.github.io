@@ -7,11 +7,11 @@ layout: pagetoc
 
 Using your BeoRemote One, you may gain access to a BeoLiving Intelligence (BLI) through a Bang & Olufsen Smart TV.
 
-> The connection process between a BLI and a B&O TV is detailed in [this tutorial](./bli-connect-to-TV.md). 
+> The connection process between a BLI and a B&O TV is detailed in [this tutorial](https://khimo.github.io/bli-guides/how-tos/#bli-connect-to-TV). 
 
 You will be able to access the BLI's webpanel to control all your home's equipment (i.e. lights, shades, cameras, etc.) as well as trigger any macros you may have previously set up.
 
-*You will also be able to configure shortcuts to trigger [Macros](./bli-pro-user-guide.html#macros) by pressing only a couple of buttons.*
+*You will also be able to configure shortcuts to trigger [Macros](https://khimo.github.io/bli-guides/bli-pro-user-guide/#macros) by pressing only a couple of buttons.*
 
 > Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the posibility to trigger macros through shortcuts on your control.
 
@@ -31,7 +31,7 @@ One may also fire events through LIGHT by simply highlighting LIGHT on the OneRe
 1. In the setup web page go to: Tools --> Monitor
 1. On the OneRemote, press LIST, go to LIGHT, enter the menu by pressing the right arrow and select the HOME function. 
 1. The monitor will show a message like: _yy-mm-dd hh:mm:ss Event fired Test/local/AV renderer/BeoPlay-V1/Light?Action=Press&Command=FUNCTION_11_ you now know that the HOME function is recieved by the BLI as FUNCTION_11.
-1. Go to Macros and [create a Macro](./bli-pro-user-guide.html#macros) whos commands turn on all lights
+1. Go to Macros and [create a Macro](https://khimo.github.io/bli-guides/bli-pro-user-guide/#macros) whos commands turn on all lights
 1. Add an event to trigger the macro
 1. Configure the event as follows: 
     - Zone: Zone where the TV is located 
