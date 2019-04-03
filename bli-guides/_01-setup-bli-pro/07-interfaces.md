@@ -114,22 +114,40 @@ The configuration of several network cameras is permitted. To add a camera, pres
 
 <br>
 <div class="text-center">
-  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-add.png" class="img-fluid" alt="Interfaces Camera addition"/>
 </div>
 <br>
 
-##### Camera basic configuration
+##### ONVIF Cameras
+
+Both ONVIF protocol cameras and HTTP cameras are supported, when adding a camera ONVIF cameras available on the network will be automatically detected. These can also be added to your system directly through the BeoLiving App on a smartphone.
+
+> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on https://www.onvif.org/conformant-prod.... You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-confONVIF.png" class="img-fluid" alt="Interfaces ONVIF Camera configuration"/>
+</div>
+<br>
+
+##### HTTP Camera basic configuration
 
 _BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+</div>
+<br>
 
 To add a camera you must fill the next form:
 
 - **Name**: Name that identifies the camera. The name will be shown in the user interfaces.
 - **Zone**: Drop down list to select the zone in which the camera is placed.
-- **Base URL**: A Base URL (_URL_: _Port number_), to which all commands will be appended, must be provided. The format may vary.
->> E.g. http://192.168.1.37:80.
-- **Base RTSP URL**: If your camera supports _RTSP_ protocol with _H264_ encoded stream format, base URL of RTSP server could be specified (as rtsp://_URL_:_Server Port_). 
->> E.g. rtsp://bigserver.com:554.
+- **IP**: A Base URL (_URL_: _Port number_), to which all commands will be appended, must be provided. The format may vary.
+>> E.g. 192.168.1.37
+- **HTTP Port**: 
+- **RTSP Port**: 
 
 >> These camera _RTSP_ streams will not be available through webpanel and may only be seen on the App or by going to rtsp://$GATEWAY_HOST:554/$AREA/$ZONE/CAMERA/$NAME
 
@@ -138,7 +156,7 @@ To add a camera you must fill the next form:
 
 If a camera must be removed from the list, choose the _Camera_ header in the left column and press the **Remove** button.
 
-##### Camera resources path
+##### HTTP Camera resources path
 
 By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to 
 copy and paste the text when setting up other similar cameras and for each of these to adapt to the actual camera.

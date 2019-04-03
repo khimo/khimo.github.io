@@ -32,7 +32,7 @@ by the serial number located at the back side of each.
   </div>
 </div>
 
-## Adding Bang & Olufsen products {#add-products}
+## Adding Bang & Olufsen products {#add-BEOproducts}
 
 1. **Go to App and press "Add products"**
     - In the main screen of the _BeoLiving App_, select your _BeoLiving Intelligence_ and click on "Add products". A list of the supported products that are on the same network will appear.
@@ -42,17 +42,32 @@ by the serial number located at the back side of each.
     - Select the product you want to add from the list and click on "Assign to zone". Assign the product to the zone you just created.
     - Return to the _BeoLiving Intelligence_ main screen and you should see the zone with the icon of the product added.
 
+You can **add more products to that zone, edit products name, change products from zone and create more zones** by pressing **"Edit products"**. 
+Note that only one icon per type of product will appear in the zone.
+
+## Adding Philips Hue and ONVIF cameras {#add-hueandONVIF}
+
+1. **Go to App and press "Add products"**
+    - In the main screen of the _BeoLiving App_, select your _BeoLiving Intelligence_ and click on "Add products".
+1. **Discover available products**
+    - Press the _Discover my devices_ button to find all Philips Hue systems and ONVIF protocol enabled cameras that appear on your network.
+    - **Philips Hue:** A message will appear asking you to press the button on the Hue Bridge, enabling discovery of all lights and Hue Scenes.
+    - **ONVIF cameras:** Insert camera credentials if needed.
+1. **Assign product to zone**
+    - Select the product you want to add from the list and click on "Assign to zone".
+    - Return to the _BeoLiving Intelligence_ main screen and you should see the zone with the icon of the product added.
+
 <div class="row justify-content-center">
   <div class="col-sm-5">     
-	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=1&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
-	</div>
+  <div class="embed-responsive" style="padding-bottom: 179%;">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PNh82VpcW8?autoplay=1&loop=1&playlist=6PNh82VpcW8"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
+  </div>
   </div>
 </div>
 <br>
 
 You can **add more products to that zone, edit products name, change products from zone and create more zones** by pressing **"Edit products"**. 
-Note that only one icon per type of product will appear in the zone.
+Note that only one icon per type of product will appear in the zone. 
 
 ## Controlling Bang & Olufsen products {#control-products}
 
