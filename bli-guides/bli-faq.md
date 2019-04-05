@@ -176,9 +176,8 @@ network used by the _BeoLiving Intelligence_.
 
 #### Q: How do I access the setup interface as admin? {#admin-password}
 
-An installer can gain access to _BeoLiving Intelligence's_ setup interface with the _admin_ user, which has an unknown password by default. The Setup 
-function 2 can be used to set up the _admin_ password to _"admin"_ for 5 minutes, and the _BLI_ will request a password update as soon as the 
-web interface is accessed.
+An installer can gain access to _BeoLiving Intelligence's_ setup interface with the _admin_ user. This user has a first-time access protocol, the installer may use the Setup function 2 to set the _admin_ password to _"admin"_ for 5 minutes, the _BLI_ will then request a password update as soon as the web interface is accessed.
+The Setup function 2 is called by keeping the BLI's button pressed, waiting for it to flash once, and when it flashes twice releasing the button. The Light should start flashing which indicated it is waiting for confirmation, this is given by short-pressing the button once again.
 
 Refer to the specific [section](bli_advanced_user_guide/05-user_button) of [BeoLiving Intelligence Advanced User guide](bli_advanced_user_guide/) for more information.
  

@@ -5,8 +5,12 @@ layout: slides
 [comment]: <> (For a new horizontal slide use: \n----\n)
 [comment]: <> (For a new vertical slide use: \n|||n)
 [comment]: <> (To write slide notes uses \nNote:)
+<!--to control the slides while talking https://ivanmeresman.github.io/vendor/reveal.js/plugin/notes/notes.html-->
+
 
 <!-- .slide: data-background-image="bli.jpg" data-background-opacity=.1 -->
+
+
 
 ----
 ## BeoLiving Intelligence
@@ -33,14 +37,14 @@ Note:
 ----
 ### ESSENTIAL (1/2)
 
-- Designed for the end-user (*Plug & Play*)
-- Automatically adds B&O devices
-- Fully configurable from the *BeoLiving App*
-- Password less: improves security
+- Designed for end-user (*Plug & Play*)
+- Easily add B&O devices, Philips Hue lighting and ONVIF cameras
+- Fully configurable through the *BeoLiving App* (Scenes, Zones, etc.)
+- Passwordless: Improves security
 
 Note:
 + Designed for the end-user, meaning that you don't need any technical knowledge
-+ The idea is that when a customer buys a BLI, by itself he will by capable to install and start using it without any installer help
++ The idea is that when a customer buys a BLI, he will be able to install and start using it without any installer help
 + Most of its configuration is done through BeoLiving App
 + Web interface is only used for a few things. Network settings, Project info, User management, Firmware update and Service report are available. 
 Configuration upload/download is not supported
@@ -50,22 +54,22 @@ Configuration upload/download is not supported
  
 - Set content provider credentials
 - Products groups
-- Voice control
+- Voice control (Alexa & IFTTT)
 - Automatic firmware upgrade
 
 Note:
 - Voice control: Alexa, Google Home (on the way) and Apple HomePod (looking forward to)
-- HA systems are blocked
+- HA(High Availability) systems are blocked
 - Some HA systems will be added in the near future
 - Recapitulation of ESSENTIAL
 
 ----
 ## PRO
 
-- The *ESSENTIAL* features
-- The *BeoLink Gateway* features
+- One-time payment for PRO upgrade
+- The *ESSENTIAL*'s features
+- The *BeoLink Gateway*'s features
 - Remote access
-- One-time payment for PRO mode upgarde
 
 Note:
 - This upgrade is done through BLI web interface. 
@@ -73,15 +77,15 @@ Note:
 - Its web interface and configuration is practically the same as BeoLink Gateway
 
 ----
-## Changes compared with BLGW
+## Changes from BLGW
 
 - MasterLink devices only integrated through BLC
 - Beo4 and BeoRemote One commands deprecated from Macros
-- No more manual sources: devices' sources synchronized automatically
-- The default admin password
+- No more manual sources: device's sources synchronized automatically
+- No default admin password
 
 Note:
-+ By default, admin password is unknown. To set it to a known password, button function 2 must be entered. This will set admin password to "admin"for the next 5 minutes. Then, you must enter to its web interface and at first you will be asked to set a new admin password.
++ By default, admin password is unknown. To set it to a known password, button function 2 must be entered. This will set admin password to "admin"for the next 5 minutes. Then, you must enter its web interface and at first you will be asked to set a new admin password.
 + This decision is based in security matters.
 
 ----
@@ -99,20 +103,20 @@ Note:
 
 
 |||
-#### Feature: Assign products
+#### Feature: Add devices and create zones
 
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kxKkUu6QZVI?autoplay=0&loop=1&playlist=kxKkUu6QZVI"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PNh82VpcW8?autoplay=0&loop=1&playlist=6PNh82VpcW8"  frameborder="0" height="630" width="460" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 |||
 ### Feature:  Create products groups (1/2)
 
 + Statically link NetworkLink products
 + A product group behaves as one device
-+ Same source, same volume in the group
++ Same source, fixed volume ratio in the group
 + Solution for big rooms/ambients
 
 Note:
-+ In a products' group, exist a master product that will be the source and volume reference of the group and the rest of the grouped products will follow any source/volume change of master automatically. BeoLiving App will only show the master.
++ In a products' group, a master product that will be the source will appear and be volume reference of the group and the rest of the grouped products will follow any source/volume change of master automatically. BeoLiving App will only show the master.
 
 |||
 #### Feature:  Create products groups (2/2)
@@ -122,8 +126,8 @@ Note:
 |||
 ### Feature: Credentials content provider (1/2)
 
-+ BLI sets automatically credentials to new devices
-+ Previously credentials setting was done manually for each product
++ BLI automatically sets credentials to new devices
++ Previously credentials had to be set manually for each product
 
 Note:
 + Doesn't override existant credentials on devices
@@ -183,7 +187,7 @@ If you start the linking procedure using your laptop or any other device that ha
 |||
 ### Alexa Tips
 
-+ Alexa's device identifier name = "_Zone name_" +  "_Device name_"
++ Alexa's device name = "_Zone name_" +  "_Device name_"
 + Devices names should be chosen properly
 + Create scenes for most frequent use cases or as a workaround if Alexa doesn't understand an instruction.
 
@@ -212,8 +216,8 @@ Note:
 ----
 ### Documentation
 
-- Everything at github
-- Help us improving it!
+- khimo.github.io
+- New tutorials and information added monthly
+- Help us improve it!
   - Create a github user
-  - Send the user to us
-  - Edit it from github
+  - Suggest edits
