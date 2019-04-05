@@ -144,12 +144,12 @@ To add a camera you must fill the next form:
 
 - **Name**: Name that identifies the camera. The name will be shown in the user interfaces.
 - **Zone**: Drop down list to select the zone in which the camera is placed.
-- **IP**: A Base URL (_URL_: _Port number_), to which all commands will be appended, must be provided. The format may vary.
+- **IP**: An IP number, to which all commands will be appended, must be provided. HTTP(snapshots) or RTSP(video) ports will then be declared separately.
 >> E.g. 192.168.1.37
-- **HTTP Port**: 
-- **RTSP Port**: 
+- **HTTP Port**: Snapshot feed camera port number (default: 80).
+- **RTSP Port**: Video feed camera port number (default: 554).
 
->> These camera _RTSP_ streams will not be available through webpanel and may only be seen on the App or by going to rtsp://$GATEWAY_HOST:554/$AREA/$ZONE/CAMERA/$NAME
+>> These camera _RTSP_ streams will not be available through webpanel and may only be seen on the App or by opening rtsp://$GATEWAY_HOST:554/$AREA/$ZONE/CAMERA/$NAME (for example with VLC)
 
 - **Username** and **Password**: The optional _Username_ and _Password_ fields may be used for basic HTTP authentication to access the camera from
  the user interfaces.
