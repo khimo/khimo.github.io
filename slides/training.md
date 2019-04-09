@@ -39,7 +39,7 @@ Note:
 
 - Designed for end-user (*Plug & Play*)
 - Easily add B&O devices, Philips Hue lighting and ONVIF cameras
-- Fully configurable through the *BeoLiving App* (Scenes, Zones, etc.)
+- Fully configurable through the *BeoLiving App* (create Scenes, Zones, etc.)
 - Passwordless: Improves security
 
 Note:
@@ -56,10 +56,11 @@ Configuration upload/download is not supported
 - Products groups
 - Voice control (Alexa & IFTTT)
 - Automatic firmware upgrade
+- Remote support specialist
 
 Note:
 - Voice control: Alexa, Google Home (on the way) and Apple HomePod (looking forward to)
-- HA(High Availability) systems are blocked
+- most HA(Home Automation) systems are blocked
 - Some HA systems will be added in the near future
 - Recapitulation of ESSENTIAL
 
@@ -89,7 +90,7 @@ Note:
 + This decision is based in security matters.
 
 ----
-## Some features
+## Some features and third party links
 
 Note:
 Now, I'll show you some videos explaining how to configure and use these new features
@@ -101,9 +102,12 @@ Now, I'll show you some videos explaining how to configure and use these new fea
 
 Note:
 
+|||
+#### Feature: Add devices and create zones (1/2)
+#####Discover my devices: one-click descovery of all B&O products, Philips Hue lighting and ONVIF cameras
 
 |||
-#### Feature: Add devices and create zones
+#### Feature: Add devices and create zones (2/2)
 
 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6PNh82VpcW8?autoplay=0&loop=1&playlist=6PNh82VpcW8"  frameborder="0" height="630" width="460" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -145,6 +149,35 @@ Note:
 
 Note:
 Only in PRO mode.
+
+|||
+#### Feature: Request remote access (1/2)
+
++ Remotely support all Bang & Olufsen’s NetworkLink products during installation and general support
++ View:
+	+ Connection state
+    + Playing state
+    + Selected source
+    + Source ID
+    + Volume
+
+Note:
+After logging into Khimo.com/installer, the remote suport specialist will be able to check the following information on the available NetworkLink devices:
+    Connection state: Displays if the device is online or offline.
+    Playing state: Shows the current playing state of the device.
+    Selected source: Displays the source being played by the device, if any.
+    Source ID: Displays the Source identifier of the source being played by the device.
+    Volume: Shows the volume level of device.
+
+|||
+#### Feature: Request remote access (2/2)
+
++ Basic support actions
+<div class="text-center">
+  <img src="./bli-guides/pictures/bli-remote-support-specialist/remote-specialist-page.png" class="img-fluid" alt="Remote specialist page"/>
+</div>
+<br>
+
 
 ----
 # Alexa
@@ -194,6 +227,24 @@ If you start the linking procedure using your laptop or any other device that ha
 Note:
 + Source selection sometimes becomes un-useful if device names or source name are complicated
 
+----
+# IFTTT
+
+|||
+## IFTTT
+
++ Real world events trigger Macros
++ Control IFTTT supported systems
++ Google Home integration
+
+Note:
++ Available for ESSENTIAL and PRO
++ Compatible with BLGW???
+
+|||
+## Linking IFTTT
+
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OIz4Gq3MWAI?autoplay=0&loop=1&playlist=OIz4Gq3MWAI"  frameborder="0" width="800" height="450" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ----
 ## Things to remember
 
