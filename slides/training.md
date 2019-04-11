@@ -151,7 +151,7 @@ Note:
 Only in PRO mode.
 
 |||
-#### Feature: Request remote access (1/2)
+#### Feature: Remote support specialist (1/2)
 
 + Remotely support all Bang & Olufsen’s NetworkLink products during installation and general support
 + View:
@@ -170,11 +170,11 @@ After logging into Khimo.com/installer, the remote suport specialist will be abl
     Volume: Shows the volume level of device.
 
 |||
-#### Feature: Request remote access (2/2)
+#### Feature: Remote support specialist (2/2)
 
 + Basic support actions
 <div class="text-center">
-  <img src="./bli-guides/pictures/bli-remote-support-specialist/remote-specialist-page.png" class="img-fluid" alt="Remote specialist page"/>
+  <img src="././bli-guides/pictures/bli-remote-support-specialist/remote-specialist-page.png" class="img-fluid" alt="Remote specialist page"/>
 </div>
 <br>
 
