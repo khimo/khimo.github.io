@@ -26,4 +26,4 @@ In addition to being used to confirm the input function, a single press during n
 1. The light should now start flashing green and yellow, **SHORT PRESS** the button to confirm
 1. The BeoLiving Intelligence will now erase all configuration and settings, this may take up to a minute
 
-A video example showing the use of Function 2 to set the BLI's password to "_admin_" is available: https://www.youtube.com/watch?v=Xxjk1Tv4PM4
+A video example showing the use of Function 2 to set the BLI's password to "_admin_" is available [here](https://www.youtube.com/watch?v=Xxjk1Tv4PM4).
