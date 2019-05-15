@@ -1,7 +1,13 @@
 ---
-title:  Nest thermostat
+title:  Nest thermostat (DISCONTINUED)
 layout: pagetoc
 ---
+
+ATTENTION!!
+----------
+**In May 2019, Nest/Google announced that the Nest API will be turned off at the end of August, 2019.
+This means that Nest is NO LONGER SUPPORTED on the BeoLiving Intelligence.**
+
 
 Connection to Nest REST API
 --------------------------------------

@@ -300,7 +300,7 @@ installers_ shows the main differences between both controllers and explains the
      <a class="nav-link js-scroll-trigger sr-button" href="/help_drivers" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-puzzle-piece fa-4x fa-square-o text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Drivers</h3>
+              <h3 class="mb-3 text-dark">Supported systems</h3>
               <p class="text-muted mb-0">Documentation of some of the third party drivers</p>
             </div>
       </a>
@@ -329,7 +329,6 @@ are available.
    </div>
 </div>
   
-<a id="contact"/>
   
 ## Troubleshooting
 
@@ -361,6 +360,13 @@ troubles or malfunction, please refer to our _Troubleshooting Guide_.
    </div>
 </div>
  
-  
+<a id="contact"/>
+
+## Contact
+
+For assistance with any issues concerning the BeoLiving Intelligence or the BeoLiving app, don't hesitate to send us an email at support@khimo.com 
+Please include detailed information about your issue. E.g. BLI's serial number, firmware version and mode (Essential or Pro), screenshots that illustrate an error, etc.   
+
+You may also find answers to common issues and interact with us and the community in the [BeoWorld Forum](https://forum.beoworld.org/forums/t/36777.aspx).
 
 
