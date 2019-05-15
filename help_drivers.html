@@ -38,15 +38,10 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 <div class="newspaper">
 
 	{% for help_driver in site.help_drivers %}
-		<script>
-  			var str1 = "/logos/";
-  			var str2 = str1.concat({{ help_driver.title}});
-  			var urllogo = str2.concat(".jpg");
-			}
-		</script>
+
 		<div class="help_driver">
 			<a target="_blank" href="{{ help_driver.url }}">
-  				<img src=urllogo  class=logos>
+  				<img src="/logos/{{help_driver.title}}.jpg"  class=logos>
 			</a>
 			
 			<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
@@ -55,3 +50,12 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 
 </div>
 </body>
+
+
+
+		<script>
+  			var str1 = "/logos/";
+  			var str2 = str1.concat({{ help_driver.title}});
+  			var urllogo = str2.concat(".jpg");
+			}
+		</script>
