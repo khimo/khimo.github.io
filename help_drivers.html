@@ -18,13 +18,17 @@ toc: true
   	display: block;
   	margin-left: auto;
   	margin-right: auto;
-	border: 1px solid #ddd;
-  	border-radius: 4px;
+	/*border: 1px solid #ddd;
+  	border-radius: 4px;*/
   	padding: 5px;
 }
 .logos Img{ 
 	width:80%;
 	height:80%;
+	object-fit:scale-down;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
 	}
 
 
@@ -48,7 +52,7 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 		<a class=logos target="_blank" href="{{ help_driver.url }}">
   			<img src="/logos/{{ help_driver.url | remove: "help_drivers" | remove: "/" }}.jpg"  >
 		</a>
-		<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
+		<center><h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4></center>
 		</div>
 
        	<!-- if last column in row -->
