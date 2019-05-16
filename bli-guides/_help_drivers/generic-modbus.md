@@ -1,5 +1,5 @@
 ---
-title: Generic Modbus driver
+title: Generic Modbus
 layout: pagetoc
 ---
 

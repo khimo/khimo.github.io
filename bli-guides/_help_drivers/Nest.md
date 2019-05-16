@@ -1,5 +1,5 @@
 ---
-title:  Nest thermostat (DISCONTINUED)
+title:  Nest (DISCONTINUED)
 layout: pagetoc
 ---
 

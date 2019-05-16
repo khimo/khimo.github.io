@@ -1,5 +1,5 @@
 ---
-title: Lutron Homeworks QS and Radio Ra2
+title: Lutron HW QS - RadioRa2
 layout: pagetoc
 ---
 
