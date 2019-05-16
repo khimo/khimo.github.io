@@ -22,7 +22,12 @@ toc: true
   	border-radius: 4px;
   	padding: 5px;
 }
-</style>
+.logos Img{ 
+	width:80%;
+	height:80%;
+	}
+
+
 </style>
 </head>
 
@@ -35,27 +40,24 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
  
 </p>
 
-<div class="newspaper">
+<div class="row">
 
-	{% for help_driver in site.help_drivers %}
 
-		<div class="help_driver">
-			<a target="_blank" href="{{ help_driver.url }}">
-  				<img src="/logos/{{help_driver.title}}.jpg"  class=logos>
-			</a>
-			
-			<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
+   {% for help_driver in site.help_drivers %}
+   	<div class="help_driver">
+		<a class=logos target="_blank" href="{{ help_driver.url }}">
+  			<img src="/logos/{{ help_driver.url | remove: "help_drivers" "/" }}.jpg"  >
+		</a>
+		<h4><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h4>
 		</div>
-	{% endfor %}
+
+       	<!-- if last column in row -->
+       	{% if forloop.counter | divisibleby:"3" and not forloop.last %}
+       		</div><div class="row">
+       	{% endif %}
+   {% endfor %}
+
+   </div>
 
 </div>
 </body>
-
-
-
-		<script>
-  			var str1 = "/logos/";
-  			var str2 = str1.concat({{ help_driver.title}});
-  			var urllogo = str2.concat(".jpg");
-			}
-		</script>
