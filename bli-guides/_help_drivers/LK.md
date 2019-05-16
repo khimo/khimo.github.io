@@ -1,5 +1,5 @@
 ---
-title: Lauritz Knudsen, IHC/Schneider, LexControl
+title: LK (Schneider) - IHC/LexControl
 layout: pagetoc
 ---
 

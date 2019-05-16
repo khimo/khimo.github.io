@@ -1,5 +1,5 @@
 ---
-title: Global Cache iTach FLEX RELAY/SENSOR
+title: GC iTach Flex relay/sensor
 layout: pagetoc
 ---
 

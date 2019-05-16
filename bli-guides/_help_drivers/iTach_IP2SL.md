@@ -1,5 +1,5 @@
 ---
-title: Global Cache iTach IP2SL
+title: GC iTach IP2SL
 layout: pagetoc
 ---
 

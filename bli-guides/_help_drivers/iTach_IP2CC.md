@@ -1,5 +1,5 @@
 ---
-title: Global Cache iTach IP2CC
+title: GC iTach IP2CC
 layout: pagetoc
 ---
 

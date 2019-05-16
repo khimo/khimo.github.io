@@ -1,5 +1,5 @@
 ---
-title: Global Cache iTach FLEX SERIAL
+title: GC iTach Flex serial
 layout: pagetoc
 ---
 
