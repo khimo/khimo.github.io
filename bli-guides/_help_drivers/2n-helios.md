@@ -1,15 +1,15 @@
 ---
-title: 2N HELIOS DRIVER
+title: 2N Helios
 layout: pagetoc
 ---
 
-BeoLink Gateway can interact with 2N Helios, being capable to control switchs and I/O interfaces, fires an event when doorbell button is pressed and when motion or noise sensors detect activity.
-In order to get video image on the BeoLink Gateway from the device, it's necessary to add the camera on Interfaces Tab and fill the respective fields.
+BeoLiving Intelligence can interact with 2N Helios, being capable to control switchs and I/O interfaces, fires an event when doorbell button is pressed and when motion or noise sensors detect activity.
+In order to get video image on the BeoLiving Intelligence from the device, it's necessary to add the camera on Interfaces Tab and fill the respective fields.
 
 Conecting to the system
 -----------------------
   
-BeoLink Gateway can connect and interact with 2N Helios through a rest API connection.  
+BeoLiving Intelligence can connect and interact with 2N Helios through a rest API connection.  
 The Connection Settings parameters are:
 
 * *Host Ip*: ```<IP address>```
