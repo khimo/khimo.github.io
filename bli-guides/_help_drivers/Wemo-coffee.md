@@ -1,5 +1,5 @@
 ---
-title: WeMo / Mr Coffee Maker 
+title: WeMo Mr Coffee Maker 
 layout: pagetoc
 ---
 

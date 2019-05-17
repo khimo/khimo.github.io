@@ -364,6 +364,7 @@ troubles or malfunction, please refer to our _Troubleshooting Guide_.
 ## Contact
 
 For assistance with any issues concerning the BeoLiving Intelligence or the BeoLiving app, don't hesitate to send us an email at support@khimo.com 
+
 Please include detailed information about your issue. E.g. BLI's serial number, firmware version and mode (Essential or Pro), screenshots that illustrate an error, etc.   
 
 You may also find answers to common issues and interact with us and the community in the [BeoWorld Forum](https://forum.beoworld.org/forums/t/36777.aspx).
