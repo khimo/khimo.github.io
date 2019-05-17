@@ -32,7 +32,16 @@ toc: true
   margin-top: auto;
   margin-bottom: auto;
 	}
-
+.help_driver {
+  margin: 3ex auto;
+  border: 1px solid #d3d3d380;
+}
+a {
+    color: #ababab;
+    transition: all 0.2s;
+    font-size: 10pt;
+    margin-bottom: 0;
+}
 
 </style>
 </head>
@@ -54,7 +63,7 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 		<a class=logos target="_blank" href="{{ help_driver.url }}">
   			<img src="/logos/{{ help_driver.url | remove: "help_drivers" | remove: "/" }}.jpg"  >
 		</a>
-		<center><h5><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></h5></center>
+		<center><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></center>
 		</div>
 
        	<!-- if last column in row -->
