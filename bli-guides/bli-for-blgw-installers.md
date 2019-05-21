@@ -100,10 +100,10 @@ it to a desired value.
 
 ## Migrate from BLGW to BLI {#blgw-migration}
 
-Configuration file of _BeoLink Gateway_ is compatible with _BeoLiving Intelligence_, so migration process is quite simple. **The unique condition 
-is that BeoLiving Intelligence must be in PRO mode**. To do so, follow the next instructions:
+The configuration file of the _BeoLink Gateway_ is compatible with the _BeoLiving Intelligence_, so the migration process is quite simple. **The only condition 
+is that the BeoLiving Intelligence must be in PRO mode**. To do so, follow the next instructions:
 
-1. Download _BeoLink Gateway_'s configuration file
-2. Upload the file to _BeoLiving Intelligence_ (in _PRO_ mode)
+1. Download the _BeoLink Gateway_'s configuration file
+2. Upload the file to the _BeoLiving Intelligence_ (in _PRO_ mode)
 3. Take into account that _MasterLink_ resources won't be available in _BeoLiving Intelligence_, so all events and commands related to _MasterLink_ 
-devices on _Macros_ will be orphans, meaning that must be deleted or migrated to a correct integration with _BeoLink Converter_.
+devices on _Macros_ will be orphans, meaning that must be deleted or modified for a correct integration through a _BeoLink Converter_.

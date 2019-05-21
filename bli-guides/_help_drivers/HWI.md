@@ -1,5 +1,5 @@
 ---
-title: Lutron HomeWorks Interactive
+title: Lutron HW Interactive
 layout: pagetoc
 ---
 

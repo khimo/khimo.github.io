@@ -1,5 +1,5 @@
 ---
-title: Smart-House
+title: SmartHouse
 layout: pagetoc
 ---
 

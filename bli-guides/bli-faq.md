@@ -178,8 +178,20 @@ network used by the _BeoLiving Intelligence_.
 
 An installer can gain access to _BeoLiving Intelligence's_ setup interface with the _admin_ user. This user has a first-time access procedure, the installer may use the Setup function 2 to set the _admin_ password to _"admin"_ for 5 minutes, the _BLI_ will then request a new password as soon as the web interface is accessed.
 
+<div class="row justify-content-center"> 
+  <div class="" style="padding-bottom: 0%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
 
-The Setup function 2 is called by keeping the BLI's button pressed, waiting for it to flash once, and when it flashes twice releasing the button. The Light should start flashing which indicates it is waiting for confirmation, this is given by short-pressing the button once again.
+**Step by step**
+
+1. With the BLI in normal operation (green light on), **PRESS & HOLD** the button
+1. The light will go off, and after a couple of seconds it will flash **RED** once
+1. **DO NOT RELEASE** the button, the light will flash red twice
+1. After you see it flash two times, release the button
+1. The light should now start flashing green and yellow, **SHORT PRESS** the button to confirm
+1. The BeoLiving Intelligence's password will now be set to _admin_
 
 For more information about the user button, refer to the specific [section](bli_advanced_user_guide/05-user_button) of [BeoLiving Intelligence Advanced User guide](bli_advanced_user_guide/).
  

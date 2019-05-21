@@ -1,5 +1,5 @@
 ---
-title: WeMo / Air Purifier 
+title: WeMo Air Purifier 
 layout: pagetoc
 ---
 

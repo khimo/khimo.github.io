@@ -1,5 +1,5 @@
 ---
-title: amBXDriver
+title: amBX
 layout: pagetoc
 ---
 

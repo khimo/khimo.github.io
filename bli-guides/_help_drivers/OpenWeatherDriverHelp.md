@@ -1,5 +1,5 @@
 ---
-title: OpenWeatherDriver
+title: OpenWeather
 layout: pagetoc
 ---
 

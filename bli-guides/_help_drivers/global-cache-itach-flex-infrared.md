@@ -1,5 +1,5 @@
 ---
-title: Global Cache iTach FLEX INFRARED
+title: GC iTach Flex Infrared
 layout: pagetoc
 ---
 

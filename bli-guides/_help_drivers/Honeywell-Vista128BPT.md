@@ -1,5 +1,5 @@
 ---
-title: Honeywell / VISTA-128 BPT
+title: Honeywell VISTA-128 BPT
 layout: pagetoc
 ---
 

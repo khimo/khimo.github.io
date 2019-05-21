@@ -1,5 +1,5 @@
 ---
-title: WeMo / Slow Cooker 
+title: WeMo Slow Cooker 
 layout: pagetoc
 ---
 

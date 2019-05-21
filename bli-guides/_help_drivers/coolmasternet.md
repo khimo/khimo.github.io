@@ -1,5 +1,5 @@
 ---
-title: CoolMasterNet HVAC Bridge
+title: CoolMasterNet Bridge
 layout: pagetoc
 ---
 

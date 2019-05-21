@@ -1,5 +1,5 @@
 ---
-title: WeMo / Insight Switch 
+title: WeMo Insight Switch 
 layout: pagetoc
 ---
 
