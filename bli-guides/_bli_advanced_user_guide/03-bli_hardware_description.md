@@ -9,7 +9,7 @@ Located on the back of the _BLI_:
 
 + *Power*: Powers the _BLI_. 
 + *USB Port*: Used for service purposes.
-+ *System Reset Button*: Press & hold for 8 seconds for resetting the system.
++ *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
 + *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
 
 <img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
