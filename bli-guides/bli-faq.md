@@ -307,6 +307,27 @@ The LIGHT and CONTROL lists on your BeoRemote (i.e.: GOODBYE, MORNING, etc.) cor
 To find out what function number corresponds to each name, you may go to the Monitor tool and see what Event comes in when you press each button. Or directly on the Macro creation page, under Events, press Capture and the Events you press will now appear to add directly to your Macro.  
 
 
+## MasterLink productos
+
+#### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
+
+_BeoLiving Intelligence_ does not support MasterLink products directly, however they can still be used with the BLI via a BeoLink Converter.
+
+#### Q: What is the function of a BeoLink Converter NL/ML?
+
+This device converts audio between the analogue world (Master Link) into a streaming signal (Network Link) and vice versa. It also handles sending control signals (Prev, Next, Play, Pause, etc.) between ML and NL products while they play BeoLink Multiroom.
+
+#### Q: Can I start a source on a Master Link audio/video master to play on a Network Link product through BLI?
+
+Yes you can, but you need the BeoLink Converter NL/ML and it has to be configured correctly. See the BeoLink Converter NL/ML - [Installation Guide](https://www.bang-olufsen.com/en/product-support/accessories/beolink-converter-nl-ml). 
+
+#### Q: Can I control Link rooms in my Master Link setup through BeoLiving Intelligence?
+No. 
+
+#### Q: Can I select borrowed sources from the BeoLink Converter NL/ML on Network Link products?
+Yes, if the borrowed sources have been configured and are part of the source list inside the Network Link product, then they can be selected using the BLI.  
+
+
 ## Other issues
 #### Q: If the power goes off, do I lose the _BeoLiving Intelligence_ configuration?
 
@@ -330,6 +351,3 @@ Try to clear the data and cache of _HAWebPanel_ application. For TV's with Video
 
 The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Intelligence_. Check our [detailed description](bli-for-blgw-installers.md#blgw-migration) for further information about the migration process.
 
-#### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
-
-_BeoLiving Intelligence_ does not support MasterLink products directly, however they still can be used with the BLI via a BeoLink Converter.

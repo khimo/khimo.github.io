@@ -104,7 +104,7 @@ Note:
 
 |||
 #### Feature: Add devices and create zones (1/2)
-#####Discover my devices: one-click descovery of all B&O products, Philips Hue lighting and ONVIF cameras
+**Discover my devices: one-click descovery of all B&O products, Philips Hue lighting and ONVIF cameras**
 
 |||
 #### Feature: Add devices and create zones (2/2)
