@@ -9,7 +9,7 @@ A user may desire to use their system variable's values to act in a different wa
 
 > E.g.: Lower the curtains after sunset only if the rooms lights are turned ON. 
 
-For this kind of control, the installer/advanced user may press the _Convert to code_ button and gain access to an easy and very complete tool: **_lua Macros_**
+For this kind of control, the installer/advanced-user may press the _Convert to code_ button and gain access to an very easy and complete tool: **_lua Macros_**
 
 The following is an introduction to the main tools used in _lua code_ programming for the BeoLiving Intelligence, including code snippets and practical examples.
 
@@ -17,46 +17,71 @@ The following is an introduction to the main tools used in _lua code_ programmin
 
 When the macro executes because any of the defined events has matched, and before any of the UI defined commands are executed, the function defined in the "Lua code" text area will be executed.
 
+### Parameters
 The function should have the following signature: _function(event, engine)_
-
-### Parameters:
-#### Event
+The available parameters are those under _event_ and under _engine_:
+### Event
 The event that originated the call.
-##### Members
-- **tostring (function(): string):** The full string representation of the event (event.tostring() = "Main/global/DIMMER/MyLamp/STATE_UPDATE?LEVEL=55!").
-- **area (function(): string):** The area name (event.area() = "Main").
-- **zone (function(): string):** The zone name (event.zone() = "global").
-- **type (function(): string):** The type name (event.type() = "DIMMER").
-- **name (function(): string):** The originator name (event.name() = "MyLamp").
-- **parameters (function(): table):** The parameters, with full values, as a lua table (event.parameters() = {"LEVEL" = "55!"}).
-- **get (function(string): string):** Gets the value of a parameter, excluding the updated mark (event.get("LEVEL") = "55").
-- **updated (function(string): boolean):** Checks whether a parameter was updated on the event (event.updated("LEVEL") = true).
-- **group (function(): string):** The name of the group the zone is in (event.group() = "indoors").
-- **group_zones (function(string) : table):** The addresses of the zones contained in a group (event.group_zones("indoors") = {"Main/global", "Downstairs/Kitchen", "Upstairs/Main room", "other/room"}).
+#### Members
+- **tostring (function(): string):** The full string representation of the event.
+>> event.tostring() = "Main/global/DIMMER/MyLamp/STATE_UPDATE?LEVEL=55!"
+- **area (function(): string):** The area name.
+>> event.area() = "Main"
+- **zone (function(): string):** The zone name.
+>> event.zone() = "global"
+- **type (function(): string):** The type name.
+>> event.type() = "DIMMER"
+- **name (function(): string):** The originator name.
+>> event.name() = "MyLamp"
+- **parameters (function(): table):** The parameters, with full values, as a lua table.
+>> event.parameters() = {"LEVEL" = "55!"}
+- **get (function(string): string):** Gets the value of a parameter, excluding the updated mark.
+>> event.get("LEVEL") = "55"
+- **updated (function(string): boolean):** Checks whether a parameter was updated on the event.
+>> event.updated("LEVEL") = true
+- **group (function(): string):** The name of the group the zone is in.
+>> event.group() = "indoors"
+- **group_zones (function(string) : table):** The addresses of the zones contained in a group.
+>> event.group_zones("indoors") = {"Main/global", "Downstairs/Kitchen", "Upstairs/Main room", "other/room"}
 
-#### Engine
+### Engine
 The hip engine manager.
-##### Members
-- **fire (function(string, ...)):** Fires one or more commands on the engine (engine.fire("other/room/DIMMER/*/SET?LEVEL = 75")).
-- **fire_on_group (function(string, string)):** Fires one commands every zone that belongs to a group (engine.fire_on_group("indoors", "DIMMER/*/SET?LEVEL = 75")).
-- **query (function(string): table):** Performs a state query on the engine (tab = engine.query("other/room/DIMMER/\*")). The returned table is an array of states, with the following members:
-	- **tostring (function(): string):** The full string representation of the state (tab[1].tostring() = "other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62").
-	- **area (function(): string):** The area name (tab[1].area() = "other").
-	- **zone (function(): string):** The zone name (tab[1].zone() = "room").
-	- **type (function(): string):** The type name (tab[1].type() = "DIMMER").
-	- **name (function(): string):** The state owner name (tab[1].name() = "OtherLamp").
-	- **get (function(string):** string): Gets the value of a parameter (tab[1].get("LEVEL") = "62").
-	- **group (function(): string):** The name of the group the zone is in (tab[1].group() = "indoors").
-	- **group_zones (function(string) : table):** The addresses of the zones contained in a group (tab[1].group_zones("indoors") = {"Main/global", "Downstairs/Kitchen", "Upstairs/Main room", "other/room"}).
-    - **wait_until (function(string, int, int): bool, string):** Blocks the execution of the macro for a certain amount of time or until a given condition is met. Returns whether the condition was held and the address that matched (success, address = engine.wait_until("other/room/AV renderer/TV/STATE_UPDATE?state=Play", 120, 0)).
-    - **delay (function(int, int)):** Blocks the execution for a certain amount of time.
+#### Members
+- **fire (function(string, ...)):** Fires one or more commands on the engine.
+>> engine.fire("other/room/DIMMER/*/SET?LEVEL = 75")
+- **fire_on_group (function(string, string)):** Fires one commands every zone that belongs to a group.
+>> engine.fire_on_group("indoors", "DIMMER/*/SET?LEVEL = 75")
+- **query (function(string): table):** Performs a state query on the engine. The returned table is an array of states, with the following members:
+	- **tostring (function(): string):** The full string representation of the state.
+	- **area (function(): string):** The area name.
+	- **zone (function(): string):** The zone name.
+	- **type (function(): string):** The type name.
+	- **name (function(): string):** The state owner name.
+	- **get (function(string):** string): Gets the value of a parameter.
+	- **group (function(): string):** The name of the group the zone is in.
+	- **group_zones (function(string) : table):** The addresses of the zones contained in a group.
+
+>> tab = engine.query("other/room/DIMMER/\*")
+>>> tab[1].tostring() = "other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62"
+>>> tab[1].area() = "other"
+>>> tab[1].zone() = "room"
+>>> tab[1].type() = "DIMMER"
+>>> tab[1].name() = "OtherLamp"
+>>> tab[1].get("LEVEL") = "62"
+>>> tab[1].group() = "indoors"
+>>> tab[1].group_zones("indoors") = {"Main/global", "Downstairs/Kitchen", "Upstairs/Main room", "other/room"}
+
+- **wait_until (function(string, int, int): bool, string):** Blocks the execution of the macro for a certain amount of time or until a given condition is met. Returns whether the condition was held and the address that matched.
+>> success, address = engine.wait_until("other/room/AV renderer/TV/STATE_UPDATE?state=Play", 120, 0)
+
+- **delay (function(int, int)):** Blocks the execution for a certain amount of time.
 
 
-#### Return
+### Return
 No return value is expected.
 
 
-##Notes
+## Notes
 Any runtime error will be sent to the system log (Tools-->Log).
 > Example of what could be seen in log: _Execution error on Main/global/MACRO/sample: Line 6: attempt to call field 'wrong_delay' (a nil value)_.
 
@@ -74,7 +99,7 @@ Canceling a macro immediately cancels any wait_until or delay.
 Collapsing a macro immediately times out any wait_until or delay.
 
 ## Code examples
-A simple dimmer toggle
+### A simple dimmer toggle
 
 ```lua
 function(event, engine) 
@@ -89,7 +114,7 @@ function(event, engine)
 end
 ```
 
-Use a dimmer as a master dimmer
+### Use a dimmer as a master dimmer
 
 ```lua
 function(event, engine) 
@@ -104,7 +129,7 @@ function(event, engine)
 end
 ```
 
-Rush hour: Limit all dimmers to 70%
+### Rush hour: Limit all dimmers to 70%
 
 ```lua
 -- Rush hour example code:
@@ -122,7 +147,7 @@ function(event, engine)
 end
 ```
 
-Set all indoor lights to 70%
+### Set all indoor lights to 70%
 ```lua
 -- Group usage sample code:
 function(event, engine)
@@ -130,7 +155,7 @@ function(event, engine)
 end
 ```
 
-Set all group lights to 25%
+### Set all group lights to 25%
 ```lua
 -- Group usage sample code:
 function(event, engine)
@@ -139,7 +164,7 @@ function(event, engine)
 end
 ```
 
-Turn on the TV and raise the volume
+### Turn on the TV and raise the volume
 
 ```lua
 function(event, engine)
