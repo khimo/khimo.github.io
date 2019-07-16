@@ -123,7 +123,7 @@ function(event, engine)
       -- if the dimmer is named masterLight
       if event.name() == "masterLight" then
          -- set all the dimmers of the room to the same level
-         engine.fire(event.area() .. "/" .. event.zone() .. "/DIMMER/\*/SET?LEVEL=" .. event.get("LEVEL") )
+         engine.fire(event.area() .. "/" .. event.zone() .. "/DIMMER/*/SET?LEVEL=" .. event.get("LEVEL") )
       end
    end
 end
@@ -135,7 +135,7 @@ end
 -- Rush hour example code:
 function(event, engine)
    -- Get all the dimmers
-   local dimmers = engine.query("\*/\*/DIMMER/\*")
+   local dimmers = engine.query("*/*/DIMMER/*")
    -- Iterate through them
    for i, v in ipairs(dimmers) do 
       -- If their level is &gt; 70...
@@ -151,7 +151,7 @@ end
 ```lua
 -- Group usage sample code:
 function(event, engine)
-   engine.fire_on_group("indoors", "DIMMER/\*/SET?LEVEL=70")
+   engine.fire_on_group("indoors", "DIMMER/*/SET?LEVEL=70")
 end
 ```
 
@@ -160,7 +160,7 @@ end
 -- Group usage sample code:
 function(event, engine)
    local grp = event.group()
-   engine.fire_on_group(grp, "DIMMER/\*/SET?LEVEL=25")
+   engine.fire_on_group(grp, "DIMMER/*/SET?LEVEL=25")
 end
 ```
 
