@@ -1,4 +1,3 @@
----
 title: How to write lua Macros
 layout: pagetoc
 ---
@@ -13,20 +12,20 @@ For this kind of control, the installer/advanced-user may press the _Convert to 
 
 The following is an introduction to the main tools used in _lua code_ programming for the BeoLiving Intelligence, including code snippets and practical examples.
 
-## Getting started
+### Getting started
 
 When the macro executes because any of the defined events has matched, the function defined in the "Lua code" text area will be executed.
 
 
-### Parameters
+#### Parameters
 The function should have the following signature: _function(event, engine)_
 Every lua Macro should start by stating the signature and end with _end_, as seen in the examples.
 The available parameters are those under _event_ and under _engine_:
-### Event
+#### Event
 The event that originated the call will have many parameters with information related to this event and this information can be useful for setting conditions or values of variables.
 > E.g. Get the level of a dimmer who's change has triggered the event, and set half the value to all the other lights.
 
-#### Members
+##### Members
 - **tostring (function(): string):** The full string representation of the event.
 > event.tostring() = "Main/global/DIMMER/MyLamp/STATE_UPDATE?LEVEL=55!"
 - **area (function(): string):** The area name.
@@ -48,22 +47,22 @@ The event that originated the call will have many parameters with information re
 - **group_zones (function(string) : table):** The addresses of the zones contained in a group.
 > event.group_zones("indoors") = {"Main/global", "Downstairs/Kitchen", "Upstairs/Main room", "other/room"}
 
-### Engine
+#### Engine
 The BeoLiving Intelligence's execution engine. The engine allows you te set values or query states of all your BLI's devices. 
-#### Members
+##### Members
 - **fire (function(string, ...)):** Fires one or more commands on the engine.
 > engine.fire("other/room/DIMMER/*/SET?LEVEL = 75")
 - **fire_on_group (function(string, string)):** Fires one commands every zone that belongs to a group.
 > engine.fire_on_group("indoors", "DIMMER/*/SET?LEVEL = 75")
 - **query (function(string): table):** Performs a state query on the engine. The returned table is an array of states, with the following members:
-	- **tostring (function(): string):** The full string representation of the state.
-	- **area (function(): string):** The area name.
-	- **zone (function(): string):** The zone name.
-	- **type (function(): string):** The type name.
-	- **name (function(): string):** The state owner name.
-	- **get (function(string):** string): Gets the value of a parameter.
-	- **group (function(): string):** The name of the group the zone is in.
-	- **group_zones (function(string) : table):** The addresses of the zones contained in a group.
+  - **tostring (function(): string):** The full string representation of the state.
+  - **area (function(): string):** The area name.
+  - **zone (function(): string):** The zone name.
+  - **type (function(): string):** The type name.
+  - **name (function(): string):** The state owner name.
+  - **get (function(string):** string): Gets the value of a parameter.
+  - **group (function(): string):** The name of the group the zone is in.
+  - **group_zones (function(string) : table):** The addresses of the zones contained in a group.
 > tab = engine.query("other/room/DIMMER/\*")
 >> tab[1].tostring() = "other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62"
 >> tab[1].area() = "other"
@@ -80,11 +79,11 @@ The BeoLiving Intelligence's execution engine. The engine allows you te set valu
 - **delay (function(int, int)):** Blocks the execution for a certain amount of time.
 
 
-### Return
+#### Return
 No return value is expected or should be set from the lua function.
 
 
-## Notes
+### Notes
 Any runtime **error will be sent to the system log** (Tools-->Log).
 > Example of what could be seen in log: _Execution error on Main/global/MACRO/sample: Line 6: attempt to call field 'wrong_delay' (a nil value)_.
 
@@ -100,9 +99,18 @@ Only one execution of a macro is allowed to wait_until or delay at a time. If th
 
 **Canceling a macro** immediately cancels any wait_until or delay.
 
-## Code examples
-### A simple dimmer toggle
+### Learn lua
+All lua native functions are available for use in the lua Macros configuration.
 
+A good place to start learning Lua is Tyler Neylon's "[Learn Lua in 15 Minutes](http://tylerneylon.com/a/learn-lua/)". This is a short and simple introduction
+
+A more complete reference guide is the book _Programming in Lua_. The first edition is freely available online. And includes all available functiones.
+
+- [Programming in Lua (first edition)](https://www.lua.org/pil/contents.html)
+
+### Code examples
+#### A simple dimmer toggle
+This code queries the level of a dimmer(_engine.query()[1].get("LEVEL")_), regardless of the Event that has trigger the Macro, and turns it ON (_engine.fire()_) on full intensity if it was off, or turns it OFF if it was ON. It also prints notice of the action it takes in the Log (_Debug()_).
 ```lua
 function(event, engine) 
     local result = engine.query("global/main/DIMMER/New DIMMER")
@@ -116,8 +124,8 @@ function(event, engine)
 end
 ```
 
-### Use a dimmer as a master dimmer
-
+#### Use a dimmer as a master dimmer
+This example reads the name of the event that has triggered the macro (_event.name()_) and decides according to the devices name, to modify the level of all dimmers in the same zone (see _event.fire(string)_ where the _string_ is a concatenation of the events area, zone and level with _/DIMMER/*/_ that selects all dimmers regardles of their name).
 ```lua
 function(event, engine) 
    -- If the event corresponds to a dimmer
@@ -131,8 +139,8 @@ function(event, engine)
 end
 ```
 
-### Rush hour: Limit all dimmers to 70%
-
+#### Rush hour: Limit all dimmers to 70%
+For this example a _for_ iteration must be used to verify the level of all dimmers and in the case the level is greater than 70, turn them down to 70. _ipairs(arr)_ is an array of the type _(index,array)_  
 ```lua
 -- Rush hour example code:
 function(event, engine)
@@ -140,8 +148,8 @@ function(event, engine)
    local dimmers = engine.query("*/*/DIMMER/*")
    -- Iterate through them
    for i, v in ipairs(dimmers) do 
-      -- If their level is &gt; 70...
-      if tonumber(v.get("LEVEL")) &gt; 70 then
+      -- If their level is > 70...
+      if tonumber(v.get("LEVEL")) > 70 then
          -- Set it to 70
          engine.fire(v.area() .. "/" .. v.zone() .. "/DIMMER/" .. v.name() .. "/SET?LEVEL=70")
       end
@@ -149,7 +157,7 @@ function(event, engine)
 end
 ```
 
-### Set all indoor lights to 70%
+#### Set all indoor lights to 70%
 ```lua
 -- Group usage sample code:
 function(event, engine)
@@ -157,7 +165,7 @@ function(event, engine)
 end
 ```
 
-### Set all group lights to 25%
+#### Set all group lights to 25%
 ```lua
 -- Group usage sample code:
 function(event, engine)
@@ -166,7 +174,7 @@ function(event, engine)
 end
 ```
 
-### Turn on the TV and raise the volume
+#### Turn on the TV and raise the volume
 
 ```lua
 function(event, engine)
