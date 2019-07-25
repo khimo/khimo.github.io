@@ -111,7 +111,7 @@ A more complete reference guide is the book _Programming in Lua_. The first edit
 
 ### Code examples
 #### A simple dimmer toggle
-This code queries the level of a dimmer(_engine.query()[1].get("LEVEL")_), regardless of the Event that has trigger the Macro, and turns it ON (_engine.fire()_) on full intensity if it was off, or turns it OFF if it was ON. It also prints notice of the action it takes in the Log (_Debug()_).
+This code queries the level of a dimmer(_engine.query()[1].get("LEVEL")_), regardless of the Event that has triggered the Macro, and turns it ON (_engine.fire()_) on full intensity if it was OFF, or turns it OFF if it was ON. It also prints notice of the action it takes in the Log (_Debug()_).
 ```lua
 function(event, engine) 
     local result = engine.query("global/main/DIMMER/New DIMMER")
