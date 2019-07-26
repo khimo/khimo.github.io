@@ -28,6 +28,9 @@ collections:
   how-tos:
     output: true
     permalink: /bli-guides/how-tos/:path
+  01-lua-macro-snippets:
+    output: true
+    permalink: /bli-guides/how-tos/01-lua-macro-snippets/:path
 
   
 collections_dir: bli-guides
