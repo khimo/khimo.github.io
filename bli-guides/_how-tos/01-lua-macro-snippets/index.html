@@ -172,12 +172,10 @@ tab[1].group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”
 <h3 id="code-examples">Code examples</h3>
 
 {% for snippet in site.lua-macro-snippets %}
-{% if snippet.title != "How to write lua Macros"  %}
-	<div class="lua-macro-snippets">
-		<h2><a href="{{ snippet.url }}">{{ snippet.title }}</a></h2>
-		{{ snippet.content }}
-	</div>
-{% endif %}
+	  <div class="snippet">
+		    <h4><a href="{{ snippet.url }}">{{ snippet.title }}</a></h4>
+		    {{ snippet.content }}
+	  </div>
 {% endfor %}
 
 
