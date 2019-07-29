@@ -1,5 +1,5 @@
 ---
-title: Rush hour: Limit all dimmers to 70%
+title: Rush hour - Limit all dimmers to 70%
 layout: pagetoc
 ---
 
