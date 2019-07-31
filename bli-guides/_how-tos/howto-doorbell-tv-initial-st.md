@@ -46,7 +46,7 @@ Next, we will explain the main three block that form our Lua code:
 
 A query is done on AV renderers in TVs and the televisions that are turned off are set to a source to turn them on (we choose the source to be TV):
 
-~~~Lua 
+~~~lua 
   init_tvs = engine.query("Reception/TVs/AV renderer/*")
   for i=1,#init_tvs do
     init_state=tostring(init_tvs[i].get("state"))
@@ -71,7 +71,7 @@ Once all the televisions are on, a HOME CONTROL command is sent. The door camera
 
 Once the door is open we leave the camera on for five seconds to see the visitor come in and then return all the televisions to their initial state:
 
-```Lua
+```lua
   engine.delay(5,0)
   engine.fire("Reception/TVs/AV renderer/*/Send command?Command=BACK&Continue type=short_press")
  
