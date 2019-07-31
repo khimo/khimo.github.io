@@ -4,6 +4,7 @@ email:
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://khimo.github.io" # the base hostname & protocol for your site
+highlighter: rouge
 
 twitter_username:
 github_username:
@@ -28,6 +29,9 @@ collections:
   how-tos:
     output: true
     permalink: /bli-guides/how-tos/:path
+  01-lua-macro-snippets:
+    output: true
+    permalink: /bli-guides/how-tos/01-lua-macro-snippets/:path
 
   
 collections_dir: bli-guides

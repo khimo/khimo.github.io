@@ -1,0 +1,180 @@
+---
+title: How to write lua Macros
+layout: pagetoc
+toc: true
+---
+<p>The Macro configuration page of the BeoLiving Intelligence has a simple user interface that displays available resources and commands on these resources, but aside from selecting the command to execute and setting a time delay between commands, the possibilities are limited.</p>
+
+<p>A user may desire to use their system variable’s values to act in a different way deppending on this.</p>
+
+<blockquote>
+  <p>E.g.: Lower the curtains after sunset only if the rooms lights are turned ON.</p>
+</blockquote>
+
+<p>For this kind of control, the installer/advanced-user may press the <em>Convert to code</em> button and gain access to a very easy and complete tool: <strong><em>lua Macros</em></strong></p>
+
+<p>The following is an introduction to the main tools used in <em>lua code</em> programming for the BeoLiving Intelligence, including code snippets and practical examples.</p>
+
+<h3 id="getting-started">Getting started</h3>
+
+<p>When the macro executes because any of the defined events has matched, the function defined in the “Lua code” text area will be executed.</p>
+
+<h4 id="parameters">Parameters</h4>
+<p>The function should have the following signature: <em>function(event, engine)</em>
+Every lua Macro should start by stating the signature and end with <em>end</em>, as seen in the examples.
+The available parameters are those under <em>event</em> and under <em>engine</em>:</p>
+<h4 id="event">Event</h4>
+<p>The event that originated the call will have many parameters with information related to this event and this information can be useful for setting conditions or values of variables.</p>
+<blockquote>
+  <p>E.g. Get the level of a dimmer who’s change has triggered the event, and set half the value to all the other lights.</p>
+</blockquote>
+
+<h5 id="members">Members</h5>
+<ul>
+  <li><strong>tostring (function(): string):</strong> The full string representation of the event.
+    <blockquote>
+      <p>event.tostring() = “Main/global/DIMMER/MyLamp/STATE_UPDATE?LEVEL=55!”</p>
+    </blockquote>
+  </li>
+  <li><strong>area (function(): string):</strong> The area name.
+    <blockquote>
+      <p>event.area() = “Main”</p>
+    </blockquote>
+  </li>
+  <li><strong>zone (function(): string):</strong> The zone name.
+    <blockquote>
+      <p>event.zone() = “global”</p>
+    </blockquote>
+  </li>
+  <li><strong>type (function(): string):</strong> The type name.
+    <blockquote>
+      <p>event.type() = “DIMMER”</p>
+    </blockquote>
+  </li>
+  <li><strong>name (function(): string):</strong> The originator name.
+    <blockquote>
+      <p>event.name() = “MyLamp”</p>
+    </blockquote>
+  </li>
+  <li><strong>parameters (function(): table):</strong> The parameters, with full values, as a lua table.
+    <blockquote>
+      <p>event.parameters() = {“LEVEL” = “55!”}</p>
+    </blockquote>
+  </li>
+  <li><strong>get (function(string): string):</strong> Gets the value of a parameter, excluding the updated mark.
+    <blockquote>
+      <p>event.get(“LEVEL”) = “55”</p>
+    </blockquote>
+  </li>
+  <li><strong>updated (function(string): boolean):</strong> Checks whether a parameter was updated on the event.
+    <blockquote>
+      <p>event.updated(“LEVEL”) = true</p>
+    </blockquote>
+  </li>
+  <li><strong>group (function(): string):</strong> The name of the group the zone is in.
+    <blockquote>
+      <p>event.group() = “indoors”</p>
+    </blockquote>
+  </li>
+  <li><strong>group_zones (function(string) : table):</strong> The addresses of the zones contained in a group.
+    <blockquote>
+      <p>event.group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”, “Upstairs/Main room”, “other/room”}</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h4 id="engine">Engine</h4>
+<p>The BeoLiving Intelligence’s execution engine. The engine allows you te set values or query states of all your BLI’s devices.</p>
+<h5 id="members-1">Members</h5>
+<ul>
+  <li><strong>fire (function(string, …)):</strong> Fires one or more commands on the engine.
+    <blockquote>
+      <p>engine.fire(“other/room/DIMMER/*/SET?LEVEL = 75”)</p>
+    </blockquote>
+  </li>
+  <li><strong>fire_on_group (function(string, string)):</strong> Fires one commands every zone that belongs to a group.
+    <blockquote>
+      <p>engine.fire_on_group(“indoors”, “DIMMER/*/SET?LEVEL = 75”)</p>
+    </blockquote>
+  </li>
+  <li><strong>query (function(string): table):</strong> Performs a state query on the engine. The returned table is an array of states, with the following members:
+    <ul>
+      <li><strong>tostring (function(): string):</strong> The full string representation of the state.</li>
+      <li><strong>area (function(): string):</strong> The area name.</li>
+      <li><strong>zone (function(): string):</strong> The zone name.</li>
+      <li><strong>type (function(): string):</strong> The type name.</li>
+      <li><strong>name (function(): string):</strong> The state owner name.</li>
+      <li><strong>get (function(string):</strong> string): Gets the value of a parameter.</li>
+      <li><strong>group (function(): string):</strong> The name of the group the zone is in.</li>
+      <li><strong>group_zones (function(string) : table):</strong> The addresses of the zones contained in a group.
+        <blockquote>
+          <p>tab = engine.query(“other/room/DIMMER/*”)</p>
+          <blockquote>
+            <p>tab[1].tostring() = “other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62”
+tab[1].area() = “other”
+tab[1].zone() = “room”
+tab[1].type() = “DIMMER”
+tab[1].name() = “OtherLamp”
+tab[1].get(“LEVEL”) = “62”
+tab[1].group() = “indoors”
+tab[1].group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”, “Upstairs/Main room”, “other/room”}</p>
+          </blockquote>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li><strong>wait_until (function(string, int, int): bool, string):</strong> Blocks the execution of the macro for a certain amount of time or until a given condition is met. Returns whether the condition was held and the address that matched.
+    <blockquote>
+      <p>success, address = engine.wait_until(“other/room/AV renderer/TV/STATE_UPDATE?state=Play”, 120, 0)</p>
+    </blockquote>
+  </li>
+  <li><strong>delay (function(int, int)):</strong> Blocks the execution for a certain amount of time.</li>
+</ul>
+
+<h4 id="return">Return</h4>
+<p>No return value is expected or should be set from the lua function.</p>
+
+<h3 id="notes">Notes</h3>
+<p>Any runtime <strong>error will be sent to the system log</strong> (Tools–&gt;Log).</p>
+<blockquote>
+  <p>Example of what could be seen in log: <em>Execution error on Main/global/MACRO/sample: Line 6: attempt to call field ‘wrong_delay’ (a nil value)</em>.</p>
+</blockquote>
+
+<p><strong>For debugging purposes</strong>, the macro code can call the Debug function, which receives a string that is sent to the system log. This can be used to print a variable’s value or to see if your macro is arriving to the end of the code or “crashing” before hand.</p>
+<blockquote>
+  <p>Example of what you can write in your Macro’s code: <em>Debug(“Will debug: “ .. tostring(123)).</em></p>
+</blockquote>
+
+<p>Two special commands, which cannot be added via normal macro edition, are available for <strong>group creation</strong> and group clear. These commands are provided by the system driver, which is located on the global zone.</p>
+<blockquote>
+  <p>Set the kitchen on the “indoors” group: <em>Main/global/SYSTEM/BeoLiving Intelligence/SET GROUP?zone=Downstairs/Kitchen&amp;group=indoors</em></p>
+</blockquote>
+
+<blockquote>
+  <p>Clear the kitchen group: <em>Main/global/SYSTEM/BeoLiving Intelligence/CLEAR GROUP?zone=Downstairs/Kitchen</em></p>
+</blockquote>
+
+<p>Only one execution of a macro is allowed to wait_until or delay at a time. If the macro is fired while the same macro is waiting or delaying, then the previous wait is canceled.</p>
+
+<p><strong>Canceling a macro</strong> immediately cancels any wait_until or delay.</p>
+
+<h3 id="learn-lua">Learn lua</h3>
+<p>All lua native functions are available for use in the lua Macros configuration.</p>
+
+<p>A good place to start learning Lua is Tyler Neylon’s “<a href="http://tylerneylon.com/a/learn-lua/">Learn Lua in 15 Minutes</a>”. This is a short and simple introduction</p>
+
+<p>A more complete reference guide is the book <em>Programming in Lua</em>. The first edition is freely available online. And includes all available functiones.</p>
+
+<ul>
+  <li><a href="https://www.lua.org/pil/contents.html">Programming in Lua (first edition)</a></li>
+</ul>
+
+<h3 id="code-examples">Code examples</h3>
+
+{% for snippet in site.01-lua-macro-snippets %}
+	  <div class="snippet">
+		    <h4><a href="{{ snippet.url }}">{{ snippet.title }}</a></h4>
+	  </div>
+{% endfor %}
+
+

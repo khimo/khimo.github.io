@@ -263,6 +263,7 @@ installers_ shows the main differences between both controllers and explains the
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-lightbulb-o fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
               <h3 class="mb-3 text-dark">HowTo's & Instructions</h3>
+              <p class="text-muted mb-0">Program lua Macros</p>
               <p class="text-muted mb-0">Connect BLI to TVs</p>
               <p class="text-muted mb-0">Fire Macros with OneRemote</p>
             </div>
@@ -365,7 +366,8 @@ troubles or malfunction, please refer to our _Troubleshooting Guide_.
 
 For assistance with any issues concerning the BeoLiving Intelligence or the BeoLiving app, don't hesitate to send us an email at support@khimo.com 
 
-Please include detailed information about your issue. E.g. BLI's serial number, firmware version and mode (Essential or Pro), screenshots that illustrate an error, etc.   
+Please include detailed information about your issue.
+> E.g. BLI's serial number, firmware version and mode (Essential or Pro), screenshots that illustrate an error, etc.   
 
 You may also find answers to common issues and interact with us and the community in the [BeoWorld Forum](https://forum.beoworld.org/forums/t/36777.aspx).
 
