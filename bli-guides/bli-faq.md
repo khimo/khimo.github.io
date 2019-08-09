@@ -307,7 +307,7 @@ The LIGHT and CONTROL lists on your BeoRemote (i.e.: GOODBYE, MORNING, etc.) cor
 To find out what function number corresponds to each name, you may go to the Monitor tool and see what Event comes in when you press each button. Or directly on the Macro creation page, under Events, press Capture and the Events you press will now appear to add directly to your Macro.  
 
 
-## MasterLink productos
+## MasterLink products
 
 #### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
 
