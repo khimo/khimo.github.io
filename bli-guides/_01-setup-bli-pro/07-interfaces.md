@@ -122,7 +122,7 @@ The configuration of several network cameras is permitted. To add a camera, pres
 
 Both ONVIF protocol cameras and HTTP cameras are supported, when adding a camera ONVIF cameras available on the network will be automatically detected. These can also be added to your system directly through the BeoLiving App on a smartphone.
 
-> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on https://www.onvif.org/conformant-prod.... You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
+> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on https://www.onvif.org/conformant-products/. You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
 
 <br>
 <div class="text-center">
