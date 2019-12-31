@@ -1,5 +1,6 @@
 ---
 title: BeoLiving documentation
+layout: page_withoutbread
 ---
 
 A focus on making life easier and more enjoyable has given rise to **BeoLiving Intelligence**, the first Plug & Play smart home 
