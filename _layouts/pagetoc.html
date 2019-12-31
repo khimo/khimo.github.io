@@ -6,7 +6,6 @@
   <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0"  >
 
   {% include nav.html %}
-
     <header class="text-center text-white d-flex bg-primary" style="min-height:35%; background-image: none;">
     <div class="container my-auto">
       <div class="row">
@@ -19,6 +18,9 @@
     </div>
 
     </header>
+    <div class="container">
+      {% include breadcrumbs.html path=page.path title=page.title %}
+    </div>
 
     <section class="" id="content">
     <div class="container">

@@ -1,5 +1,6 @@
 ---
 title: How to connect B&O TVs to a BLI
+description: Configure your TV to be able to control your Home from it.
 layout: pagetoc
 ---
 
@@ -9,9 +10,9 @@ It will also enable scene execution with a BeoRemote as explained in the [How to
 
 **This document gives connection instrucctions to the BeoVision Eclipse, the BeoVision Horizon and the BeoPlay V1.** 
 
-> All these B&O products can be added as NetworkLink [Resources](/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necesarilly uncovering its full potential.
+> All these B&O products can be added as NetworkLink [Resources](/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necessarily uncovering its full potential.
 
-> Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the posibility to trigger macros through shortcuts on your control.
+> Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the possibility to trigger macros through shortcuts on your control.
 
 
 

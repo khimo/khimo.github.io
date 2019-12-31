@@ -29,9 +29,10 @@ collections:
   how-tos:
     output: true
     permalink: /bli-guides/how-tos/:path
-  01-lua-macro-snippets:
+  lua-macro-snippets:
     output: true
-    permalink: /bli-guides/how-tos/01-lua-macro-snippets/:path
+    permalink: /bli-guides/how-tos/howto-lua-macros/:path
+    directory: /bli-guides/_lua-macro-snippets/
 
   
 collections_dir: bli-guides

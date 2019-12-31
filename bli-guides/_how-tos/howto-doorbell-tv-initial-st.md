@@ -1,5 +1,6 @@
 ---
 title: Business reception setup for TVs and doorbell
+description: Turn on a B&O TV and show the frontdoor camera when someone rings the doorbell.
 layout: pagetoc
 ---
 

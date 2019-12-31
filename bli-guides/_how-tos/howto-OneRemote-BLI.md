@@ -1,5 +1,6 @@
 ---
 title: How to control Your BLI with the BeoRemote One
+description: Use the Light & Control commands of the B&O remotes to fire BeoLiving Intelligence macros.
 layout: pagetoc
 ---
 
