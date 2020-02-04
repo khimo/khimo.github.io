@@ -130,7 +130,7 @@ The following sections show the available commands for each device. Note that so
 + Select source(input):
   + "_Alexa, change the input to (SOURCE-NAME) on (DEVICE-NAME)_"
   + _Description_: Selects a source on the device. In _Alexa's_ language, "sources" are equivalent to "inputs". Possible sources are all enabled sources on the _BLI_ _Interfaces_ page (_PRO_ mode only).
-  + **_Notice_**: This stanza is too long and sometimes alexa does not understand it well, it is usually better to define a Macro (Scene) that turns on the Network Link product at the correct source and activates it using the "_Alexa , turn MACRO "stanza.
+  + **_Notice_**: This stanza is too long and sometimes alexa does not understand it well, it is usually better to define a Macro (Scene) that turns on the Network Link product at the correct source and activates it using the "_Alexa , turn on MACRO "stanza.
   
 ### Scenes/Macros
 
