@@ -1,7 +1,10 @@
 ---
-title: Dooya System
+title: Dooya
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Dooya System
+=============
 
 BeoLink Gateway and Dooya System are capable of fire up to 50 presets scenarios between each system.  
 

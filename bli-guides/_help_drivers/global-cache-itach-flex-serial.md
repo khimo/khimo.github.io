@@ -1,7 +1,10 @@
 ---
-title: GC iTach Flex serial
+title: iTach Flex Serial
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach FLEX SERIAL
+===============================
 
 This driver supports communication with a Global Cache iTach Flex with RS232 and RS485 link cables,
 allowing to control RS232 and RS485 serial devices.

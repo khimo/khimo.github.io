@@ -1,7 +1,10 @@
 ---
-title: WeMo Mr Coffee Maker 
+title: WeMo Coffee Maker
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+WeMo / Mr Coffee Maker 
+========================= 
 
 This driver supports communication directly with the WeMo enabled Mr Coffee Maker, allowing to control and receive feedback from the device. 
 

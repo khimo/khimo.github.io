@@ -1,7 +1,10 @@
 ---
 title: Vitrea
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+VITREA DRIVER
+=============
 
 This driver connects the Beolink Gateway with Vitrea, allowing to control lights, dimmers, shades, boilers and fire scenes on the VBox-PRO Wireless Controller.
 

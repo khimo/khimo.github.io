@@ -1,7 +1,10 @@
 ---
-title: GC iTach Flex relay/sensor
+title: iTach Flex Relay & Sensor
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach FLEX RELAY/SENSOR
+=====================================
 
 This driver supports communication with a Global Cache iTach Flex with Relay & Sensor link cable connected, allowing to control Relays (SPST, SPDT, DPDT), detect Contact Clousures and sense Voltages.
 

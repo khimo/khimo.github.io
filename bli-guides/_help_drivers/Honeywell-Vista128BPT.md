@@ -1,7 +1,10 @@
 ---
-title: Honeywell VISTA-128 BPT
+title: Honeywell Vista128BPT
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Honeywell / VISTA-128 BPT
+========================= 
 
 Allows the user to Arm/Disarm partitions of the alarm system, and to receive feedback of states and notifications. 
 

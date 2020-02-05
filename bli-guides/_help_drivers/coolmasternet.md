@@ -1,8 +1,10 @@
 ---
-title: CoolMasterNet Bridge
+title: CoolMasterNet
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+CoolMasterNet HVAC Bridge
+=========================
 The CoolMasterNet driver on the Beolink Gateway integrates all HVAC´s configured in the CoolMasterNet bridge. 
 
 Connecting to the system

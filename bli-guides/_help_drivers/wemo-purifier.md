@@ -1,7 +1,10 @@
 ---
-title: WeMo Air Purifier 
+title: WeMo Air Purifier
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+WeMo / Air Purifier 
+========================= 
 
 This driver supports communication directly with the Holmes Smart Air Purifier with WeMo, allowing to control and receive feedback from the device. 
 

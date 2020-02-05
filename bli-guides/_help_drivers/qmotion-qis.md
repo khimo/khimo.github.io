@@ -1,8 +1,10 @@
 ---
 title: QMotion QIS Shades
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+QMotion QIS Shades
+=======================
 The QMotion QIS Shades driver on the Beolink Gateway integrates all individual QMotion Shades and Shade Groups configured in QMotion QIS. 
 The standard SHADE commands SET LEVEL, RAISE, LOWER and STOP are available for all resource types. 
 The standard SHADE LEVEL status is only available for individual shade resources. 
@@ -11,8 +13,6 @@ Connecting to the system
 -------------------------
 Communication with QMotion QIS Shades it's made through serial communication via an RS485 interface. Since Beolink Gateway supports only RS232 serial communication using a USB adapter, an RS232-RS485 converter will be needed for establishing the communication.
 
-Channel settings are:
-* _Poll Interval_ : Polling interval for status request (default to 30 seconds).
 
 Available resources
 --------------------------------
@@ -37,3 +37,10 @@ Commands are the same for both resource types:
 Only *QMotion Blind/Shade* contains **LEVEL** state:
 * States:
   - **LEVEL**: Level position of Shade/Blind.
+
+Changelog:
+=========
+  - v0.6 2019-06-27 
+    - Adds support to "Load resources"
+    - Improves handling of resource state
+    - Improves handling of connection status

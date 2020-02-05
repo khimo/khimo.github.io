@@ -1,7 +1,10 @@
 ---
-title: GC iTach Flex Infrared
+title: iTach Flex Infrared
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach FLEX INFRARED
+=====================================
 
 This driver supports communication with Global Cache iTach Flex used with all IR link cables, allowing to send IR commands through all cable ports connected.
 

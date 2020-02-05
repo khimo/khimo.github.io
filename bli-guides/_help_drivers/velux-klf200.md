@@ -1,8 +1,10 @@
 ---
 title: Velux KLF200
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+Velux KLF200
+=====================================
 This driver supports communication with gateway Velux KLF200, allowing to control different types of shades, dimmers, switches, locks and fire Velux Scenes.
 Connecting to the system
 --------------------------------

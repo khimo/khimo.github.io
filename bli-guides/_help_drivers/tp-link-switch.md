@@ -1,8 +1,10 @@
 ---
 title: TP-Link Smart Plug
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+TP-Link Smart Plug
+=====================================
 This driver supports communication with TP-Link Smart Plug's HS100/110, allowing to control different the relay state of the switch. Integration with models HS105 is not ensured.
 Connecting to the system
 --------------------------------

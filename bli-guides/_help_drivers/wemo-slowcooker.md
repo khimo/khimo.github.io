@@ -1,7 +1,10 @@
 ---
-title: WeMo Slow Cooker 
+title: WeMo Slow Cooker
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+WeMo / Slow Cooker 
+========================= 
 
 This driver supports communication directly with the WeMo enabled Slow Cooker, allowing to control and receive feedback from the device. 
 

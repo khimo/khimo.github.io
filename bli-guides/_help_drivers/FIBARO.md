@@ -1,8 +1,8 @@
 ---
 title: FIBARO
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
 Fibaro
 =======================
 The Fibaro driver on the BeoLiving Intelligence integrates ON/OFF devices (ie. wall plugs, switches), dimmer devices, RGBW devices and roller-shutter devices configured in the Fibaro Home Center.
@@ -11,7 +11,7 @@ The Fibaro driver on the BeoLiving Intelligence integrates ON/OFF devices (ie. w
 
 Connecting to the system
 -------------------------
-**Communication with Fibaro products is done through the Fibaro HomeCenter.** This implements an HTTP RESTful API. 
+**Communication with Fibaro products it's made through the Fibaro HomeCenter.** This implements an HTTP RESTful API. 
 The following is a list of configurations fields that the installer should define in order to establish the connection.
 
 Channel settings are:

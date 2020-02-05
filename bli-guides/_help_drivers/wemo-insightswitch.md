@@ -1,8 +1,10 @@
 ---
-title: WeMo Insight Switch 
+title: WeMo Insight Switch
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+WeMo / Insight Switch 
+========================= 
 
 This driver supports communication directly with the WeMo Insight Switch, allowing to control and receive feedback from the device. 
 

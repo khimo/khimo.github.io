@@ -1,8 +1,10 @@
 ---
-title: QMotion Zigbee Shades
+title: QMotion Qube
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
+QMotion Zigbee Shades
+=======================
 The QMotion Zigbee Shades driver on the Beolink Gateway integrates all individual QMotion Shades and Shade Groups configured in the Qube gateway. 
 The standard SHADE commands SET LEVEL, RAISE, LOWER and STOP are available for all resource types. 
 The standard SHADE LEVEL status is only available for individual shade resources. 
@@ -44,3 +46,8 @@ Only *QMotion Blind/Shade* contains **LEVEL** state:
 Resource discovery
 ------------------
 QMotion Zigbee Shades Driver of BeoLink Gateway has the capability of import all Shades/Blind and Groups of Shades/Blinds in Qube gateway configuration. 
+
+Changelog
+---------
+   - V0.3 | 2019-05-29
+      - Minor bugfix in shade group command post execution.

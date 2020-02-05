@@ -1,7 +1,10 @@
 ---
-title: Generic Modbus
+title: Generic Modbus driver
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Generic Modbus driver
+=====================
 
 This driver is intended to interact with any system that uses Modbus protocol.
 

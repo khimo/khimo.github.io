@@ -1,7 +1,10 @@
 ---
 title: DigitalSTROM
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+DigitalSTROM
+=====================================
 
 This driver supports communication with DigitalSTROM system, allowing to control Lights, Light Groups, Shades, Shade Groups and fire global independent scenes.
 
@@ -17,8 +20,8 @@ connections (by default equal to ```8080```).
  3. *Login*: Username on DigitalSTROM Server.
  4. *Password*: Username password.
 
-**Important Note** : DigitalSTROM uses a self-signed certificate, so in order to establish the connection with DigitalSTROM Server 
-the box "*Check Server certificate*" on *Connection Settings* must be unchecked. 
+**Important Note** : DigitalSTROM uses a self-signed certificate, so in order to establish the connection with DigitalSTROM Server
+the box "*Check Server certificate*" on *Connection Settings* must be unchecked.
 
 Available resources
 --------------------------------
@@ -36,7 +39,7 @@ The available resource types are:
 Resource Address
 -------------------
 
-Resource address for each resource type is shown below: 
+Resource address for each resource type is shown below:
 
 * **Dimmer with (No) State | Shade with (No) State** : Equal to *dsID* (Internal DigitalSTROM identification number for each device). Eg: `3504175fe0000000000182f6`.
 * **Dimmer Group** : Equal to `1,<ZoneID>`, where `ZoneID` refers to the internal DigitalSTROM identification number for each zone. `ZoneID = 0` (address = `1,0`) refers to whole zones defined on the DigitalSTROM system.
@@ -52,9 +55,9 @@ Commands, Events and States
     - **\_FIRE\_SCENE** : Fire DigitalSTROM scene on device
         - *INC* : Increase output value.
         - *DEC* : Decrease output value.
-        - *MAX* : Set maximum output value. 
-        - *MIN* : Set minimum output value. 
-        - *STOP* : Stop output value transition. 
+        - *MAX* : Set maximum output value.
+        - *MIN* : Set minimum output value.
+        - *STOP* : Stop output value transition.
         - *AUTO_OFF* : Fade off.
         - *PRESET\_0* : Sets output value to `0`.
         - *PRESET\_1* : Sets output value to `100`.
@@ -79,7 +82,7 @@ Commands, Events and States
         - *INC* : Increase output value.
         - *DEC* : Decrease output value.
 
-+ **Apartment Global Scenes** : 
++ **Apartment Global Scenes** :
     - **\_FIRE\_SCENE** : Fire DigitalSTROM Global Independent Scene of Structure
         - *ABSENT* : Sets structure in Absent mode.
         - *PRESENT* : Sets structure in Present mode.
@@ -92,7 +95,7 @@ Commands, Events and States
         - *ALARM_2* : Fire user defined Alarm 2.
         - *ALARM_3* : Fire user defined Alarm 3.
         - *ALARM_4* : Fire user defined Alarm 4.
-        
+
     - **\_UNDO\_SCENE** : Undo Global Independent Scene of Structure
         - *PANIC*
         - *FIRE*
@@ -105,3 +108,11 @@ Important notes regarding status update latency and end user expirience
 -------------------------------------------------------------------------
 
 Resources with state require a constant polling to get the resource state. Due to DigitalSTROM limitations, it's only possible to ask for one device output every 60 seconds per circuit (referred to the electrical installation of one fuse box). Because of this, the latency on the status update could be big and will increase with the number of defined resources with status on the *BeoLink Gateway*. So, it's recommended to use as less as possible resources with state. Regarding end user experience, it's recommended to use predefined DigitalSTROM scenes to change output values on devices (instead command *SET*) and use device groups when is necessary to change states of more than one device.
+
+Change log
+----------
+from version 0.2 to 0.3:
+  - Improves the application token managment, requesting it only once for each driver instance.
+  - Adds more logs
+  - Adds description for discovered resources
+  - Requests session tokens if its needed before performing an request to de dss server
