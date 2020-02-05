@@ -67,7 +67,8 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 		</div>
 
        	<!-- if last column in row -->
-       	{% if forloop.counter | divisibleby:"3" and not forloop.last %}
+       	{% assign fullrow = forloop.counter | divisibleby:"3" %}
+       	{% if fullrow and forloop.last != true %}
        		</div><div class="row">
        	{% endif %}
    {% endfor %}
