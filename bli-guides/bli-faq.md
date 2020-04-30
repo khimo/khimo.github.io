@@ -162,6 +162,12 @@ In _Product information_, the _License type_ shows the current license of your _
 
 Once the payment process finishes, your _BLI_ will be automatically upgraded to _PRO_ mode within a minute approximately.
 
+<div class="row justify-content-center"> 
+  <div class="" style="padding-bottom: 0%;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MM4wD4HmcfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+</div>
+
 
 ## Setup
 #### Q: How do I get my _BeoLiving Intelligence_ IP address?
