@@ -82,6 +82,15 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
+      <td>Voice control through Google Assistant</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
       <td>Remote support specialist</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -125,6 +134,14 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
     <tr>
       <td>Bang & Olufsen Light & Control functions as Macro triggers</td>
+      <td class="text-center">
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
+      <td>Integration with MasterLink legacy products through a BLGW or MLGW</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -205,6 +222,10 @@ For more information about the user button, refer to the specific [section](bli_
 
 Please refer to the specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
 
+#### Q: How do I link Google Home with my _BeoLiving Intelligence_?
+
+Please refer to the specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
+
 #### Q: How do I link IFTTT with my _BeoLiving Intelligence_?
 
 Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).
@@ -223,7 +244,7 @@ Please refer to the specific guide: [BeoLiving Intelligence Alexa skill guide](b
 
 Sometimes, devices name are not suitable for _Alexa_ to understand. Some workarounds to fix this issue are described in [BeoLiving Intelligence Alexa skill guide](bli-alexa.md).
 
-#### Q: I can't link IFTTT or Alexa with _BeoLiving Intelligence_!
+#### Q: I can't link IFTTT, Google Assistant or Alexa with _BeoLiving Intelligence_!
 
 Make sure you first enabled _Remote Access_ on your _BeoLiving Intelligence_ through _BeoLiving App_. Refer to [BeoLiving Intelligence Quick Setup guide](bli-quick-setup-guide.html) for a detailed description. 
  
@@ -302,6 +323,9 @@ The LED on the _BeoLiving Intelligence_ displays it's current state, as shown in
 _BeoLiving Intelligence_ has multiple ways of controlling your house. From factory, _BeoLiving Intelligence_ can be controlled using the _BeoLiving App_, or using your _Voice_ (by linking your _BeoLiving Intelligence_ with _Alexa_, for example).
 After upgrading your _BeoLiving Intelligence_ mode to _PRO_, you will also be able to control your house through the web interface and the _Home Control_ native application on Bang & Olufsen TVs.
 
+#### Q: Can I control the BLI with my voice?
+Yes, using Alexa, Google Assistant or other 3rd party services through IFTTT. See [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md) for more information.
+
 #### Q: Can I control my devices from outside my house?
 
 Once your _BeoLiving Intelligence_ is on _PRO_ mode, you will be able to control your house from anywhere. You can enable remote access by going to your _BeoLiving Intelligence_ settings on the _BLApp_.
@@ -317,7 +341,7 @@ To find out what function number corresponds to each name, you may go to the Mon
 
 #### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
 
-_BeoLiving Intelligence_ does not support MasterLink products directly, however they can still be used with the BLI via a BeoLink Converter.
+_BeoLiving Intelligence_ does not support MasterLink products directly, however they can still be used with the BLI via a BeoLink Converter or using the _MasterLink Gateway Protocol_ driver that enables **control** of *MasterLink* products **through a *BeoLink* or *MasterLink Gateway***.
 
 #### Q: What is the function of a BeoLink Converter NL/ML?
 
@@ -325,7 +349,7 @@ This device converts audio between the analogue world (Master Link) into a strea
 
 #### Q: Can I start a source on a Master Link audio/video master to play on a Network Link product through BLI?
 
-Yes you can, but you need the BeoLink Converter NL/ML and it has to be configured correctly. See the BeoLink Converter NL/ML - [Installation Guide](https://www.bang-olufsen.com/en/product-support/accessories/beolink-converter-nl-ml). 
+Yes you can, but you need the BeoLink Converter NL/ML and it has to be configured correctly. See the BeoLink Converter NL/ML - [Installation Guide](https://www.bang-olufsen.com/en/product-support/accessories/beolink-converter-nl-ml). It is **NOT** possible using the _MasterLink Gateway Protocol_ driver.
 
 #### Q: Can I control Link rooms in my Master Link setup through BeoLiving Intelligence?
 No. 

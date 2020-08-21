@@ -93,6 +93,15 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
+      <td>Voice control through Google Assistant</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
       <td>Remote support specialist</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -143,6 +152,14 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
+      <td>Integration with MasterLink legacy products through a BLGW or MLGW</td>
+      <td class="text-center">
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr>
       <td>Lua Macro commands</td>
       <td class="text-center">
       </td>
@@ -176,7 +193,7 @@ controllers and instructions on how to migrate from one controller to another.
 
 Follow the _Quick setup_ to get your **BeoLiving Intelligence** up and running. Go to the _User guide_ for better understanding of all the 
 possibilities **BeoLiving Intelligence** has to offer. The _Link to third parties_ guide lists all the steps to enable some of the third party services like
- _Alexa_ and _IFTTT_.
+ _Alexa_, Google Assistant and _IFTTT_.
 
 <div class="row justify-content-md-center">
     <div class="col-lg-4"> 
@@ -210,8 +227,9 @@ possibilities **BeoLiving Intelligence** has to offer. The _Link to third partie
      <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli-link-third-party-service.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-cloud fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Link to third parties</h3>
+              <h3 class="mb-3 text-dark">Link 3rd parties</h3>
               <p class="text-muted mb-0">Alexa - IFTTT</p>
+              <p class="text-muted mb-0">Google Assisant</p>
             </div>
       </a>
      </div>

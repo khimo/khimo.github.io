@@ -20,7 +20,7 @@ To enable a cloud service with _BeoLiving Intelligence_ a linking process must b
 Intelligence_ and the third party cloud service, with _Khimo.com_ (our own cloud service) as an intermediary. For each service, this link could be
 done on the third party's mobile application or through their websites.
 
-The linking process for main third party cloud services (_Alexa_ & _IFTTT_) goes as follows:
+The linking process for main third party cloud services (_Alexa_, *Google Assistant* & _IFTTT_) goes as follows:
 
 ### _Alexa_
 
@@ -54,6 +54,41 @@ The following video shows how to link _Alexa_ using the first method described:
 <br>
 
 After accomplishing one of these three methods, it's possible to start using the linked cloud service. For more information about the available voice commands and the devices you may control using Alexa and your BLI, head to the BLI's [_Alexa_ skill guide](bli-alexa.html).
+
+### _Google Assistant_
+
+1. **Add the BLI to you Home Control devices in Google Home** 
+    - Using the _Google Home App_ press on your user icon and head to *Assistant settings*.
+    - In the *Assistant* tab go to *Home control* and press on the plus sign (**+**) to add a device.
+    - Search and select the "*BeoLiving Intelligence*".
+    - You will be redirected to the *Khimo.com* site
+
+
+2. **Link to BLI App**
+    - The Khimo.com site will first ask you to authorize access. Press *Next*.
+    - A message asking to continue the linking process in the _BeoLiving App_ will be displayed (if using an _iOS_ device), or a QR code will appear.
+
+**At this point to continue with the linking process you could choose between three methods:**
+
+   - Continue with the _BeoLiving App_ (using an _iOS_ device) by pressing _Use the BeoLiving App_ and _Open_ and then select which _BeoLiving Intelligence_ (if there is more than one in your network) to link. Then **to finish the linking process it's necessary to go back to the _Google Home App_**, wait while the site refreshes and then press _Done_. 
+
+   - Scan the QR code with the _BeoLiving App_ following the site's instructions.
+   
+   - Login with user and password to _Khimo_ (for _BeoLink Gateway_ users). 
+
+The following video shows how to link _Google Home_ using the first method described:
+
+<div class="row justify-content-center">
+  <div class="col-sm-5">     
+  <div class="embed-responsive" style="padding-bottom: 179%;">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ut3x19t4vKE"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+<br>
+
+After accomplishing one of these three methods, it's possible to start using the linked cloud service. Return to *Google Home*'s main screen and your integrated equipment will now appear in the app.
+
 
 ### _IFTTT_
 
