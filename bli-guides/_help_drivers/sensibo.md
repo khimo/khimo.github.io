@@ -1,9 +1,9 @@
 ---
-title: Sensibo Driver
+title: Sensibo
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Sensibo Driver
+Sensibo
 ==============
 
 Sensibo is a system that connects to any air conditioning through IR commands in order to give you

@@ -357,6 +357,8 @@ No.
 #### Q: Can I select borrowed sources from the BeoLink Converter NL/ML on Network Link products?
 Yes, if the borrowed sources have been configured and are part of the source list inside the Network Link product, then they can be selected using the BLI.  
 
+#### Q: What is the MasterLink Node (MLN) and how do I configure it?
+The MLN is needed when configuring the MasterLink Converter or when adding MasterLink products to your BLI through the MLGW Protocol using a BLGW or MLGW. It is configured on the web _Setup_ page of the gateway under *Interfaces-->B&O Products* for each MasterLink product.
 
 ## Other issues
 #### Q: If the power goes off, do I lose the _BeoLiving Intelligence_ configuration?
@@ -381,3 +383,6 @@ Try to clear the data and cache of _HAWebPanel_ application. For TV's with Video
 
 The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Intelligence_. Check our [detailed description](bli-for-blgw-installers.md#blgw-migration) for further information about the migration process.
 
+#### Q: Where can I buy a BeoLiving Intelligence?
+
+You can buy the BeoLiving Intelligence from any Bang & Olufsen dealer or by contacting us at info@khimo.com
