@@ -25,11 +25,11 @@ toc: true
 Every lua Macro should start by stating the signature and end with <em><code>end</code></em>, e.g.:</p>
 
 
-<div class="language-lua highlighter-rouge"><div class="highlight"><code>
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
   function(event, engine)
     -- all your code
   end
-</code></div></div>
+</code></pre></div></div>
 
 </p>The available parameters are those under <strong><em>event</em></strong> and under <strong><em>engine</em></strong>:</p>
 <h5 id="event">Event</h5>
@@ -119,14 +119,14 @@ Every lua Macro should start by stating the signature and end with <em><code>end
         <blockquote>
           <code>tab = engine.query(“other/room/DIMMER/*”)</code>
           <blockquote>
-            <code>tab[1].tostring() = “other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62”</code>
-            <code>tab[1].area() = “other”</code>
-            <code>tab[1].zone() = “room”</code>
-            <code>tab[1].type() = “DIMMER”</code>
-            <code>tab[1].name() = “OtherLamp”</code>
-            <code>tab[1].get(“LEVEL”) = “62”</code>
-            <code>tab[1].group() = “indoors”</code>
-            <code>tab[1].group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”, “Upstairs/Main room”, “other/room”}</code>
+            <p><code>tab[1].tostring() = “other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62”</code></p>
+            <p><code>tab[1].area() = “other”</code></p>
+            <p><code>tab[1].zone() = “room”</code></p>
+            <p><code>tab[1].type() = “DIMMER”</code></p>
+            <p><code>tab[1].name() = “OtherLamp”</code></p>
+            <p><code>tab[1].get(“LEVEL”) = “62”</code></p>
+            <p><code>tab[1].group() = “indoors”</code></p>
+            <p><code>tab[1].group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”, “Upstairs/Main room”, “other/room”}</code></p>
           </blockquote>
         </blockquote>
       </li>
@@ -198,6 +198,7 @@ Every lua Macro should start by stating the signature and end with <em><code>end
 </ul>
 
 <h3 id="code-examples">Code examples</h3>
+<p>Feel free to browse our examples, many are short and ilustrate use cases very well.</p>
 
 {% for snippet in site.lua-macro-snippets %}
 	  <div class="snippet">
