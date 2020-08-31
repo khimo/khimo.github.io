@@ -22,15 +22,23 @@ toc: true
 
 <h4 id="parameters">Parameters</h4>
 <p>The function should have the following signature: <em>function(event, engine)</em>
-Every lua Macro should start by stating the signature and end with <em>end</em>, as seen in the examples.
-The available parameters are those under <em>event</em> and under <em>engine</em>:</p>
-<h4 id="event">Event</h4>
+Every lua Macro should start by stating the signature and end with <em>end</em>, e.g.:</p>>
+
+
+<div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  function(event, engine)
+    -- all your code
+  end
+</code></pre></div></div>
+
+</p>The available parameters are those under <strong><em>event</em></strong> and under <strong><em>engine</em></strong>:</p>
+<h5 id="event">Event</h5>
 <p>The event that originated the call will have many parameters with information related to this event and this information can be useful for setting conditions or values of variables.</p>
 <blockquote>
   <p>E.g. Get the level of a dimmer who’s change has triggered the event, and set half the value to all the other lights.</p>
 </blockquote>
 
-<h5 id="members">Members</h5>
+<h6 id="members">Members</h6>
 <ul>
   <li><strong>tostring (function(): string):</strong> The full string representation of the event.
     <blockquote>
@@ -84,9 +92,9 @@ The available parameters are those under <em>event</em> and under <em>engine</em
   </li>
 </ul>
 
-<h4 id="engine">Engine</h4>
+<h5 id="engine">Engine</h5>
 <p>The BeoLiving Intelligence’s execution engine. The engine allows you te set values or query states of all your BLI’s devices.</p>
-<h5 id="members-1">Members</h5>
+<h6 id="members-1">Members</h6>
 <ul>
   <li><strong>fire (function(string, …)):</strong> Fires one or more commands on the engine.
     <blockquote>
