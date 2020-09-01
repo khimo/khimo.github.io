@@ -21,9 +21,8 @@ toc: true
 <p>When the macro executes because any of the defined events has matched, the function defined in the “Lua code” text area will be executed.</p>
 
 <h4 id="parameters">Parameters</h4>
-<p>The function should have the following signature: <em><code>function(event, engine)</code></em>
-Every lua Macro should start by stating the signature and end with <em><code>end</code></em>, e.g.:</p>
-
+<p>The function should have the following signature: <em><code>function(event, engine)</code></em></p>
+<p>Every lua Macro should start by stating the signature and end with <em><code>end</code></em>, e.g.:
 
 <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
   function(event, engine)
@@ -31,14 +30,14 @@ Every lua Macro should start by stating the signature and end with <em><code>end
   end
 </code></pre></div></div>
 
-</p>The available parameters are those under <strong><em>event</em></strong> and under <strong><em>engine</em></strong>:</p>
+The available parameters are those under <strong><em>event</em></strong> and under <strong><em>engine</em></strong>:</p>
 <h5 id="event">Event</h5>
 <p>The event that originated the call will have many parameters with information related to this event and this information can be useful for setting conditions or values of variables.</p>
 <blockquote>
   <p>E.g. Get the level of a dimmer who’s change has triggered the event, and set half the value to all the other lights.</p>
 </blockquote>
 
-<h6 id="members">Members</h6>
+<h6 id="functions">Functions</h6>
 <ul>
   <li><strong>tostring (function(): string):</strong> The full string representation of the event.
     <blockquote>
@@ -94,7 +93,7 @@ Every lua Macro should start by stating the signature and end with <em><code>end
 
 <h5 id="engine">Engine</h5>
 <p>The BeoLiving Intelligence’s execution engine. The engine allows you te set values or query states of all your BLI’s devices.</p>
-<h6 id="members-1">Members</h6>
+<h6 id="functions-1">Functions</h6>
 <ul>
   <li><strong>fire (function(string, …)):</strong> Fires one or more commands on the engine.
     <blockquote>
@@ -144,7 +143,7 @@ Every lua Macro should start by stating the signature and end with <em><code>end
 <p>No return value is expected or should be set from the lua function.</p>
 
 <h3 id="notes">Guidance and useful information</h3>
-<h5 id="important-functions">Important functions</h5>
+<h4 id="important-functions">Important functions</h4>
 <p><strong>Take into account that all <em>event</em>'s and <em>engine</em>'s attributes and parameters are <em>strings</em>.</strong> This means that when used in a conditional, they must be compared as strings or transformed to a number.</p>
 
 <p>The <code>tonumber()</code> and <code>tostring()</code> functions are available to tranform values when programming lua Macros.</p>
@@ -153,7 +152,7 @@ Every lua Macro should start by stating the signature and end with <em><code>end
 </blockquote>
 
 
-<h5 id="debugging">Common errors and Debugging</h5>
+<h4 id="debugging">Common errors and Debugging</h4>
 
 <p><strong>Common errors</strong> in lua Macros programming include the comparison of variables with different types of data (e.g. numbers and strings) and the specification of a Resource whose name has later been changed.</p>
 
@@ -169,7 +168,7 @@ Every lua Macro should start by stating the signature and end with <em><code>end
 
 
 
-<h5 id="extra-commands">Extra commands</h5>
+<h4 id="extra-commands">Extra commands</h4>
 <p>Two special commands, which cannot be added via normal macro edition, are available for <strong>group creation</strong> and group clear. These commands are provided by the system driver, which is located on the global zone.</p>
 <blockquote>
   <p>Set the kitchen on the “indoors” group: <em><code>Main/global/SYSTEM/BeoLiving Intelligence/SET GROUP?zone=Downstairs/Kitchen&amp;group=indoors</code></em></p>
