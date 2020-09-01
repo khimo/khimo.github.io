@@ -8,11 +8,11 @@ This code queries the level of a dimmer(_engine.query()[1].get("LEVEL")_), regar
 function(event, engine) 
     local result = engine.query("global/main/DIMMER/New DIMMER")
     if result[1].get("LEVEL") == "0" then
-   Debug("Turning on global/main/DIMMER/New DIMMER")
-       engine.fire("global/main/DIMMER/New DIMMER/SET?LEVEL=100");
+   		Debug("Turning on global/main/DIMMER/New DIMMER")
+    	engine.fire("global/main/DIMMER/New DIMMER/SET?LEVEL=100");
     else
-   Debug("Turning off global/main/DIMMER/New DIMMER")
-       engine.fire("global/main/DIMMER/New DIMMER/SET?LEVEL=0");
+   		Debug("Turning off global/main/DIMMER/New DIMMER")
+       	engine.fire("global/main/DIMMER/New DIMMER/SET?LEVEL=0");
     end
 end
 ```
