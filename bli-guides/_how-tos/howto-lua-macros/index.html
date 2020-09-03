@@ -15,10 +15,11 @@ toc: true
 <blockquote>
   <p>E.g.: Respond to the livingroom's light switch being pressed by turning the light on to full power during the day and 25% in the evening.</p>
   {% highlight ruby %}
+
     function(event, engine)
-      -- trigger event recieved from livingroom's main light switch (BUTTON)
+      -- trigger event recieved from livingroom main light switch (BUTTON)
       time = engine.query("*/*/SYSTEM/Clock/")
-      if tonumber(time[1].get("hour")) < 18 then
+      if tonumber(time[1].get("hour")) < 18 then -- this could also be done with sunrise/sunset relative times in the BLI
         engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=99")
       else
         engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=25")
@@ -27,23 +28,11 @@ toc: true
   {% endhighlight %}
 </blockquote>
 
-{% highlight ruby %}
-  function(event, engine)
-    -- trigger event recieved from livingroom's main light switch (BUTTON)
-    time = engine.query("*/*/SYSTEM/Clock/")
-    if tonumber(time[1].get("hour")) < 18 then
-      engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=99")
-    else
-      engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=25")
-    end
-  end 
-{% endhighlight %}
-
 <p>Much is possible with <strong><em>lua Macros</em></strong>. The following is an introduction to the main tools used in <em>lua Macros</em> programming for the BeoLiving Intelligence, including code snippets and practical examples.</p>
 
 <h3 id="how-lua-macros-work">How lua Macros work</h3>
 
-<p>When the macro executes because any of the defined events has matched, the function defined in the “Lua code” text area will be executed.</p>
+<p>When a macro is executed, either manually, by another Macro or because any of the defined events has matched, the function defined in the “Lua code” text area will be executed.</p>
 
 <p>The function should have the following signature: <em><code>function(event, engine)</code></em></p>
 <p>Every lua Macro should start by stating the signature and end with <em><code>end</code></em>, e.g.:
