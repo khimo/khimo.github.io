@@ -246,7 +246,7 @@ Sometimes, devices name are not suitable for _Alexa_ to understand. Some workaro
 
 #### Q: I can't link IFTTT, Google Assistant or Alexa with _BeoLiving Intelligence_!
 
-Make sure you first enabled _Remote Access_ on your _BeoLiving Intelligence_ through _BeoLiving App_. Refer to [BeoLiving Intelligence Quick Setup guide](bli-quick-setup-guide.html) for a detailed description. 
+Make sure you first enabled _Remote Access_ on your _BeoLiving Intelligence_ through _BeoLiving App_. Refer to [Khimo Cloud Link](bli-pro-user-guide/01-setup-bli-pro/02-setup#khimo-cloud-link)'s configuration for a detailed description. 
  
  
 ## Issue reporting
