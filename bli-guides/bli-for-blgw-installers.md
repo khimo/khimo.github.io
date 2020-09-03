@@ -14,9 +14,8 @@ The scope of this guide is intended to show to _BeoLink Gateway_ installers what
 
 ## ESSENTIAL and PRO mode
 
-The biggest and most important difference of _BeoLiving Intelligence_ is that it has two functional modes: _ESSENTIAL_ and _PRO_ modes. _BeoLiving 
-Intelligence_ comes from factory in _ESSENTIAL_ mode and is aimed for the end user, being easy to install (not being necessary an installer) and 
-to start using. 
+The biggest and most important difference of _BeoLiving Intelligence_ is that it has two working modes: _ESSENTIAL_ and _PRO_ modes. _BeoLiving 
+Intelligence_ is shipped from factory in _ESSENTIAL_ mode and is aimed at an end user being able to easily install it (an installer is not needed) and start using it. 
 
 This mode has the following features: 
 
@@ -49,13 +48,13 @@ In _ESSENTIAL_ mode, _BeoLiving App_ is the most important tool for configuratio
 - Edit names of B&O products
 - Set content provider's credentials
 - Create/Edit/Delete products groups
-- Alexa linking
+- Alexa and Google Assistant linking
 
 Moreover, in _PRO_ mode, remote access could be enabled through _BeoLiving App_. Refer to _Khimo Cloud link_ section at [BeoLiving Intelligence PRO User guide - Setup](bli-pro-user-guide/#setup) to see a video explaining how to enable remote access through _BeoLiving App_.
 
 ## User creation through BeoLiving App {#create-user}
 
-The most important flow that brings _BeoLiving Intelligence_ and _BeoLiving App_ is the user creation. As the video below shows, interaction with 
+The most important flow in the _BeoLiving Intelligence_ and _BeoLiving App_ is the user creation. Interaction with 
 _BeoLiving Intelligence_ is required, something new compared with _BeoLink Gateway_. This flow permits the creation of a 'password-less' owner user on 
 the respective _BeoLiving App_. The process is completely user friendly.
 
@@ -86,17 +85,16 @@ Without any _user_ or _password_ to remember, link with third party cloud servic
 Intelligence_ with the service provider. Refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.html)
  for a detailed description on how to link your voice control device with _BeoLiving Intelligence_.
 
-_Alexa_ is officially supported for voice control. Check [BeoLiving Intelligence Alexa's skill Guide](bli-alexa) to know all you can do with _Alexa_ and _BeoLiving Intelligence_. More voice control devices are on the way but for now Google Assistant is available for integration only through IFTTT.
+_Alexa_ and *Google Assistant* are officially supported for voice control. Check [BeoLiving Intelligence Alexa's skill Guide](bli-alexa) to know all you can do with _Alexa_ and _BeoLiving Intelligence_. More voice control devices are on the way.
 
 
 ## Other changes respect to BLGW  
 
-- _MasterLink_ devices: _BeoLiving Intelligence_ doesn't have _MasterLink_ interface. Integration with _MasterLink_ devices could be done through 
-_BeoLink Converter_.
-- _Beo4 and BeoRemote One_ commands are not supported: Due to the above change described.
+- _MasterLink_ devices: _BeoLiving Intelligence_ doesn't have _MasterLink_ interface. Integration with _MasterLink_ devices could be done through _BeoLink Converter_, and it is now possible to **control** _MasterLink_ devices from the BLI through a BLGW, MLGW mk1 & MLGW mk2. 
+> Integration through BLGW & MLGW does not allow other systems on your installation to use legacy *MasterLink* devices as audio input to other systems. This can be achieved with a _BeoLink Converter_ or connecting directly through a _Line In_.
+- _Beo4 and BeoRemote One_ commands: These commands are *only* supported through a BLGW or MLGW, due to the changes described above.
 - B&O manual sources: Now all sources are synchronized automatically with _NetworkLink_ devices.
-- The default '_admin_' password: From factory, _admin_ password is unknown. Refer to our [F.A.Q.](bli-faq.md#admin-password) to know how to set 
-it to a desired value.
+- The default '_admin_' password: From factory, _admin_ password is unknown. Refer to our [F.A.Q.](bli-faq.md#admin-password) to know how to set  it to a desired value.
 
 ## Migrate from BLGW to BLI {#blgw-migration}
 
@@ -106,4 +104,4 @@ is that the BeoLiving Intelligence must be in PRO mode**. To do so, follow the n
 1. Download the _BeoLink Gateway_'s configuration file
 2. Upload the file to the _BeoLiving Intelligence_ (in _PRO_ mode)
 3. Take into account that _MasterLink_ resources won't be available in _BeoLiving Intelligence_, so all events and commands related to _MasterLink_ 
-devices on _Macros_ will be orphans, meaning that must be deleted or modified for a correct integration through a _BeoLink Converter_.
+devices on _Macros_ will be orphans, meaning that must be deleted or modified for a correct integration through a _BeoLink Converter_ or using the _MLGW Protocol_ driver (integration through a BLGW or MLGW).

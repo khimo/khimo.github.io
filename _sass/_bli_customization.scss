@@ -1,9 +1,27 @@
 
 /* As we have a fixed navbar on top just add so padding so we are sure that the text is visible when accessed from anchor link */
-.pagecontent h1, .pagecontent h2, .pagecontent h3, .pagecontent h4,
+.pagecontent h1, .pagecontent h2,
 #content h1, #content h2
 {
-  padding-top:60px;
+  padding-top:50px;
+}
+
+.pagecontent h2
+{
+	border-bottom: solid 3px #fd7e14;
+	padding-bottom: .5rem;
+}
+
+.pagecontent h3
+{
+	border-bottom: solid 1px #fd7e14;
+	padding-bottom: .5rem;
+	padding-top:40px;
+}
+
+.pagecontent h4
+{
+  padding-top:20px;
 }
 
 blockquote {
