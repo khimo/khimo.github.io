@@ -6,7 +6,7 @@ toc: true
 ---
 <p><strong>Lua Macros</strong> is a great tool to get the most out of your BeoLiving Intelligence and <strong>take your home automation installation to the next level</strong>.</p> 
 
-<p>The simplicity of programming in lua, a fast-to-learn and high level programming language, combined with specifically designed functions though out especially for the BLI, give the installer/advanced-user freedom to get creative and design automation procedures that stand out.</p>
+<p>The simplicity of programming in lua, a fast-to-learn and high level programming language, combined with specifically designed functions thought out especially for the BLI, give the installer/advanced-user freedom to get creative and design automation procedures that stand out.</p>
 
 <p>The Macro configuration page of the BeoLiving Intelligence has a simple user interface that displays available resources and commands on these resources, but aside from selecting the command to execute and setting a time delay between commands, the possibilities are limited.</p>
 
@@ -14,7 +14,20 @@ toc: true
 
 <blockquote>
   <p>E.g.: Respond to the livingroom's light switch being pressed by turning the light on to full power during the day and 25% in the evening.</p>
-  <div class="language-lua highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+  {% highlight ruby %}
+    function(event, engine)
+      -- trigger event recieved from livingroom's main light switch (BUTTON)
+      time = engine.query("*/*/SYSTEM/Clock/")
+      if tonumber(time[1].get("hour")) < 18 then
+        engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=99")
+      else
+        engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=25")
+      end
+    end 
+  {% endhighlight %}
+</blockquote>
+
+{% highlight ruby %}
   function(event, engine)
     -- trigger event recieved from livingroom's main light switch (BUTTON)
     time = engine.query("*/*/SYSTEM/Clock/")
@@ -24,8 +37,7 @@ toc: true
       engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=25")
     end
   end 
-  </code></pre></div></div>
-</blockquote>
+{% endhighlight %}
 
 <p>Much is possible with <strong><em>lua Macros</em></strong>. The following is an introduction to the main tools used in <em>lua Macros</em> programming for the BeoLiving Intelligence, including code snippets and practical examples.</p>
 
