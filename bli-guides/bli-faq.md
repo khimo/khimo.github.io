@@ -218,6 +218,10 @@ An installer can gain access to _BeoLiving Intelligence's_ setup interface with 
 
 For more information about the user button, refer to the specific [section](bli_advanced_user_guide/05-user_button) of [BeoLiving Intelligence Advanced User guide](bli_advanced_user_guide/).
  
+#### Q: Why are my changes to configuration not going into effect on the _BeoLiving app_?
+
+This may be happening because your changes havent been saved yet. Press _ctrl+shift+S_ to quick save the configuration.
+
 #### Q: How do I link Alexa with my _BeoLiving Intelligence_?
 
 Please refer to the specific guide: [BeoLiving Intelligence link to 3rd party Cloud Service guide](bli-link-third-party-service.md).

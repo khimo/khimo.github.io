@@ -14,6 +14,7 @@ toc: true
 
 <blockquote>
   <p>E.g.: Respond to the livingroom's light switch being pressed by turning the light on to full power during the day and 25% in the evening.</p>
+  <p></p>
   {% highlight ruby %}
 
     function(event, engine)
@@ -170,6 +171,10 @@ The available parameters are those under <strong><em>event</em></strong> and und
 <h4 id="debugging">Common errors and Debugging</h4>
 
 <p><strong>Common errors</strong> in lua Macros programming include the comparison of variables with different types of data (e.g. numbers and strings) and the specification of a Resource whose name has later been changed.</p>
+<blockquote>
+  <p>E.g.: The comparison <code>event.get("mute") == false</code> when checking in the event sent by a BeoLink product is muted <strong>is incorrect</strong> and will always return <strong>false</strong>. The correct comparison is <code>event.get("mute") == "0"</code>. Note that the zero here is also a string, not a number!</p>
+</blockquote>
+
 
 <p>Any runtime <strong>error will be sent to the system log</strong> (Tools–&gt;Log).</p>
 <blockquote>
