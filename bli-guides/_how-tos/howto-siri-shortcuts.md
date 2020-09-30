@@ -50,5 +50,5 @@ After this press the play button, a successful response should show a blank page
 
 Here is how the full configuration should look.
 <div class="text-center">
-  <img src="/bli-guides/pictures/shortcuts.PNG" class="img-fluid" alt="Shortcuts screenshot"/>
+  <img src="/bli-guides/pictures/shortcuts.PNG" class="img-fluid" height="800" alt="Shortcuts screenshot"/>
 </div>
