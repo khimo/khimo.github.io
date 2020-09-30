@@ -340,6 +340,12 @@ The LIGHT and CONTROL lists on your BeoRemote (i.e.: GOODBYE, MORNING, etc.) cor
 
 To find out what function number corresponds to each name, you may go to the Monitor tool and see what Event comes in when you press each button. Or directly on the Macro creation page, under Events, press Capture and the Events you press will now appear to add directly to your Macro.  
 
+#### Q: How can I access a media library stored in a BeoMaster 5, or similar NAS (Network-Attached Storage), connected via DLNA?
+
+On the BeoLiving app, you can access these media libraries by selecting any music source on a product (E.g: Music, Deezer, TuneIn, etc.), and pressing the "Content" button that can be found to the center-right of the screen.
+
+Take into account that once the Storage device is connected, it will take some time to retrieve all the information on to the BLI. In the case of a full BeoMaster, this can take up to hours.
+
 
 ## MasterLink products
 
