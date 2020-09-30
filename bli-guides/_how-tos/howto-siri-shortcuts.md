@@ -12,7 +12,7 @@ This **can only be done while connected to the same network** that your BLI is c
 
 ### Setting up the Shortcut
 
-This video exemplifies the previous process:
+This video exemplifies the configuration process:
 
 <div class="row justify-content-center">
   <div class="col-sm-5">     
