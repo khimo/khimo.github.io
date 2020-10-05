@@ -1,14 +1,20 @@
 ---
-title: How to control your BLI with Siri Shortcuts
-description: Send HTTP messages to execute commands on the BLI using Siri Shortcuts
+title: "Hey Siri, play the BBC on B&O"
+description: Excecute Macro on the BLI using Siri Shortcuts
 layout: pagetoc
 ---
 
-Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri ("Hey Siri," followed by the shortcut name).
+As you may have seen in the "How to control your BLI with Siri Shortcuts" document, it is possible to control your BLI by talking to Siri.
 
-Siri Shortcuts can be configured to send an HTTP command that fires a Macro you have previously set up or presses a button, to your BeoLiving Intelligence, **either on Essential or on Pro Mode**. 
+In this document, we aim to show a short example, from start to finish, of a cool integration sequence you could perform. After following this tutorial, you will be able to ask Siri to turn on your favourite radio station every morning.
 
-This **can only be done while connected to the same network** that your BLI is connected to. Also take into account that running Siri Shortcuts requires iOS 12 or later on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
+Important reminder:
+ - This functionality works on **both Essential and Pro Modes**. 
+ - This **can only be done while connected to the same network** that your BLI is connected to. 
+ - Running **Siri Shortcuts requires iOS 12 or later** on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
+
+### Setting up the Macro
+
 
 ### Setting up the Shortcut
 
