@@ -12,9 +12,12 @@ layout: pagetoc
 
   <p>This <strong>can only be done while connected to the same network</strong> that your BLI is connected to. Also take into account that running Siri Shortcuts requires iOS 12 or later on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.</p>
 
-  <p>The video exemplifies the configuration process.</p>
+  <p><strong>The video exemplifies the configuration process.</strong></p>
+
+  <p>You can find another great use example of this functionality in our <a href="https://khimo.github.io/bli-guides/how-tos/hey-siri-play-bbc-in-b-and-o">"Hey Siri, play the BBC on B&O"</a> tutorial.</p>
+
   </div>
-  <div class="col-sm-3"> 
+  <div class="col-sm-4"> 
 
   	<div class="embed-responsive" style="padding-bottom: 179%;">
   	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jn2jql_Z_uo?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
@@ -24,7 +27,7 @@ layout: pagetoc
 
 
 <div class="row justify-content-center">
-  <div class="col-sm-6"> 
+  <div class="col-sm-8"> 
 
 <h4 id="step-by-step"><a class="anchorjs-link " href="#step-by-step" aria-label="Anchor link for: step by step" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Step by step</h4>
 
@@ -64,9 +67,9 @@ In the Authorization header, after the word Basic, insert a link to the “Base6
 <p><strong>Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying “Hey Siri,” and then the name of the shortcut.</strong></p>
 
   </div>
-  <div class="col-sm-3"> 
+  <div class="col-sm-4"> 
     <div class="text-center">
-      <img src="/bli-guides/pictures/shortcuts.PNG" style="height: 100%; width: 100%; object-fit: contain" alt="Shortcuts screenshot"/>
+      <img src="/bli-guides/pictures/shortcuts.PNG" style="height: 100%; width: 100%; object-fit: contain; padding-top: 60px;" alt="Shortcuts screenshot"/>
     </div>
 
   </div>
