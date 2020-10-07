@@ -5,18 +5,16 @@ layout: pagetoc
 ---
 
 <div class="row justify-content-center">
-  <div class="col-sm-6"> 
+  <div class="col-sm-8"> 
+  <p>Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri.</p>
 
-Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri ("Hey Siri," followed by the shortcut name).
+  <p>Siri Shortcuts can be configured to send an HTTP command that fires a Macro you have previously set up or presses a button, to your BeoLiving Intelligence, <strong>either on Essential or on Pro Mode</strong>.</p>
 
-Siri Shortcuts can be configured to send an HTTP command that fires a Macro you have previously set up or presses a button, to your BeoLiving Intelligence, **either on Essential or on Pro Mode**. 
+  <p>This <strong>can only be done while connected to the same network</strong> that your BLI is connected to. Also take into account that running Siri Shortcuts requires iOS 12 or later on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.</p>
 
-This **can only be done while connected to the same network** that your BLI is connected to. Also take into account that running Siri Shortcuts requires iOS 12 or later on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
+  <p>The video exemplifies the configuration process.</p>
   </div>
   <div class="col-sm-3"> 
-### Setting up the Shortcut
-
-This video exemplifies the configuration process:
 
   	<div class="embed-responsive" style="padding-bottom: 179%;">
   	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jn2jql_Z_uo?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
@@ -28,38 +26,47 @@ This video exemplifies the configuration process:
 <div class="row justify-content-center">
   <div class="col-sm-6"> 
 
-#### Step by step
+<h4 id="step-by-step"><a class="anchorjs-link " href="#step-by-step" aria-label="Anchor link for: step by step" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>Step by step</h4>
 
+<ol>
+  <li>
+    <p>You can go to the Shortcut’s settings to change the name.</p>
+  </li>
+  <li>
+    <p>Add a “Text” action. In this action, enter your BLI’s credentials, like: <em>user:password</em></p>
+  </li>
+  <li>
+    <p>Add a “Base64 Encode” action after the “Text” action which contains the credentials, and a line should connect the two. Selecte “Encode”, and “None” in Line Breaks.</p>
+  </li>
+  <li>
+    <p>Add a “URL” action. In this action, add the BLI’s url address, this can be <em>http://bli.local/</em> or <em>http://&lt;your BLI’s IP&gt;/</em> followed by <em>/a/exe/#AREA OF RESOURCE#/#ZONE OF RESOURCE#/#TYPE OF RESOURCE#/#NAME OF RESOURCE#/#ACTION TO PERFORM#</em></p>
 
- 1. You can go to the Shortcut's settings to change the name.
+    <blockquote>
+      <p>E.g: http://110.220.11.22/a/exe/Main/LivingRoom/BUTTON/myButton/PRESS</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>After the “URL” action, add a “Get Contents of URL” action. This action contains a few entries which require configuring.
+Change the Method to POST and add the following 3 headers:</p>
+    <ul>
+      <li>Content-Type: text/plain</li>
+      <li>Accept: application/json</li>
+      <li>Authorization: Basic
+In the Authorization header, after the word Basic, insert a link to the “Base64 Encode” action (check out the screenshot). A space is required between the word Basic and the “Base64 Encode” action. eg: Basic Base64 Encode</li>
+    </ul>
 
- 1. Add a “Text” action. In this action, enter your BLI's credentials, like: *user:password*
+    <p>No Request Body is needed.</p>
+  </li>
+</ol>
 
- 1. Add a “Base64 Encode” action after the “Text” action which contains the credentials, and a line should connect the two. Selecte "Encode", and “None” in Line Breaks.
+<p>After this press the play button, a successful response should show a blank page in the quick view under the final step.</p>
 
- 1. Add a “URL” action. In this action, add the BLI's url address, this can be *http://bli.local/* or *http://<your BLI's IP>/* followed by */a/exe/#AREA OF RESOURCE#/#ZONE OF RESOURCE#/#TYPE OF RESOURCE#/#NAME OF RESOURCE#/#ACTION TO PERFORM#*
-
-	 > E.g: http://110.220.11.22/a/exe/Main/LivingRoom/BUTTON/myButton/PRESS
-
- 5. After the “URL” action, add a “Get Contents of URL” action. This action contains a few entries which require configuring.
-    Change the Method to POST and add the following 3 headers:
-     - Content-Type: text/plain
-     - Accept: application/json
-     - Authorization: Basic
-       In the Authorization header, after the word Basic, insert a link to the “Base64 Encode” action (check out the screenshot). A space is required between the word Basic and the “Base64 Encode” action. eg: Basic Base64 Encode
-
-    No Request Body is needed.
-
-After this press the play button, a successful response should show a blank page in the quick view under the final step.
-
-**Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying "Hey Siri," and then the name of the shortcut.**
+<p><strong>Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying “Hey Siri,” and then the name of the shortcut.</strong></p>
 
   </div>
   <div class="col-sm-3"> 
-Here is how the full configuration should look:
-
     <div class="text-center">
-      <img src="/bli-guides/pictures/shortcuts.PNG" height="800" alt="Shortcuts screenshot"/>
+      <img src="/bli-guides/pictures/shortcuts.PNG" style="height: 100%; width: 100%; object-fit: contain" alt="Shortcuts screenshot"/>
     </div>
 
   </div>
