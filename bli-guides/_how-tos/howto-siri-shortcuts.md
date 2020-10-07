@@ -4,23 +4,29 @@ description: Send HTTP messages to execute commands on the BLI using Siri Shortc
 layout: pagetoc
 ---
 
+<div class="row justify-content-center">
+  <div class="col-sm-6"> 
+
 Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri ("Hey Siri," followed by the shortcut name).
 
 Siri Shortcuts can be configured to send an HTTP command that fires a Macro you have previously set up or presses a button, to your BeoLiving Intelligence, **either on Essential or on Pro Mode**. 
 
 This **can only be done while connected to the same network** that your BLI is connected to. Also take into account that running Siri Shortcuts requires iOS 12 or later on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
-
+  </div>
+  <div class="col-sm-3"> 
 ### Setting up the Shortcut
 
 This video exemplifies the configuration process:
 
-<div class="row justify-content-center">
-  <div class="col-sm-5">     
-	<div class="embed-responsive" style="padding-bottom: 179%;">
-	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jn2jql_Z_uo?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
-	</div>
+  	<div class="embed-responsive" style="padding-bottom: 179%;">
+  	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jn2jql_Z_uo?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
+  	</div>
   </div>
 </div>
+
+
+<div class="row justify-content-center">
+  <div class="col-sm-6"> 
 
 #### Step by step
 
@@ -48,7 +54,13 @@ After this press the play button, a successful response should show a blank page
 
 **Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying "Hey Siri," and then the name of the shortcut.**
 
-Here is how the full configuration should look.
-<div class="text-center">
-  <img src="/bli-guides/pictures/shortcuts.PNG" height="800" alt="Shortcuts screenshot"/>
+  </div>
+  <div class="col-sm-3"> 
+Here is how the full configuration should look:
+
+    <div class="text-center">
+      <img src="/bli-guides/pictures/shortcuts.PNG" height="800" alt="Shortcuts screenshot"/>
+    </div>
+
+  </div>
 </div>
