@@ -1,5 +1,5 @@
 ---
-title: "Hey Siri, play the BBC on B&O"
+title: "Hey Siri, run play the BBC on B&O"
 description: Excecute Macro on the BLI using Siri Shortcuts
 layout: pagetoc
 ---
@@ -58,6 +58,8 @@ Go to the *Shortcuts* app and press *Create Shortcut*
 
 After this press the play button, a successful response should show a blank page in the quick view under the final step.
 
+**Remember to record your spoken message and enable the shortcut under *Settings --> Siri & Search*. The shortcut WILL NOT WORK via voice command if this is not done!**
+
 This video exemplifies the configuration process:
 
 <div class="row justify-content-center">
@@ -68,4 +70,4 @@ This video exemplifies the configuration process:
   </div>
 </div>
 
-**Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying "Hey Siri," and then the name of the shortcut.**
+**Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying "Hey Siri, run" and then the name of the shortcut.**

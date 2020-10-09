@@ -14,7 +14,7 @@ layout: pagetoc
 
   <p><strong>The video exemplifies the configuration process.</strong></p>
 
-  <p>You can find another great use example of this functionality in our <a href="https://khimo.github.io/bli-guides/how-tos/hey-siri-play-bbc-in-b-and-o">"Hey Siri, play the BBC on B&O"</a> tutorial.</p>
+  <p>You can find another great use example of this functionality in our <a href="https://khimo.github.io/bli-guides/how-tos/hey-siri-play-bbc-in-b-and-o">"Hey Siri, run play the BBC on B&O"</a> tutorial.</p>
 
   </div>
   <div class="col-sm-4"> 
@@ -66,7 +66,10 @@ In the Authorization header, after the word Basic, insert a link to the “Base6
 
 <p>After this press the play button, a successful response should show a blank page in the quick view under the final step.</p>
 
-<p><strong>Remember you can run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying “Hey Siri,” and then the name of the shortcut.</strong></p>
+
+<p><strong>Remember to record your spoken message and enable the shortcut under <em>Settings --> Siri & Search</em>. The shortcut WILL NOT WORK via voice command if this is not done!</strong></p>
+
+<p><strong>You can then run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying “Hey Siri, run” and then the name of the shortcut.</strong></p>
 
   </div>
   <div class="col-sm-4"> 
