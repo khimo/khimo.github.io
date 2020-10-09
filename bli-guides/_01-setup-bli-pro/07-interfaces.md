@@ -66,7 +66,7 @@ Finally, choices should be made in _Select zone access for user_. _All zone acce
 
 #### B&O products
 
-For A/V products there are some basic options and a source list that can be presented to the user.
+For B&O products there are some basic options and a source list that can be presented to the user.
 
 When selecting any product, the next sections are displayed.
 
@@ -107,6 +107,26 @@ The information provided in the _Sources in product_  section for each source is
 - **UI Type**: Reference for the mobile application about what type of user interface is needed for operating the product.
 - **Favourites list**: This makes it possible to select a favourite list defined in the [Favourites](#fav-list) section.
 - **Hidden**: Selects if source must be hidden in all user interfaces or not.
+
+#### AV products
+
+For other AV products there are some minimal options you can change, regarding the icon that the product has, or the sources that will appear, on the app.
+
+When selecting any product, the next sections are displayed.
+
+##### Product options
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-av.png" class="img-fluid" alt="Interfaces AV"/>
+</div>
+<br>
+
+- **Address**: Whatever was configured for the resource.
+- **Icon**: Select the icon you want to appear for the product in the app
+
+##### Inputs
+Here you can rename or hide the Source commands that will appear for the product in the app. The defaults are not necesarilly available in the product.
 
 #### Cameras
 
