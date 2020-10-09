@@ -33,7 +33,7 @@ layout: pagetoc
 
 <ol>
   <li>
-    <p>You can go to the Shortcut’s settings to change the name.</p>
+    <p>You can go to the Shortcut’s settings to change the name, this is important as it will what you will tell Siri to do.</p>
   </li>
   <li>
     <p>Add a “Text” action. In this action, enter your BLI’s credentials, like: <em>user:password</em></p>
@@ -42,11 +42,13 @@ layout: pagetoc
     <p>Add a “Base64 Encode” action after the “Text” action which contains the credentials, and a line should connect the two. Selecte “Encode”, and “None” in Line Breaks.</p>
   </li>
   <li>
-    <p>Add a “URL” action. In this action, add the BLI’s url address, this can be <em>http://bli.local/</em> or <em>http://&lt;your BLI’s IP&gt;/</em> followed by <em>/a/exe/#AREA OF RESOURCE#/#ZONE OF RESOURCE#/#TYPE OF RESOURCE#/#NAME OF RESOURCE#/#ACTION TO PERFORM#</em></p>
+    <p>Add a “URL” action. In this action, add the BLI’s url address, this can be <em>http://bli.local/</em> or <em>http://&lt;your BLI’s IP&gt;/</em> followed by <em>/a/exe/&lt;AREA OF RESOURCE&gt;/&lt;ZONE OF RESOURCE&gt;/&lt;TYPE OF RESOURCE&gt;/&lt;NAME OF RESOURCE&gt;/&lt;ACTION TO PERFORM&gt;</em></p>
 
     <blockquote>
       <p>E.g: http://110.220.11.22/a/exe/Main/LivingRoom/BUTTON/myButton/PRESS</p>
     </blockquote>
+
+    <p> If there is a space in (E.g. "Area Name"), the space needs to be replaced with %20 in the address (E.g. "Area%20Name").  </p>
   </li>
   <li>
     <p>After the “URL” action, add a “Get Contents of URL” action. This action contains a few entries which require configuring.
