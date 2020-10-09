@@ -4,7 +4,7 @@ description: Excecute Macro on the BLI using Siri Shortcuts
 layout: pagetoc
 ---
 
-As you may have seen in the [How to control your BLI with Siri Shortcuts](how-tos/howto-siri-shortcuts) document, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
+As you may have seen in the [How to control your BLI with Siri Shortcuts](howto-siri-shortcuts) document, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
 
 In this document, we aim to show a short example, from start to finish, of a cool integration sequence you could perform using the BLI in Pro or Essential mode. After following this tutorial, you will be able to ask Siri to turn on your favourite radio station every morning.
 
@@ -23,7 +23,7 @@ If your BLI is in PRO mode you can create a Macro by going to the "Macros" tab o
  Here is an example of how the configuration should look:
 
 <div class="text-center">
-  <img src="/bli-guides/pictures/bbc-on-bando.png" height="800" alt="BBC macro screenshot"/>
+  <img src="/bli-guides/pictures/bbc-on-bando.png"  alt="BBC macro screenshot" class="col-sm-12"/>
 </div>
 
 #### On an Essential BLI
