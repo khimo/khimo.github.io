@@ -33,6 +33,9 @@ collections:
   how-tos:
     output: true
     permalink: /bli-guides/how-tos/:path
+  developers-guides:
+    output: true
+    permalink: /bli-guides/developers-guides/:path
   lua-macro-snippets:
     output: true
     permalink: /bli-guides/how-tos/howto-lua-macros/:path
