@@ -8,7 +8,7 @@ This section has all guides you should read for a complete and adequate usage of
 2. [BeoLiving Intelligence Advanced User Guide](/bli-guides/bli_advanced_user_guide/) - Introduction to _BeoLiving Intelligence_ functionalities, how to access it within the network and an explanation regarding different sections of its web interface.
 3. [BeoLiving Intelligence Pro User Guide](bli-pro-user-guide/) - Description of _BeoLiving Intelligence_ configuration and usage of its web interface (based in PRO firmware version).
 4. [BeoLiving Intelligence Link With Third Party Cloud Service Guide](bli-link-third-party-service.md) - How to link a _BeoLiving Intelligence_ with third party services, such as Alexa and IFTTT.
-5. [BeoLiving Intelligence Troubleshooting Guide](bli-troubleshooting.md) - How to proceed when experiencing malfunction of a _BeoLiving Intelligence_.
-6. [BeoLiving Intelligence Recovery Mode Guide](bli-recovery-mode-guide/) - How to start _"Recovery mode"_ of a _BeoLiving Intelligence_.
-7. [BeoLiving Intelligence Service Troubleshooting Guide](bli-service-troubleshooting/) - How to proceed when experiencing malfunction of a _BeoLiving Intelligence_, **directed to service personnel**. 
+5. [How To's and Manuals](bli-link-third-party-service.md) - Usefull documentation and how-tos, including Lua Macros tutorials, and many fun examples of setups.
+6. [BeoLiving Intelligence Troubleshooting Guide](bli-troubleshooting.md) - How to proceed when experiencing malfunction of a _BeoLiving Intelligence_.
+7. [BeoLiving Intelligence Integration Developers' Guide](/bli-guides/developers-guides/) - Information and resources for developers interested in creating drivers and integration tools.
 8. [BeoLiving Intelligence FAQ](bli-faq.md) - _BeoLiving Intelligence_ Frecuently Asked Questions.
