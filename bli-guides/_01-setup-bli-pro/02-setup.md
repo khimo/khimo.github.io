@@ -125,6 +125,8 @@ _BLI PRO_ can have any number of System modes, which can be used to enable or di
 
 >> Typical examples of system modes: Vacation and Normal. You can set up a button to toggle between normal and vacation modes. Macros for setting thermostats, or for controlling lighting and shades may be assigned individually to each mode.
 
+You can see where the System Modes are used on a Macro [here](https://khimo.github.io/bli-guides/bli-pro-user-guide/01-setup-bli-pro/06-macros).
+
 #### Units
 
 The systems temperature unit can be configured to be Fahrenheit or Celsius, affecting all the clients connected to the _BLI PRO_. For example, if the current temperature unit is Fahrenheit, then all the thermostats will report the temperature in these units to all connected clients.

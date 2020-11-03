@@ -57,7 +57,7 @@ Change the Method to POST and add the following 3 headers:</p>
       <li>Content-Type: text/plain</li>
       <li>Accept: application/json</li>
       <li>Authorization: Basic
-In the Authorization header, after the word Basic, insert a link to the “Base64 Encode” action (check out the screenshot). A space is required between the word Basic and the “Base64 Encode” action. eg: Basic Base64 Encode</li>
+<p>In the Authorization header, after the word Basic, insert a link to the “Base64 Encode” action (check out the screenshot). A space is required between the word Basic and the “Base64 Encode” action. eg: Basic Base64 Encode</p></li>
     </ul>
 
     <p>No Request Body is needed.</p>
@@ -67,7 +67,7 @@ In the Authorization header, after the word Basic, insert a link to the “Base6
 <p>After this press the play button, a successful response should show a blank page in the quick view under the final step.</p>
 
 
-<p><strong>Remember to record your spoken message and enable the shortcut under <em>Settings --> Siri & Search</em>. The shortcut WILL NOT WORK via voice command if this is not done!</strong></p>
+<p><strong>Remember to record your spoken message and enable the shortcut under <em>Settings --> Siri & Search</em>. The shortcut might NOT WORK via voice command if this is not done!</strong></p>
 
 <p><strong>You can then run any shortcut that you have by asking Siri on your iPhone, iPad, iPod touch, Apple Watch or HomePod, by saying “Hey Siri, run” and then the name of the shortcut.</strong></p>
 
