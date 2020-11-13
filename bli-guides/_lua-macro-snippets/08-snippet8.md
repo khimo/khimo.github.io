@@ -10,17 +10,17 @@ The Snippet we have here queries the BS Core for its source and volume, and sets
 ```lua
 function(event, engine)
   local core = engine.query("Main/Living Room/AV renderer/BS Core") -- queries core's information
-  local SET_VOLUME = core[1].get("volume") -- gets volume info from the query
-  local SEL_SOURCE = core[1].get("sourceUniqueId")
+  local SET_VOLUME = core[1].get_number("volume") -- gets volume info from the query
+  local SEL_SOURCE = core[1].get_string("sourceUniqueId")
   local speakers = engine.query("Main/*/AV renderer/*") -- gets all the speaker's info
     -- Iterate through them
     for i, s in ipairs(speakers) do
     -- Check if current speaker has same source
-if s.get("sourceUniqueId") ~= SEL_SOURCE then
+if s.get_string("sourceUniqueId") ~= SEL_SOURCE then
       engine.fire(s.area() .. "/" .. s.zone() .. "/AV renderer/" .. s.name() .. "/Select source by id?sourceUniqueId=" .. SEL_SOURCE)
       end
     -- Check if current speaker has same volume
-if s.get("volume") ~= SET_VOLUME then
+if s.get_number("volume") ~= SET_VOLUME then
       engine.fire(s.area() .. "/" .. s.zone() .. "/AV renderer/" .. s.name() .. "/SET?volume=" .. SET_VOLUME)
       end
     end

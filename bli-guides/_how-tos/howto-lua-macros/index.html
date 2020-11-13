@@ -20,7 +20,7 @@ toc: true
     function(event, engine)
       -- trigger event recieved from livingroom main light switch (BUTTON)
       time = engine.query("*/*/SYSTEM/Clock/")
-      if tonumber(time[1].get("hour")) < 18 then -- this could also be done with sunrise/sunset relative times in the BLI
+      if tonumber(time[1].get_number("hour")) < 18 then -- this could also be done with sunrise/sunset relative times in the BLI
         engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=99")
       else
         engine.fire("Main/livingroom/DIMMER/main_light/SET?LEVEL=25")
@@ -53,7 +53,38 @@ The available parameters are those under <strong><em>event</em></strong> and und
   <p>E.g. Get the level of a dimmer who’s change has triggered the event, and set half the value to all the other lights.</p>
 </blockquote>
 
-<h6 id="functions">Functions</h6>
+<h6 id="get-functions">GET Functions</h6>
+<p>The <strong>get</strong> functions are some of the most important when programming lua Macros, as they are used to obtain the values of other parameters of an event. There are five different functions, according to the type (string, boolean, or number) you know the parameter should return.</p>
+<p>If you use the incorrect function (eg: get_boolean for a parameter that will return a string) the BLI will attempt to interpret a coherent value (eg: if the string is "false" it will return the boolean <em>false</em>) and if it's not possible, it will send a warning and allow the Macro to continue excecution.</p>
+<ul>
+  <li><strong>get_boolean (function(string): boolean):</strong> Gets the value of a parameter, excluding the updated mark. Returns data of the <em>boolean</em> type which can be used directly in conditionals (eg: <code>if event.get_boolean("mute") then</code>).
+    <blockquote>
+      <code>event.get_boolean(“nowPlaying”) = true</code>
+    </blockquote>
+  </li>
+  <li><strong>get_number (function(string): number):</strong> Gets the value of a parameter, excluding the updated mark. Returns data of the <em>number</em> type which can be compared directely with numbers (eg: <code>if event.get_number("volume") > 20 then</code>).
+    <blockquote>
+      <code>event.get_number(“LEVEL”) = 55</code>
+    </blockquote>
+  </li>
+  <li><strong>get_string (function(string): string):</strong> Gets the value of a parameter, excluding the updated mark. Returns data of the <em>string</em> type.
+    <blockquote>
+      <code>event.get_string(“sourceName”) = “RADIO”</code>
+    </blockquote>
+  </li>
+  <li><strong>get_celsius (function(string): number):</strong> Gets the value of a parameter, excluding the updated mark. Returns the value of a temperature in celsius when available, in <em>number</em> type.
+    <blockquote>
+      <code>event.get_celsius(“TEMPERATURE”) = 25</code>
+    </blockquote>
+  </li>
+  <li><strong>get_fahrenheit (function(string): number):</strong> Gets the value of a parameter, excluding the updated mark. Returns the value of a temperature in fahrenheit when available, in <em>number</em> type.
+    <blockquote>
+      <code>event.get_fahrenheit(“TEMPERATURE”) = 77</code>
+    </blockquote>
+  </li>
+</ul>
+
+<h6 id="other-functions">Other Functions</h6>
 <ul>
   <li><strong>tostring (function(): string):</strong> The full string representation of the event.
     <blockquote>
@@ -83,11 +114,6 @@ The available parameters are those under <strong><em>event</em></strong> and und
   <li><strong>parameters (function(): table):</strong> The parameters, with full values, as a lua table.
     <blockquote>
       <code>event.parameters() = {“LEVEL” = “55!”}</code>
-    </blockquote>
-  </li>
-  <li><strong>get (function(string): string):</strong> Gets the value of a parameter, excluding the updated mark.
-    <blockquote>
-      <code>event.get(“LEVEL”) = “55”</code>
     </blockquote>
   </li>
   <li><strong>updated (function(string): boolean):</strong> Checks whether a parameter was updated on the event.
@@ -134,12 +160,17 @@ The available parameters are those under <strong><em>event</em></strong> and und
         <blockquote>
           <code>tab = engine.query(“other/room/DIMMER/*”)</code>
           <blockquote>
+            <p><code>tab[1].get_boolean(“mute”) = false</code></p>
+            <p><code>tab[1].get_number(“LEVEL”) = 62</code></p>
+            <p><code>tab[1].get_string(“sourceName”) = “RADIO”</code></p>
+            <p><code>tab[1].get_celsius(“TEMPERATURE”) = 25</code></p>
+            <p><code>tab[1].get_fahrenheit(“TEMPERATURE”) = 77</code></p>
+            <blockquote><p>In this case the type is readily available, so if you use the incorrect <strong>get</strong> function, an error will be sent with information about the script and the macro will stop (eg: <code>Error: Main/global/MACRO/dummy execution error: Line 2: Cannot convert VALUE to integer since it has type boolean</code>).</p></blockquote>
             <p><code>tab[1].tostring() = “other/room/DIMMER/OtherLamp/STATE_UPDATE?LEVEL=62”</code></p>
             <p><code>tab[1].area() = “other”</code></p>
             <p><code>tab[1].zone() = “room”</code></p>
             <p><code>tab[1].type() = “DIMMER”</code></p>
             <p><code>tab[1].name() = “OtherLamp”</code></p>
-            <p><code>tab[1].get(“LEVEL”) = “62”</code></p>
             <p><code>tab[1].group() = “indoors”</code></p>
             <p><code>tab[1].group_zones(“indoors”) = {“Main/global”, “Downstairs/Kitchen”, “Upstairs/Main room”, “other/room”}</code></p>
           </blockquote>
@@ -160,11 +191,10 @@ The available parameters are those under <strong><em>event</em></strong> and und
 
 <h3 id="notes">Guidance and useful information</h3>
 <h4 id="important-functions">Important functions</h4>
-<p><strong>Take into account that all <em>event</em>'s and <em>engine</em>'s attributes and parameters are <em>strings</em>.</strong> This means that when used in a conditional, they must be compared as strings or transformed to a number.</p>
 
 <p>The <strong><code>tonumber()</code></strong> and <strong><code>tostring()</code></strong> functions are available to tranform values when programming lua Macros.</p>
 <blockquote>
-    <p><code>tostring(tonumber(event.get("LEVEL"))==90)</code> is equal to the string <code>false</code> if the level of the trigger event is not 90.</p>
+    <p><code>tostring(tonumber(event.get_string("_stringWithNumber"))==90)</code> is equal to the string <code>false</code> if the _stringWithNumber parameter of the trigger event is not 90.</p>
 </blockquote>
 
 
@@ -172,7 +202,7 @@ The available parameters are those under <strong><em>event</em></strong> and und
 
 <p><strong>Common errors</strong> in lua Macros programming include the comparison of variables with different types of data (e.g. numbers and strings) and the specification of a Resource whose name has later been changed.</p>
 <blockquote>
-  <p>E.g.: The comparison <code>event.get("mute") == false</code> when checking in the event sent by a BeoLink product is muted <strong>is incorrect</strong> and will always return <strong>false</strong>. The correct comparison is <code>event.get("mute") == "0"</code>. Note that the zero here is also a string, not a number!</p>
+  <p>E.g.: The comparison <code>event.get_boolean("mute") == "false"</code> when checking in the event sent by a BeoLink product is muted <strong>is incorrect</strong> and will always return <strong>false</strong>. The correct comparison is <code>event.get_boolean("mute") == false</code>.</p>
 </blockquote>
 
 

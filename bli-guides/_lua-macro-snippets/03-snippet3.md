@@ -12,7 +12,7 @@ function(event, engine)
    -- Iterate through them
    for i, v in ipairs(dimmers) do 
       -- If their level is > 70...
-      if tonumber(v.get("LEVEL")) > 70 then
+      if v.get_number("LEVEL") > 70 then
          -- Set it to 70
          engine.fire(v.area() .. "/" .. v.zone() .. "/DIMMER/" .. v.name() .. "/SET?LEVEL=70")
       end
