@@ -1,0 +1,15 @@
+---
+title: Manuals & Instructions
+layout: page
+---
+
+{% for manual in site.manuals %}
+<div class="manual">
+  <h2><a href="{{ manual.url }}">{{ manual.title }}</a></h2>
+  <blockquote>
+    <p>
+      {{ manual.description }}
+    </p>
+  </blockquote>
+</div>
+{% endfor %}

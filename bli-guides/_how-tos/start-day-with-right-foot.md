@@ -14,14 +14,14 @@ This is all configurable through the app, as is shown in the video:
 
 ### Step by step
 1. Configure a Scene to:
-	1. turn on the Radio in your bedroom's speaker
 	1. raise your bedroom's curtains
+	1. turn on the Radio in your bedroom's speaker
 1. Execute it once to try it out
 1. Go to the Siri Shortcuts and create a new shortcut
 1. Configure the turning-off of your alarm as a trigger
 1. Configure the BeoLiving Scene as the action to run, and save.
 1. Test out your new short cut by saying "Hey Siri, run My Best Day" or configuring it as a easy-access widget!
 
-This could also be done with more complex Macros configured on the BLI's setup page!
+This could also be done with more complex Macros configured on the BLI's setup page.
 
 For more information on how to configure integration with Siri Shortcuts, go to our "Configure BLI Scenes as Siri Shortcuts"[INSERT LINK HERE] page.
