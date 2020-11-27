@@ -33,12 +33,15 @@ collections:
   how-tos:
     output: true
     permalink: /bli-guides/how-tos/:path
+  manuals:
+    output: true
+    permalink: /bli-guides/manuals/:path
   developers-guides:
     output: true
     permalink: /bli-guides/developers-guides/:path
   lua-macro-snippets:
     output: true
-    permalink: /bli-guides/how-tos/howto-lua-macros/:path
+    permalink: /bli-guides/manuals/howto-lua-macros/:path
     directory: /bli-guides/_lua-macro-snippets/
 
   

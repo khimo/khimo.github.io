@@ -1,11 +1,14 @@
 ---
-title: How to control your BLI with Siri Shortcuts
-description: Send HTTP messages to execute commands on the BLI using Siri Shortcuts
+title: How to control your Essential BLI with Siri Shortcuts
+description: Send HTTP messages to execute commands on the BLI using Siri Shortcuts, while connected to your local network.
 layout: pagetoc
 ---
 
 <div class="row justify-content-center">
   <div class="col-sm-8"> 
+
+  <p><strong>This configuration process is the ONLY way to integrate an Essential BLI with Siri Shortcuts and allows you to control the BLI only when connected to the same network. PRO BLIs can integrate directly through Khimo and it is not recommended that you configure them following this manual, but the <a href="">Configure PRO BLI Scenes as Siri Shortcuts</a> manual.</strong></p>
+
   <p>Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri.</p>
 
   <p>Siri Shortcuts can be configured to send an HTTP command that fires a Macro you have previously set up or presses a button, to your BeoLiving Intelligence, <strong>either on Essential or on Pro Mode</strong>.</p>

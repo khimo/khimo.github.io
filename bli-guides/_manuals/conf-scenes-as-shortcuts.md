@@ -1,5 +1,5 @@
 ---
-title: Configure BLI Scenes as Siri Shortcuts
+title: Configure PRO BLI Scenes as Siri Shortcuts
 description: Set up Siri Shortcuts to enable you to fire your BeoLiving Intelligence's scenes by talking to Siri.
 layout: pagetoc
 ---
@@ -13,7 +13,9 @@ Make sure that the BLI has Khimo enabled, and go to the Shortcuts app (you shoul
 If you don't see the Shortcut with the Scene you wish to add, don't worry, you just have to add the Shortcut with any scene, press on "Do: Fire Scene" and press on the blue name of the Scene. This will open a drop-list with all the Scenes you have on your BeoLiving Intelligence.
 
 See the video below for an example of setup & use:
-https://youtu.be/xHiV_L_SScU
+<div class="embed-responsive" style="padding-bottom: 179%;">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xHiV_L_SScU?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
+</div>
 
 You can now activate your scenes from anywhere in the world (Siri connects through the Khimo cloud) in any of the following manners:
  - By speaking to Siri: "Hey Siri, run <NAME OF SHORTCUT>"
