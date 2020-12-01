@@ -1,6 +1,6 @@
 ---
 title: Configure Essential BLI with Siri Shortcuts
-description: Send HTTP messages to execute commands on the BLI using Siri Shortcuts, while connected to your local network.
+description: Send HTTP messages to execute commands on the BLI using Siri Shortcuts, while connected to your local network (Essential & Pro).
 layout: pagetoc
 ---
 

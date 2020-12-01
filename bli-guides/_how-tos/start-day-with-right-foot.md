@@ -1,12 +1,12 @@
 ---
 title: Start Your Day on the Right Foot with BLI and Siri
-description: Configure a wakeup routine on your phone to start your day with a smile!
+description: Configure a wakeup routine on your phone to start your day with a smile! (Pro BLI)
 layout: pagetoc
 ---
 
 If you are one of those people who struggle to wake up at the same time everyday, the new integration between Siri and BLI might just have changed this for ever.
 
-The integration between the Pro BLI and Siri allows you to easily create a setup, where every morning, the turning-off of your alarm clock triggers a "Good Morning" scene on you BLI, where the curtains are raised and your Bedroom's music equipment starts playing your favorite radio station.
+The integration between the Pro BLI (or BLGW) and Siri allows you to easily create a setup, where every morning, the turning-off of your alarm clock triggers a "Good Morning" scene on you BLI, where the curtains are raised and your Bedroom's music equipment starts playing your favorite radio station.
 
 This is all configurable through the app, as is shown in the video:
 
