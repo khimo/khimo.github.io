@@ -10,7 +10,13 @@ The integration between the Pro BLI and Siri allows you to easily create a setup
 
 This is all configurable through the app, as is shown in the video:
 
-
+<div class="row justify-content-center">
+  <div class="col-sm-5">     
+	<div class="embed-responsive" style="padding-bottom: 179%;">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q1z3fe6SMkk?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
+	</div>
+  </div>
+</div>
 
 ### Step by step
 1. Configure a Scene to:
@@ -24,4 +30,4 @@ This is all configurable through the app, as is shown in the video:
 
 This could also be done with more complex Macros configured on the BLI's setup page.
 
-For more information on how to configure integration with Siri Shortcuts, go to our "Configure BLI Scenes as Siri Shortcuts"[INSERT LINK HERE] page.
+For more information on how to configure integration with Siri Shortcuts, go to our "[Configure BLI Scenes as Siri Shortcuts](../manuals/conf-scenes-as-shortcuts)" page.

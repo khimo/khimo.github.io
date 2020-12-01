@@ -4,12 +4,12 @@ description: Excecute Macro on the Essential BLI using Siri Shortcuts
 layout: pagetoc
 ---
 
-As you may have seen in the [How to control your Essential BLI with Siri Shortcuts](../manuals/howto-siri-shortcuts) and [Configure PRO BLI Scenes as Siri Shortcuts](../manuals/howto-siri-shortcuts) documents, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
+As you may have seen in the [How to control your Essential BLI with Siri Shortcuts](../manuals/howto-siri-shortcuts) and [Configure PRO BLI Scenes as Siri Shortcuts](../manuals/conf-scenes-as-shortcuts) documents, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
 
 In this document, we aim to show a short example, from start to finish, of a cool integration sequence you could perform using the BLI in Essential mode. **This configuration can also be done on a Pro BLI, but we recommend that you use the native integration via Khimo for this purpose.** After following this tutorial, you will be able to ask Siri to turn on your favourite radio station every morning.
 
 Important reminder:
- - This functionality works on **both Essential and Pro Modes**, though Pro BLIs have their own native integration, [see here](../manuals/howto-siri-shortcuts). 
+ - This functionality works on **both Essential and Pro Modes**, though Pro BLIs have their own native integration, [see here](../manuals/conf-scenes-as-shortcuts). 
  - This **can only be done while connected to the same network** that your BLI is connected to. 
  - Running **Siri Shortcuts requires iOS 12 or later** on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
 

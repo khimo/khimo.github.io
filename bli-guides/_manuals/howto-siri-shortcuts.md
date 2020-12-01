@@ -7,7 +7,7 @@ layout: pagetoc
 <div class="row justify-content-center">
   <div class="col-sm-8"> 
 
-  <p><strong>This configuration process is the ONLY way to integrate an Essential BLI with Siri Shortcuts and allows you to control the BLI only when connected to the same network. PRO BLIs can integrate directly through Khimo and it is not recommended that you configure them following this manual, but the <a href="">Configure PRO BLI Scenes as Siri Shortcuts</a> manual.</strong></p>
+  <p><strong>This configuration process is the ONLY way to integrate an Essential BLI with Siri Shortcuts and allows you to control the BLI only when connected to the same network. PRO BLIs can integrate directly through Khimo and it is not recommended that you configure them following this manual, but the <a href="./conf-scenes-as-shortcuts">Configure PRO BLI Scenes as Siri Shortcuts</a> manual.</strong></p>
 
   <p>Siri shortcuts allow you to execute routines or fire commands on your BeoLiving Intelligence with just a tap or by asking Siri.</p>
 
