@@ -17,7 +17,7 @@ layout: pagetoc
 
   <p><strong>The video exemplifies the configuration process.</strong></p>
 
-  <p>You can find another great use example of this functionality in our <a href="https://khimo.github.io/bli-guides/how-tos/hey-siri-play-bbc-in-b-and-o">"Hey Siri, run play the BBC on B&O"</a> tutorial.</p>
+  <p>You can find another great use example of this functionality in our <a href="https://khimo.github.io/bli-guides/ideas/hey-siri-play-bbc-in-b-and-o">"Hey Siri, run play the BBC on B&O"</a> tutorial.</p>
 
   </div>
   <div class="col-sm-4"> 

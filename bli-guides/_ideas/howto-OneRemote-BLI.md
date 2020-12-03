@@ -8,7 +8,7 @@ layout: pagetoc
 
 Using your BeoRemote One, you may gain access to a BeoLiving Intelligence (BLI) through a Bang & Olufsen Smart TV.
 
-> The connection process between a BLI and a B&O TV is detailed in [this tutorial](/bli-guides/how-tos/#bli-connect-to-TV). 
+> The connection process between a BLI and a B&O TV is detailed in [this tutorial](/bli-guides/ideas/#bli-connect-to-TV). 
 
 You will be able to access the BLI's webpanel to control all your home's equipment (i.e. lights, shades, cameras, etc.) as well as trigger any macros you may have previously set up.
 

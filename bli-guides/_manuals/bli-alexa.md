@@ -1,5 +1,6 @@
 ---
-title: BeoLiving Intelligence Alexa's skill Guide
+title: Alexa usage and skill Guide
+description: Description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_.
 layout: pagetoc
 ---
 

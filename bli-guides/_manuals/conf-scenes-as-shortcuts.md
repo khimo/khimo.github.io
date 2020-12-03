@@ -1,5 +1,5 @@
 ---
-title: Configure PRO BLI Scenes as Siri Shortcuts
+title: Siri Shortcuts configuration and usage guide for PRO BLI
 description: Set up Siri Shortcuts to enable you to fire your PRO BeoLiving Intelligence's scenes by talking to Siri over the Khimo Cloud.
 layout: pagetoc
 ---
@@ -31,4 +31,4 @@ You can now activate your scenes from anywhere in the world (Siri connects throu
 
 > Reminder: Integration with Siri Shortcuts is done through the Khimo cloud, even if you are connected locally. Thus, you must have Khimo remote access enabled and working, for these to work. If you wish to integrate only locally, you can perform the more complex [manual integration](./howto-siri-shortcuts).
 
-[See how to configure a morning routine with Siri and the BeoLiving app!](../how-tos/start-day-with-right-foot)
+[See how to configure a morning routine with Siri and the BeoLiving app!](../ideas/start-day-with-right-foot)
