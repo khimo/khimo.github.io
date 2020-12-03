@@ -30,9 +30,9 @@ collections:
   bli-pro-user-guide:
     output: true
     permalink: /bli-guides/bli-pro-user-guide/:path
-  how-tos:
+  ideas:
     output: true
-    permalink: /bli-guides/how-tos/:path
+    permalink: /bli-guides/ideas/:path
   manuals:
     output: true
     permalink: /bli-guides/manuals/:path

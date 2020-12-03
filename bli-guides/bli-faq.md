@@ -238,7 +238,7 @@ Refer to our specific guide: [BeoLiving Intelligence link to 3rd party Cloud Ser
 
 #### Q: Is it possible to fire IFTTT Applets with _BeoLiving Intelligence_?
 
-Yes, it is possible when your _BeoLiving Intelligence_ is in _PRO_ mode. Follow our guide [How to Fire IFTTT applets through BLI commands](how-tos/bli-ifttt-webhooks-how-to).
+Yes, it is possible when your _BeoLiving Intelligence_ is in _PRO_ mode. Follow our guide [How to Fire IFTTT applets through BLI commands](manuals/bli-ifttt-webhooks-how-to).
 
 #### Q: How can I control my devices using Alexa?
 
