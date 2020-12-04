@@ -240,6 +240,8 @@ possibilities **BeoLiving Intelligence** has to offer. The _Link to third partie
    </div>
 </div>
 
+<p></p>
+
 Watch an example of a simple home installation done in **only four minutes** using the BeoLiving Intelligence on Essential mode:
 
 <div class="row justify-content-center"> 
