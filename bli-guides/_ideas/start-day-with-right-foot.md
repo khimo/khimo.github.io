@@ -11,8 +11,8 @@ The integration between the Pro BLI (or BLGW) and Siri allows you to easily crea
 This is all configurable through the app, as is shown in the video:
 
 <div class="row justify-content-center">
-  <div class="col-sm-5">     
-	<div class="embed-responsive" style="padding-bottom: 179%;">
+  <div class="col-sm-6">     
+	<div class="embed-responsive" style="padding-bottom: 130%;">
 	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Q1z3fe6SMkk?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 	</div>
   </div>
