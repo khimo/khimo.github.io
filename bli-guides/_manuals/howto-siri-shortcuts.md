@@ -22,7 +22,7 @@ layout: pagetoc
   </div>
   <div class="col-sm-4"> 
 
-  	<div class="embed-responsive" style="padding-bottom: 179%;">
+  	<div class="embed-responsive" style="padding-bottom: 130%;">
   	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jn2jql_Z_uo?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
   	</div>
   </div>

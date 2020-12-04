@@ -16,7 +16,7 @@ See the video below for an example of setup & use:
 
 <div class="row justify-content-center">
   <div class="col-sm-6">     
-		<div class="embed-responsive" style="padding-bottom: 179%;">
+		<div class="embed-responsive" style="padding-bottom: 130%;">
 		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xHiV_L_SScU?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 		</div>
  	</div>
