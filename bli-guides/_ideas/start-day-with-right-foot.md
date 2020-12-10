@@ -31,3 +31,5 @@ This is all configurable through the app, as is shown in the video:
 This could also be done with more complex Macros configured on the BLI's setup page.
 
 For more information on how to configure integration with Siri Shortcuts, go to our "[Configure BLI Scenes as Siri Shortcuts](../manuals/conf-scenes-as-shortcuts)" page.
+
+> Note: Take into account that running Siri Shortcuts requires an iPhone or iPod touch with iOS 14.0 or higher, HomePod, Apple Watch Series 3 or later, or an iPad with iPadOS 14.0 or later.

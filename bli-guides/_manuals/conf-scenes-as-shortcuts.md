@@ -8,6 +8,8 @@ It is now possible to integrate your BeoLiving Intelligence's (BLI) Macros & Sce
 
 > Reminder: If you have an Essential BLI, you can integrate locally with Siri Shortcuts using the [manual configuration](./howto-siri-shortcuts).
 
+> Note: Take into account that running Siri Shortcuts requires an iPhone or iPod touch with iOS 14.0 or higher, HomePod, Apple Watch Series 3 or later, or an iPad with iPadOS 14.0 or later.
+
 Make sure that the BLI/BLGW has Khimo enabled, and go to the Shortcuts app (you should of course have the BeoLiving app installed). The Shortcuts Gallery should display shortcuts with recently used Scenes, of which you can see more under "Shortcuts from Your Apps".
 
 If you don't see the Shortcut with the Scene you wish to add, don't worry, you just have to add the Shortcut with any scene, press on "Do: Fire Scene" and press on the blue name of the Scene. This will open a drop-list with all the Scenes you have on your BeoLiving Intelligence.
