@@ -1,5 +1,5 @@
 ---
-title: How to connect B&O TVs to a BLI
+title: Connect B&O TVs to a BLI
 description: Configure your TV to be able to control your Home from it.
 layout: pagetoc
 ---

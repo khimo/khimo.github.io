@@ -108,7 +108,7 @@ your network) to link. Then to finish the linking process it's necessary to go b
    - Scan the QR code with the _BeoLiving App_ following the site's instructions.
    - Login with user and password to _Khimo_ (for _BeoLink Gateway_ users). 
 
-After accomplishing one of these three methods, it's possible to start using _IFTTT_ with your BLI. A tutorial on [how to fire Applets through BLI](how-tos/bli-ifttt-webhooks-how-to) is available, showing an example that illustrates how to find your phone just by pressing a wall button.
+After accomplishing one of these three methods, it's possible to start using _IFTTT_ with your BLI. A tutorial on [how to fire Applets through BLI](manuals/bli-ifttt-webhooks-how-to) is available, showing an example that illustrates how to find your phone just by pressing a wall button.
 
 The following video shows how to link _IFTTT_ using an _iOS_ device:
 

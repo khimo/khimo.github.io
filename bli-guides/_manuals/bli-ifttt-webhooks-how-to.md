@@ -1,6 +1,6 @@
 ---
-title: How to Fire IFTTT applets through BLI commands
-description: Fire IFTTT applets directly from a BeoLiving Intelligence macro
+title: Fire IFTTT applets through BLI commands
+description: Fire IFTTT applets directly from a BeoLiving Intelligence Macro
 layout: pagetoc
 ---
 

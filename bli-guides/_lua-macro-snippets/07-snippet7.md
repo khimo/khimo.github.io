@@ -12,7 +12,7 @@ function(event, engine)
   time = engine.query("*/ */SYSTEM/Clock/") 
   -- Only allows TV to be ON and respond to commands of its between 6pm and 10pm
   -- If command sent out of "TV time" hours, it responds with a standby
-  if tonumber(time[1].get ("hour")) < 18 or tonumber(time[1].get ("hour")) > 22 then
+  if time[1].get_number("hour") < 18 or time[1].get_number("hour") > 22 then
     engine.fire("Main/kids_playroom/AV renderer/Beo_TV/Send command?Command=STANDBY&Continue type=short_press")
     Trace("TV Time Macro cancelled a sent command") 
   end

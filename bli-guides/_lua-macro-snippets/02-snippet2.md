@@ -11,7 +11,7 @@ function(event, engine)
       -- if the dimmer is named masterLight
       if event.name() == "masterLight" then
          -- set all the dimmers of the room to the same level
-         engine.fire(event.area() .. "/" .. event.zone() .. "/DIMMER/*/SET?LEVEL=" .. event.get("LEVEL") )
+         engine.fire(event.area() .. "/" .. event.zone() .. "/DIMMER/*/SET?LEVEL=" .. event.get_string("LEVEL") )
       end
    end
 end

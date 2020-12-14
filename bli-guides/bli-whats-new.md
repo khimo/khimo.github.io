@@ -38,7 +38,4 @@ show the master.
 
 ## Credentials setting
 
-It's possible to set the credentials for some content providers as _Deezer_ or _TuneIn_ on all products directly from the _BeoLiving App_.
-Credentials setting could be done manually or automatically for each _Bang & Olufsen NetworkLink_ device through _BeoLiving App_. Default 
-credentials for a specific content provider could be setted and when _BeoLiving Intelligence_ founds a new device that hasn't been setted 
-previously with credentials, it will set them automatically. Previously, credentials setting for each content provider must be done manually for each product through their web interface being a tedious procedure.
+It's possible to set the credentials for some content providers, such as _Deezer_ or _TuneIn_, on all products directly from the _BeoLiving App_. Default credentials for a specific content provider can now be set, and when _BeoLiving Intelligence_ finds a new device that hasn't been set previously with credentials, it will set them automatically. Previously, credential setting for each content provider would be done manually for each product through their web interface, this being a tedious procedure.

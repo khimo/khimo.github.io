@@ -1,32 +1,20 @@
 ---
 title: "Hey Siri, run play the BBC on B&O"
-description: Excecute Macro on the BLI using Siri Shortcuts
+description: Excecute Macro on the Essential BLI using Siri Shortcuts
 layout: pagetoc
 ---
 
-As you may have seen in the [How to control your BLI with Siri Shortcuts](howto-siri-shortcuts) document, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
+As you may have seen in the [How to control your Essential BLI with Siri Shortcuts](../manuals/howto-siri-shortcuts) and [Configure PRO BLI Scenes as Siri Shortcuts](../manuals/conf-scenes-as-shortcuts) documents, it is possible to control your BeoLiving Intelligence (BLI) by talking to Siri.
 
-In this document, we aim to show a short example, from start to finish, of a cool integration sequence you could perform using the BLI in Pro or Essential mode. After following this tutorial, you will be able to ask Siri to turn on your favourite radio station every morning.
+In this document, we aim to show a short example, from start to finish, of a cool integration sequence you could perform using the BLI in Essential mode. **This configuration can also be done on a Pro BLI, but we recommend that you use the native integration via Khimo for this purpose.** After following this tutorial, you will be able to ask Siri to turn on your favourite radio station every morning.
 
 Important reminder:
- - This functionality works on **both Essential and Pro Modes**. 
+ - This functionality works on **both Essential and Pro Modes**, though Pro BLIs have their own native integration, [see here](../manuals/conf-scenes-as-shortcuts). 
  - This **can only be done while connected to the same network** that your BLI is connected to. 
  - Running **Siri Shortcuts requires iOS 12 or later** on iPhone, iPod touch, HomePod or Apple Watch Series 3 or later, and iOS 12 or iPadOS or later on iPad.
 
 ### Setting up the Scene/Macro
 
-#### On a PRO BLI
-If your BLI is in PRO mode you can create a Macro by going to the "Macros" tab on the web setup page and pressing the plus (+) sign in the desired Zone. You should then name the Macro, and set the "Playque add TuneIn station" command on the desired resource.
-
- > If you paste the TuneIn link of the desired station (E.g. *https://tunein.com/radio/BBC-Radio-1-988-s24939/* ) into the "Station name" field, the BLI will automatically extract the information it needs.
-
- Here is an example of how the configuration should look:
-
-<div class="text-center">
-  <img src="/bli-guides/pictures/bbc-on-bando.png"  alt="BBC macro screenshot" class="col-sm-12"/>
-</div>
-
-#### On an Essential BLI
 If your BLI is in Essential mode, you should set up BBC radio 1 as one of your product's "Favourites" (see below). Once this is done, on the BeoLiving app you must go to the zone where you wish to create the Scene, go to the "Scenes" tab, and press the plus (+) sign to create a new scene. Select the desired product, and choose the Favourite button that you have previously configured to play BBC Radio 1 on TuneIn. Press "DONE".
 
 ##### Setting up BBC Radio 1 as a favourite
