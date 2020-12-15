@@ -6,7 +6,7 @@ layout: pagetoc
 
 ## Introduction
 
-This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through the _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md)). 
+This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through the _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](../bli-link-third-party-service)). 
 
 **This feature does not depend on the mode of the _BeoLiving Intelligence_ (ESSENTIAL or PRO)**.
  
@@ -96,7 +96,7 @@ The following sections show the available commands for each device. Note that so
   + "_Alexa, change channel to (CHANNEL-NAME) on (DEVICE-NAME)_"
   + _Description_: Changes the channel by name in current source.
   + _Rules_:
-    + Searchs for (CHANNEL-NAME) in all [Favourite Lists](bli-pro-user-guide/#fav-list) assigned to device sources. Current source will have priority for a match.
+    + Searchs for (CHANNEL-NAME) in all [Favourite Lists](../bli-pro-user-guide/#fav-list) assigned to device sources. Current source will have priority for a match.
 
 + Skip channels:
   + "_Alexa, channel up/down on (DEVICE-NAME)_"

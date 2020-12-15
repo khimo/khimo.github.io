@@ -242,11 +242,11 @@ Yes, it is possible when your _BeoLiving Intelligence_ is in _PRO_ mode. Follow 
 
 #### Q: How can I control my devices using Alexa?
 
-Please refer to the specific guide: [BeoLiving Intelligence Alexa skill guide](bli-alexa.md).
+Please refer to the specific guide: [BeoLiving Intelligence Alexa skill guide](manuals/bli-alexa).
 
 #### Q: Alexa does not understand when I try to control some device...
 
-Sometimes, devices name are not suitable for _Alexa_ to understand. Some workarounds to fix this issue are described in [BeoLiving Intelligence Alexa skill guide](bli-alexa.md).
+Sometimes, devices name are not suitable for _Alexa_ to understand. Some workarounds to fix this issue are described in [BeoLiving Intelligence Alexa skill guide](manuals/bli-alexa).
 
 #### Q: I can't link IFTTT, Google Assistant or Alexa with _BeoLiving Intelligence_!
 

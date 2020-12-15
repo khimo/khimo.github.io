@@ -163,7 +163,7 @@ Most of the functionalities you can control with the _BeoLiving App_ can also be
 
 To be able to do so, a linking process must be done first: please refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](bli-link-third-party-service.md). 
 
-A complete list of the available commands can be found in [Alexa usage guide](bli-alexa.md) or at the Alexa skill 
+A complete list of the available commands can be found in [Alexa usage guide](manuals/bli-alexa) or at the Alexa skill 
 description for the _BeoLiving Intelligence_.
 
 <!--

@@ -53,7 +53,7 @@ The following video shows how to link _Alexa_ using the first method described:
 </div>
 <br>
 
-After accomplishing one of these three methods, it's possible to start using the linked cloud service. For more information about the available voice commands and the devices you may control using Alexa and your BLI, head to the BLI's [_Alexa_ skill guide](bli-alexa.html).
+After accomplishing one of these three methods, it's possible to start using the linked cloud service. For more information about the available voice commands and the devices you may control using Alexa and your BLI, head to the BLI's [_Alexa_ skill guide](manuals/bli-alexa).
 
 ### _Google Assistant_
 
