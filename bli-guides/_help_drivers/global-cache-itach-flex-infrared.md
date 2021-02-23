@@ -3,13 +3,11 @@ title: iTach Flex Infrared
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Global Cache iTach FLEX INFRARED
-=====================================
+# Global Cache iTach FLEX INFRARED
 
 This driver supports communication with Global Cache iTach Flex used with all IR link cables, allowing to send IR commands through all cable ports connected.
 
-Connecting to the system
---------------------------------
+## Connecting to the system
 
 Connection to the system is done via Ethernet interface. For
 achieving this, the following parameters should be provided:
@@ -18,8 +16,7 @@ achieving this, the following parameters should be provided:
  2. *Port*: The port number where the device is waiting for
 connections (by default equal to ```4998```).
 
-Available resources
---------------------------------
+## Available resources
 This driver is based on sending strings to the external system through the unique **IR\_COMMAND** resource type mapped as a *BUTTON*. 
 
 There are 3 parameters for each resource:
@@ -28,8 +25,7 @@ There are 3 parameters for each resource:
 -   Resource type.
 -   A resource address, which is a string representation of the IR command.
 
-Resource Address
--------------------
+## Resource Address
 
 An IR command (infrared transmission), is created by sending an IR timing pattern to the iTach Flex. This pattern is a collection of `on` and `off` states modulated with a carrier frequency, which is present during the `on` state.
 
@@ -52,8 +48,7 @@ For example the corresponding resource address for send the `TV Standby` command
 
 `1:1,1,460571,1,1,96,1356,96,1356,96,7120,96,1356,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,2796,96,4243,96,2796,96,1356,96,2796,96,5686,96,15023`
  
-Commands and Events
----------------------------
+## Commands and Events
 
 + **PRESS** : Command for send IR command.
 + **_COMPLETE\_IR\_TX** : Event fired when iTach Flex return that a specific IR command was completely sent. The identification of the IR command successfully sent

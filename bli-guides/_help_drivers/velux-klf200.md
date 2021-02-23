@@ -3,119 +3,68 @@ title: Velux KLF200
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Velux KLF200
-=====================================
-This driver supports communication with gateway Velux KLF200, allowing to control different types of shades, dimmers, switches, locks and fire Velux Scenes.
-Connecting to the system
---------------------------------
-A login process is not required in order to connect BeoLink Gateway to Velux KLF200.
-In Beolink Gateway System page, for the TCP channel configuration 2 parameters must be setted:
-* **Host**: Hostname or IP address of Velux Gateway.
-* **Port**: Connection port configured as 51200 (by default).
-Available resources
---------------------------------
-The available resource types are:
-* **Scenario Button**: Button that executes an specific configured Scene of Velux KLF200.
-* **Dimmer**: Light with adjustable intensity. [*]
-* **Window/Door Lock**: Window and Door Lock. [*]
-* **Switch On/Off**: On/Off Switch. [*]
-* **Shade/Shutter/Awning/Blind/Curtain**: Roller Shutter, Roller Shutter with projection, Vertical Exterior Awning, Window Opener, Window Opener with rain sensor, Vertical Interior Blinds, Horizontal Awning, Curtain Track, Swinging Shutters and Swinging Shutters with independent handling of leaves. [*]
-* **Interior Venetian Blind**: Interior Venetian Blind. [*]
-* **Shutter/Blind with orientation slats/hangers capability**: Roller Shutter with adjustable slats, Exterior Venetian Blind and Louver Blind. [*]
-* **Dual Roller Shutter**: Dual Roller Shutter. [*]
-[*]: Referred to Velux KLF200 Actuator Profiles.
-Resource Address
--------------------
-Resource address for each resource type is shown below: 
-* **Scenario Button**: Address correspond with Velux SceneID. Must be a number between [0-31]. 
-* **Dimmer**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Window/Door Lock**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Switch On/Off**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Shade/Shutter/Awning/Blind/Curtain**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Interior Venetian Blind**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Shutter/Blind with orientation slats/hangers capability**: Address correspond with Velux NodeID. Must be a number between [0-199].
-* **Dual Roller Shutter**: Address correspond with Velux NodeID. Must be a number between [0-199].
-Commands, Events and States
--------------------------------
-* **Scenario Button**: 
-    + Commands:
-        - **PRESS**: Fire Velux Scene. 
-* **Dimmer**: 
-    + Commands:
-        - **SET**: Set Dimmer intensity.
-    + States:
-        - **LEVEL**: Dimmer intensity level.
-        - **ONLINE**: Connection state of actuator.
-* **Window/Door Lock**: 
-    + Commands:
-        - **SET**: Set Lock state (0/false means unlocked and 1/true means locked).
-        - **TOGGLE**: Toggle Lock state.
-    + States:
-        - **STATE**: Lock state (0/false means unlocked and 1/true means locked).
-        - **ONLINE**: Connection state of actuator.
-* **Switch On/Off**:     
-    + Commands:
-        - **SET**: Set Lock state (0/false means unlocked and 1/true means locked).
-        - **TOGGLE**: Toggle Lock state.
-    + States:
-        - **STATE**: Lock state (0/false means unlocked and 1/true means locked).
-        - **ONLINE**: Connection state of actuator.
-* **Window opener**: 
-    + Commands:
-        - **_SET**: Set level position.
-        - **_OPEN**: Open window.
-        - **_CLOSE**: Close window.
-        - **_STOP**: Stop level transition.
-        - **\_SET\_SPEED**: Set the speed of level transition.
-    + States:
-        - **_LEVEL**: Level position.
-        - **_ONLINE**: Connection state of actuator.
-* **Shade/Shutter/Awning/Blind/Curtain**: 
-    + Commands:
-        - **SET**: Set level position.
-        - **RAISE**: Set to maximum level.
-        - **LOWER**: Set to minimum level.
-        - **STOP**: Stop level transition.
-        - **\_SET\_SPEED**: Set the speed of level transition.
-    + States:
-        - **LEVEL**: Level position.
-        - **ONLINE**: Connection state of actuator.
-* **Interior Venetian Blind**:     
-    + Commands:
-        - **SET**: Set level position.
-        - **RAISE**: Set to maximum level.
-        - **LOWER**: Set to minimum level.
-        - **STOP**: Stop level transition.
-        - **\_SET\_SPEED**: Set the speed of level transition.
-        - **\_SET\_ORIENTATION**: Set orientation angle of slats/hangers.
-        - **\_SET\_ORIENTATION\_SPEED**: Set turning speed of slats/hangers.
-    + States:
-        - **LEVEL**: Level position.
-        - **ONLINE**: Connection state of actuator.
-* **Shutter/Blind with orientation slats/hangers capability**: 
-    + Commands:
-        - **SET**: Set level position.
-        - **RAISE**: Set to maximum level.
-        - **LOWER**: Set to minimum level.
-        - **STOP**: Stop level transition.
-        - **\_SET\_SPEED**: Set the speed of level transition.
-        - **\_SET\_ORIENTATION**: Set orientation angle of slats/hangers.
-        - **\_SET\_ORIENTATION\_SPEED**: Set turning speed of slats/hangers.
-    + States:
-        - **LEVEL**: Level position.
-        - **ONLINE**: Connection state of actuator.
-* **Dual Roller Shutter**: 
-    + Commands:
-        - **SET**: Set level position on both shutters.
-        - **RAISE**: Set to maximum level on both shutters.
-        - **LOWER**: Set to minimum level on both shutters.
-        - **STOP**: Stop level transition on both shutters.
-        - **\_SET\_SPEED**: Set the speed of level transition on both shutters.
-        - **\_SET\_FIRST**: Set level position on upper shutter.
-        - **\_SET\_SECOND**: Set level position on lower shutter.
-    + States:
-        - **LEVEL**: Level position of both shutters.
-        - **ONLINE**: Connection state of actuator.
-Import resources from Velux KLF200
--------------------------------------------------------------------------
-Velux KLF200 Driver of BeoLink Gateway has the capability of import all the supported resources from the configuration in Velux gateway. 
+# Velux KLF200 - firmware v0.2.0.0.0.0 and greater
+
+This driver was developed to interact ONLY with the firmware v0.2.0.0.71.0 and above. If your velux system is outdated please update it before setting up this driver, otherwise it won't be able to connect and control your system.
+
+## Connecting to the system
+
+Connection settings are:
+ - **Host**: IP address or hostname of your Velux system
+ - **Password**: If you haven't yet changed the password the default one is at the back of the product, it is recommended for you to change it for security reasons.
+
+1. Go to the Systems tab and add a new Velux system.
+2. Fill Host and Password with the information you already have. Then hit the Apply button. In a few seconds, the Velux banner at "System connection status" (in the bottom of the page) should turn itself to green indicating it was successfully connected.
+3. Move to the resources tab, then select Velux in the list of systems at the left.
+4. To automatically find all connected resources, go and click the "Import resources" button, then "Load resources from connected system". A list of all resources will start to appear in a matter of seconds.
+5. You have to specify the Area/Zone you want each, then click "Add" near the resources you want.
+
+## Available resources (RESOURCE TYPE)
+The resources you will be able to control are:
+
+ - Lights (DIMMER - code 0x0180 and 0x01BA): Even if the light is an ON/OFF light, it will appear as a DIMMER. Any LEVEL different from 0 is ON.
+ - On/Off switches (GPIO - code 0x03C0)
+ - Window openers with integrated rain sensor (SHADE - code 0x0100 and 0x0101)
+ - Scene (any previously created scene on the system)
+
+## Resource Address
+
+Resources for this system should be added using the discovery feature.
+
+## Resource discovery
+
+To automatically find all connected resources, go and click the "Import resources" button, then "Load resources from connected system". A list of all resources will start to appear in a matter of seconds.
+
+ - You have to specify the Area/Zone you want each, then click "Add" near the resources you want.
+
+## Resource Events
+
+All resources are capable of sending STATE_UPDATE events, with varying information.
+Dimmer/Shade: send LEVEL.
+ON/OFF Switch: send STATE.
+
+## Captured events
+
+Press the "Capture" button, excecuted events sent by the systems in your installation (that you can normally find in _Tools-->Monitor_) will appear so that you can select them and use them to trigger functions.
+
+## Resource Commands
+
+- Switch commands:
+  - **SET** Set the switch level to 0 (OFF) or 1 (ON)
+- Dimmer commands:
+  - **SET** Set the dimmer level between 0 and 100
+- Blind commands:
+  - **LOWER** Closes the window
+  - **RAISE** Opens the window
+  - **STOP** Let's you set an intermediate value of the window by stopping it while moving
+- Scene commands:
+  - **PRESS** Fires the scene. There is a velocity argumment which actuators will take
+
+## Changelog
+### v0.1 | 10/09/2020
+ - Initial version
+### v0.2 | 20/09/2020
+ - Adds scene resource
+### v0.3 | 07/10/2020
+ - Improves in-line setup help
+*Please, report any issue with this driver to: support+drivers@khimo.com*

@@ -3,13 +3,11 @@ title: DigitalSTROM
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-DigitalSTROM
-=====================================
+# DigitalSTROM
 
 This driver supports communication with DigitalSTROM system, allowing to control Lights, Light Groups, Shades, Shade Groups and fire global independent scenes.
 
-Connecting to the system
---------------------------------
+## Connecting to the system
 
 Connection to the system is done via Ethernet interface. For
 achieving this, the following parameters should be provided:
@@ -23,8 +21,7 @@ connections (by default equal to ```8080```).
 **Important Note** : DigitalSTROM uses a self-signed certificate, so in order to establish the connection with DigitalSTROM Server
 the box "*Check Server certificate*" on *Connection Settings* must be unchecked.
 
-Available resources
---------------------------------
+## Available resources
 
 The available resource types are:
 
@@ -36,8 +33,7 @@ The available resource types are:
 * **Shade Group** : Blinds/Shades outside group or Blinds/Curtains inside group without state of DigitalSTROM devices.
 * **Apartment Global Scenes** : Fire Global Independent Scenes.
 
-Resource Address
--------------------
+## Resource Address
 
 Resource address for each resource type is shown below:
 
@@ -46,8 +42,7 @@ Resource address for each resource type is shown below:
 * **Shade Group** : Equal to `[2 | 12],<ZoneID>`, where `GroupID = 2` refers to Blinds/Shades outside and `GroupID = 12` refers to Blinds/Curtains inside. `ZoneID` refers to the internal DigitalSTROM identification number for each zone. `ZoneID = 0` (address = `2,0` or `12,0`) refers to whole zones defined on the DigitalSTROM system.
 * **Apartment Global Scenes** : Not apply. Leave address empty.
 
-Commands, Events and States
--------------------------------
+## Commands, Events and States
 
 + **Dimmer with (No) State | Dimmer Group** :
     - **SET** : Sets brightness of light in porcentage value.
@@ -104,15 +99,18 @@ Commands, Events and States
         - *ALARM_3*
         - *ALARM_4*
 
-Important notes regarding status update latency and end user expirience
--------------------------------------------------------------------------
+## Important notes regarding status update latency and end user expirience
 
 Resources with state require a constant polling to get the resource state. Due to DigitalSTROM limitations, it's only possible to ask for one device output every 60 seconds per circuit (referred to the electrical installation of one fuse box). Because of this, the latency on the status update could be big and will increase with the number of defined resources with status on the *BeoLink Gateway*. So, it's recommended to use as less as possible resources with state. Regarding end user experience, it's recommended to use predefined DigitalSTROM scenes to change output values on devices (instead command *SET*) and use device groups when is necessary to change states of more than one device.
 
-Change log
-----------
-from version 0.2 to 0.3:
-  - Improves the application token managment, requesting it only once for each driver instance.
-  - Adds more logs
-  - Adds description for discovered resources
-  - Requests session tokens if its needed before performing an request to de dss server
+## Change log
+
+ -v0.3:
+      - Improves the application token managment, requesting it only once for each driver instance.
+      - Adds more logs
+      - Adds description for discovered resources
+      - Requests session tokens if its needed before performing an request to de dss server
+
+- v0.4 | 2020-10-07: 
+     - Improves in-line setup help
+

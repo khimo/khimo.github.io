@@ -3,14 +3,12 @@ title: iTach Flex Serial
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Global Cache iTach FLEX SERIAL
-===============================
+# Global Cache iTach FLEX SERIAL
 
 This driver supports communication with a Global Cache iTach Flex with RS232 and RS485 link cables,
 allowing to control RS232 and RS485 serial devices.
 
-Connecting to the system
---------------------------------
+## Connecting to the system
 
 Connection to the system is done via Ethernet. The following
 parameters should be provided:
@@ -28,11 +26,10 @@ if RS232/RS485 port configuration is not known or needs to be changed.
 RS232/RS485 settings will be sent to the device after pressing "Apply" button.
 After `Apply` button is pressed, change TCP connection to *Direct Ethernet connection for communication*.
 
-    **Note** : *Serial flow control* option is shared between RS232 and RS485 link      cables. For RS232 must be selected *FLOW\_NONE* or *FLOW\_HARDWARE* option
+    **Note** : *Serial flow control* option is shared between RS232 and RS485 link cables. For RS232 must be selected *FLOW\_NONE* or *FLOW\_HARDWARE* option
     and for RS485 must be selected *DUPLEX\_HALF* or *DUPLEX\_FULL*.
 
-Available resources
---------------------------------
+## Available resources
 
 This driver is based on matching incoming byte strings from the external
 system, and sending back byte strings to it.
@@ -66,8 +63,7 @@ Any non-printable or non-ASCII character entered by the user will be
 shown as hexadecimal sequences. Illegal or truncated escape sequences
 will be marked as errors.
 
-Events and commands
--------------------
+## Events and commands
 
 Resources marked for input (or both input + output) will be searched for
 in all incoming data. As soon as a match is found, the corresponding
@@ -79,8 +75,8 @@ discarded.
 Commands are all resources marked as output (or both input + output)
 that can be transmitted to the channel.
 
-End of line sequence
---------------------
+## End of line sequence
+
 An end of line sequence can be defined at the channel configuration.
 
 Being non empty implies a working mode in which events are delimited by it,

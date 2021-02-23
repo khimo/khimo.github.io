@@ -3,13 +3,11 @@ title: Dooya
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Dooya System
-=============
+# Dooya System
 
 BeoLink Gateway and Dooya System are capable of fire up to 50 presets scenarios between each system.  
 
-Connection with Dooya System
------------------------------
+## Connection with Dooya System
 
 Connection between BeoLink Gateway and Dooya System is accomplished through TCP protocol.  
 
@@ -19,8 +17,7 @@ The Connection Settings parameters are:
 * *Host* : IP address of Dooya System host.
 * *Port* : Port address of Dooya System host. By default the port used is ```6900```.
 
-Available Resources
--------------------
+## Available Resources
 
 The available resource types are:
 * *OUTPUT\_SCENE* : Resource that represents an outgoing scenario from BeoLink Gateway to Dooya System. On BeoLink Gateway, this resource is mapped as *BUTTON* resource type. 

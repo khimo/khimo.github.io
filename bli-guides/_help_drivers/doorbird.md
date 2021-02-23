@@ -3,16 +3,14 @@ title: DoorBird
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-DoorBird 
-=========
+# DoorBird 
 
 BeoLink Gateway can interact with DoorBird and BirdGuard units, being capable of opening door lock, turning unit light and fire an event when motion sensor detect activity or doorbell button is pressed on the camera.
 In order to get video image on the BeoLink Gateway from the DoorBird unit, it's necessary to add the camera on Interfaces Tab and fill the respective fields.
 
 *Note*: SIP communication with DoorBird units are not yet supported.
 
-Supported DoorBird Devices
------------------------------
+## Supported DoorBird Devices
 
 * DoorBird Video Door Station D10x 
     * Hardware version 1.00 and above 
@@ -27,8 +25,7 @@ Supported DoorBird Devices
     * Hardware version 1.00 and above 
     * Firmware Version 000099 and above
 
-Connection to DoorBird Unit
------------------------------
+## Connection to DoorBird Unit
 
 BeoLink Gateway can connect and interact with a DoorBird/BirdGuard unit through the DoorBird LAN-2-LAN API connection.  
 
@@ -38,8 +35,7 @@ The Connection Settings parameters are:
 * *Login*: Username of DoorBird unit.
 * *Password*: Password corresponded with the username used of DoorBird unit.
 
-Available Resources
--------------------
+## Available Resources
 
 The available resources are:
 
@@ -55,8 +51,7 @@ The available resources are:
 **Resource address doesn't apply** to any resource type except by *OPEN\_DOOR*. Address of *OPEN\_DOOR* refers to an specific relay of your 
 DoorBird unit. **DoorBird I/O DOOR CONTROLLER** is supported. If an *OPEN\_DOOR* resource address is empty, will refer to relay *1*. For the rest of resource types **leave resource address empty**.
 
-Get Live Image
------------------
+## Get Live Image
 
 In order to get live images from DoorBird unit, it's necessary to add the camera in Interfaces Tab and set the next fields as below:
 
@@ -71,8 +66,8 @@ In order to get live images from DoorBird unit, it's necessary to add the camera
   * *Low resolution mjpeg* : Equal to ```/bha-api/video.cgi``` to get mpjpeg stream from DoorBird unit.
   * *Low resolution image* : Equal to ```/bha-api/image.cgi``` to get snapshots from DoorBird unit.
 
-Changelog
----------
+## Changelog
+
 **v0.5**
   
   * Improves connection error handling
@@ -86,4 +81,8 @@ Changelog
 **v0.7**
    
   * Corrects parsing of "Load resources from connected system"
+
+**v0.8**
+   
+  * Improves in-line setup help
 

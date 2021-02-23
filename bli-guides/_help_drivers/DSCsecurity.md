@@ -5,7 +5,7 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 ---
 # DSC / IT-100
 
-Communicates with DSC PowerSeries Security systems using the DSC IT-100 RS232 interface. Use a straight thru RS232 cable pin 2, 3 and 5 between DSC and the RS232/USB cable connected to the BeoLink Gateway. 
+Communicates with DSC PowerSeries Security systems using the DSC IT-100 RS232 interface. Use a straight thru RS232 cable pin 2, 3 and 5 between DSC and the RS232/USB cable connected to the BLI/BLGW. 
 
 Allows the user to Arm/Disarm partitions of the alarm system, and to receive feedback of states and notifications. 
 
@@ -60,5 +60,7 @@ Allows the user to Arm/Disarm partitions of the alarm system, and to receive fee
 ## Changelog
 
 - v0.2 | 2019-06-26
-    - Removes some logs message.
+    - Removes some log message.
+- v0.3 | 2020-10-07
+    - Improves in-line setup help.
 
