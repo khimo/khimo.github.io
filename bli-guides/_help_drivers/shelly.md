@@ -5,69 +5,55 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 ---
 # Shelly
 
-This driver integrates with the Shelly 1 device for Dimmer control, and with the Shelly 2.5 device for Shade control.
+This driver integrates with the Shelly's local HTTP API.
 
-## Connecting to the system
-**Each system communicates with one device**, each device has an independent IP addres, user and password and should be added separately. If you have many devices in your installation you should add as many systems to your BLI.
-
-You will first need an account, which you can create at [Shelly Cloud page](http://my.shelly.cloud). IMPORTANT: Do not show this authkey and/or server location to anyone, if someone else has it they will be able to control your devices! If you change your account password, the authkey will be changed too.
+**Each BeoLiving Intelligence system communicates with a Shelly device**. If you have many devices in your installation you should add as many systems to your BLI.
 
 Connection settings are:
- - **IP address**: The individual device's IP address.
- - **User**: Shelly cloud user.
- - **Password**: Shelly cloud personal password.
- - **Polling time**: The resource's state will be retrieved every _X_ seconds.
 
-## Available resources (RESOURCE TYPE)
+- **IP Address**: The individual device's IP address or local host domain name.
+- **User**: Shelly device local user *(optional)*.
+- **Password**: Shelly device local password *(optional)*.
+- **Polling time**: The resource's state will be retrieved every _X_ seconds.
+
+## Compatible devices and resource types
 
 The available resource are:
- - **SHSW-25.roller (SHADE)**: A Shelly 2.5 device setup as a **roller** shade. If setup as a **motor** shade it wont work.
- - **SHDM-1 (DIMMER)**: A Shelly 1 device setup as a dimmer.
+
+- **SHDM-1  (DIMMER)**: A Shelly 1 dimmer.
+- **SHSW-25.roller (SHADE)**: A Shelly 2.5 device setup as a **roller** for a shade.
+- **SHSW-25.relay (GPIO)**: A Shelly 2.5 device as **relay** and represended by a GPIO resource.
+- **SHSW-25.dimmer (DIMMER)**: A Shelly 2.5 device as **relay** and represended by a ON/OFF DIMMER reource.
+- **SHSW-1 (DIMMER)**: A shelly 1 device represented by an ON/OFF DIMMER resource.
+- **SHSW-1.relay (GPIO)**: A shelly 1 device represented by an GPIO resource.
 
 ## Resource Address
 
-**The resource address should not be manually configured**. Use the Import resources to automatically detect the relay.
+The resource address is the shelly output channel, usually "0". Use the Import resources to automatically detect the available control points in the device.
 
 ## Resource discovery
 
-Resource discovery is available and will detect the corresponding device (only one). If your relay is in "motor" mode, or other not-supported modes it will not be discovered.
+Resource discovery is available and will detect the corresponding resources that the device supports in the current configuration.
 
-## Resource Events
-
-All resources are capable of sending STATE_UPDATE events, with varying information.
-SHADE: STATE_UPDATE with either "open", "close", or "stop".
-DIMMER: STATE_UPDATE with LEVEL value.
-
-## Captured events
-
-Press the "Capture" button, excecuted events sent by the systems in your installation (that you can normally find in _Tools-->Monitor_) will appear so that you can select them and use them to trigger functions.
-
-## Resource Commands
-
-- SHADE commands:
-  - **SET**: To a specific LEVEL.
-  - **STOP**: If currently moving.
-  - **RAISE**
-  - **LOWER**
-- DIMMER commands:
-  - **SET**: Set the dimmer level between 0 and 100.
-
-## Resource States
-
- - DIMMER states:
-    - **LEVEL**: Level position of the DIMMER device.
- - SHADE states:
-    - **_state**: State of the shade.
 
 ## Changelog
 ### v0.1 | 20/08/2020
- - Initial version
+- Initial version
 
 ### v0.2 | 22/09/2020
- - Bug fix: cannot fire commands after reloading configuration. Also removed unsupported SHADE's SET command
- 
-### v0.3 | 07/10/2020
- - Improves in-line setup help
+- Bug fix: cannot fire commands after reloading configuration. Also removed unsupported SHADE's SET command
 
+### v0.3 | 07/10/2020
+- Improves in-line setup help
+
+### V0.4 | 22/02/2021
+- Adds support for SHSW-1
+- Adds support for relay mode of SHSW-25
+- Better handles connecteivity state
+- Updates driver help
+
+### V0.5 | 24/02/2021
+- Minor corrections
 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
+
