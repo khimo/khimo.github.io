@@ -1,13 +1,9 @@
----
-title: Lutron HW QS - RadioRa2
-layout: pagetoc
----
+# Lutron Homeworks QS and Radio Ra2
 
 This driver supports communication with Lutron HomeWorks QS, Lutron
 Radio RA2 and Lutron Grafik QS systems.
 
-Connecting to a Grafik QS system
---------------------------------
+## Connecting to a Grafik QS system
 
 Connection to a Grafik QS system is done via a QSE-CI-NWK-E interface,
 which allows Ethernet and RS232 connectivity.
@@ -18,8 +14,8 @@ interface and on BeoLiving Intelligence connection settings.
 Connection settings for Ethernet are the IP address of the interface
 and the password. The default password is `nwk`.
 
-Connection to a Radio RA2 system
---------------------------------
+## Connection to a Radio RA2 system
+
 
 Communication with Radio RA2 is done via the Radio RA2 Main Repeater,
 which allows interaction with the system via 100 programmable virtual
@@ -34,8 +30,8 @@ Connection settings for Ethernet consist of: IP address of the Main
 Repeater (default: 192.168.1.50), login (default: lutron), password
 (default: integration) and telnet IP port (default: 23).
 
-Connection to a Homeworks QS system
------------------------------------
+## Connection to a Homeworks QS system
+
 
 Communication with the Homeworks QS system is done via the Ethernet
 interface on the Homeworks QS Processor.
@@ -44,8 +40,8 @@ Connection settings consist of: IP address of the processor (default:
 192.168.1.50), login (default: lutron), password (default: integration)
 and telnet IP port (default: 23).
 
-Resources
-------------------
+## Resources
+
 
 The supported resource types are:
 
@@ -60,8 +56,8 @@ The supported resource types are:
  + **Lutron QS Scene Button**: a button mapped to a single scene which
    will be selected on press.
 
-Resource address format
------------------------
+## Resource address format
+
 
 Most resource addresses use *Integration ID* which by default is a
 number, but can also be a user defined string. Some resources require
@@ -111,8 +107,8 @@ supports a command or event type.
 A typical example is the `_MULTI TAP` event, which is available on a
 limited combination of Lutron hardware.
 
-Events
----------------
+## Events
+
  + Button with LED, Button
    - **PRESS**
    - **RELEASE**
@@ -120,8 +116,8 @@ Events
    - **\_MULTI TAP**: Pressing on the button repeatedly
    - **\_HOLD RELEASE**: Releasing a button after a long press (HOLD)
 
-Commands
------------------
+## Commands
+
  + Button with LED, Button
    - **PRESS**
    - **RELEASE**
@@ -152,8 +148,8 @@ Commands
  + Lutron QS Scene Button
    - **PRESS**: Select scene
 
-Resource State
---------------
+## Resource State
+
  + Button with LED
    - **STATE**: The state of the LED (0 means OFF and 1 ON)
  + LED
@@ -196,3 +192,7 @@ Grafik controller:
     3 and 5, and main control arrow down (next to the display)
     simultaneously, until a message is displayed asking for
     confirmation. Press OK.
+
+
+
+*Please, report any issue with this driver to: support+drivers@khimo.com*

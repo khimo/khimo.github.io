@@ -12,7 +12,7 @@ Connection to the system is done via SOAP IP connection over WiFi directly with 
 
 The WeMo driver checks connection and polls the device every 10 seconds for status updates. 
 
-The Driver will also check for a status update emediately following any control commands sent to the device for quick feedback updates 
+The Driver will also check for a status update immediately following any control commands sent to the device for quick feedback updates 
 
 
 Communications:

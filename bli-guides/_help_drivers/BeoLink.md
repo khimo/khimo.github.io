@@ -1,7 +1,5 @@
----
-title: BeoLink
-layout: pagetoc
----
+BeoLink
+=======
 
 The BeoLink system provides interaction with NetworkLink products.
 
@@ -62,81 +60,60 @@ command, and select `GO` from the original command list.
 BeoLink Commands
 ----------------
 
-Commands to products can emulate terminal commands from  Beo4/Beo5 or BeoRemote One.
+The available commands based in BNR (BeoNetRemote Protocol) are:
 
-The available options are:
+- *All standby*: This command will set all NetworkLink products into standby mode. 
 
- - All Standby
- - Cinema mode
- - Master volume adjust
- - Master volume level
- - Picture mute
- - Picture mode
- - Playqueue add Deezer playlist
- - Playqueue add TuneIn station
- - Playqueue add URL
- - Playqueue clean
- - Recall profile
- - Save profile
- - Select channel
- - Select source
- - Send command
- - Send digit
- - Sound mode
- - Speaker group
- - Stand position
- - Standby
- - Volume adjust
- - Volume level
+- *Cinema mode*: Sets *Cinema mode* on product. The available options are product dependent so the product must be online in order to be able
+to see them in *Macro* edition. 
 
-*All Standby* has no parameters. This command will send all Masterlink
- and NetworkLink products into standby mode.
+- *Master volume adjust*: Enable controlling the volume of several products at once via Multiroom. The command is sent to the master product and 
+all the other products which are streaming from the master, changing their volume the same way. *Master volume adjust* is used for relative 
+control.
 
-*Master volume adjust* and *Master volume level* enable controlling
-the volume of several products at once via Multiroom. The command
-is sent to a product and all the other products which are streaming
-from the same master change their volume the same way. Use
-*Master volume adjust* for relative control (step up or step down
-or mute) and *Master volume level* for absolute control.
+- *Master volume level*: Similar to *Master volume adjust* but used for absolute volume control. This command takes `Volume` as parameter and must
+ be an interger between 0 and 90.
+ 
+- *Picture Mute*: This command (if corresponds) is used to freeze video picture.
 
-*Playqueue add Deezer playlist* adds a *Deezer playlist* specified by *Deezer playlist Id*.
+- *Picture mode*: Sets *Picture mode* on product. The available options are product dependent so the product must be online in order to be able
+to see them in *Macro* edition.  
 
-*Playqueue add TuneIn station* adds a *TuneIn station* specified by *Station name* or *Station Id*.
+- *Playqueue add Deezer playlist*: Adds a *Deezer playlist* by *Deezer Playlist Id* in products playqueue.
+ 
+- *Playqueue add TuneIn station*: Adds a *TuneIn station* by TuneIn *Station name* or *Station Id* in products playqueue.
+  
+- *Playqueue add URL*: Adds an audio file to products playqueue specified by it's *URL*.
+ 
+- *Playqueue clean*: Self explanatory. 
 
-*Playqueue add URL* adds an auido file to the *Playqueue* specified by a *URL*.
+- *Recall profile*: Activates an existing profile on product.
+ 
+- *Save profile*: Saves profile on product. 
 
-*Playqueue clean* is self explanatory.
+- *Select channel*: Selects channel in specific product source. If the source has a favourite list defined the delay between the channel digits is taken from it, otherwise a delay of 300 milliseconds is used.
+ 
+- *Select source*: Play source on product. The source can be originated from another product.
+ 
+- *Send command*: Enables sending miscelaneous commands related to things like cursor control, menu acces, flow control, etc..
 
-*Recall profile* activates an existing profile. 
+- *Send digit*: allows sending individual digit to the product.
 
-*Save profile* persists an existing profile.
+- *Sound mode*: Sets *Sound mode* on product. The available options are product dependent so the product must be online in order to be able
+to see them in *Macro* edition.
 
-*Select channel* is used to select a source and channel. If the source has
-a favourite list defined the delay between the channel digits is taken from it,
-otherwise a delay of 300 milliseconds is used.
+- *Speaker group*: Sets *Speaker group* on product. The available options are product dependent so the product must be online in order to be able
+to see them in *Macro* edition.
+ 
+- *Stand position*: Sets *Stand position* on product. This command in particular is only available in products with a stand. The available options
+are product dependent so the product must be online in order to be able to see them in *Macro* edition.
 
-*Select source* instructs a product to play a source via the multiroom
-feature. The source can be originated from another product.
+- *Standby*: This command sets product in stand-by mode.
 
-*Send command* enables sending miscelaneous commands related to
-things like cursor control, menu acces, flow control, etc..
+- *Volume adjust*: Enable relative volume control on product.
 
-*Send digit* allows sending and individual digit to the product.
-
-*Speaker group* allows selecting speaker groups.
-
-*Sound mode*, *Stand position*, *Picture mode*, *Picture mute* and *Cinema mode*
- commands are self explanatory. The available options are
-product dependent so the product must be online in order to be able
-to see them. The command *Stand position* in particular is only available
- in products with a stand.
-
-*Standby* is self exaplanatory.
-
-*Volume adjust* permits to adjust volume relative to the current volume.
-
-*Volume level* enables absolute volume control. The argument is an
-integer value from 0 to 90.
+- *Volume level*: Similar to *Volume adjust* but used for absolute volume control. This command takes `Volume` as parameter and must
+ be an interger between 0 and 90.
 
 ## Pause between commands
 
@@ -161,9 +138,15 @@ You should keep this in mind if constructing macros that simulate menu navigatio
 Mobile applications also need to know in which of these modes the
 product is configured in order to send the right commands.
 
-This configuration is done via the *Interfaces* screen on BeoLiving Intelligence. If 
-the option is checked, BeoLiving Intelligence will tell the
-mobile application that the product is controlled via the Beo4
-navigation button commands `UP`, `DOWN`, `LEFT`, `RIGHT`, `SELECT` and
-`BACK`. Otherwise it will instruct the mobile application to use the
-legacy commands.
+This configuration is done via the *Interfaces* screen on BeoLiving Intelligence. If the option is checked, BeoLiving Intelligence will tell the
+mobile application that the product is controlled via the Beo4 navigation button commands `UP`, `DOWN`, `LEFT`, `RIGHT`, `SELECT` and `BACK`. 
+Otherwise it will instruct the mobile application to use the legacy commands.
+
+
+## Speaker Groups
+
+The BeoLink system allows you to make groups of NetworkLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
+
+The Speaker Group's configuration is shown under Systems. When you select the BeoLink system, the configured speaker groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
+
+For a new group to be created you need to select a Main product for the group and at least one Follower, if not, the group won't be created.

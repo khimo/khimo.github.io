@@ -1,12 +1,10 @@
----
-title: Lutron Radio RA
-layout: pagetoc
----
+Lutron Radio RA
+===============
 
 Connection to a Radio RA system
 -------------------------------
 
-Communications with Radio RA is done via the Radio RA RS232 interface.
+Communication with Radio RA is done via the Radio RA RS232 interface.
 Use a full RS232 cable between Radio RA and BeoLiving Intelligence. *Hardware flow control
 is used*, so a 3-wire connection will not work.
 

@@ -3,18 +3,15 @@ title: Rako Bridge
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-RAKO BRIDGE DRIVER
-==================
+# RAKO BRIDGE DRIVER
 
-This driver integrates Rako Bridge with the Beolink Gateway, allowing to set dimmer levels and fire scenes on the Rako modules.
+This driver integrates Rako Bridge with the BLI/BLGW, allowing to set dimmer levels and fire scenes on the Rako modules.
 
-Conecting to the system
------------------------
+## Conecting to the syste
 
 The connection to the Rako Bridge is established through a REST connection, and only the Rako Bridge Host or its ip address must be specified.
 
-Resource
---------
+## Resource
 
   * Dimmer: Allows to: 
     - Set dimmer levels.
@@ -29,8 +26,7 @@ Resource
     - The ```<channel number>``` must be between 0 and 15.
     - The channel 0 control all channels.
 
-Commands
---------
+## Commands
 
   * DIMMER: 
     - SET: Set the dimmer level

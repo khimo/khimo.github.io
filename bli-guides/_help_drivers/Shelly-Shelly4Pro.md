@@ -24,7 +24,6 @@ Available resources are as following:
  - On:  Sets the Relay in On mode, State indicates the Relay is On
 
 ## State Updates: 
----------------
 
 Available State updates are as following:
  - Off: State indicates the Relay is Off
@@ -33,4 +32,5 @@ Available State updates are as following:
 
 ## Revision history
  - 2019/10/8 | v0.1 - First version published
+ - 2020/10/7 | v0.2- Improves in-line setup help
 

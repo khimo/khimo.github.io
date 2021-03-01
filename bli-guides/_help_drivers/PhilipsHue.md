@@ -1,7 +1,5 @@
----
-title: Philips Hue
-layout: pagetoc
----
+Philips Hue
+===============================
 
 This driver supports communication with a Philips Hue bridge,
 allowing to control lights and lighting groups.
@@ -52,6 +50,9 @@ setting the level to 100 implies setting "on" to true and "bri" to
 
 The scene is mapped to a BUTTON Standard Resource type, and the button
 PRESS recalls the scene on the Philips Hue bridge.
+
+**Warning** have in mind that when you set a color maybe Philips hue could not map
+that color for the lights, and set the nearest coordinates for that color. So in the state, you can see a difference between the color you set in HSV format and the HSV color shown on the resource state.
 
 Deprecated commands
 --------------------------------

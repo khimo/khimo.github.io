@@ -11,7 +11,7 @@ The Fibaro driver on the BeoLiving Intelligence integrates ON/OFF devices (ie. w
 
 Connecting to the system
 -------------------------
-**Communication with Fibaro products it's made through the Fibaro HomeCenter.** This implements an HTTP RESTful API. 
+**Communication with Fibaro products is made through the Fibaro HomeCenter.** This implements an HTTP RESTful API. 
 The following is a list of configurations fields that the installer should define in order to establish the connection.
 
 Channel settings are:
@@ -67,3 +67,16 @@ Resource discovery is available and will detect most devices but may not detect 
 **Devices that work with the same commands as any of the supported devices can be added by the user if the ID number is known.**
 
 Discovered devices displaying "Enabled: false" in their description will probably not work, as they are devices the Fibaro HomeCenter has once worked with but which are not connected anymore.
+
+# Changelog
+## v0.2 | 24/07/2020
+ - Adds protections to errors while parsing initial state
+## v0.3 | 2/08/2020
+ - Adds protections to RGBW resources incomplete status feedback
+## v0.5 | 4/08/2020
+ - Corrects handling of shades and dimmers value limit (99)
+## v0.6 | 5/08/2020
+ - Adds logs to the refreshState query
+## v0.7 | 07/10/2020
+ - Improves in-line setup help
+

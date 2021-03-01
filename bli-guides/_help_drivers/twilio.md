@@ -19,4 +19,6 @@ PHONE: A phone number to which you can send an SMS or a MMS.
 
 # Changelog
 - v0.1 | 2019-11-28: Initial version with support to send text SMS and MMS
+- v0.2 | 2020-08-31: Adds connection help (only for BLI v2.1.2 and newer)
+- v0.3 | 2020-10-07: Improves in-line setup help
 

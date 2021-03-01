@@ -1,7 +1,3 @@
----
-title: LG webOS TV
-layout: pagetoc
----
 # LG webOS TV
 
 Integration with LG webOS Smart TVs.
@@ -16,8 +12,11 @@ It is always recommended to use ethernet connection, in case of using WiFi you s
 
 Each TV is represented as a resource and follows the standard AV Resource definition.
 
-The available resource are:
-- **LG webOS TV (RENDERER)**: Any LG smart TV in the installation.
+- The available resource are:
+
+  - **LG webOS TV (RENDERER)**: Any LG smart TV in the installation.
+
+  - **LG webOS TV Relative Volume (RENDERER)**: Any LG smart TV in the installation. This resource makes sense in cases when the tv doesn't handle the setting of an absolute value for the volume output properly, this was seen in some TVs with a soundbar plugged in.
 
 ## Resource Address
 
@@ -26,9 +25,9 @@ The address of each resource is the LG smart TV IP address or host, and an optio
 The driver will do the best to find the MAC address automatically, if you have a special network setup and you need to use a special MAC address, just write the MAC after the IP.
 
 E.g:
-- 192.168.1.120
-- 192.168.0.33;AA:BB:CC:DD:EE:11 
-- uuid:1a6b23c4-d567-e4h8-94f0-f1gbfcb7df55 *(Discovered resource address)*
+ - 192.168.1.120
+ - 192.168.0.33;AA:BB:CC:DD:EE:11 
+ - uuid:1a6b23c4-d567-e4h8-94f0-f1gbfcb7df55 *(Discovered resource address)*
 
 ## Resource discovery
 
@@ -45,11 +44,12 @@ Press the "Capture" button, excecuted events sent by the systems in your install
 
 ## Resource Commands
 
-- LG webOS TV commands: All the traditional RENDERER commands are available (BeoRemote One's commands), including: CHANNEL UP/DOWN, PLAY, PAUSE, REWIND, STANDBY, VOLUME UP/DOWN, the colours and arrows, among many others.
+ - LG webOS TV commands: All the traditional RENDERER commands are available (BeoRemote One's commands), including: CHANNEL UP/DOWN, PLAY, PAUSE, REWIND, STANDBY, VOLUME UP/DOWN, the colours and arrows, among many others.
 
 ## Resource States
 
-- LG webOS TV states:
+
+- **Both resources have the following states**:
   - **INPUT**: Service that is acting as input to the TV. The exact names may change depending on the installation. E.g. "com.webos.app.livetv", "airplay", "youtube.leanback.v4", "deezer".
   - **ONLINE**: _=true_ if the TV is online.
   - **SELECTED_SOURCE**: The TV (Resource) that is playing. E.g. "area_name/zone_name/RENDERER/LG webOS TV".
@@ -57,4 +57,17 @@ Press the "Capture" button, excecuted events sent by the systems in your install
   - **CURRENT_CHANNEL**: Displayed if available.
   - **MUTE**: _=true_ if the TV is muted.
   - **NOW_PLAYING**: May be more informative about the current content. E.g. "TV", "Youtube", "Deezer"
-  - **VOLUME**: Current volume of the resource (0-99).
+- **For the LG webOS TV the next state is added**:
+    - **VOLUME**: Current volume of the resource (0-99).
+
+
+
+## Changelog
+
+### v0.1 | 2020
+ - First market version fully supporting the integration of the TV with the BLI.
+
+### v0.2 | 2020
+ - Addition of a resource type that handles relative volume only.
+
+*Please, report any issue with this driver to: support+drivers_lgwebos@khimo.com.*

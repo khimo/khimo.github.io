@@ -3,8 +3,7 @@ title: Sensibo
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-Sensibo
-==============
+# Sensibo
 
 Sensibo is a system that connects to any air conditioning through IR commands in order to give you
 all control over it.
@@ -13,8 +12,7 @@ Sensibo conserves states and detects the signals of the original remote control,
 have information of current and target temperatures as the mode and on/off state.
 
 
-Device setup
-------------
+## Device setup
 
 You will first have to setup your device to be connected with the air conditioning.
 If you haven't yet, go download the 'Sensibo' app at App Store or Google Play, or in the sensibo
@@ -23,10 +21,9 @@ web page for [iOS](http://sensibo.com/pages/ios) and [Android](http://sensibo.co
 Just follow the simple steps on the app to get started.
 
 
-Connection Settings
--------------------
+## Connection Settings
 
-This driver connects to the REST API of the Sensibo system, wich uses an API KEY, which you can generate at
+This driver connects to the REST API of the Sensibo system, using an API KEY, which you can generate at
 [the sensibo page](https://home.sensibo.com/me/api). Be careful not to share it with anyone, this key is the
 way sensibo has to recognize authorized devices on internet to use your specific air conditioning.
 
@@ -36,8 +33,7 @@ The polling delay time is a number represented in seconds, which determines the 
 The lower it is, the faster it will sync states.
 
 
-Resources and commands
-----------------------
+## Resources and commands
 
 The only resource there is, is AC Thermostat which represents a Sensibo device. It will be synchronized to the values
 of the sensors of that device as so to the IR. So you will get themperature measurements in real time, and you will be
