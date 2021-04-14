@@ -1,5 +1,5 @@
 ---
-title: MasterLink Gateway Protocol DRIVER
+title: MasterLink Gateway Protocol
 layout: pagetoc
 ---
 
