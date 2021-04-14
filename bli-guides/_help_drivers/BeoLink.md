@@ -1,5 +1,7 @@
-BeoLink
-=======
+---
+title: BeoLink
+layout: pagetoc
+---
 
 The BeoLink system provides interaction with NetworkLink products.
 

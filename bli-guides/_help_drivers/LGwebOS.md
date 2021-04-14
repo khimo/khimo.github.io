@@ -1,4 +1,7 @@
-# LG webOS TV
+---
+title: LG webOS TV
+layout: pagetoc
+---
 
 Integration with LG webOS Smart TVs.
 

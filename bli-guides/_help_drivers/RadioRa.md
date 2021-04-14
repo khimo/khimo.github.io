@@ -1,5 +1,7 @@
-Lutron Radio RA
-===============
+---
+title: Lutron Radio RA
+layout: pagetoc
+---
 
 Connection to a Radio RA system
 -------------------------------
