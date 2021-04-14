@@ -1,4 +1,7 @@
-# MasterLink Gateway Protocol DRIVER
+---
+title: MasterLink Gateway Protocol DRIVER
+layout: pagetoc
+---
 
 Integrate MasterLink products using a BeoLink Gateway or MasterLink Gateway as a MasterLink interface.
 
