@@ -68,7 +68,7 @@ title: BeoLiving Intelligence |  Specifications
 
   
 Located on the back of the BLI:
-<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%; margin: 5em 1em 5em 1em" alt="Ports"/>
+<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%; margin: 1em" alt="Ports"/>
 - *Power*: Powers the _BLI_. 
 - *USB Port*: Used for service purposes.
 - *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
