@@ -1,5 +1,5 @@
 ---
-title: BeoLiving Intelligence Specifications
+title: BeoLiving Intelligence | Hardware Specifications
 ---
 
 <table class="table">
@@ -11,20 +11,10 @@ title: BeoLiving Intelligence Specifications
   </thead>
   <tbody>
     <tr>
-      <td>Computing & Storage</td>
-      <td>
-        <ul>
-          <li>800MHz ARM with 512MB RAM (4 times faster than BeoLink Gateway)</li>
-          <li>8GB of storage</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
       <td>Connectivity</td>
       <td>
         <ul>
-          <li>Wi-Fi 802.11a/b/g/n/ac</li>
-          <li>10/100 Ethernet with PoE 802.3af</li>
+          <li>Ethernet with <b>PoE 802.3af</b></li>
         </ul>
       </td>
     </tr>
@@ -32,46 +22,17 @@ title: BeoLiving Intelligence Specifications
       <td>Power</td>
       <td>
         <ul>
-          <li>5V DC</li>
+          <li>5V DC 3W</li>
           <li>5.5mm x 2.1mm barrel jack</li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>Ports</td>
-      <td>
-        <ul>
-          <li>5.5mm x 2.1mm barrel jack Power input</li>
-          <li>USB 2.0 Type-A</li>
-          <li>10/100 Base-T Ethernet connector</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Security</td>
-      <td>
-        <ul>
-          <li>Secure element hardware security module</li>
-          <li>Encrypted file system & Secure Boot</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Accessories</td>
+      <td>Accessories included in the box</td>
       <td>
         <ul>
           <li>5V, 2A (10W) AC/DC Wall Adapter</li>
           <li>Wall/Ceiling Bracket</li>
-          <li>International Power Adapter</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>Enclosure Options</td>
-      <td>
-        <ul>
-          <li>Custom pad printed logo & color</li>
-          <li>Outdoor / Weatherproof enclosures</li>
         </ul>
       </td>
     </tr>
