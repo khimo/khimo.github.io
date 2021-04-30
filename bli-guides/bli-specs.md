@@ -18,6 +18,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>Ethernet with <b>PoE 802.3af</b></li>
+          <li>USB  (loads up to 500mA)</li>
         </ul>
       </td>
     </tr>
@@ -51,7 +52,9 @@ title: BeoLiving Intelligence |  Specifications
       <td>Dimensions</td>
       <td>
         <ul>
-          <li>127 mm x 127 mm x 30 mm</li>
+        <li>Length: 127mm</li>
+        <li>Width: 127mm</li>
+        <li>Height 30mm</li>
         </ul>
       </td>
     </tr>
