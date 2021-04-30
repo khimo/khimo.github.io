@@ -27,8 +27,11 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>5V DC 3W</li>
+          <li>Connector:<ul><li>Barrel jack</li>
+            <li>[+] pin; [-] sleeve</li>
+            <li>5.5mm x 2.1mm</li>
+            </ul>
           <li>Heat output is 10.24 BTU/hr</li>
-          <li>Connector: 5.5mm x 2.1mm barrel jack (pin [+]; sleeve [-])</li>
         </ul>
       </td>
     </tr>
