@@ -27,7 +27,8 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>5V DC 3W</li>
-          <li>5.5mm x 2.1mm barrel jack</li>
+          <li>Heat output is 10.24 BTU/hr</li>
+          <li>Connector: 5.5mm x 2.1mm barrel jack</li>
         </ul>
       </td>
     </tr>
@@ -65,8 +66,10 @@ title: BeoLiving Intelligence |  Specifications
 
 
 ## Connection Panel
-<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%; margin: 1em" alt="Ports"/>  
+<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%; margin: 1em" alt="Ports"/>
+
 Located on the back of the BLI:
+
 - *Power*: Powers the _BLI_. 
 - *USB Port*: Used for service purposes.
 - *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
