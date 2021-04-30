@@ -62,13 +62,11 @@ title: BeoLiving Intelligence |  Specifications
 
 
 ## Connection Panel
-<div>
-<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-left" style="min-width:20em; width: 50%" alt="Ports"/>
+<img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%" alt="Ports"/>
   
 Located on the back of the BLI:
-  - *Power*: Powers the _BLI_. 
-  - *USB Port*: Used for service purposes.
-  - *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
-  - *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
+- *Power*: Powers the _BLI_. 
+- *USB Port*: Used for service purposes.
+- *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
+- *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
 
-</div>
