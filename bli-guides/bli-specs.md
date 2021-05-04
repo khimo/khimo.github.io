@@ -2,11 +2,11 @@
 title: BeoLiving Intelligence |  Specifications
 ---
 
-<div class="float-right">
-<a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fas fa-file-download"></i></a>
-</div>
 
-## Hardware specifications
+
+## Hardware specifications <span class="float-right">
+<a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fas fa-file-download  fa-5x"></i></a>
+</span>
 
 
 <table class="table">
@@ -75,6 +75,8 @@ title: BeoLiving Intelligence |  Specifications
 
 
 ## Connection Panel
+
+
 <img src="https://user-images.githubusercontent.com/2913131/116702733-d5fdb400-a99f-11eb-99d4-473337e3939d.png" class="float-right" style="min-width:20em; width: 50%; margin: 1em" alt="Ports"/>
 
 Located on the back of the BLI:
