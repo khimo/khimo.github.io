@@ -2,8 +2,10 @@
 title: BeoLiving Intelligence |  Specifications
 ---
 
-
+<div class="float-right"><a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fas fa-file-download"></i></a></div>
+  
 ## Hardware specifications
+
 
 <table class="table">
   <thead>
