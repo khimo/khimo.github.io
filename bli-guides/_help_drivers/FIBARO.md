@@ -5,7 +5,7 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 ---
 Fibaro
 =======================
-The Fibaro driver on the BeoLiving Intelligence integrates ON/OFF devices (ie. wall plugs, switches), dimmer devices, RGBW devices and roller-shutter devices configured in the Fibaro Home Center.
+The Fibaro driver on the BeoLiving Intelligence integrates ON/OFF devices (ie. wall plugs, switches, motion sensors), dimmer devices, RGBW devices, thermostats and roller-shutter devices configured in the Fibaro Home Center.
 
 
 
@@ -26,6 +26,9 @@ The available resource are:
 - **Fibaro ON/OFF device (GPIO)**: Any ON/OFF device in the installation.
 - **Fibaro dimmer**: Any dimmer or multilevel device in the installation.
 - **Fibaro RGBW light**: Any RBGW light in the installation.
+- **Fibaro Thermostat**: Any individual thermostats in the installation.
+- **Fibaro Temperature Sensor**: Any individual temperature sensor in the installation.
+- **Fibaro Motion Sensor**: Any Motion sensors in the installation.
 
 Resource Type
 -------------------
@@ -33,10 +36,14 @@ Resource Type
 - **DIMMER**: Fibaro dimmer
 - **RGBW**: Fibaro RGBW device
 - **SHADE**: Fibaro Blind/Shade/Shutter
+- **THERMOSTAT_1SP**: Fibaro thermostat
 
 Resource Address
 -------------------
 **The resource address should be the devices ID number**. A unique integer number, assigned by your FIBARO system, that locates a specific device in the installation.
+
+**In the case of thermostats, you can define two IDs (Eg: _55;56_), the first corresponding to a thermostat, and the second to a temperature sensor (ideally one located in the same room).**
+If only one ID is provided for a thermostat resource, you will not have a reading of the room temperature (the TEMPERATURE value will copy the SETPOINT value). 
 
 Commands, Events and States
 -------------------------------
@@ -54,11 +61,19 @@ Commands, Events and States
   - **RAISE**: Set to maximum level of Shade.
   - **LOWER**: Set to minimum level of Shade.
   - **STOP**: Stop level transition of Shade.
+- Thermostat commands:
+  - **SET MODE**: Set the thermostat mode to Heat, Eco (equivalent to "Energy Save Heating" in Fibaro), Away, and Off. The four modes will be available in the BLI even if the thermostat only supports some of these modes.
+  - **SET SETPOINT**: Set the thermostat's setpoint in the current mode.
+
 
 Resource states
 ------------------------------
 - **LEVEL**: Level position of Shade/Blind or of the DIMMER device.
 - **STATE**: State of the ON/OFF device.
+- **MODE**: Thermostat's current mode.
+- **SETPOINT**: Thermostat's setpoint in its current mode. The value is displayed in whatever unit you have configured for your BLI.
+- **TEMPERATURE**: Temperature reading provided by a temperature sensor, you can associate one sensor to one thermostat, if you dont associate any sensor, the TEMPERATURE value will copy the SETPOINT value.
+
 
 Resource discovery
 ------------------
@@ -79,4 +94,9 @@ Discovered devices displaying "Enabled: false" in their description will probabl
  - Adds logs to the refreshState query
 ## v0.7 | 07/10/2020
  - Improves in-line setup help
-
+## v0.8 | 22/03/2021
+ - Added thermostats and temp sensors support
+ - Added motion sensor support
+ - Other minor changes
+## v0.9 | 07/04/2021
+ - Fixes dimmer resource type

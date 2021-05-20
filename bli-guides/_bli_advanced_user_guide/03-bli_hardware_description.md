@@ -8,7 +8,7 @@ layout: pagetoc
 Located on the back of the _BLI_:
 
 + *Power*: Powers the _BLI_. 
-+ *USB Port*: Used for service purposes.
++ *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
 + *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
 + *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
 
