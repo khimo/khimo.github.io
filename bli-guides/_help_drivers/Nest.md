@@ -8,6 +8,8 @@ ATTENTION!!
 **In May 2019, Nest/Google announced that the Nest API will be turned off at the end of August, 2019.
 This means that Nest is NO LONGER SUPPORTED on the BeoLiving Intelligence.**
 
+**Please take into account that deleting the system from your BLGW will deauthorize your PIN permanently, and you will not be able to reconnect. If you are migrating to the BLI, do not delete the Nest system from the BLGW.**
+
 
 Connection to Nest REST API
 --------------------------------------
