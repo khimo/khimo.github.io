@@ -51,3 +51,5 @@ collections_dir: bli-guides
 plugins:
   - jekyll-toc
   - jekyll-sitemap
+
+theme: jekyll-theme-cayman
