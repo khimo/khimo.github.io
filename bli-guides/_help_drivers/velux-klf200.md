@@ -37,6 +37,10 @@ To automatically find all connected resources, go and click the "Import resource
 
  - You have to specify the Area/Zone you want each, then click "Add" near the resources you want.
 
+**If you have scene resources with the same name on the Velux system, one of them will have to be renamed on the BLI as it does not support resources with the same name.**
+
+**Scene resource names must be less than 63 characters long.**
+
 ## Resource Events
 
 All resources are capable of sending STATE_UPDATE events, with varying information.
@@ -67,4 +71,7 @@ Press the "Capture" button, excecuted events sent by the systems in your install
  - Adds scene resource
 ### v0.3 | 07/10/2020
  - Improves in-line setup help
+### v0.4 | 06/01/2021
+ - Fixes wrong scene name & address on resources discovery
+
 *Please, report any issue with this driver to: support+drivers@khimo.com*

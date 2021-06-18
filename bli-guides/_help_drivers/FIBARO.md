@@ -100,3 +100,4 @@ Discovered devices displaying "Enabled: false" in their description will probabl
  - Other minor changes
 ## v0.9 | 07/04/2021
  - Fixes dimmer resource type
+
