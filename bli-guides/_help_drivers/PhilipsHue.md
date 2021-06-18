@@ -42,11 +42,11 @@ The Philips Hue driver supports commanding the lights, groups
 and scenes that are available for the configured user.
 
 The following resource types are available:
-+*On Off Light*: supports on/off control
-+*Dimmable Light*: supports on/off control and dimming
-+*Color Temperature Light*: supports on/off control, dimming and setting color temperature
-+*Color Light*: supports on/off control, dimming and setting color in either hue or color coordinates
-+*Extended Color Light*: supports on/off control, dimming, setting color (hue or color coordinates) and setting color temperature
++ **On Off Light**: supports on/off control
++ **Dimmable Light**: supports on/off control and dimming
++ **Color Temperature Light**: supports on/off control, dimming and setting color temperature
++ **Color Light**: supports on/off control, dimming and setting color in either hue or color coordinates
++ **Extended Color Light**: supports on/off control, dimming, setting color (hue or color coordinates) and setting color temperature
 
 Both lights and groups are mapped to the DIMMER Standard Resource
 type, and allow full control of every state variable, such as
