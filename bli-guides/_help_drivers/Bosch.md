@@ -1,3 +1,9 @@
+---
+title: Bosch
+layout: pagetoc
+---
+
+
 # Bosch Smart Home
 
 This driver supports communication with a Bosch Smart Home Controller,
