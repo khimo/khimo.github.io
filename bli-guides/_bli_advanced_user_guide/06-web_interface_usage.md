@@ -63,7 +63,7 @@ The User page displays in its left column every user that can access the _BLI_. 
 
 + **Change user password**: this can be done only on users that were created by _admin_.
 + Enable/Disable **User management access**: when selected, the user is allowed to manage users and user rights. As a general rule, this option should be set only for the home owner.
-+ Enable/Disable **Controller**: allows user to have access to _BLI_ via _BLApp_. When disabled, the only access the user has is via _WEBPANEL_.
++ Enable/Disable **Can edit config from the application**: when selected, the user is allowed to create scenes and edit device settings or zones from the BLApp.
 
 ##### Select zone access for user
 
