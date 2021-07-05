@@ -26,6 +26,8 @@ The available resource are:
 - **SHSW-25.dimmer (DIMMER)**: A Shelly 2.5 device as **relay** and represended by a ON/OFF DIMMER reource.
 - **SHSW-1 (DIMMER)**: A shelly 1 device represented by an ON/OFF DIMMER resource.
 - **SHSW-1.relay (GPIO)**: A shelly 1 device represented by an GPIO resource.
+- **SHPLG-S.relay (GPIO)**: A shelly plug device represented by an GPIO resource.
+- **SHPLG-S (DIMMER)**: A shelly plug device represented by an ON/OFF DIMMER resource.
 
 ## Resource Address
 
@@ -55,5 +57,10 @@ Resource discovery is available and will detect the corresponding resources that
 ### V0.5 | 24/02/2021
 - Minor corrections
 
-*Please, report any issue with this driver to: support+drivers@khimo.com*
+### V0.6 | 13/04/2021
+- Adds SHPLG-S support
 
+### V0.7 | 21/05/2021
+- Corrects nonDimmable definition
+
+*Please, report any issue with this driver to: support+drivers@khimo.com*

@@ -63,7 +63,7 @@ Once all the televisions are on, a HOME CONTROL command is sent. The door camera
 
 ~~~lua 
   if tostring(init_tvs[1].get("state"))~="Play" then
-    engine.wait_until("Main/Home Theater/AV renderer/"..tostring(init_tvs[1].name()).."/STATE_UPDATE?state=Play",15,0)
+    engine.wait_until("Reception/TVs/AV renderer/"..tostring(init_tvs[1].name()).."/STATE_UPDATE?state=Play",15,0)
   end
  
   engine.fire("Reception/TVs/AV renderer/*/Send command?Command=HOME CONTROL&Continue type=short_press")

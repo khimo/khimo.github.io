@@ -57,8 +57,7 @@ Then select options according to the following:
 
 + **User management access**: when selected, the user is allowed to administer users and user-rights. This option should be set for the owner of 
 the installation or a ‘superuser’ who is responsible for managing user access.
-+ **Edition of user macros**: when selected, the user is allowed to create and edit macros for the _BLApp_.  
-+ **Controller**: should normally be selected. Allows the user to access _BLI_ via _BLApp_. When disabled, the only access is via the _Webpanel_.
++ **Can edit config from the application**: when selected, the user is allowed to create scenes and edit device settings or zones from the _BLApp_.  
 
 ##### Select zone access for user
 
