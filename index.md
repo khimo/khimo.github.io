@@ -110,6 +110,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
+
     <tr>
       <td>IFTTT support</td>
       <td class="text-center">
@@ -119,6 +120,20 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
+
+    <tr title="Link multiple B&O Network Link products to make them work as one, playing always all at the same time">
+       <td>     
+       Product group
+       <a href="/bli-guides/bli-quick-setup-guide.html#products-groups"> <i class="fa fa-info-circle"></i> </a>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+
     <tr>
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
