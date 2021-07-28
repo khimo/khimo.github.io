@@ -102,7 +102,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Remote support specialist</td>
+      <td>Setting of a remote support specialist that can check and resolve issues remotely in real time</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
@@ -111,7 +111,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>IFTTT support</td>
+      <td>IFTTT support to create responses to events through simple commands</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
@@ -136,7 +136,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Web interface advanced configuration</td>
+      <td>Web interface advanced configuration that allows to edit/view zones, BeoLiving App interface, systems, resources among others including monitor and log for self-checking </td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -144,7 +144,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Control through its Web interface</td>
+      <td>Control through its Web interface using a webpanel that allows managment of various resources as in BeoLiving App</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -152,7 +152,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Bang & Olufsen Light & Control functions as Macro triggers</td>
+      <td>Use of Bang & Olufsen Light & Control functions as Macro triggers to create reactions in other products to these events</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -168,7 +168,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Lua Macro commands</td>
+      <td>Creation of rich and complex macros with Lua Macro commands</td>
       <td class="text-center">
       </td>
       <td class="text-center">
@@ -176,7 +176,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
-      <td>Customization of BeoLiving App</td>
+      <td>Customization of BeoLiving App including resource and macro managment as well as Remote Control</td>
       <td class="text-center">
       </td>
       <td class="text-center">
