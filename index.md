@@ -65,7 +65,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr title="Control resources and watch camaras direclty from the TV">
+    <tr title="Control resources and watch cameras direclty from the TV">
     <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -143,7 +143,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr title="Done by using a webpanel that allows managment of various resources as in BeoLiving App">
+    <tr title="Done by using a webpanel that allows management of various resources as in BeoLiving App">
       <td>Control through its Web interface</td>
       <td class="text-center">
       </td>
@@ -175,7 +175,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr title="Change aspects of app interface including resource and macro managment, also offers Remote Control">
+    <tr title="Change aspects of app interface including resource and macro management, also offers Remote Control">
       <td>Customization of BeoLiving App</td>
       <td class="text-center">
       </td>
