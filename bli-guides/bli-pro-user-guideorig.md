@@ -639,6 +639,8 @@ The configuration of several network cameras is permitted. To add a camera, pres
 </div>
 <br>
 
+To help expand the list of camera configuration, add yours [here](camera_form.md).
+
 ##### Camera basic configuration
 
 _BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
