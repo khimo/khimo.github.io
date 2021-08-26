@@ -396,3 +396,8 @@ The _BeoLink Gateway_ configuration is fully compatible with the _BeoLiving Inte
 #### Q: Where can I buy a BeoLiving Intelligence?
 
 You can buy the BeoLiving Intelligence from any Bang & Olufsen dealer or by contacting us at info@khimo.com
+
+
+
+
+To help expand the list of camera configuration, add yours [here](camera_form.md).
