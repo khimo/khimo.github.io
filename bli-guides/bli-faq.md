@@ -404,3 +404,5 @@ To help expand the list of camera configuration, add yours [here](camera_form.md
 
 To help expand the list of camera configuration, add yours [here](https://forms.gle/gmnRyVcy7sTrGjGy7).
 
+To help expand the list of camera configuration, add yours [here](camera_form2.md).
+
