@@ -182,7 +182,7 @@ copy and paste the text when setting up other similar cameras and for each of th
 > E.g. adjust to the correct 
 IP-address.
 
-This configuration can be the same for cameras of the same brand/model, click [here](/bli-guides/camera_configs.md) to access a list of configurations of other users and help expanding it by adding yours!
+This configuration can be the same for cameras of the same brand/model, click [here](https://khimo.github.io/bli-guides/camera_configs.md) to access a list of configurations of other users and help expanding it by adding yours!
 
 <br>
 <div class="text-center">
