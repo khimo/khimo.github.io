@@ -182,6 +182,8 @@ copy and paste the text when setting up other similar cameras and for each of th
 > E.g. adjust to the correct 
 IP-address.
 
+This configuration can be the same for cameras of the same brand/model, click [here](/bli-guides/_01-setup-bli-pro) to access a list of configurations of other users and help expanding it by adding yours!
+
 <br>
 <div class="text-center">
   <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
