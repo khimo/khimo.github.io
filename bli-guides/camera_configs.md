@@ -1,5 +1,5 @@
 ---
-title: A title for page
+title: Camera Configuration
 layout: pagetoc
 ---
 
