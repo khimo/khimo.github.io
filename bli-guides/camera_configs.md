@@ -5,10 +5,10 @@ layout: pagetoc
 
 ## HTTP cameras Resource path examples
 
-Below are some examples of cameras and their corresponding configuration... fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7)
+Below are some examples of cameras and their corresponding configuration. Fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7) to add your configuration to the table and help others to configure their own cameras!
 
 
-<table class="table">
+<table class="table" border=1>
 </table>
 
 
