@@ -1,5 +1,5 @@
 ---
-title: Camera Configuration
+title:  Camera Configuration
 layout: pagetoc
 ---
 
