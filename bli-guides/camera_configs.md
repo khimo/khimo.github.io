@@ -8,7 +8,7 @@ layout: pagetoc
 Below are some examples of cameras and their corresponding configuration. Fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7) to add your configuration to the table and help others to configure their own cameras!
 
 
-<table class="table" border=1>
+<table class="table">
 </table>
 
 
