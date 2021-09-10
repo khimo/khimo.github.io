@@ -108,7 +108,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	function SetupComment(msg) {
 		if (msg != "") {
   			var wrapper = document.createElement('div')
-  			wrapper.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert">' + msg + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  			wrapper.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert">' + msg + '<button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
   			var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
   			alertPlaceholder.append(wrapper)
 		}
