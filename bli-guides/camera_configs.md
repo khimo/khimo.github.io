@@ -40,6 +40,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    			row.appendChild(th);
 		  		}
 		    	let th = document.createElement("th");
+		    	th.setAttribute('style', "text-align:center")
 		    	let text = document.createTextNode(key);
 		    	th.appendChild(text);
 		    	row.appendChild(th);
@@ -82,11 +83,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 			var onclick = "SetupComment(\""+message+"\")"
 			console.log(onclick)
 			button.setAttribute('onclick', onclick)
-			var title = "Copy Raw Configuration to Clipboard"
-			if (message != "") {
-				title = title + "\nSetup Comments: \n" + message
-			}
-			button.setAttribute('title',title)
+			button.setAttribute('title',"Copy Raw Configuration to Clipboard")
 			var icon = document.createElement("i");
 			icon.classList.add("fa", "fa-clipboard");
 			button.appendChild(icon)
