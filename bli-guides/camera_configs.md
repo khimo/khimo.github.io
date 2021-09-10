@@ -7,11 +7,18 @@ layout: pagetoc
 
 Below are some examples of cameras and their corresponding configuration. Fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7) to add your configuration to the table and help others to configure their own cameras!
 
+<body id = "body">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 <table class="table">
 </table>
 
+</body>
+
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     var apiUrl = 'https://script.google.com/macros/s/AKfycbxcPLbjdRw8CdAyu_RBzAU3O8Mjx_Yd2J3enCykGcv1GmRu5JpxohSsDMza7BcxmLkPmg/exec';
@@ -40,7 +47,6 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    			row.appendChild(th);
 		  		}
 		    	let th = document.createElement("th");
-		    	th.setAttribute('style', "text-align:center")
 		    	let text = document.createTextNode(key);
 		    	th.appendChild(text);
 		    	row.appendChild(th);
@@ -71,31 +77,48 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    	new ClipboardJS('.btn');
 
 	    	let tick_cell = row.insertCell();
+	    	tick_cell.setAttribute('style', "text-align:center")
 	      	let list = document.createElement("ul");
 			CreateListItems(list,raw);
 
 	       	tick_cell.appendChild(list);
 
 	    	let button_cell = row.insertCell();
+
 	      	let button = document.createElement("BUTTON");
 			button.setAttribute('data-clipboard-text', raw)
 			button.setAttribute('class', "btn")
 			var onclick = "SetupComment(\""+message+"\")"
-			console.log(onclick)
 			button.setAttribute('onclick', onclick)
 			button.setAttribute('title',"Copy Raw Configuration to Clipboard")
+
 			var icon = document.createElement("i");
 			icon.classList.add("fa", "fa-clipboard");
 			button.appendChild(icon)
+
 			button_cell.setAttribute('style', "text-align:center")
 	      	button_cell.appendChild(button);
+
+
+	      	body = document.getElementById('body')
+	      	var div = document.createElement('div')
+	    	div.setAttribute('id',"liveAlertPlaceholder")
+	    	body.appendChild(div)
 	  	}
 	}
 
+	// function SetupComment(msg) {
+	// 	if (msg != "") {
+	// 		alert("Setup Comments: \n" + msg);
+	// 	} 
+	// }
 	function SetupComment(msg) {
 		if (msg != "") {
-			alert("Setup Comments: \n" + msg);
-		} 
+  			var wrapper = document.createElement('div')
+  			wrapper.innerHTML = '<div class="alert alert-success alert-dismissible" role="alert">' + msg + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  			var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  			alertPlaceholder.append(wrapper)
+		}
 	}
 
 
