@@ -185,17 +185,18 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
   </tbody>
 </table>
+
 <a id="Essential"/>
 
-**BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
-simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
-unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
+## Essential
 
-Also, migrating from _BeoLink Gateway_ to _BeoLiving Intelligence_ in _PRO_ mode is possible and only takes a few steps. If you are a 
-_BeoLink Gateway_ installer check our [quick introduction](bli-guides/bli-for-blgw-installers.md) explaining the main differences between both 
-controllers and instructions on how to migrate from one controller to another.
+**BeoLiving Intelligence Essential** is the fastlane towards Home Automation. Connect the BLI to your network and power it up, on the BeoLiving app for iOS* add your B&O speakers, Philips Hue lights, and ONVIF cameras, and configure simple automation _Scenes_ throught your house.
 
-## Start now!
+Recreate your home on the app* with all the zones you wish, and integrate your equipment with Voice Assistants such as Alexa or Google Assistant.
+
+> \* Configuration of a BLI Essential is only possible on the iOS BeoLiving app, the Android app allows _control_ but not _configuration_.
+
+### Start now!
 
 **BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it's ready to shine.
 
@@ -252,7 +253,16 @@ Watch an example of a simple home installation done in **only four minutes** usi
 
 
 <a id="PRO"/>
+
 ## PRO
+
+**BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
+simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
+unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
+
+Also, migrating from _BeoLink Gateway_ to _BeoLiving Intelligence_ in _PRO_ mode is possible and only takes a few steps. If you are a 
+_BeoLink Gateway_ installer check our [quick introduction](bli-guides/bli-for-blgw-installers.md) explaining the main differences between both 
+controllers and instructions on how to migrate from one controller to another.
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
 functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver. _BLI for BLGW 
