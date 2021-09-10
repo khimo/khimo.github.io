@@ -24,6 +24,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 		let datos = Object.keys(data[0]);
 		generateTableHead(table, datos);
 		generateTable(table, data);
+		sortTable()
 
     }).catch(err => {
       console.log('ERROR:', err)
@@ -42,6 +43,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    			row.appendChild(th);
 		  		}
 		    	let th = document.createElement("th");
+		    	th.setAttribute('style', "text-align:center")
 		    	let text = document.createTextNode(key);
 		    	th.appendChild(text);
 		    	row.appendChild(th);
@@ -100,11 +102,6 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
 	}
 
-	// function SetupComment(msg) {
-	// 	if (msg != "") {
-	// 		alert("Setup Comments: \n" + msg);
-	// 	} 
-	// }
 	function SetupComment(msg) {
 		if (msg != "") {
   			var wrapper = document.createElement('div')
@@ -154,5 +151,28 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	  		}
       	}
 	}
+	function sortTable() {
+	  var table, rows, switching, i, x, y, shouldSwitch;
+	  table = document.getElementById("table");
+	  switching = true;
+	  while (switching) {
+	    switching = false;
+	    rows = table.rows;
+	    for (i = 1; i < (rows.length - 1); i++) {
+	      shouldSwitch = false;
+	      x = rows[i].getElementsByTagName("TD")[1];
+	      y = rows[i + 1].getElementsByTagName("TD")[1];
+	      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+	        shouldSwitch = true;
+	        break;
+	      }
+	    }
+	    if (shouldSwitch) {
+	      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+	      switching = true;
+	    }
+	  }
+	}
+
 
 </script>
