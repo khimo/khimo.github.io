@@ -18,7 +18,6 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     var apiUrl = 'https://script.google.com/macros/s/AKfycbxcPLbjdRw8CdAyu_RBzAU3O8Mjx_Yd2J3enCykGcv1GmRu5JpxohSsDMza7BcxmLkPmg/exec';
