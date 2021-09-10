@@ -34,6 +34,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 		  	if (key != "Setup Comments") {
 		  		if (key == "Raw Config.") {
 		  			let th = document.createElement("th");
+		  			th.setAttribute('style', "text-align:center")
 	    			let text = document.createTextNode("Includes");
 	    			th.appendChild(text);
 	    			row.appendChild(th);
@@ -57,6 +58,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    		}
 	    		if ((key != "Raw Config.") && (key != "Setup Comments")) {
 	    			let cell = row.insertCell();
+	    			cell.setAttribute('style', "text-align:center")
 	      			let text = document.createTextNode(element[key]);
 	      			cell.appendChild(text);
 	      		} else if (key == "Raw Config.") {
@@ -77,6 +79,9 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	      	let button = document.createElement("BUTTON");
 			button.setAttribute('data-clipboard-text', raw)
 			button.setAttribute('class', "btn")
+			var onclick = "SetupComment(\""+message+"\")"
+			console.log(onclick)
+			button.setAttribute('onclick', onclick)
 			var title = "Copy Raw Configuration to Clipboard"
 			if (message != "") {
 				title = title + "\nSetup Comments: \n" + message
@@ -88,6 +93,12 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 			button_cell.setAttribute('style', "text-align:center")
 	      	button_cell.appendChild(button);
 	  	}
+	}
+
+	function SetupComment(msg) {
+		if (msg != "") {
+			alert("Setup Comments: \n" + msg);
+		} 
 	}
 
 
@@ -120,8 +131,12 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 		ZOOM = RawConfig["ZOOM1"] && RawConfig["ZOOM2"] && RawConfig["ZOOM3"];
     	for (let type of CameraTypes) {
     		if ((typeof RawConfig[type] !== 'undefined') || ((type == "PAN") && (typeof PAN !== 'undefined')) || ((type == "ZOOM") && (typeof ZOOM !== "undefined"))) {
+    			list.setAttribute('class', "fa-ul")
 		      	let list_item = document.createElement("li");
+		      	var bullet = document.createElement("i");
+	  			bullet.classList.add("fa-li","fa", "fa-check");
 	  			list_item.innerHTML = type
+	  			list_item.appendChild(bullet)
 	  			list.appendChild(list_item)
 	  		}
       	}
