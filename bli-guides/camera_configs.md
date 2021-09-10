@@ -7,15 +7,11 @@ layout: pagetoc
 
 Below are some examples of cameras and their corresponding configuration. Fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7) to add your configuration to the table and help others to configure their own cameras!
 
-<body id = "body">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<table class="table">
+<table class="table" id="table">
 </table>
-
-</body>
 
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
 
@@ -97,13 +93,11 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 
 			button_cell.setAttribute('style', "text-align:center")
 	      	button_cell.appendChild(button);
-
-
-	      	body = document.getElementById('body')
-	      	var div = document.createElement('div')
-	    	div.setAttribute('id',"liveAlertPlaceholder")
-	    	body.appendChild(div)
 	  	}
+	  	table = document.getElementById('table')
+	    var div = document.createElement('div')
+	    div.setAttribute('id',"liveAlertPlaceholder")
+	    table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
 	}
 
 	// function SetupComment(msg) {
