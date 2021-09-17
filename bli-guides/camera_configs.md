@@ -108,7 +108,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	   //  table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
 	}
 
-	function SetupComment(msg) {
+	function SetupComment(msg,i) {
 		if (msg != "") {
   			var wrapper = document.createElement('div')
   			wrapper.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
