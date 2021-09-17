@@ -54,6 +54,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	function generateTable(table, data) {
 		let raw = 0
 		let message = 0
+		let item = 0
 		for (let element of data) {
 	    	let row = table.insertRow();
 	    	for (key in element) {
@@ -72,6 +73,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	      		}
 	    	}
 	    	new ClipboardJS('.btn');
+	    	item = item + 1
 
 	    	let tick_cell = row.insertCell();
 	    	tick_cell.setAttribute('style', "text-align:center")
@@ -85,7 +87,7 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	      	let button = document.createElement("BUTTON");
 			button.setAttribute('data-clipboard-text', raw)
 			button.setAttribute('class', "btn")
-			var onclick = "SetupComment(\""+message+"\")"
+			var onclick = "SetupComment(\""+message+"\","+item.toString()+")"
 			button.setAttribute('onclick', onclick)
 			button.setAttribute('title',"Copy Raw Configuration to Clipboard")
 
@@ -95,18 +97,22 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 
 			button_cell.setAttribute('style', "text-align:center")
 	      	button_cell.appendChild(button);
+
+	      	var div = document.createElement('div')
+	      	div.setAttribute('id',"liveAlertPlaceholder"+item.toString())
+	      	row.insertBefore(div,button_cell.nextSibling)
 	  	}
-	  	table = document.getElementById('table')
-	    var div = document.createElement('div')
-	    div.setAttribute('id',"liveAlertPlaceholder")
-	    table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
+	  	// table = document.getElementById('table')
+	   //  var div = document.createElement('div')
+	   //  div.setAttribute('id',"liveAlertPlaceholder")
+	   //  table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
 	}
 
 	function SetupComment(msg) {
 		if (msg != "") {
   			var wrapper = document.createElement('div')
   			wrapper.innerHTML = '<div class="alert alert-success alert-dismissible fade show" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>'
-  			var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  			var alertPlaceholder = document.getElementById('liveAlertPlaceholder'+i.toString())
   			alertPlaceholder.append(wrapper)
 		}
 	}
