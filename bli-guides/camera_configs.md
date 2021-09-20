@@ -7,6 +7,8 @@ layout: pagetoc
 
 Below are some examples of cameras and their corresponding configuration. Fill this [form](https://forms.gle/gmnRyVcy7sTrGjGy7) to add your configuration to the table and help others to configure their own cameras!
 
+The table offers a button that will copy the Raw Configuration of the camera to your clipboard, this configuration should later be copied to "Interfaces" under "Camera resources path" after clicking "Raw Edit" in the desired camera. Some setup comments will appear once the button is clicked if they are available. 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -74,38 +76,44 @@ Below are some examples of cameras and their corresponding configuration. Fill t
 	    	}
 	    	new ClipboardJS('.btn');
 	    	item = item + 1
-
 	    	let tick_cell = row.insertCell();
 	    	tick_cell.setAttribute('style', "text-align:center")
-	      	let list = document.createElement("ul");
-			CreateListItems(list,raw);
+	    	if (raw.includes("ONVIF")) {
+	      		let text = document.createTextNode("ONVIF");
+	      		tick_cell.appendChild(text);
 
-	       	tick_cell.appendChild(list);
+	      		let button_cell = row.insertCell();
+	      		button_cell.setAttribute('style', "text-align:center")
+				var icon = document.createElement("i");
+				icon.classList.add("fa", "fa-minus");
+				button_cell.appendChild(icon)	      		
+	    	} else {
+	      		let list = document.createElement("ul");
+				CreateListItems(list,raw);
+				tick_cell.appendChild(list);
 
-	    	let button_cell = row.insertCell();
+				let button_cell = row.insertCell();
 
-	      	let button = document.createElement("BUTTON");
-			button.setAttribute('data-clipboard-text', raw)
-			button.setAttribute('class', "btn")
-			var onclick = "SetupComment(\""+message+"\","+item.toString()+")"
-			button.setAttribute('onclick', onclick)
-			button.setAttribute('title',"Copy Raw Configuration to Clipboard")
+		      	let button = document.createElement("BUTTON");
+				button.setAttribute('data-clipboard-text', raw)
+				button.setAttribute('class', "btn")
+				var onclick = "SetupComment(\""+message+"\","+item.toString()+")"
+				button.setAttribute('onclick', onclick)
+				button.setAttribute('title',"Copy Raw Configuration to Clipboard")
 
-			var icon = document.createElement("i");
-			icon.classList.add("fa", "fa-clipboard");
-			button.appendChild(icon)
+				var icon = document.createElement("i");
+				icon.classList.add("fa", "fa-clipboard");
+				button.appendChild(icon)
 
-			button_cell.setAttribute('style', "text-align:center")
-	      	button_cell.appendChild(button);
+				button_cell.setAttribute('style', "text-align:center")
+		      	button_cell.appendChild(button);
 
-	      	var div = document.createElement('div')
-	      	div.setAttribute('id',"liveAlertPlaceholder"+item.toString())
-	      	row.insertBefore(div,button_cell.nextSibling)
+		      	var div = document.createElement('div')
+		      	div.setAttribute('id',"liveAlertPlaceholder"+item.toString())
+		      	row.insertBefore(div,button_cell.nextSibling)
+	    	}
+
 	  	}
-	  	// table = document.getElementById('table')
-	   //  var div = document.createElement('div')
-	   //  div.setAttribute('id',"liveAlertPlaceholder")
-	   //  table.parentNode.insertBefore(div,table.parentNode.childNodes[0])
 	}
 
 	function SetupComment(msg,i) {
