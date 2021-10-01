@@ -29,7 +29,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr title="Either by using the App like a control or by setting daily scenes">
       <td>Control of Bang & Olufsen products</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -38,7 +38,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Adjust your smart lightning easily">
       <td>Control of Philips Hue products</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -47,7 +47,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Watch and control cameras through phone or TV">
       <td>Control of ONVIF enabled cameras</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -56,7 +56,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control resources, activate scenes, watch cameras among others in your phone">
       <td>Control through BeoLiving App</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -65,7 +65,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control resources and watch cameras direclty from the TV">
     <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -74,7 +74,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Set actions that can be triggered by pressing a button or by a timer">
       <td>Create Scenes through BeoLiving App</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -83,7 +83,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through voice commands to Alexa">
       <td>Voice control through Alexa</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -92,7 +92,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through voice commands to Google Assistant">
       <td>Voice control through Google Assistant</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -101,7 +101,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="A remote support specialist can check and resolve issues remotely in real time">
       <td>Remote support specialist</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -110,7 +110,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="If This Then That allows to create responses to events through simple commands">
       <td>IFTTT support</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -129,6 +129,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
       </td>
     </tr>
     <tr>
+    <tr title="Presents a large and always-expanding selection of brands">
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
       </td>
@@ -136,7 +137,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through shortcuts and voice commands to Siri">
       <td>Voice control and remote control through Siri Shortcuts</td>
       <td class="text-center">
       </td>
@@ -144,7 +145,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Expands the possibilities of the BLI by allowing to edit/view: zones, BeoLiving App interface, systems, resources among others including monitor and log for self-checking">
       <td>Web interface advanced configuration</td>
       <td class="text-center">
       </td>
@@ -152,7 +153,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Done by using a webpanel that allows management of various resources as in BeoLiving App">
       <td>Control through its Web interface</td>
       <td class="text-center">
       </td>
@@ -160,7 +161,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Allows to create instant reactions in other products to various of these events">
       <td>Bang & Olufsen Light & Control functions as Macro triggers</td>
       <td class="text-center">
       </td>
@@ -176,7 +177,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Allows the creation of rich and complex macros that adjust better to specific needs">
       <td>Lua Macro commands</td>
       <td class="text-center">
       </td>
@@ -184,7 +185,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Change aspects of app interface including resource and macro management, also offers Remote Control">
       <td>Customization of BeoLiving App</td>
       <td class="text-center">
       </td>
