@@ -26,7 +26,7 @@ Locks aren't visible in the app, to use it there are two options:
 	This macro should include 2 events: one with the Virtual Button as a resource and "PRESS" as the event, and the other with your Nuki Smart Lock as a resource and "STATE_UPDATE" as the event (with nothing checked). 
 	
 Below is a sample macro code that should be included as the command after pressing *Convert to code* in the Macros view. Remember to change the names of the Area, Zone, Smartlock and the Virtual Button, otherwise it won't work. 
-For more tips and information about the BLI's lua macros, see [here](../manuals/howto-lua-macros).
+For more tips and information about the BLI's lua macros, see [here](../../bli-guides/manuals/howto-lua-macros).
 
 	function(event, engine)
 	  your_area = "YOUR_AREA"
@@ -54,7 +54,8 @@ For more tips and information about the BLI's lua macros, see [here](../manuals/
 
 
 ## Changelog
-**v0.1**
-  * First version
+
+### v0.1
+ - * First version
   
 *Please, report any issue with this driver to: support+drivers@khimo.com*

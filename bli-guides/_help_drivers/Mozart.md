@@ -33,4 +33,5 @@ Once the BeoCloud account is linked with the BLI, all of the NetRadio content wi
 ## Changelog
 ### v0.2 | 2021/04/28
  - Initial version
+ 
 *Please, report any issue with this driver to: support+drivers@khimo.com*

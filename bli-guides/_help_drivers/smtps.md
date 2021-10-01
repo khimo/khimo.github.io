@@ -19,7 +19,10 @@ After that use the following connection settings in the BeoLiving Intelligence:
 - Account username: you@gmail.com 
 - Account password: [the special password that you created for this use]
 
-# Change log
-## v0.1 | Initial release
+
+## Changelog
+
+### v0.1
+ - * Initial release
 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
