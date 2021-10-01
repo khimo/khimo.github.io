@@ -56,6 +56,6 @@ For more tips and information about the BLI's lua macros, see [here](../../bli-g
 ## Changelog
 
 ### v0.1
- - * First version
+ - First version
   
 *Please, report any issue with this driver to: support+drivers@khimo.com*
