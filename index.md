@@ -29,7 +29,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr title="Either by using the App like a control or by setting daily scenes">
       <td>Control of Bang & Olufsen products</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -38,7 +38,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Adjust your smart lightning easily">
       <td>Control of Philips Hue products</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -47,7 +47,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Watch and control cameras through phone or TV">
       <td>Control of ONVIF enabled cameras</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -56,7 +56,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control resources, activate scenes, watch cameras among others in your phone">
       <td>Control through BeoLiving App</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -65,7 +65,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control resources and watch cameras direclty from the TV">
     <td>Control through Bang & Olufsen's TVs</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -74,7 +74,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Set actions that can be triggered by pressing a button or by a timer">
       <td>Create Scenes through BeoLiving App</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -83,7 +83,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through voice commands to Alexa">
       <td>Voice control through Alexa</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -92,7 +92,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through voice commands to Google Assistant">
       <td>Voice control through Google Assistant</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -101,7 +101,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="A remote support specialist can check and resolve issues remotely in real time">
       <td>Remote support specialist</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -110,7 +110,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="If This Then That allows to create responses to events through simple commands">
       <td>IFTTT support</td>
       <td class="text-center">
         <i class="fa fa-check" style="color: #eb5946"></i>
@@ -119,7 +119,16 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Automatically creates pages with scenes, lights, shades and thermostats relative to the room where it is located">
+      <td>Halo Remote automatic configuration</td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>
+    <tr title="Presents a large and always-expanding selection of brands">
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
       </td>
@@ -127,7 +136,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Control all resources and fire macros through shortcuts and voice commands to Siri">
       <td>Voice control and remote control through Siri Shortcuts</td>
       <td class="text-center">
       </td>
@@ -135,7 +144,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Expands the possibilities of the BLI by allowing to edit/view: zones, BeoLiving App interface, systems, resources among others including monitor and log for self-checking">
       <td>Web interface advanced configuration</td>
       <td class="text-center">
       </td>
@@ -143,7 +152,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Done by using a webpanel that allows management of various resources as in BeoLiving App">
       <td>Control through its Web interface</td>
       <td class="text-center">
       </td>
@@ -151,7 +160,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Allows to create instant reactions in other products to various of these events">
       <td>Bang & Olufsen Light & Control functions as Macro triggers</td>
       <td class="text-center">
       </td>
@@ -167,7 +176,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Allows the creation of rich and complex macros that adjust better to specific needs">
       <td>Lua Macro commands</td>
       <td class="text-center">
       </td>
@@ -175,7 +184,7 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
+    <tr title="Change aspects of app interface including resource and macro management, also offers Remote Control">
       <td>Customization of BeoLiving App</td>
       <td class="text-center">
       </td>
@@ -183,19 +192,28 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
+    <tr title="Create buttons with specific behaviors or create your own through lua macros">
+      <td>Customization of Halo Remote</td>
+      <td class="text-center">
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>    
   </tbody>
 </table>
+
 <a id="Essential"/>
 
-**BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
-simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
-unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
+## Essential
 
-Also, migrating from _BeoLink Gateway_ to _BeoLiving Intelligence_ in _PRO_ mode is possible and only takes a few steps. If you are a 
-_BeoLink Gateway_ installer check our [quick introduction](bli-guides/bli-for-blgw-installers.md) explaining the main differences between both 
-controllers and instructions on how to migrate from one controller to another.
+**BeoLiving Intelligence Essential** is the fastlane towards Home Automation. Connect the BLI to your network and power it up, on the BeoLiving app for iOS* add your B&O speakers, Philips Hue lights, and ONVIF cameras, and configure simple automation _Scenes_ throught your house.
 
-## Start now!
+Recreate your home on the app* with all the zones you wish, and integrate your equipment with Voice Assistants such as Alexa or Google Assistant.
+
+> \* Configuration of a BLI Essential is only possible on the iOS BeoLiving app, the Android app allows _control_ but not _configuration_.
+
+### Start now!
 
 **BeoLiving Intelligence** does not need an installer, a few simple, non technical steps and it's ready to shine.
 
@@ -252,7 +270,16 @@ Watch an example of a simple home installation done in **only four minutes** usi
 
 
 <a id="PRO"/>
+
 ## PRO
+
+**BeoLiving Intelligence PRO** transforms into the custom installer dream controller. With its Real-Time Configuration platform, it provides the 
+simplest yet most powerful way to integrate, control and automate an entire home. Even if you don't own any **Bang & Olufsen** products, your 
+unique home automation and audio/video ecosystem will be accessible as one entity through the expertly crafted **BeoLiving App**.
+
+Also, migrating from _BeoLink Gateway_ to _BeoLiving Intelligence_ in _PRO_ mode is possible and only takes a few steps. If you are a 
+_BeoLink Gateway_ installer check our [quick introduction](bli-guides/bli-for-blgw-installers.md) explaining the main differences between both 
+controllers and instructions on how to migrate from one controller to another.
 
 To experience all of what **BeoLiving Intelligence** is capable of, upgrade to its **PRO** mode. Go to the _PRO User guide_ to learn all of its 
 functionalities and features, and refer to the _System drivers guide_ if you want information about a specific supported driver. _BLI for BLGW 
