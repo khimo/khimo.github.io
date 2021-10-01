@@ -128,7 +128,6 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>
-    <tr>
     <tr title="Presents a large and always-expanding selection of brands">
       <td>Integration with most popular Home Automation brands</td>
       <td class="text-center">
