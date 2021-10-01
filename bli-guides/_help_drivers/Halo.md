@@ -45,11 +45,11 @@ There can be a maximum of 8 buttons per page, each button is customizible and, w
 
 The **behavior** will state the purpose of the remote's button, this means that each behavior will cause the remote to work differently to better adapt to the resource type. Currently, the offered behaviors are:
 
- - *Dimmer*: Wheel dimmerizes or turns on/off lights (whichever applies). Raise/On and Lower/Off correspond to a clockwise and anticlockwise rotation, respectively. The behavior Dimmer - Color is also available where the wheel changes the color of lights by updating the hue.
- - *Shade*: Opens and closes shades with a clockwise and anticlockwise rotation, respectively. A strong turn will fully open/close shades, a gentle turn will cause shades to slowly advance and stop. If shades with tilt (or only tilt) are present, another button with behavior Shade - Tilt should be created to manage it.
- - *Scene*: Selecting the button causes selected scenes to fire.
- - *Thermostat*: Thermostats work with three buttons that have different behaviors. The first one is MODE, in which the mode is chosen between those available in the thermostat, by moving the wheel. The second and third one are SETPOINTS, one for COOL and one for HEAT, where the wheel will change the setpoint of the selected mode.
- - *Handle by custom macros*: This allows the user to create a custom behavior in *Macros*. The Halo offers events like "WHEEL TURNED", "PRESSED BUTTON", "ONLINE" and so on as well as commands to set title, subtitle and wheel level among others. An example of how to set this up can be found on the Khimo documentation website.
+ - **Dimmer**: Wheel dimmerizes or turns on/off lights (whichever applies). Raise/On and Lower/Off correspond to a clockwise and anticlockwise rotation, respectively. The behavior **Dimmer - Color** is also available where the wheel changes the color of lights by updating the hue.
+ - **Shade**: Opens and closes shades with a clockwise and anticlockwise rotation, respectively. A strong turn will fully open/close shades, a gentle turn will cause shades to slowly advance and stop. If shades with tilt (or only tilt) are present, another button with behavior **Shade - Tilt** should be created to manage it.
+ - **Scene**: Selecting the button causes selected scenes to fire.
+ - *Thermostat*: Thermostats work with three buttons that have different behaviors. The first one is **MODE**, in which the mode is chosen between those available in the thermostat, by moving the wheel. The second and third one are **SETPOINTS**, one for **COOL** and one for **HEAT**, where the wheel will change the setpoint of the selected mode.
+ - **Handle by custom macros**: This allows the user to create a custom behavior in *Macros*. The Halo offers events like "WHEEL TURNED", "PRESSED BUTTON", "ONLINE" and so on as well as commands to set title, subtitle and wheel level among others. An example of how to set this up can be found on the Khimo documentation website.
 
 The **Resources** dictate which resources will be affected by the button. The button can control any amount of resources, it is recommended to use resources of the same kind in a single button (eg: dimmable/non-dimmable), nevertheless, any kind is supported. 
 
@@ -76,3 +76,5 @@ Setting this option will get the available scenes and resources of the current r
 
 #### v0.1 | 02/09/2021
  - First version supporting the integration of the Beoremote Halo with the BLI.
+
+*Please, report any issue with this driver to: support+drivers@khimo.com*

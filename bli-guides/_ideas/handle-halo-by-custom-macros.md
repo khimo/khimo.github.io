@@ -1,5 +1,5 @@
 ---
-title: Halo configuration with Macros
+title: Halo configuration with macros
 description: Disarm an alarm with the BeoRemote Halo through a macro
 layout: pagetoc
 ---
@@ -10,7 +10,7 @@ This guide shows an example of how to control the BeoRemote Halo through a macro
 
 The Halo configuration page can be found in the *Interfaces* tab. Firstly, a button should be created in any page, if no pages exist one should be created too. After choosing a title, subtitle and icon, the behavior "Handle by custom macros" must be chosen. The button and page number should be remembered as they will be used later.
 
-How to create a page and a button, as well as more information on behaviors and resources, can be found in the [help](../_help_drivers/Halo) document of the Halo. 
+How to create a page and a button, as well as more information on behaviors and resources, can be found in the [help](../../help_drivers/Halo) document of the Halo. 
 
 ### Macro configuration
 A rotary lock works by turning the inner wheel in different directions while choosing the correct numbers. One would have to rotate the handle clockwise until the correct number is selected, then, proceed to choose the next number with an anticlockwise rotation and so on.

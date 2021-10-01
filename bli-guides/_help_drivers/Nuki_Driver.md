@@ -8,25 +8,25 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 ## Connecting
 To connect to the Nuki bridge, simply set the IP of the Nuki bridge, the bridge LED will start blinking and the bridge button must be pressed within 30 seconds.
 **The HTTP API must be activated in the *Nuki Bridge* menu to be able to connect to the bridge**
-A Poll Interval must be chosen, this will be the time between status updates.
 
 
 ## Adding resources
 Adding a resource can be done by introducing the resource's Nuki Id as address or, **preferably** by pressing the *Import resources* button and then *Load
-resources from connected system*.
+resources from connected system*. If the resource is not discovered, check in the Nuki web interface if it's online.
 
 ## Supported resources
 Currently only Nuki SmartLocks are supported, it is possible to lock (STATE = 0) and unlock (STATE = 1) as well set different lock action. Also it can check the battery, door and connection states.
 
 ## Lock in BeoLiving APP
 Locks aren't visible in the app, to use it there are two options:
-- Create Macros for locking and unlocking and make then visible in the scene view.
+- Create Macros for locking and unlocking and make them visible in the scene view.
 - Better way:
-	1. Add a *Virtual resource* of type *Virtual button with LED*, check the option *Confirm* in the *Interface* tab (to avoid accidental pressing of the button).
+	1. Add a *Virtual resource* of type *Virtual button with LED*, then in the *Interface* tab, check the option *Confirm* of the virtual button (to avoid accidental pressing of the button).
 	2. Create a macro that will, after pressing the virtual button, lock or unlock the lock (depending on previous state) and turn ON or OFF the LED (LED will be OFF if locked, ON if unlocked). 
 	This macro should include 2 events: one with the Virtual Button as a resource and "PRESS" as the event, and the other with your Nuki Smart Lock as a resource and "STATE_UPDATE" as the event (with nothing checked). 
 	
-Below is a sample macro code that could be included after pressing *Convert to code* in the Macros view (Area, Zone and Names should be changed).
+Below is a sample macro code that should be included as the command after pressing *Convert to code* in the Macros view. Remember to change the names of the Area, Zone, Smartlock and the Virtual Button, otherwise it won't work. 
+For more tips and information about the BLI's lua macros, see [here](../manuals/howto-lua-macros).
 
 	function(event, engine)
 	  your_area = "YOUR_AREA"
@@ -56,3 +56,5 @@ Below is a sample macro code that could be included after pressing *Convert to c
 ## Changelog
 **v0.1**
   * First version
+  
+*Please, report any issue with this driver to: support+drivers@khimo.com*

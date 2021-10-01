@@ -21,3 +21,5 @@ After that use the following connection settings in the BeoLiving Intelligence:
 
 # Change log
 ## v0.1 | Initial release
+
+*Please, report any issue with this driver to: support+drivers@khimo.com*
