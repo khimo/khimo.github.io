@@ -1,9 +1,11 @@
 ---
-title: Tuya - homeassistant API (community)
+title: Tuya - homeassistant API (community) | DISCONTINUED
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-# TuyaAPI driver | Integrates tuya devices using the open homeassistant API
+# TuyaAPI driver | Integrates tuya devices using the open homeassistant API | DISCONTINUED
+
+**Warning**: 2021-10-12: Tuya disabled the use of the open homeassistant API for new users.
 
 This API has restrictions, a status update could only be requested every 10 minutes, but it is quite fast reacting to BLI commands.
 
