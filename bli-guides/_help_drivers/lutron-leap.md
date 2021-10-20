@@ -11,9 +11,6 @@ systems.
 LEAP development is ongoing so only those devices and features already supported
 by the protocol at the time of developing this driver are supported.
 
-*Buttons are not supported.*
-Dimmers, Shades and Switches are supported.
-
 ## Connecting
 
 To connect to a Lutron device add the system and set the IP address at the
@@ -30,6 +27,65 @@ Under the *Resources* menu, press the *Import resources* button and then *Load
 resources from connected system*, all supported devices connected to your Lutron
 bridge should show up to be added.
 
+## Supported resources
+
+There are some differences within LEAP between HomeWorks setups and Ra2 Select/Caseta setups,
+this driver intends to overcome this differences but there are some resources that were available
+for testing in one kind of setup and not the other.
+
+### BUTTON
+Button without feedback, good for Pico controls, but can be used for any Lutron Button.
+
+### BUTTON WITH LED
+Button with feedback LED, used for Keypads.
+Only available for HomeWorks setups.
+
+### DIMMER
+Simple dimmer with Level, used for Lutron *Dimmed* zones.
+
+### SWITCH
+Light with on/off functionality, used for Lutron *Switched* zones.
+
+### SHADE
+Shade with Level, and Raise/Lower/Stop functionality, used for Lutron *Shade* zones.
+*Not available in test setup, should work as it is pretty similar to ShadeWithTilt, but was not tested.*
+
+### SHADE WITH TILT
+Shade with Level and Tilt, has Raise/Lower/Stop functionality and also Raise tilt/Lower tilt/Stop tilt, used for Lutron *ShadeWithTilt* zones.
+
+### SHADE WITH TILT WHEN CLOSED
+Shade with Level and Tilt, has Raise/Lower/Stop functionality and also Raise tilt/Lower tilt/Stop tilt, used for Lutron *ShadeWithTiltWhenClosed* zones.
+*Not available in test setup, should work as it is pretty similar to ShadeWithTilt, but was not tested.*
+
+### TILT
+Shade with Tilt but no Level, has Raise tilt/Lower tilt/Stop tilt functionality, used for Lutron *Tilt* zones.
+*Not available in test setup, should work as it is pretty similar to ShadeWithTilt, but was not tested.*
+
+### KETRA DIMMER
+Dimmer with Level, Color, Vibrancy and Color temperature.
+Has SET, SET COLOR, SET VIBRANCY and SET COLOR TEMPERATURE commands.
+Used for SpectrumTune Lutron zones.
+Only available for HomeWorks setups.
+
+### OCCUPANCY
+GPIO with state, but no commands, reflects the current state of a Lutron Area occupancy. 
+_OCCUPANCY reflects exactly the Lutron state, while STATE is 1 if the Area is Occupied and 0 otherwise.
+*This was not tested for Ra2 Select/Caseta, so it might be unstable.*
+
+### WHITE TUNE
+Dimmer with Level and Color temperature. Has SET and SET COLOR TEMPERATURE commands.
+Used for WhiteTune Lutron zones.
+Only available for HomeWorks setups.
+
+### AREA SCENE
+Button with state, PRESS command selects it as the active scene for the corresponding area.
+State indicates whether it is active, inactive or no scene is active.
+
+### PRESET
+Button with PRESS command to activate it. 
+Only Presets used on buttons or area scenes are retireved automatically, 
+but knowing a preset href one could add it manually to use it.
+
 <!-- TODO:
 
 Discovery
@@ -42,7 +98,6 @@ add here if not compatible with old driver, also there is in the new protocol
 a user/password authentication described but not developed/working/etc.
 
 More resource types:
- | SpectrumTune            | A zone capable of going to a color, vibrancy, and brightness. This control type is commonly used to describe control of Ketra products. | GoToSpectrumTuningLevel, Raise , Lower , Stop         |
  | HVAC                    | An HVAC zone for controlling temperature                                                                                                | not supported                                         |
  | Receptacle              | A receptacle zone                                                                                                                       | GoToReceptacleLevel                                   |
  | CCO                     | A CCO zone                                                                                                                              | GoToCCOLevel                                          |
