@@ -5,6 +5,8 @@ layout: pagetoc
 
 _BeoLiving Intelligence_ is a Plug & Play home automation controller. The next steps show how to quickly set up your _BeoLiving Intelligence_.
 
+> Note: Take into account that **full configuration is only available on the iOS version of the BeoLiving app**. The Android version will allow you to **control** products and create scenes, but NOT add new devices (B&O, Philips Hue or ONVIF).
+
 ## Setting up the _BeoLiving Intelligence_ {#setup}
 
 > By default, _BeoLiving Intelligence_ comes configured in DHCP mode. This means it gets its IP address from the router it is connected to. To 
@@ -34,6 +36,8 @@ by the serial number located at the back side of each.
 
 ## Adding Bang & Olufsen products {#add-BEOproducts}
 
+> This is only possible on the iOS version of the BeoLiving app (not on the Android version).
+
 1. **Go to App and press "Add products"**
     - In the main screen of the _BeoLiving App_, select your _BeoLiving Intelligence_ and click on "Add products". A list of the supported products that are on the same network will appear.
 1. **Create zone**
@@ -46,6 +50,8 @@ You can **add more products to that zone, edit products name, change products fr
 Note that only one icon per type of product will appear in the zone.
 
 ## Adding Philips Hue and ONVIF cameras {#add-hueandONVIF}
+
+> This is only possible on the iOS version of the BeoLiving app (not on the Android version).
 
 1. **Go to App and press "Add products"**
     - In the main screen of the _BeoLiving App_, select your _BeoLiving Intelligence_ and click on "Add products".
