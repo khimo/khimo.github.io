@@ -440,7 +440,7 @@ troubles or malfunction, please refer to our _Troubleshooting Guide_.
 
 ## Contact
 
-For assistance with any issues concerning the BeoLiving Intelligence or the BeoLiving app, don't hesitate to send us an email at support@khimo.com 
+For assistance with any issues concerning the BeoLiving Intelligence or the BeoLiving app, don't hesitate to send us an email at support@khimo.com or leave a message at *+1 (305) 692 0362* (we will call you back).
 
 Please include detailed information about your issue.
 > E.g. BLI's serial number, firmware version and mode (Essential or Pro), screenshots that illustrate an error, etc.   
