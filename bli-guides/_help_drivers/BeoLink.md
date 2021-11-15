@@ -145,10 +145,10 @@ mobile application that the product is controlled via the Beo4 navigation button
 Otherwise it will instruct the mobile application to use the legacy commands.
 
 
-## Speaker Groups
+## Product Groups
 
 The BeoLink system allows you to make groups of NetworkLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
 
-The Speaker Group's configuration is shown under Systems. When you select the BeoLink system, the configured speaker groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
+The Product Group's configuration is shown under Systems. When you select the BeoLink system, the configured product groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
 
 For a new group to be created you need to select a Main product for the group and at least one Follower, if not, the group won't be created.
