@@ -78,41 +78,40 @@ The table offers a button that will copy the Raw Configuration of the camera to 
 	    	item = item + 1
 	    	let tick_cell = row.insertCell();
 	    	tick_cell.setAttribute('style', "text-align:center")
-	    	if (raw.includes("ONVIF")) {
+	    	var onvif = raw.includes("ONVIF")
+	    	if (onvif) {
 	      		let text = document.createTextNode("ONVIF");
 	      		tick_cell.appendChild(text);
-
-	      		let button_cell = row.insertCell();
-	      		button_cell.setAttribute('style', "text-align:center")
-				var icon = document.createElement("i");
-				icon.classList.add("fa", "fa-minus");
-				button_cell.appendChild(icon)	      		
-	    	} else {
+	      	} else {
 	      		let list = document.createElement("ul");
 				CreateListItems(list,raw);
 				tick_cell.appendChild(list);
+			}
 
-				let button_cell = row.insertCell();
+	      	let button_cell = row.insertCell();
 
-		      	let button = document.createElement("BUTTON");
-				button.setAttribute('data-clipboard-text', raw)
-				button.setAttribute('class', "btn")
-				var onclick = "SetupComment(\""+message+"\","+item.toString()+")"
-				button.setAttribute('onclick', onclick)
-				button.setAttribute('title',"Copy Raw Configuration to Clipboard")
+      		let button = document.createElement("BUTTON")
+      		button.setAttribute('data-clipboard-text', raw)
+      		button.setAttribute('class', "btn")
+      		var onclick = "SetupComment(\""+message+"\","+item.toString()+")"
+      		button.setAttribute('onclick', onclick)
+      		var icon = document.createElement("i");
+      		if (onvif) {
+      			button.setAttribute('title',"Useful information")
+      			icon.classList.add("fa", "fa-info-circle")
+      		} else {
+      			button.setAttribute('title',"Copy Raw Configuration to Clipboard")
+      			icon.classList.add("fa", "fa-clipboard")
+      		}
 
-				var icon = document.createElement("i");
-				icon.classList.add("fa", "fa-clipboard");
-				button.appendChild(icon)
+			button.appendChild(icon)
 
-				button_cell.setAttribute('style', "text-align:center")
-		      	button_cell.appendChild(button);
+      		button_cell.setAttribute('style', "text-align:center")
+      		button_cell.appendChild(button);   
 
-		      	var div = document.createElement('div')
-		      	div.setAttribute('id',"liveAlertPlaceholder"+item.toString())
-		      	row.insertBefore(div,button_cell.nextSibling)
-	    	}
-
+	      	var div = document.createElement('div')
+	      	div.setAttribute('id',"liveAlertPlaceholder"+item.toString())
+	      	row.insertBefore(div,button_cell.nextSibling)  
 	  	}
 	}
 
