@@ -63,7 +63,7 @@ Refer to the [Setting Up the BeoLiving Intelligence section](bli-quick-setup-gui
 
 ## Bang & Olufsen products groups {#products-groups}
 
-_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Products' groups_. This feature allows the linking of _Bang & Olufsen NetworkLink_'s products so they behave as one. _E.g._: In big rooms with multiple products, a product group could be created so all the products reproduce the same song or playlist at the same time. In a products' group, exists a master product that will be the source and volume reference of the rest of the group, which will follow any source/volume change of the master automatically, and the _BeoLiving App_ will only show the master.
+_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Products' groups_. This feature allows the linking of _Bang & Olufsen NetworkLink_'s and ControlLink's products so they behave as one. _E.g._: In big rooms with multiple products, a product group could be created so all the products reproduce the same song or playlist at the same time. In a products' group, exists a master product that will be the source and volume reference of the rest of the group, which will follow any source/volume change of the master automatically, and the _BeoLiving App_ will only show the master.
 
 Refer to [BeoLiving Intelligence Quick Setup guide](bli-quick-setup-guide.md#products-groups) to see an illustrative video.
 

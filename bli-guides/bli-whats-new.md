@@ -31,7 +31,7 @@ For legacy purposes, previous linking method is available for _BeoLink Gateway_ 
 
 ## Bang & Olufsen products groups
 
-_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Products' groups_. This feature allows to statically link _Bang & Olufsen NetworkLink_'s products so them always behave as one. _E.g._: In big rooms with multiple products its wanted that all products reproduce the
+_BeoLiving Intelligence_ and _BeoLiving App_ introduce a new feature called _Products' groups_. This feature allows to statically link _Bang & Olufsen NetworkLink_'s and ControlLink's products so them always behave as one. _E.g._: In big rooms with multiple products its wanted that all products reproduce the
 same song or playlist at the same time. In a products' group, exist a master product that will be the source and volume reference of the
 group and the rest of the grouped products will follow any source/volume change of master automatically and the _BeoLiving App_ will only
 show the master.

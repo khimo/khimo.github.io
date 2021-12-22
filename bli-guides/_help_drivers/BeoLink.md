@@ -147,7 +147,7 @@ Otherwise it will instruct the mobile application to use the legacy commands.
 
 ## Product Groups
 
-The BeoLink system allows you to make groups of NetworkLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
+The BeoLink system allows you to make groups of NetworkLink and ControlLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
 
 The Product Group's configuration is shown under Systems. When you select the BeoLink system, the configured product groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
 

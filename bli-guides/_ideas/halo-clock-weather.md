@@ -28,14 +28,21 @@ function(event, engine)
   hour = tostring(hour):gsub("!","")
   minute = tostring(minute):gsub("!","")
 
+  if tonumber(minute) < 10 then
+    minute = "0"..minute
+  end
+  if tonumber(hour) < 10 then
+    hour = "0"..hour
+  end
+
   engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_TEXT?BUTTON=497f6eca-6276-4993-bfeb-000000810206&TEXT="..tostring(hour)..":"..minute)
   engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_SUBTITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810206&SUBTITLE="..day.."/"..month)
   
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_WHEEL_VALUE?BUTTON=497f6eca-6276-4993-bfeb-000000810206&VALUE="..tostring(math.floor(hour*100/24)))
+  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_WHEEL_VALUE?BUTTON=497f6eca-6276-4993-bfeb-000000810206&VALUE="..tostring((math.floor((hour%12)*100/12))))
 end
 ~~~
 
-The macro begins by checking the clock's state and getting the day, month, hour and minute values. Sometimes these numbers end with a "!" symbol from the state so we remove them in the nex two lines. Then the only thing missing is to set the button text with "hour:minute" and we add "day/month" to the subtitles. Just to give it a "clock" feel we can add the last command which will set the state of the wheel to the current hour, as the wheel accepts values from 0 to 100 we convert the numbers so that it goes from 0 to 24.
+The macro begins by checking the clock's state and getting the day, month, hour and minute values. Sometimes these numbers end with a "!" symbol from the state so we remove them in the next two lines. If the hour or minute is below 10 we add a 0 so that we always get 2 digits. Then the only thing missing is to set the button text with "hour:minute" and we add "day/month" to the subtitles. Just to give it a "clock" feel we can add the last command which will set the state of the wheel to the current hour, as the wheel accepts values from 0 to 100 we convert the numbers so that it goes from 0 to 12.
 
 ## WEATHER
 
@@ -68,14 +75,14 @@ function(event, engine)
     subtitle = "SNOW"
   elseif temperature > 20 then
     icon = "heat"
-    subtitle = "HOT"
+    subtitle = "HOT: "..tostring(temperature).."˚C"
   else
     icon = "cool"
-    subtitle = "COLD"
+    subtitle = "COLD: "..tostring(temperature).."˚C"
   end
   engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_ICON?BUTTON=497f6eca-6276-4993-bfeb-000000810205&ICON="..icon)
   engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_SUBTITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810205&SUBTITLE="..subtitle)
 end 
 ~~~
 
-We begin by asking the variable for the current weather, in this case we ask for the Rain, Snow and Temperature, but there are other things you can get (see which ones in Tools->Resource States in the current_weather variable) and then we initialialize the variables for the icon and subtitle. We will have to go through these variables and decide which icon and subtitle to choose, if it rains we set the word "RAIN" and the icon for humidity (which is a water drop), if it snows we choose "SNOW" and the cool icon (which is a snow flake). If none of the above apply we decide with the temperature, in this example we chose degree Celsius but you can change the number 20 to 68 if you want Fahrenheit. We decide that a temperature above 20 is hot and below is cold. Lastly we set the icon and subtitile of the halo with the values chosen before.
+We begin by asking the variable for the current weather, in this case we ask for the Rain, Snow and Temperature, but there are other things you can get (see which ones in Tools->Resource States in the current_weather variable) and then we initialize the variables for the icon and subtitle. We will have to go through these variables and decide which icon and subtitle to choose, if it rains we set the word "RAIN" and the icon for humidity (which is a water drop), if it snows we choose "SNOW" and the cool icon (which is a snow flake). If none of the above apply we decide with the temperature, in this example we chose degree Celsius but you can change the number 20 to 68 if you want Fahrenheit. We decide that a temperature above 20 is hot and below is cold and we add the number to the subtitle. Lastly we set the icon and subtitile of the halo with the values chosen before.
