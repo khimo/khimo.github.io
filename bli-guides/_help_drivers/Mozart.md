@@ -30,6 +30,16 @@ Both will prompt the user for a pin, the pin can be retrieved from the Bang & Ol
 
 Once the BeoCloud account is linked with the BLI, all of the NetRadio content will be available.
 
+## Product Group
+
+The ControlLink system allows you to make groups of ControlLink and NetworkLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
+
+The Product Group’s configuration is shown under Systems. When you select the ControlLink system, the configured product groups will appear listed below, with options for editing the existing groups or adding new ones. ControlLink products can only form part of one group, so you won’t be able to add a product to a group if it’s already in another.
+
+For a new group to be created you need to select a Main product for the group and at least one Follower, if not, the group won’t be created.
+
+A group can also be created from the BeoLiving App in YOUR-BLI->Device Settings->Group products where you should first choose a master and then the followers.
+
 ## Changelog
 ### v0.2 | 2021/04/28
  - Initial version
