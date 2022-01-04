@@ -25,8 +25,11 @@ The supported commands are all the standard AV RENDERER commands including:
 The state includes the selected input, the playing state (play, pause etc.), volume information, the selected source, and information about what is currently playing such as name, artist, album and album artwork. 
 
 ## Connecting to BeoCloud
-BeoCloud is necessary in order to use B&O NetRadio, it requires signing into the BeoCloud account. The BLI can be connected to it from the "ControlLink" system in the "Systems" Tab or from the BLIApp in Settings->YOUR-BLI->Device Settings->BeoCloud. 
-Both will prompt the user for a pin, the pin can be retrieved from the Bang & Olufsen App in Settings->Integrations, where a code with the format "XXX-XXX-XXX" can be created. 
+BeoCloud is necessary in order to use B&O NetRadio, it requires signing into the BeoCloud account. 
+
+The BeoLiving Intelligence can be connected to it from the "ControlLink" system in the "Systems" Tab or from the BeoLiving application in _Settings->YOUR-BLI->Device Settings->BeoCloud_.
+
+Both will prompt the user for a **pin**, the pin can be retrieved from the **Bang & Olufsen application** in **_Settings->Integrations_**, where a code with the format **"XXX-XXX-XXX"** can be created. 
 
 Once the BeoCloud account is linked with the BLI, all of the NetRadio content will be available.
 
