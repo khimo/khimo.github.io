@@ -114,7 +114,7 @@ If the macro was triggered by the wheel, the code will be as follows:
   engine.fire("MyArea/MyZone/Halo remote/Halo/SET_TITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810179&TITLE="..anon_code)
 
   if (string.len(code)>=4) then
-     engine.fire("Main/global/ALARM/Alarm/DISARM?CODE="..code)
+     engine.fire("MyArea/MyZone/ALARM/Alarm/DISARM?CODE="..code)
      engine.fire("MyArea/MyZone/VARIABLE/Code/SET?VALUE=")
      engine.fire("MyArea/MyZone/Halo remote/Halo/SET_TITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810179&TITLE=FIRED")
      engine.fire("MyArea/MyZone/Halo remote/Halo/SET_ICON?BUTTON=497f6eca-6276-4993-bfeb-000000810179&ICON=unlock")
@@ -131,32 +131,32 @@ Next we have a small correction of the number as we only want numbers form 0 to 
 Lastly we need to know if the code is complete, we know the code consists of 4 numbers (this could be changed by changing the if statement), if the length of the code is 4, we proceed to fire the "DISARM" command and reset the variables, we also write "FIRED" in the tile and choose the "unlocked" icon as the button. If the code is not yet complete, we just set the "code" variable with the new code to start the process again the next time the macro is called.
  
 
-The complete macro is below, remember to change the Areas, Zones, Resource's Names and Button ID to yours before trying it.
+The complete macro is below, remember to change the Areas, Zones, Resource's Names and Button ID to yours before trying it. You can copy and paste this names in Tools->Resource States.
 
 ~~~lua 
 function(event, engine)
 
  ------ FILL WITH YOUR INFORMATION -----  
-  local area = "MyArea"
-  local zone = "MyZone"
-  local halo_name = "Halo"
+  local halo_resource = "MyArea/MyZone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810179"
-  local alarm_name = "Alarm"
-  local alarm_area = "MyArea"
-  local alarm_zone = "MyZone"
+  local alarm_resource = "MyArea/MyZone/ALARM/Alarm"
+  local number_variable = "MyArea/MyZone/VARIABLE/Number"
+  local code_variable = "MyArea/MyZone/VARIABLE/Code"
+  local direction_variable = "MyArea/MyZone/VARIABLE/Direction"
+  local fired_variable = "MyArea/MyZone/VARIABLE/Fired"
 -----------------------------------------
   
-  local fired_query = engine.query(area.."/"..zone.."/VARIABLE/Fired")
+  local fired_query = engine.query(fired_variable)
   local fired = fired_query[1].get_boolean("VALUE")
   if not fired then
-  engine.fire(area.."/"..zone.."/VARIABLE/Fired/SET?VALUE=true")
-    local number_query = engine.query(area.."/"..zone.."/VARIABLE/Number")
+  engine.fire(fired_variable.."/SET?VALUE=true")
+    local number_query = engine.query(number_variable)
     local number = number_query[1].get_number("VALUE")
 
-    local code_query = engine.query(area.."/"..zone.."/VARIABLE/Code")
+    local code_query = engine.query(code_variable)
     local code = code_query[1].get_string("VALUE")
 
-    local direction_query = engine.query(area.."/"..zone.."/VARIABLE/Direction")
+    local direction_query = engine.query(direction_variable)
     local direction = direction_query[1].get_boolean("VALUE")
     
     if event.parameters()["OFFSET"] then
@@ -164,14 +164,14 @@ function(event, engine)
         if direction then
           number = number + 1
         else
-          engine.fire(area.."/"..zone.."/VARIABLE/Direction/SET?VALUE=true")
+          engine.fire(direction_variable.."/SET?VALUE=true")
           code = code..tostring(number)
         end
       else
         if not direction then
           number = number - 1
         else
-          engine.fire(area.."/"..zone.."/VARIABLE/Direction/SET?VALUE=false")
+          engine.fire(direction_variable.."/SET?VALUE=false")
           code = code..tostring(number)
         end
       end
@@ -180,27 +180,27 @@ function(event, engine)
       elseif (number == -1) then
         number = 9
       end
-      engine.fire(area.."/"..zone.."/VARIABLE/Number/SET?VALUE="..tostring(number))
-      engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(number))
+      engine.fire(number_variable.."/SET?VALUE="..tostring(number))
+      engine.fire(halo_resource.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(number))
       anon_code = code:gsub(".","*",4)
-      engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE="..anon_code)
+      engine.fire(halo_resource.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE="..anon_code)
 
       if (string.len(code)>=4) then
-         engine.fire(alarm_area.."/"..alarm_zone.."/ALARM/"..alarm_name.."/DISARM?CODE="..code)
-         engine.fire(area.."/"..zone.."/VARIABLE/Code/SET?VALUE=")
-         engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE=FIRED")
-         engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_ICON?BUTTON="..halo_button_id.."&ICON=unlock")
+         engine.fire(alarm_resource.."/DISARM?CODE="..code)
+         engine.fire(code_variable.."/SET?VALUE=")
+         engine.fire(halo_resource.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE=FIRED")
+         engine.fire(halo_resource.."/SET_ICON?BUTTON="..halo_button_id.."&ICON=unlock")
       else
-        engine.fire(area.."/"..zone.."/VARIABLE/Code/SET?VALUE="..code)
+        engine.fire(code_variable.."/SET?VALUE="..code)
       end 
     else
-      engine.fire(area.."/"..zone.."/VARIABLE/Code/SET?VALUE=")
-      engine.fire(area.."/"..zone.."/VARIABLE/Number/SET?VALUE=0")
-      engine.fire(area.."/"..zone.."/VARIABLE/Direction/SET?VALUE=true")
-      engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT=0")
-      engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE=BEGIN")
+      engine.fire(code_variable.."/SET?VALUE=")
+      engine.fire(number_variable.."/SET?VALUE=0")
+      engine.fire(direction_variable.."/SET?VALUE=true")
+      engine.fire(halo_resource.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT=0")
+      engine.fire(halo_resource.."/SET_TITLE?BUTTON="..halo_button_id.."&TITLE=BEGIN")
     end
-    engine.fire(area.."/"..zone.."/VARIABLE/Fired/SET?VALUE=false")
+    engine.fire(fired_variable.."/SET?VALUE=false")
  end
 end 
 

@@ -21,9 +21,7 @@ The code is as follows:
 function(event, engine) 
   
   ------ FILL WITH YOUR INFORMATION -----
-  local area = "My_Area"
-  local zone = "My_Zone"
-  local halo_name = "Halo"
+  local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810206"
   ----------------------------------------
   
@@ -43,10 +41,10 @@ function(event, engine)
     hour = "0"..hour
   end
 
-  engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(hour)..":"..minute)
-  engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..day.."/"..month)
+  engine.fire(halo_resource.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(hour)..":"..minute)
+  engine.fire(halo_resource.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..day.."/"..month)
   
-  engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_WHEEL_VALUE?BUTTON="..halo_button_id.."&VALUE="..tostring((math.floor((hour%12)*100/12))))
+  engine.fire(halo_resource.."/SET_WHEEL_VALUE?BUTTON="..halo_button_id.."&VALUE="..tostring((math.floor((hour%12)*100/12))))
 end
 ~~~
 
@@ -55,7 +53,7 @@ The macro begins by checking the clock's state and getting the day, month, hour 
 ## WEATHER
 
 This macro will read the current weather and write it in the subtitle as well as showing a related icon every time the button is pressed.
-For this one we will use the Open Weather system included in the BLI. As resources we will add in the same area and zone as the Halo, a CURRENT_WEATHER resource (although you can choose 3 or 24 Hrs forecast if you prefer), as address set the latitude and longitude of the place you would like to know the weather of. In this example we will use "-34.0634:-55.7284" and name the variable Uruguay.
+For this one we will use the Open Weather system included in the BLI. As resources we will add a CURRENT_WEATHER resource (although you can choose 3 or 24 Hrs forecast if you prefer), as address set the latitude and longitude of the place you would like to know the weather of. In this example we will use "-34.0634:-55.7284" and name the variable Uruguay.
 
 The events for this macro are as follows:
 
@@ -69,14 +67,12 @@ The code:
 function(event, engine) 
   
   ------ FILL WITH YOUR INFORMATION -----
-  local area = "My_Area"
-  local zone = "My_Zone"
-  local open_weather_resource_name = "Uruguay"
-  local halo_name = "Halo"
+  local open_weather_resource = "My_Weather_Area/My_Weather_Zone/_CURRENT_WEATHER/Uruguay"
+  local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810205"
   ----------------------------------------
   
-  weather_query = engine.query(area.."/"..zone.."/_CURRENT_WEATHER/"..open_weather_resource_name)
+  weather_query = engine.query(open_weather_resource)
   local rain = weather_query[1].get_boolean("_Rain")
   local snow = weather_query[1].get_boolean("_Snow")
   local temperature = weather_query[1].get_celsius("_Temperature")
@@ -97,8 +93,8 @@ function(event, engine)
     icon = "cool"
     subtitle = "COLD: "..tostring(temperature).."˚C"
   end
-  engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_ICON?BUTTON="..halo_button_id.."&ICON="..icon)
-  engine.fire(area.."/"..zone.."/Halo remote/"..halo_name.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..subtitle)
+  engine.fire(halo_resource.."/SET_ICON?BUTTON="..halo_button_id.."&ICON="..icon)
+  engine.fire(halo_resource.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..subtitle)
 end
 ~~~
 
