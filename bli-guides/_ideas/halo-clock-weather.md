@@ -19,6 +19,12 @@ The code is as follows:
 
 ~~~lua
 function(event, engine) 
+  
+  ------ FILL WITH YOUR INFORMATION -----
+  local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
+  local halo_button_id = "497f6eca-6276-4993-bfeb-000000810206"
+  ----------------------------------------
+  
   local clock = engine.query("*/*/SYSTEM/Clock")[1]
   day = clock.get_number("day")
   month = clock.get_number("month")
@@ -35,10 +41,10 @@ function(event, engine)
     hour = "0"..hour
   end
 
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_TEXT?BUTTON=497f6eca-6276-4993-bfeb-000000810206&TEXT="..tostring(hour)..":"..minute)
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_SUBTITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810206&SUBTITLE="..day.."/"..month)
+  engine.fire(halo_resource.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(hour)..":"..minute)
+  engine.fire(halo_resource.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..day.."/"..month)
   
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_WHEEL_VALUE?BUTTON=497f6eca-6276-4993-bfeb-000000810206&VALUE="..tostring((math.floor((hour%12)*100/12))))
+  engine.fire(halo_resource.."/SET_WHEEL_VALUE?BUTTON="..halo_button_id.."&VALUE="..tostring((math.floor((hour%12)*100/12))))
 end
 ~~~
 
@@ -47,9 +53,9 @@ The macro begins by checking the clock's state and getting the day, month, hour 
 ## WEATHER
 
 This macro will read the current weather and write it in the subtitle as well as showing a related icon every time the button is pressed.
-For this one we will use the Open Weather system included in the BLI. As resources we will add in the same area and zone as the Halo, a CURRENT_WEATHER resource (although you can choose 3 or 24 Hrs forecast if you prefer), as address set the latitude and longitude of the place you would like to know the weather of. In this example we will use "-34.0634:-55.7284" and name the variable Uruguay.
+For this one we will use the Open Weather system included in the BLI. As resources we will add a CURRENT_WEATHER resource (although you can choose 3 or 24 Hrs forecast if you prefer), as address set the latitude and longitude of the place you would like to know the weather of. In this example we will use "-34.0634:-55.7284" and name the variable Uruguay.
 
-The event for this macro is as follows:
+The events for this macro are as follows:
 
 <div class="text-center">
   <img src="/bli-guides/pictures/HaloEventWeather.png" class="img-fluid" alt="Event to execute the Macro"/>
@@ -59,7 +65,14 @@ The code:
 
 ~~~lua
 function(event, engine) 
-  weather_query = engine.query("My_Area/My_Zone/_CURRENT_WEATHER/Uruguay")
+  
+  ------ FILL WITH YOUR INFORMATION -----
+  local open_weather_resource = "My_Weather_Area/My_Weather_Zone/_CURRENT_WEATHER/Uruguay"
+  local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
+  local halo_button_id = "497f6eca-6276-4993-bfeb-000000810205"
+  ----------------------------------------
+  
+  weather_query = engine.query(open_weather_resource)
   local rain = weather_query[1].get_boolean("_Rain")
   local snow = weather_query[1].get_boolean("_Snow")
   local temperature = weather_query[1].get_celsius("_Temperature")
@@ -80,9 +93,9 @@ function(event, engine)
     icon = "cool"
     subtitle = "COLD: "..tostring(temperature).."˚C"
   end
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_ICON?BUTTON=497f6eca-6276-4993-bfeb-000000810205&ICON="..icon)
-  engine.fire("My_Area/My_Zone/Halo remote/Halo/SET_SUBTITLE?BUTTON=497f6eca-6276-4993-bfeb-000000810205&SUBTITLE="..subtitle)
-end 
+  engine.fire(halo_resource.."/SET_ICON?BUTTON="..halo_button_id.."&ICON="..icon)
+  engine.fire(halo_resource.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..subtitle)
+end
 ~~~
 
 We begin by asking the variable for the current weather, in this case we ask for the Rain, Snow and Temperature, but there are other things you can get (see which ones in Tools->Resource States in the current_weather variable) and then we initialize the variables for the icon and subtitle. We will have to go through these variables and decide which icon and subtitle to choose, if it rains we set the word "RAIN" and the icon for humidity (which is a water drop), if it snows we choose "SNOW" and the cool icon (which is a snow flake). If none of the above apply we decide with the temperature, in this example we chose degree Celsius but you can change the number 20 to 68 if you want Fahrenheit. We decide that a temperature above 20 is hot and below is cold and we add the number to the subtitle. Lastly we set the icon and subtitile of the halo with the values chosen before.
