@@ -56,6 +56,7 @@ The following is a minimum example of a Lua driver that supports buttons with *p
 
 The specification section defines the driver label, help, connection channels, address format, and resource types.
 
+```lua
     driver_label= "Simple system for demo"
     driver_help= "Simple system help"
     driver_channels= {
@@ -70,9 +71,11 @@ The specification section defines the driver label, help, connection channels, a
           commands= { PRESS= {}, RELEASE= {} }
        }
     }
+```
 
 The functionality has two main methods: *process* reads the channel for incoming notifications and fires a BLI event, and *executeCommand* is called by BLI to send commands to the system.
 
+```lua
     local function processMessage(msg)
        local command= msg:sub(1,1)
        if command == "P" or command == "R" then
@@ -113,6 +116,7 @@ The functionality has two main methods: *process* reads the channel for incoming
           Error("Failed to execute command")
        end
     end
+```
 
 
 <a id="orgcef37fd"></a>
@@ -212,7 +216,7 @@ The structure of a generic field is as follows:
 <a id="Generic-field-examples"></a>
 
 ### Generic field examples
-
+```lua
     local someGenericFields= {
       myString= {
                  name= "my string",
@@ -231,16 +235,19 @@ The structure of a generic field is as follows:
                 context_help= "Select one of them"
               }
      }
+```
 
 When building a generic field with the following call to the [stringArgumentRegEx](#stringArgumentRegEx) constructor:
-
+```lua
     local myfield= stringArgumentRegEx("_thestring", "defaultval", ".*", 
                       { context_help="myhelp", hidden= true, 
                         read_only=true, transient= true, 
                         disallow_empty= true})
+```
 
 It is equivalent to:
 
+```lua
     local myfield= {
        name= "_thestring", 
        label= "_thestring", 
@@ -255,7 +262,7 @@ It is equivalent to:
           regex= ".*"  
        }  
     }
-
+```
 
 <a id="regular-expressions"></a>
 
@@ -462,10 +469,12 @@ Non standard names *must* begin with an underscore (`_`) or will be rejected by 
 The Lua *driver* must define a global variable named `resource_types` as a table which keys are strings that globally identify the resource type and its corresponding values are the specification for the [resource type](#resource_type).
 For example being `simpleButtonType` and `LEDButtonType` variables containing the [resource\_type](#resource_type) for "Button" and "LED button" respectively:
 
+```lua
     resource_types= {
       Button = simpleButtonType,
       ["LED button"]    = LEDButtonType
     }
+  ```
 
 
 <a id="resource_type"></a>
