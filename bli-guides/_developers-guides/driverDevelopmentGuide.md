@@ -474,7 +474,7 @@ For example being `simpleButtonType` and `LEDButtonType` variables containing th
       Button = simpleButtonType,
       ["LED button"]    = LEDButtonType
     }
-  ```
+```
 
 
 <a id="resource_type"></a>
@@ -498,6 +498,7 @@ the driver needs to be able to build the address of the corresponding resource t
 
 For example lets define `simpleButtonType` used in the example in [resource\_types](#resource_types) assuming this kind of resource is addressed by two decimal digits.
 
+```lua
     simpleButtonType= {
       standardResourceType= "BUTTON",
       address= stringArgumentRegEx("address", "00", "[0-9]",
@@ -507,9 +508,11 @@ For example lets define `simpleButtonType` used in the example in [resource\_typ
       states= simpleButtonStates,
       context_help= "This is a Button."
     }
+```
 
 Notice the use of [stringArgumentRegEx](#stringArgumentRegEx) in order to simplify the code, the same could be done directly as follows:
 
+```lua
     simpleButtonType= {
       standardResourceType= "BUTTON",
       address= {
@@ -524,7 +527,7 @@ Notice the use of [stringArgumentRegEx](#stringArgumentRegEx) in order to simpli
       states= simpleButtonStates,
       context_help= "This is a Button."
     }
-
+```
 
 <a id="commands"></a>
 
@@ -540,12 +543,15 @@ For each resource type a table of commands must be provided in which keys are th
 
 An example of commands for the resource type "Button" of the previous example could be:
 
+```lua
     simpleButtonCommands= {
         PRESS= { context_help= "Single button press". }
     }
+```
 
 A bit more complex example implementing a resource type for the SRT "DIMMER" to present a command containing an argument follows:
 
+```lua
     resource_types= {
       ["simple dimmer"]= {
         standardResourceType= "DIMMER",
@@ -560,6 +566,7 @@ A bit more complex example implementing a resource type for the SRT "DIMMER" to 
         states= simpleDimmerStates
       }
     }
+```
 
 
 <a id="events"></a>
@@ -607,6 +614,7 @@ States of a resource type must follow the SRT for the resource type, and non sta
 
 A typical example of resource with state is a dimmer with feedback as shown in the following example (extending the example presented for command with arguments):
 
+```lua
     resource_types= {
        ["simple dimmer"]= {
           standardResourceType= "DIMMER",
@@ -621,6 +629,7 @@ A typical example of resource with state is a dimmer with feedback as shown in t
           states= { numericArgument("LEVEL", 0, 0, 100) }
        }
     }
+```
 
 
 <a id="driver_label"></a>
@@ -683,6 +692,7 @@ Which returns a structure valid for `driver_channels` table where:
 
 For example:
 
+```lua
     TCP(23, "192.168.1.3", "Direct Ethernet connection", 
         "Direct Ethernet connection for our system",{
              stringArgumentMinMax("_login", "admin", 1, 10,
@@ -690,6 +700,7 @@ For example:
              passwordArgument("_password", "admin", 1, 15,
                               { context_help = "Password for the system (factory default is admin)" })
     })
+```
 
 
 <a id="RS232-constructor"></a>
@@ -700,7 +711,9 @@ Constructs an RS232 channel to be used on [driver\_channels](#driver_channels).
 
 It is a function defined as:
 
+```lua
     function rs232(pname, ptype, plabel, help, args)
+```
 
 Where:
 
@@ -712,12 +725,14 @@ Where:
 
 For example:
 
+```lua
     rs232( "RS232", "rs232", "RS232 channel", "Direct connection through RS232",{
                 stringArgumentMinMax("_login", "admin", 1, 10,
                                      { context_help = "User name for the system (factory default is admin)"} ),
                 passwordArgument("_password", "admin", 1, 15,
           { context_help = "Password for the system (factory default is admin)" })}
       )
+```
 
 
 <a id="RS232-default-arguments"></a>
@@ -741,7 +756,9 @@ The default RS232 arguments are:
 Constructs a custom channel to be used on [driver\_channels](#driver_channels).
 It's a function defined as 
 
+```lua
     function CUSTOM(name, help, args)
+```
 
 Which returns a structure valid for `driver_channels` table where:
 
@@ -753,8 +770,10 @@ This channel is intended to be used to integrate with systems based on a Rest AP
 
 For example:
 
+```lua
     CUSTOM("my connection", "help about this connection",
            {stringArgument("_baseurl", "http://192.168.1.1/")})
+```
 
 
 <a id="driver_load_system_help"></a>
@@ -785,6 +804,7 @@ Following is a simple specification example with two resource types: Button and 
 Button as a standard "BUTTON" and Led as a "GPIO".
 The example provides a basic specification which could be used to manage buttons and LEDs on a Lutron Radio Ra 2 system.
 
+```lua
     driver_label= "example label"
     driver_help= [[
     example driver
@@ -898,6 +918,7 @@ The example provides a basic specification which could be used to manage buttons
           states= { enumArgument( "STATE", {0,1}, 0 ) }
        }
     }
+```
 
 
 <a id="Driver-functionality"></a>
@@ -932,14 +953,18 @@ Follows a commented `process` function for the [example specification](#Specific
 
 1.  Wait for a message indicating the third party system is expecting the login name and return after asking the system to retry in 10 seconds if the message does not arrive.
     
+```lua
         local res= channel.waitFor("login: ",1)
         if res ~= CONST.OK then
            channel.retry( "Error while connecting to driver example system, it is not asking " ..
                           "for login name; please check you are using the correct IP address.", 10 )
            return CONST.TIMEOUT
         end
+```
+
 2.  Send the login name, wait until the system asks for password and send it.
     
+```lua
         local messageToSend= channel.attributes("_login") .. "\r\n"
         
         local ret= channel.write(messageToSend)
@@ -960,23 +985,29 @@ Follows a commented `process` function for the [example specification](#Specific
         if ret ~= CONST.OK then
            return CONST.INVALID_CREDENTIALS
         end
+```
 3.  Set the driver connection state to *online* and send some initialization messages (in this example, setting up the Lutron system to report everything that happens).
     
+```lua
         driver.setOnline()
         
         channel.write("#MONITORING,255,1\r\n") -- all on but prompt and reply state
         channel.write("#MONITORING,11,1\r\n" ) -- reply state on
         channel.write("#MONITORING,1,2\r\n"  ) -- diagnostic off
         channel.write("#MONITORING,12,2\r\n" ) -- prompt off
+```
 
 Second step: request state of all resources (all resources with defined states, in our case only LEDs):
 
+```lua
     for res in readAllResources("Led") do
        getState(res)
     end
+```
 
 Where `getState` is defined as follows:
 
+```lua
     local function getState(resource)
        if resource.typeId == "Led" then
           local iid, cn, ledcn= split(",", resource.address)
@@ -988,9 +1019,11 @@ Where `getState` is defined as follows:
           end
        end
     end
+```
 
 Finally the third step: While the connection is up and with the help of Lua string functions, we parse the received messages and call BLI when corresponds.
 
+```lua
     while channel.status() do
        local err,msg= CONST.OK, ""
     
@@ -1042,9 +1075,11 @@ Finally the third step: While the connection is up and with the help of Lua stri
           end
        end
     end
+``` 
 
 Where `numToCommand` is defined as follows:
 
+```lua
     local function numToCommand(cmd)
        if cmd == 3 then -- PRESS
           return "PRESS"
@@ -1060,7 +1095,7 @@ Where `numToCommand` is defined as follows:
           return "_LED"
        end
     end
-
+```
 
 <a id="executeCommand"></a>
 
@@ -1069,7 +1104,9 @@ Where `numToCommand` is defined as follows:
 This function is executed whenever a macro or a user from the UI executes a command on a resource.
 The function prototype must be:
 
+```lua
     function executeCommand(command, resource, commandArgs)
+```
 
 Where:
 
@@ -1080,6 +1117,7 @@ Where:
 Remember this function *must* return as soon as possible, commands taking too long to execute result in bad user experience and unexpected behaviour on macro programming.
 On our example, the `executeCommand` implementation would be:
 
+```lua
     function executeCommand(command, resource, commandArgs)
        Trace("Command executed: " .. command)
        if commandNumbers[command] then
@@ -1093,12 +1131,14 @@ On our example, the `executeCommand` implementation would be:
           end
        end
     end
+```
 
 Where `commandNumbers` is defined as:
 
+```lua
     local commandNumbers= { PRESS = 3, RELEASE = 4, HOLD = 5,
                             ["_MULTI TAP"] = 6, ["_HOLD RELEASE"] = 32, SET= 1 }
-
+```
 
 <a id="onResourceDelete"></a>
 
@@ -1108,10 +1148,11 @@ This function is called whenever a resource of the system is deleted.
 It must be defined as `function onResourceDelete(resource)` where `resource` is the [resource](#resource-Lua-instance) that was deleted.
 In our example there is not much to be done so we only log a message:
 
+```lua
     function onResourceDelete(resource)
        Trace("Resource was deleted")
     end
-
+```
 
 <a id="onResourceUpdate"></a>
 
@@ -1121,10 +1162,12 @@ This function is called whenever a resource of the system is updated.
 It must be defined as `function onResourceUpdate(resource)` where `resource` is the [resource](#resource-Lua-instance) that was updated.
 Following the example when a resource is updated we should request its state as follows:
 
+```lua
     function onResourceUpdate(resource)
        Trace("Resource was updated")
        getState(resource)
     end
+```
 
 
 <a id="onResourceAdd"></a>
@@ -1135,10 +1178,12 @@ This function is called whenever a resource of the system is added.
 It must be defined as `function onResourceAdd(resource)` where `resource` is the [resource](#resource-Lua-instance) that was added.
 For the example we do the very same as in [onResourceUpdate](#onResourceUpdate):
 
+```lua
     function onResourceAdd(resource)
        Trace("a resource was added")
        getState(resource)
     end
+```
 
 
 <a id="Tools"></a>
@@ -1283,11 +1328,13 @@ Even when no timeout was set `CONST.TIMEOUT` may be returned.
 
 Usage:
 
+```lua
     -- read a line from the active channel
     local ret, len, msg= channel.read()
     if ret == CONST.OK then
        Info("Message received: " .. msg)
     end
+```
 
 
 <a id="channel.attributes()"></a>
@@ -1355,9 +1402,11 @@ It is defined as `function fireEvent(event, resourceType, address)` where:
 
 For example to fire a "PRESS" event on a resource type named "simple button":
 
+```lua
     fireEvent("PRESS", "simple button", "1")
     -- same as
     fireEvent("PRESS", "simple button", "1", {})
+```
 
 
 <a id="setResourceState"></a>
@@ -1375,7 +1424,9 @@ If it finds a resource matching `resourceType` and `address`, it updates the cor
 Updating the state of a resource to its same current state will not result in a state update event in BLI.
 For example, for a resource type named "LED button" which accepts numbers as addresss, a call to update its state variable "STATE" to 1 should be:
 
+```lua
     setResourceState("LED button", "1", { STATE = 1 })
+```
 
 
 <a id="monitorEvent"></a>
@@ -1409,9 +1460,11 @@ It is defined as `function readAllResources(type)` where `type` is the resource 
 It returns a [resource](#resource-Lua-instance) on each iteration.
 For example, to iterate over all resources of type "my type" and call some function on each:
 
+```lua
     for resource in readAllResources("my type") do
       doSomething(resource)
     end
+```
 
 
 <a id="Log"></a>
@@ -1441,7 +1494,9 @@ Each one is named after the log level it generates as follows:
 
 Helper function to concatenate tables, defined as:
 
+```lua
     function tableConcat(t_1, ..., t_n)
+```
 
 Where:
 
@@ -1468,7 +1523,9 @@ It is defined as `function map ( f , values )` where:
 Receives a funciton and a list of elements and returns the list of elements evaluated through the function.
 It is defined as:
 
+```lua
     function listMap( f, e_1, ..., e_n)
+```
 
 Where:
 
@@ -1539,10 +1596,12 @@ by importing both kinds of export and using the information within the capture a
 Generates a monitor event.
 It is defined as:
 
+```lua
     function monitorEvent(message,
                           resourceType_1, arguments_1,
                           ...,
                           resourceType_n, arguments_n)
+```
 
 Where:
 
@@ -1557,7 +1616,9 @@ Where:
 Fires an event on a resource or generates a corresponding monitor event if no resource is found which matches the given data.
 It is defined as:
 
+```lua
     function fireEvent(event, resourceType_i, address_i, arguments_i)
+```
 
 Where:
 
@@ -1580,7 +1641,9 @@ as opposed to calling `fireEvent` multiple times wich results in multiple entrie
 Sets a resource state or generates a corresponding monitor event if the resource does not exist.
 It is defined as:
 
+```lua
     function setResourceState(resourceType_i, address_i)
+```
 
 Where:
 
@@ -1691,7 +1754,9 @@ There are two ways of implementing this function:
 
 This function must be defined as:
 
+```lua
     function requestResources()
+```
 
 And return two values, the first one is a Boolean indicating whether the operation succeeded or not.
 The second return value is the number of added loaded resources if the first one is true and the loaded resources were added synchronously,
@@ -1713,7 +1778,9 @@ and when uploaded, BLI executes this function using the file name and the file c
 
 This function must be defined as:
 
+```lua
     function parseResources(data, fileName)
+```
 
 The `data` argument contains the file content as a string, and the `fileName` argument is the name of the uploaded file.
 
@@ -1731,7 +1798,9 @@ or the error message if the first one is false.
 This function is the way for the driver to add a Loaded Resource whether in [parseResources](#parseResources), in [requestResources](#requestResources) or in [process](#process),
 and it is defined as:
 
+```lua
     function addDiscoveredResource(dr)
+```
 
 Where `dr` is a [Loaded Resource](#Loaded-Resources-structure).
 
@@ -1743,7 +1812,9 @@ Where `dr` is a [Loaded Resource](#Loaded-Resources-structure).
 Allows the driver to request a single loaded resource given its address and type,
 it is defined as:
 
+```lua
     function readLoadedResource(resourceType, address)
+```
 
 Where `resourceType` is the type of the loaded resource and `address` its address.
 If there is a loaded resource for the system matching address and resource type, returns a [Loaded Resources structure](#Loaded-Resources-structure),
@@ -1757,7 +1828,9 @@ otherwise returns `nil`.
 Allows the driver to request a list of all the loaded resources for a given type,
 it is defined as:
 
+```lua
     function readAllLoadedResources(resourceType)
+```
 
 Where `resourceType` is the type of the expected loaded resources.
 It returns a table which entries are [Loaded Resources](#Loaded-Resources-structure) matching the given type.
@@ -1785,19 +1858,23 @@ a driver in need of a more complex comparison between loaded resources and resou
 
 The function must be defined as:
 
+```lua
     function equals(resource, loadedResource)
+```
 
 Where `resource` is a [resource](#resource-Lua-instance) and `loadedResource` a [Loaded Resource](#Loaded-Resources-structure),
 and it must return `true` or `false`.
 
 As an example, an implementation of the function to compare address and type and also name follows:
 
+```lua
     function equals(resource, loadedResource)
       return
         resource.address == loadedResource.address and
         resource.typeId  == loadedResource.type    and
         resource.name    == loadedResource.name
     end
+```
 
 
 <a id="Load-resources-examples"></a>
@@ -1830,6 +1907,7 @@ on which we will use `numeric id` as address, `name` as name, `area` as areaName
 
 The driver should define [driver\_load\_file\_help](#driver_load_file_help) and [parseResources](#parseResources) to process this file as follows:
 
+```lua
     driver_load_file_help="To get the file from the system you should click export on the " ..
                           "example system programming tool."
     function parseResources(data, fileName)
@@ -1851,6 +1929,7 @@ The driver should define [driver\_load\_file\_help](#driver_load_file_help) and 
       end
       return true, #lines
     end
+```
 
 
 <a id="orgcc03092"></a>
@@ -1864,6 +1943,7 @@ Also, the third party system provides an CSV file exactly like the presented on 
 [example 1](#loaded-resources-example-1) but in this case, it is not provided by a desktop app, but by the same system in the default HTTP port (80).
 That being the case the driver should define [driver\_load\_system\_help](#driver_load_system_help) and [requestResources](#requestResources) to get the file and process it as follows:
 
+```lua
     driver_load_system_help="If the example system is connected to the network, " ..
                             "use this to request all the resources defined on it."
     function requestResources()
@@ -1877,6 +1957,7 @@ That being the case the driver should define [driver\_load\_system\_help](#drive
         return parseResources("TheFile.csv", msg)
       end
     end
+```
 
 Where `parseResources` is the one defined in the [example 1](#loaded-resources-example-1).
 
@@ -1895,6 +1976,7 @@ while in the middle it sends messages in the form "RESOURCE,<ID>,<TYPE>,<NAME>,<
 Similarly to the previous presented example here an implementation for the [requestResources](#requestResources) is provided and [driver\_load\_system\_help](#driver_load_system_help) is defined,
 but now also an example implementation for [process](#process) is provided as follows:
 
+```lua
     driver_load_system_help="If the example system is connected to the network, " ..
                             "use this to request all the resources defined on it."
     function requestResources()
@@ -1944,6 +2026,7 @@ but now also an example implementation for [process](#process) is provided as fo
         end
       end
     end
+```
 
 
 <a id="Driver-for-systems-providing-rest-API"></a>
@@ -1960,6 +2043,7 @@ The way to implement a polling within [process](#process) is by making all the n
 call [channel.retry](#channel.retry()) before returning `CONST.POLLING` telling BLI to call [process](#process) again after some seconds.
 For example:
 
+```lua
     ...
     
     driver_channels= {
@@ -1981,6 +2065,7 @@ For example:
       channel.retry("", 10)
       return CONST.POLLING
     end
+```
 
 Some systems also provide a Rest streaming API to request state, in that case the [stream URL functions](#Stream-URL-functions) should be used and the 
 driver code should look much like non Rest drivers as [process](#process) will be listening on a streaming request for state changes instead of 
@@ -2002,7 +2087,9 @@ functions are provided to solve the most common cases [urlGet](#urlGet), [urlPut
 Performs an HTTP GET request to the given URL,
 it is defined as:
 
+```lua
     function urlGet(url, data, headers)
+```
 
 Where `url` is the URL to perform the GET operation, `data` is a string with the parameters, and `headers` is a table containing the corresponding headers for the request.
 `data` and `headers`  are optional (as normally in Lua, if you want to set `headers` you must set `data`).
@@ -2011,24 +2098,30 @@ Returs two values, a flag indicating success and the response.
 
 For example to perfomr an HTTP GET on `myserver.com` with argument `arg=28`  on port 1892, setting `"User-Agent"` header to *BLI* :
 
+```lua
     local ok, response= urlGet("http://myserver.com:1892/, "arg=28", { ["User-Agent"]= "BLI" } )
     if ok then
       processResponse(response)
     end
+```
 
 Or to get from `myserver.com` on port 80:
 
+```lua
     local ok, response= urlGet("http://myserver.com")
     if ok then
       processResponse(response)
     end
+```
 
 To set `headers` but no `data`:
 
+```lua
     local ok, response= urlGet("http://myserver.com", "", { ["User-Agent"]= "BLI" } )
     if ok then
       processResponse(response)
     end
+```
 
 
 <a id="urlPut"></a>
@@ -2038,7 +2131,9 @@ To set `headers` but no `data`:
 Performs an HTTP PUT request to the given URL,
 it is defined as:
 
+```lua
     function urlPut(url, data, headers)
+```
 
 Where `url` is the URL to perform the PUT operation, `data` is a string with the parameters, and `headers` is a table containing the corresponding headers for the request.
 `data` and `headers`  are optional (as normally in Lua, if you want to set `headers` you must set `data`).
@@ -2053,7 +2148,9 @@ Returs two values, a flag indicating success and the response.
 Performs an HTTP POST request to the given URL,
 it is defined as:
 
+```lua
     function urlPost(url, data, headers)
+```
 
 Where `url` is the URL to perform the POST operation, `data` is a string with the parameters, and `headers` is a table containing the corresponding headers for the request.
 `data` and `headers`  are optional (as normally in Lua, if you want to set `headers` you must set `data`).
@@ -2068,7 +2165,9 @@ Returs two values, a flag indicating success and the response.
 Performs an HTTP PATCH request to the given URL,
 it is defined as:
 
+```lua
     function urlPatch(url, data, headers)
+```
 
 Where `url` is the URL to perform the PATCH operation, `data` is a string with the parameters, and `headers` is a table containing the corresponding headers for the request.
 `data` and `headers`  are optional (as normally in Lua, if you want to set `headers` you must set `data`).
@@ -2083,7 +2182,9 @@ Returs two values, a flag indicating success and the response.
 Performs an HTTP DELETE request to the given URL,
 it is defined as:
 
+```lua
     function urlDelete(url, data, headers)
+```
 
 Where `url` is the URL to perform the DELETE operation, `data` is a string with the parameters, and `headers` is a table containing the corresponding headers for the request.
 `data` and `headers`  are optional (as normally in Lua, if you want to set `headers` you must set `data`).
@@ -2109,7 +2210,9 @@ but sending data as it is generated.
 Creates a streaming request for a given url,
 it is defined as:
 
+```lua
     function urlStreamCreate(request)
+```
 
 Where `request` is a table containing the following fields:
 
@@ -2134,7 +2237,9 @@ Once a stream is created it can be used as argument for the following functions 
 Blocks the caller until there is data or an error on the given stream,
 it is defined as:
 
+```lua
     function urlStreamWait(timeout, stream_1, ..., stream_N )
+```
 
 Where `stream_1` to `stream_N` are the tables returned by successful calls to [urlStreamCreate](#urlStreamCreate).
 `timeout` should be set to a number of seconds the function should wait for data before returning a timeout error (0 means infinity).
@@ -2177,7 +2282,9 @@ Returns three values:
 Releases the resources of a given stream returned by a successful call to [urlStreamCreate](#urlStreamCreate),
 it is defined as:
 
+```lua
     function urlStreamDelete(stream)
+```
 
 Where `stream` is the stream to be deleted.
 Returns two values:
@@ -2193,7 +2300,9 @@ Returns two values:
 Interrupt an ongoing call to [urlStreamWait](#urlStreamWait),
 it is defined as:
 
+```lua
     function urlStreamInterrupt(userData)
+```
 
 Where `userData` is a user defined table to be returned in the interrupted call to [urlStreamWait](#urlStreamWait) in case of success.
 
@@ -2216,6 +2325,7 @@ For a service providing a boolean state according to the Firebase Rest streaming
 we build a non standard resource type to hold that state and keep it in sync using our rest streaming API.
 
     
+```lua
     driver_channels = {
        CUSTOM("custom channel", "Connection to the site.", {})
     }
@@ -2264,6 +2374,7 @@ we build a non standard resource type to hold that state and keep it in sync usi
     end
     
     ...
+```
 
 
 <a id="orgcb1f32e"></a>
@@ -2273,31 +2384,42 @@ we build a non standard resource type to hold that state and keep it in sync usi
 Now our previous example's service provides ten different state values at <http://www.somesite.com/N> where N is 0 to 9 for each state respectively.
 So we change the url from:
 
+```lua
     local url= "http://www.somesite.com/state"
+```
 
 To:
 
+```lua
     local url= "http://www.somesite.com/"
+```
 
 The address from: 
 
+```lua
     stringArgumentRegEx("address","","",{ context_help= "Force empty to allow only one."})
+```
 
 To:
 
+```lua
     stringArgumentRegEx("address", "", "[0-9]", { context_help= "id of the resource." })
+```
 
 The [urlStreamCreate](#urlStreamCreate) from:
 
+```lua
     local request= {}
     request.arguments= ""
     request.url= url
     request.headers= headers
     request.type= "GET"
     local ok, stream, errmsg= urlStreamCreate(request)
+```
 
 To:
 
+```lua
     for i= 0,9 do 
        local request= {}
        request.arguments= ""
@@ -2306,21 +2428,27 @@ To:
        request.type= "GET"
        local ok, stream, errmsg= urlStreamCreate(request)
     end
+```
 
 And finally the [setResourceState](#setResourceState) call from:
 
+```lua
     setResourceState("Our state resource", "", { "_STATE" = putData })
+```
 
 To:
 
+```lua
     setResourceState("Our state resource", 
                      result.url:sub(#result.url, #result.url),
                      { "_STATE" = putData })
+```
 
 And it works like a charm, but lets say the user has to pay for each resource its state is requested,
 then we need to be able to only request the state of defined resources, so instead of creating streams for each number 
 we only create one for each defined resource:
 
+```lua
     for resoruce in readAllResources("_OUR_CUSTOM_STATE") do
        local request= {}
        request.arguments= ""
@@ -2329,6 +2457,7 @@ we only create one for each defined resource:
        request.type= "GET"
        local ok, stream, errmsg= urlStreamCreate(request)
     end
+```
 
 Now we only do the needed requests, the capture won't show the resources as there won't be any resource state update for non defined resources, 
 but that can be solved in some other way (e.g. see [Loaded resources](#Loaded-Resources-related-functions)).
@@ -2336,6 +2465,7 @@ The problem is that if the installer adds a new resource while online, its state
 This is what [urlStreamInterrupt](#urlStreamInterrupt) is meant for, each time a resource is added or updated, we call [urlStreamInterrupt](#urlStreamInterrupt) and for the sake of simplicity at [process](#process) we return to start over in that case:
 
     
+```lua
     driver_channels = {
       CUSTOM("custom channel", "Connection to the site.", {})
     }
@@ -2427,7 +2557,7 @@ This is what [urlStreamInterrupt](#urlStreamInterrupt) is meant for, each time a
     end
     
     ...
-
+```
 
 <a id="SRT"></a>
 
