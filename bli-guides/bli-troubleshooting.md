@@ -43,7 +43,7 @@ occurred in your controller.
 
 ## Erase all configuration and settings {#erase-configuration}
 
-An alternative, having a backed up your current _BeoLiving Intelligence_ configuration, is to erase all the configurations and settings of your 
+An alternative, having backed up your current _BeoLiving Intelligence_ configuration, is to erase all the configurations and settings of your 
 controller. This could solve conflicts immediately between your current configuration and firmware, but has the risk of losing previous 
 configurations if not done carefully. Use the [setup button function 5](bli_advanced_user_guide/05-user_button)  to erase all the configurations and set the unit to the factory defaults.
 
