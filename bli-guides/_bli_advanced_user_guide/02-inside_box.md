@@ -3,7 +3,7 @@ title: What's inside the box
 layout: pagetoc
 ---
 
-### TO CHECK
+## TO CHECK
 
 After opening _BLI's_ box you will find:
 
