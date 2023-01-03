@@ -2,6 +2,7 @@
 title: BeoLiving Intelligence hardware description
 layout: pagetoc
 ---
+## TO CHECK: change schematics and description
 
 ### Connection Panel
 
