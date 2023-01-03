@@ -2,6 +2,7 @@
 title:  BeoLiving Intelligence - FAQ
 layout: pagetoc
 ---
+## TO CHECK
 
 ## Modes
 
