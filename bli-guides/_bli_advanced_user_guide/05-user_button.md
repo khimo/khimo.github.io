@@ -3,9 +3,7 @@ title: User button
 layout: pagetoc
 ---
 
-## TO CHECK
-
-_BLI_ has a button on the connection panel, next to the reset button, ~~it's upper side~~ which provides several functions during normal operation.
+_BLI_ has a button on the connection panel, next to the reset button, which provides several functions during normal operation.
 
 To execute a function, press and hold the setup button. This will cycle through all available functions as indicated by the LED blinking (it will blink once for function 1, after a while it will blink twice for function 2 and so on).
 
