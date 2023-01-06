@@ -46,7 +46,7 @@ All the possible user LED states with their respective meaning are shown in the 
     </tr>
     <tr>
       <td>Firmware update</td>
-      <td>Green quick flash</td>
+      <td>~~Green~~ Red quick flash</td>
     </tr>
     <tr>
       <td>Loading configuration</td>
@@ -62,7 +62,7 @@ All the possible user LED states with their respective meaning are shown in the 
     </tr>
     <tr>
       <td>Boot</td>
-      <td>Red / Yellow transition</td>
+      <td>~~Red / Yellow transition~~ Solid Red</td>
     </tr>
   </tbody>
 </table>
