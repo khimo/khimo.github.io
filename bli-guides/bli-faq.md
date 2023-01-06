@@ -318,7 +318,7 @@ The LED on the _BeoLiving Intelligence_ displays it's current state, as shown in
     </tr>
     <tr>
       <td>Boot</td>
-      <td>Solid red</td>
+      <td>Solid Red</td>
     </tr>
   </tbody>
 </table>
