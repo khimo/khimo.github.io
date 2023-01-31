@@ -15,7 +15,7 @@ Located on the back of the _BLI_:
 
 <img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
 
-*Please note the new BeoLiving Intelligence does not have PoE connector. You have to connect it with the AC power supply*
+*Please note the new BeoLiving Intelligence does not support PoE. It has to be connected with the AC Power Supply*
 
 ### User Led and Button
 
