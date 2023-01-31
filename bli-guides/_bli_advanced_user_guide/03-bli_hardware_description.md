@@ -15,6 +15,8 @@ Located on the back of the _BLI_:
 
 <img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
 
+*Please note the new BeoLiving Intelligence does not have PoE connector. You have to connect it with the AC power supply*
+
 ### User Led and Button
 
 + *User LED*: The user LED is used to signalize the current state of the _BLI_, using different colours and ON-OFF pattern combinations. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different _BLI_ LED states refer to [*Led States*](#led-states) section.
