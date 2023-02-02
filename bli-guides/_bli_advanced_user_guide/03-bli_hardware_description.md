@@ -20,7 +20,7 @@ Located on the back of the _BLI_:
 ### User Led and Button
 
 + *User LED*: The circular LED located on top of the BLI is used to signalize the current state of the _BLI_, using different colours and ON-OFF pattern combinations. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different _BLI_ LED states refer to [*Led States*](#led-states) section.
-+ *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](./05-user_button) section.
++ *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](bli-guides/_bli_advanced_user_guide/05-user_button.md) section.
 
 <div class="text-center">
   <img src="../pictures/bli-advanced-user-guide/imagen-2.png" class="img-fluid" alt="BLI"/>
