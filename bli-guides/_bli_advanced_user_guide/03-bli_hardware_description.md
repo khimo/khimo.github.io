@@ -9,7 +9,7 @@ layout: pagetoc
 Located on the back of the _BLI_:
 
 + *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
-+ + *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](05-user_button.md) section. 
++ *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](05-user_button.md) section. 
 + *LAN Connector*: For connecting the BeoLiving Intelligence to a local network. 
 + *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
 + *Power USB-C*: Powers the BLI.
