@@ -13,7 +13,7 @@ Located on the back of the _BLI_:
 + *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
 + *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network. 
 
-<img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
+<img src="../pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
 
 *Please note BeoLiving Intelligence generation 3 does not support PoE. It has to be connected with the AC Power Supply*
 
