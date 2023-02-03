@@ -12,7 +12,7 @@ Located on the back of the _BLI_:
 + + *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](05-user_button.md) section. 
 + *LAN Connector*: For connecting the BeoLiving Intelligence to a local network. 
 + *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
-+ *POWER USB-C*: Powers the BLI.
++ *Power USB-C*: Powers the BLI.
 
 
 <img src="../pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
