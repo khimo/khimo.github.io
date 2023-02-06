@@ -1,5 +1,5 @@
 ---
-title: BeoLiving Intelligence |  Specifications
+title: BeoLiving Intelligence |  Specifications - Generation 3
 ---
 <h2> <span class="float-right">
 <a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
