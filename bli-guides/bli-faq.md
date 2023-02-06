@@ -2,8 +2,6 @@
 title:  BeoLiving Intelligence - FAQ
 layout: pagetoc
 ---
-## TO CHECK
-
 ## Modes
 
 #### Q: What are the differences between _ESSENTIAL_ and _PRO_ modes?
