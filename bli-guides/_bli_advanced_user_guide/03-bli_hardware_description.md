@@ -2,7 +2,6 @@
 title: BeoLiving Intelligence hardware description
 layout: pagetoc
 ---
-## TO CHECK: change schematics and description
 
 ### Connection Panel
 
@@ -17,7 +16,7 @@ Located on the back of the _BLI_:
 
 <img src="../pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
 
-*Please note BeoLiving Intelligence generation 3 does not support PoE. It has to be connected with the AC Power Supply*
+*Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector*
 
 ### User Led 
 
