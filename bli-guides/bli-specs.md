@@ -33,7 +33,6 @@ title: BeoLiving Intelligence |  Specifications
             <ul>
               <li>USB type-C 5V/3A</li>
             </ul>
-          <li>Heat output: 10.24 BTU/hr</li>
         </ul>
       </td>
     </tr>
