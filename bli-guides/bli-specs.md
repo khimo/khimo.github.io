@@ -20,7 +20,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>Ethernet </li>
-          <li>USB  (loads up to 500mA)</li>
+          <li>USB 2.0</li>
         </ul>
       </td>
     </tr>
@@ -47,10 +47,11 @@ title: BeoLiving Intelligence |  Specifications
       </td>
     </tr>
     <tr>
-      <td>Operating Temperature Range</td>
+      <td>Temperature Range</td>
       <td>
         <ul>
-          <li>-10°C to 60°C</li>
+          <li>Operating: -10°C to 60°C</li>
+          <li>Storage: -40°C to 85°C</li>
         </ul>
       </td>
     </tr>
