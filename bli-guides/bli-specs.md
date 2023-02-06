@@ -74,7 +74,7 @@ title: BeoLiving Intelligence |  Specifications
 
 ## Connection Panel
 
-<img src="../pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
+<img src="/pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
 
 Located at the back of the _BLI_:
 
