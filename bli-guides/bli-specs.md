@@ -50,7 +50,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>Operating Temperature Range</td>
       <td>
         <ul>
-          <li>0°C to 60°C</li>
+          <li>-10°C to 60°C</li>
         </ul>
       </td>
     </tr>
@@ -58,16 +58,17 @@ title: BeoLiving Intelligence |  Specifications
       <td>Dimensions</td>
       <td>
         <ul>
-        <li>Length: 127mm</li>
-        <li>Width: 127mm</li>
-        <li>Height 30mm</li>
+        <li> Weight: 195 gr </li>
+        <li>Length: Length: 12 cm </li>
+        <li>Width: 12 cm </li>
+        <li>Height: 3,2 cm </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td>Real time clock</td>
+      <td>RTC</td>
       <td>
-        -
+        Real time clock operated from on board battery
       </td>
     </tr>
   </tbody>
