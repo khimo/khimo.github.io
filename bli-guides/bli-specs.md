@@ -87,4 +87,4 @@ Located at the back of the _BLI_:
 + *Power USB-C*: Powers the BLI.
 
 
-**Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector* **
+**Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector***
