@@ -38,7 +38,7 @@ Our team will study your case and will reach you as soon as possible with instru
 
 ## System reset button {#system-reset}
 
-On the back side of the _BeoLiving Intelligence_ -, next to the user button, the system reset button is found. Press for 8 seconds to *reboot* the _BeoLiving Intelligence_. This method must be used if the _BeoLiving Intelligence_ is not able to restore its proper operation. After normal operation is restored, a [Service report](#service-report) must be generated to let us check what issue 
+On the back side of the _BeoLiving Intelligence_, next to the _User button_, the system reset button is found. Press for 8 seconds to *reboot* the _BeoLiving Intelligence_. This method must be used if the _BeoLiving Intelligence_ is not able to restore its proper operation. After normal operation is restored, a [Service report](#service-report) must be generated to let us check what issue 
 occurred in your controller.
 
 ## Erase all configuration and settings {#erase-configuration}
