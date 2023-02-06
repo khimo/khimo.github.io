@@ -28,11 +28,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>Power</td>
       <td>
         <ul>
-          <li>5V DC 3W</li>
-          <li>Connector:</li>
-            <ul>
-              <li>USB type-C 5V/3A</li>
-            </ul>
+          5V, 3A USB-C connector
         </ul>
       </td>
     </tr>
@@ -40,8 +36,9 @@ title: BeoLiving Intelligence |  Specifications
       <td>Accessories included in the box</td>
       <td>
         <ul>
-          <li>5V, 2A (10W) AC/DC Wall Adapter</li>
+          <li>5V, 3A (10W) AC/DC Wall Adapter</li>
           <li>Wall/Ceiling Bracket</li>
+          <li>US, UK, AU and EU plug adapters</li>
         </ul>
       </td>
     </tr>
@@ -68,7 +65,7 @@ title: BeoLiving Intelligence |  Specifications
     <tr>
       <td>RTC</td>
       <td>
-        Real time clock operated from on board battery
+        Real time clock 
       </td>
     </tr>
   </tbody>
@@ -90,4 +87,4 @@ Located at the back of the _BLI_:
 + *Power USB-C*: Powers the BLI.
 
 
-*Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector*
+Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector*
