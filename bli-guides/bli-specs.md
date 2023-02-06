@@ -19,7 +19,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>Connectivity</td>
       <td>
         <ul>
-          <li>Ethernet with <b>PoE 802.3af</b></li>
+          <li>Ethernet </li>
           <li>USB  (loads up to 500mA)</li>
         </ul>
       </td>
@@ -64,6 +64,12 @@ title: BeoLiving Intelligence |  Specifications
         <li>Width: 127mm</li>
         <li>Height 30mm</li>
         </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Real time clock</td>
+      <td>
+        -
       </td>
     </tr>
   </tbody>
