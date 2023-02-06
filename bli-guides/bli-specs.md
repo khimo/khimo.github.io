@@ -20,7 +20,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>Ethernet </li>
-          <li>USB 2.0</li>
+          <li>USB 2.0 (500 mA @ 5 V)</li>
         </ul>
       </td>
     </tr>
