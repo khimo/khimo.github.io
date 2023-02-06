@@ -65,7 +65,9 @@ title: BeoLiving Intelligence |  Specifications
     <tr>
       <td>RTC</td>
       <td>
-        </li>Real time clock </li>
+        <ul>
+          <li>Real time clock </li>
+        </ul>
       </td>
     </tr>
   </tbody>
