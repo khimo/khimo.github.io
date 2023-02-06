@@ -21,7 +21,6 @@ title: BeoLiving Intelligence |  Specifications
         <ul>
           <li>Ethernet </li>
           <li>USB  (loads up to 500mA)</li>
-          <li>USB type-C 5V/3A</li>
         </ul>
       </td>
     </tr>
@@ -32,9 +31,8 @@ title: BeoLiving Intelligence |  Specifications
           <li>5V DC 3W</li>
           <li>Connector:
             <ul>
-              <li>Barrel jack</li>
-              <li>[+] pin; [-] sleeve</li>
-              <li>5.5mm x 2.1mm</li>
+              
+              <li>USB type-C 5V/3A</li>
             </ul></li>
           <li>Heat output: 10.24 BTU/hr</li>
         </ul>
