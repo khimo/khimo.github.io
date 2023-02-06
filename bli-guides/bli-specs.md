@@ -28,7 +28,7 @@ title: BeoLiving Intelligence |  Specifications
       <td>Power</td>
       <td>
         <ul>
-          5V, 3A USB-C connector
+          <li>5V, 3A USB-C connector</li>
         </ul>
       </td>
     </tr>
@@ -65,7 +65,7 @@ title: BeoLiving Intelligence |  Specifications
     <tr>
       <td>RTC</td>
       <td>
-        Real time clock 
+        </li>Real time clock </li>
       </td>
     </tr>
   </tbody>
@@ -87,4 +87,4 @@ Located at the back of the _BLI_:
 + *Power USB-C*: Powers the BLI.
 
 
-Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector*
+**Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector* **
