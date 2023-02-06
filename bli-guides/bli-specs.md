@@ -3,7 +3,7 @@ title: BeoLiving Intelligence |  Specifications - Generation 3
 ---
 <h2> <span class="float-right">
 <a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
-</span>  Hardware specifications </h2>
+</span>  Hardware specifications - Generation 3 </h2>
 
 <br/>
 
@@ -76,7 +76,7 @@ title: BeoLiving Intelligence |  Specifications - Generation 3
 
 
 
-## Connection Panel
+## Connection Panel - Generation 3
 
 <img src="pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
 
