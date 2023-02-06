@@ -29,11 +29,10 @@ title: BeoLiving Intelligence |  Specifications
       <td>
         <ul>
           <li>5V DC 3W</li>
-          <li>Connector:
+          <li>Connector:</li>
             <ul>
-              
               <li>USB type-C 5V/3A</li>
-            </ul></li>
+            </ul>
           <li>Heat output: 10.24 BTU/hr</li>
         </ul>
       </td>
