@@ -21,6 +21,7 @@ title: BeoLiving Intelligence |  Specifications
         <ul>
           <li>Ethernet </li>
           <li>USB  (loads up to 500mA)</li>
+          <li>USB type-C 5V/3A</li>
         </ul>
       </td>
     </tr>
