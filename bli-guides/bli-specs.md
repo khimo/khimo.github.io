@@ -1,5 +1,5 @@
 ---
-title: BeoLiving Intelligence |  Specifications - Generation 3
+title: BeoLiving Intelligence |  Specifications
 layout: pagetoc
 ---
 <h2> <span class="float-right">
