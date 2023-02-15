@@ -88,8 +88,8 @@ Located at the back of the _BLI_:
 + *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
 + *Power USB-C*: Powers the BLI.
 
-
+ q
 **Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector***
 
 
-**To download the Beoliving Intelligence generation 1 specifications follow [this link](_specs-files/Beoliving_Intelligence_specs-1gen.pdf)**
+**To download the Beoliving Intelligence generation 1 specifications follow [this link](./_specs-files/Beoliving_Intelligence_specs-1gen.pdf)**
