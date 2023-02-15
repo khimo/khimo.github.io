@@ -52,7 +52,7 @@ title: BeoLiving Intelligence |  Specifications
         </ul>
       </td>
     </tr>
-    <tr>To 
+    <tr>
       <td>Dimensions</td>
       <td>
         <ul>
