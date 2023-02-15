@@ -76,7 +76,6 @@ title: BeoLiving Intelligence |  Specifications
 
 
 
-
 ## Connection Panel - Generation 3
 
 <img src="pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
