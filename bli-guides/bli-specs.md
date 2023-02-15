@@ -1,9 +1,8 @@
 ---
 title: BeoLiving Intelligence |  Specifications
-layout: pagetoc
 ---
 <h2> <span class="float-right">
-<a href="https://github.com/khimo/khimo.github.io/files/6421251/Beoliving_Intelligence_specs.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
+<a href="_specs-files/Beoliving_Intelligence_specs-3gen.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
 </span>  Hardware specifications - Generation 3 </h2>
 
 <br/>
@@ -52,7 +51,7 @@ layout: pagetoc
         </ul>
       </td>
     </tr>
-    <tr>
+    <tr>To 
       <td>Dimensions</td>
       <td>
         <ul>
@@ -91,3 +90,6 @@ Located at the back of the _BLI_:
 
 
 **Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector***
+
+
+**To download the Beoliving Intelligence generation 1 specifications follow [this link](_specs-files/Beoliving_Intelligence_specs-1gen.pdf)**
