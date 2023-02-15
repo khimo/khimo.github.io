@@ -2,7 +2,7 @@
 title: BeoLiving Intelligence |  Specifications
 ---
 <h2> <span class="float-right">
-<a href="../_specs-files/Beoliving_Intelligence_specs-3gen.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
+<a href="/_specs-files/Beoliving_Intelligence_specs-3gen.pdf" title="Download"><i class="fa fa-arrow-circle-down  fa-2x"></i></a>
 </span>  Hardware specifications - Generation 3 </h2>
 
 <br/>
@@ -92,4 +92,4 @@ Located at the back of the _BLI_:
 **Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector***
 
 
-**To download the Beoliving Intelligence generation 1 specifications follow [this link](../_specs-files/Beoliving_Intelligence_specs-1gen.pdf)**
+**To download the Beoliving Intelligence generation 1 specifications follow [this link](/_specs-files/Beoliving_Intelligence_specs-1gen.pdf)**
