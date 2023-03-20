@@ -2,7 +2,6 @@
 title:  BeoLiving Intelligence - FAQ
 layout: pagetoc
 ---
-
 ## Modes
 
 #### Q: What are the differences between _ESSENTIAL_ and _PRO_ modes?
@@ -301,7 +300,7 @@ The LED on the _BeoLiving Intelligence_ displays it's current state, as shown in
     </tr>
     <tr>
       <td>Firmware update</td>
-      <td>Green quick flash</td>
+      <td>Red quick flash</td>
     </tr>
     <tr>
       <td>Loading configuration</td>
@@ -317,7 +316,7 @@ The LED on the _BeoLiving Intelligence_ displays it's current state, as shown in
     </tr>
     <tr>
       <td>Boot</td>
-      <td>Red / Yellow transition</td>
+      <td>Solid Red</td>
     </tr>
   </tbody>
 </table>

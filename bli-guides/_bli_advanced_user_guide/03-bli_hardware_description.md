@@ -7,20 +7,23 @@ layout: pagetoc
 
 Located on the back of the _BLI_:
 
-+ *Power*: Powers the _BLI_. 
-+ *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
 + *System Reset Button*: Press & hold for 8 seconds to *reboot* the system.
-+ *RJ 45 Connector*: For connecting the BeoLiving Intelligence to a local network (*PoE* capable). 
++ *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](05-user_button.md) section. 
++ *LAN Connector*: For connecting the BeoLiving Intelligence to a local network. 
++ *USB Port*: The USB port can be used for connections via RS232 or for service purposes.
++ *Power USB-C*: Powers the BLI.
 
-<img src="../pictures/bli-advanced-user-guide/ports.png" class="img-fluid" alt="Ports"/>
 
-### User Led and Button
+<img src="../pictures/bli-advanced-user-guide/hardware-description.png" class="img-fluid" alt="Ports"/>
 
-+ *User LED*: The user LED is used to signalize the current state of the _BLI_, using different colours and ON-OFF pattern combinations. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different _BLI_ LED states refer to [*Led States*](#led-states) section.
-+ *User Button*: This button is intended for user confirmation and button function input. For more information refer to [Button Functions](./05-user_button) section.
+*Please note that BeoLiving Intelligence generation 3 can be only powered by the *USB-C connector*
+
+### User Led 
+
++ *User LED*: The circular LED located on top of the BLI is used to signalize the current state of the _BLI_, using different colours and ON-OFF pattern combinations. Colours could be Green, Red or Yellow and the patterns could be Solid, Flash and Quick Flash. For more information about different _BLI_ LED states refer to [*Led States*](#led-states) section.
 
 <div class="text-center">
-  <img src="../pictures/bli-advanced-user-guide/bli.png" class="img-fluid" alt="BLI"/>
+  <img src="../pictures/bli-advanced-user-guide/imagen-2.png" class="img-fluid" alt="BLI"/>
 </div>
 
 ### Led States
@@ -45,7 +48,7 @@ All the possible user LED states with their respective meaning are shown in the 
     </tr>
     <tr>
       <td>Firmware update</td>
-      <td>Green quick flash</td>
+      <td>Red quick flash</td>
     </tr>
     <tr>
       <td>Loading configuration</td>
@@ -61,7 +64,7 @@ All the possible user LED states with their respective meaning are shown in the 
     </tr>
     <tr>
       <td>Boot</td>
-      <td>Red / Yellow transition</td>
+      <td>Solid Red</td>
     </tr>
   </tbody>
 </table>

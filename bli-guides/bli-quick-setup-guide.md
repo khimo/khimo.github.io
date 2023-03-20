@@ -17,7 +17,7 @@ configure a static IP address, please refer to [BeoLiving Intelligence Advanced 
 1. **Connect BLI** 
     - Connect your _BeoLiving Intelligence_ to your LAN through its [RJ45 ethernet port](./bli_advanced_user_guide/03-bli_hardware_description).
 1. **Turn on BLI**
-    - Power your _BeoLiving Intelligence_ using the AC power supply or by using PoE (Power over Ethernet) and wait until the _BeoLiving Intelligence_ is in normal operation mode (the User LED goes solid green).
+    - Power your _BeoLiving Intelligence_ using the AC power supply and wait until the _BeoLiving Intelligence_ is in normal operation mode (the User LED goes solid green).
 1. **Install the App**
     - Go to the store in your smart device, download and install the _BeoLiving App_.
 1. **Open BeoLiving App**
