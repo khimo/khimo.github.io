@@ -86,5 +86,7 @@ Sources should be edited to match user requirements in the *Interfaces tab*. The
 ## v0.1 
  - First release supporting the integration of the Atlona OmniStream Encoders and Decoders with the BLI.
 ## v0.2
- - Fixed issues with connection, resource states. Added possibility of more than one outputs in decoder.
+ - Fixed issues with connection. Added possibility of more than one outputs in decoder.
+## v0.3
+ - Fixed bug in resource state, added Keep Alive functionality.
 

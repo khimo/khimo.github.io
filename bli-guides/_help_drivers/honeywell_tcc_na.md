@@ -40,3 +40,6 @@ The available states are:
 ### v0.1 | 22/11/2021
 - Initial version
 
+### v0.2 | 14/12/2022
+- Minor fix in setpoint state
+

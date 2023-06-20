@@ -54,8 +54,9 @@ For more tips and information about the BLI's lua macros, see [here](../../bli-g
 
 
 ## Changelog
-
-### v0.1
- - First version
+**v0.1**
+  * First version
+**v0.2**
+  * Added support for Nuki Smart Lock 3.0
   
 *Please, report any issue with this driver to: support+drivers@khimo.com*
