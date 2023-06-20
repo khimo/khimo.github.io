@@ -1,7 +1,10 @@
 ---
-title: Lutron HW Interactive
+title: Lutron Homeworks Interactive
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Lutron HomeWorks Interactive
+============================
 
 Connecting to a HomeWorks processor
 -----------------------------------

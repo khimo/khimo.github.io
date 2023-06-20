@@ -1,7 +1,10 @@
 ---
 title: Vantage
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Vantage
+=======
 
 Connection to a Vantage system
 ------------------------------

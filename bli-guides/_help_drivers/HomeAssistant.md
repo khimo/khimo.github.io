@@ -13,7 +13,7 @@ Integrates a Home Assistant hub into the BeoLiving intelligence, allowing to imp
 The BLI will connect to the home assistant hub through a web socket.
 
 For that purpose, you need to set a token to authenticate the BLI _against_ home assistant.
-This token should be a long lived token that you can create on home assistant's web panel: go to user profile and at the bottom, there is a Long-Lived Access Tokens section where you can create a token and then copy that token and paste it on the *Long live token* parameter for the system on the BLI.
+The token should be a long lived token that you can create on home assistant's web panel: go to user profile and at the bottom, there is a Long-Lived Access Tokens section where you can create a token and then copy that token and paste it on the *Long live token* parameter for the system on the BLI.
 
 
 Connection settings are:
@@ -28,6 +28,7 @@ The available resource are:
 
   + **Shades (SHADE):** shade without state of level.
   + **Shades with level (SHADE):** shade with state of level.
+  + **Shades with level and tilt (SHADE):** shade with state of level and tilt.
   + **Lights (DIMMER):** dimmer.
   + **Lights with Color (DIMMER):** dimmer with colors.
   + **Thermostat 1SP (THERMOSTAT\_1SP):** thermostat of one setpoint.
@@ -51,6 +52,8 @@ The available resource are:
   + **Alarm with Trigger and Custom Bypass (ALARM):** alarm with custom bypass mode and trigger.
   + **Alarm with Trigger, Night and Custom Bypass (ALARM):** alarm with night and custom bypass modes and trigger.
 
+The following thermostats were not tested with the BeoLiving App, if you use them and have any issue contact us with the email at the end of this page:
+Cool Thermostat with Fan, Heat/Cool Thermostat with Fan, Heat Thermostat with Fan, Heat/Cool Thermostat, Cool Thermostat.
 
 ## Resource Address
 
@@ -87,6 +90,15 @@ Press the "Capture" button, executed events sent by the systems in your installa
     - **LOWER**
     - **STOP**
     - **SET**: Set the shade level, in percentage.
+  + Shades with Level and Tilt
+    - **RAISE**
+    - **LOWER**
+    - **STOP**
+    - **SET**: Set the shade level, in percentage.
+    - **RAISE TILT**
+    - **LOWER TILT**
+    - **STOP TILT**
+    - **SET TILT**: Set the tilt level, in percentage.
   + Thermostat 1SP
     - **SET SETPOINT**: Set the setpoint on the thermostat
     - **SET MODE**: Select the operation mode to OFF, Heat, Cool and Auto
@@ -149,6 +161,9 @@ Press the "Capture" button, executed events sent by the systems in your installa
   + Shades
   + Shades with Level
     - **LEVEL**: Shade level, in percentage.
+  + Shades with Level and Tilt
+    - **LEVEL**: Shade level, in percentage.
+    - **TILT**: Tilt level, in percentage.
   + Thermostat 1SP/Heat Thermostat/Cool Thermostat/Heat-Cool Thermostat/Auto Thermostat
     - **SETPOINT**: Setpoint on the thermostat
     - **TEMPERATURE**: Current temperature
@@ -178,6 +193,11 @@ Press the "Capture" button, executed events sent by the systems in your installa
  
 ### v0.1 | 2020/11/17
  - Initial version
+ - Added shades with tilt, fixed shades with level
+### v0.3 | 2021/12/10
+ - Added shades with only tilt, fixed thermostats so they can be used with the app.
+ ### v0.4 | 2023/1/5
+ - Added new light integration according to new Home Assistant protocol
 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
 

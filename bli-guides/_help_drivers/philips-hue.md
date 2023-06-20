@@ -1,7 +1,10 @@
 ---
 title: Philips Hue
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Philips Hue
+===============================
 
 This driver supports communication with a Philips Hue bridge,
 allowing to control lights and lighting groups.
@@ -78,4 +81,3 @@ the _TIMED SET command should be used.
  - v2.2.1 | 18/06/2021
 
     Added various resource types and SET COLOR TEMPERATURE command.
-

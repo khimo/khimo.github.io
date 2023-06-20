@@ -1,14 +1,15 @@
 ---
-title: ecobee
+title: ecobee Thermostat
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
-# ecobee
+ecobee
+=====================================
 
 This driver supports communication with ecobee API server, allowing to control multiple thermostats registered on an specific account. Also it's possible to read measured values from remote sensors as the current temperature and occupancy. 
 
-## Connecting to the system
+Connecting to the system
+--------------------------------
 
 In order to connect BeoLink Gateway to ecobee, a login process using a PIN code
 is required.
@@ -22,21 +23,24 @@ On `Systems > Connection Settings` page is displayed the login PIN and a link UR
 
 After give authorization to the `BeoLink Gateway` applicaction, it may take up to 30 seconds for the driver to set into `Online`.
 
-## Available resources
+Available resources
+--------------------------------
 
 The available resource types are:
 
 * **ecobee Thermostat** : ecobee Thermostat.
 * **Remote Sensor** : Remote Sensor associated to an ecobee Thermostat. Reports temparature and occupancy readings. 
 
-## Resource Address
+Resource Address
+-------------------
 
 Resource address for each resource type is shown below: 
 
 * **ecobee Thermostat** : Equal to the Serial Number of the Thermostat (unique number). Eg: `123456789103`.
 * **Remote Sensor** : Equal to the unique 4-digit alphanumeric code number found on the back of the physical sensor. Eg: `ATZS`  
 
-## Commands, Events and States
+Commands, Events and States
+-------------------------------
 
 + **ecobee Thermostat** :
    - **SET HEAT SP** : sets heating set point of a thermostat or captures event on a given level.
@@ -62,6 +66,7 @@ Resource address for each resource type is shown below:
       + OCCUPANCY: Indicates if any motion was detected in the past 30 minutes by the motion sensor of the remote sensor.
   
 
-## Important note regarding status update latency and end user expirience
+Important note regarding status update latency and end user expirience
+-------------------------------------------------------------------------
 
 Resource state require a constant polling to get the specific state of each resource. Due to ecobee limitations, after setting the thermostat physically is expected that the changes made, present certain delays (3 minutes max.) to see the changes on the BeoLink Gateway and BeoLink App.

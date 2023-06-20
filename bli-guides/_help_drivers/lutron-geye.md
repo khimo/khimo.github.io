@@ -1,7 +1,10 @@
 ---
-title: Lutron Grafik Eye
+title: Lutron GRAFIK Eye
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Lutron Grafik Eye
+=================
 
 Connecting to a Grafik Eye system
 ---------------------------------

@@ -1,7 +1,10 @@
 ---
 title: Tekmar
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+tekmar
+===============================
 
 This driver supports communication with tekmar thermostats.
 

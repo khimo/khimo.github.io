@@ -1,7 +1,9 @@
 ---
 title: MasterLink Gateway Protocol
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+# MasterLink Gateway Protocol DRIVER
 
 Integrate MasterLink products using a BeoLink Gateway or MasterLink Gateway as a MasterLink interface.
 
@@ -55,6 +57,7 @@ Press the "Capture" button, excecuted events sent by the systems in your install
 ## Resource commands
 
  - Masterlink audio/video commands: All the traditional RENDERER commands are available (BeoRemote One's commands), including: CHANNEL UP/DOWN, PLAY, PAUSE, REWIND, STANDBY, VOLUME UP/DOWN, the colours and arrows, among many others.
+ - Custom commands: Supported custom commands are MENU, EXIT, BACK, CINEMA_ON, and CINEMA_OFF. More may be added upon request.
 
 ## Resource states
 

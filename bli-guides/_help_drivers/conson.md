@@ -1,7 +1,10 @@
 ---
 title: Conson XP
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Conson XP
+=========
 
 Connection to a Conson system is done via an XP130 gateway module.
 This module provides an RS485 interface, so either a RS232 to RS485

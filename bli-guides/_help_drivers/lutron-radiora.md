@@ -1,7 +1,10 @@
 ---
-title: Lutron Radio RA
+title: Lutron Radio Ra
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Lutron Radio RA
+===============
 
 Connection to a Radio RA system
 -------------------------------

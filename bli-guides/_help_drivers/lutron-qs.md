@@ -1,7 +1,9 @@
 ---
-title: Lutron Homeworks QS and Radio Ra2
+title: Lutron Homeworks QS - Radio Ra2 - Grafik QS
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+# Lutron Homeworks QS and Radio Ra2
 
 This driver supports communication with Lutron HomeWorks QS, Lutron
 Radio RA2 and Lutron Grafik QS systems.

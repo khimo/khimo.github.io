@@ -5,11 +5,14 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 ---
 # Lutron RA2 Extensible Application Protocol (LEAP)
 
-LEAP is the protocol used to integrate Lutron RA2 Select, Caseta and HomeWorks
+LEAP is the protocol used to integrate Lutron RA2 Select, RadioRA3, Caseta and HomeWorks
 systems.
 
 LEAP development is ongoing so only those devices and features already supported
 by the protocol at the time of developing this driver are supported.
+
+**Note**: If you've been using this driver with a Lutron system and you wish to change it (eg. from HomeWorks to RA2 Select),
+the driver must be deleted and re-added in order to achieve the connection. 
 
 ## Connecting
 
@@ -40,11 +43,16 @@ Button without feedback, good for Pico controls, but can be used for any Lutron 
 Button with feedback LED, used for Keypads.
 Only available for HomeWorks setups.
 
+*Warning*: Buttons events received by the BLI will depend in the configuration of the button in Lutron side. If nothing is configured in lutron for a given event, you will not get the Event in the BLI. In order to get most buttons events it is recommended to setup the button in Lutron as "Conditional" and add at lease one "dummy" action (e.g.: an unnafected action in a lighting zone). 
+
 ### DIMMER
 Simple dimmer with Level, used for Lutron *Dimmed* zones.
 
 ### SWITCH
 Light with on/off functionality, used for Lutron *Switched* zones.
+
+#### MOTOR
+Shade with Raise/Lower/Stop functionality, used for Lutron *OpenCloseStop* zones.
 
 ### SHADE
 Shade with Level, and Raise/Lower/Stop functionality, used for Lutron *Shade* zones.
@@ -86,6 +94,23 @@ Button with PRESS command to activate it.
 Only Presets used on buttons or area scenes are retireved automatically, 
 but knowing a preset href one could add it manually to use it.
 
+### SINGLE SETPOINT THERMOSTAT
+Thermostat with one setpoint, used for Lutron with HVAC zones. Has SET SETPOINT, 
+SET MODE (Heat, Cool, Auto, Em.Heat, Off) and SET FAN AUTO (Auto, On).
+
+**Note**: If a dual setpoint thermostat is configured to behave as single setpoint (for example, by enabling
+HEAT mdoe only), then it should be added as a SINGLE SETPOINT THERMOSTAT. This thermostat will map the
+enabled mode setpoint to the current setpoint. 
+
+### DUAL SETPOINT THERMOSTAT
+Thermostat with two setpoints, used for Lutron with HVAC zones. Has SET HEAT SP, SET COOL SP, 
+SET MODE (Heat, Cool, Auto, Em.Heat, Off) and SET FAN AUTO (Auto, On). Heat and Cool setpoint may have a 
+compulsory difference between them stated by the Lutron device, which is kept when changing setpoints.
+
+### Changelog
+#### v0.5 | 12/10/2022
+ - Adds support to OpenCloseStop as MOTOR shade
+
 <!-- TODO:
 
 Discovery
@@ -98,7 +123,6 @@ add here if not compatible with old driver, also there is in the new protocol
 a user/password authentication described but not developed/working/etc.
 
 More resource types:
- | HVAC                    | An HVAC zone for controlling temperature                                                                                                | not supported                                         |
  | Receptacle              | A receptacle zone                                                                                                                       | GoToReceptacleLevel                                   |
  | CCO                     | A CCO zone                                                                                                                              | GoToCCOLevel                                          |
  | FanSpeed                | A fan speed zone, capable of a set of speeds                                                                                            | GoToFanSpeed                                          |
@@ -110,3 +134,4 @@ Switches
 Test. Tried to tes using our dimmer but:- "This request is not supported : Only switched zones can be sent to a switched level"
 
 -->
+

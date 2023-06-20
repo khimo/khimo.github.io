@@ -1,9 +1,8 @@
 ---
 title: Bosch
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
-
-
 # Bosch Smart Home
 
 This driver supports communication with a Bosch Smart Home Controller,
