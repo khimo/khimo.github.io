@@ -1,4 +1,29 @@
 
+//- Google Fonts
+$font-google-primary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
+$font-google-secondary: 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
+
+//- @type List
+$abril-fatface: 'Abril Fatface', cursive;
+$montserrat: 'Montserrat', sans-serif;
+
+//- Typography
+$base-font-family: $montserrat;
+$heading-font-family: $abril-fatface;
+
+
+body {
+    background-color: $body-background-color;
+    font-family: $base-font-family;
+    line-height: 1.5;
+}
+
+h1, h2, h3 ,h4 ,h5 {
+    font-family: $heading-font-family;
+}
+
+
+
 /* As we have a fixed navbar on top just add so padding so we are sure that the text is visible when accessed from anchor link */
 .pagecontent h1, .pagecontent h2,
 #content h1, #content h2
@@ -43,3 +68,16 @@ dd {
   padding: 0 0.5em;
   color: #555;
 }
+
+dt:before {
+  content: "";
+  display: block;
+}
+dt, dd {
+  display: inline;
+}
+dt {
+    font-family: $heading-font-family;
+}
+
+
