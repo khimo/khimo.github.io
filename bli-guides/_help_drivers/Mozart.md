@@ -37,7 +37,7 @@ For overwriting this configuration, you can go to the "Interfaces" tab, select t
 <dt>MOVE_ITEM</dt><dd>Move an item in the playqueue</dd>
 <dt>STANDBY</dt><dd>Turn off the audio product</dd>
 <dt>AUDIO_OVERLAY_TEXT</dt><dd>Speak the text as overlay content. Currently, 100 unique TTS messages can be generated a day and generated messages are cached for 24 hours</dd>
-<dt>SELECT_INPUT</dt><dd>Select an input</dd>
+<dt>SELECT_INPUT</dt><dd>Select an input (or source)</dd>
 <dt>PREV</dt><dd>Previous track command</dd>
 <dt>_MOVE_STAND</dt><dd>Move the stand position to a defined angle</dd>
 <dt>_SET_SOUND_LISTENING_MODE</dt><dd>Select the listening mode</dd>
