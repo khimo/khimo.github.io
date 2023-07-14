@@ -1,7 +1,9 @@
 ---
 title: Cameras Integration Guide
+description: Which cameras are compatible, how to set up the cameras in PRO mode, and how they are used by the clients.
 layout: pagetoc
 ---
+
 
 BeoLiving Intelligence (BLI) provides robust support for IP cameras. However, the integration process can be complex due to the unique configuration required for each camera provider. This guide will help you understand the requirements and steps for integrating IP cameras with BLI.
 
