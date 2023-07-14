@@ -1,4 +1,8 @@
-#### Cameras
+---
+title: Interfaces
+layout: pagetoc
+---
+# Cameras
 
 The configuration of several network cameras is permitted. To add a camera, press the "**+**" sign in the **Cameras** header (found in the left column).
 
@@ -8,6 +12,142 @@ The configuration of several network cameras is permitted. To add a camera, pres
 </div>
 <br>
 
-For more information on how to set up a camera, and to find out which cameras are compatible, please refer to the [Camera integration guide](#cameras).
+##### ONVIF Cameras
 
+Both ONVIF protocol cameras and HTTP cameras are supported, when adding a camera ONVIF cameras available on the network will be automatically detected. These can also be added to your system directly through the BeoLiving App on a smartphone.
 
+> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on [www.onvif.org/conformant-products/](https://www.onvif.org/conformant-products/). You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-confONVIF.png" class="img-fluid" alt="Interfaces ONVIF Camera configuration"/>
+</div>
+<br>
+
+##### HTTP Camera basic configuration
+
+_BLI PRO_ has a simple and strong capability integration with most CCTV systems or IP Cameras found in the market.
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-conf.png" class="img-fluid" alt="Interfaces Camera configuration"/>
+</div>
+<br>
+
+To add a camera you must fill the next form:
+
+- **Name**: Name that identifies the camera. The name will be shown in the user interfaces.
+- **Zone**: Drop down list to select the zone in which the camera is placed.
+- **IP**: An IP number, to which all commands will be appended, must be provided. HTTP(snapshots) or RTSP(video) ports will then be declared separately.
+>> E.g. 192.168.1.37
+- **HTTP Port**: Snapshot feed camera port number (default: 80).
+- **RTSP Port**: Video feed camera port number (default: 554).
+
+>> These camera _RTSP_ streams will not be available through webpanel and may only be seen on the App or by opening rtsp://$GATEWAY_HOST:554/$AREA/$ZONE/CAMERA/$NAME (for example with VLC)
+
+- **Username** and **Password**: The optional _Username_ and _Password_ fields may be used for basic HTTP authentication to access the camera from
+ the user interfaces.
+
+If a camera must be removed from the list, choose the _Camera_ header in the left column and press the **Remove** button.
+
+##### HTTP Camera resources path
+
+By pressing the _Raw edit_ button a text representation of all the fields appears for setting camera resolutions and commands. It is possible to 
+copy and paste the text when setting up other similar cameras and for each of these to adapt to the actual camera.
+> E.g. adjust to the correct 
+IP-address.
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-camera-paths.png" class="img-fluid" alt="Interfaces Camera paths"/>
+</div>
+<br>
+
+###### Video & Images
+
+At least one of the resource paths for obtaining _Video & Images_ both in high and low resolution or RTSP stream must be provided.
+> E.g. mjpg/video.cgi for high resolution video. 
+
+All the commands will be appended to the correspondent base URL.
+
+###### Pan, Tilt and Zoom commands
+
+If your camera is able to control lens direction and zoom, _Pan_, _Tilt_ and _Zoom_ paths could be specified and controlled through all user 
+interfaces.
+
+#### Zone setup
+
+In this section of the _Interfaces_ page, for each zone it is possible to reorder, hide/show and rename the resources to be seen in 
+the user interfaces.
+
+##### Resources for area/zone
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-zones-setup.png" class="img-fluid" alt="Interfaces Zones setup"/>
+</div>
+<br>
+
+For the resource to be moved in the list, place the cursor over the left button (three horizontal lines), then click and drag the resource until the line-marking is where the resource should be placed and release the mouse button.
+
+- **Name**: Possibility to rename the resource.
+- **Type**: The type of the resource is stated.
+- **Hidden**: Set if the resource must be hidden in the user interface.
+- **Options/Hints**: For macros and buttons that are visible on the user interfaces the following options are available:
+  - **Confirm**: If this option is enabled, after a button press or after a macro is triggered the action will need confirmation on a hand held device.
+>>> E.g. pressing a Yes button to avoid unintended activation before the desired function is executed. This could be when an
+  action should not take place unintended, e.g. activating ‘Vacation mode’.
+  - **Compact**: When enabled the button in the user interface will be shown in a half-width button. 
+>> E.g. there is room for two buttons per line.
+  - **On camera view**: With ‘On camera’ enabled, when using _WebPanel_ the half-width button will be shown next to the IP camera images in that zone. When _BLApp_ is used, the button will be shown in the _Cameras_ section of _BLApp_.
+  - **On scenes view**: When enabled, the button will be shown in the _Scenes_ section of _BLApp_
+  - **On dimmer view**: When enabled, the button will be shown in the _Lights_ section of _BLApp_.
+  - **On shade view**: When enabled, the button will be shown in the _Shade_ section of _BLApp_.
+  - **On thermostat view**: When enabled, the button will be shown in the _Thermostat_ section of _BLApp_.
+
+#### Favourites Lists {#fav-list}
+
+In this section of the _Interfaces_ page, favourites lists for TV channels as well as radio stations can be added. In the hand held devices the 
+favourite channels/stations are listed by name and logo if such is selected.
+
+<br>
+<div class="text-center">
+  <img src="https://khimo.github.io/bli-guides/pictures/bli-pro-user-guide/interfaces-fav-lists.png" class="img-fluid" alt="Interfaces Favourite lists"/>
+</div>
+<br>
+
+To add a new favourites list, press the "**+**" sign in the _Favourites Lists_ column entry. In the top left field of the display, enter the source provider's name. The **Clone** button (top right) is used to clone an existing source provider of favourites. The new one will show in 
+the left column list, adding ‘Clone of’ to the name. The **Remove** button is used to remove a source provider of favourites chosen in the left 
+column.
+
+##### Commands global options
+
+For each favourite list a global _End command_, a global _Delay_ and a global _Delay on source selection_ that will affect each favourite command 
+can be set.
+
++ **End command**: The end command is added at the end of each favourite command sequence and can be either _NONE_, _PLAY_ or _SELECT_.
++ **Delay**: The global delay is a delay value added between all digits and between digits and the end command for each favourite command.
++ **Delay on source selection**: Delay that will be added previous to the first digit for each favourite command sequence, if source was 
+effectively selected (i.e.: if the source was already selected, this delay will not be set).
+
+##### List of favourites
+
+For each listed TV channel/radio station the following information should be provided:
+
++ **Caption**: A short description for the favourite. The caption will be filled in automatically when the logo picker is used. If edited it will 
+remain unmodified. The caption will appear in the user interface.
++ **Command**: The command that is executed when a logo is selected in the _BLApp_. See in Help for full explanation of combining elements in
+the command string. The command must be filled in manually.
++ **Logo**: A logo can be fetched using the logopicker, see below, or by entering sufficient information in the URL field for the favourite. The 
+logo will be shown in the user interfaces.
++ **URL**: The full URL of the logo image to show. The URL must point out the valid image as it will be used periodically by _BLApp_ to retrieve 
+the logo. The URL will be filled in automatically when the logo picker is used. The URL can be entered manually.
+
+##### Logo picker
+
+The logo picker shows a pop-up window for selecting logos from the B&O repository and shows up by clicking the logo. Available logos are
+shown in groups of 50. It is possible to search for a channel using the filter. A search string will immediately restrict the channels displayed 
+to only the matching entries. When a logo has been chosen the picker window will close and complete the URL path and command fields, and show the 
+selected logo. The caption will also be updated, but not if it has been edited explicitly.
+
+> _Note_: The logo picker only works when an Internet connection is available.
