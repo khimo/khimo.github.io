@@ -137,7 +137,7 @@ The configuration of several network cameras is permitted. To add a camera, pres
 </div>
 <br>
 
-For more information on how to set up a camera, and to find out which cameras are compatible, please refer to the [Camera integration guide](#cameras).
+For more information on how to set up a camera, and to find out which cameras are compatible, please refer to the [Camera integration guide](/bli-guides/bli-pro-user-guide/01-setup-bli-pro/08-cameras).
 
 #### Zone setup
 
