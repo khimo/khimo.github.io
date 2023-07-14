@@ -28,7 +28,8 @@ BLI clients will utilize the most optimal stream in each scenario. The table bel
 | Home Control panel on B&O TV | 1 (\*) | 2 | 3 |
 | Home Control on legacy B&O TV | None | 1 | 2 |
 
-(\*) Indicates a requirement for the H264 codec.
+
+**(\*)** Indicates a requirement for the H264 codec.
 
 #### Camera Configuration
 
