@@ -37,7 +37,7 @@ and is allowed to access all zones via browser or _BLApp_.
 </div>
 <br>
 
-Per default, _admin_ password is unknown but it can be set to "_admin_" by activating the Setup button function No.2 ([See button functions](https://khimo.github.io/bli-guides/bli_advanced_user_guide/05-user_button)). This 
+Per default, _admin_ password is unknown but it can be set to "_admin_" by activating the Setup button function No.2 ([See button functions](/bli-guides/bli_advanced_user_guide/05-user_button)). This 
 password will last 5 minutes (for security purposes) during which a new one must be set. Press the _admin_ entry in the left column to change password (see figure above).
 
 ### Users - new user
@@ -137,7 +137,12 @@ The configuration of several network cameras is permitted. To add a camera, pres
 </div>
 <br>
 
-For more information on how to set up a camera, and to find out which cameras are compatible, please refer to the [Camera integration guide](/bli-guides/bli-pro-user-guide/09-cameras).
+ONVIF cameras, HTTP cameras and RTSP cameras are supported. When adding a camera, ONVIF cameras available on the network will be automatically detected, these can also be added to your system directly through the BeoLiving App on a smartphone.
+
+> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on [www.onvif.org/conformant-products/](https://www.onvif.org/conformant-products/). You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
+
+
+For more information on how to set up a camera, and to find out which cameras are compatible, **please refer to the [Camera integration guide](/bli-guides/manuals/cameras)**.
 
 ### Zone setup
 

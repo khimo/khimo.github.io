@@ -5,7 +5,7 @@ layout: pagetoc
 
 BeoLiving Intelligence (BLI) provides robust support for IP cameras. However, the integration process can be complex due to the unique configuration required for each camera provider. This guide will help you understand the requirements and steps for integrating IP cameras with BLI.
 
-### Camera Compatibility Criteria
+## Camera Compatibility Criteria
 
 For a camera to be compatible with BLI, it must meet the following criteria:
 
@@ -17,7 +17,7 @@ For a camera to be compatible with BLI, it must meet the following criteria:
 
 Any camera that meets these requirements should be compatible with BLI.
 
-### Client Stream Priority
+## Client Stream Priority
 
 BLI clients will utilize the most optimal stream in each scenario. The table below illustrates the priority each client assigns to each type of stream (where 1 is the top choice):
 
@@ -31,7 +31,7 @@ BLI clients will utilize the most optimal stream in each scenario. The table bel
 
 **(\*)** Indicates a requirement for the H264 codec.
 
-### Camera Configuration
+## Camera Configuration
 
 Cameras can be configured in two ways: as **ONVIF** cameras or **Generic HTTP** cameras.
 
@@ -41,7 +41,7 @@ Cameras can be configured in two ways: as **ONVIF** cameras or **Generic HTTP** 
 </div>
 <br>
 
-#### ONVIF Camera Configuration
+### ONVIF Camera Configuration
 
 ONVIF cameras should be automatically detected by BLI. In the Admin panel, under the Interfaces section, pressing the [+] button will display a table with all discovered cameras.
 <br>
@@ -58,7 +58,7 @@ BLI automatically discovers and presents ONVIF compliant cameras. Only the usern
 
 In the case that the camera failed to be added or it doesn't work after added, you may need to manually add it as a _Generic HTTP camera_.
 
-#### Generic HTTP Cameras Configuration
+### Generic HTTP Cameras Configuration
 
 The Generic HTTP camera option should be used if:
 
@@ -92,7 +92,7 @@ In addition to the connection options, the following paths can be configured:
 
 Other optional commands can be provided for cameras with pan/tilt/zoom control.
 
-##### Required Paths and Camera Configuration
+#### Required Paths and Camera Configuration
 
 If the camera supports image retrieval, then at least one of the image paths should be set.
 
@@ -105,11 +105,11 @@ Once the paths are configured, the Realtime preview component can be used to che
 - **RTSP HD**: If the RTSP stream is correctly configured and the codecs are supported, an HD video stream will be shown.
 - **RTSP SD**: If the RTSP substream is correctly configured and the codecs are supported, an SD video stream will be shown.
 
-##### Raw Edit Option
+#### Raw Edit Option
 
 Entering all these path fields into edit-boxes can be time-consuming. By pressing the Raw edit button, a text representation of all the fields is provided. This can be copied/pasted or edited in a preferred text editor. More importantly, the text can be copied and pasted when setting up other similar cameras.
 
-##### Examples: From URL to camera settings
+#### Examples: From URL to camera settings
 
 If a snapshot of a camera could be accessed at `http://cctv:pass@192.168.1.33/snapshot` then the camera configuration into the BLI should be:
 
@@ -127,9 +127,9 @@ If a rtsp of the camera is accessible at `rtsp://admin:pa55@192.168.1.34:554/hig
 - **RTSP port**: `554`
 - **RTSP HD stream**: `/highResCamera`
 
-### Troubleshooting
+## Troubleshooting
 
-#### RTSP camera connection is too slow
+### RTSP camera connection is too slow
 
 The video is encoded in two different frames: the I-Frames and the P-Frames. The I-Frame (also known as key frame or IDR-Frames) contains a full copy of the image, and the P-Frames are differences from the last image. To display an image, a client must wait until the first I-Frame is received. The I-Frame generation time is governed by the CCTV camera. Some cameras may have a large interval between I-Frames, making the connection very slow and also hurting the latency for HLS connections (used in for web browser view).
 
@@ -137,7 +137,7 @@ If the connection seems too slow, try changing the CCTV camera encoding settings
 
 For example, if a camera's I-Frame interval is set to 60 frames and the FPS is set to 10, it can take up to 6 seconds to get the first video image displayed in the camera client. Also, setting the I-Frame interval too low will impact the bandwidth usage, so a good balance for the given network and camera is needed. Usually, something about 2 seconds should work fine.
 
-#### RTSP Camera does not connect
+### RTSP Camera does not connect
 
 Try to connect to the camera using a thirdparty client, like VLC.  The full RTSP path to test with should be of the form: rtsp://$user:$password@$IP:$PORT/$rtspPath.
 
