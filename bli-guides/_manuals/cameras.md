@@ -30,8 +30,7 @@ BLI clients will utilize the most optimal stream in each scenario. The table bel
 | Home Control panel on B&O TV | 1 (\*) | 2 | 3 |
 | Home Control on legacy B&O TV | None | 1 | 2 |
 
-
-**(\*)** Indicates a requirement for the H264 codec.
+**(\*) Only supported since BLI Generation 3 and requires that the camera streams use the H264 codec. In older BLIs, the streams will not be visible.**
 
 ## Camera Configuration
 
