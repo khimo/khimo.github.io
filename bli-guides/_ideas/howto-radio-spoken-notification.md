@@ -6,25 +6,25 @@ layout: pagetoc
 
 ### Introduction
 
-When you select a radio in a Bang & Olufsen product, using a remote control or the frontpanel buttons, it is hard to know which radio you was sintonized without looking at the App, **now you can solve that with this simple BeoLiving Intelligence automation**, use the instructions provided below you will make the B&O products read aloud the station name as soon as a station start playing. 
+When you select a radio in a Bang & Olufsen product, using a remote control or the front panel buttons, it is hard to know which radio you were tuned to without looking at the App. **Now you can solve that with this simple BeoLiving Intelligence automation**. Use the instructions provided below to make the B&O products read aloud the station name as soon as a station starts playing.
 
-It is possible to add this to any Mozart (Control Link) product or just select some of them. The read message could be customized to use your own languange and words.
+It is possible to add this to any Mozart (Control Link) product or just select some of them. The read message could be customized to use your own language and words.
 
 ### How to set it up
 
-To use setup the the Mozart B&O radio notification, follow these steps:
+To set up the Mozart B&O radio notification, follow these steps:
 
 1. Open the BeoLiving Intelligence admin panel.
 2. Go to the Macro tab.
 3. Create a new Macro.
-4. Add all the STATE_UPDATE events of the RENDERERs where you want to have the notification. For example, use the event pattern `*/*/RENDERER/*/STATE_UPDATE` to include all Mozart products of the setups: ![Example event](howto-radio-spoken-notification-event.png) (*)
+4. Add all the STATE_UPDATE events of the RENDERERs where you want to have the notification. For example, use the event pattern `*/*/RENDERER/*/STATE_UPDATE` to include all Mozart products in the setups: ![Example event](howto-radio-spoken-notification-event.png) (*)
 5. Press the "Convert to code" button in the commands table.
 6. Copy the entire code in "The code" section below.
 7. Paste the code into the code text area of the Macro.
 8. (Optional) Customize the VOLUME, LANGUAGE, and MSG_TEMPLATE according to your needs.
 9. Test the macro by selecting a B&O Radio station. After selecting, you should hear a spoken message that indicates the name of the B&O Radio station.
 
-**(*)** Please note that this macro will add the functionality to ANY product that you add to the list of event on step 4, as the status change will fire the automation in the same RENDERER that changed the status. 
+**(*)** Please note that this macro will add the functionality to ANY product that you add to the list of events in step 4, as the status change will fire the automation in the same RENDERER that changed the status.
 
 ### The macro lua code
 ```lua
@@ -34,21 +34,21 @@ To use setup the the Mozart B&O radio notification, follow these steps:
 -- every netRadio change
 --
 -- Customize it by changing the SETTINGS section to define the default VOLUME,
--- LANGUAGE, and the MSG_TEMPLATE. 
+-- LANGUAGE, and the MSG_TEMPLATE.
 --
 -- This function should be triggered by a RENDERER STATE_UPDATE event of all
 -- the products where you want to hear the spoken notification.
 --
 -- How to use it::
 --  1. Create a Macro
---  2. As event add all the STATE_UPDATE of all the RENDERER where you want to
---  have the notification, eg: event: */*/RENDERER/*/STATE_UPDATE for all
+--  2. As an event, add all the STATE_UPDATE events of all the RENDERERs where you want to
+--  have the notification, e.g., event: */*/RENDERER/*/STATE_UPDATE for all
 --  RENDERERs
 --  3. Press the Convert to code button in the commands table
 --  4. Copy this whole file into the code text area
---  5. (optional) If you want customize the VOLUME, LANGUAGE and MSG_TEMPLATE
---  bellow to your needs
---  6. Test it: Try select a new netRadio source, after that you should heard a
+--  5. (optional) If you want to customize the VOLUME, LANGUAGE, and MSG_TEMPLATE
+--  below to your needs
+--  6. Test it: Try selecting a new netRadio source, after that you should hear
 --  the spoken message telling you the name of the
 --  station.
 --  ===========================================================================
@@ -61,11 +61,11 @@ function (event, engine)
   -- Volume level for the AUDIO OVERLAY from 0 to 100:
   local VOLUME = 50
 
-  -- International language code (e.g: en-uk, en-us, es-es)
+  -- International language code (e.g., en-uk, en-us, es-es)
   local LANGUAGE = "en-uk"
 
   -- Message template for the spoken text:
-  local MSG_TEMPLATE = "Playing $radio" -- Always include the placeholder "$radio"m the BLI will remplace it with the name of the selected radio.
+  local MSG_TEMPLATE = "Playing $radio" -- Always include the placeholder "$radio", the BLI will replace it with the name of the selected radio.
 
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU UNDERSTAND THE CODE!
@@ -104,5 +104,5 @@ end
 
 ### Customize Settings
 
-You can customize the macro by changing the variables defined in the SETTINGS section of the lua code, aallowing you to define the default VOLUME, LANGUAGE, and the message (MSG_TEMPLATE) to be said when a radio is selected.
+You can customize the macro by changing the variables defined in the SETTINGS section of the lua code, allowing you to define the default VOLUME, LANGUAGE, and the message (MSG_TEMPLATE) to be said when a radio is selected.
 
