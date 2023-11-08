@@ -1,6 +1,6 @@
 ---
-title: How to make the Mozart product notify the zone to which they joined
-description: Use a BeoLiving Intelligence macro to make the Mozart (Control Link) product tell you which zones they are playing from, in your language!
+title: Make the Mozart product announce the zone it just joined.
+description: Use a BeoLiving Intelligence automation to make the Mozart (Control Link) product tell you which zones they are playing from, in your language!
 layout: pagetoc
 ---
 
