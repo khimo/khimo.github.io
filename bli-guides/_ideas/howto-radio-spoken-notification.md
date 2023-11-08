@@ -1,5 +1,5 @@
 ---
-title: How to make the Mozart product say the name playing radio
+title: Make the Mozart product say aloud the station name when it starts playing from B&O Radio.
 description: Use a BeoLiving Intelligence macro to make the Mozart (Control Link) product tell you the name of the B&O Radio station when it is selected, in your language!
 layout: pagetoc
 ---
