@@ -27,7 +27,7 @@ To use the Mozart Link notification, follow these steps:
 
 Please note that this macro should be triggered by a RENDERER STATE_UPDATE event on all the products where you want to hear the spoken notification.
 
-(Example Marco view)[howto-join-spoken-notification.png]
+![Example Marco view](howto-join-spoken-notification.png)
 
 
 ### The code
