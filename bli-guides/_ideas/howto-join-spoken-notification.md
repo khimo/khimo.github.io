@@ -13,6 +13,8 @@ The Mozart Link notification is a Lua macro that generates a spoken message on a
 
 ### How to:
 
+![Example Marco view](howto-join-spoken-notification.png)
+
 To use the Mozart Link notification, follow these steps:
 
 1. Open the BeoLiving Intelligence admin panel.
@@ -27,7 +29,6 @@ To use the Mozart Link notification, follow these steps:
 
 Please note that this macro should be triggered by a RENDERER STATE_UPDATE event on all the products where you want to hear the spoken notification.
 
-![Example Marco view](howto-join-spoken-notification.png)
 
 
 ### The code
