@@ -350,7 +350,7 @@ Take into account that once the Storage device is connected, it will take some t
 
 #### Q: Does the BeoLiving Intelligence support Bang and Olufsen's MasterLink products?
 
-_BeoLiving Intelligence_ does not support MasterLink products directly, however they can still be used with the BLI via a BeoLink Converter or using the _MasterLink Gateway Protocol_ driver that enables **control** of *MasterLink* products **through a *BeoLink* or *MasterLink Gateway***.
+_BeoLiving Intelligence_ does not support MasterLink products directly, however they can still be used with the BLI via a BeoLink Converter or using the [MasterLink Gateway Protocol driver](/help_drivers/MasterLinkGatewayProtocol) that enables **control** of *MasterLink* products **through a *BeoLink* or *MasterLink Gateway***.
 
 #### Q: What is the function of a BeoLink Converter NL/ML?
 
@@ -361,7 +361,9 @@ This device converts audio between the analogue world (Master Link) into a strea
 Yes you can, but you need the BeoLink Converter NL/ML and it has to be configured correctly. See the BeoLink Converter NL/ML - [Installation Guide](https://www.bang-olufsen.com/en/product-support/accessories/beolink-converter-nl-ml). It is **NOT** possible using the _MasterLink Gateway Protocol_ driver.
 
 #### Q: Can I control Link rooms in my Master Link setup through BeoLiving Intelligence?
-No. 
+
+Control of the link (slave) MasterLink rooms is possible when using the [MasterLink Gateway Protocol driver](/help_drivers/MasterLinkGatewayProtocol/) integration, but it will not work through the BeoLink Converter integration.
+
 
 #### Q: Can I select borrowed sources from the BeoLink Converter NL/ML on Network Link products?
 Yes, if the borrowed sources have been configured and are part of the source list inside the Network Link product, then they can be selected using the BLI.  
