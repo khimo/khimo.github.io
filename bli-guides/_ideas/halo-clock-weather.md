@@ -32,9 +32,6 @@ function(event, engine)
   hour = clock.get_number("hour")
   minute = clock.get_number("minute")
 
-  hour = tostring(hour):gsub("!","")
-  minute = tostring(minute):gsub("!","")
-
   if tonumber(minute) < 10 then
     minute = "0"..minute
   end
@@ -49,7 +46,7 @@ function(event, engine)
 end
 ~~~
 
-The macro begins by checking the clock's state and getting the day, month, hour and minute values. Sometimes these numbers end with a "!" symbol from the state so we remove them in the next two lines. If the hour or minute is below 10 we add a 0 so that we always get 2 digits. Then the only thing missing is to set the button text with "hour:minute" and we add "day/month" to the subtitles. Just to give it a "clock" feel we can add the last command which will set the state of the wheel to the current hour, as the wheel accepts values from 0 to 100 we convert the numbers so that it goes from 0 to 12.
+The macro begins by checking the clock's state and getting the day, month, hour and minute values. If the hour or minute is below 10 we add a 0 so that we always get 2 digits. Then the only thing missing is to set the button text with "hour:minute" and we add "day/month" to the subtitles. Just to give it a "clock" feel we can add the last command which will set the state of the wheel to the current hour, as the wheel accepts values from 0 to 100 we convert the numbers so that it goes from 0 to 12.
 
 ## WEATHER
 
