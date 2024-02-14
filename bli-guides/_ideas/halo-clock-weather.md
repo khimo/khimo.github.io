@@ -7,7 +7,8 @@ layout: pagetoc
 This guide shows an example of how to control the BeoRemote Halo through simple macros. In this case, the Halo will be used to show a clock and the weather. In both cases we will use a BeoRemote Halo with the name "Halo" in an area called "My_Area" in a zone called "My_Zone".
 
 ## CLOCK
-First we'll start with the clock, we will show the time in the center of the button and the month and day in the subtitle, the macro will be fired when pressing the button and each time a minute passes. For this macro we will use the system clock. 
+First we'll start with the clock, we will show the time in the center of the button and the month and day in the subtitle, the macro should be fired when the halo becomes online and each time a minute passes. For this macro, we will use the system clock.
+
 
 The events for this macro are:
 
