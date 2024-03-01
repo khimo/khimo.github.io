@@ -61,8 +61,8 @@ function (event, engine)
   -- Volume level for the AUDIO OVERLAY from 0 to 100:
   local VOLUME = 50
 
-  -- International language code (e.g., en-uk, en-us, es-es)
-  local LANGUAGE = "en-uk"
+  -- International language code (e.g., en-gb, en-us, es-es)
+  local LANGUAGE = "en-us"
 
   -- Message template for the spoken text:
   local MSG_TEMPLATE = "Playing $radio" -- Always include the placeholder "$radio", the BLI will replace it with the name of the selected radio.
