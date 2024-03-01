@@ -62,8 +62,8 @@ function (event, engine)
   -- Volume level for the AUDIO OVERLAY from 0 to 100:
   local VOLUME = 50
 
-  -- International language code (e.g: en-uk, en-us, es-es)
-  local LANGUAGE = "en-uk"
+  -- International language code (e.g: en-us, es-es)
+  local LANGUAGE = "en-us"
 
   -- This is the template used to create the spoken message, just change it to adapt to your language:
   -- Valid variables: $zone, $area, $name (origin product area, zone, name)
@@ -106,7 +106,6 @@ function (event, engine)
   end
 
   if (event.updated("SELECTED_SOURCE")) then
-    Error("DOMEONE")
     local selected_source = event.get_string("SELECTED_SOURCE")
 
     -- Create the address of the resource from the event origin
