@@ -19,24 +19,24 @@ layout: pagetoc
 - Aligns Reolink camera implementation with latest specs. Corrects camera codec support check. Adds resource publish check on Lua drivers
 
 #### Drivers
-- **ABiCUS DMX Gateway**
+##### ABiCUS DMX Gateway
   - First driver implmenentation
 
-- **LG**
+##### LG
   - Adds experimental _OPEN command
 
-- **Crestron Home**
+##### Crestron Home
   - Initial release
 
-- **Bosch**
+##### Bosch
   - Corrects Bosch driver, ignoring power meter notification that were messing up with light and plug ones
 
-- **Halo**
+##### Halo
   - Adds more logs
   - Adds protection for simultaneous notifications of Halo updates, preventing double connections
   - Improves documentation 
 
-- **ControlLink Driver (Mozart)**
+##### ControlLink Driver (Mozart)
   - Improves handling of discovery, adding lock protection of discovery notifications
   - Protects Mozart reconnection
   - Adds timeout to Mozart URL requests. Before this, a resource could leave leaked threads waiting forever and possible deadlocks associated with that. 
