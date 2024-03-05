@@ -1,7 +1,8 @@
 ---
-title: BeoLiving Intelligence generation 3 | Changelogs | 1706 
+title: BeoLiving Intelligence changelog | 1706 
 layout: pagetoc
 ---
+
 
 ---
 # Feb. 15, 2024, 7:10 p.m. | 2.3.2.489 1706
@@ -39,7 +40,7 @@ layout: pagetoc
   - Improves handling of discovery, adding lock protection of discovery notifications
   - Protects Mozart reconnection
   - Adds timeout to Mozart URL requests. Before this, a resource could leave leaked threads waiting forever and possible deadlocks associated with that. 
-  - Rebuilds playqueue synchronization to improve responsiveness</div>
+  - Rebuilds playqueue synchronization to improve responsiveness
 
 ---
 # Jan. 26, 2024, 4:37 p.m. | 2.3.2.436 1706
@@ -148,7 +149,7 @@ restarts the whole procedure.
 #### LG web os driver
 - Fixes handling of connection timeout, improves connection stability.
 #### New drivers
-- TRO.Y shades (experimental)</div>
+- TRO.Y shades (experimental)
 
 ---
 # Dec. 22, 2023, 12:28 p.m. | 2.3.2.410 1706
@@ -248,7 +249,7 @@ restarts the whole procedure.
 - Fixes handling of connection timeout, improves connection stability.
 
 #### New drivers
-- TRO.Y shades (experimental)</div>
+- TRO.Y shades (experimental)
 
 ---
 # Dec. 15, 2023, 3:19 p.m. | 2.3.2.403 1706
@@ -337,7 +338,7 @@ restarts the whole procedure.
 - Fixes handling of connection timeout, improves connection stability.
 
 #### New drivers
-- TRO.Y shades (experimental)</div>
+- TRO.Y shades (experimental)
 
 ---
 # Nov. 30, 2023, 10:44 a.m. | 2.3.2.400 1706
@@ -415,7 +416,7 @@ restarts the whole procedure.
 - Fixes handling of connection timeout, improves connection stability.
 
 #### New drivers
-- TRO.Y shades (experimental)</div>
+- TRO.Y shades (experimental)
 
 ---
 # Sept. 26, 2023, 3 p.m. | 2.3.2.256 1706
@@ -559,7 +560,7 @@ restarts the whole procedure.
 
 #### New drivers
 - ReoLink Cameras (experimental)
-- Niko Home Control</div>
+- Niko Home Control
 
 ---
 # Sept. 6, 2023, 4:19 p.m. | 2.3.2.211 1706
@@ -663,7 +664,7 @@ restarts the whole procedure.
 - Adds value state to all the KNX raw variables.
 
 #### New drivers
-- Niko Home Control</div>
+- Niko Home Control
 
 ---
 # June 10, 2023, 7:17 p.m. | 2.3.1.543 1706
@@ -702,7 +703,7 @@ restarts the whole procedure.
 - WebPanel Browser: Fixes an error that in some situations located a button out of the screen.
 - WebPanel TV: Fixes button focus upon configuration reload.
 - Admin UI: Adds search capability to the add system dialog.
-- Some minor bugfixes.</div>
+- Some minor bugfixes.
 
 ---
 # May 15, 2023, 6:49 p.m. | 2.3.1.536 1706
@@ -734,7 +735,7 @@ restarts the whole procedure.
 - WebPanel Browser: Fixes an error that in some situations located a button out of the screen.
 - WebPanel TV: Fixes button focus upon configuration reload.
 - Admin UI: Adds search capability to the add system dialog.
-- Some minor bugfixes.</div>
+- Some minor bugfixes.
 
 ---
 # March 22, 2023, 12:52 p.m. | 2.3.1.460 1706
@@ -764,7 +765,7 @@ restarts the whole procedure.
  - Gen3: Enables the use of external POE adapter connected on USB-C port.
  - Driver validation: Corrects icon type validation.
  - Implements watchdog on persistence load and save routines.
- - Adds specification information to each system publisher.</div>
+ - Adds specification information to each system publisher.
 
 ---
 # Feb. 22, 2023, 1:05 p.m. | 2.3.1.429 1706
@@ -876,7 +877,7 @@ ref: d46271c aa25b1d
 ### v2.3.1.281-eca55b7-de8a6c8
 
 - Lutron Leap driver:
-  - Correct initial resource synchronization.</div>
+  - Correct initial resource synchronization.
 
 ---
 # Feb. 8, 2023, 4:47 p.m. | 2.3.1.428 1706
@@ -1033,7 +1034,7 @@ ref: d46271c aa25b1d
   - Synchronized curl connection finalization and add-remove-notify cycle.
   - Removes model cached values, this solves segfault issues on multiple cores.
   - Fixes serviceReport creation.
-  - Moves Openssl to 1.1.</div>
+  - Moves Openssl to 1.1.
 
 ---
 # Jan. 31, 2023, 4:37 p.m. | 2.3.1.425 1706
@@ -1049,28 +1050,33 @@ ref: d46271c aa25b1d
 - General:
   - Implemented gateway filter for all hardware types (1704, 1705 and 1706).
   - Implemented service delete and republish on dns daemon failure.
-  - Added usb serial compute support to dsgw platform.</div>
+  - Added usb serial compute support to dsgw platform.
 
 ---
 # Dec. 19, 2022, 10:33 p.m. | 2.3.1.378 1706
 ### 2.3.1.378M
 
-- Fixes handling of error on password synchronization for ASE products</div>
+- Fixes handling of error on password synchronization for ASE products
 
 ---
 # Dec. 9, 2022, 2:56 p.m. | 2.3.1.377 1706
 ### 2.3.1.377 | fa1b5dc0f  | Production gen3 firmware
 
- - Factory firmware</div>
+ - Factory firmware
 
 ---
 # Dec. 6, 2022, 8:32 a.m. | 2.3.1.351 1706
 ### 2.3.1.351M 1a3dd22f3
 
-- B&amp;O NetRadio</div>
+- B&amp;O NetRadio
 
 ---
+# Oct. 20, 2022, 4:10 p.m. | 2.3.1.285 1706
+### 2.3.1.285 g94743f07e
+- Gen3 verification release
 
+---
 # Oct. 19, 2022, 4:23 p.m. | 2.3.1.264 1706
-- First release
+### 2.3.1.264 g9dc19af8dM
+- Gen3 verification release
 
