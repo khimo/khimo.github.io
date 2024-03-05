@@ -1,16 +1,15 @@
 ---
-title: BeoLiving Intelligence changelog | 1706 
+title: BeoLiving Intelligence generation 3 | Changelogs | 1706 
 layout: pagetoc
 ---
 
-
 ---
 # Feb. 15, 2024, 7:10 p.m. | 2.3.2.489 1706
-## Changelog  2.3.2.489 3502ace52 | 2024-02-15
+### Changelog  2.3.2.489 3502ace52 | 2024-02-15
 
-### General
+#### General
 - Fixes drivers module import, improving consistency
-- Improves LoggerClass, allowing better loggifile:///home/fede/Downloads/vesta-bli_production_v2.3.2.485-70677ca-8b80a1f__.2.3.2.485_c3c23180a.swung from drivers
+- Improves LoggerClass, allowing better logging from drivers
 - driverEnvironment: cleans some unneeded logs
 - Implements image hash return on publisher for zone and project images (remote images synchronization)
 - Adds a limit on resource query time
@@ -18,7 +17,7 @@ layout: pagetoc
 - Warns NetworkChangedObservers when handling changes in network properties
 - Aligns Reolink camera implementation with latest specs. Corrects camera codec support check. Adds resource publish check on Lua drivers
 
-### Drivers
+#### Drivers
 - **ABiCUS DMX Gateway**
   - First driver implmenentation
 
@@ -44,443 +43,443 @@ layout: pagetoc
 
 ---
 # Jan. 26, 2024, 4:37 p.m. | 2.3.2.436 1706
-## v2.3.2.436-be916b0-78a87f3
-### Cameras
+### v2.3.2.436-be916b0-78a87f3
+#### Cameras
 - Corrects camera support check.
 - Corrects a crash on the proxy experienced when updating cameras while leading revisions.
-### Lua drivers
+#### Lua drivers
 - Adds resource publish check for camera support.
-### BeoLink
+#### BeoLink
 - Solves a deadlock caused when loading a revision while products are going online-offline.
-### Bosch
+#### Bosch
 - Corrects driver, ignoring power meter notification that were messing up with light and plug ones.
-### Reolink cameras
+#### Reolink cameras
 - Aligns camera implementation with latest specs.
-### TRO.Y
+#### TRO.Y
 - The driver is not experimental any more.
-### Niko
+#### Niko
 - Fixes mqtt module handling and improves tracking of connections.
-### Mozart
+#### Mozart
 - Adds timeout to URL requests. Before this, a resource could leave threads waiting forever, causing deadlocks.
 - Improves playqueue synchronization, making it more responsive.
-### General
+#### General
 - Changes in network properties are always processed.
 - DSGW (generation 2) predefined configuration download now always allows macro execution.
 - Implements image hash return on publisher for zone and project.
 - Adds a limit on resource query time.
-## 2.3.2.423_acaec2aef
+### 2.3.2.423_acaec2aef
 - Mozart: Improves playqueue synchronization, fixes an issue in source selection status.
-## v2.3.2.422-3cec5b8-8b80a1f
-### Shelly 2nd generation
+### v2.3.2.422-3cec5b8-8b80a1f
+#### Shelly 2nd generation
 - Updates timeout to 5 minutes so it does not interrupt ongoing connections.
-## v2.3.2.421-c423dce-8b80a1f
-### Shelly 2nd generation
+### v2.3.2.421-c423dce-8b80a1f
+#### Shelly 2nd generation
 - Improves connection stability.
 - Corrects an import error that was causing online/offline misbehaves.
-### Lua macros
+#### Lua macros
 - Corrects an error that on updated fields on empty strings. The previous versions could not tell if the fields were correctly updated or not.
-## v2.3.2.410-0fcd7b0-8b80a1f
-### BeoLink driver
+### v2.3.2.410-0fcd7b0-8b80a1f
+#### BeoLink driver
 - Adds net radio queries to networklink products, correcting macro edition errors.
-### Halo driver
+#### Halo driver
 - Corrects resource finalization, fixing a system crash caused by a race condition.
-### Mozart driver
+#### Mozart driver
 - Adds more protection to error responses from Mozart products.
-## v2.3.2.403-5571b29-8b80a1f
-### LG driver
+### v2.3.2.403-5571b29-8b80a1f
+#### LG driver
 - Adds support for secure web socket connection (wss)
-### Mozart driver
+#### Mozart driver
 - Changes to only simulate the selected_source upon a source selection command when the product is turned on. This solves a race condition where we will select the source, then in the next status update force it to off because the networkState is off, and then select the source again when we get the     notification from the product.
-### General
+#### General
 - Intelligent assistant is not experimental anymore.
-## v2.3.2.400
-### General
+### v2.3.2.400
+#### General
 - Adds an experimental flag that allows to keep a history log of monitor events, which are included in service reports.
 - Removes now playing details max length, correcting state update failures.
-### Intelligent assistant
+#### Intelligent assistant
 - Adds experimental flag for enabling assistant.
 - Removes fast/precise prompt, and sets the model to be always gpt-4-1106-preview for open AI.
 - Simplifies assistant implementation by removing token model update and using multiple function calls.
 - All comunication now goes through Khimo using AI credits.
 - Improves help and documentation.
-### Mozart driver
+#### Mozart driver
 - Changes how the connection timeout is managed.
 - Changes the lineIn and spif sources to have capabilities, multiroom id and be internal sources.
-### Lutron LEAP driver
+#### Lutron LEAP driver
 - Fixes access to area.Name adding a protection, in some lutron casetta devices areas are not named.
-## v2.3.2.380
-### General
+### v2.3.2.380
+#### General
 - Adds a check on license key for not rewriting it when
 already present.
 - Implements license check retry strategy.
-### Admin UI
+#### Admin UI
 - Improves log searching by adding the query string in the
 location bar. Now you can reload a search and it will keep
 your search terms.
-### Macros
+#### Macros
 - Adds &quot;cancel other&quot; command.
 - Logs for Lua macros are now show on monitor.
-### Intelligent assistant
+#### Intelligent assistant
 - Adds macro intelligent assistant, which can use Openai
 (default) or Azure engine (experimental).
-### Lua drivers
+#### Lua drivers
 - Corrects buffer management for lua data channels.
 - Corrects lua driver finalization, marking all pending queries as
 &#39;failed&#39;.
-### UPnP driver
+#### UPnP driver
 - Adds data checks and protections for several responses.
-### Mozart driver
+#### Mozart driver
 - All unknown sources now have channel selection.
 - Adds missing beoCloud headers.
 - Adds data protection for failed requests, queries and commands.
 - Implements REBOOT command.
 - Adds support for BeoLab 8.
-### Halo driver
+#### Halo driver
 - Adds protection for initialization/finalization cycle.
-### LEAP driver
+#### LEAP driver
 - Corrects setPointRange syntax errors.
 - Changes the driver label to include all the compatible products.
-### Lutron QS drver
+#### Lutron QS drver
 - Adds protections to data entry.
-### BeoLink driver
+#### BeoLink driver
 - Adds UI hints for making searches easier.
 - Corrects credential management, now every &#39;online&#39; notification
 restarts the whole procedure.
-### LG web os driver
+#### LG web os driver
 - Fixes handling of connection timeout, improves connection stability.
-### New drivers
+#### New drivers
 - TRO.Y shades (experimental)</div>
 
 ---
 # Dec. 22, 2023, 12:28 p.m. | 2.3.2.410 1706
-## 2.3.2.410_461bf0b57
+### 2.3.2.410_461bf0b57
 
-### BeoLink driver
+#### BeoLink driver
 - Adds net radio queries to networklink products, correcting macro edition errors.
 
-### Halo driver
+#### Halo driver
 - Corrects resource finalization, fixing a system crash caused by a race condition.
 
-### Mozart driver
+#### Mozart driver
 - Adds more protection to error responses from Mozart products.
 
-## v2.3.2.403-5571b29-8b80a1f
+### v2.3.2.403-5571b29-8b80a1f
 
-### LG driver
+#### LG driver
 - Adds support for secure web socket connection (wss)
 
-### Mozart driver
+#### Mozart driver
 - Changes to only simulate the selected_source upon a source selection command when the product is turned on. This solves a race condition where we will select the source, then in the next status update force it to off because the networkState is off, and then select the source again when we get the     notification from the product.
 
-### General
+#### General
 - Intelligent assistant is not experimental anymore.
 
-## v2.3.2.400
+### v2.3.2.400
 
-### General
+#### General
 - Adds an experimental flag that allows to keep a history log of monitor events, which are included in service reports.
 - Removes now playing details max length, correcting state update failures.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds experimental flag for enabling assistant.
 - Removes fast/precise prompt, and sets the model to be always gpt-4-1106-preview for open AI.
 - Simplifies assistant implementation by removing token model update and using multiple function calls.
 - All comunication now goes through Khimo using AI credits.
 - Improves help and documentation.
 
-### Mozart driver
+#### Mozart driver
 - Changes how the connection timeout is managed.
 - Changes the lineIn and spif sources to have capabilities, multiroom id and be internal sources.
 
-### Lutron LEAP driver
+#### Lutron LEAP driver
 - Fixes access to area.Name adding a protection, in some lutron casetta devices areas are not named.
 
-## v2.3.2.380
+### v2.3.2.380
 
-### General
+#### General
 - Adds a check on license key for not rewriting it when
 already present.
 - Implements license check retry strategy.
 
-### Admin UI
+#### Admin UI
 - Improves log searching by adding the query string in the
 location bar. Now you can reload a search and it will keep
 your search terms.
 
-### Macros
+#### Macros
 - Adds &quot;cancel other&quot; command.
 - Logs for Lua macros are now show on monitor.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds macro intelligent assistant, which can use Openai
 (default) or Azure engine (experimental).
 
-### Lua drivers
+#### Lua drivers
 - Corrects buffer management for lua data channels.
 - Corrects lua driver finalization, marking all pending queries as
 &#39;failed&#39;.
 
-### UPnP driver
+#### UPnP driver
 - Adds data checks and protections for several responses.
 
-### Mozart driver
+#### Mozart driver
 - All unknown sources now have channel selection.
 - Adds missing beoCloud headers.
 - Adds data protection for failed requests, queries and commands.
 - Implements REBOOT command.
 - Adds support for BeoLab 8.
 
-### Halo driver
+#### Halo driver
 - Adds protection for initialization/finalization cycle.
 
-### LEAP driver
+#### LEAP driver
 - Corrects setPointRange syntax errors.
 - Changes the driver label to include all the compatible products.
 
-### Lutron QS drver
+#### Lutron QS drver
 - Adds protections to data entry.
 
-### BeoLink driver
+#### BeoLink driver
 - Adds UI hints for making searches easier.
 - Corrects credential management, now every &#39;online&#39; notification
 restarts the whole procedure.
 
-### LG web os driver
+#### LG web os driver
 - Fixes handling of connection timeout, improves connection stability.
 
-### New drivers
+#### New drivers
 - TRO.Y shades (experimental)</div>
 
 ---
 # Dec. 15, 2023, 3:19 p.m. | 2.3.2.403 1706
-## 2.3.2.403_7f6c58420
+### 2.3.2.403_7f6c58420
 
-### LG driver
+#### LG driver
 - Adds support for secure web socket connection (wss)
 
-### Mozart driver
+#### Mozart driver
 - Changes to only simulate the selected_source upon a source selection command when the product is turned on. This solves a race condition where we will select the source, then in the next status update force it to off because the networkState is off, and then select the source again when we get the     notification from the product.
 
-### General
+#### General
 - Intelligent assistant is not experimental anymore.
 
-## v2.3.2.400
+### v2.3.2.400
 
-### General
+#### General
 - Adds an experimental flag that allows to keep a history log of monitor events, which are included in service reports.
 - Removes now playing details max length, correcting state update failures.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds experimental flag for enabling assistant.
 - Removes fast/precise prompt, and sets the model to be always gpt-4-1106-preview for open AI.
 - Simplifies assistant implementation by removing token model update and using multiple function calls.
 - All comunication now goes through Khimo using AI credits.
 - Improves help and documentation.
 
-### Mozart driver
+#### Mozart driver
 - Changes how the connection timeout is managed.
 - Changes the lineIn and spif sources to have capabilities, multiroom id and be internal sources.
 
-### Lutron LEAP driver
+#### Lutron LEAP driver
 - Fixes access to area.Name adding a protection, in some lutron casetta devices areas are not named.
 
-## v2.3.2.380
+### v2.3.2.380
 
-### General
+#### General
 - Adds a check on license key for not rewriting it when
 already present.
 - Implements license check retry strategy.
 
-### Admin UI
+#### Admin UI
 - Improves log searching by adding the query string in the
 location bar. Now you can reload a search and it will keep
 your search terms.
 
-### Macros
+#### Macros
 - Adds &quot;cancel other&quot; command.
 - Logs for Lua macros are now show on monitor.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds macro intelligent assistant, which can use Openai
 (default) or Azure engine (experimental).
 
-### Lua drivers
+#### Lua drivers
 - Corrects buffer management for lua data channels.
 - Corrects lua driver finalization, marking all pending queries as
 &#39;failed&#39;.
 
-### UPnP driver
+#### UPnP driver
 - Adds data checks and protections for several responses.
 
-### Mozart driver
+#### Mozart driver
 - All unknown sources now have channel selection.
 - Adds missing beoCloud headers.
 - Adds data protection for failed requests, queries and commands.
 - Implements REBOOT command.
 - Adds support for BeoLab 8.
 
-### Halo driver
+#### Halo driver
 - Adds protection for initialization/finalization cycle.
 
-### LEAP driver
+#### LEAP driver
 - Corrects setPointRange syntax errors.
 - Changes the driver label to include all the compatible products.
 
-### Lutron QS drver
+#### Lutron QS drver
 - Adds protections to data entry.
 
-### BeoLink driver
+#### BeoLink driver
 - Adds UI hints for making searches easier.
 - Corrects credential management, now every &#39;online&#39; notification
 restarts the whole procedure.
 
-### LG web os driver
+#### LG web os driver
 - Fixes handling of connection timeout, improves connection stability.
 
-### New drivers
+#### New drivers
 - TRO.Y shades (experimental)</div>
 
 ---
 # Nov. 30, 2023, 10:44 a.m. | 2.3.2.400 1706
-## v2.3.2.400
+### v2.3.2.400
 
-### General
+#### General
 - Adds an experimental flag that allows to keep a history log of monitor events, which are included in service reports.
 - Removes now playing details max length, correcting state update failures.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds experimental flag for enabling assistant.
 - Removes fast/precise prompt, and sets the model to be always gpt-4-1106-preview for open AI.
 - Simplifies assistant implementation by removing token model update and using multiple function calls.
 - All comunication now goes through Khimo using AI credits.
 - Improves help and documentation.
 
-### Mozart driver
+#### Mozart driver
 - Changes how the connection timeout is managed.
 - Changes the lineIn and spif sources to have capabilities, multiroom id and be internal sources.
 
-### Lutron LEAP driver
+#### Lutron LEAP driver
 - Fixes access to area.Name adding a protection, in some lutron casetta devices areas are not named.
 
-## v2.3.2.380
+### v2.3.2.380
 
-### General
+#### General
 - Adds a check on license key for not rewriting it when
 already present.
 - Implements license check retry strategy.
 
-### Admin UI
+#### Admin UI
 - Improves log searching by adding the query string in the
 location bar. Now you can reload a search and it will keep
 your search terms.
 
-### Macros
+#### Macros
 - Adds &quot;cancel other&quot; command.
 - Logs for Lua macros are now show on monitor.
 
-### Intelligent assistant
+#### Intelligent assistant
 - Adds macro intelligent assistant, which can use Openai
 (default) or Azure engine (experimental).
 
-### Lua drivers
+#### Lua drivers
 - Corrects buffer management for lua data channels.
 - Corrects lua driver finalization, marking all pending queries as
 &#39;failed&#39;.
 
-### UPnP driver
+#### UPnP driver
 - Adds data checks and protections for several responses.
 
-### Mozart driver
+#### Mozart driver
 - All unknown sources now have channel selection.
 - Adds missing beoCloud headers.
 - Adds data protection for failed requests, queries and commands.
 - Implements REBOOT command.
 - Adds support for BeoLab 8.
 
-### Halo driver
+#### Halo driver
 - Adds protection for initialization/finalization cycle.
 
-### LEAP driver
+#### LEAP driver
 - Corrects setPointRange syntax errors.
 - Changes the driver label to include all the compatible products.
 
-### Lutron QS drver
+#### Lutron QS drver
 - Adds protections to data entry.
 
-### BeoLink driver
+#### BeoLink driver
 - Adds UI hints for making searches easier.
 - Corrects credential management, now every &#39;online&#39; notificatin
 restarts the whole procedure.
 
-### LG web os driver
+#### LG web os driver
 - Fixes handling of connection timeout, improves connection stability.
 
-### New drivers
+#### New drivers
 - TRO.Y shades (experimental)</div>
 
 ---
 # Sept. 26, 2023, 3 p.m. | 2.3.2.256 1706
-## v2.3.2.256-a20b365-475e932
+### v2.3.2.256-a20b365-475e932
 
-### Mozart driver
+#### Mozart driver
 - Protects url requests, adding default sensible values.
 
-### USB keyboard driver
+#### USB keyboard driver
 - Protects usb device open, preventing thread errors.
 
-### Leap driver
+#### Leap driver
 - Adds initialization checks, solving a crash when the channel is closed while reading.
 
-### Lua drivers
+#### Lua drivers
 - Sets a fixed connection timeout to URL requests for lua drivers (C++ only), solving long locks on incorrect IP addresses.
 - Corrects status update checks for resources that were causing a thread error on empty state.
 
-### General
+#### General
 - ConnectionManager: corrects selection of first IPv4 nameserver available.
 - Removes manual nameserver when turning on DHCP.
 
-### Admin UI
+#### Admin UI
 - Monitor: Fixes display of Lua macro logs.
 
-## v2.3.2.238-58a8822-3812a43
+### v2.3.2.238-58a8822-3812a43
 
-### Lua macros
+#### Lua macros
 - Adds logger to lua macros, showing all messages on monitor.
 
-### Lua resources module
+#### Lua resources module
 - Adds implementations for 1 and 2 setpoint thermostats.
 - Corrects state and field updates, keeping the new value locally.
 
-### Shelly 2nd generation driver
+#### Shelly 2nd generation driver
 - Removes websocket timeout.
 
-### Mozart driver
+#### Mozart driver
 - Corrects &#39;shortPress&#39; button check to compare only the first 10 chars, aligning it with the new implementation.
 
-### Khimo driver
+#### Khimo driver
 - Changes classic shade signals to UTF-8 characters.
 
-### BeoLink driver
+#### BeoLink driver
 - Corrects credential management, now every &#39;online&#39; notification restarts the whole procedure.
 
-### Webpanel
+#### Webpanel
 - Fixes the positioning of camera view.
 - Fixes a forced reload of resources that was ending in an endless reload loop.
 
-### Cameras
+#### Cameras
 - Changes view to only use hls if BLI hardware is generation 3 or later.
 
-### General
+#### General
 - Corrects persisted hostname during initialization.
 
-## v2.3.2.203-37ca64b-9355bfb
+### v2.3.2.203-37ca64b-9355bfb
 - Updates lighttpd.
 
-## v2.3.2.202-417e45c-438f894
+### v2.3.2.202-417e45c-438f894
 - Changes hls proxy.
 - Changes watchdog functionality when disabled for remote support.
 
-## v2.3.2.201 840963b 3eb3f78 c65e716d1
+### v2.3.2.201 840963b 3eb3f78 c65e716d1
 - Halo: fix a race condtion in PAWSocket finalization, in both mozart and halo.
 - Mozart: 
   - Fixes Mozart update resource: handle everything in a thread, force the setHost even if the device is unknown.
@@ -491,36 +490,36 @@ restarts the whole procedure.
 - Added an experimental feature for creating &#39;classic&#39; Khimo signals for the BLI
 - Added a persistence protection for updated instances that do not modify transient fields, or when an update does not effectively update a field value
 
-## v2.3.2.185-1313aa3-9fdac90
-### Admin UI
+### v2.3.2.185-1313aa3-9fdac90
+#### Admin UI
 - Change the groups of RENDERER commands
 - Fixes a bug in KNX state
 
-## v2.3.2.177-eff1fe9-9fdac90
-### Admin UI
+### v2.3.2.177-eff1fe9-9fdac90
+#### Admin UI
 - fixes some glitches in user editor
 
-### Webpanel
+#### Webpanel
 - Cameras: changed stream prioritization to force jpeg in older TV&#39;s
 - Login: fixes some glitches in login form.
 
-## v2.3.2.173-81cb706-9fdac90
-### General
+### v2.3.2.173-81cb706-9fdac90
+#### General
 - Changes the RTSP proxy to mediamtx. The new one allows for RTSP(s) and HLS.
 - Adds Hls.js and mediamtx licenses to the about page.
 - Removes verbose logs.
 
-### Driver development
+#### Driver development
 - Adds generic COPAS channel.
 - Adds new &#39;class&#39; and &#39;resources&#39; modules, which allow to develop drivers in a clean way.
 
-### Lua drivers
+#### Lua drivers
 - Implements backtrace and log upload to error server on driver error.
 - Corrects an error on readUntil procedure so it does not discard bytes and effectively waits for the delimiter. This solves errors on drivers that use this procedure and can return very large messages (such as Lutron HW).
 - Adds a watchdog touch on receiveMessage function. This solves an issue where the driver was failing with &#39;execution took too long&#39; on processing really large buffers.
 - Changes the log of non existing state arguments on status change, the previous version was causing the driver to restart.
 
-### Camera
+#### Camera
 - Adds further authentication methods, such as DIGEST.
 - Implements RTSP substreams for both generic and onvif cameras.
 - Implements low definition snapshot for onvif cameras.
@@ -536,56 +535,56 @@ restarts the whole procedure.
 - Web panel
   - Now shows HLS cameras, if availalble.
 
-### BeoLink
+#### BeoLink
 - Corrects BCP/BNR reset error that was causing the BLI to restart on reconnection.
 
-### Mozart
+#### Mozart
 - Improves commands help.
 - Adds AUDIO\_OVERLAY commands, tested for URI and TEXT.
 - Adds support for ALL\_STANDBY.
 - Changes the message when the access token is not defined to be only displayed once as an error in the driver lifecycle.
 
-### Lutron LEAP
+#### Lutron LEAP
 - Corrects WHITE TUNE command implementation.
 
-### Bosch
+#### Bosch
 - Implements shutter and shade control.
 - Minor corrections.
 
-### KNX
+#### KNX
 - Adds SceneController support.
 - Adds STATE\_UPDATE to 1 byte, 2 bytes, 3-bit, and strings knx\_group_address resources.
 - Adds value state to all group address values.
 - Adds value state to all the KNX raw variables.
 
-### New drivers
+#### New drivers
 - ReoLink Cameras (experimental)
 - Niko Home Control</div>
 
 ---
 # Sept. 6, 2023, 4:19 p.m. | 2.3.2.211 1706
-## v2.3.2.211-862b444-475e932
+### v2.3.2.211-862b444-475e932
 - Webpanel:
   - Fixes a forced reload of resources that was ending in a reload infint loop.
   - Fix to camera view position.
 - Shelly generation 2:
   -  Removed websocket timeout.
 
-## v2.3.2.207-3058661-475e932
+### v2.3.2.207-3058661-475e932
 - Khimo driver:
   - Renamed shade signals to UTF-8 characters.
 
-## v2.3.2.206-fd7cb90-475e932
+### v2.3.2.206-fd7cb90-475e932
 - BeoLink driver:
   - Corrected credential management, now every start process by online restarts the whole procedure
 - Cameras:
   - HLS is only supported on hardware from generation 3.
 
-## v2.3.2.202-417e45c-5fbe9fc
+### v2.3.2.202-417e45c-5fbe9fc
 - Changes hls proxy
 - Changes watchdog functionality when disabled for remote support
 
-## v2.3.2.201 840963b 3eb3f78 c65e716d1
+### v2.3.2.201 840963b 3eb3f78 c65e716d1
 - Halo: fix a race condtion in PAWSocket finalization, in both mozart and halo.
 - Mozart: 
   - Fixes Mozart update resource: handle everything in a thread, force the setHost even if the device is unknown.
@@ -596,36 +595,36 @@ restarts the whole procedure.
 - Added an experimental feature for creating &#39;classic&#39; Khimo signals for the BLI
 - Added a persistence protection for updated instances that do not modify transient fields, or when an update does not effectively update a field value
 
-## v2.3.2.185-1313aa3-9fdac90
-### Admin UI
+### v2.3.2.185-1313aa3-9fdac90
+#### Admin UI
 - Change the groups of RENDERER commands
 - Fixes a bug in KNX state
 
-## v2.3.2.177
-### Admin UI
+### v2.3.2.177
+#### Admin UI
 - fixes some glitches in user editor
 
-### Webpanel
+#### Webpanel
 - Cameras: changed stream prioritization to force jpeg in older TV&#39;s
 - Login: fixes some glitches in login form.
 
-## v2.3.2.173
-### General
+### v2.3.2.173
+#### General
 - Changes the RTSP proxy to mediamtx. The new one allows for RTSP(s) and HLS.
 - Adds Hls.js and mediamtx licenses to the about page.
 - Removes verbose logs.
 
-### Driver development
+#### Driver development
 - Adds generic COPAS channel.
 - Adds new &#39;class&#39; and &#39;resources&#39; modules, which allow to develop drivers in a clean way.
 
-### Lua drivers
+#### Lua drivers
 - Implements backtrace and log upload to error server on driver error.
 - Corrects an error on readUntil procedure so it does not discard bytes and effectively waits for the delimiter. This solves errors on drivers that use this procedure and can return very large messages (such as Lutron HW).
 - Adds a watchdog touch on receiveMessage function. This solves an issue where the driver was failing with &#39;execution took too long&#39; on processing really large buffers.
 - Changes the log of non existing state arguments on status change, the previous version was causing the driver to restart.
 
-### Camera
+#### Camera
 - Adds further authentication methods, such as DIGEST.
 - Implements RTSP substreams for both generic and onvif cameras.
 - Implements low definition snapshot for onvif cameras.
@@ -641,64 +640,64 @@ restarts the whole procedure.
 - Web panel
   - Now shows HLS cameras, if availalble.
 
-### BeoLink
+#### BeoLink
 - Corrects BCP/BNR reset error that was causing the BLI to restart on reconnection.
 
-### Mozart
+#### Mozart
 - Improves commands help.
 - Adds AUDIO\_OVERLAY commands, tested for URI and TEXT.
 - Adds support for ALL\_STANDBY.
 - Changes the message when the access token is not defined to be only displayed once as an error in the driver lifecycle.
 
-### Lutron LEAP
+#### Lutron LEAP
 - Corrects WHITE TUNE command implementation.
 
-### Bosch
+#### Bosch
 - Implements shutter and shade control.
 - Minor corrections.
 
-### KNX
+#### KNX
 - Adds SceneController support.
 - Adds STATE\_UPDATE to 1 byte, 2 bytes, 3-bit, and strings knx\_group_address resources.
 - Adds value state to all group address values.
 - Adds value state to all the KNX raw variables.
 
-### New drivers
+#### New drivers
 - Niko Home Control</div>
 
 ---
 # June 10, 2023, 7:17 p.m. | 2.3.1.543 1706
-## 2.3.1.543 (gen3) 3ce2be124    f709a1c-f40ca0d (Jun 10, 2023, 9:30:11 PM)
-### B&amp;O Halo
+### 2.3.1.543 (gen3) 3ce2be124    f709a1c-f40ca0d (Jun 10, 2023, 9:30:11 PM)
+#### B&amp;O Halo
 - Fixes assignment of button ids
 
-### Lutron LEAP
+#### Lutron LEAP
 - Improves support for 2sp thermostat
 
-## 2.3.1.536 (gen3)  9ea87252d   d0f3901-f40ca0d (May 15, 2023, 9:13:02 PM)
-#### B&amp;O Halo
+### 2.3.1.536 (gen3)  9ea87252d   d0f3901-f40ca0d (May 15, 2023, 9:13:02 PM)
+##### B&amp;O Halo
 - Changes to keep the ids upon configurations.
 
-## 2.3.1.534  
-### Drivers
-#### B&amp;O ControlLink
+### 2.3.1.534  
+#### Drivers
+##### B&amp;O ControlLink
 - Adds JOIN to Mozart
 - Fixes some bugs in Mozart
 - Fixes SET_LISTENING_POSITION command
 
-#### B&amp;O Halo
+##### B&amp;O Halo
 - Improves reconnection
 
-#### BeoLink 
+##### BeoLink 
 - Adds A5 pictures
 
-#### KNX
+##### KNX
 - Adds support to KNX SceneController (18.001/17.001)
 
-#### Shelly
+##### Shelly
 - Adds ShellyGen2 driver
 
-### General Systems Improvements
+#### General Systems Improvements
 - Starts the migration to a new driver architecture that we hope will make driver development easier for third parties
 - WebPanel Browser: Fixes an error that in some situations located a button out of the screen.
 - WebPanel TV: Fixes button focus upon configuration reload.
@@ -707,30 +706,30 @@ restarts the whole procedure.
 
 ---
 # May 15, 2023, 6:49 p.m. | 2.3.1.536 1706
-## 2.3.1.536_9ea87252d (gen3
-#### B&amp;O Halo
+### 2.3.1.536_9ea87252d (gen3
+##### B&amp;O Halo
 - Changes to keep the ids upon configurations.
 
-## 2.3.1.534  
-### Drivers
-#### B&amp;O ControlLink
+### 2.3.1.534  
+#### Drivers
+##### B&amp;O ControlLink
 - Adds JOIN to Mozart
 - Fixes some bugs in Mozart
 - Fixes SET_LISTENING_POSITION command
 
-#### B&amp;O Halo
+##### B&amp;O Halo
 - Improves reconnection
 
-#### BeoLink 
+##### BeoLink 
 - Adds A5 pictures
 
-#### KNX
+##### KNX
 - Adds support to KNX SceneController (18.001/17.001)
 
-#### Shelly
+##### Shelly
 - Adds ShellyGen2 driver
 
-### General Systems Improvements
+#### General Systems Improvements
 - Starts the migration to a new driver architecture that we hope will make driver development easier for third parties
 - WebPanel Browser: Fixes an error that in some situations located a button out of the screen.
 - WebPanel TV: Fixes button focus upon configuration reload.
@@ -739,7 +738,7 @@ restarts the whole procedure.
 
 ---
 # March 22, 2023, 12:52 p.m. | 2.3.1.460 1706
-## v2.3.1.460
+### v2.3.1.460
 - ControlLink (Mozart) driver:
  - Adds a protection to handle mozart product crash from our side.
  - Adds _PRESET.
@@ -769,18 +768,18 @@ restarts the whole procedure.
 
 ---
 # Feb. 22, 2023, 1:05 p.m. | 2.3.1.429 1706
-## v2.3.1.429
+### v2.3.1.429
 - Adds support for POE USB-C adapter
 
 ref: d46271c aa25b1d
 
-## v2.3.1.428-4aaa89c-ad76277
+### v2.3.1.428-4aaa89c-ad76277
  - Fixes gen3 issue with user images.
 
-## 2.3.1.427 | Halo volume
+### 2.3.1.427 | Halo volume
 - Removes MUTE as default action for Halo volume behavior
 
-## v2.3.1.425-89d9dca-544953a
+### v2.3.1.425-89d9dca-544953a
 
 - Home assistant driver:
   - Updated lights integration.
@@ -794,7 +793,7 @@ ref: d46271c aa25b1d
   - Implemented service delete and republish on dns daemon failure.
   - Added usb serial compute support to dsgw platform.
 
-## 2.3.1.413-cc84f04-544953a
+### 2.3.1.413-cc84f04-544953a
 
 - BeoLink driver:
   - Updated documentation.
@@ -823,7 +822,7 @@ ref: d46271c aa25b1d
   - Fixed issues in mjpeg streaming.
   - Implemented store demo config API.
 
-## v2.3.1.311-ac6dbba-de8a6c8
+### v2.3.1.311-ac6dbba-de8a6c8
 - ControlLink driver (Mozart):
   - Adds &#39;tv&#39; category to content sources.
   - Corrects a storm update error on home control URI management.
@@ -831,18 +830,18 @@ ref: d46271c aa25b1d
 - General:
   - Adds gateway type number to publisher and bonjour service.
 
-## v2.3.1.308-0988912-de8a6c8
+### v2.3.1.308-0988912-de8a6c8
 - BlDriver:
   - Adds MULTIROOM capabilities and queries for macro source selection.
 
-## v2.3.1.307-6e18ad5-de8a6c8
+### v2.3.1.307-6e18ad5-de8a6c8
 
 - ControlLink driver (Mozart):
   - Corrects home automation control URI setting, the previous version was causing driver resets on resource updates.
 - General:
   - Adds missing lua copas modules.
 
-## v2.3.1.305-89911f7-de8a6c8
+### v2.3.1.305-89911f7-de8a6c8
 
 - ControlLink driver (Mozart):
   - Input status field is set to empty on UNLINK.
@@ -854,12 +853,12 @@ ref: d46271c aa25b1d
 - General:
   - Corrected source and input status fields when an UNLINK is performed.
 
-## v2.3.1.299-8800f1d-de8a6c8
+### v2.3.1.299-8800f1d-de8a6c8
 
 - WebUI: 
   - Admin: Search bar is shown on all drop down fields that show model queries.
 
-## v2.3.1.298-7131672-de8a6c8
+### v2.3.1.298-7131672-de8a6c8
 
 - BlDriver:
   - Adds multiroom queries to source NL selection.
@@ -874,20 +873,20 @@ ref: d46271c aa25b1d
 - General:
   - Corrects application launch specs and generic commands.
 
-## v2.3.1.281-eca55b7-de8a6c8
+### v2.3.1.281-eca55b7-de8a6c8
 
 - Lutron Leap driver:
   - Correct initial resource synchronization.</div>
 
 ---
 # Feb. 8, 2023, 4:47 p.m. | 2.3.1.428 1706
-## v2.3.1.428-4aaa89c-ad76277
+### v2.3.1.428-4aaa89c-ad76277
  - Fixes gen3 issue with user images.
 
-## 2.3.1.427 | Halo volume
+### 2.3.1.427 | Halo volume
 - Removes MUTE as default action for Halo volume behavior
 
-## v2.3.1.425-89d9dca-544953a
+### v2.3.1.425-89d9dca-544953a
 
 - Home assistant driver:
   - Updated lights integration.
@@ -901,7 +900,7 @@ ref: d46271c aa25b1d
   - Implemented service delete and republish on dns daemon failure.
   - Added usb serial compute support to dsgw platform.
 
-## 2.3.1.413-cc84f04-544953a
+### 2.3.1.413-cc84f04-544953a
 
 - BeoLink driver:
   - Updated documentation.
@@ -930,7 +929,7 @@ ref: d46271c aa25b1d
   - Fixed issues in mjpeg streaming.
   - Implemented store demo config API.
 
-## v2.3.1.311-ac6dbba-de8a6c8
+### v2.3.1.311-ac6dbba-de8a6c8
 - ControlLink driver (Mozart):
   - Adds &#39;tv&#39; category to content sources.
   - Corrects a storm update error on home control URI management.
@@ -938,18 +937,18 @@ ref: d46271c aa25b1d
 - General:
   - Adds gateway type number to publisher and bonjour service.
 
-## v2.3.1.308-0988912-de8a6c8
+### v2.3.1.308-0988912-de8a6c8
 - BlDriver:
   - Adds MULTIROOM capabilities and queries for macro source selection.
 
-## v2.3.1.307-6e18ad5-de8a6c8
+### v2.3.1.307-6e18ad5-de8a6c8
 
 - ControlLink driver (Mozart):
   - Corrects home automation control URI setting, the previous version was causing driver resets on resource updates.
 - General:
   - Adds missing lua copas modules.
 
-## v2.3.1.305-89911f7-de8a6c8
+### v2.3.1.305-89911f7-de8a6c8
 
 - ControlLink driver (Mozart):
   - Input status field is set to empty on UNLINK.
@@ -961,12 +960,12 @@ ref: d46271c aa25b1d
 - General:
   - Corrected source and input status fields when an UNLINK is performed.
 
-## v2.3.1.299-8800f1d-de8a6c8
+### v2.3.1.299-8800f1d-de8a6c8
 
 - WebUI: 
   - Admin: Search bar is shown on all drop down fields that show model queries.
 
-## v2.3.1.298-7131672-de8a6c8
+### v2.3.1.298-7131672-de8a6c8
 
 - BlDriver:
   - Adds multiroom queries to source NL selection.
@@ -981,12 +980,12 @@ ref: d46271c aa25b1d
 - General:
   - Corrects application launch specs and generic commands.
 
-## v2.3.1.281-eca55b7-de8a6c8
+### v2.3.1.281-eca55b7-de8a6c8
 
 - Lutron Leap driver:
   - Correct initial resource synchronization.
 
-## v2.3.1.280-9db9aed-de8a6c8
+### v2.3.1.280-9db9aed-de8a6c8
 
 - ControlLink driver (Mozart):
   - Implements source selection for Mozart secondary sources. Currently showing only &#39;hdmi&#39;.
@@ -1038,7 +1037,7 @@ ref: d46271c aa25b1d
 
 ---
 # Jan. 31, 2023, 4:37 p.m. | 2.3.1.425 1706
-## v2.3.1.425-89d9dca-544953a
+### v2.3.1.425-89d9dca-544953a
 
 - Home assistant driver:
   - Updated lights integration.
@@ -1054,27 +1053,24 @@ ref: d46271c aa25b1d
 
 ---
 # Dec. 19, 2022, 10:33 p.m. | 2.3.1.378 1706
-## 2.3.1.378M
+### 2.3.1.378M
 
 - Fixes handling of error on password synchronization for ASE products</div>
 
 ---
 # Dec. 9, 2022, 2:56 p.m. | 2.3.1.377 1706
-## 2.3.1.377 | fa1b5dc0f  | Production gen3 firmware
+### 2.3.1.377 | fa1b5dc0f  | Production gen3 firmware
 
  - Factory firmware</div>
 
 ---
 # Dec. 6, 2022, 8:32 a.m. | 2.3.1.351 1706
-## 2.3.1.351M 1a3dd22f3
+### 2.3.1.351M 1a3dd22f3
 
 - B&amp;O NetRadio</div>
 
 ---
-# Oct. 20, 2022, 4:10 p.m. | 2.3.1.285 1706
-## 2.3.1.285-g94743f07eM_btn-daemon_swupdate-blgw-dsgw210-20221020185917_9826a5846.swu</div>
 
----
 # Oct. 19, 2022, 4:23 p.m. | 2.3.1.264 1706
-## 2.3.1.264-g9dc19af8dM_btn-daemon_swupdate-blgw-dsgw210-20221019190616_ce0060601.swu</div>
+- First release
 
