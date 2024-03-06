@@ -61,7 +61,7 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
    {% for help_driver in site.help_drivers %}
    	<div class="help_driver">
 		<a class=logos target="_blank" href="{{ help_driver.url }}" >
-      {% assign filename = help_driver.url | remove: "help_drivers" | remove: "/"  + ".jpg" %}
+      {% assign filename = help_driver.url | remove: "help_drivers" | remove: "/"  | append: ".jpg" %}
       {% assign path = "/logos/" | append:filename %}
       {% assign file_exists = site.static_files | where: "path", path  %}
       {% if file_exists.size != 0 %}
