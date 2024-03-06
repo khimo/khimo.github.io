@@ -38,6 +38,14 @@ Bosch Smart Home supports the following resource types:
 monitor air temperature, humidity and purity. 
  2. *Climate Control*, which acts as a single setpoint thermostat.
  3. *Radiator Thermostat*, which acts as a single setpoint thermostat.
+ 4. *Smart Plug*, which acts as a general purpose IO device (GPIO) [1].
+ 5. *Light Control*, which acts as a non-dimmable dimmer [1].
+ 6. *Shutter Control*, which acts as a general purpose shutter [2].
+ 7. *Shade Control*, which acts as a shade with level [2].
+
+Notes:
+ 1. Smart Plugs and Light Control resources are discovered with the same addresses.
+ 2. Shutter Control and Shade Control are discovered with the same addresses.
 
 Available resources can be loaded from the Bosch Smart Home
 Controller once the connection is established.
@@ -46,5 +54,10 @@ Controller once the connection is established.
 
 ### v0.1 | April 2021
  - First market version.
+### v1.0 | April 2022
+ - Implements smart plug and light control resources.
+### v2.0 | June 2023
+ - Corrects several bugs.
+ - Implements shutter control.
 
 *Please, report any issue with this driver to: support+drivers_bosch@khimo.com.*

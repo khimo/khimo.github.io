@@ -1,5 +1,5 @@
 ---
-title: Tuya - homeassistant API (community) | DISCONTINUED
+title: Tuya - homeassistant API (community) | Deprecated
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
@@ -23,6 +23,8 @@ The following resources are implemented but were never tested with real hardware
  - "Lock"
 
 For thermostats, it is important to adjust the temperature unit and correction parameters in the BLI system settings. Tuya does not provide this information and they change depending on the thermostat manufactures.
+For reference, command correction is a multiplier while state correction is a divider.
+
 
 Please let us know your experience with this driver at: [support+drivers_tuya@khimo.com](mailto:support+drivers_tuya@khimo.com)
 

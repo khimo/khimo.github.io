@@ -55,6 +55,7 @@ The available resource are:
 The following thermostats were not tested with the BeoLiving App, if you use them and have any issue contact us with the email at the end of this page:
 Cool Thermostat with Fan, Heat/Cool Thermostat with Fan, Heat Thermostat with Fan, Heat/Cool Thermostat, Cool Thermostat.
 
+
 ## Resource Address
 
 The resource address **must be unique among resources, and must match with a Home Assistant entity_id** to identify what device is wanted.
@@ -193,6 +194,7 @@ Press the "Capture" button, executed events sent by the systems in your installa
  
 ### v0.1 | 2020/11/17
  - Initial version
+### v0.2 | 2021/09/21
  - Added shades with tilt, fixed shades with level
 ### v0.3 | 2021/12/10
  - Added shades with only tilt, fixed thermostats so they can be used with the app.

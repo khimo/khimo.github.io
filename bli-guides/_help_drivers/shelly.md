@@ -104,3 +104,9 @@ Resource discovery is available and will detect the corresponding resources that
 ### V0.14 | 24/3/2023
 - Aligned driver version with latest development changes.
 
+### V0.15 | 15/8/2023
+- Corrected color set commands, which were not turning on the dimmers correctly.
+
+### V0.16 | 28/8/2023
+- Fixes shade state synchronization
+
