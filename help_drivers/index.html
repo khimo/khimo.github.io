@@ -57,7 +57,7 @@ A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems 
 
 <script>
 function filterByName() {
-  const target = document.querySelectorAll("#searchbox");
+  const target = document.querySelectorAll("#searchbox")[0];
   const searchTerm = target.value.trim().toLowerCase();
   const listItems = document.querySelectorAll("#helpdrivers .help_driver");
   let countHidden = 0;
@@ -77,14 +77,14 @@ function filterByName() {
 }
 </script>
 
-<nav class="navbar navbar-light bg-light">
+<div>
   <form class="form-inline ">
     <input class="form-control mr-sm-2" type="search" id="searchbox" placeholder="Search" aria-label="Search"
                                           oninput="filterByName(event)"
     >
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="filterByName(event)">Search</button>
   </form>
-</nav>
+</div>
 
 
 <div class="row" id="helpdrivers" align="center">
