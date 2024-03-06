@@ -65,11 +65,12 @@ function filterByName() {
 
   listItems.forEach(function(item) {
     item.style.display = 'revert';
-    countShow++;
 
     if (!item.innerText.toLowerCase().includes(searchTerm)) {
       item.style.display = 'none';
       countHidden++;
+    } else {
+      countShow++;
     }
   })
   if (countHidden > 0) {
@@ -81,15 +82,19 @@ function filterByName() {
 }
 </script>
 
-<div class="jumbotron">
-  <div class="container">
-    <form class="form-inline ">
-      <input class="form-control mr-lg-4" type="search" id="searchbox" placeholder="Write here to filter drivers by name" aria-label="Filter"
-                                                                                                                          oninput="filterByName(event)"
-                                                                                                                          >
-                                                                                                                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
-    </form>
-    <div id="results">
+<div class="container">
+  <div class="jumbotron">
+    <div class="d-flex justify-content-center">
+      <div>
+      <form class="form-inline ">
+        <input class="form-control mr-lg-4" type="search" id="searchbox" placeholder="Write here to filter drivers by name" aria-label="Filter"
+                                                                                                                            oninput="filterByName(event)"
+                                                                                                                            >
+                                                                                                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
+      </form>
+      </div>
+      <div id="results">
+      </div>
     </div>
   </div>
 </div>
