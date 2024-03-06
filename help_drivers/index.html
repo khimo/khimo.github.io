@@ -73,17 +73,25 @@ function filterByName() {
     }
   })
   if (countHidden > 0) {
+    const result = document.querySelectorAll("#results")[0];
+    results.innerHTML = "Showing " + countShow + " of a total of " + (countShow + countHidden);
+  } else {
+      results.innerHTML = ""
   }
 }
 </script>
 
-<div>
-  <form class="form-inline ">
-    <input class="form-control mr-sm-2" type="search" id="searchbox" placeholder="Search" aria-label="Search"
-                                          oninput="filterByName(event)"
-    >
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="filterByName(event)">Search</button>
-  </form>
+<div class="jumbotron">
+  <div class="container">
+    <form class="form-inline ">
+      <input class="form-control mr-lg-4" type="search" id="searchbox" placeholder="Write here to filter drivers by name" aria-label="Filter"
+                                                                                                                          oninput="filterByName(event)"
+                                                                                                                          >
+                                                                                                                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
+    </form>
+    <div id="results">
+    </div>
+  </div>
 </div>
 
 
