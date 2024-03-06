@@ -1,6 +1,6 @@
 ---
 title: Lutron Grafik QS
-layout: pagetoc
+layout: drivertoc
 ---
 
 Connecting to a Grafik QS system

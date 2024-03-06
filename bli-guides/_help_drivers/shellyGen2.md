@@ -1,6 +1,6 @@
 ---
 title: Shelly 2nd generation
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Shelly 2nd generation

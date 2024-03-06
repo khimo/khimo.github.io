@@ -1,6 +1,6 @@
 ---
 title: Clipsal
-layout: pagetoc
+layout: drivertoc
 ---
 
 The Clipsal programming model defines *trigger groups* and *trigger

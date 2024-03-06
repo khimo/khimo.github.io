@@ -1,6 +1,6 @@
 ---
 title: SmartHouse SH2
-layout: pagetoc
+layout: drivertoc
 ---
 
 Connection to a SmartHouse SH2 system

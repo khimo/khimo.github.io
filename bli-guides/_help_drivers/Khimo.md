@@ -1,6 +1,6 @@
 ---
 title: Khimo
-layout: pagetoc
+layout: drivertoc
 ---
 
 This driver supports communication with the Khimo system.

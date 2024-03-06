@@ -1,6 +1,6 @@
 ---
 title: 2N Helios
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # 2N HELIOS DRIVER

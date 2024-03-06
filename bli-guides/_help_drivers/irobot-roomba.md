@@ -1,6 +1,6 @@
 ---
 title: Thinking Cleaner for Roomba (Community)
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Thinking Cleaner for Roomba by iRobot

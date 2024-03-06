@@ -1,6 +1,6 @@
 ---
 title: FC3500 thermostat
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # FC3500 thermostat

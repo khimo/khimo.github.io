@@ -1,6 +1,6 @@
 ---
 title: Send email using secure SMTP
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Secure SMTP | Send emails from the BLI

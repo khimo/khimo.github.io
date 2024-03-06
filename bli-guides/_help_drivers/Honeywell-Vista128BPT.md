@@ -1,6 +1,6 @@
 ---
 title: Honeywell Vista128BPT
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 Honeywell / VISTA-128 BPT

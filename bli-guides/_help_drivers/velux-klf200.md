@@ -1,6 +1,6 @@
 ---
 title: Velux KLF200
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Velux KLF200 - firmware v0.2.0.0.0.0 and greater

@@ -1,6 +1,6 @@
 ---
 title: Tuya
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # TuyaAPI driver | Integrates tuya devices using the open Tuya API

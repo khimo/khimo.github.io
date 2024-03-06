@@ -1,6 +1,6 @@
 ---
 title: Lutron LEAP - Caseta, RA2 Select, RadioRA3, HomeWorks
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Lutron RA2 Extensible Application Protocol (LEAP)

@@ -1,6 +1,6 @@
 ---
 title: Generic Modbus
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Generic Modbus driver

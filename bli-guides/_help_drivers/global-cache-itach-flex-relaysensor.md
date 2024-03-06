@@ -1,6 +1,6 @@
 ---
 title: iTach Flex Relay & Sensor
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Global Cache iTach FLEX RELAY/SENSOR

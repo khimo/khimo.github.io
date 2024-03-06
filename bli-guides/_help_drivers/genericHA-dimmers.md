@@ -1,6 +1,6 @@
 ---
 title: Generic HomeAutomation Dimmers (Community)
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Generic Home Automation Dimmers

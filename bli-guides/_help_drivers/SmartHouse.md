@@ -1,6 +1,6 @@
 ---
 title: SmartHouse
-layout: pagetoc
+layout: drivertoc
 ---
 
 Connection to a Smart-House system

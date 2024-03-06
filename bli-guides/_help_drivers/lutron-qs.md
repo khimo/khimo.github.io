@@ -1,6 +1,6 @@
 ---
 title: Lutron Homeworks QS - Radio Ra2 - Grafik QS
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 # Lutron Homeworks QS and Radio Ra2

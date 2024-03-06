@@ -1,6 +1,6 @@
 ---
 title: Home Assistant
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 

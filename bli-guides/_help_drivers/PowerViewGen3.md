@@ -1,6 +1,6 @@
 ---
 title: PowerView - Hunter Douglas - Gen3 hub
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 

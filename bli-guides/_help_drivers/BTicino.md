@@ -1,6 +1,6 @@
 ---
 title: BTicino My Home
-layout: pagetoc
+layout: drivertoc
 ---
 
 

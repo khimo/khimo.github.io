@@ -1,6 +1,6 @@
 ---
 title: BeoLink
-layout: pagetoc
+layout: drivertoc
 ---
 
 The BeoLink system provides interaction with NetworkLink products.

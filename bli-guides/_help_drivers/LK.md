@@ -1,6 +1,6 @@
 ---
 title: LK (Schneider) - IHC/LexControl
-layout: pagetoc
+layout: drivertoc
 ---
 
 IHC/LexControl programming model consists of physical input and output

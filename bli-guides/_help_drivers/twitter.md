@@ -1,6 +1,6 @@
 ---
 title: Twitter | Discontinued - X does not longer support this API
-layout: pagetoc
+layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 Twitter
