@@ -76,8 +76,18 @@ Setting this option will get the available scenes and resources of the current r
 4. Local thermostat scenes, thermostat control with MODE and SETPOINTS
 5. Global scenes
 
+### Troubleshooting
+
+#### The Halo system state is Orange
+This means that at least one Halo has lost connection. All the Halos defined in the RESOURCE page should be connected in order for the status to be green. Go to Tools->Resource state and search for the Halo with the "ONLINE=false" status. Then, double-check if that Halo is online on the network.
+
+#### My Halo keeps refreshing the screen
+This may happen when you have multiple BeoLiving Intelligences connected to the same Halo device. You should only add one Halo to one controller. Double-check that you don't have any other BLI with the same Halo assigned.
 
 ### Changelog
+
+#### v0.2 | 08/02/2024
+ - Adds the troubleshoting section
 
 #### v0.1 | 02/09/2021
  - First version supporting the integration of the Beoremote Halo with the BLI.

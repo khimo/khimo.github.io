@@ -1,7 +1,10 @@
 ---
-title: GC iTach IP2IR
+title: Global Cache iTach IP2IR
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach IP2IR
+===============================
 
 This driver supports communication with a Global Cache iTach IP2IR system, allowing to control IR controlled devices.
 

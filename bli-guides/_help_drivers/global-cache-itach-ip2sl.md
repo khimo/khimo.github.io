@@ -1,7 +1,10 @@
 ---
-title: GC iTach IP2SL
+title: Global Cache iTach IP2SL
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach IP2SL
+===============================
 
 This driver supports communication with a Global Cache iTach IP2SL,
 allowing to control RS232 serial devices.

@@ -25,8 +25,7 @@ Locks aren't visible in the app, to use it there are two options:
 	2. Create a macro that will, after pressing the virtual button, lock or unlock the lock (depending on previous state) and turn ON or OFF the LED (LED will be OFF if locked, ON if unlocked). 
 	This macro should include 2 events: one with the Virtual Button as a resource and "PRESS" as the event, and the other with your Nuki Smart Lock as a resource and "STATE_UPDATE" as the event (with nothing checked). 
 	
-Below is a sample macro code that should be included as the command after pressing *Convert to code* in the Macros view. Remember to change the names of the Area, Zone, Smartlock and the Virtual Button, otherwise it won't work. 
-For more tips and information about the BLI's lua macros, see [here](../../bli-guides/manuals/howto-lua-macros).
+Below is a sample macro code that should be included as the command after pressing *Convert to code* in the Macros view. Remember to change the names of the Area, Zone, Smartlock and the Virtual Button, otherwise it won't work.
 
 	function(event, engine)
 	  your_area = "YOUR_AREA"
@@ -43,7 +42,7 @@ For more tips and information about the BLI's lua macros, see [here](../../bli-g
 
 	  if (event.name() == your_nuki_smartlock_name) then
 	    engine.fire(virtual_button_address.."/_SET STATE?STATE="..tostring(state))
-	  else if (event.name() == your_virtual_button_name) then
+	  elseif (event.name() == your_virtual_button_name) then
 	    if state == 1 then
 	      engine.fire(nuki_smartlock_address.."/SET?VALUE=false")
 	    else

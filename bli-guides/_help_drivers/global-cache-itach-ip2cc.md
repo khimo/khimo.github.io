@@ -1,7 +1,10 @@
 ---
-title: GC iTach IP2CC
+title: Global Cache iTach IP2CC
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Global Cache iTach IP2CC
+===============================
 
 This driver supports communication with a Global Cache iTach IP2CC,
 allowing to control relay closures.

@@ -1,7 +1,10 @@
 ---
 title: Custom HTTP
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Custom HTTP
+===============
 
 Due to the common usage in Home Automation devices with a HTTP based REST interface, the Custom HTTP driver is intended to facilitate the integration with these equipments.
 

@@ -15,7 +15,6 @@ The BLI will connect to the home assistant hub through a web socket.
 For that purpose, you need to set a token to authenticate the BLI _against_ home assistant.
 The token should be a long lived token that you can create on home assistant's web panel: go to user profile and at the bottom, there is a Long-Lived Access Tokens section where you can create a token and then copy that token and paste it on the *Long live token* parameter for the system on the BLI.
 
-
 Connection settings are:
 
   + **Host**: IP address of the hub.
@@ -200,6 +199,6 @@ Press the "Capture" button, executed events sent by the systems in your installa
  - Added shades with only tilt, fixed thermostats so they can be used with the app.
  ### v0.4 | 2023/1/5
  - Added new light integration according to new Home Assistant protocol
-
+ 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
 

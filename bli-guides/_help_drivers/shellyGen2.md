@@ -24,6 +24,10 @@ Any Shelly device with the listed components should be compatible, currently tes
 - Plus2PM
 
 ## Changelog:
+### 2024/01/03 
+- Improve connection stability, always use strings for IDs.
+
+
 ### 2023/05/08 v1 
   - Initial release supporting Cover, Input, and Switch components.
 

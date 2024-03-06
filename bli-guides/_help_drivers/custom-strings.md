@@ -1,7 +1,10 @@
 ---
-title: Custom strings
+title: Custom Strings
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Custom strings driver
+=====================
 
 The Custom strings driver is intended to enable limited communication
 with unsupported home automation systems.

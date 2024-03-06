@@ -1,7 +1,10 @@
 ---
-title: Twitter
+title: Twitter | Discontinued - X does not longer support this API
 layout: pagetoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
+Twitter
+===============================
 
 This driver supports communication with Twitter Stream and Public API,
 allowing to post Twitter status messages, fire events and reply a message 

@@ -1,10 +1,10 @@
 ---
-title: PowerView - Hunter Douglas
+title: PowerView - Hunter Douglas - Gen2
 layout: pagetoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 ---
 
-# PowerView - Hunter Douglas
+# PowerView - Hunter Douglas - Gen2
 
 This driver works with the PowerView Hub, allowing to control Hunter Douglas shades with PowerView Motorization.
 
@@ -39,6 +39,9 @@ Supported Resources are:
 ## Changelog
 **v0.1**
   * First version
+
+**v0.2**
+  * Adds the reference to genertion 2 hub
   
 *Please, report any issue with this driver to: support+drivers@khimo.com*
 
