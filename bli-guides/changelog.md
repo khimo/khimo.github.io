@@ -4,6 +4,26 @@ layout: pagetoc
 ---
 
 
+# 2.3.2.502
+_Date: March 4, 2024, 8:49 a.m._
+### 2.3.2.502
+
+General:
+- Improves IA assistant help, mentioning that it affects only zone resources.
+
+#### Drivers:
+
+##### Mozart (ControlLink): 
+  - Adds BeoConnect Core support.
+  - Refactors product icons, adds Beoconnect-core icon and connected products icon. For the Beoconnect-core, we will use the icon of the first online speaker or just use the CORE icon if none matches the list that we have.
+  - Adds Beolab icons. - Mozart: Improves HTTP response checking.
+  - Adds more lifestyle images for products (Beolab 50, Beolab 90, Beolab 18, Beolab 20).
+##### Webhooks: 
+ - Adds webhook driver, allowing events to be triggered by accessing an HTTP endpoint.
+
+------
+
+
 # 2.3.2.489
 _Date: Feb. 15, 2024, 7:10 p.m._
 ### Changelog  2.3.2.489 3502ace52 | 2024-02-15
