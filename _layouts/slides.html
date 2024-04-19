@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/vendor/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="/vendor/reveal.js/dist/theme/league.css">
  <!--
@@ -8,6 +10,7 @@
    <link rel="stylesheet" href="/vendor/reveal.js/css/theme/black.css">
     <link rel="stylesheet" href="/vendor/reveal.js/css/theme/beige.css">
     <link rel="stylesheet" href="/vendor/reveal.js/css/theme/moon.css">
+    <script src="/vendor/reveal.js/lib/js/head.min.js"></script>
 //-->
   </head>
   <body>
@@ -22,23 +25,21 @@
         </script>
       </div>
     </div>
-    <script src="/vendor/reveal.js/lib/js/head.min.js"></script>
-    <script src="/vendor/reveal.js/js/reveal.js"></script>
-    <script>
+<script src="/vendor/reveal.js/dist/reveal.js"></script>
+<script>
 (function() {
 
-import Markdown from 'plugin/markdown/markdown.esm.js';
-import Highlight from 'plugin/highlight/highlight.esm.js';
-import Search from 'plugin/search/search.esm.js';
-import Zoom from 'plugin/zoom/zoom.esm.js';
-import Notes from 'plugin/notes/notes.esm.js';
+import Markdown from '/vendor/reveal.js/plugin/markdown/markdown.esm.js';
+import Highlight from '/vendor/reveal.js/plugin/highlight/highlight.esm.js';
+import Search from '/vendor/reveal.js/plugin/search/search.esm.js';
+import Zoom from '/vendor/reveal.js/plugin/zoom/zoom.esm.js';
+import Notes from '/vendor/reveal.js/plugin/notes/notes.esm.js';
 Reveal.initialize(
 controls: true,
 progress: true,
 history: true,
 center: true,
 plugins: [Markdown,Highlight,Search,Zoom]
-});
 })();
 
     </script>
