@@ -25,22 +25,21 @@
         </script>
       </div>
     </div>
-<script src="/vendor/reveal.js/dist/reveal.js"></script>
-<script>
-(function() {
+<script type="module" src="/vendor/reveal.js/dist/reveal.js"></script>
+<script type="module">
 
 import Markdown from '/vendor/reveal.js/plugin/markdown/markdown.esm.js';
 import Highlight from '/vendor/reveal.js/plugin/highlight/highlight.esm.js';
 import Search from '/vendor/reveal.js/plugin/search/search.esm.js';
 import Zoom from '/vendor/reveal.js/plugin/zoom/zoom.esm.js';
 import Notes from '/vendor/reveal.js/plugin/notes/notes.esm.js';
-Reveal.initialize(
+Reveal.initialize({
 controls: true,
 progress: true,
 history: true,
 center: true,
 plugins: [Markdown,Highlight,Search,Zoom]
-})();
+})
 
     </script>
     <!-- Printing and PDF exports -->
