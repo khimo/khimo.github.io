@@ -16,32 +16,37 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <script type="text/template" data-markdown
+        <section data-markdown
                 data-separator="^[ \t]*\n----*$"
                 data-separator-vertical="^[ \t]*\n[|][|][|][|]*$"
                 data-separator-notes="\n^Note:"
                 >
-        {{ page.content }}
-        </script>
+                <script type="text/template">
+{{ page.content }}
+                </script>
+        </section>
       </div>
     </div>
-<script type="module" src="/vendor/reveal.js/dist/reveal.js"></script>
-<script type="module">
+		<script src="/vendor/reveal.js/dist/reveal.js"></script>
+        <script src="/vendor/reveal.js/plugin/markdown/markdown.js"></script>
+        <script src="/vendor/reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="/vendor/reveal.js/plugin/notes/notes.js"></script>
+        <script src="/vendor/reveal.js/plugin/search/search.js"></script>
+        <script src="/vendor/reveal.js/plugin/zoom/zoom.js"></script>
+        <script src="/vendor/reveal.js/plugin/math/math.js"></script>
 
-import Markdown from '/vendor/reveal.js/plugin/markdown/markdown.esm.js';
-import Highlight from '/vendor/reveal.js/plugin/highlight/highlight.esm.js';
-import Search from '/vendor/reveal.js/plugin/search/search.esm.js';
-import Zoom from '/vendor/reveal.js/plugin/zoom/zoom.esm.js';
-import Notes from '/vendor/reveal.js/plugin/notes/notes.esm.js';
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
-center: true,
-plugins: [Markdown,Highlight,Search,Zoom]
-})
+		<script>
 
-    </script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSearch, RevealZoom ]
+			});
+
+		</script>
     <!-- Printing and PDF exports -->
 <script>
     var link = document.createElement( 'link' );
