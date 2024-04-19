@@ -26,20 +26,18 @@
     <script src="/vendor/reveal.js/js/reveal.js"></script>
     <script>
 (function() {
-Reveal.initialize({
+
+import Markdown from 'plugin/markdown/markdown.esm.js';
+import Highlight from 'plugin/highlight/highlight.esm.js';
+import Search from 'plugin/search/search.esm.js';
+import Zoom from 'plugin/zoom/zoom.esm.js';
+import Notes from 'plugin/notes/notes.esm.js';
+Reveal.initialize(
 controls: true,
 progress: true,
 history: true,
 center: true,
-dependencies: [
-{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-{ src: '/vendor/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: '/vendor/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: '/vendor/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-{ src: '/vendor/reveal.js/plugin/search/search.js', async: true },
-{ src: '/vendor/reveal.js/plugin/zoom-js/zoom.js', async: true },
-{ src: '/vendor/reveal.js/plugin/notes/notes.js', async: true }
-]
+plugins: [Markdown,Highlight,Search,Zoom]
 });
 })();
 
