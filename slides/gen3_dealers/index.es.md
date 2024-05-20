@@ -152,6 +152,10 @@ BLI está diseñado para el usuario final. Fuera de la caja, podría ser configu
 - Panel de administración en tiempo real <br/> <small>Programación de macros, asistente de IA, Multiusuario, Tiempo real</small>
 - Cientos de controladores de dispositivos<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
 - Acceso remoto<br/><small>Usa la aplicación desde fuera de tu hogar</small>
+- Túnel para programar remotamente
+- Actualizaciones automáticas
+
+
 
 Note:
 - Pagando por una actualización de licencia PRO única, BLI desbloqueará el resto de sus capacidades. La forma de pagar esta licencia se puede hacer a través de la interfaz web de BLI BASIC. En el futuro se planea agregar una forma de actualizar a PRO a través de la Aplicación BeoLiving.
