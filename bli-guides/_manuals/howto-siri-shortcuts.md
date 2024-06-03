@@ -39,7 +39,7 @@ layout: pagetoc
     <p>You can go to the Shortcut’s settings to change the name, this is important as it will what you will tell Siri to do.</p>
   </li>
   <li>
-    <p>Add a “Text” action. In this action, enter your BLI’s credentials, like: <em>user:password</em></p>
+  <p>Add a Text action. In this action, enter your BLI credentials in the format: <em>user:password</em>. Make sure to use a regular user; <b>admin is not allowed</b>. You can create a regular user from your BLI admin panel.</p>
   </li>
   <li>
     <p>Add a “Base64 Encode” action after the “Text” action which contains the credentials, and a line should connect the two. Selecte “Encode”, and “None” in Line Breaks.</p>
