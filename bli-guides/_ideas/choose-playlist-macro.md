@@ -4,35 +4,32 @@ description: Create a Halo button to select a desired playlist
 layout: pagetoc
 ---
 
-This guide shows an example of how to control the BeoRemote Halo through macros. In this case, the Halo will be used to select a Deezer playlist from a predefined list and play it on a specific source. The macro also includes a multiroom setting in case the user wants to play the same music in multiple speakers. 
+This guide shows an example of how to control the BeoRemote Halo through macros. In this case, the Halo will be used to select a Deezer playlist from a predefined list and play it on a specific source. The macro also includes a multiroom setting in case the user wants to play the same music on multiple speakers.
 
-We will use a BeoRemote Halo with the name “Halo” in an area called “My_Area” in a zone called “My_Zone”.
+We will use a BeoRemote Halo named Halo in an area called My_Area in a zone called My_Zone.
 
-## Halo configuration
-The Halo configuration page can be found in the Interfaces tab. Firstly, a button should be created in any page (if no pages exist one should be created too). After choosing a title, subtitle and icon, the behavior “Handle by custom macros” must be chosen. The button and page number should be remembered as they will be used later.
-How to create a page and a button, as well as more information on behaviors and resources, can be found in the help document of the Halo.
+## Halo Configuration
+The Halo configuration page can be found in the Interfaces tab. Firstly, a button should be created on any page (if no pages exist, one should be created too). After choosing a title, subtitle, and icon, the behavior "Handle by custom macros" must be chosen. The button and page number should be remembered as they will be used later. How to create a page and a button, as well as more information on behaviors and resources, can be found in the help document of the Halo.
 
-
-## Macro configuration
-The macro is triggered by the wheel or the button. When the wheel is turned, different playlists names (from a predefined list) should appear in the button title. Once you reach the one you want to play, you have to press the button for it to start. Supposing there is an area called “My_Area” with a zone “My_zone” that has a resource “Halo” of BeoRemote Halo type, we can create the macro.
-The events for this macro would be:
+## Macro Configuration
+The macro is triggered by the wheel or the button. When the wheel is turned, different playlist names (from a predefined list) should appear in the button title. Once you reach the one you want to play, you have to press the button for it to start. Supposing there is an area called My_Area with a zone My_Zone that has a resource Halo of BeoRemote Halo type, we can create the macro. The events for this macro would be:
 
 <div class="text-center">
   <img src="/bli-guides/pictures/bli-halo-playlist-tutorial/macro-events.png" class="img-fluid" alt="Event to execute the Macro"/>
 </div>
 
-When creating the event, the button to choose should be the one with the page and button number remembered before, this will automatically change to the button ID as shown in the image.
+When creating the event, the button to choose should be the one with the page and button number remembered before; this will automatically change to the button ID as shown in the image.
 
-For this application, some virtual resources should also be created. In Resources->Virtual Resources create the following:
-    • “Count”, of type INTEGER: This will be used for selecting the different playlists
-    • “Source”, of type STRING: This will be used to save the selected playlist’s ID 
-    • “Fired”, of type BOOLEAN: While the macro is running, this variable will be TRUE. This is necessary to avoid the macro running multiple times at the same time and causing wrong values in the previous variables.
+For this application, some virtual resources should also be created. In Resources->Virtual Resources, create the following:
+- Count, of type INTEGER: This will be used for selecting the different playlists.
+- Source, of type STRING: This will be used to save the selected playlist's ID.
+- Fired, of type BOOLEAN: While the macro is running, this variable will be TRUE. This is necessary to avoid the macro running multiple times at the same time and causing wrong values in the previous variables.
 
-The code as LuaMacros begins as follows: 
+The code as LuaMacros begins as follows:
 
-~~~lua
+```lua
 function(event, engine)
-  ---- variables ------ 
+  ---- variables ------
   local HALO_ADDRESS = "My_Zone/My_Area/Halo remote/Beoremote Halo"
   local HALO_BUTTON_ADDRESS = "497f6eca-6276-4993-bfeb-000008101411"
   
@@ -49,19 +46,19 @@ function(event, engine)
   
   -- all the speakers you want to play in
   local speakers = {"My_Zone/My_Area/AV renderer/Cono"}
-~~~
+```
 
-This section is for the user to define the resources’ address. 
-    • “speakers”: define the address of all speakers that should play the music you select. In the example, only one speaker named “Cono” is used. It’s necessary you define at least one speaker. If there are more, the multiroom function will activate so that all the speakers reproduce the same music.
-    • “available_sources”:  define the playlists’ title in order to set it in the button title.
-    • “choose_source”: define the playlists’ ID (corresponding to the title defined in “available_sources”)
-    • “source_type”: source from where the playlists are selected (“deezer”, etc). 
-    • “sources_quant”: number of playlists you can choose from
+This section is for the user to define the resource addresses.
+- speakers: define the address of all speakers that should play the music you select. In the example, only one speaker named Cono is used. It is necessary to define at least one speaker. If there are more, the multiroom function will activate so that all the speakers reproduce the same music.
+- available_sources: define the playlist titles to set in the button title.
+- choose_source: define the playlist IDs (corresponding to the titles defined in available_sources).
+- source_type: source from where the playlists are selected (Deezer, etc.).
+- sources_quant: number of playlists you can choose from.
 
-Once all the variables and resources addresses are defined, you can go on to the actual macro instructions. 
+Once all the variables and resource addresses are defined, you can go on to the actual macro instructions.
 
-The code: 
-~~~lua
+The code:
+```lua
   local fired = engine.query(FIRED_ADDRESS)[1].get_boolean("VALUE")
   if not fired then
     engine.fire(FIRED_ADDRESS.."/SET?VALUE=true")
@@ -107,22 +104,21 @@ The code:
     engine.fire(FIRED_ADDRESS.."/SET?VALUE=false")
   end
 end 
-~~~
+```
 
+We begin by checking if the macro is already running to avoid having problems. If the macro is not running, we continue with the instructions (and set the fired variable to true).
 
-We begin by checking if the macro is already running to avoid having problems. If the macro is not running, we continue with the instructions (and set de “fired” variable to “true”). 
+The code is divided into two parts: the first part has the instructions it has to follow if the macro was triggered by the wheel. The second part contains the instructions for when the macro is triggered by the button. This is checked in the if line that asks if the event parameters include OFFSET, which means that the wheel was turned.
 
-The code is divided into two parts: the first part has the instructions it has to follow if the macro was triggered by the wheel. The second one, are the instructions for when the macro is triggered by the button. This is checked in the “if” line that asks if the event parameters include “OFFSET”, which means that the wheel was turned. 
+We will start with the wheel section. The parameter OFFSET of the wheel is positive if the wheel is turning right and negative if it is turning left. If the wheel is turning right, we want to go forward in the playlist list. If the wheel is turning left, we want to go backward. That is set with the count variable, which increments its number if the wheel is turned clockwise and decreases if it is turned left.
 
-We will start with the wheel section. The parameter “OFFSET” of the wheel is positive if the wheel is turning right and negative if it’s turning left. If the wheel is turning right, we want to go forward in the playlist list. If the wheel is turning left, we want to go backwards. That is set with the “count” variable, which increments its number if the wheel is turned clockwise and decreases if it is turned left. 
+Next, we have a small correction of the number as we only want numbers from 1 to sources_quant. This means that after sources_quant, the number will turn to 1 and so on. If we move left, after 1 the number will turn to sources_quant. After this, we set the count variable to the new number, the button title to the playlist's name, and define the source's address.
 
-Next we have a small correction of the number as we only want numbers form 1 to “sources_quant”, this means that after “sources_quant” the number will turn to 1 and so on. If we move left, after 1 the number will turn to “sources_quant”. After this, we set the count variable to the new number, the button title to the playslist’s name and define the sources address. 
+It's important to note that the playlist will not start playing by only turning the wheel because there is no engine.fire() command in this section.
 
-It’s important you notice that the playlist will not start playing by only turning the wheel because there is no “engine.fire()” command in this section. 
+If the macro is triggered by the button, we set the multiroom source, which content is going to be played (defined when the wheel was turned), and the state and source ID of our main speaker. After that, we fire the command that makes the playlist start playing on the main speaker. Finally, if multiple speakers were defined, the playlist will start playing with a five-second delay on all the speakers that do not have music already playing.
 
-If the macro is triggered by the button, we set the multiroom source, which content is going to be played (defined when the wheel was turned) and the state and source ID of our main speaker. After that, we fire the command that makes the playlist start playing in the main speaker. Finally, if multiple speakers were defined, the playlist will start playing with a five seconds delay in all the speakers that do not have music already playing. 
+Before leaving the macro, we change the fired variable to false and leave it ready for the next time you will use it.
 
-Before leaving the macro, we change the “fired” variable to false and leave it ready for the next time you will use it.
-
-This was just an example of how to select a playlist from a predefined list of deezer playlists  with a macro. You can select different playlists just by changing the ID in “choose_sources” and the button’s title in “available_sources”. You will also have to change the “source_type” and “source_quant” in case you have more (or less) than four choices.
+This was just an example of how to select a playlist from a predefined list of Deezer playlists with a macro. You can select different playlists just by changing the ID in choose_sources and the button's title in available_sources. You will also have to change the source_type and source_quant in case you have more (or fewer) than four choices.
 
