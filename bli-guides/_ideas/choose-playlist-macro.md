@@ -122,3 +122,70 @@ Before leaving the macro, we change the fired variable to false and leave it rea
 
 This was just an example of how to select a playlist from a predefined list of Deezer playlists with a macro. You can select different playlists just by changing the ID in choose_sources and the button's title in available_sources. You will also have to change the source_type and source_quant in case you have more (or fewer) than four choices.
 
+
+## The full code ready to cut and paste
+```lua
+function(event, engine)
+  ---- variables ------
+  local HALO_ADDRESS = "My_Zone/My_Area/Halo remote/Beoremote Halo"
+  local HALO_BUTTON_ADDRESS = "497f6eca-6276-4993-bfeb-000008101411"
+  
+  ---- Virtual resources
+  local COUNT_ADDRESS = "My_Zone/My_Area/VARIABLE/count" 
+  local SOURCE_ADDRESS = "My_Zone/My_Area/VARIABLE/source" 
+  local FIRED_ADDRESS = "My_Zone/My_Area/VARIABLE/Fired"
+  
+  -- playlists 
+  local available_sources = {[1] = "TOP 100", [2] = "WINE & DINE", [3] = "FAVOURITES", [4] = "JAZZ"} -- Playlists' name for the button title
+  local choose_source = {[1] = "1266971851", [2] = "10387252442", [3] = "253141911", [4] = "1914526462"} -- Playlists' ID
+  local source_type = "deezer" 
+  local sources_quant = 4 -- number of available sources
+  
+  -- all the speakers you want to play in
+  local speakers = {"My_Zone/My_Area/AV renderer/Cono"}
+  local fired = engine.query(FIRED_ADDRESS)[1].get_boolean("VALUE")
+  if not fired then
+    engine.fire(FIRED_ADDRESS.."/SET?VALUE=true")
+    -- Macro activated by wheel
+    if event.parameters()["OFFSET"] then 
+     local count = engine.query(COUNT_ADDRESS)[1].get_number("VALUE")
+
+     if tonumber(event.parameters()["OFFSET"]) >= 1 then
+        if count == sources_quant then
+          count = 1
+        else
+          count = count + 1
+        end
+     else
+        if count == 1 then
+          count = sources_quant
+        else
+          count = count - 1
+        end
+     end
+     engine.fire(COUNT_ADDRESS.."/SET?VALUE="..tostring(count))
+     engine.fire(HALO_ADDRESS.."/SET_TITLE?BUTTON="..HALO_BUTTON_ADDRESS.."&TITLE="..available_sources[count])                
+     engine.fire(SOURCE_ADDRESS.."/SET?VALUE="..choose_source[count])
+
+    -- Macro activated by button
+    else 
+      local multiroom_source = source_type..":6655.1665509.28386322@products.bang-olufsen.com"
+      local content = engine.query(SOURCE_ADDRESS)[1].get_string("VALUE")
+
+      local bs1_state = engine.query(speakers[1])[1].get_string("state")
+      local bs1_source = engine.query(speakers[1])[1].get_string("sourceUniqueId")
+
+      engine.fire(speakers[1].."/Playqueue add Deezer playlist?Play now=true&Playlist id="..content)
+
+      engine.delay(5,0)
+      for i = 1,#speakers do
+        state = engine.query(speakers[i])[1].get_string("state")
+        if state ~= "Play" then
+          engine.fire(speakers[i].."/Select source by id?sourceUniqueId="..multiroom_source)
+        end
+      end
+    end
+    engine.fire(FIRED_ADDRESS.."/SET?VALUE=false")
+  end
+end 
+```
