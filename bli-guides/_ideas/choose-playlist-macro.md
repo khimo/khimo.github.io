@@ -1,191 +1,216 @@
 ---
-title: Halo "Choose the playlist" button 
-description: Create a Halo button to select a desired playlist
+title: Creating a Playlist Selection Button in Halo
+description: This guide explains how to set up a macro for creating a playlist selection button in Halo, enabling content triggering on a target speaker using the Halo Wheel.
 layout: pagetoc
 ---
 
-This guide shows an example of how to control the BeoRemote Halo through macros. In this case, the Halo will be used to select a Deezer playlist from a predefined list and play it on a specific source. The macro also includes a multiroom setting in case the user wants to play the same music on multiple speakers.
+### Introduction
 
-We will use a BeoRemote Halo named Halo in an area called My_Area in a zone called My_Zone.
+This tutorial will help you set up a macro that creates a playlist selection button in Halo. This button allows you to trigger content on a target speaker using the Halo Wheel. If you have multiple target speakers defined, the content will be sent to the first speaker, and all others will join in, playing the playlist simultaneously.
 
-## Halo Configuration
-The Halo configuration page can be found in the Interfaces tab. Firstly, a button should be created on any page (if no pages exist, one should be created too). After choosing a title, subtitle, and icon, the behavior "Handle by custom macros" must be chosen. The button and page number should be remembered as they will be used later. How to create a page and a button, as well as more information on behaviors and resources, can be found in the help document of the Halo.
+After selecting a playlist, the Halo user should press the button to trigger the content selection or wait for 5 seconds, after which the macro will automatically trigger the content.
+<div class="text-left">
+  <img src="/bli-guides/pictures/bli-halo-playlist-tutorial/halo.gif" class="img-fluid" alt="Halo running the macro"/>
+</div>
 
-## Macro Configuration
-The macro is triggered by the wheel or the button. When the wheel is turned, different playlist names (from a predefined list) should appear in the button title. Once you reach the one you want to play, you have to press the button for it to start. Supposing there is an area called My_Area with a zone My_Zone that has a resource Halo of BeoRemote Halo type, we can create the macro. The events for this macro would be:
+### Setup Instructions
 
+To set up the playlist selection button in Halo, follow these steps:
+
+1. Open the BeoLiving Intelligence admin panel.
+2. Go to the Macro tab.
+3. Create a new Macro.
+4. Add the trigger for this macro, which will be the Halo button PRESSED and WHEEL events:
 <div class="text-center">
   <img src="/bli-guides/pictures/bli-halo-playlist-tutorial/macro-events.png" class="img-fluid" alt="Event to execute the Macro"/>
 </div>
+5. Click the "Convert to code" button in the commands table.
+6. Copy the entire code from "The code" section below.
+7. Paste the code into the code text area of the Macro.
+8. Navigate to Resources -> Virtual Resources and ADD the halo_position integer variable, which the macro will use to track the wheel position.
+9. Replace the placeholder addresses and settings in the SETTINGS section with your actual values.
+10. Update the PLAYLISTS variable content with each Deezer or Tidal playlist you want to use (note: Tidal is currently only available for Mozart).
+12. Test the macro by triggering the event. The macro should execute as described, allowing you to select and play playlists using the Halo Wheel.
 
-When creating the event, the button to choose should be the one with the page and button number remembered before; this will automatically change to the button ID as shown in the image.
-
-For this application, some virtual resources should also be created. In Resources->Virtual Resources, create the following:
-- Count, of type INTEGER: This will be used for selecting the different playlists.
-- Source, of type STRING: This will be used to save the selected playlist's ID.
-- Fired, of type BOOLEAN: While the macro is running, this variable will be TRUE. This is necessary to avoid the macro running multiple times at the same time and causing wrong values in the previous variables.
-
-The code as LuaMacros begins as follows:
-
+### The Macro Lua Code
 ```lua
-function(event, engine)
-  ---- variables ------
-  local HALO_ADDRESS = "My_Zone/My_Area/Halo remote/Beoremote Halo"
-  local HALO_BUTTON_ADDRESS = "497f6eca-6276-4993-bfeb-000008101411"
+function (event, engine)
+  --[[ 
+This macro creates a button in Halo to select a playlist. You can use the Halo Wheel to play content on a target speaker. If there are multiple TARGET_SPEAKERS, the content will play on the first speaker, and the others will join in and play the playlist at the same time.
+
+After choosing a playlist, the Halo user should press the button to start the content or wait for 5 seconds for the macro to start it automatically.
+
+This macro makes the Halo button show and handle a playlist selection using the Halo Wheel.
+
+To use this macro, you need to define a button in the Halo configuration (Interfaces -> Your Halo) and a Virtual variable to store the last user selection. Then, edit the SETTINGS below:
+
+  ]]
+  -- --------------------------------------------------------
+  -- SETTINGS 
+  -- --------------------------------------------------------
+
+  -- Address of this macro, to implment debouncing:
+  local THIS_MACRO_ADDRESS = "Main/Living/MACRO/Halo button playlist"
+
+  -- Virtual variable that that you should define and will hold the last user
+  -- selection. Define the variable as a number (Integer) in Resources -> Virtual
+  -- Resources and place the address below: 
+  local BUTTON_POSITION_ADDRESS = "Main/Living/VARIABLE/Halo button playlist position" 
+
+  -- Target speakers addresses (e.g., {"MyArea/MyZone/RENDERER/BS2"}), 
+  -- a list of all speakers that must connect to this experience. The first one will be chosen as the master 
+  local TARGET_SPEAKERS = {
+    "Main/Living/RENDERER/Beosound Theatre-35554298",
+    "Main/Terrace/AV renderer/Beosound Stage_32580316"
+  }
+
   
-  ---- Virtual resources
-  local COUNT_ADDRESS = "My_Zone/My_Area/VARIABLE/count" 
-  local SOURCE_ADDRESS = "My_Zone/My_Area/VARIABLE/source" 
-  local FIRED_ADDRESS = "My_Zone/My_Area/VARIABLE/Fired"
+  -- Playlists: define a list of playlists, specifying the playlist ID and the label shown to the user
+  -- add or remove as many playlist as you want
+  local PLAYLISTS = {
+  -- { ID        , LABEL    , PROVIDER_TYPE [deezer or tidal or empty] } 
+     {"1266971851", "TOP 100"},
+     {"playlist:fea2aa93-1693-4e0c-be47-22e1771a04a8", "T. Chillout", "tidal"},
+     {"10387252442", "WINE & DINE", "deezer"},
+     {"253141911", "FAVOURITES", "deezer"},
+     {"1914526462", "JAZZ", "deezer"}
+  }
+  -- if not defined in PLAYLISTS list, this type will be used
+  local DEFAULT_PROVIDER_TYPE  = "deezer"  
+
+
+  -- --------------------------------------------------------
+  -- DO NOT EDIT BELOW HERE UNLESS YOU UNDERSTAND THE CODE!
+  -- --------------------------------------------------------
+ 
   
-  -- playlists 
-  local available_sources = {[1] = "TOP 100", [2] = "WINE & DINE", [3] = "FAVOURITES", [4] = "JAZZ"} -- Playlists' name for the button title
-  local choose_source = {[1] = "1266971851", [2] = "10387252442", [3] = "253141911", [4] = "1914526462"} -- Playlists' ID
-  local source_type = "deezer" 
-  local sources_quant = 4 -- number of available sources
-  
-  -- all the speakers you want to play in
-  local speakers = {"My_Zone/My_Area/AV renderer/Cono"}
-```
+  -- Helper functions ---------------------------------------
+  function playContent(target, contentType, contentId)
+    if string.find(target, "/RENDERER/") then
+      -- clean
+      engine.fire(target .. "/CLEAR")
+      -- add
+      engine.fire(target .. "/ADD_ITEM?PROVIDER_TYPE=" .. contentType .. "&PLAY_NOW=true&ID=" .. contentId .. "&TYPE=playlist&DETAILS=&ART=https://e-cdns-images.dzcdn.net/images/cover/0bc34ce79169a66ace4b4fd553e13355/250x250-000000-80-0-0.jpg")
+    else
+      if contentType == 'deezer' then
+        -- clean
+        engine.fire(target .. "/Playqueue clean")
+        -- add
+        engine.fire(target .. "/Playqueue add Deezer playlist?Play now=true&Playlist id="..contentId)
 
-This section is for the user to define the resource addresses.
-- speakers: define the address of all speakers that should play the music you select. In the example, only one speaker named Cono is used. It is necessary to define at least one speaker. If there are more, the multiroom function will activate so that all the speakers reproduce the same music.
-- available_sources: define the playlist titles to set in the button title.
-- choose_source: define the playlist IDs (corresponding to the titles defined in available_sources).
-- source_type: source from where the playlists are selected (Deezer, etc.).
-- sources_quant: number of playlists you can choose from.
+      else
+        Error("AV renderers only support DEEZER, use a MOZART product as first product.")
+      end
+    end
+  end
 
-Once all the variables and resource addresses are defined, you can go on to the actual macro instructions.
+  function waitForProductToBePlaying(target)
+    if string.find(target, "/RENDERER/") then
+      engine.wait_until(target .. "/STATE_UPDATE?STATE=Play", 180, 0)
+    else
+      engine.wait_until(target .. "/STATE_UPDATE?state=Play", 180, 0)
+    end
+  end
 
-The code:
-```lua
-  local fired = engine.query(FIRED_ADDRESS)[1].get_boolean("VALUE")
-  if not fired then
-    engine.fire(FIRED_ADDRESS.."/SET?VALUE=true")
-    -- Macro activated by wheel
-    if event.parameters()["OFFSET"] then 
-     local count = engine.query(COUNT_ADDRESS)[1].get_number("VALUE")
+  function getSourceUniqueId(target)
+    local source
+    if string.find(target, "/RENDERER/") then
+      source = engine.query(target)[1].get_string("MULTIROOM_ORIGIN")
+    else
+      source = engine.query(target)[1].get_string("sourceUniqueId")
+    end
+    return source
+  end
 
-     if tonumber(event.parameters()["OFFSET"]) >= 1 then
-        if count == sources_quant then
-          count = 1
-        else
-          count = count + 1
-        end
-     else
-        if count == 1 then
-          count = sources_quant
-        else
-          count = count - 1
-        end
-     end
-     engine.fire(COUNT_ADDRESS.."/SET?VALUE="..tostring(count))
-     engine.fire(HALO_ADDRESS.."/SET_TITLE?BUTTON="..HALO_BUTTON_ADDRESS.."&TITLE="..available_sources[count])                
-     engine.fire(SOURCE_ADDRESS.."/SET?VALUE="..choose_source[count])
+  function linkSpeaker(target, source)
+    if string.find(target, "/RENDERER/") then
+      local jid = tostring(source):gsub('^[^:@]*:', '')
+      engine.fire(target .."/LINK?MULTIROOM_ID=" .. jid  .. "&MULTIROOM_TYPE=beoLink")
+    else
+      engine.fire(target .."/Select source by id?sourceUniqueId=".. source)
+    end
+  end
 
-    -- Macro activated by button
-    else 
-      local multiroom_source = source_type..":6655.1665509.28386322@products.bang-olufsen.com"
-      local content = engine.query(SOURCE_ADDRESS)[1].get_string("VALUE")
+  function getPlaylistId(button_position)
+    return PLAYLISTS[button_position][1]
+  end
 
-      local bs1_state = engine.query(speakers[1])[1].get_string("state")
-      local bs1_source = engine.query(speakers[1])[1].get_string("sourceUniqueId")
+  function getPlaylistLabel(button_position)
+    return PLAYLISTS[button_position][2]
+  end
 
-      engine.fire(speakers[1].."/Playqueue add Deezer playlist?Play now=true&Playlist id="..content)
+  function getPlaylistProviderType(button_position)
+    return #(PLAYLISTS[button_position]) == 3 and PLAYLISTS[button_position][3] or DEFAULT_PROVIDER_TYPE
+  end
 
-      engine.delay(5,0)
-      for i = 1,#speakers do
-        state = engine.query(speakers[i])[1].get_string("state")
-        if state ~= "Play" then
-          engine.fire(speakers[i].."/Select source by id?sourceUniqueId="..multiroom_source)
+  function startPlayingSelectedPlaylist()
+    local button_position = engine.query(BUTTON_POSITION_ADDRESS)[1].get_number("VALUE")
+    -- Play the selected playlist/track on the target product
+    playContent(TARGET_SPEAKERS[1], getPlaylistProviderType(button_position), getPlaylistId(button_position))
+
+    engine.delay(1,0)
+
+    waitForProductToBePlaying(TARGET_SPEAKERS[1])
+        
+    local targetSource = getSourceUniqueId(TARGET_SPEAKERS[1])
+    
+    -- give some time to the univese
+
+    if #TARGET_SPEAKERS > 1 and targetSource then
+      -- If we have more speakers, check and link all the products that were not linked yet
+      for i = 2, #TARGET_SPEAKERS do
+        local speaker = TARGET_SPEAKERS[i]
+        local currentSource = getSourceUniqueId(speaker)
+        if currentSource ~= targetSource then
+          linkSpeaker(speaker, targetSource)
         end
       end
     end
-    engine.fire(FIRED_ADDRESS.."/SET?VALUE=false")
   end
-end 
-```
 
-We begin by checking if the macro is already running to avoid having problems. If the macro is not running, we continue with the instructions (and set the fired variable to true).
+  --------------------------------------------------------------
 
-The code is divided into two parts: the first part has the instructions it has to follow if the macro was triggered by the wheel. The second part contains the instructions for when the macro is triggered by the button. This is checked in the if line that asks if the event parameters include OFFSET, which means that the wheel was turned.
+  -- Fire any other instance of this macro. If it is running multiple times, we must keep just the last run
+  engine.fire(THIS_MACRO_ADDRESS .. "/CANCEL OTHER")
+  -- A small debouncing delay
+  engine.delay(0,10) 
+     
+  -- Process the event
+  if event.parameters()["OFFSET"] then 
+    local button_position = engine.query(BUTTON_POSITION_ADDRESS)[1].get_number("VALUE")
+    -- If OFFSET exists, we assume that it is a WHEEL event, so we update the
+    -- position button_position and the Halo screen
 
-We will start with the wheel section. The parameter OFFSET of the wheel is positive if the wheel is turning right and negative if it is turning left. If the wheel is turning right, we want to go forward in the playlist list. If the wheel is turning left, we want to go backward. That is set with the count variable, which increments its number if the wheel is turned clockwise and decreases if it is turned left.
-
-Next, we have a small correction of the number as we only want numbers from 1 to sources_quant. This means that after sources_quant, the number will turn to 1 and so on. If we move left, after 1 the number will turn to sources_quant. After this, we set the count variable to the new number, the button title to the playlist's name, and define the source's address.
-
-It's important to note that the playlist will not start playing by only turning the wheel because there is no engine.fire() command in this section.
-
-If the macro is triggered by the button, we set the multiroom source, which content is going to be played (defined when the wheel was turned), and the state and source ID of our main speaker. After that, we fire the command that makes the playlist start playing on the main speaker. Finally, if multiple speakers were defined, the playlist will start playing with a five-second delay on all the speakers that do not have music already playing.
-
-Before leaving the macro, we change the fired variable to false and leave it ready for the next time you will use it.
-
-This was just an example of how to select a playlist from a predefined list of Deezer playlists with a macro. You can select different playlists just by changing the ID in choose_sources and the button's title in available_sources. You will also have to change the source_type and source_quant in case you have more (or fewer) than four choices.
-
-
-## The full code ready to cut and paste
-```lua
-function(event, engine)
-  ---- variables ------
-  local HALO_ADDRESS = "My_Zone/My_Area/Halo remote/Beoremote Halo"
-  local HALO_BUTTON_ADDRESS = "497f6eca-6276-4993-bfeb-000008101411"
-  
-  ---- Virtual resources
-  local COUNT_ADDRESS = "My_Zone/My_Area/VARIABLE/count" 
-  local SOURCE_ADDRESS = "My_Zone/My_Area/VARIABLE/source" 
-  local FIRED_ADDRESS = "My_Zone/My_Area/VARIABLE/Fired"
-  
-  -- playlists 
-  local available_sources = {[1] = "TOP 100", [2] = "WINE & DINE", [3] = "FAVOURITES", [4] = "JAZZ"} -- Playlists' name for the button title
-  local choose_source = {[1] = "1266971851", [2] = "10387252442", [3] = "253141911", [4] = "1914526462"} -- Playlists' ID
-  local source_type = "deezer" 
-  local sources_quant = 4 -- number of available sources
-  
-  -- all the speakers you want to play in
-  local speakers = {"My_Zone/My_Area/AV renderer/Cono"}
-  local fired = engine.query(FIRED_ADDRESS)[1].get_boolean("VALUE")
-  if not fired then
-    engine.fire(FIRED_ADDRESS.."/SET?VALUE=true")
-    -- Macro activated by wheel
-    if event.parameters()["OFFSET"] then 
-     local count = engine.query(COUNT_ADDRESS)[1].get_number("VALUE")
-
-     if tonumber(event.parameters()["OFFSET"]) >= 1 then
-        if count == sources_quant then
-          count = 1
-        else
-          count = count + 1
-        end
-     else
-        if count == 1 then
-          count = sources_quant
-        else
-          count = count - 1
-        end
-     end
-     engine.fire(COUNT_ADDRESS.."/SET?VALUE="..tostring(count))
-     engine.fire(HALO_ADDRESS.."/SET_TITLE?BUTTON="..HALO_BUTTON_ADDRESS.."&TITLE="..available_sources[count])                
-     engine.fire(SOURCE_ADDRESS.."/SET?VALUE="..choose_source[count])
-
-    -- Macro activated by button
-    else 
-      local multiroom_source = source_type..":6655.1665509.28386322@products.bang-olufsen.com"
-      local content = engine.query(SOURCE_ADDRESS)[1].get_string("VALUE")
-
-      local bs1_state = engine.query(speakers[1])[1].get_string("state")
-      local bs1_source = engine.query(speakers[1])[1].get_string("sourceUniqueId")
-
-      engine.fire(speakers[1].."/Playqueue add Deezer playlist?Play now=true&Playlist id="..content)
-
-      engine.delay(5,0)
-      for i = 1,#speakers do
-        state = engine.query(speakers[i])[1].get_string("state")
-        if state ~= "Play" then
-          engine.fire(speakers[i].."/Select source by id?sourceUniqueId="..multiroom_source)
-        end
+    if tonumber(event.parameters()["OFFSET"]) >= 1 then
+      if button_position >= #PLAYLISTS then
+        button_position = 1
+      else
+        button_position = button_position + 1
+      end
+    else
+      if button_position <= 1 then
+        button_position = #PLAYLISTS
+      else
+        button_position = button_position - 1
       end
     end
-    engine.fire(FIRED_ADDRESS.."/SET?VALUE=false")
+    
+    -- update position variable
+    engine.fire(BUTTON_POSITION_ADDRESS.."/SET?VALUE="..tostring(button_position))
+    
+    -- update halo button text
+    local halo_button_address = event.parameters()["BUTTON"]
+    local halo_address = event.area() .. "/" .. event.zone() .. "/" .. event.type() .. "/" .. event.name()
+    engine.fire(halo_address.."/SET_TITLE?BUTTON="..halo_button_address.."&TITLE=".. getPlaylistLabel(button_position))
+    
+    -- wait 5 seconds, if nobody cancel us we will fire the playlist
+    engine.delay(5,0) 
+    startPlayingSelectedPlaylist()
+
+  else 
+    -- Offset does not exist, assuming it is a PRESS event, so we will send the currently selected playlist
+    startPlayingSelectedPlaylist()
   end
 end 
+
 ```
