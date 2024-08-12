@@ -6,11 +6,14 @@ layout: pagetoc
 
 ### Introduction
 
+<div class="text-left float-right  col-sm-6">
+  <img src="/bli-guides/pictures/bli-halo-playlist-tutorial/halo.gif" alt="Halo running the macro" class="img-fluid">
+</div>
+
 This tutorial will help you set up a macro that creates a playlist selection button in Halo. This button allows you to trigger content on a target speaker using the Halo Wheel. If you have multiple target speakers defined, the content will be sent to the first speaker, and all others will join in, playing the playlist simultaneously.
 
 After selecting a playlist, the Halo user should press the button to trigger the content selection or wait for 5 seconds, after which the macro will automatically trigger the content.
 <div class="text-left">
-  <img src="/bli-guides/pictures/bli-halo-playlist-tutorial/halo.gif" class="img-fluid" alt="Halo running the macro"/>
 </div>
 
 ### Setup Instructions
