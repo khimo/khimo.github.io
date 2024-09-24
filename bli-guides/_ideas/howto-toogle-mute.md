@@ -54,7 +54,7 @@ end
 
 ### Example macro view
 <div class="text-center">
-  <img src="howto-toogle.mute.png" class="img-fluid" alt="A mute toogle macro"/>
+  <img src="howto-toogle-mute.png" class="img-fluid" alt="A mute toogle macro"/>
 </div>
 
 
