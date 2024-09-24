@@ -1,6 +1,6 @@
 ---
-title: Eliminate Erroneous or Multiple Triggers with Debounce Macros 
-description: Use BeoLiving Intelligence debounce macros to prevent false or multiple triggers in your home automation system, ensuring accurate responses to user interactions, especially in situations with noisy or unstable events..
+title: Eliminate Erroneous or Multiple Triggers with Debounce
+description: Use BeoLiving Intelligence debounce in macros to prevent false or multiple triggers in your home automation system, ensuring accurate responses to user interactions, especially in situations with noisy or unstable events..
 layout: pagetoc
 ---
 
