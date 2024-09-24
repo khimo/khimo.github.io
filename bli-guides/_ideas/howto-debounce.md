@@ -26,7 +26,9 @@ Debouncing can be implemented in BeoLiving Intelligence using either table macro
 
 **Example Table Macro:**
 
-![Debounce Macro Example](howto-debounce.png)
+<div class="text-center">
+  <img src="howto-debounce.png" class="img-fluid" alt="A mute toogle macro"/>
+</div>
 
 In this example, when the "Exterior" button is pressed, the macro cancels any other running instances of itself. It then waits for 2 seconds before clearing the play queue and adding a specific user asset to the Beoplay M5. If the button is pressed again within the 2-second delay, it will start a new instance of this macro, canceling the previous instance that was still waiting, and the new instance begins the debounce delay again.
 
