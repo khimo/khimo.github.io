@@ -149,7 +149,7 @@ Creamos **relaciones** con nuestros clientes, relaciones que crecen.
 
 ---
 
-<!-- .slide: data-background-image="./res/pattern_soft.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ## CASOS DE USO
 ## Soluciones Simples Que Hacen la Diferencia
 
@@ -200,6 +200,22 @@ Maneja el volumen de múltiples productos
 todos los altavoces funcionando como uno
 
 ---
+
+<!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+##### CASOS DE USO 
+### Anuncios / Notificaciones
+
+<br/>
+
+Tu producto Mozart puede alertarte cuando alguien está en la puerta <br/>
+
+<br/>
+
+o enviar una notificación de TV para abrir la puerta con tu control remoto.
+
+
+
+---
 ###### Casos de Uso Avanzados 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -215,8 +231,6 @@ Acceso remoto
 App BeoLiving
 
 Halo
-
-Por ejemplo: ¡Haz una instalación KNX moderna!
 
 ----
 
@@ -244,9 +258,9 @@ Todo **integrado usando el BLI**
 
 El BeoLiving Intelligence se integra con Mirigi.
 
-**¡Aborda un edificio completo!**
+**¡Acércate a un edificio completo!**
 
-<small>Por ejemplo: Solicita tu coche desde un botón en tu Halo.</small>
+<small>Ej.: Solicita tu coche desde un botón en tu Halo.</small>
 
 
 <b>Más información: <a href="https://mirigi.com/"> mirigi.com </a> </b>

@@ -38,7 +38,7 @@ em 5 minutos de tempo de configuração
 ---
 
 ## SIMPLES DE CONFIGURAR: 
-<small>Você pode configurar tudo isto!</small>
+<small>Você pode configurar tudo isso!</small>
 
 
 <!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" class="container" -->
@@ -74,7 +74,7 @@ em 5 minutos de tempo de configuração
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-Uma macro é uma **Lista de eventos** que desencadeia 
+Uma macro é uma **Lista de eventos** que aciona 
 <br/> uma lista ordenada de **comandos**
 
 
@@ -110,7 +110,7 @@ Note:
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
-- Configuração a partir da **BeoLiving App**
+- Configuração a partir da **App BeoLiving**
 - Assistentes de **Voz**
 - Philips Hue
 - B&O - **AV e Halo**
@@ -149,7 +149,7 @@ Criamos **relações** com os nossos clientes, relações que crescem.
 
 ---
 
-<!-- .slide: data-background-image="./res/pattern_soft.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ## CASOS DE USO
 ## Soluções Simples Que Fazem a Diferença
 
@@ -158,7 +158,7 @@ Criamos **relações** com os nossos clientes, relações que crescem.
 <!-- .slide: data-background-image="./res/framebl8.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 ###### Casos de Uso 
-### Experiência de Cinema
+### Experiência de cinema
 
 <br/>
 
@@ -172,38 +172,54 @@ Elevador
 
 Luzes
 
-Persianas
+Cortinas
 
 
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso 
+##### CASOS DE USO 
 ### BeoRemote One e Halo 
 ### <small>Como controle remoto de automação residencial</small>
 
 <img src="./res/halo.png" class="r-frame" height="200" />
 <img src="./res/beoremote.png" class="r-frame" height="200" />
 
-Controle luzes, persianas e áudio com os Controles Remotos B&O
+Controle luzes, cortinas e áudio com os Controles Remotos B&O
 
 Controle o volume de vários produtos
 
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso 
-### Grupos de Produtos
+##### CASOS DE USO 
+### Grupos de produtos
 
 **Ligação persistente** entre vários altifalantes
 
 todos os altifalantes funcionando como um só
 
 ---
+
+<!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+##### CASOS DE USO 
+### Anúncios / Notificações
+
+<br/>
+
+O seu produto Mozart pode alertá-lo quando alguém está à porta <br/>
+
+<br/>
+
+ou enviar uma notificação na TV para abrir a porta com o seu controle remoto.
+
+
+
+---
 ###### Casos de Uso Avançados 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Do Legado ao Presente
+### Do legado ao presente
 
 Use o BLI como um habilitador de tecnologia:
 
@@ -212,11 +228,9 @@ Alexa / Google Home / IA
 
 Acesso remoto
 
-BeoLiving App
+App BeoLiving
 
 Halo
-
-Ex.: Torne uma instalação KNX moderna!
 
 ----
 
@@ -257,8 +271,8 @@ O BeoLiving Intelligence integra-se com o Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso
-### Automação de Lojas
+##### CASOS DE USO
+### Automação de loja
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
@@ -272,12 +286,12 @@ O BeoLiving Intelligence integra-se com o Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Diretrizes para o Sucesso na Loja
+### Diretrizes da Loja para o Sucesso
 
 <br/>
 
 **Mantenha-o simples**  <br/>
-<small>com demonstrações que sempre funcionam.</small>
+<small>com demos que sempre funcionam.</small>
 
 <br/>
 

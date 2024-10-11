@@ -149,7 +149,7 @@ We create **relationships** with our customers, relationships that grow.
 
 ---
 
-<!-- .slide: data-background-image="./res/pattern_soft.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ## USE Cases
 ## Simple Solutions That Make the Difference
 
@@ -200,6 +200,22 @@ Handle the volume of multiple products
 all the speakers working like one
 
 ---
+
+<!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+##### USE Cases 
+### Announcements / Notifications
+
+<br/>
+
+Your Mozart product can alert you when someone is at the door <br/>
+
+<br/>
+
+or send a TV notification to open the door with your remote.
+
+
+
+---
 ###### Advanced USE Cases 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -215,8 +231,6 @@ Remote access
 BeoLiving App
 
 Halo
-
-E.g.: Make a KNX installation modern!
 
 ----
 
