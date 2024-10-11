@@ -1,0 +1,12 @@
+# Ignore Vim swap files
+*.swp
+*.swo
+
+# Ignore Vim backup files
+*.bak
+*.tmp
+
+# Ignore Emacs temporary files
+*~
+\#*\#
+
