@@ -17,7 +17,7 @@ System connection status is shown on the BLI's web interface, each color represe
 
 ## Resources
 
-Resources are automatically discovered on the network and can be added to Zones either using the iOS app or in the Resources tab of the web interface by clicking on "Show discovered resources".
+Resources are automatically discovered on the network and can be added to Zones either using the iOS app or in the Resources tab of the web interface by clicking on "Show discovered resources". In a standard local network setup, using discovery and addressing the products by serial number is the recommended way. If you are having troubles, check the *Network considerations* section below.
 
 Available inputs vary depending on the ControlLink product, they can be found in the "Interfaces" tab under "AV Products", where they can be hidden in the app.
 Every ControlLink product offers the B&O NetRadio input, where radios all over the world can be found.
@@ -102,7 +102,6 @@ For overwriting this configuration, you can go to the "Interfaces" tab, select t
 </dl>
 
 
-
 ## Connecting to BeoCloud
 A BeoCloud connection is needed in order to use B&O NetRadio, and requires signing into the BeoCloud account. 
 
@@ -111,6 +110,17 @@ A connection can be established from the BLI on the "ControlLink" system in the 
 Both means will prompt the user for a **pin**, which can be retrieved from the **Bang & Olufsen application** in **_Settings->Integrations_**, where a code with the format **"XXX-XXX-XXX"** can be created. 
 
 Once the BeoCloud account is linked with the BLI, all of the NetRadio content will be available.
+
+## Network Considerations
+
+All communication between the BLI and the AV products is based on Multicast discovery (Bonjour). This method allows the products to be discovered on the network and addressed by their serial numbers. It is essential that all products are accessible on the same subnet as the BLI and that the network supports multicast discovery.
+
+In cases where the AV products are on different subnets (VLAN) or multicast communication is disturbed by the network, a *FIXED IP* can be used as the **address** in the Resource tab. It is crucial to verify your network configuration to ensure that the IP assigned to each of the AV products is fixed and exclusively assigned to that product. The most reliable method to achieve this is by using *DHCP reservation* on the DHCP server within the network setup. If you are experiencing instabilities while using the product IP as a resource address, please check that the IP is not being used by another device at the same time.
+
+
+
+
+
 
 ## Product Group
 
@@ -123,6 +133,9 @@ For a new group to be created you need to select a Main product for the group an
 A group can also be created from the BeoLiving application in _Settings->YOUR-BLI->Device Settings->Group products_ where you should first choose a master and then the followers.
 
 ## Changelog
+### v0.4 | 2024/04/18
+ - Adds support to fixed ip address
+
 ### v0.3 | 2022/10/31
 
 - Documentation updates.
