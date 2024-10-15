@@ -1,22 +1,79 @@
 ---
 title: How-To Guides for Practical Integration Ideas
 layout: page
+toc: true 
 ---
+<script>
+function filterByName() {
+  const target = document.querySelectorAll("#searchbox")[0];
+  const searchTerm = target.value.trim().toLowerCase();
+  const listItems = document.querySelectorAll("#ideas .idea");
+  let countHidden = 0;
+  let countShow = 0;
 
-<p>Discover exciting ideas and practical setup guides to maximize your BeoLiving Intelligence experience!</p>
+  listItems.forEach(function(item) {
+    item.style.display = 'revert';
+
+    if (!item.textContent.toLowerCase().includes(searchTerm)) {
+      item.style.display = 'none';
+      countHidden++;
+    } else {
+      countShow++;
+    }
+  })
+  if (countHidden > 0) {
+    const result = document.querySelectorAll("#results")[0];
+    results.innerHTML = "Showing " + countShow + " of a total of " + (countShow + countHidden);
+  } else {
+      results.innerHTML = ""
+  }
+}
+</script>
 
 
-{% for idea in site.ideas %}
-<div class="idea">
-  <h2><a href="{{ idea.url }}">{{ idea.title }}</a></h2>
-  <div style="display: none"> 
-    <pre>{{ idea.path  }}</pre>
-    <pre>{{ idea.keywords }} </pre>
+
+<div class="container">
+  <div class="jumbotron">
+
+<p><strong>Discover exciting ideas and practical setup guides</strong> to enhance your <strong>BeoLiving Intelligence</strong> experience! Below, you'll find a comprehensive list of ideas to explore.</p>
+
+<p>Whether you're a tech enthusiast or a beginner, our guides will help you integrate and automate your home effortlessly. You can scroll down or use the search box to find the most relevant ideas and follow <strong>step-by-step instructions</strong> for various products to maximize your smart home devices.</p>
+
+<p>From setting up your first smart light to creating complex automation routines, we've got you covered. We're continually expanding our list of guides!</p>
+
+<p>If you have a unique idea or specific use case you'd like to see, reach out to us at <a href="mailto:support+ideas@khimo.com"><strong>support+ideas@khimo.com</strong></a>.</p>
+
+
+<br/>
+<br/>
+    <div class="d-flex justify-content-center">
+      <div>
+      <form class="form-inline ">
+        <input class="form-control form-control-lg" type="search" id="searchbox" placeholder="Search" aria-label="Filter" oninput="filterByName(event)" >
+        <button class="btn my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
+      </form>
+      </div>
+    </div>
   </div>
-  <blockquote>
-    <p>
-      {{ idea.description }}
-    </p>
-  </blockquote>
+  <div class="d-flex justify-content-center">
+    <div id="results">
+    </div>
+  </div>
 </div>
+
+<div id="ideas">
+  {% for idea in site.ideas %}
+  <div class="idea">
+    <h2><a href="{{ idea.url }}">{{ idea.title }}</a></h2>
+    <div style="display: none"> 
+      <pre>{{ idea.path  }}</pre>
+      <pre>{{ idea.keywords }} </pre>
+    </div>
+    <blockquote>
+      <p>
+        {{ idea.description }}
+      </p>
+    </blockquote>
+  </div>
 {% endfor %}
+</div>
