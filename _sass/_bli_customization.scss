@@ -84,19 +84,22 @@ dt, dd {
 }
 
 
-table {
+.nicetables {
+  table {
     width: 100%; /* Make the table fill the content width */
     border-collapse: collapse; /* Collapse borders for a cleaner look */
-}
+    margin-top: 1ex;
+    margin-bottom: 2ex;
+  }
 
-th, td {
+  th, td {
     border: 1px solid black; /* Add borders to table cells */
     padding: 8px; /* Add padding for better spacing */
     text-align: left; /* Align text to the left */
-}
+  }
 
-th {
+  th {
     background-color: #f2f2f2; /* Optional: Add a background color for headers */
+  }
 }
-
 
