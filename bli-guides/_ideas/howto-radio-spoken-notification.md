@@ -1,7 +1,7 @@
 ---
 title: Announce Radio Station Name with a BeoLiving Intelligence Macro
 description: Enhance your BeoLiving Intelligence experience by configuring a Lua macro that makes your Mozart (Control Link) products announce the name of the B&O Radio station playing. This guide provides step-by-step instructions on how to set up and customize the macro, making your audio system more intuitive and informative.
-keywords: BeoLiving Intelligence, Mozart, Control Link, B&O Radio, spoken notification, automation, Lua macro, station name announcement, audio feedback, customization
+keywords: BeoLiving Intelligence, Mozart, Control Link, B&O Radio, spoken notification, automation, Lua macro, station name announcement, audio feedback, customization, RENDERER
 layout: pagetoc
 ---
 

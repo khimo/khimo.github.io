@@ -1,7 +1,7 @@
 ---
 title: Create a Perfect Morning Routine with BLI and Siri
 description: Learn how to combine the power of BeoLiving Intelligence (Pro BLI or BLGW) with Siri Shortcuts to create a personalized morning routine. This guide provides a step-by-step explanation and video demonstration, enabling you to trigger your "Good Morning" scene by simply turning off your phone alarm, automating your curtains, music, and more for a seamless start to your day.
-keywords: BeoLiving Intelligence, Siri Shortcuts, morning routine, automation, alarm trigger, "Good Morning" scene, curtains, music, Pro BLI, BLGW, personalization
+keywords: BeoLiving Intelligence, Siri Shortcuts, morning routine, automation, alarm trigger, "Good Morning" scene, curtains, music, Pro BLI, BLGW, personalization, MACRO, SHADES, RENDERER
 layout: pagetoc
 ---
 

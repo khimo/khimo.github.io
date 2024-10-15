@@ -1,7 +1,7 @@
 ---
 title: Connect Your Bang & Olufsen TV to BeoLiving Intelligence
 description: Learn how to connect your Bang & Olufsen TV (BeoVision Eclipse, BeoVision Horizon, or BeoPlay V1) to a BeoLiving Intelligence system. This guide provides step-by-step instructions for establishing a connection, accessing the Home Control panel on your TV, and enabling scene execution with a BeoRemote.
-keywords: BeoLiving Intelligence, BeoVision Eclipse, BeoVision Horizon, BeoPlay V1, TV connection, Home Control, BeoRemote, scene execution, integration
+keywords: BeoLiving Intelligence, BeoVision Eclipse, BeoVision Horizon, BeoPlay V1, TV connection, Home Control, BeoRemote, scene execution, integration, AV Renderer, MACRO
 layout: pagetoc
 ---
 

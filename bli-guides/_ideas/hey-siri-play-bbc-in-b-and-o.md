@@ -1,7 +1,7 @@
 ---
 title: "Hey Siri, Play BBC on My B&O - A Siri Shortcuts Integration Guide"
 description: Learn how to control your Essential or Pro BeoLiving Intelligence using Siri Shortcuts. This guide provides a step-by-step example of setting up a scene to play BBC Radio 1 on your B&O system and configuring a Siri Shortcut to trigger it with a simple voice command.
-keywords: BeoLiving Intelligence, Siri Shortcuts, voice control, automation, integration, BBC Radio 1, Essential mode, Pro mode, scene setup, shortcut configuration
+keywords: BeoLiving Intelligence, Siri Shortcuts, voice control, automation, integration, BBC Radio 1, Essential mode, Pro mode, scene setup, shortcut configuration, MACRO, RENDERER
 layout: pagetoc
 ---
 
@@ -18,7 +18,7 @@ Important reminder:
 
 If your BLI is in Essential mode, you should set up BBC radio 1 as one of your product's "Favourites" (see below). Once this is done, on the BeoLiving app you must go to the zone where you wish to create the Scene, go to the "Scenes" tab, and press the plus (+) sign to create a new scene. Select the desired product, and choose the Favourite button that you have previously configured to play BBC Radio 1 on TuneIn. Press "DONE".
 
-##### Setting up BBC Radio 1 as a favourite
+##### Setting up BBC Radio 1as a favourite
 B&O products have between three and four "Favourites" buttons that can be configured using a BeoRemote One, on the product itself, or through the B&0 app/web setup page. This changes depending on the product, in our example we use a BeoSound 2 which can be configured by voice control: Keep the button of choice pressed, until the voice assistant asks you what command you want to configure. You can find more information on how to configure it on the B&O app.
 
 ### Setting up the Siri Shortcut

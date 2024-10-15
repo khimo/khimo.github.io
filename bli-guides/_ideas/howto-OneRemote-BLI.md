@@ -1,7 +1,7 @@
 ---
 title: "Control BeoLiving Intelligence with BeoRemote One"
 description: This guide explains how to use your BeoRemote One to control a BeoLiving Intelligence (BLI) system through a connected Bang & Olufsen Smart TV. Learn how to access the BLI's web panel, control home equipment, trigger macros, and set up shortcuts for convenient control.
-keywords: BeoLiving Intelligence, BeoRemote One, B&O TV, Home Control, macros, shortcuts, control integration, TV connection, user interface
+keywords: BeoLiving Intelligence, BeoRemote One, B&O TV, Home Control, macros, shortcuts, control integration, TV connection, user interface, MACRO, AV RENDERER
 layout: pagetoc
 ---
 

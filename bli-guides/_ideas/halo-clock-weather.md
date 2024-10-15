@@ -1,7 +1,7 @@
 ---
 title: "BeoRemote Halo: Display Clock and Weather Forecast"
 description: "This guide demonstrates how to configure your BeoRemote Halo to display a clock and a weather forecast button using simple macros. Learn how to leverage the BLI system clock and Open Weather system for real-time updates on your Halo, enhancing your control and user experience."
-keywords: BeoRemote Halo, clock, weather forecast, macro, BLI, system clock, Open Weather system, real-time updates, customization, user interface, LUA
+keywords: BeoRemote Halo, clock, weather forecast, macro, BLI, system clock, Open Weather system, real-time updates, customization, user interface, LUA,HALO REMOTE, SYSTEM, _CURRENT_WEATHER
 layout: pagetoc
 ---
 

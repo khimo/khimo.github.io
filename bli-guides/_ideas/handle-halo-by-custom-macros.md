@@ -1,7 +1,7 @@
 ---
 title: Configure BeoRemote Halo with Custom Macros for Advanced Control
 description: This guide explains how to configure BeoRemote Halo buttons to be handled by custom macros, showcasing an example of disarming an alarm system using a rotary padlock approach on the Halo Wheel. Learn how to set up the Halo, create necessary virtual resources, and write the Lua code for intricate control and personalized automation.
-keywords: BeoRemote Halo, custom macros, automation, Lua, rotary lock, alarm system, virtual resources, control customization, user interface, BeoLiving Intelligence
+keywords: BeoRemote Halo, custom macros, automation, Lua, rotary lock, alarm system, virtual resources, control customization, user interface, BeoLiving Intelligence, HALO REMOTE, VIRTUAL DEVICE, ALARM
 layout: pagetoc
 ---
 

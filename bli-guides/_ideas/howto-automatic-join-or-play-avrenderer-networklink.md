@@ -1,7 +1,7 @@
 ---
 title: Automatically Join Playing Music or Start a Radio Station
 description: This guide provides a BeoLiving Intelligence Lua macro that seamlessly enhances your multiroom audio experience. Learn how to automatically join a playing Network Link product with a single trigger, or, if no music is playing, start your favorite BeoCloud:netRadio station, creating a unified and intuitive audio system across your home.
-keywords: BeoLiving Intelligence, Network Link, BeoCloud:netRadio, multiroom audio, automation, Lua macro, seamless audio, trigger events, music control, smart home
+keywords: BeoLiving Intelligence, Network Link, BeoCloud:netRadio, multiroom audio, automation, Lua macro, seamless audio, trigger events, music control, smart home, AV RENDERER
 layout: pagetoc
 ---
 

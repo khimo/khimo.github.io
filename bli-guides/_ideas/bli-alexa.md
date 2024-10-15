@@ -1,7 +1,7 @@
 ---
 title: Control Your BeoLiving Intelligence with Alexa
 description: This comprehensive guide explains how to control your BeoLiving Intelligence system using Amazon Alexa. Learn about enabling the skill, discovering devices, available voice commands for lights, shades, thermostats, Bang & Olufsen NetworkLink devices, and scenes. Includes information on device name references and troubleshooting tips.
-keywords: BeoLiving Intelligence, Alexa, voice control, smart home, integration, commands, lights, shades, thermostats, NetworkLink, scenes, troubleshooting, device names
+keywords: BeoLiving Intelligence, Alexa, voice control, smart home, integration, commands, lights, shades, thermostats, NetworkLink, scenes, troubleshooting, device names, LIGHT, SHADES, THERMOSTAT, AV renderer, MACRO
 layout: pagetoc
 ---
 

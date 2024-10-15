@@ -1,7 +1,7 @@
 ---
 title: Integrating IP Cameras with BeoLiving Intelligence
 description: This guide explains how to integrate IP cameras with your BeoLiving Intelligence system. It covers camera compatibility criteria, client stream priority, configuration for ONVIF and Generic HTTP cameras, and troubleshooting common issues. Learn how to configure camera settings, test the connection, and resolve problems related to RTSP stream speed and connection issues.
-keywords: BeoLiving Intelligence, IP cameras, ONVIF, Generic HTTP, RTSP, MJPEG, camera configuration, troubleshooting, stream optimization, H264
+keywords: BeoLiving Intelligence, IP cameras, ONVIF, Generic HTTP, RTSP, MJPEG, camera configuration, troubleshooting, stream optimization, H264, CAMERA
 layout: pagetoc
 ---
 

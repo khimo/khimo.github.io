@@ -1,7 +1,7 @@
 ---
 title: Communicate with BeoLiving Intelligence via HTTP
 description: This guide provides a comprehensive overview of the Custom HTTP driver in BeoLiving Intelligence, enabling you to control smart devices not natively supported by the system. Learn how to configure the driver, send various HTTP requests (GET, POST, PUT, DELETE), and integrate external systems with your BeoLiving Intelligence setup for enhanced control and customization.
-keywords: BeoLiving Intelligence, HTTP, Custom HTTP driver, smart devices, integration, GET, POST, PUT, DELETE, automation, customization, external systems
+keywords: BeoLiving Intelligence, HTTP, Custom HTTP driver, smart devices, integration, GET, POST, PUT, DELETE, automation, customization, external systems, CUSTOM HTTP
 layout: pagetoc
 ---
 

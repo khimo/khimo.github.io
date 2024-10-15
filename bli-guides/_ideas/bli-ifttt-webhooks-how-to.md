@@ -1,7 +1,7 @@
 ---
 title: Trigger IFTTT Applets with BeoLiving Intelligence Macros
 description: This guide explains how to configure BeoLiving Intelligence to trigger your IFTTT applets. Learn to utilize BLI's built-in driver to send POST HTTP requests to IFTTT webhooks, triggering your applets with ease. The guide includes step-by-step instructions for setting up the IFTTT applet and configuring the IFTTT-Webhooks driver on your BLI system.
-keywords: BeoLiving Intelligence, IFTTT, webhooks, automation, integration, applets, triggers, HTTP requests, configuration, smart home
+keywords: BeoLiving Intelligence, IFTTT, webhooks, automation, integration, applets, triggers, HTTP requests, configuration, smart home, IFTTT - Webhooks
 layout: pagetoc
 ---
 

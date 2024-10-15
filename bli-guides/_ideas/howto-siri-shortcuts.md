@@ -1,7 +1,7 @@
 ---
 title: Integrate Essential BLI with Siri Shortcuts
 description: This guide explains how to control your BeoLiving Intelligence (BLI) system, whether in Essential or Pro mode, using Siri Shortcuts while connected to the same local network. Learn to send HTTP commands to your BLI to trigger macros or button presses, adding voice control functionality to your smart home. Includes a step-by-step configuration guide with screenshots and a video demonstration.
-keywords: BeoLiving Intelligence, Siri Shortcuts, Essential mode, Pro mode, local network, HTTP commands, automation, voice control, integration, configuration, video guide
+keywords: BeoLiving Intelligence, Siri Shortcuts, Essential mode, Pro mode, local network, HTTP commands, automation, voice control, integration, configuration, video guide, MACRO, BUTTON
 layout: pagetoc
 ---
 
@@ -40,7 +40,7 @@ layout: pagetoc
     <p>You can go to the Shortcuts settings to change the name, this is important as it will what you will tell Siri to do.</p>
   </li>
   <li>
-  <p>Add a Text action. In this action, enter your BLI credentials in the format: <em>user:password</em>. Make sure to use a regular user; <b>admin is not allowed</b>. You can create a regular user from your BLI admin panel.</p>
+  <p>Add a Text action. In this action, enter your BLI's credentials in the format: <em>user:password</em>. Make sure to use a regular user; <b>admin is not allowed</b>. You can create a regular user from your BLI admin panel.</p>
   </li>
   <li>
     <p>Add a Base64 Encode action after the Text action which contains the credentials, and a line should connect the two. Selecte Encode, and None in Line Breaks.</p>

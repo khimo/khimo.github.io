@@ -1,7 +1,7 @@
 ---
 title: Automatically Link Your Bathroom Speaker to Playing Music
 description: This guide provides a BeoLiving Intelligence Lua macro to automate your audio experience, ensuring your bathroom speaker seamlessly links to any currently playing source in your home. If no music is playing, the macro will automatically switch to a predefined fallback radio station, creating a truly integrated and effortless audio system.
-keywords: BeoLiving Intelligence, multiroom audio, automation, bathroom speaker, Network Link, Mozart, fallback radio, Lua macro, seamless integration, music control
+keywords: BeoLiving Intelligence, multiroom audio, automation, bathroom speaker, Network Link, Mozart, fallback radio, Lua macro, seamless integration, music control, AV RENDERER
 layout: pagetoc
 ---
 

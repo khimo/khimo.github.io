@@ -1,7 +1,7 @@
 ---
 title: Announce Zone When a Mozart Product Joins a Multiroom Session
 description: This guide provides a BeoLiving Intelligence Lua macro to enhance your multiroom audio experience. Learn how to configure your Mozart (Control Link) products to announce the zone they join, providing an audible confirmation for seamless and intuitive control of your audio system.
-keywords: BeoLiving Intelligence, Mozart, Control Link, multiroom audio, spoken notification, automation, Lua macro, join event, audio feedback
+keywords: BeoLiving Intelligence, Mozart, Control Link, multiroom audio, spoken notification, automation, Lua macro, join event, audio feedback, RENDERER
 layout: pagetoc
 ---
 
@@ -131,5 +131,5 @@ end
 
 ### Customize Settings
 
-You can customize the macro by changing the SETTINGS section. This allows you to define the default VOLUME, LANGUAGE, and the MSG_TEMPLATE to be said when a LINK event is detected.
+You can customize the macro by changing the SETTINGS section. This allows you to define the default VOLUME, LANGUAGE, and the MSG_TEMPLATE to be saidwhen a LINK event is detected.
 

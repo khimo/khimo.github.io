@@ -1,7 +1,7 @@
 ---
 title: Create a Playlist Selection Button on Your BeoRemote Halo
 description: Learn how to set up a BeoLiving Intelligence macro to create a dedicated playlist selection button on your BeoRemote Halo. This guide provides a step-by-step breakdown of the Lua code, enabling you to select from a list of playlists using the Halo Wheel and play them seamlessly on your target speakers.
-keywords: BeoLiving Intelligence, BeoRemote Halo, playlist selection, macro, Lua, automation, music control, multiroom audio, Deezer, Tidal
+keywords: BeoLiving Intelligence, BeoRemote Halo, playlist selection, macro, Lua, automation, music control, multiroom audio, Deezer, Tidal, RENDERER, VIRTUAL DEVICE
 layout: pagetoc
 ---
 

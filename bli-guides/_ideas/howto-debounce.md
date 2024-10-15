@@ -1,7 +1,7 @@
 ---
 title: Prevent False Triggers with Debounce in BeoLiving Intelligence
 description: Learn how to use debounce techniques in BeoLiving Intelligence to eliminate unintended actions caused by multiple or erroneous signals from buttons, network events, or other triggers. This guide explains debounce implementation using both table macros and Lua code, ensuring accurate responses and a more reliable automation experience in your smart home.
-keywords: BeoLiving Intelligence, debounce, automation, table macros, Lua code, false triggers, button bouncing, network stability, event filtering, user experience
+keywords: BeoLiving Intelligence, debounce, automation, table macros, Lua code, false triggers, button bouncing, network stability, event filtering, user experience, MACRO
 layout: pagetoc
 ---
 

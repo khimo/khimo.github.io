@@ -1,7 +1,7 @@
 ---
 title: Configure Business Reception with TVs and Doorbell Integration
 description: Learn how to configure a smart reception area using BeoLiving Intelligence. This guide provides a Lua macro setup for a business scenario where ringing the doorbell automatically turns on B&O TVs, displays the front door camera, and provides the receptionist with an option to open the door. The TVs then revert to their original state, creating a streamlined and efficient reception experience.
-keywords: BeoLiving Intelligence, business reception, automation, Lua macro, DoorBird, B&O TV, door camera, open door function, TV control, user interface
+keywords: BeoLiving Intelligence, business reception, automation, Lua macro, DoorBird, B&O TV, door camera, open door function, TV control, user interface, AV RENDERER, DOORBELL, BUTTON, CAMERA
 layout: pagetoc
 ---
 

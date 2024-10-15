@@ -1,7 +1,7 @@
 ---
 title: Toggle Mute on a Bang & Olufsen Mozart Product with BLI
 description: This guide provides a simple and effective Lua macro for BeoLiving Intelligence to toggle the mute state of your Bang & Olufsen Mozart product. Learn how to connect a mute button on your keypad or third-party remote to your Mozart product using this easy-to-follow tutorial.
-keywords: BeoLiving Intelligence, Mozart product, mute toggle, macro, Lua, automation, button mapping, third-party remote, keypad integration, audio control
+keywords: BeoLiving Intelligence, Mozart product, mute toggle, macro, Lua, automation, button mapping, third-party remote, keypad integration, audio control, RENDERER, BUTTON
 layout: pagetoc
 ---
 
