@@ -1,12 +1,18 @@
 ---
-title: How To's & Practical Examples
+title: How-To Guides for Practical Integration Ideas
 layout: page
 ---
-<p>Here you can find fun ideas and practical setup guides to get the most out of your BeoLiving Intelligence!</p>
+
+<p>Discover exciting ideas and practical setup guides to maximize your BeoLiving Intelligence experience!</p>
+
 
 {% for idea in site.ideas %}
 <div class="idea">
   <h2><a href="{{ idea.url }}">{{ idea.title }}</a></h2>
+  <div style="display: none"> 
+    <pre>{{ idea.path  }}</pre>
+    <pre>{{ idea.keywords }} </pre>
+  </div>
   <blockquote>
     <p>
       {{ idea.description }}

@@ -1,6 +1,7 @@
 ---
-title: Eliminate Erroneous or Multiple Triggers with Debounce
-description: Use BeoLiving Intelligence debounce in macros to prevent false or multiple triggers in your home automation system, ensuring accurate responses to user interactions, especially in situations with noisy or unstable events..
+title: Prevent False Triggers with Debounce in BeoLiving Intelligence
+description: Learn how to use debounce techniques in BeoLiving Intelligence to eliminate unintended actions caused by multiple or erroneous signals from buttons, network events, or other triggers. This guide explains debounce implementation using both table macros and Lua code, ensuring accurate responses and a more reliable automation experience in your smart home.
+keywords: BeoLiving Intelligence, debounce, automation, table macros, Lua code, false triggers, button bouncing, network stability, event filtering, user experience
 layout: pagetoc
 ---
 
@@ -43,7 +44,7 @@ In this example, when the "Exterior" button is pressed, the macro cancels any ot
 **Example Lua Code:**
 
 ```lua
-function(event, engine) 
+function(event, engine)
   engine.fire("Main/Exterior/MACRO/Debounce PLAY/CANCEL OTHER")
   engine.delay(2,0)
   engine.fire("Main/Exterior/AV renderer/Beoplay M5_26923860/Playqueue clean")

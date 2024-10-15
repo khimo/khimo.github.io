@@ -1,6 +1,7 @@
 ---
-title: Join the First Playing Network Link Product or Play a Predefined BeoCloud:netRadio Station
-description: Use this BeoLiving Intelligence macro to automatically join a playing Network Link product or, if no music is playing, select a predefined BeoCloud:netRadio station.
+title: Automatically Join Playing Music or Start a Radio Station
+description: This guide provides a BeoLiving Intelligence Lua macro that seamlessly enhances your multiroom audio experience. Learn how to automatically join a playing Network Link product with a single trigger, or, if no music is playing, start your favorite BeoCloud:netRadio station, creating a unified and intuitive audio system across your home.
+keywords: BeoLiving Intelligence, Network Link, BeoCloud:netRadio, multiroom audio, automation, Lua macro, seamless audio, trigger events, music control, smart home
 layout: pagetoc
 ---
 
@@ -50,7 +51,7 @@ function(event, engine)
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU REALLY UNDERSTAND IT!
   -- --------------------------------------------------------
-  
+
   -- Query the status of the audio product
   local targetState = engine.query(targetProduct)
   -- If the product is not playing
@@ -67,13 +68,13 @@ function(event, engine)
     end
 
     if source ~= "" then
-      
+
       engine.fire(targetProduct .. "/Select source by id?sourceUniqueId=" .. source)
     -- Else: Select a BEO Radio station
     else
       engine.fire(targetProduct .. "/SET_CONTENT_ID?ID=".. default_station .. "&PROVIDER_TYPE=beoCloud:netRadio")
     end
-    
+
     -- Wait for the product to start playing, NetworkLink product do not accept volume
     -- commands while they are not playing
     engine.wait_until(targetProduct .. "/STATE_UPDATE?state=Play", 120, 0)

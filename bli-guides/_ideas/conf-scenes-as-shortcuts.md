@@ -1,6 +1,7 @@
 ---
-title: Siri Shortcuts configuration and usage guide for PRO BLI
-description: Set up Siri Shortcuts to enable you to fire your PRO BeoLiving Intelligence's scenes by talking to Siri over the Khimo Cloud.
+title: Configure Siri Shortcuts for Your BeoLiving Intelligence
+description: Learn how to seamlessly integrate your Pro BeoLiving Intelligence or BeoLink Gateway with Siri Shortcuts for effortless control. This guide explains the automatic integration process through the Khimo cloud, allowing you to trigger your BLI scenes using Siri voice commands, widgets, or even within HomeKit automations.
+keywords: BeoLiving Intelligence, BeoLink Gateway, Siri Shortcuts, Khimo cloud, automation, voice control, smart home, integration, scenes, widgets, HomeKit
 layout: pagetoc
 ---
 
@@ -17,7 +18,7 @@ If you don't see the Shortcut with the Scene you wish to add, don't worry, you j
 See the video below for an example of setup & use:
 
 <div class="row justify-content-center">
-  <div class="col-sm-6">     
+  <div class="col-sm-6">
 		<div class="embed-responsive" style="padding-bottom: 130%;">
 		  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xHiV_L_SScU?autoplay=1&loop=1"  frameborder="0" height="570" allow="autoplay; encrypted-media" allowfullscreen muted></iframe>
 		</div>

@@ -1,6 +1,7 @@
 ---
-title: Turn your Halo into a clock w/weather forecast
-description: Create a Clock and a Weather Button
+title: "BeoRemote Halo: Display Clock and Weather Forecast"
+description: "This guide demonstrates how to configure your BeoRemote Halo to display a clock and a weather forecast button using simple macros. Learn how to leverage the BLI system clock and Open Weather system for real-time updates on your Halo, enhancing your control and user experience."
+keywords: BeoRemote Halo, clock, weather forecast, macro, BLI, system clock, Open Weather system, real-time updates, customization, user interface, LUA
 layout: pagetoc
 ---
 
@@ -19,13 +20,13 @@ The events for this macro are:
 The code is as follows:
 
 ~~~lua
-function(event, engine) 
-  
+function(event, engine)
+
   ------ FILL WITH YOUR INFORMATION -----
   local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810206"
   ----------------------------------------
-  
+
   local clock = engine.query("*/*/SYSTEM/Clock")[1]
   day = clock.get_number("day")
   month = clock.get_number("month")
@@ -41,7 +42,7 @@ function(event, engine)
 
   engine.fire(halo_resource.."/SET_TEXT?BUTTON="..halo_button_id.."&TEXT="..tostring(hour)..":"..minute)
   engine.fire(halo_resource.."/SET_SUBTITLE?BUTTON="..halo_button_id.."&SUBTITLE="..day.."/"..month)
-  
+
   engine.fire(halo_resource.."/SET_WHEEL_VALUE?BUTTON="..halo_button_id.."&VALUE="..tostring((math.floor((hour%12)*100/12))))
 end
 ~~~
@@ -62,22 +63,22 @@ The events for this macro are as follows:
 The code:
 
 ~~~lua
-function(event, engine) 
-  
+function(event, engine)
+
   ------ FILL WITH YOUR INFORMATION -----
   local open_weather_resource = "My_Weather_Area/My_Weather_Zone/_CURRENT_WEATHER/Uruguay"
   local halo_resource = "My_Area/My_Zone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810205"
   ----------------------------------------
-  
+
   weather_query = engine.query(open_weather_resource)
   local rain = weather_query[1].get_boolean("_Rain")
   local snow = weather_query[1].get_boolean("_Snow")
   local temperature = weather_query[1].get_celsius("_Temperature")
-  
+
   local icon = 0
   local subtitle = 0
-  
+
   if rain then
     icon = "humidity"
     subtitle = "RAIN"

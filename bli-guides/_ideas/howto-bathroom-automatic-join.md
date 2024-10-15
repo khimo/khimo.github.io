@@ -1,12 +1,13 @@
 ---
-title: Automatically Link Your Bathroom Speaker to the Current Playing Source or a Fallback Radio Station
-description: This BeoLiving Intelligence macro ensures your bathroom speaker automatically links to any currently playing source in your home or, if no music is playing, to a predefined fallback radio station.
+title: Automatically Link Your Bathroom Speaker to Playing Music
+description: This guide provides a BeoLiving Intelligence Lua macro to automate your audio experience, ensuring your bathroom speaker seamlessly links to any currently playing source in your home. If no music is playing, the macro will automatically switch to a predefined fallback radio station, creating a truly integrated and effortless audio system.
+keywords: BeoLiving Intelligence, multiroom audio, automation, bathroom speaker, Network Link, Mozart, fallback radio, Lua macro, seamless integration, music control
 layout: pagetoc
 ---
 
 ### Introduction
 
-Wouldn't it be great if your bathroom speaker could automatically join the music playing elsewhere in your house as soon as you enter? Or, if there's no music playing, it could start playing your favorite radio station? **This automation makes it all possible with minimal setup**. Follow this tutorial to set up a macro that automatically links your bathroom speaker to the current playing source or a fallback radio station.
+Wouldn't it be great if your bathroom speaker could automatically join the music playing elsewhere in your house as soon as you enter? Or, if there's no music playing, it could start playing your favorite radio station? This automation makes it all possible with minimal setup. Follow this tutorial to set up a macro that automatically links your bathroom speaker to the current playing source or a fallback radio station.
 
 ### How to set it up
 
@@ -24,7 +25,7 @@ To set up this macro, follow these steps:
 
 ### The macro lua code
 ```lua
-function(event, engine) 
+function(event, engine)
   -- SETTINGS: Customize these variables according to your setup and preferences.
   -- --------------------------------------------------------
   local nl_renderer_address = "House/*/AV renderer/*" -- Address to query Network Link renderer states.
@@ -58,14 +59,14 @@ function(event, engine)
       end
     end
   end
-  
+
   -- If no source is playing, use the fallback radio station.
   if (link_to_source == nil) then
     link_to_source = FALLBACK_SOURCE
   end
 
   -- Link the bathroom speaker to the found source or fallback.
-  engine.fire(target_address .. "/Select channel on source by id?Channel=&sourceUniqueId=" .. link_to_source )    
+  engine.fire(target_address .. "/Select channel on source by id?Channel=&sourceUniqueId=" .. link_to_source )
 end
 ```
 

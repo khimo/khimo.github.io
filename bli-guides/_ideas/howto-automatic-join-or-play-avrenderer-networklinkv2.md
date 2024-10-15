@@ -1,14 +1,15 @@
 ---
-title: Join the First Playing Network Link Product or Play a Predefined BeoCloud:netRadio Station
-description: Use this BeoLiving Intelligence macro to automatically join a playing Network Link product or, if no music is playing, select a predefined BeoCloud:netRadio station.
+title: Automatically Join Playing Music or Start a Radio Station (with Exclusions)
+description: This guide provides a BeoLiving Intelligence Lua macro to enhance your multiroom audio experience, allowing you to automatically join a playing Network Link product with a single trigger, or, if no music is playing, start your favorite BeoCloud:netRadio station. Additionally, this version allows you to define an exclusion list of products that should not be automatically joined.
+keywords: BeoLiving Intelligence, Network Link, BeoCloud:netRadio, multiroom audio, automation, Lua macro, trigger events, music control, exclusion list, customization
 layout: pagetoc
 ---
 
 ### Introduction
 
-Imagine you enter a room and want your audio system to either join an already playing session from another room or, if nothing is playing, start your favorite BeoCloud:netRadio station. **This automation makes it possible with a single trigger**. It's perfect for seamless audio experiences across your home.
+Imagine you enter a room and want your audio system to either join an already playing session from another room or, if nothing is playing, start your favorite BeoCloud:netRadio station. This automation makes it possible with a single trigger, while also allowing you to customize which products are considered for joining. It's perfect for seamless and personalized audio experiences across your home.
 
-This tutorial will guide you through setting up a macro that checks for any playing Network Link product and joins it. If no music is playing anywhere, it will select a predefined BeoCloud:netRadio station.
+This tutorial will guide you through setting up a macro that checks for any playing Network Link product, excluding those defined in an exclusion list, and joins it. If no music is playing, it will select a predefined BeoCloud:netRadio station.
 
 ### How to set it up
 
@@ -22,7 +23,8 @@ To set up this macro, follow these steps:
 6. Copy the entire code in "The code" section below.
 7. Paste the code into the code text area of the Macro.
 8. Replace `_targetProduct_` with the actual address of your product in the SETTINGS section.
-9. Test the macro by triggering the event. The macro should execute as described, joining a playing session or starting the predefined netRadio station.
+9. Customize the `exclusion_list` to include products you don't want to be automatically joined.
+10. Test the macro by triggering the event. The macro should execute as described, joining a playing session from eligible products or starting the predefined netRadio station.
 
 ### The macro lua code
 ```lua
@@ -57,15 +59,15 @@ function(event, engine)
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU REALLY UNDERSTAND IT!
   -- --------------------------------------------------------
-   
+
   -- Helper functions
   function stringStartsWith(str, start)
      return str:sub(1, #start) == start
   end
- 
+
 function isExcluded(renderer)
-    for i, excluded in ipairs(exclusion_list) do 
-      if stringStartsWith(renderer.tostring(), excluded) then 
+    for i, excluded in ipairs(exclusion_list) do
+      if stringStartsWith(renderer.tostring(), excluded) then
          return true
       end
     end
@@ -74,7 +76,7 @@ end
 
 
 
-  
+
   -- Query the status of the audio product
   local targetState = engine.query(targetProduct)
   -- If the product is not playing
@@ -92,13 +94,13 @@ end
     end
 
     if source ~= "" then
-      
+
       engine.fire(targetProduct .. "/Select source by id?sourceUniqueId=" .. source)
     -- Else: Select a BEO Radio station
     else
       engine.fire(targetProduct .. "/SET_CONTENT_ID?ID=".. default_station .. "&PROVIDER_TYPE=beoCloud:netRadio")
     end
-    
+
     -- Wait for the product to start playing, NetworkLink product do not accept volume
     -- commands while they are not playing
     engine.wait_until(targetProduct .. "/STATE_UPDATE?state=Play", 120, 0)

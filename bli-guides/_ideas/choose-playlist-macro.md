@@ -1,6 +1,7 @@
 ---
-title: Creating a Playlist Selection Button in Halo
-description: This guide explains how to set up a macro for creating a playlist selection button in Halo, enabling content triggering on a target speaker using the Halo Wheel.
+title: Create a Playlist Selection Button on Your BeoRemote Halo
+description: Learn how to set up a BeoLiving Intelligence macro to create a dedicated playlist selection button on your BeoRemote Halo. This guide provides a step-by-step breakdown of the Lua code, enabling you to select from a list of playlists using the Halo Wheel and play them seamlessly on your target speakers.
+keywords: BeoLiving Intelligence, BeoRemote Halo, playlist selection, macro, Lua, automation, music control, multiroom audio, Deezer, Tidal
 layout: pagetoc
 ---
 
@@ -38,7 +39,7 @@ To set up the playlist selection button in Halo, follow these steps:
 ### The Macro Lua Code
 ```lua
 function (event, engine)
-  --[[ 
+  --[[
 This macro creates a button in Halo to select a playlist. You can use the Halo Wheel to play content on a target speaker. If there are multiple TARGET_SPEAKERS, the content will play on the first speaker, and the others will join in and play the playlist at the same time.
 
 After choosing a playlist, the Halo user should press the button to start the content or wait for 5 seconds for the macro to start it automatically.
@@ -49,7 +50,7 @@ To use this macro, you need to define a button in the Halo configuration (Interf
 
   ]]
   -- --------------------------------------------------------
-  -- SETTINGS 
+  -- SETTINGS
   -- --------------------------------------------------------
 
   -- Address of this macro, to implment debouncing:
@@ -57,21 +58,21 @@ To use this macro, you need to define a button in the Halo configuration (Interf
 
   -- Virtual variable that that you should define and will hold the last user
   -- selection. Define the variable as a number (Integer) in Resources -> Virtual
-  -- Resources and place the address below: 
-  local BUTTON_POSITION_ADDRESS = "Main/Living/VARIABLE/Halo button playlist position" 
+  -- Resources and place the address below:
+  local BUTTON_POSITION_ADDRESS = "Main/Living/VARIABLE/Halo button playlist position"
 
-  -- Target speakers addresses (e.g., {"MyArea/MyZone/RENDERER/BS2"}), 
-  -- a list of all speakers that must connect to this experience. The first one will be chosen as the master 
+  -- Target speakers addresses (e.g., {"MyArea/MyZone/RENDERER/BS2"}),
+  -- a list of all speakers that must connect to this experience. The first one will be chosen as the master
   local TARGET_SPEAKERS = {
     "Main/Living/RENDERER/Beosound Theatre-35554298",
     "Main/Terrace/AV renderer/Beosound Stage_32580316"
   }
 
-  
+
   -- Playlists: define a list of playlists, specifying the playlist ID and the label shown to the user
   -- add or remove as many playlist as you want
   local PLAYLISTS = {
-  -- { ID        , LABEL    , PROVIDER_TYPE [deezer or tidal or empty] } 
+  -- { ID        , LABEL    , PROVIDER_TYPE [deezer or tidal or empty] }
      {"1266971851", "TOP 100"},
      {"playlist:fea2aa93-1693-4e0c-be47-22e1771a04a8", "T. Chillout", "tidal"},
      {"10387252442", "WINE & DINE", "deezer"},
@@ -79,14 +80,14 @@ To use this macro, you need to define a button in the Halo configuration (Interf
      {"1914526462", "JAZZ", "deezer"}
   }
   -- if not defined in PLAYLISTS list, this type will be used
-  local DEFAULT_PROVIDER_TYPE  = "deezer"  
+  local DEFAULT_PROVIDER_TYPE  = "deezer"
 
 
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU UNDERSTAND THE CODE!
   -- --------------------------------------------------------
- 
-  
+
+
   -- Helper functions ---------------------------------------
   function playContent(target, contentType, contentId)
     if string.find(target, "/RENDERER/") then
@@ -154,9 +155,9 @@ To use this macro, you need to define a button in the Halo configuration (Interf
     engine.delay(1,0)
 
     waitForProductToBePlaying(TARGET_SPEAKERS[1])
-        
+
     local targetSource = getSourceUniqueId(TARGET_SPEAKERS[1])
-    
+
     -- give some time to the univese
 
     if #TARGET_SPEAKERS > 1 and targetSource then
@@ -176,10 +177,10 @@ To use this macro, you need to define a button in the Halo configuration (Interf
   -- Fire any other instance of this macro. If it is running multiple times, we must keep just the last run
   engine.fire(THIS_MACRO_ADDRESS .. "/CANCEL OTHER")
   -- A small debouncing delay
-  engine.delay(0,10) 
-     
+  engine.delay(0,10)
+
   -- Process the event
-  if event.parameters()["OFFSET"] then 
+  if event.parameters()["OFFSET"] then
     local button_position = engine.query(BUTTON_POSITION_ADDRESS)[1].get_number("VALUE")
     -- If OFFSET exists, we assume that it is a WHEEL event, so we update the
     -- position button_position and the Halo screen
@@ -197,23 +198,23 @@ To use this macro, you need to define a button in the Halo configuration (Interf
         button_position = button_position - 1
       end
     end
-    
+
     -- update position variable
     engine.fire(BUTTON_POSITION_ADDRESS.."/SET?VALUE="..tostring(button_position))
-    
+
     -- update halo button text
     local halo_button_address = event.parameters()["BUTTON"]
     local halo_address = event.area() .. "/" .. event.zone() .. "/" .. event.type() .. "/" .. event.name()
     engine.fire(halo_address.."/SET_TITLE?BUTTON="..halo_button_address.."&TITLE=".. getPlaylistLabel(button_position))
-    
+
     -- wait 5 seconds, if nobody cancel us we will fire the playlist
-    engine.delay(5,0) 
+    engine.delay(5,0)
     startPlayingSelectedPlaylist()
 
-  else 
+  else
     -- Offset does not exist, assuming it is a PRESS event, so we will send the currently selected playlist
     startPlayingSelectedPlaylist()
   end
-end 
+end
 
 ```

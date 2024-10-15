@@ -1,15 +1,16 @@
 ---
-title: Alexa usage and skill Guide
-description: Description of the available voice commands and devices you can control using Alexa and BeoLiving Intelligence.
+title: Control Your BeoLiving Intelligence with Alexa
+description: This comprehensive guide explains how to control your BeoLiving Intelligence system using Amazon Alexa. Learn about enabling the skill, discovering devices, available voice commands for lights, shades, thermostats, Bang & Olufsen NetworkLink devices, and scenes. Includes information on device name references and troubleshooting tips.
+keywords: BeoLiving Intelligence, Alexa, voice control, smart home, integration, commands, lights, shades, thermostats, NetworkLink, scenes, troubleshooting, device names
 layout: pagetoc
 ---
 
 ## Introduction
 
-This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through the _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](../bli-link-third-party-service)). 
+This guide includes a description of the available voice commands and devices you can control using _Alexa_ and _BeoLiving Intelligence_. To enable this feature, _Alexa_'s skill "_BeoLiving Intelligence skill by Khimo_" must be enabled through the _Alexa App_ (refer to [BeoLiving Intelligence Link to Third Party Cloud Service Guide](../bli-link-third-party-service)).
 
 **This feature does not depend on the mode of the _BeoLiving Intelligence_ (ESSENTIAL or PRO)**.
- 
+
 ## Terminology
 
 + _BLI_: Alias for BeoLiving Intelligence.
@@ -17,7 +18,7 @@ This guide includes a description of the available voice commands and devices yo
 
 ## Discovery
 
-The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_" to your _Alexa_-enabled device. _Alexa_ will then communicate with your _BLI_ and get all supported devices. 
+The first step you should take after linking _Alexa_ with your _BLI_ is to discover all devices in your configuration. Automatic discovery of all supported devices is performed by saying "_Alexa, discover my smart home devices_" to your _Alexa_-enabled device. _Alexa_ will then communicate with your _BLI_ and get all supported devices.
 
 ## Device name reference
 
@@ -30,36 +31,36 @@ The following sections show the available commands for each device. Note that so
 
 ### Lights/Dimmers
 
-+ Turn on/off: 
++ Turn on/off:
   + "_Alexa, turn on/off (LIGHT-NAME)_"
   + _Description_: Turns on/off the light.
 
-+ Set brightness: 
++ Set brightness:
   + "_Alexa, dim (LIGHT-NAME) (BRIGHTNESS)%_"
   + _Description_: Sets the brightness level.
 
-+ Relative brightness adjustment: 
++ Relative brightness adjustment:
   + "_Alexa, increase/decrease (LIGHT-NAME) by (BRIGHTNESS)%_"
   + _Description_: Increases or decreases the brightness level.
 
-+ Set color: 
++ Set color:
   + "_Alexa, set the (LIGHT-NAME) to (COLOR)_"
   + _Description_: Sets the light's color.
 
 ### Shades
 
-+ Raise/lower: 
++ Raise/lower:
   + "_Alexa, raise/lower (SHADES-NAME)_"
   + _Description_: Raises or lowers the shades.
 
-+ Set level: 
++ Set level:
   + "_Alexa, (SHADES-NAME) to (LEVEL)%_"
   + _Description_: Sets the shades's level.
 
 
 ### Thermostats
 
-+ Turn off: 
++ Turn off:
   + "_Alexa, turn off (THERMOSTAT-NAME)_"
   + _Description_: Sets thermostat to Off mode.
 
@@ -67,7 +68,7 @@ The following sections show the available commands for each device. Note that so
   + "_Alexa, set (THERMOSTAT-NAME) to (TEMPERATURE)_"
   + _Description_: Sets the thermostat's setpoint to a specific temperature.
   + _Rules_:
-    + In case the thermostat has two setpoints (THERMOSTAT\_2SP _BLI_ resource type) and it's in "_Auto_" mode, upper setpoint (Cool setpoint) will be set at +2 degrees of (TEMPERATURE) and lower setpoint (Heat setpoint) will be set at - 2 of (TEMPERATURE). 
+    + In case the thermostat has two setpoints (THERMOSTAT\_2SP _BLI_ resource type) and it's in "_Auto_" mode, upper setpoint (Cool setpoint) will be set at +2 degrees of (TEMPERATURE) and lower setpoint (Heat setpoint) will be set at - 2 of (TEMPERATURE).
     + In _Eco_ mode, thermostat setpoints cannot be set.
 
 + Relative temperature setpoint adjust:
@@ -82,9 +83,9 @@ The following sections show the available commands for each device. Note that so
   + _Rules_:
     + MODE could be any of: "Heat", "Cool", "Off", "Eco" and "Auto".
 
-### Bang & Olufsen NetworkLink devices 
+### Bang & Olufsen NetworkLink devices
 
-+ Turn off: 
++ Turn off:
   + "_Alexa, turn off (DEVICE-NAME)_"
   + _Description_: Sets the device into Standby mode.
 
@@ -101,7 +102,7 @@ The following sections show the available commands for each device. Note that so
 + Skip channels:
   + "_Alexa, channel up/down on (DEVICE-NAME)_"
   + _Description_: Changes to the next or previous channel in the current source.
-  
+
 + Set volume:
   + "_Alexa, set the volume of (DEVICE-NAME) to (VOLUME)_"
   + _Description_: Sets the volume level to (VOLUME).
@@ -132,12 +133,12 @@ The following sections show the available commands for each device. Note that so
   + "_Alexa, change the input to (SOURCE-NAME) on (DEVICE-NAME)_"
   + _Description_: Selects a source on the device. In _Alexa's_ language, "sources" are equivalent to "inputs". Possible sources are all enabled sources on the _BLI_ _Interfaces_ page (_PRO_ mode only).
   + **_Notice_**: This stanza is too long and sometimes alexa does not understand it well, it is usually better to define a Macro (Scene) that turns on the Network Link product at the correct source and activates it using the "_Alexa , turn on MACRO "stanza.
-  
+
 ### Scenes/Macros
 
 + Activate/Deactivate scene:
   + "_Alexa, activate/deactivate (SCENE-NAME)_" or "_Alexa, turn on/turn off (SCENE-NAME)_"
-  + _Description_: Fires or stops the macro.  
+  + _Description_: Fires or stops the macro.
 
 ## How to change a discovered device name
 
@@ -145,8 +146,8 @@ Sometimes, Alexa's identifier device name may not be suitable for use. Depending
 
 The ways to edit the Alexa's identifier device name are:
   + Change the resource name at _BLI_ configuration (through _BLApp_ or web interface, being in _PRO_ mode) and re-discover all devices.
-  + Edit the device using the _Alexa App_, for all devices that are not _AV renderer_ _BLI's_ resource type. This is a known limitation of _Alexa App_.  
-  
+  + Edit the device using the _Alexa App_, for all devices that are not _AV renderer_ _BLI's_ resource type. This is a known limitation of _Alexa App_.
+
 ## Workarounds when input selection fails
 
 Alexa understands popular source names like "_YouTube_" or "_Android TV_" most of the time, but using uncommon names may prevent _Alexa_ to find the desired match in the source list.
@@ -154,5 +155,5 @@ Alexa understands popular source names like "_YouTube_" or "_Android TV_" most o
 When this happens, you can try one of the following approaches:
 
 + Change the source name using the _Interfaces_ page at _BLI_ web interface (only in _PRO_ mode), and re-discover the devices.
-+ Create a macro in _BLI_ that selects the source in the device, and call "_Alexa, activate (SCENE-NAME)_". To start using the macro with _Alexa_, 
++ Create a macro in _BLI_ that selects the source in the device, and call "_Alexa, activate (SCENE-NAME)_". To start using the macro with _Alexa_,
 call for a device discovery.

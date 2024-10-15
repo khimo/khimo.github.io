@@ -1,6 +1,7 @@
 ---
-title: Business reception setup for TVs and doorbell
-description: Turn on a B&O TV and show the frontdoor camera when someone rings the doorbell.
+title: Configure Business Reception with TVs and Doorbell Integration
+description: Learn how to configure a smart reception area using BeoLiving Intelligence. This guide provides a Lua macro setup for a business scenario where ringing the doorbell automatically turns on B&O TVs, displays the front door camera, and provides the receptionist with an option to open the door. The TVs then revert to their original state, creating a streamlined and efficient reception experience.
+keywords: BeoLiving Intelligence, business reception, automation, Lua macro, DoorBird, B&O TV, door camera, open door function, TV control, user interface
 layout: pagetoc
 ---
 
@@ -47,7 +48,7 @@ Next, we will explain the main three block that form our Lua code:
 
 A query is done on AV renderers in TVs and the televisions that are turned off are set to a source to turn them on (we choose the source to be TV):
 
-~~~lua 
+~~~lua
   init_tvs = engine.query("Reception/TVs/AV renderer/*")
   for i=1,#init_tvs do
     init_state=tostring(init_tvs[i].get("state"))
@@ -61,11 +62,11 @@ A query is done on AV renderers in TVs and the televisions that are turned off a
 
 Once all the televisions are on, a HOME CONTROL command is sent. The door camera will now appear on the TVs alongside a button to fire the Open Door Macro:
 
-~~~lua 
+~~~lua
   if tostring(init_tvs[1].get("state"))~="Play" then
     engine.wait_until("Reception/TVs/AV renderer/"..tostring(init_tvs[1].name()).."/STATE_UPDATE?state=Play",15,0)
   end
- 
+
   engine.fire("Reception/TVs/AV renderer/*/Send command?Command=HOME CONTROL&Continue type=short_press")
   engine.wait_until("Reception/TVs/BUTTON/DoorState/PRESS", 80, 0)
 ~~~
@@ -75,13 +76,13 @@ Once the door is open we leave the camera on for five seconds to see the visitor
 ```lua
   engine.delay(5,0)
   engine.fire("Reception/TVs/AV renderer/*/Send command?Command=BACK&Continue type=short_press")
- 
+
   for i=1,#init_tvs do
     init_state=tostring(init_tvs[i].get("state"))
     if init_state=="Stop" or init_state=="None" then
       engine.fire("Reception/TVs/AV renderer/"..tostring(init_tvs[i].name()).."/Standby")
     end
   end
- 
+
 end
 ```

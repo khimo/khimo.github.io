@@ -1,6 +1,7 @@
 ---
-title: How to control Your BLI with the BeoRemote One
-description: Use the Light & Control commands of the B&O remotes to fire BeoLiving Intelligence macros.
+title: "Control BeoLiving Intelligence with BeoRemote One"
+description: This guide explains how to use your BeoRemote One to control a BeoLiving Intelligence (BLI) system through a connected Bang & Olufsen Smart TV. Learn how to access the BLI's web panel, control home equipment, trigger macros, and set up shortcuts for convenient control.
+keywords: BeoLiving Intelligence, BeoRemote One, B&O TV, Home Control, macros, shortcuts, control integration, TV connection, user interface
 layout: pagetoc
 ---
 
@@ -8,7 +9,7 @@ layout: pagetoc
 
 Using your BeoRemote One, you may gain access to a BeoLiving Intelligence (BLI) through a Bang & Olufsen Smart TV.
 
-> The connection process between a BLI and a B&O TV is detailed in [this tutorial](/bli-guides/manuals/bli-connect-to-TV). 
+> The connection process between a BLI and a B&O TV is detailed in [this tutorial](/bli-guides/manuals/bli-connect-to-TV).
 
 You will be able to access the BLI's webpanel to control all your home's equipment (i.e. lights, shades, cameras, etc.) as well as trigger any macros you may have previously set up.
 
@@ -30,12 +31,12 @@ One may also fire events through LIGHT by simply highlighting LIGHT on the BeoRe
 ### Example
 #### _Select Light->Home function to turn on all lights on_
 1. In the setup web page go to: Tools --> Monitor
-1. On the BeoRemote, press LIST, go to LIGHT, enter the menu by pressing the right arrow and select the HOME function. 
+1. On the BeoRemote, press LIST, go to LIGHT, enter the menu by pressing the right arrow and select the HOME function.
 1. The monitor will show a message like: _yy-mm-dd hh:mm:ss Event fired Test/local/AV renderer/BeoPlay-V1/Light?Action=Press&Command=FUNCTION_11_ you now know that the HOME function is recieved by the BLI as FUNCTION_11.
 1. Go to Macros and [create a Macro](/bli-guides/bli-pro-user-guide/#macros) whos commands turn on all lights
 1. Add an event to trigger the macro
-1. Configure the event as follows: 
-    - Zone: Zone where the TV is located 
+1. Configure the event as follows:
+    - Zone: Zone where the TV is located
     - Resource: TV
     - Event: Light
     - Action: Press

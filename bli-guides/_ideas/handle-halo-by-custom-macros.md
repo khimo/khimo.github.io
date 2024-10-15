@@ -1,6 +1,7 @@
 ---
-title: Halo configuration with macros
-description: Disarm an alarm with the BeoRemote Halo through a macro
+title: Configure BeoRemote Halo with Custom Macros for Advanced Control
+description: This guide explains how to configure BeoRemote Halo buttons to be handled by custom macros, showcasing an example of disarming an alarm system using a rotary padlock approach on the Halo Wheel. Learn how to set up the Halo, create necessary virtual resources, and write the Lua code for intricate control and personalized automation.
+keywords: BeoRemote Halo, custom macros, automation, Lua, rotary lock, alarm system, virtual resources, control customization, user interface, BeoLiving Intelligence
 layout: pagetoc
 ---
 
@@ -10,13 +11,13 @@ This guide shows an example of how to control the BeoRemote Halo through a macro
 
 The Halo configuration page can be found in the *Interfaces* tab. Firstly, a button should be created in any page, if no pages exist one should be created too. After choosing a title, subtitle and icon, the behavior "Handle by custom macros" must be chosen. The button and page number should be remembered as they will be used later.
 
-How to create a page and a button, as well as more information on behaviors and resources, can be found in the [help](../../help_drivers/Halo) document of the Halo. 
+How to create a page and a button, as well as more information on behaviors and resources, can be found in the [help](../../help_drivers/halo/) document of the Halo.
 
 ### Macro configuration
 A rotary lock works by turning the inner wheel in different directions while choosing the correct numbers. One would have to rotate the handle clockwise until the correct number is selected, then, proceed to choose the next number with an anticlockwise rotation and so on.
 
-The macro will have to know which way the wheel is turning, sense a change in the direction and act accordingly, pressing the button will cause the code to reset in case of mistakes. Moreover, the Halo's icon will show the number being selected and the button title will show the amount of digits chosen with "****". 
-Supposing there is an area called "MyArea" with a zone "MyZone" that has a resource called "Alarm" of "ALARM" resource type and a BeoRemote Halo named "Halo", we can create the following macro. 
+The macro will have to know which way the wheel is turning, sense a change in the direction and act accordingly, pressing the button will cause the code to reset in case of mistakes. Moreover, the Halo's icon will show the number being selected and the button title will show the amount of digits chosen with "****".
+Supposing there is an area called "MyArea" with a zone "MyZone" that has a resource called "Alarm" of "ALARM" resource type and a BeoRemote Halo named "Halo", we can create the following macro.
 
 The events for this macro would be:
 
@@ -24,18 +25,18 @@ The events for this macro would be:
   <img src="/bli-guides/pictures/HaloEvent.png" class="img-fluid" alt="Event to execute the Macro"/>
 </div>
 
-When creating the event, the button to choose should be the one with the page and button number remembered before, this will automatically change to the button ID as shown in the image. 
+When creating the event, the button to choose should be the one with the page and button number remembered before, this will automatically change to the button ID as shown in the image.
 
 For this application, some virtual resources should also be created. In Resources->Virtual Resources create the following resources:
   - "Number", of type INTEGER: This will be the number that is currently chosen and that will later be added to the code.
   - "Code", of type STRING: Here the code will be created as each individual number is added.
   - "Direction", of type BOOLEAN: This variable will indicate the direction the wheel is moving, TRUE means clockwise, FALSE means anticlockwise. It will also help the macro know if the direction has changed.
-  - "Fired", of type BOOLEAN: While the macro is running, this variable will be TRUE. This is necessary to avoid the macro running multiple times at the same time and causing wrong values in the previous variables. 
+  - "Fired", of type BOOLEAN: While the macro is running, this variable will be TRUE. This is necessary to avoid the macro running multiple times at the same time and causing wrong values in the previous variables.
 
 
 The macro's command as LuaMacros would start as follows:
 
-~~~lua 
+~~~lua
 
   local fired_query = engine.query("MyArea/MyZone/VARIABLE/Fired")
   local fired = fired_query[1].get_boolean("VALUE")
@@ -61,8 +62,8 @@ Next we will see what happens inside:
 
   local direction_query = engine.query("MyArea/MyZone/VARIABLE/Direction")
   local direction = direction_query[1].get_boolean("VALUE")
-  
-  if event.parameters()["OFFSET"] then 
+
+  if event.parameters()["OFFSET"] then
    -- THE WHEEL TRIGGERED THE MACRO
   else
    -- THE BUTTON TRIGGERED THE MACRO
@@ -85,7 +86,7 @@ By pressing the button, we want all the values to reset, and that is exactly wha
 
 If the macro was triggered by the wheel, the code will be as follows:
 
-~~~lua 
+~~~lua
 
   if tonumber(event.parameters()["OFFSET"]) >= 1 then
     if direction then
@@ -120,23 +121,23 @@ If the macro was triggered by the wheel, the code will be as follows:
      engine.fire("MyArea/MyZone/Halo remote/Halo/SET_ICON?BUTTON=497f6eca-6276-4993-bfeb-000000810179&ICON=unlock")
   else
     engine.fire("MyArea/MyZone/VARIABLE/Code/SET?VALUE="..code)
-  end 
+  end
 
 ~~~
 
 The parameter "OFFSET" of the wheel is positive if the wheel is turning right and negative if it's turning left. If the wheel is turning right, we check the "direction" variable, if "direction" is TRUE, then the last time the wheel was moved it was also to the right, in this case we just add 1 to the number being chosen and continue. If "direction" is FALSE, the wheel was going left and then turned right, this means that the last number is the one chosen to be the next digit of the code. In this case, we add the chosen number to the code, and we set the "direction" variable to TRUE (as the next time we go right we just want to keep choosing the new number). A similar thing happens when going left.
 
-Next we have a small correction of the number as we only want numbers form 0 to 9, this means that after 9 the number will turn to 0 and so on. After this we set the new number value to the "number" variable and to the button's icon, and we set the subtitle to the current code shown with asterisks. 
+Next we have a small correction of the number as we only want numbers form 0 to 9, this means that after 9 the number will turn to 0 and so on. After this we set the new number value to the "number" variable and to the button's icon, and we set the subtitle to the current code shown with asterisks.
 
 Lastly we need to know if the code is complete, we know the code consists of 4 numbers (this could be changed by changing the if statement), if the length of the code is 4, we proceed to fire the "DISARM" command and reset the variables, we also write "FIRED" in the tile and choose the "unlocked" icon as the button. If the code is not yet complete, we just set the "code" variable with the new code to start the process again the next time the macro is called.
- 
+
 
 The complete macro is below, remember to change the Areas, Zones, Resource's Names and Button ID to yours before trying it. You can copy and paste this names in Tools->Resource States.
 
-~~~lua 
+~~~lua
 function(event, engine)
 
- ------ FILL WITH YOUR INFORMATION -----  
+ ------ FILL WITH YOUR INFORMATION -----
   local halo_resource = "MyArea/MyZone/Halo remote/Halo"
   local halo_button_id = "497f6eca-6276-4993-bfeb-000000810179"
   local alarm_resource = "MyArea/MyZone/ALARM/Alarm"
@@ -145,7 +146,7 @@ function(event, engine)
   local direction_variable = "MyArea/MyZone/VARIABLE/Direction"
   local fired_variable = "MyArea/MyZone/VARIABLE/Fired"
 -----------------------------------------
-  
+
   local fired_query = engine.query(fired_variable)
   local fired = fired_query[1].get_boolean("VALUE")
   if not fired then
@@ -158,7 +159,7 @@ function(event, engine)
 
     local direction_query = engine.query(direction_variable)
     local direction = direction_query[1].get_boolean("VALUE")
-    
+
     if event.parameters()["OFFSET"] then
       if tonumber(event.parameters()["OFFSET"]) >= 1 then
         if direction then
@@ -192,7 +193,7 @@ function(event, engine)
          engine.fire(halo_resource.."/SET_ICON?BUTTON="..halo_button_id.."&ICON=unlock")
       else
         engine.fire(code_variable.."/SET?VALUE="..code)
-      end 
+      end
     else
       engine.fire(code_variable.."/SET?VALUE=")
       engine.fire(number_variable.."/SET?VALUE=0")
@@ -202,7 +203,7 @@ function(event, engine)
     end
     engine.fire(fired_variable.."/SET?VALUE=false")
  end
-end 
+end
 
 ~~~
 

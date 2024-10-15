@@ -1,9 +1,9 @@
 ---
-title: Cameras Integration Guide
-description: Which cameras are compatible, how to set up the cameras in PRO mode, and how they are used by the clients.
+title: Integrating IP Cameras with BeoLiving Intelligence
+description: This guide explains how to integrate IP cameras with your BeoLiving Intelligence system. It covers camera compatibility criteria, client stream priority, configuration for ONVIF and Generic HTTP cameras, and troubleshooting common issues. Learn how to configure camera settings, test the connection, and resolve problems related to RTSP stream speed and connection issues.
+keywords: BeoLiving Intelligence, IP cameras, ONVIF, Generic HTTP, RTSP, MJPEG, camera configuration, troubleshooting, stream optimization, H264
 layout: pagetoc
 ---
-
 
 BeoLiving Intelligence (BLI) provides robust support for IP cameras. However, the integration process can be complex due to the unique configuration required for each camera provider. This guide will help you understand the requirements and steps for integrating IP cameras with BLI.
 
@@ -55,7 +55,7 @@ If a camera is not displayed and has not been previously added, please refer to 
 
 BLI automatically discovers and presents ONVIF compliant cameras. Only the username and password may be needed. However, ONVIF implementation varies from camera to camera, so not all ONVIF labeled cameras are supported. Once the credentials are entered correctly, all paths and options on the camera are automatically configured.
 
-> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on [www.onvif.org/conformant-products/](https://www.onvif.org/conformant-products/). You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled. 
+> Please be aware that there are companies improperly claiming ONVIF conformance for their products, compatibility can be verified on [www.onvif.org/conformant-products/](https://www.onvif.org/conformant-products/). You must also take into account that some ONVIF compatible cameras don't have the functionality enabled by default (e.g.: Hikvision https://www.hikvision.com/ueditor/net...) and must be "manually" enabled.
 
 In the case that the camera failed to be added or it doesn't work after added, you may need to manually add it as a _Generic HTTP camera_.
 
@@ -143,7 +143,7 @@ For example, if a camera's I-Frame interval is set to 60 frames and the FPS is s
 Try to connect to the camera using a thirdparty client, like VLC.  The full RTSP path to test with should be of the form: rtsp://$user:$password@$IP:$PORT/$rtspPath.
 
 - If it is **not** working: check the network settings until you are able to connect.
-- If it is working: 
+- If it is working:
 
    1. Check the BeoLiving Intelligence settings for the camera and verify that all the configuration is algined with the rtsp uri that you tested on the thirdparty tool.
    2. Check that the camera supports H264.

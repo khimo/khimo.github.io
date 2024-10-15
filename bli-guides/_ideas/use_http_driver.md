@@ -1,6 +1,7 @@
 ---
-title: HTTP communication to and from the BLI
-description: Use of the Custom HTTP driver and examples.
+title: Communicate with BeoLiving Intelligence via HTTP
+description: This guide provides a comprehensive overview of the Custom HTTP driver in BeoLiving Intelligence, enabling you to control smart devices not natively supported by the system. Learn how to configure the driver, send various HTTP requests (GET, POST, PUT, DELETE), and integrate external systems with your BeoLiving Intelligence setup for enhanced control and customization.
+keywords: BeoLiving Intelligence, HTTP, Custom HTTP driver, smart devices, integration, GET, POST, PUT, DELETE, automation, customization, external systems
 layout: pagetoc
 ---
 
@@ -11,12 +12,12 @@ It is common that _smart devices_ have an HTTP protocol for communication from e
 This system has three parameters:
 - Base url : Base URL of destination for each HTTP Request. If you have many resources with the same base and a different endpoint, this can be configured for each resource. The URL of the request will be the concatenation of Base url + resource endpoint.
 - Headers (OPTIONAL): You can specify the Headers for each HTTP request made by the driver as JSON Object.
- > Eg: {"Header1": "valueX", "Header2": "valueY"}. If this field is left empty the next headers are used by default: {"Accept": "*/*", "Content-Length": "${Length}","Host": "${Host URL}"}. 
+ > Eg: {"Header1": "valueX", "Header2": "valueY"}. If this field is left empty the next headers are used by default: {"Accept": "*/*", "Content-Length": "${Length}","Host": "${Host URL}"}.
 - Poll url (OPTIONAL) : This field is just to set the driver as Online or Offline: If this field is not empty, the driver makes a GET HTTP Request to the Poll url every 60 seconds and the state depends on if the returned status code is 2XX Success or not. If this field is left empty, the driver state is determined by the last returned status code of a request made. In this case the driver state will be equal to Online if the returned status code is 2XX Success and Offline if not.
 
 ### Tips
 
- - Test out firing Macros with commands on your HTTP resources, while looking at the BLI's Log (Tools-->Log) where you will be able to see what you are sending out and to what address.
+- Test out firing Macros with commands on your HTTP resources, while looking at the BLI's Log (Tools-->Log) where you will be able to see what you are sending out and to what address.
 
 ### Examples
 Here you can find examples related to use cases our clients presented.
@@ -30,7 +31,7 @@ Here you can find examples related to use cases our clients presented.
 
 In this case, setting the volume to 40. How can I send this XML in the BLI?
 
-**A:** This is all set in the resource address of a resource that you must configure to set the volume to 40, this is the only action that the resource will be able to perform, and the address should be: 
+**A:** This is all set in the resource address of a resource that you must configure to set the volume to 40, this is the only action that the resource will be able to perform, and the address should be:
 
 "/volume;<volume>40</volume>"
 

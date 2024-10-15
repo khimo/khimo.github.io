@@ -1,12 +1,13 @@
 ---
-title: Make the Mozart product say aloud the station name when it starts playing from B&O Radio.
-description: Use a BeoLiving Intelligence macro to make the Mozart (Control Link) product tell you the name of the B&O Radio station when it is selected, in your language!
+title: Announce Radio Station Name with a BeoLiving Intelligence Macro
+description: Enhance your BeoLiving Intelligence experience by configuring a Lua macro that makes your Mozart (Control Link) products announce the name of the B&O Radio station playing. This guide provides step-by-step instructions on how to set up and customize the macro, making your audio system more intuitive and informative.
+keywords: BeoLiving Intelligence, Mozart, Control Link, B&O Radio, spoken notification, automation, Lua macro, station name announcement, audio feedback, customization
 layout: pagetoc
 ---
 
 ### Introduction
 
-When you select a radio in a Bang & Olufsen product, using a remote control or the front panel buttons, it is hard to know which radio you were tuned to without looking at the App. **Now you can solve that with this simple BeoLiving Intelligence automation**. Use the instructions provided below to make the B&O products read aloud the station name as soon as a station starts playing.
+When you select a radio in a Bang & Olufsen product, using a remote control or the front panel buttons, it is hard to know which radio you were tuned to without looking at the App. Now you can solve that with this simple BeoLiving Intelligence automation. Use the instructions provided below to make the B&O products read aloud the station name as soon as a station starts playing.
 
 It is possible to add this to any Mozart (Control Link) product or just select some of them. The read message could be customized to use your own language and words.
 

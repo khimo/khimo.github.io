@@ -1,6 +1,7 @@
 ---
-title: Make the Mozart product announce the zone it just joined.
-description: Use a BeoLiving Intelligence automation to make the Mozart (Control Link) product tell you which zones they are playing from, in your language!
+title: Announce Zone When a Mozart Product Joins a Multiroom Session
+description: This guide provides a BeoLiving Intelligence Lua macro to enhance your multiroom audio experience. Learn how to configure your Mozart (Control Link) products to announce the zone they join, providing an audible confirmation for seamless and intuitive control of your audio system.
+keywords: BeoLiving Intelligence, Mozart, Control Link, multiroom audio, spoken notification, automation, Lua macro, join event, audio feedback
 layout: pagetoc
 ---
 
@@ -46,7 +47,7 @@ Please note that this macro should be triggered by a RENDERER STATE_UPDATE event
 --
 -- How to use it::
 --  1. Create a Macro
---  2. As event add all the STATE_UPDATE of all the RENDERER where you want to 
+--  2. As event add all the STATE_UPDATE of all the RENDERER where you want to
 --  have the notification, eg: event: */*/RENDERER/*/STATE_UPDATE for all RENDERERs
 --  3. Press the Convert to code button in the commands table
 --  4. Copy this whole file into the code text area
@@ -121,7 +122,7 @@ function (event, engine)
       -- Delay the command to ensure the product is ready
       engine.delay(0, 200)
 
-      -- Send the audio overlay message to the address with the now_playing  
+      -- Send the audio overlay message to the address with the now_playing
       engine.fire(command)
     end
   end
