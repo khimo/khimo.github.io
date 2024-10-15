@@ -2,6 +2,8 @@
 title: Shelly 2nd generation
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Shelly, JSON-RPC, multicast DNS, HTTP, Cover, SHADE, Input, BUTTON, GPIO, Switch, DIMMER
+description: This driver implements communication with the second generation of Shelly devices using the JSON-RPC 2.0 protocol over websockt managing covers, inputs and switches.
 ---
 # Shelly 2nd generation
 

@@ -2,6 +2,8 @@
 title: Global Cache iTach IP2IR
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Global Cache iTach IP2IR, iLearn, sendir
+description: Global Cache iTach IP2IR driver allows to control IR controlled devices using iLearn capturing software or Control Tower database.
 ---
 Global Cache iTach IP2IR
 ===============================

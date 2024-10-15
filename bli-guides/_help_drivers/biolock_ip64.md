@@ -2,6 +2,8 @@
 title: Biolock IP65 (Community)
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Biolock IP65, OPEN_DOOR
+description: The Biolock driver on the BeoLiving Intelligence integrates the systems Doorlock with state.
 ---
 # Biolock IP65
 

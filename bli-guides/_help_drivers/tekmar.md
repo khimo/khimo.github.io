@@ -2,6 +2,8 @@
 title: Tekmar
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Tekmar, tekmarNet4, Cooler and Heater, Heater, Slab control, Setback switch, Setpoint device
+description: This driver supports communication with tekmar thermostats using tekmarNet4 Gateway 482 Serial Interface.
 ---
 tekmar
 ===============================

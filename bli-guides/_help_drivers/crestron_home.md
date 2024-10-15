@@ -2,6 +2,8 @@
 title: Crestron Home
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Crestron Home, HTTP, Dimmer, Switch, Scene, BUTTON
+description: Driver for managing Crestron Home devices as Dimmer, Switch and Scene (BUTTON) resource types.
 ---
 Crestron Home
 ===============================

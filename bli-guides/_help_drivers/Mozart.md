@@ -2,6 +2,8 @@
 title: B&O ControlLink
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: B&O ControlLink, ControlLink, RENDERER, MOZART, MULTIROOM
+description: B&O ControlLink driver adds integration with the new B&O ControlLink AV products (Mozart platform).
 ---
 # Bang & Olufsen ControlLink
 

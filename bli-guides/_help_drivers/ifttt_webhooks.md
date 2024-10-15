@@ -2,6 +2,8 @@
 title: IFTTT - Webhooks
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: IFTTT, Webhooks, HTTP, FIRE, SEND, SEND WITH VALUES
+description: IFTTT Webhooks driver allows to fire IFTTT actions using HTTP RESTful communication protocol.
 ---
  
 # IFTTT through the Webhooks

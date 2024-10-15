@@ -2,6 +2,8 @@
 title: Tuya - homeassistant API (community) | Deprecated
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords:  Tuya, homeassistant, open homeassistant API, Dimmable light, Light non dimmable, Scene, Thermostat, Light switch, Shade, Switch, Lock
+description: Tuya - homeassistant API driver integrates tuya devices using the open homeassistant API (DEPRECATED).
 ---
 # TuyaAPI driver | Integrates tuya devices using the open homeassistant API | DEPRECATED
 

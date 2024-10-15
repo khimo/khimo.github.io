@@ -2,6 +2,8 @@
 title: Honeywell TCC Thermostat North America
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Honeywell Total Connect Comfort, Wifi 9000, Vision Pro, Focus Pro, RedLink Prestige IAQ, SET SETPOINT, SET MODE, Follow Schedule, Set Fan Auto
+description: Honeywell Total Connect Comfort driver integrates Wifi 9000, Vision Pro, Focus Pro and RedLink Prestige IAQ devices through the north american portal.
 ---
 # Honeywell Total Connect Comfort Thermostat driver
 

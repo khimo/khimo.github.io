@@ -1,6 +1,8 @@
 ---
 title: Khimo
 layout: drivertoc
+keywords: Khimo, Remote Access
+description: Khimo driver provides remote access to BeoLiving Intelligence and is automatically created when Remote Access is enabled.
 ---
 
 This driver supports communication with the Khimo system.

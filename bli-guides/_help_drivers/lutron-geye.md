@@ -2,6 +2,8 @@
 title: Lutron GRAFIK Eye
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords:  Lutron Grafik Eye, GRX-RS232, GRX-CI-RS232, GRX-CI-NWK-E, RS232, Ethernet, Dimmer, Shade, Scene button
+description: Lutron Grafik Eye driver integrates Lutron Grafik Eye systems using GRX-RS232, GRX-CI-RS232 and GRX-CI-NWK-E interfaces through RS232 or Ethernet connections.
 ---
 Lutron Grafik Eye
 =================

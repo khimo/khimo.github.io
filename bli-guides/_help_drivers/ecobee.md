@@ -2,6 +2,8 @@
 title: ecobee Thermostat
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: ecobee, ecobee Thermostat, Remote Sensor, SET HEAT SP, SET COOL SP, SET MODE, SET CLIMATE, SET FAN, RESUME PROGRAM
+description: ecobee Thermostat driver allows to control multiple thermostats and their associated remote sensors.
 ---
 ecobee
 =====================================

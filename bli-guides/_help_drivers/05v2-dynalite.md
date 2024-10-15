@@ -2,6 +2,8 @@
 title: Dynalite | Dynet-1
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Dynalite, Dynet-1, RS232, DIMMER, BUTTON, SHADE
+description: Dynalite is a lighting and automation control system that offers power dimmer controllers, signal dimmer controllers and more. This driver supports Connection via RS232 and manages DIMMER, BUTTON and SHADE resource types.
 ---
 # Dynalite driver | Dynet-1
 

@@ -2,6 +2,8 @@
 title: WeMo Coffee Maker
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: WeMo, Mr Coffee Maker, SOAP, IP, WiFi, Make Coffee, Coffee Done, Ready to Brew, Coffee Maker, Brewed, Brewing, Clean Advice, Cleaning, Filter advise, Filter life, Filter present, Last Cleaned, Mode time, Time remaining, Water level reached, Mode
+description: WeMo Coffee Maker driver supports communication with WeMo enabled Mr Coffee Maker using SOAP IP connection over WiFi.
 ---
 WeMo / Mr Coffee Maker 
 ========================= 

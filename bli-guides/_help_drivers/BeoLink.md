@@ -1,6 +1,8 @@
 ---
 title: BeoLink
 layout: drivertoc
+keywords: NetworkLink, BeoLink, LIGHT, CONTROL, ALL STANDBY, BNR,  Multiroom
+description: BeoLink system provides interaction with NetworkLink products through LIGHT, CONTROL and ALL STANDBY events and BNR commands.
 ---
 
 The BeoLink system provides interaction with NetworkLink products.

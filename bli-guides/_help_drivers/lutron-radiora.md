@@ -2,6 +2,8 @@
 title: Lutron Radio Ra
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Lutron Radio Ra, RS232, Ethernet, Master Button LED, Phantom Button Dimmer, Phantom Button Shade, Phantom Button Switch, Phantom Button Toggle, Phantom LED, SET, RAISE, LOWER, STOP, TOGGLE, PRESS
+description: Lutron Radio Ra driver integrates Lutron Radio Ra system using RS232 protocol and Ethernet to RS232 interface.
 ---
 Lutron Radio RA
 ===============

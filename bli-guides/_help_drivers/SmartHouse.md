@@ -1,6 +1,8 @@
 ---
 title: SmartHouse
 layout: drivertoc
+keywords: SmartHouse, Ethernet, Dupline, sequence
+description: SmartHouse driver provides integration with Smart-House systems using Ethernet protocol.
 ---
 
 Connection to a Smart-House system

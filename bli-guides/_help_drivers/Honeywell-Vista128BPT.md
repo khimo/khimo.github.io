@@ -2,6 +2,8 @@
 title: Honeywell Vista128BPT
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: VISTA-128 BPT, ALARM, ALARM_ZONE, _OUTPUT, ARM, DISARM, _eventNotification, _OUTPUT_CONTROL
+description: Honeywell VISTA-128 BPT driver integrates Honeywell alarm systems using RS232 protocol and allows to arm or disarm the alarm and get feedback from the system.
 ---
 Honeywell / VISTA-128 BPT
 ========================= 

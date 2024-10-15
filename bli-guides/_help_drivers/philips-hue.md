@@ -2,6 +2,8 @@
 title: Philips Hue (Legacy)
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Philips Hue, REST, DIMMER, BUTTON, Light, On Off Light, Dimmable Light, Color Temperature Light, Color Light, Extended Color Light, Group, Scene, SET LEVEL, SET TRANSITION TIME, TIMED SET
+description: This driver supports communication with a Philips Hue bridge, allowing to control lights, lighting groups, and activate scenes using REST protocol.
 ---
 Philips Hue
 ===============================

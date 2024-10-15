@@ -2,6 +2,8 @@
 title: WeMo Air Purifier
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: WeMo Air Purifier, SOAP, IP, WiFi, Off, Slow, Medium, Fast, Auto, Ionizer On, Ionizer Off, Air Purifier, Air quality, Expired filter time, Filter life, Filter present, Ionizer status, Mode
+description: WeMo Air Purifier driver supports communication with Holmes Smart Air Purifier with WeMo using SOAP IP connection over WiFi.
 ---
 WeMo / Air Purifier 
 ========================= 

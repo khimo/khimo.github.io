@@ -2,6 +2,8 @@
 title: Open Weather
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Open Weather, HTTP, _CURRENT_WEATHER, _WEATHER_FORECAST_3HRS, _WEATHER_FORECAST_24HRS, _Temperature, _Min_Temperature, _Max_Temperature, _Humidity, _Pressure, _WindSpeed, _WindDirection, _Cloudiness, _Rain, _RainLevel3Hrs, _Snow, _SnowLevel3Hrs
+description: OpenWeatherDriver access current weather data for any location using OpenWeather's API.
 ---
 OpenWeatherDriver
 =================

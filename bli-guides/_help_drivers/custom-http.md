@@ -2,6 +2,8 @@
 title: Custom HTTP
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: HTTP, GET, PUT, POST, DELETE, _SEND, _RESPONSE
+description: Custom HTTP driver facilitates the integration with Home Automation devices using a HTTP based REST interface and it manages GET, PUT, POST, DELETE resources with _SEND command and _RESPONSE event.
 ---
 Custom HTTP
 ===============

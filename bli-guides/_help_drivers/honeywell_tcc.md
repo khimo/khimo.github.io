@@ -2,6 +2,8 @@
 title: Honeywell TCC Thermostat International (experimental)
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Honeywell Total Connect Comfort, EvoHome, Single Zone Thermostat, Connected Round, SET SETPOINT, SET MODE, Follow Schedule
+description: Honeywell Total Connect Comfort driver integrates EvoHome, Single Zone Thermostat and Connected Round devices through the international portal.
 ---
 # Honeywell Total Connect Comfort Thermostat driver
 

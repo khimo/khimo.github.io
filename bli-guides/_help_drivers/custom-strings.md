@@ -2,6 +2,8 @@
 title: Custom Strings
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: TCP Keepalive, INPUT, OUTPUT, BOTH
+description: This driver enables limited communication with unsupported home automation systems through strings as resources using INPUT, OUTPUT and BOTH parameters.
 ---
 Custom strings driver
 =====================

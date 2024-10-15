@@ -2,6 +2,8 @@
 title: Vantage
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords:  Vantage, InFusion Dim Controller, RS232, Ethernet, vid, Vantage Identification Number, button, task
+description: Vantage driver integrates Vantage system using an InFusion Dim Controller through RS232 or Ethernet connections.
 ---
 Vantage
 =======

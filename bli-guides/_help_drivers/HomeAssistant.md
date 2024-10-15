@@ -2,6 +2,8 @@
 title: Home Assistant
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Home Assistant, Web socket, SHADE, DIMMER, THERMOSTAT_1SP, THERMOSTAT_2SP, ALARM, SET, SET COLOR, RAISE, LOWER, STOP, SET SETPOINT, SET MODE, SET FAN AUTO, SET HEAT SP, SET COOL SP, TRIGGER ALARM
+description: Home Assistant driver integrates a Home Assistant hub into the BeoLiving intelligence using Web socket protocol, allowing to manage shades, lights, thermostats and alarms.
 ---
 
 # Home Assistant Driver

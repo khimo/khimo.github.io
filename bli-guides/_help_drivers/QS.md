@@ -1,6 +1,8 @@
 ---
 title: Lutron Grafik QS
 layout: drivertoc
+keywords: Lutron Grafik QS, QSE-CI-NWK-E, Ethernet, Velux Scene Button, PRESS
+description: Lutron Grafik QS driver integrates Lutron Grafik QS using QSE-CI-NWK-E interface through Ethernet protocol.
 ---
 
 Connecting to a Grafik QS system

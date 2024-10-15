@@ -2,6 +2,8 @@
 title: Global Cache iTach IP2SL
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Global Cache iTach IP2SL, RS232
+description: Global Cache iTach IP2SL driver allows to control RS232 serial devices.
 ---
 Global Cache iTach IP2SL
 ===============================

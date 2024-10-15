@@ -4,7 +4,6 @@ title: Supported Systems (BLI PRO)
 toc: true 
 ---
 
-<head>
 <style>
 .newspaper {
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
@@ -44,9 +43,7 @@ a {
 }
 
 </style>
-</head>
 
-<body>
 
 A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems in the market. Here you will find <em>BeoLiving Intelligence</em> help and usage guides for some of them:
 
@@ -66,7 +63,7 @@ function filterByName() {
   listItems.forEach(function(item) {
     item.style.display = 'revert';
 
-    if (!item.innerText.toLowerCase().includes(searchTerm)) {
+    if (!item.textContent.toLowerCase().includes(searchTerm)) {
       item.style.display = 'none';
       countHidden++;
     } else {
@@ -87,7 +84,8 @@ function filterByName() {
     <div class="d-flex justify-content-center">
       <div>
       <form class="form-inline ">
-        <input class="form-control form-control-lg" type="search" id="searchbox" placeholder="Filter drivers by name" aria-label="Filter" oninput="filterByName(event)" >
+<input class="form-control form-control-lg" type="search" id="searchbox" placeholder="Search by name or features" aria-label="Search" oninput="filterByName(event)" >
+
         <button class="btn my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
       </form>
       </div>
@@ -115,6 +113,11 @@ function filterByName() {
   			<img src="/logos/driverdefault.jpg"  title="{{path}}"   />
       {% endif %}
 		</a>
+    <div style="display: none"> 
+      <pre>{{ help_driver.path  }}</pre>
+      <pre>{{ help_driver.keywords }} </pre>
+      <pre>{{ help_driver.description }} </pre>
+    </div>
 		<center><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></center>
 		</div>
 
@@ -128,4 +131,3 @@ function filterByName() {
    </div>
 
 </div>
-</body>

@@ -2,6 +2,8 @@
 title: Global Cache iTach IP2CC
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Global Cache iTach IP2CC, BUTTON
+description: Global Cache iTach IP2CC driver controls relay closures.
 ---
 Global Cache iTach IP2CC
 ===============================

@@ -2,6 +2,8 @@
 title: Lutron Homeworks QS - Radio Ra2 - Grafik QS
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Lutron, Homeworks QS, Radio Ra2, Grafik QS, QSE-CI-NWK-E, RS232, Ethernet, Button with LED, Button, LED, Dimmer, Shade, Shade group, Thermostat, Lutron QS Scene Button, _MULTI TAP, _HOLD RELEASE, PRESS, RELEASE, HOLD, SET, RAISE, LOWER, STOP, PRESET, SET HEAT SP, SET COOL SP, SET MODE, SET FAN AUTO, SET SCHEDULE, SET ECO MODE, _SET SP
+description: Lutron Homeworks QS - Radio Ra2 - Grafik QS driver integrates Lutron HomeWorks QS, Lutron Radio RA2 and Lutron Grafik QS systems using RS232 or Ethernet protocol.
 ---
 # Lutron Homeworks QS and Radio Ra2
 

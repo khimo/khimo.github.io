@@ -2,6 +2,8 @@
 title: Lutron Homeworks Interactive
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Lutron Homeworks Interactive, Ethernet, RS232, H48, RF, RPM, GRX, D48, Grafik Eye
+description: Lutron Homeworks Interactive driver integrates Lutron Homeworks Interactive using Ethernet or RS232 protocol.
 ---
 Lutron HomeWorks Interactive
 ============================

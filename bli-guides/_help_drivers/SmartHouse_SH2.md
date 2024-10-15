@@ -1,6 +1,8 @@
 ---
 title: SmartHouse SH2
 layout: drivertoc
+keywords:  SmartHouse SH2, Modbus, Button, Dimmer, Shade, PRESS, ON, OFF, SET, RAISE, LOWER, STOP, function status, movement position
+description: SmartHouse SH2 driver integrates SmartHouse SH2 system using Modbus protocol.
 ---
 
 Connection to a SmartHouse SH2 system

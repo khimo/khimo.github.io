@@ -2,6 +2,8 @@
 title: Nest(DISCONTINUED)
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Nest, Thermostat SP1, Thermostat SP2, Home/Away, Rush Hour, Smoke + CO Alarm, Set setpoint, Set mode, System mode, Set heat SP, Set cool SP, Home, Away, Toggle
+description: Nest thermostat driver integrates Nest systems through a PIN code using Thermostat SP1, Thermostat SP2, Home/Away, Rush Hour, Smoke + CO Alarm resource types (DISCONTINUED).
 ---
 Nest thermostat (DISCONTINUED)
 ===============

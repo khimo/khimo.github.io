@@ -2,6 +2,8 @@
 title: Lutron LEAP - Caseta, RA2 Select, RadioRA3, HomeWorks
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Lutron, LEAP, Caseta, RA2 Select, RadioRA3, HomeWorks, BUTTON, BUTTON WITH LED, DIMMER, SWITCH, MOTOR, SHADE, SHADE WITH TILT, SHADE WITH TILT WHEN CLOSED, TILT, KETRA DIMMER, OCCUPANCY, WHITE TUNE, AREA SCENE, PRESET, SINGLE SETPOINT THERMOSTAT, DUAL SETPOINT THERMOSTAT, SET, SET COLOR, SET VIBRANCY, SET COLOR TEMPERATURE, RAISE, LOWER, STOP, OPEN, CLOSE, SET SETPOINT, SET MODE, SET FAN AUTO
+description: Lutron LEAP driver allows to integrate Lutron RA2 Select, RadioRA3, Caseta and HomeWorks systems managing buttons, dimmers, shades, occupancy sensors, thermostats and scenes.
 ---
 # Lutron RA2 Extensible Application Protocol (LEAP)
 

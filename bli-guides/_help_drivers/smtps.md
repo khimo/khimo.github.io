@@ -2,6 +2,8 @@
 title: Send email using secure SMTP
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: SMTP, GMAIL, PHONE
+description: Secure SMTP driver allows to send emails from BeoLiving Intelligence.
 ---
 # Secure SMTP | Send emails from the BLI
 

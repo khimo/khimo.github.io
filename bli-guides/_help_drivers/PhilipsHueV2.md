@@ -2,6 +2,8 @@
 title: Philips Hue | CLIP API | V2
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Philips Hue, CLIP API, DIMMER, GPIO, On Off Light, Dimmable Light, Color Temperature Light, Color Light, Extended Color Light, Group, Motion, Motion Camera, Entertainment, Scene, BUTTON
+description: Philips Hue CLIP API driver allows to control lights, lighting groups, different sensors and activate scenes using CLIP REST protocol.
 ---
 Philips Hue CLIP API
 ===============================

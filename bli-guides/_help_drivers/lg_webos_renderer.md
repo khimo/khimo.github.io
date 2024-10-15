@@ -2,6 +2,8 @@
 title: LG webOS TV
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: LG webOS TV, RENDERER, Ethernet, WiFi
+description: LG webOS TV driver integrates LG webOS Smart TVs using Ethernet or WiFi connection.
 ---
 # LG webOS TV
 

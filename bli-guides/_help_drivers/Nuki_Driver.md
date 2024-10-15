@@ -2,6 +2,8 @@
 title: Nuki
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Nuki, SET, SmartLocks
+description: Nuki driver allows to control and check Nuki SmartLocks.
 ---
 # Nuki 
 

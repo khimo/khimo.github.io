@@ -2,6 +2,8 @@
 title: Conson XP
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Conson XP, RS485, RS232
+description: Driver for Conson XP systems using XP130 gateway module and RS232 or RS485 connections.
 ---
 Conson XP
 =========

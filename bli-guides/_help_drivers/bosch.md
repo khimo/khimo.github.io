@@ -2,6 +2,8 @@
 title: Bosch
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Bosch Smart Home, HTTP, Twinguard, Climate Control, Radiator Thermostat, Smart Plug, Light Control, Shade Control
+description: This driver integrates Bosch Smart Home Controller, allowing to control Twinguard, Climate Control, Radiator Thermostat, Smart Plug, Light Control and Shade Control.
 ---
 # Bosch Smart Home
 

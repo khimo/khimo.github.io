@@ -2,6 +2,8 @@
 title: Tuya
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Tuya, open Tuya API, Dimmable light, Light non-dimmable, Thermostat, Switch, Shade
+description: TuyaAPI driver integrates tuya devices using the open Tuya API.
 ---
 # TuyaAPI driver | Integrates tuya devices using the open Tuya API
 

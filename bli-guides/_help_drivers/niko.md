@@ -2,6 +2,8 @@
 title: Niko Home Control
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Niko Home Control, Dimmable Light, Non Dimmable Light, Switch, Thermostat, Shade, Lock, Garage Door, SET, SET SETPOINT, SET MODE, RAISE, LOWER, STOP, OPEN, CLOSE
+description: Niko Home Control driver allows to manage dimmers, switches, thermostats, shades, locks and garage doors.
 ---
 
 # Niko Home Control

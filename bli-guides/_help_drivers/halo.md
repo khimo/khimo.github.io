@@ -2,6 +2,8 @@
 title: B&O Halo remote
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Beoremote Halo, Halo, AV, Volume, Dimmer, Shade, Scene, Thermostat, Handle by custom macros
+description: The Beoremote Halo driver allows to control Home's equipment through the wheel and touch screen, such as lights, shades, and more.
 ---
 # BEOREMOTE HALO
 

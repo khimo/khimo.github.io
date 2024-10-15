@@ -1,6 +1,8 @@
 ---
 title: BTicino My Home
 layout: drivertoc
+keywords: BTicino My Home, MH200N, F454, CEN, New Bticino scene button, Bticino button, Bticino dimmer 10 steps, Bticino dimmer 100 level
+description: BTicino My Home driver provides interaction with My Home systems using MH200N and F454 interfaces. This driver manages dimmer control and scenario selection with New Bticino scene button, Bticino button, Bticino dimmer 100 level and Bticino dimmer 10 steps resources.
 ---
 
 

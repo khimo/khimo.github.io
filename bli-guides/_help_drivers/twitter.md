@@ -2,6 +2,8 @@
 title: Twitter | Discontinued - X does not longer support this API
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords:  Twitter, REST, _TRACK_FILTER, _TWEET, _MATCH, _REPLY, _SEND_STATUS
+description: Twitter driver allows to post Twitter status messages, fire events and reply a message when the desired word is found in tweets (Discontinued).
 ---
 Twitter
 ===============================

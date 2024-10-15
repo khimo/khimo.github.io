@@ -2,6 +2,8 @@
 title: TRO.Y
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: TRO.Y, telnet, HTTP, shades
+description: TRO.Y driver allows to control shades with and without status, includes support for Somfy shades.
 ---
     
 TRO.Y

@@ -2,6 +2,8 @@
 title: WebHooks
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
+keywords: Webhooks, HTTP, POST
+description: Webhooks driver listens for HTTP requests generating events and it can be used to integrate any system that can send HTTP requests to BeoLiving Intelligence.
 ---
 # Webhooks driver
 

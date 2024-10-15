@@ -1,6 +1,8 @@
 ---
 title: Clipsal
 layout: drivertoc
+keywords: Clipsal, trigger groups, trigger actions
+description: Clipsal driver provides integration with Clipsal systems managing lighting scenes, dimmers and shades.
 ---
 
 The Clipsal programming model defines *trigger groups* and *trigger

@@ -1,6 +1,8 @@
 ---
 title: LK (Schneider) - IHC/LexControl
 layout: drivertoc
+keywords:  IHC/LexControl, Airlink, Dataline, .VIS, PRESS, RELEASE, _RAISE, _LOWER, _STOP, SET, PULSE, TOGGLE
+description: LK (Schneider) - IHC/LexControl driver provides interaction with IHC/LexControl programming model using .VIS files.
 ---
 
 IHC/LexControl programming model consists of physical input and output

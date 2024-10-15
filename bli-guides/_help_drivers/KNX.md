@@ -1,6 +1,8 @@
 ---
 title: KNX / EIB
 layout: drivertoc
+keywords: KNX, EIB, PEI, RS232, IP, Ethernet, Bus Monitor Mode, Virtual Bus Monitor, Toggle, Button, Scene, Dimmer, Shade, GPIO, Thermostat 1SP, Thermostat 2SP, Boolean, 1 byte unsigned integer, 1 byte signed integer, 2 bytes unsigned integer, 2 bytes signed integer, 3 bit controlled, String, PRESS, RELEASE, HOLD, SET, SET_NON_ZERO, RAISE, LOWER, STOP, SET SETPOINT, SET COOL SP, SET HEAT SP, HVAC Mode, HVAC Control Mode, DPT
+description: KNX / EIB driver provides integration with KNX systems using PEI type 10 (over RS232) and IP tunnelling (over Ethernet) interfaces.
 ---
 
 BeoLiving Intelligence can interact with KNX systems by means of shared variables (group
