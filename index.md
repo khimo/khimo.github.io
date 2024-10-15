@@ -299,76 +299,20 @@ installers_ shows the main differences between both controllers and explains the
   </div>
   <div class="col-lg-4">
     <div align="center">
-     <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/manuals" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-list-alt fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Manuals & Instructions</h3>
-              <p class="text-muted mb-0">Program lua Macros</p>
-              <p class="text-muted mb-0">Connect BLI & Siri Shortcuts</p>
-            </div>
-      </a>
-     </div>
-   </div>
-  <div class="col-lg-4">
-    <div align="center">
      <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/ideas" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-lightbulb-o fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Practical Examples & Ideas</h3>
-              <p class="text-muted mb-0">Business reception setup</p>
-              <p class="text-muted mb-0">Fire Macros with OneRemote</p>
-            </div>
-      </a>
-     </div>
-   </div>
-</div>
-<div class="row justify-content-md-center">
-   <div class="col-lg-4">
-     <div align="center">
-     <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/bli-for-blgw-installers.html" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-refresh fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">BLI for BLGW installers</h3>
-              <p class="text-muted mb-0">Main differences and how to migrate from BeoLink Gateway to BeoLiving Intelligence</p>
-            </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-lg-4">
-     <div align="center">
-     <!-- OLD:
-<a class="nav-link js-scroll-trigger sr-button" href="https://rise.articulate.com/share/77YbL6bWwSYALvqVH3Bf7lgji8TFH5L2" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
-  <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-video-camera fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Tutorials for BLI installers</h3>
-              <p class="text-muted mb-0">B&O Technical training courses for BLI</p>
-            </div>
-      </a>
-//-->
-     <a class="nav-link js-scroll-trigger sr-button" href="https://rise.articulate.com/share/tLKzK6yv60sTjCUvhZstA-_vusQrFsPa" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+<h3 class="mb-3 text-dark">How-To Guides <br/> Integration Ideas</h3>
+<p class="text-muted mb-0">Explore a collection of ideas with clear, step-by-step instructions on how to implement them.</p>
+<p class="text-muted mb-0">Learn how to link products, create Lua macros, and craft magical experiences, all explained step by step.</p>
 
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-video-camera fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Tutorials for BLI installers</h3>
-             <p class=" mb-0"><span class="text-muted">B&amp;O Technical training courses for BLI</span> <span class="label label-success ">Updated!</span>  </p>
+
+
+
             </div>
       </a>
      </div>
    </div>
-  <div class="col-lg-4">
-     <div align="center">
-     <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/developers-guides" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-handshake-o fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
-              <h3 class="mb-3 text-dark">Integration developers</h3>
-              <p class="text-muted mb-0">Driver development</p>
-              <p class="text-muted mb-0">Client integration</p>
-            </div>
-      </a>
-     </div>
-   </div>
- </div>
-<div class="row justify-content-md-center">
    <div class="col-lg-4">
      <div align="center">
      <a class="nav-link js-scroll-trigger sr-button" href="/help_drivers" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
@@ -380,6 +324,34 @@ installers_ shows the main differences between both controllers and explains the
       </a>
       </div>
     </div>
+</div>
+<div class="row justify-content-md-center">
+  <div class="col-lg-4">
+     <div align="center">
+     <a class="nav-link js-scroll-trigger sr-button" href="https://rise.articulate.com/share/tLKzK6yv60sTjCUvhZstA-_vusQrFsPa" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-video-camera fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+<h3 class="mb-3 text-dark">B&amp;O Online Training</h3>
+             <p class=" mb-0"><span class="text-muted">Official B&amp;O Technical training courses for BLI</span> <span class="label label-success ">Updated!</span>  </p>
+
+            </div>
+      </a>
+     </div>
+   </div>
+  <div class="col-lg-4">
+     <div align="center">
+     <a class="nav-link js-scroll-trigger sr-button" href="/bli-guides/developers-guides" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s; ">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-handshake-o fa-4x text-primary mb-3 sr-icons" data-sr-id="2" style="; visibility: visible;  -webkit-transform: scale(1); opacity: 1;transform: scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; "></i>
+              <h3 class="mb-3 text-dark">Integration developers</h3>
+              <p class="text-muted mb-0">Driver development</p>
+            </div>
+      </a>
+     </div>
+   </div>
+ </div>
+<div class="row justify-content-md-center">
  </div>
 
 ## Remote support
