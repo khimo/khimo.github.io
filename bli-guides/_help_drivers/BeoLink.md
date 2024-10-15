@@ -69,6 +69,9 @@ The available commands based in BNR (BeoNetRemote Protocol) are:
 - *Cinema mode*: Sets *Cinema mode* on product. The available options are product dependent so the product must be online in order to be able
 to see them in *Macro* edition. 
 
+- *Legacy home control*:  Sends the legacy home control command on the product.
+
+- *Link to source by id*: Links the product to a specific source, which can be originated on another product.
 - *Master volume adjust*: Enable controlling the volume of several products at once via Multiroom. The command is sent to the master product and 
 all the other products which are streaming from the master, changing their volume the same way. *Master volume adjust* is used for relative 
 control.
@@ -76,7 +79,11 @@ control.
 - *Master volume level*: Similar to *Master volume adjust* but used for absolute volume control. This command takes `Volume` as parameter and must
  be an interger between 0 and 90.
  
-- *Picture Mute*: This command (if corresponds) is used to freeze video picture.
+- *Motorized speaker preset*: Sets the motorized speaker to a given preset.
+
+- *Picture format*: Sets the picture format to a given one, if applicable.
+
+- *Picture mute*: This command (if corresponds) is used to freeze video picture.
 
 - *Picture mode*: Sets *Picture mode* on product. The available options are product dependent so the product must be online in order to be able
 to see them in *Macro* edition.  
@@ -87,20 +94,33 @@ to see them in *Macro* edition.
   
 - *Playqueue add URL*: Adds an audio file to products playqueue specified by it's *URL*.
  
-- *Playqueue clean*: Self explanatory. 
+- *Playqueue clean*: Cleans the playqueue.
+
+- *Reboot*: Reboots the product.
 
 - *Recall profile*: Activates an existing profile on product.
  
 - *Save profile*: Saves profile on product. 
 
 - *Select channel*: Selects channel in specific product source. If the source has a favourite list defined the delay between the channel digits is taken from it, otherwise a delay of 300 milliseconds is used.
+- *Select channel on source by id*: Selects channel in specific product source givent it's id.
  
 - *Select source*: Play source on product. The source can be originated from another product.
  
+- *Select source by id*: Play source by given id on product. The source can be originated from another product.
 - *Send command*: Enables sending miscelaneous commands related to things like cursor control, menu acces, flow control, etc..
 
 - *Send digit*: allows sending individual digit to the product.
 
+- *Set content id*: Directly sets the content identifier on the product. The origin of the content can be:
+  - `beoCloud:netRadio` for Bang&Olufsen radio content. The identifier is a radio id. Note that you should be logged in to Bang&Olufsen Cloud in order to perform searches from the BLI.
+  - `deezer` for DEEZER content. The identifier is a playlist or track id.
+  - `dlna` for DLNA/UPnP content. The identifier is a track URL.
+  - `tuneId` for TuneIn content. The identifier is a TuneIn radio id.
+
+- *Set repeat*: Sets the playqueue repeat mode, which can be `All`, `Current` or `None`.
+
+- *Set shuffle*: Sets the playqueue shuffle on or off.
 - *Sound mode*: Sets *Sound mode* on product. The available options are product dependent so the product must be online in order to be able
 to see them in *Macro* edition.
 
@@ -149,6 +169,6 @@ Otherwise it will instruct the mobile application to use the legacy commands.
 
 The BeoLink system allows you to make groups of NetworkLink and ControlLink products. By defining one as the Main product, the rest of the group will follow the behavior of this Main product in terms of volume, source selection, and standby mode.
 
-The Product Group's configuration is shown under Systems. When you select the BeoLink system, the configured product groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
+The Speaker Group's configuration is shown under Systems. When you select the BeoLink system, the configured speaker groups will appear listed below, with options for editing the existing groups or adding new ones. NetworkLink products can only form part of one group, so you won't be able to add a product to a group if it's already in another.
 
 For a new group to be created you need to select a Main product for the group and at least one Follower, if not, the group won't be created.

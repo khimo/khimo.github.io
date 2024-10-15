@@ -55,7 +55,7 @@ For resources with state BeoLiving Intelligence keeps track of whether or not an
 the connection began, and sets the ONLINE state to false until some state is received from KNX.
 If ONLINE state stays false, it probably means the resource address is wrong.
 
-#### Group address flags in ETS
+### Group address flags in ETS
 
 There are several flags in the setup of KNX resources in an ETS
 project which determine the behaviour of the resources and their
@@ -84,7 +84,7 @@ In BeoLiving Intelligence help and documentation, the abbreviations *C*, *T*, *R
 *W* are used for Communication, Transmit, Read and Write flags
 respectively.
 
-### Standard and non-standard resources
+## Standard and non-standard resources
 
 BeoLiving Intelligence supports two kinds of resources for KNX: standard BeoLiving Intelligence resources,
 and native KNX resources.
@@ -93,7 +93,7 @@ Standard BeoLiving Intelligence resources are: Toggle, Button, Dimmer with and w
 state, Shade with and without state, Thermostat 1SP, Thermostat 2SP, and GPIO.
 
 Native KNX resource types are: Boolean, 1 byte unsigned integer, 1 byte signed integer,
-2 Bytes unsigned integer, 2 Bytes signed integer and 3 bit controlled.
+2 Bytes unsigned integer, 2 Bytes signed integer and 3 bit controlled, String.
 
 Standard resource types allow for better integration, offering more generic programming
 capabilities on BeoLiving Intelligence (generic programming), and better display on
@@ -104,7 +104,6 @@ unless you need macros with precise control over these group addresses.
 
 
 ## System connection state
-
 The KNX system connection state can be Offline, Connected, Connecting or Online.
 Offline means the KNX is not reachable.
 Connecting means the KNX system initialized the connection.
@@ -112,539 +111,294 @@ Online means an interaction with the KNX system succeeded for at least one comma
 
 ## Resource types
 
-
 ### Standard resource types
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left"><b>Resource type</b></th>
-<th scope="col" class="left"><b>Std. type</b></th>
-<th scope="col" class="left"><b>Comment</b></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">Toggle</td>
-<td class="left">BUTTON</td>
-<td class="left">Switch or any boolean toggle, and keeps track of its current value.</td>
-</tr>
-
-<tr>
-<td class="left">Button</td>
-<td class="left">BUTTON</td>
-<td class="left">Button with press, hold and release functionality.</td>
-</tr>
-
-<tr>
-<td class="left">Dimmer without state</td>
-<td class="left">DIMMER</td>
-<td class="left">Dimmer with set level functionality, but no feedback.</td>
-</tr>
-
-<tr>
-<td class="left">Dimmer</td>
-<td class="left">DIMMER</td>
-<td class="left">Dimmer with feedback of its current level.</td>
-</tr>
-
-<tr>
-<td class="left">Shade without state</td>
-<td class="left">SHADE</td>
-<td class="left">Shade with raise, lower and stop functionality, but no feedback.</td>
-</tr>
-
-<tr>
-<td class="left">Shade</td>
-<td class="left">SHADE</td>
-<td class="left">Shade with raise, lower, stop and feedback of its current level.</td>
-</tr>
-
-<tr>
-<td class="left">GPIO</td>
-<td class="left">GPIO</td>
-<td class="left">Switch, or any boolean value that can be set to true
-/ false. Keeps track of its current value.</td>
-</tr>
-
-<tr>
-<td class="left">Thermostat 1SP</td>
-<td class="left">THERMOSTAT_1SP</td>
-<td class="left">Thermostat with a temperature and a setpoint states, and a set setpoint command.</td>
-</tr>
-
-<tr>
-<td class="left">Thermostat 2SP</td>
-<td class="left">THERMOSTAT_2SP</td>
-<td class="left">Thermostat with a temperature, a cool setpoint and a heat setpoint states and commands to set both setpoints.</td>
-</tr>
-
-</tbody>
-</table>
+| Resource type       | Std. type    | Comment                                                      |
+|---------------------|--------------|--------------------------------------------------------------|
+| Toggle              | BUTTON       | Switch or any boolean toggle, and keeps track of its current value. |
+| Button              | BUTTON       | Button with press, hold and release functionality.            |
+| Scene               | BUTTON        | Execute a scene.                                      |
+| Dimmer without state| DIMMER       | Dimmer with set level functionality, but no feedback.         |
+| Dimmer              | DIMMER       | Dimmer with feedback of its current level.                    |
+| Shade without state | SHADE        | Shade with raise, lower and stop functionality, but no feedback. |
+| Shade               | SHADE        | Shade with raise, lower, stop, set level and feedback of its current level. |
+| GPIO                | GPIO         | Switch, or any boolean value that can be set to true/false. Keeps track of its current value. |
+| Thermostat 1SP      | THERMOSTAT_1SP | Thermostat with a temperature and a setpoint states, and a set setpoint command. |
+| Thermostat 2SP      | THERMOSTAT_2SP | Thermostat with a temperature, a cool setpoint and a heat setpoint states and commands to set both setpoints. |
 
 ### Address
 
 The following table summarizes the supported resource types, the KNX
 Datapoint Type code, the needed flags and group addresses.
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-<colgroup>
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Resource type</th>
-<th scope="col" class="left">DPT</th>
-<th scope="col" class="left">Address</th>
-<th scope="col" class="left">Group Address</th>
-<th scope="col" class="left">Needed Flags</th>
-<th scope="col" class="left">Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">Toggle</td>
-<td class="left">DPT 1.001</td>
-<td class="left">a/b/c or a/b/c:d/e/f</td>
-<td class="left">a/b/c and d/e/f</td>
-<td class="left">CRTW</td>
-<td class="left">Some Toggle resources have value and status object in the same GA (a/b/c) or in a different GA (a/b/c and d/e/f). So in the last case, it's possible to specify the resource address as a/b/c:d/e/f [ 1 ]</td>
-</tr>
-
-<tr>
-<td class="left">Button</td>
-<td class="left">DPT 1.001</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">Dimmer without state</td>
-<td class="left">DPT 5.001</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">Dimmer value object GA.</td>
-</tr>
-
-<tr>
-<td class="left">Dimmer</td>
-<td class="left">DPT 5.001</td>
-<td class="left">a/b/c:d/e/f</td>
-<td class="left">a/b/c and d/e/f</td>
-<td class="left">CTW (a/b/c) and CRT (d/e/f)</td>
-<td class="left">Dimmer value object GA (a/b/c) and value status object (d/e/f). [ 1 ]</td>
-</tr>
-
-<tr>
-<td class="left">Shade without state</td>
-<td class="left">DPT 1.007 and 1.008</td>
-<td class="left">a/b/c:d/e/f</td>
-<td class="left">a/b/c and d/e/f</td>
-<td class="left">CTW (both a/b/c and d/e/f)</td>
-<td class="left">Shade 'StopStep UpDown' object GA (a/b/c) and 'Move UpDown' object GA (d/e/f).</td>
-</tr>
-
-<tr>
-<td class="left">Shade</td>
-<td class="left">DPT 1.007, 1.008 and 5.001</td>
-<td class="left">a/b/c:d/e/f:g/h/i</td>
-<td class="left">a/b/c, d/e/f and g/h/i</td>
-<td class="left">CTW (a/b/c), CTW (d/e/f) and CRT (g/h/i)</td>
-<td class="left">Shade 'StopStep UpDown' object GA (a/b/c), 'Move UpDown' object GA (d/e/f) and status object GA (g/h/i). [ 1 ]</td>
-</tr>
-
-<tr>
-<td class="left">GPIO</td>
-<td class="left">DPT 1.001</td>
-<td class="left">a/b/c or a/b/c:d/e/f</td>
-<td class="left">a/b/c and d/e/f</td>
-<td class="left">CRTW</td>
-<td class="left">Some GPIO resources have value and status object in the same GA (a/b/c) or in a different GA (a/b/c and d/e/f). So in the last case, it's possible to specify the resource address as a/b/c:d/e/f [ 1 ]</td>
-</tr>
-
-<tr>
-<td class="left">Thermostat 1SP</td>
-<td class="left">DPT 9.001</td>
-<td class="left">a/b/c:d/e/f:g/h/i</td>
-<td class="left">a/b/c and d/e/f</td>
-<td class="left">CRT (a/b/c), CTRW (d/e/f)</td>
-<td class="left">a/b/c is the temperature GA and d/e/f the setpoint temperature GA.</td>
-</tr>
-
-<tr>
-<td class="left">Thermostat 2SP</td>
-<td class="left">DPT 9.001</td>
-<td class="left">a/b/c:d/e/f:g/h/i</td>
-<td class="left">a/b/c, d/e/f and g/h/i</td>
-<td class="left">CRT (a/b/c), CTRW (d/e/f) and CTRW (g/h/i)</td>
-<td class="left">a/b/c is the temperature GA, d/e/f the heat setpoint temperature GA and g/h/i the cool setpoint temperature GA.</td>
-</tr>
-
-<tr>
-<td class="left">Boolean</td>
-<td class="left">DPT 1.xxx</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">1 byte unsigned integer</td>
-<td class="left">DPT 5.xxx</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">1 byte signed integer</td>
-<td class="left">DPT 6.xxx</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">2 bytes unsigned integer</td>
-<td class="left">DPT 7.xxx</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">2 bytes signed integer</td>
-<td class="left">DPT 8.XXX</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-
-<tr>
-<td class="left">3 bit controlled</td>
-<td class="left">3.007 / 3.008</td>
-<td class="left">a/b/c</td>
-<td class="left">a/b/c</td>
-<td class="left">CTW</td>
-<td class="left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
+| Resource type       | DPT          | Address      | Group Address | Needed Flags | Comment                                                      |
+|---------------------|--------------|--------------|---------------|--------------|--------------------------------------------------------------|
+| Toggle              | DPT 1.001    | a/b/c or a/b/c:d/e/f | a/b/c and d/e/f | CRTW         | Some Toggle resources have value and status object in the same GA (a/b/c) or in a different GA (a/b/c and d/e/f). So in the last case, it's possible to specify the resource address as a/b/c:d/e/f [ 1 ] |
+| Button              | DPT 1.001    | a/b/c        | a/b/c         | CTW          |                                                              |
+| Scene                | DPT 18.001       | a/b/c:n or a/b/c:n:d/e/f| a/b/c                   | CTW                   | The number 'n' corresponds to a scene identifier [1..64]. The d/e/f is only required if you want to have feedback when a scene has been executed outside the BLI. In this case, d/e/f is the address of the DPT 26.001 (Datapoint Type DPT_SceneInfo) |
+| Dimmer without state| DPT 5.001    | a/b/c        | a/b/c         | CTW          | Dimmer value object GA.                                      |
+| Dimmer              | DPT 5.001    | a/b/c:d/e/f  | a/b/c and d/e/f | CTW (a/b/c) and CRT (d/e/f) | Dimmer value object GA (a/b/c) and value status object (d/e/f). [ 1 ] |
+| Shade without state | DPT 1.007 and 1.008 | a/b/c:d/e/f | a/b/c and d/e/f | CTW (both a/b/c and d/e/f) | Shade 'StopStep UpDown' object GA (a/b/c) and 'Move UpDown' object GA (d/e/f). |
+| Shade               | DPT 1.007, 1.008 and 5.001 | a/b/c:d/e/f:g/h/i or a/b/c:d/e/f:g/h/i:j/k/l | a/b/c, d/e/f, g/h/i and j/k/l | CTW (a/b/c), CTW (d/e/f) and CTRW (g/h/i) (or CTR (g/h/i) and CTW (j/k/l)) | Shade 'StopStep UpDown' object GA (a/b/c), 'Move UpDown' object GA (d/e/f) and status object GA (g/h/i). 'Set level' GA (j/k/l) if present, otherwise (g/h/i) is used for 'Set level'. [ 1 ] |
+| GPIO                | DPT 1.001    | a/b/c or a/b/c:d/e/f | a/b/c and d/e/f | CRTW         | Some GPIO resources have value and status object in the same GA (a/b/c) or in a different GA (a/b/c and d/e/f). So in the last case, it's possible to specify the resource address as a/b/c:d/e/f [ 1 ] |
+| Thermostat 1SP      | DPT 9.001    | a/b/c:d/e/f  | a/b/c and d/e/f | CRT (a/b/c), CTRW (d/e/f) | a/b/c is the temperature GA and d/e/f the setpoint temperature GA. |
+| Thermostat 2SP      | DPT 9.001    | a/b/c:d/e/f:g/h/i | a/b/c, d/e/f and g/h/i | CRT (a/b/c), CTRW (d/e/f) and CTRW (g/h/i) | a/b/c is the temperature GA, d/e/f the heat setpoint temperature GA and g/h/i the cool setpoint temperature GA. |
+| Boolean             | DPT 1.xxx    | a/b/c        | a/b/c         | CTW          |                                                              |
+| 1 byte unsigned integer | DPT 5.xxx | a/b/c        | a/b/c         | CTW          |                                                              |
+| 1 byte signed integer | DPT 6.xxx   | a/b/c        | a/b/c         | CTW          |                                                              |
+| 2 bytes unsigned integer | DPT 7.xxx | a/b/c        | a/b/c         | CTW          |                                                              |
+| 2 bytes signed integer | DPT 8.XXX   | a/b/c        | a/b/c         | CTW          |                                                              |
+| 3 bit controlled    | 3.007 / 3.008 | a/b/c        | a/b/c         | CTW          |                                                              |
+| String              | DPT 16.000 / 16.001 | a/b/c | a/b/c | CTW | String data type for text values. |
 
 [ 1 ]: Device configuration in ETS may be required for this object to be shown as available.
 
 ### Events
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-<colgroup>
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Event</th>
-<th scope="col" class="left">Argument</th>
-<th scope="col" class="left">Resource type</th>
-<th scope="col" class="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left"><code>PRESS</code></td>
-<td class="left">&#xa0;</td>
-<td class="left">Button</td>
-<td class="left">Button press</td>
-</tr>
-
-<tr>
-<td class="left"><code>RELEASE</code></td>
-<td class="left">&#xa0;</td>
-<td class="left">Button</td>
-<td class="left">Button release</td>
-</tr>
-
-<tr>
-<td class="left"><code>HOLD</code></td>
-<td class="left">&#xa0;</td>
-<td class="left">Button</td>
-<td class="left">Button hold, depends on setup. Typically means holding a button for 200 ms or more.</td>
-</tr>
-
-<tr>
-<td class="left"><code>SET</code></td>
-<td class="left">Number</td>
-<td class="left">All non standard</td>
-<td class="left">Generated when the value is set.</td>
-</tr>
-
-<tr>
-<td class="left"><code>SET_NON_ZERO</code></td>
-<td class="left">&#xa0;</td>
-<td class="left">All non standard</td>
-<td class="left">Generated when the value is set to a non zero one.</td>
-</tr>
-</tbody>
-</table>
+| Event               | Argument     | Resource type | Description                                                  |
+|---------------------|--------------|---------------|--------------------------------------------------------------|
+| PRESS               |              | Button        | Button press                                                 |
+| RELEASE             |              | Button        | Button release                                               |
+| HOLD                |              | Button        | Button hold, depends on setup. Typically means holding a button for 200 ms or more. |
+| SET                 | Number       | All non standard | Generated when the value is set.                             |
+| SET_NON_ZERO        |              | All non standard | Generated when the value is set to a non zero one.            |
 
 The value ranges for the native KNX resources are as follows:
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Resource type</th>
-<th scope="col" class="left">Range</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">Boolean</td>
-<td class="left">0 .. 1</td>
-</tr>
-
-<tr>
-<td class="left">1 Byte unsigned integer</td>
-<td class="left">0 .. 255</td>
-</tr>
-
-<tr>
-<td class="left">1 Byte signed integer</td>
-<td class="left">-128 .. 127</td>
-</tr>
-
-<tr>
-<td class="left">2 Bytes unsigned integer</td>
-<td class="left">0 .. 65535</td>
-</tr>
-
-<tr>
-<td class="left">2 Bytes signed integer</td>
-<td class="left">-32768 .. 32767</td>
-</tr>
-
-<tr>
-<td class="left">3 Bit Controlled</td>
-<td class="left">0 .. 15 (0 to 7 setp size, add 8 for increase instead of decrease)</td>
-</tr>
-</tbody>
-</table>
+| Resource type       | Range        |
+|---------------------|--------------|
+| Boolean             | 0 .. 1       |
+| 1 Byte unsigned integer | 0 .. 255 |
+| 1 Byte signed integer | -128 .. 127 |
+| 2 Bytes unsigned integer | 0 .. 65535 |
+| 2 Bytes signed integer | -32768 .. 32767 |
+| 3 Bit Controlled    | 0 .. 15 (0 to 7 setp size, add 8 for increase instead of decrease) |
+| String              | Text         |
 
 ### Commands
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Command</th>
-<th scope="col" class="left">Argument</th>
-<th scope="col" class="left">Resource type</th>
-<th scope="col" class="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">PRESS</td>
-<td class="left">&#xa0;</td>
-<td class="left">Toggle</td>
-<td class="left">Swaps the resource value</td>
-</tr>
-
-<tr>
-<td class="left">PRESS</td>
-<td class="left">&#xa0;</td>
-<td class="left">Button</td>
-<td class="left">Button press</td>
-</tr>
-
-<tr>
-<td class="left">RELEASE</td>
-<td class="left">&#xa0;</td>
-<td class="left">Button</td>
-<td class="left">Button release</td>
-</tr>
-
-<tr>
-<td class="left">SET</td>
-<td class="left">1..100</td>
-<td class="left">Dimmer, Dimmer without state</td>
-<td class="left">Sets the level of the dimmer to a percentage</td>
-</tr>
-
-<tr>
-<td class="left">RAISE</td>
-<td class="left">&#xa0;</td>
-<td class="left">Shade, Shade without state</td>
-<td class="left">Starts raising the shade</td>
-</tr>
-
-<tr>
-<td class="left">LOWER</td>
-<td class="left">&#xa0;</td>
-<td class="left">Shade, Shade without state</td>
-<td class="left">Starts lowering the shade</td>
-</tr>
-
-<tr>
-<td class="left">STOP</td>
-<td class="left">&#xa0;</td>
-<td class="left">Shade, Shade without state</td>
-<td class="left">Stops shade motion</td>
-</tr>
-
-<tr>
-<td class="left">SET</td>
-<td class="left">Boolean</td>
-<td class="left">GPIO</td>
-<td class="left">Sets the level of the GPIO</td>
-</tr>
-
-<tr>
-<td class="left">SET</td>
-<td class="left">Resource range</td>
-<td class="left">All non standard</td>
-<td class="left">Sets the value of the resource.</td>
-</tr>
-
-<tr>
-<td class="left">SET SETPOINT</td>
-<td class="left">[ 2 ]</td>
-<td class="left">Thermostat 1SP</td>
-<td class="left">Sets the setpoint to the given temperature</td>
-</tr>
-
-<tr>
-<td class="left">SET COOL SP</td>
-<td class="left">[ 2 ]</td>
-<td class="left">Thermostat 2SP</td>
-<td class="left">Sets the cool setpoint to the given temperature</td>
-</tr>
-
-<tr>
-<td class="left">SET HEAT SP</td>
-<td class="left">[ 2 ]</td>
-<td class="left">Thermostat 2SP</td>
-<td class="left">Sets the heat setpoint to the given temperature</td>
-</tr>
-
-</tbody>
-</table>
+| Command             | Argument     | Resource type | Description                                                  |
+|---------------------|--------------|---------------|--------------------------------------------------------------|
+| PRESS               |              | Toggle        | Swaps the resource value                                     |
+| PRESS               |              | Button        | Button press                                                 |
+| RELEASE             |              | Button        | Button release                                               |
+| PRESS        |               | Scene                   | Activates the scene        |
+| SET                 | 1..100       | Dimmer, Dimmer without state | Sets the level of the dimmer to a percentage |
+| SET                 | 1..100       | Shade | Sets the level of the shade to a percentage |
+| RAISE               |              | Shade, Shade without state | Starts raising the shade                                     |
+| LOWER               |              | Shade, Shade without state | Starts lowering the shade                                    |
+| STOP                |              | Shade, Shade without state | Stops shade motion                                           |
+| SET                 | Boolean      | GPIO          | Sets the level of the GPIO                                   |
+| SET                 | Resource range | All non standard | Sets the value of the resource.                              |
+| SET SETPOINT        | [ 2 ]        | Thermostat 1SP | Sets the setpoint to the given temperature                   |
+| SET COOL SP         | [ 2 ]        | Thermostat 2SP | Sets the cool setpoint to the given temperature              |
+| SET HEAT SP         | [ 2 ]        | Thermostat 2SP | Sets the heat setpoint to the given temperature              |
 
 [ 2 ]: Temperature as a string in the form NU where N is the numeric value of the temperature and U a letter indicating the units, either C for Celsius or F for Fahrenheit. 
 
 ### Resource State
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+| Resource type       | State        | Type     | Description                                                  |
+|---------------------|--------------|----------|--------------------------------------------------------------|
+| Toggle, GPIO        | STATE        | 0..1     | Current value                                                |
+| Dimmer              | LEVEL        | 0..100   | Current level in percentage                                  |
+| Shade               | LEVEL        | 0..100   | Current level in percentage                                  |
+| Thermostat 1SP, Thermostat 2SP | TEMPERATURE | [ 2 ] | Current ambient temperature.                                 |
+| Thermostat 1SP      | SETPOINT     | [ 2 ]    | Setpoint current value.                                      |
+| Thermostat 2SP      | HEAT SP      | [ 2 ]    | Heat setpoint current value.                                 |
+| Thermostat 2SP      | COOL SP      | [ 2 ]    | Cool setpoint current value.                                 |
+| Toggle, GPIO, Dimmer, Shade, Thermostat 1SP, Thermostat 2SP, raw group addresses (1 Byte, 2 Byte, 3 bit, String) | ONLINE | true, false | Indicates whether or not the other resource states reflect the state on KNX for the given address. |
+| Raw group addresses (1 Byte, 2 Byte, 3 bit, String) | VALUE | resource type | The current value of the group address on KNX side |
 
 
-<colgroup>
-<col  class="left" />
-<col  class="right" />
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="left">Resource type</th>
-<th scope="col" class="right">State</th>
-<th scope="col" class="right">Type</th>
-<th scope="col" class="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="left">Toggle, GPIO</td>
-<td class="right">STATE</td>
-<td class="right">0..1</td>
-<td class="left">Current value</td>
-</tr>
+Thermostats with modes
+-------------------------------------
 
-<tr>
-<td class="left">Dimmer</td>
-<td class="right">LEVEL</td>
-<td class="right">0..100</td>
-<td class="left">Current level in percentage</td>
-</tr>
+There are two types of thermostats with modes: **HVAC Mode** and **HVAC Control Mode**. Both types support 1SP and 2SP.
 
-<tr>
-<td class="left">Shade</td>
-<td class="right">LEVEL</td>
-<td class="right">0..100</td>
-<td class="left">Current level in percentage</td>
-</tr>
+### Thermostat with HVAC Mode
 
-<tr>
-<td class="left">Thermostat 1SP, Thermostat 2SP</td>
-<td class="right">TEMPERATURE</td>
-<td class="right">[ 2 ]</td>
-<td class="left">Current ambient temperature.</td>
-</tr>
+DPTs used for this thermostat:
 
-<tr>
-<td class="left">Thermostat 1SP</td>
-<td class="right">SETPOINT</td>
-<td class="right">[ 2 ]</td>
-<td class="left">Setpoint current value.</td>
-</tr>
+-   Temperature and Setpoints (DPT 9.001).
+-   HVACMode (DPT 20.102).
+-   HeatCool (DPT 1.100).
+-   Switch (DPT 1.001): Optional.
 
-<tr>
-<td class="left">Thermostat 2SP</td>
-<td class="right">HEAT SP</td>
-<td class="right">[ 2 ]</td>
-<td class="left">Heat setpoint current value.</td>
-</tr>
+##### Switch DPT
+Specifying a GA for the Switch is optional. When setting the thermostat to Off, if the Switch variable is present, it's set to 0. Otherwise, HVACMode is set to `Building Protection` or `Standby`, depending on the configuration in the Interfaces tab.
 
-<tr>
-<td class="left">Thermostat 2SP</td>
-<td class="right">COOL SP</td>
-<td class="right">[ 2 ]</td>
-<td class="left">Cool setpoint current value.</td>
-</tr>
+##### SET MODE command
 
-<tr>
-<td class="left">Toggle, GPIO, Dimmer, Shade, Thermostat 1SP, Thermostat 2SP</td>
-<td class="right">ONLINE</td>
-<td class="right">true, false</td>
-<td class="left">Indicates whether or not the other resource states reflect the state on KNX for the given address.</td>
-</tr>
+The following tables illustrate how SET MODE command and UI-based mode changes affect KNX DPTs:
 
-</tbody>
-</table>
+##### With Switch:
+
+| Thermostat state | KNX DPTs |
+|---------------------|----------|
+| Auto  | Switch = 1 <br> HvacMode = 0 (Auto) |
+| Heat  | Switch = 1 <br>HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  | Switch = 1 <br> HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | Switch = 1 <br> HvacMode = 3 (Eco)  |
+| Off  | Switch = 0  | 
+
+##### Without Switch:
+
+| Thermostat state | KNX DPTs |
+|---------------------|----------|
+| Auto  |  HvacMode = 0 (Auto) |
+| Heat  | HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  |  HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | HvacMode = 3 (Eco)  |
+| Off  | HvacMode = 2 (StandBy) or 4 (BldProt)  | 
+
+
+##### Mapping between BLI Thermostat state and KNX DPTs
+
+The following table shows the corresponding BLI thermostat state depending on the values of KNX DPTs.
+
+##### With Switch:
+
+| HvacMode thermostat | KNX DPTs |
+|---------------------|----------|
+| Auto  | Switch = 1 <br> HvacMode = 0 (Auto) <br> HeatCool = any |
+| Heat  | Switch = 1 <br>HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  | Switch = 1 <br> HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | Switch = 1 <br> HvacMode = 3 (Eco) <br> HeatCool = any |
+| Off  | Switch = 0 <br> HvacMode = any <br>  HeatCool = any | 
+
+##### Without Switch:
+
+| HvacMode thermostat | KNX DPTs |
+|---------------------|----------|
+| Auto  | HvacMode = 0 (Auto) <br> HeatCool = any |
+| Heat  | HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  | HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | HvacMode = 3 (Eco)  <br> HeatCool = any |
+| Off  | HvacMode = 4 (BldProt) or 2 (StandBy) <br> HeatCool = any |
+
+
+
+### Thermostat with HVAC Control Mode
+
+DPTs used for this thermostat:
+
+-   Temperature and setpoints (DPT 9.001).
+-   HVAC Control Mode (DPT 20.105).
+-   Switch (DPT 1.001): Optional.
+
+##### Switch DPT
+Specifying a GA for the Switch is optional. When setting the thermostat to Off, if the Switch variable is present, it's set to 0. Otherwise, HVACContrMode is set to `Off`.
+
+##### SET MODE command
+
+The following tables illustrate how SET MODE command and UI-based mode changes affect KNX DPTs:
+
+##### With Switch:
+
+| Thermostat state | KNX DPTs |
+|---------------------|----------|
+| Auto  | Switch = 1 <br> HvacContrMode = 0 (Auto) |
+| Heat  | Switch = 1 <br>HvacContrMode = 1 (Heat)  |
+| Cool  | Switch = 1 <br> HvacContrMode = 3 (Cool)  |
+| Eco  | Switch = 1 <br> HvacContrMode = 13 (Eco)  |
+| Off  | Switch = 0  | 
+
+##### Without Switch:
+
+| Thermostat state | KNX DPTs |
+|---------------------|----------|
+| Auto  | HvacContrMode = 0 (Auto) |
+| Heat  | HvacContrMode = 1 (Heat)  |
+| Cool  | HvacContrMode = 3 (Cool)  |
+| Eco  | HvacContrMode = 13 (Eco)  |
+| Off  | HvacContrMode = 6 (Off)  | 
+
+
+##### Mapping between BLI Thermostat state and KNX DPTs
+
+The following table shows the corresponding BLI thermostat state depending on the values of KNX DPTs.
+
+##### With Switch:
+
+| HvacMode thermostat | KNX DPTs |
+|---------------------|----------|
+| Auto  | Switch = 1 <br> HvacMode = 0 (Auto) <br> HeatCool = any |
+| Heat  | Switch = 1 <br>HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  | Switch = 1 <br> HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | Switch = 1 <br> HvacMode = 3 (Eco) <br> HeatCool = any |
+| Off  | Switch = 0 <br> HvacMode = any <br>  HeatCool = any | 
+
+##### Without Switch:
+
+| HvacMode thermostat | KNX DPTs |
+|---------------------|----------|
+| Auto  | HvacMode = 0 (Auto) <br> HeatCool = any |
+| Heat  | HvacMode = 1 (Comfort) <br> HeatCool = 1 (Heat) |
+| Cool  | HvacMode = 1 (Comfort) <br> HeatCool = 0 (Cool) |
+| Eco  | HvacMode = 3 (Eco)  <br> HeatCool = any |
+| Off  | HvacMode = 4 (BldProt) or 2 (StandBy) <br> HeatCool = any |
+
+
+
+
+
+### Resource Address
+
+Except for Temperature, which is a read-only variable and has only one associated group address, other variables may have: 
+1. **One address for both read and write operations**
+2. **Two separate addresses**:
+   - First address: Read operation (e.g., retrieving the current value).
+   - Second address: Write operation (e.g., changing a setting).
+
+When two different addresses are used for read/write, they have to be separated by a comma (`,`). Here's an example:
+
+> 1/2/3,1/2/4 // (read: 1/2/3, write: 1/2/4)
+
+**Switch Address:** The Switch address is optional.
+
+**Group addresses order**:
+- 1SP HVAC Mode
+> Temperature:Setpoint:HvacMode:HeatCool:[Switch]
+
+- 2SP HVAC Mode:
+>Temperature:HeatSP:CoolSP:HvacMode:HeatCool:[Switch]
+
+- 1SP HVAC Control Mode: 
+> Temperature:Setpoint:HvacControlMode:[Switch]
+
+- 2SP HVAC Control Mode: 
+> Temperature:HeatSP:CoolSP:HvacControlMode:[Switch]
+
+### Address examples
+
+- 1SP HVAC Mode
+> 0/0/1:0/0/2:0/0/3:0/0/4:0/0/5
+  - Temperature: "0/0/1" (read)
+  - Setpoint: "0/0/2" (read/write)
+  - HvacMode: "0/0/3" (read/write)
+  - HeatCool: "0/0/4" (read/write)
+  - Switch: "0/0/5" (read/write)
+
+
+- 1SP HVAC Control Mode
+> 0/2/0:0/2/1,0/2/2:0/2/3
+  - Temperature: "0/2/0" (read)
+  - Setpoint: "0/2/1,0/2/2" (0/2/1 read, 0/2/2 write)
+  - HvacControlMode: "0/2/3" (read/write)
+  - Switch: (not set)
+
+
+- 2SP HVAC Mode
+> 0/4/0:0/4/1:0/4/2:0/4/3,0/4/4:0/4/5,0/4/6:0/4/7
+  - Temperature: "0/4/0" (read)
+  - Heat SP: "0/4/1" (read/write)
+  - Cool SP: "0/4/2" (read/write)
+  - HvacMode: "0/4/3,0/4/4" (0/4/3 read, 0/4/4 write)
+  - HeatCool: "0/4/5,0/4/6" (0/4/5 read, 0/4/6 write)
+  - Switch: "0/4/7" (read/write)
+
+
 
 
 
@@ -660,6 +414,12 @@ KNX resources can be loaded from an ETS project using: 1) Group Address CSV expo
 
  2. OPC export (ESF).
  On the main menu bar under "Extras" select "Export OPC" and leave the type unchanged (EIB session files (esf)).
- *This is the preferred method, as it provides more complete information for importing into BeoLiving Intelligence.*
+
+ 3. knxproj export.
+ On "Local Projects" view, each project has an "Export" button that exports to .knxproj format.
+ If Functions Blocks are used, resources can be loaded with the exact address and resource type.
+ Group addresses will be listed showing its name, type and help description.
+ *This is the preferred way, as it provides more information thus a better import in BeoLink Gateway.*
 
 On BeoLiving Intelligence's resources screen, use the `Import Resources` button for adding resources from the ETS export file.
+
