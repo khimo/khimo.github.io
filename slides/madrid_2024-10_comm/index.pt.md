@@ -38,21 +38,22 @@ em 5 minutos de tempo de configuração
 ---
 
 ## SIMPLES DE CONFIGURAR: 
-<small>Você pode configurar tudo isso!</small>
+<small>Podes configurar tudo isto!</small>
 
 
 <!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" class="container" -->
 
 
 
-1. Defina as Zonas
-1. Conecte ao sistema de terceiros
-1. Carregue os recursos em cada zona
+1. Define as Zonas
+1. Conecta ao sistema de terceiros
+1. Carrega os recursos em cada zona
 1. Feito
 
-<small>Todas as interfaces são preenchidas e prontas para uso em menos de 80 segundos! </small>
+<small>Todas as interfaces são preenchidas e prontas a usar em menos de 80 segundos! </small>
 
 |||
+
 <iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
@@ -74,7 +75,7 @@ em 5 minutos de tempo de configuração
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-Uma macro é uma **Lista de eventos** que aciona 
+Uma macro é uma **Lista de eventos** que desencadeia 
 <br/> uma lista ordenada de **comandos**
 
 
@@ -84,7 +85,7 @@ Uma macro é uma **Lista de eventos** que aciona
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 <video data-autoplay controls width=650 src="./res/ai.webm"></video>
-<small>O assistente de IA pode fazer as macros por você</small>
+<small>O assistente de IA pode fazer as macros por ti</small>
 
 ---
 
@@ -110,7 +111,7 @@ Note:
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
-- Configuração a partir da **App BeoLiving**
+- Configuração a partir da **BeoLiving App**
 - Assistentes de **Voz**
 - Philips Hue
 - B&O - **AV e Halo**
@@ -118,7 +119,7 @@ Note:
 - *Grupos de produtos*
 
 Note:
-BLI é projetado para o usuário final. Pronto para uso, pode ser configurado por alguns passos fáceis e não técnicos.
+BLI é projetado para o utilizador final. Fora da caixa, pode ser configurado por alguns passos fáceis e não técnicos.
 
 
 ----
@@ -127,10 +128,10 @@ BLI é projetado para o usuário final. Pronto para uso, pode ser configurado po
 <!-- section.present css
 <!-- .slide: class="whiteBack" data-background-image="./res/building.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-- Painel de administração em tempo real <br/> <small>Programação de macros, assistente de IA, Multiusuário, Tempo real</small>
+- Painel de administração em tempo real <br/> <small>Programação de macros, assistente de IA, Multiutilizador, Tempo real</small>
 - Centenas de drivers de dispositivos<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
-- Acesso remoto<br/><small>Use a app fora de casa</small>
-- Programação remota <b>[ NOVO ]</b> <br/><small>Use túneis para programar o BLI remotamente</small>
+- Acesso remoto<br/><small>Usa a app fora de casa</small>
+- Programação remota <b>[ NOVO ]</b> <br/><small>Usa túneis para programar o BLI remotamente</small>
 
 ---
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
@@ -158,7 +159,7 @@ Criamos **relações** com os nossos clientes, relações que crescem.
 <!-- .slide: data-background-image="./res/framebl8.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 ###### Casos de Uso 
-### Experiência de cinema
+### Experiência de Cinema
 
 <br/>
 
@@ -166,7 +167,7 @@ BeoSound Theatre
 
 Projetor
 
-Tela
+Ecrã
 
 Elevador
 
@@ -178,40 +179,40 @@ Cortinas
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
+##### Casos de Uso 
 ### BeoRemote One e Halo 
-### <small>Como controle remoto de automação residencial</small>
+### <small>Como controlo remoto de automação residencial</small>
 
 <img src="./res/halo.png" class="r-frame" height="200" />
 <img src="./res/beoremote.png" class="r-frame" height="200" />
 
-Controle luzes, cortinas e áudio com os Controles Remotos B&O
+Controla luzes, cortinas e áudio com os Controles Remotos B&O
 
-Controle o volume de vários produtos
+Gere o volume de múltiplos produtos
 
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
-### Grupos de produtos
+##### Casos de Uso 
+### Grupos de Produtos
 
-**Ligação persistente** entre vários altifalantes
+**Ligação persistente** entre múltiplos altifalantes
 
-todos os altifalantes funcionando como um só
+todos os altifalantes a funcionar como um só
 
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
+##### Casos de Uso 
 ### Anúncios / Notificações
 
 <br/>
 
-O seu produto Mozart pode alertá-lo quando alguém está à porta <br/>
+O teu produto Mozart pode alertar-te quando alguém está à porta <br/>
 
 <br/>
 
-ou enviar uma notificação na TV para abrir a porta com o seu controle remoto.
+ou enviar uma notificação na TV para abrir a porta com o teu controlo remoto.
 
 
 
@@ -219,16 +220,16 @@ ou enviar uma notificação na TV para abrir a porta com o seu controle remoto.
 ###### Casos de Uso Avançados 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Do legado ao presente
+### Do Legado ao Presente
 
-Use o BLI como um habilitador de tecnologia:
+Usa o BLI como um facilitador de tecnologia:
 
 
 Alexa / Google Home / IA
 
 Acesso remoto
 
-App BeoLiving
+BeoLiving App
 
 Halo
 
@@ -240,7 +241,7 @@ Halo
 
 <br/>
 
-**Soluções de alta qualidade** para as **salas que importam**
+**Soluções de alta gama** para as **salas que importam**
 
 **Soluções IoT** para as outras
 
@@ -258,9 +259,9 @@ Tudo **integrado usando o BLI**
 
 O BeoLiving Intelligence integra-se com o Mirigi.
 
-**Aborde um edifício inteiro!**
+**Aborda um edifício inteiro!**
 
-<small>Ex.: Solicite o seu carro a partir de um botão no seu Halo.</small>
+<small>Ex.: Solicita o teu carro a partir de um botão no teu Halo.</small>
 
 
 <b>Mais informações: <a href="https://mirigi.com/"> mirigi.com </a> </b>
@@ -271,8 +272,8 @@ O BeoLiving Intelligence integra-se com o Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO
-### Automação de loja
+##### Casos de Uso
+### Automação de Lojas
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
@@ -286,12 +287,12 @@ O BeoLiving Intelligence integra-se com o Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Diretrizes da Loja para o Sucesso
+### Diretrizes para o Sucesso na Loja
 
 <br/>
 
 **Mantenha-o simples**  <br/>
-<small>com demos que sempre funcionam.</small>
+<small>com demos que funcionam sempre.</small>
 
 <br/>
 
@@ -309,4 +310,8 @@ O BeoLiving Intelligence integra-se com o Mirigi.
 <b><a href="https://khimo.github.io">khimo.github.io</a></b>
 
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
+
+---
+
+# Obrigado!
 

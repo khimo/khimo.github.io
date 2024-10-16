@@ -50,9 +50,10 @@ en 5 minutos de tiempo de configuración
 1. Carga los recursos en cada zona
 1. Listo
 
-<small>¡Todas las interfaces están pobladas y listas para usar en menos de 80 segundos!</small>
+<small>¡Todas las interfaces están pobladas y listas para funcionar en menos de 80 segundos! </small>
 
 |||
+
 <iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
@@ -94,7 +95,7 @@ Una macro es una **Lista de eventos** que desencadena
 
 <br/>
 
-Esencial <small> nivel de entrada </small> 
+Essential <small> nivel de entrada </small> 
 
 <br/>
 
@@ -102,15 +103,15 @@ Esencial <small> nivel de entrada </small>
 
 
 Note:
-  - Esencial: Un controlador de hogar de entrada (De fábrica) 
-  - PRO: Esencial + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
+  - Essentia:l Un controlador de hogar de entrada (De fábrica) 
+  - PRO: Essential  + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
 
 ----
-### Esencial <small>Nivel de entrada</small>
+### Essential <small>Nivel de entrada</small>
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
-- Configuración desde la **App BeoLiving**
+- Configuración desde la **BeoLiving App**
 - Asistentes de **Voz**
 - Philips Hue
 - B&O - **AV y Halo**
@@ -178,7 +179,7 @@ Persianas
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
+##### Casos de Uso 
 ### BeoRemote One y Halo 
 ### <small>Como control remoto de automatización del hogar</small>
 
@@ -192,7 +193,7 @@ Maneja el volumen de múltiples productos
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
+##### Casos de Uso 
 ### Grupos de productos
 
 **Enlace persistente** entre múltiples altavoces
@@ -202,7 +203,7 @@ todos los altavoces funcionando como uno
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
+##### Casos de Uso 
 ### Anuncios / Notificaciones
 
 <br/>
@@ -228,7 +229,7 @@ Alexa / Google Home / IA
 
 Acceso remoto
 
-App BeoLiving
+BeoLiving App
 
 Halo
 
@@ -258,7 +259,7 @@ Todo **integrado usando el BLI**
 
 El BeoLiving Intelligence se integra con Mirigi.
 
-**¡Acércate a un edificio completo!**
+**¡Aborda un edificio completo!**
 
 <small>Ej.: Solicita tu coche desde un botón en tu Halo.</small>
 
@@ -271,7 +272,7 @@ El BeoLiving Intelligence se integra con Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO
+##### Casos de Uso
 ### Automatización de tiendas
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
@@ -309,4 +310,8 @@ El BeoLiving Intelligence se integra con Mirigi.
 <b><a href="https://khimo.github.io">khimo.github.io</a></b>
 
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
+
+---
+
+# ¡Gracias!
 

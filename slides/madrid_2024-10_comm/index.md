@@ -53,6 +53,7 @@ in 5 minutes of configuration time
 <small>All the interfaces are populated and ready to go in less than 80 seconds! </small>
 
 |||
+
 <iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
@@ -309,3 +310,7 @@ The BeoLiving Intelligence integrates with Mirigi.
 <b><a href="https://khimo.github.io">khimo.github.io</a></b>
 
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
+
+---
+
+# Thanks!
