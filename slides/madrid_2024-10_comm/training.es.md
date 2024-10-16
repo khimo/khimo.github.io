@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Entrenamiento técnico</small>
 <br/>
-<small>Madrid, 2024-10</small>
+<small>Montevideo, 2024-10</small>
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -39,14 +39,14 @@ layout: slides
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Botón de usuario
 
-- **Función 2**: Establecer la contraseña del nombre de usuario _admin_ a _"admin"_ (válido para los siguientes) 5 minutos. Consulte la sección [*Interfaz de configuración*](06-web_interface_usage#setup-interface) para más información.
-- **Función 3**: Establecer la configuración de red a IP fija (192.168.1.10).
-- **Función 4**: Establecer la configuración de red para usar DHCP.
+- **Función 2**: Establecer la contraseña del nombre de usuario _admin_ a _"admin"_ (válido por los siguientes) 5 minutos. Consulte la sección [*Interfaz de configuración*](06-web_interface_usage#setup-interface) para más información.
+- **Función 3**: Configurar los ajustes de red a IP fija (192.168.1.10).
+- **Función 4**: Configurar los ajustes de red para usar DHCP.
 - **Función 5**: Borrar toda la configuración y ajustes.
 
 ---
 
-#### 1 | Encontrar en la Red
+### 1 | Encontrar en la Red
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Usando la App BeoLiving:
@@ -95,7 +95,7 @@ Ahora defina la contraseña como **khimo**.
 
 - Ir a "Admin -> Zones".
 - Presionar "Agregar Área" y luego el "+" para agregar la zona.
-- Usar el nombre de su equipo para el área, y elegir un nombre y una imagen.
+- Use el nombre de su equipo para el área, y elija un nombre y una imagen.
 
 Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden elegir una foto que los represente para la habitación.
 
@@ -108,7 +108,7 @@ Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden el
 - Ir a "Admin -> Systems"
 - Presionar el símbolo "+" en su zona y agregar el controlador "Philips Hue CLIP"
 
-Dirección de Philips hue: 
+Dirección de Philips hue:
 
 
 ---
@@ -176,7 +176,7 @@ Discutimos cómo mantener la tienda funcionando cuando los números de serie cam
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 - Ir a "Interfaces -> Halo"
 - Agregar un botón elegante
-- Crear una macro con este botón usando IA
+- Crear un macro con este botón usando IA
 
 "Reproducir los Beatles cuando se presione el tercer botón de la segunda página"
 
@@ -188,7 +188,9 @@ Discutimos cómo mantener la tienda funcionando cuando los números de serie cam
 
 ---
 
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+## Entrenamiento técnico: Ejercicio 3
 
 - Ir a "Interfaces -> Halo"
 - Agregar un botón de comportamiento de volumen
@@ -196,6 +198,20 @@ Discutimos cómo mantener la tienda funcionando cuando los números de serie cam
 
 ---
 
+<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+##### Entrenamiento técnico: Túnel remoto de Khimo y especialistas remotos
+<div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
+
+<iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
+
+
+</div>
+
+---
+
+
+<!-- .slide: data-background-image="./res/end.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 # ¡Gracias!
 

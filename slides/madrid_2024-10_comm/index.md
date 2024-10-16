@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Simple integrations that works</small>
 <br/>
-<small>Madrid, 2024-10</small>
+<small>Montevideo, 2024-10</small>
 
 
 ---

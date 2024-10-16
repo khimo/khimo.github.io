@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Integraciones simples que funcionan</small>
 <br/>
-<small>Madrid, 2024-10</small>
+<small>Montevideo, 2024-10</small>
 
 
 ---
@@ -50,7 +50,7 @@ en 5 minutos de tiempo de configuración
 1. Carga los recursos en cada zona
 1. Listo
 
-<small>¡Todas las interfaces están pobladas y listas para funcionar en menos de 80 segundos! </small>
+<small>¡Todas las interfaces están pobladas y listas para usar en menos de 80 segundos! </small>
 
 |||
 
@@ -95,7 +95,7 @@ Una macro es una **Lista de eventos** que desencadena
 
 <br/>
 
-Essential <small> nivel de entrada </small> 
+Esencial <small> nivel de entrada </small> 
 
 <br/>
 
@@ -103,11 +103,11 @@ Essential <small> nivel de entrada </small>
 
 
 Note:
-  - Essentia:l Un controlador de hogar de entrada (De fábrica) 
-  - PRO: Essential  + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
+  - Esencial: Un controlador de hogar de entrada (De fábrica) 
+  - PRO: Esencial + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
 
 ----
-### Essential <small>Nivel de entrada</small>
+### Esencial <small>Nivel de entrada</small>
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
@@ -130,7 +130,7 @@ BLI está diseñado para el usuario final. Fuera de la caja, podría configurars
 
 - Panel de administración en tiempo real <br/> <small>Programación de macros, asistente de IA, Multiusuario, Tiempo real</small>
 - Cientos de controladores de dispositivos<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
-- Acceso remoto<br/><small>Usa la app desde fuera de tu hogar</small>
+- Acceso remoto<br/><small>Usa la aplicación desde fuera de tu hogar</small>
 - Programación remota <b>[ NUEVO ]</b> <br/><small>Usa túneles para programar el BLI remotamente</small>
 
 ---
@@ -152,7 +152,7 @@ Creamos **relaciones** con nuestros clientes, relaciones que crecen.
 
 <!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ## CASOS DE USO
-## Soluciones Simples Que Hacen la Diferencia
+## Soluciones Simples Que Marcan la Diferencia
 
 ---
 
@@ -179,7 +179,7 @@ Persianas
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso 
+##### CASOS DE USO 
 ### BeoRemote One y Halo 
 ### <small>Como control remoto de automatización del hogar</small>
 
@@ -193,7 +193,7 @@ Maneja el volumen de múltiples productos
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso 
+##### CASOS DE USO 
 ### Grupos de productos
 
 **Enlace persistente** entre múltiples altavoces
@@ -203,7 +203,7 @@ todos los altavoces funcionando como uno
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso 
+##### CASOS DE USO 
 ### Anuncios / Notificaciones
 
 <br/>
@@ -261,7 +261,7 @@ El BeoLiving Intelligence se integra con Mirigi.
 
 **¡Aborda un edificio completo!**
 
-<small>Ej.: Solicita tu coche desde un botón en tu Halo.</small>
+<small>Ej.: Solicita tu auto desde un botón en tu Halo.</small>
 
 
 <b>Más información: <a href="https://mirigi.com/"> mirigi.com </a> </b>
@@ -272,7 +272,7 @@ El BeoLiving Intelligence se integra con Mirigi.
 ---
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### Casos de Uso
+##### CASOS DE USO
 ### Automatización de tiendas
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />

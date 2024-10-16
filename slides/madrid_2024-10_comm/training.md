@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Technical training</small>
 <br/>
-<small>Madrid, 2024-10</small>
+<small>Montevideo, 2024-10</small>
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -46,7 +46,7 @@ layout: slides
 
 ---
 
-#### 1 | Find on Network
+### 1 | Find on Network
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Using the BeoLiving App:
@@ -188,7 +188,9 @@ We discuss how to keep the store running when the serial numbers change all the 
 
 ---
 
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+## Technical training: Exercise 3
 
 - Go to "Interfaces -> Halo"
 - Add one volume behaviour button
@@ -196,6 +198,20 @@ We discuss how to keep the store running when the serial numbers change all the 
 
 ---
 
+<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+##### Technical training: Khimo remote tunnel and remote specialists
+<div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
+
+<iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
+
+
+</div>
+
+---
+
+
+<!-- .slide: data-background-image="./res/end.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 # Thanks!
 
