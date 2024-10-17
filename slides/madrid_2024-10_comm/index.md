@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Simple integrations that works</small>
 <br/>
-<small>Montevideo, 2024-10</small>
+<small>Madrid, 2024-10</small>
 
 
 ---
@@ -84,7 +84,7 @@ A macro is a **List of events** that triggers
 ## EASY TO AUTOMATE: AI
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-<video data-autoplay controls width=650 src="./res/ai.webm"></video>
+<video data-autoplay autoplay controls width=650 src="./res/ai.webm"></video>
 <small>The AI assistant could do the macros for you</small>
 
 ---
@@ -99,7 +99,7 @@ Essential <small> entry level </small>
 
 <br/>
 
-<div>PRO <small> for the professional </small></div> <!-- .element: class="fragment" data-fragment-index="2" -->
+<div>PRO <small> for the professional </small></div> <!-- .xelement: class="fragment" data-fragment-index="2" -->
 
 
 Note:
@@ -134,18 +134,21 @@ BLI its designed for the end user. Out of the box, could be setted up by some no
 - Remote programming <b>[ NEW ]</b> <br/><small>Use tunnels to program the BLI remotelly</small>
 
 ---
+
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
 ## Why?
 
-We are **selling experiences**, not just products.
+
+We must **stand out**
 
 <br/>
 
-We must **stand out**.
+We are **selling experiences**
+<br/><small> not just products</small>
 
 <br/>
 
-We create **relationships** with our customers, relationships that grow.
+We create **relationships** with our customers<br/><small>relationships that grow</small>
 
 
 ---
@@ -156,10 +159,37 @@ We create **relationships** with our customers, relationships that grow.
 
 ---
 
+<!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#aaa" class="has-light-background" -->
+#### Use Cases: ONE BUTTON
+
+<img src="./res/alloff.jpg" class="r-frame" width="200" />
+
+<b>WELCOME</b> <br/>
+<b>AWAY</b> <br/>
+
+<small>The simplest integration that makes the case</small>
+
+
+---
+
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#aaa" -->
+#### Use Cases: Simple store automation
+
+<img src="./res/alloff.jpg" class="r-frame" width="200" />
+
+<b>OPEN</b> <br/>
+<b>DEMO MODE</b> <br/>
+<b>CLOSE</b> <br/>
+
+<small>Do a demonstration without touching an app!</small>
+
+
+
+---
+
 <!-- .slide: data-background-image="./res/framebl8.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-###### Use Cases 
-### Cinema experience
+#### Use Cases: Cinema experience
 
 <br/>
 
@@ -179,8 +209,7 @@ Shades
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### USE Cases 
-### BeoRemote One and Halo 
+#### Use Cases: BeoRemote One and Halo 
 ### <small>As home automation remote</small>
 
 <img src="./res/halo.png" class="r-frame" height="200" />
@@ -193,18 +222,18 @@ Handle the volume of multiple products
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### USE Cases 
-### Product groups
+#### Use Cases: Persistent Product groups
 
 **Persistent link** between multiple speakers
 
 all the speakers working like one
 
+**local operation from master and remotes**
+
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### USE Cases 
-### Announcements / Notifications
+#### Use Cases: Announcements / Notifications
 
 <br/>
 
@@ -224,14 +253,11 @@ or send a TV notification to open the door with your remote.
 
 Use the BLI as a technology enabler:
 
+<br/>
 
-Alexa / Google Home / AI
+Alexa / Google Home / AI 
 
-Remote access
-
-BeoLiving App
-
-Halo
+Remote access / BeoLiving App / Halo
 
 ----
 
@@ -249,44 +275,27 @@ Everything **integrated using the BLI**
 
 
 
-----
+---
 
-<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
-###### Advanced Use Cases 
-### Condominios : Mirigi: smart concierge.
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Advanced Use Cases: Boston Experience Center
 
-<br/>
-
-The BeoLiving Intelligence integrates with Mirigi.
-
-**Approach a full building!**
-
-<small>E.g.: Request your car from a button in your Halo.</small>
-
-
-<b>More info: <a href="https://mirigi.com/"> mirigi.com </a> </b>
-
-
-
+<video id="videoBoston" controls style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./res/boston_experience_center_short.webm" type="video/webm">
+</video>
 
 ---
 
-<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### USE Cases
-### Store automation
+<!-- .slide: data-background-image="./res/living4.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Advanced Use Cases: Boston Experience Center
 
-<img src="./res/alloff.jpg" class="r-frame" width="200" />
+<img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
 
-<b>OPEN</b> <br/>
-<b>DEMO</b> <br/>
-<b>CLOSE</b> <br/>
-
-<small>The simplest integration that makes the case</small>
-
+https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 
 ---
 
-<!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
 ### Store Guidelines to Success
 
 <br/>
@@ -296,7 +305,64 @@ The BeoLiving Intelligence integrates with Mirigi.
 
 <br/>
 
-**One person is responsable** <br/> <small> to change serial numbers in the Resource page to keep everything working.</small>
+**One person is responsable** <br/> <small> To update producs.</small>
+
+----
+
+<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Advanced Use Cases: 
+#### Condominios: Mirigi: smart concierge.
+
+<br/>
+
+A smart concierge SAS that integrates with BeoLiving Intelligence and B&O.
+
+<br/>
+
+**Approach a full building!**
+
+<br/>
+<small>E.g.: Request your car from a button in your Halo.</small>
+
+----
+
+<!-- .slide: data-background-image="./res/Jade_buildings_Sunny_Isles.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Mirigi: smart concierge: modules:
+
+- Notifications / AI
+- Work Orders
+- Valet Parking
+- Restaurants / Shops
+- Expenses
+- Polls
+- BeoLiving Intelligence
+- Reservations
+- More...
+
+----
+
+<!-- .slide: data-background-image="./res/joy.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Mirigi: smart concierge: Fully customizable:
+
+<img src="./res/mirigi/animated.gif" width="50%"/>
+
+<small>Each building deserves its APP.</small>
+
+
+----
+
+<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+
+#### Mirigi: smart concierge.
+
+
+<br/>
+
+Sell products throughout the entire building!
+
+<br/>
+
+<b>More info: <a href="https://mirigi.com/"> mirigi.com </a> </b>
 
 
 

@@ -17,7 +17,7 @@ layout: slides
 <br/>
 <small>Entrenamiento técnico</small>
 <br/>
-<small>Montevideo, 2024-10</small>
+<small>Madrid, 2024-10</small>
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
