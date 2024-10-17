@@ -75,7 +75,7 @@ en 5 minutos de tiempo de configuración
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-Una macro es una **Lista de eventos** que desencadena 
+Una macro es una **lista de eventos** que desencadena 
 <br/> una lista ordenada de **comandos**
 
 
@@ -84,12 +84,12 @@ Una macro es una **Lista de eventos** que desencadena
 ## FÁCIL DE AUTOMATIZAR: IA
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-<video data-autoplay controls width=650 src="./res/ai.webm"></video>
-<small>El asistente de IA podría hacer las macros por ti</small>
+<video data-autoplay autoplay controls width=650 src="./res/ai.webm"></video>
+<small>El asistente de IA puede crear las macros por ti</small>
 
 ---
 
-## 2 sabores:
+## 2 Sabores:
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
@@ -99,12 +99,12 @@ Esencial <small> nivel de entrada </small>
 
 <br/>
 
-<div>PRO <small> para el profesional </small></div> <!-- .element: class="fragment" data-fragment-index="2" -->
+<div>PRO <small> para el profesional </small></div> <!-- .xelement: class="fragment" data-fragment-index="2" -->
 
 
 Note:
   - Esencial: Un controlador de hogar de entrada (De fábrica) 
-  - PRO: Esencial + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
+  - PRO: Esencial + acceso remoto gratuito + nuevas características (debe comprar una actualización) 
 
 ----
 ### Esencial <small>Nivel de entrada</small>
@@ -119,7 +119,7 @@ Note:
 - *Grupos de productos*
 
 Note:
-BLI está diseñado para el usuario final. Fuera de la caja, podría configurarse con algunos pasos fáciles no técnicos.
+BLI está diseñado para el usuario final. Fuera de la caja, se puede configurar con algunos pasos fáciles no técnicos.
 
 
 ----
@@ -130,36 +130,66 @@ BLI está diseñado para el usuario final. Fuera de la caja, podría configurars
 
 - Panel de administración en tiempo real <br/> <small>Programación de macros, asistente de IA, Multiusuario, Tiempo real</small>
 - Cientos de controladores de dispositivos<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
-- Acceso remoto<br/><small>Usa la aplicación desde fuera de tu hogar</small>
+- Acceso remoto<br/><small>Usa la app desde fuera de tu hogar</small>
 - Programación remota <b>[ NUEVO ]</b> <br/><small>Usa túneles para programar el BLI remotamente</small>
 
 ---
+
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
 ## ¿Por qué?
 
-Estamos **vendiendo experiencias**, no solo productos.
+
+Debemos **destacarnos**
 
 <br/>
 
-Debemos **destacarnos**.
+Estamos **vendiendo experiencias**
+<br/><small> no solo productos</small>
 
 <br/>
 
-Creamos **relaciones** con nuestros clientes, relaciones que crecen.
+Creamos **relaciones** con nuestros clientes<br/><small>relaciones que crecen</small>
 
 
 ---
 
 <!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## CASOS DE USO
-## Soluciones Simples Que Marcan la Diferencia
+## Casos de USO
+## Soluciones Simples Que Hacen la Diferencia
+
+---
+
+<!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#aaa" class="has-light-background" -->
+#### Casos de Uso: UN BOTÓN
+
+<img src="./res/alloff.jpg" class="r-frame" width="200" />
+
+<b>BIENVENIDO</b> <br/>
+<b>FUERA</b> <br/>
+
+<small>La integración más simple que hace el caso</small>
+
+
+---
+
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#aaa" -->
+#### Casos de Uso: Automatización simple de tienda
+
+<img src="./res/alloff.jpg" class="r-frame" width="200" />
+
+<b>ABRIR</b> <br/>
+<b>MODO DEMO</b> <br/>
+<b>CERRAR</b> <br/>
+
+<small>¡Haz una demostración sin tocar una app!</small>
+
+
 
 ---
 
 <!-- .slide: data-background-image="./res/framebl8.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-###### Casos de Uso 
-### Experiencia de cine
+#### Casos de Uso: Experiencia de cine
 
 <br/>
 
@@ -179,8 +209,7 @@ Persianas
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
-### BeoRemote One y Halo 
+#### Casos de Uso: BeoRemote One y Halo 
 ### <small>Como control remoto de automatización del hogar</small>
 
 <img src="./res/halo.png" class="r-frame" height="200" />
@@ -193,18 +222,18 @@ Maneja el volumen de múltiples productos
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
-### Grupos de productos
+#### Casos de Uso: Grupos de productos persistentes
 
 **Enlace persistente** entre múltiples altavoces
 
 todos los altavoces funcionando como uno
 
+**operación local desde el maestro y los controles remotos**
+
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO 
-### Anuncios / Notificaciones
+#### Casos de Uso: Anuncios / Notificaciones
 
 <br/>
 
@@ -217,21 +246,18 @@ o enviar una notificación de TV para abrir la puerta con tu control remoto.
 
 
 ---
-###### Casos de Uso Avanzados 
+###### Casos de USO Avanzados 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### Del legado al presente
 
 Usa el BLI como un habilitador de tecnología:
 
+<br/>
 
-Alexa / Google Home / IA
+Alexa / Google Home / IA 
 
-Acceso remoto
-
-BeoLiving App
-
-Halo
+Acceso remoto / BeoLiving App / Halo
 
 ----
 
@@ -249,45 +275,28 @@ Todo **integrado usando el BLI**
 
 
 
-----
+---
 
-<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
-###### Casos de Uso Avanzados 
-### Condominios: Mirigi: conserje inteligente.
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Casos de Uso Avanzados: Centro de Experiencia de Boston
 
-<br/>
-
-El BeoLiving Intelligence se integra con Mirigi.
-
-**¡Aborda un edificio completo!**
-
-<small>Ej.: Solicita tu auto desde un botón en tu Halo.</small>
-
-
-<b>Más información: <a href="https://mirigi.com/"> mirigi.com </a> </b>
-
-
-
+<video id="videoBoston" controls style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./res/boston_experience_center_short.webm" type="video/webm">
+</video>
 
 ---
 
-<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-##### CASOS DE USO
-### Automatización de tiendas
+<!-- .slide: data-background-image="./res/living4.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Casos de Uso Avanzados: Centro de Experiencia de Boston
 
-<img src="./res/alloff.jpg" class="r-frame" width="200" />
+<img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
 
-<b>ABRIR</b> <br/>
-<b>DEMO</b> <br/>
-<b>CERRAR</b> <br/>
-
-<small>La integración más simple que hace el caso</small>
-
+https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 
 ---
 
-<!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Guías de Tienda para el Éxito
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
+### Directrices de la Tienda para el Éxito
 
 <br/>
 
@@ -296,7 +305,64 @@ El BeoLiving Intelligence se integra con Mirigi.
 
 <br/>
 
-**Una persona es responsable** <br/> <small> de cambiar los números de serie en la página de Recursos para mantener todo funcionando.</small>
+**Una persona es responsable** <br/> <small> Para actualizar productos.</small>
+
+----
+
+<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Casos de Uso Avanzados: 
+#### Condominios: Mirigi: conserje inteligente.
+
+<br/>
+
+Un conserje inteligente SAS que se integra con BeoLiving Intelligence y B&O.
+
+<br/>
+
+**¡Aborda un edificio completo!**
+
+<br/>
+<small>Ej.: Solicita tu coche desde un botón en tu Halo.</small>
+
+----
+
+<!-- .slide: data-background-image="./res/Jade_buildings_Sunny_Isles.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Mirigi: conserje inteligente: módulos:
+
+- Notificaciones / IA
+- Órdenes de trabajo
+- Valet Parking
+- Restaurantes / Tiendas
+- Gastos
+- Encuestas
+- BeoLiving Intelligence
+- Reservas
+- Más...
+
+----
+
+<!-- .slide: data-background-image="./res/joy.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+#### Mirigi: conserje inteligente: Totalmente personalizable:
+
+<img src="./res/mirigi/animated.gif" width="50%"/>
+
+<small>Cada edificio merece su APP.</small>
+
+
+----
+
+<!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
+
+#### Mirigi: conserje inteligente.
+
+
+<br/>
+
+¡Vende productos en todo el edificio!
+
+<br/>
+
+<b>Más información: <a href="https://mirigi.com/"> mirigi.com </a> </b>
 
 
 

@@ -39,9 +39,9 @@ layout: slides
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Botón de usuario
 
-- **Función 2**: Establecer la contraseña del nombre de usuario _admin_ a _"admin"_ (válido por los siguientes) 5 minutos. Consulte la sección [*Interfaz de configuración*](06-web_interface_usage#setup-interface) para más información.
-- **Función 3**: Configurar los ajustes de red a IP fija (192.168.1.10).
-- **Función 4**: Configurar los ajustes de red para usar DHCP.
+- **Función 2**: Establecer la contraseña del nombre de usuario _admin_ a _"admin"_ (válido para los siguientes) 5 minutos. Consulte la sección [*Interfaz de configuración*](06-web_interface_usage#setup-interface) para más información.
+- **Función 3**: Establecer la configuración de red a IP fija (192.168.1.10).
+- **Función 4**: Establecer la configuración de red para usar DHCP.
 - **Función 5**: Borrar toda la configuración y ajustes.
 
 ---
@@ -78,7 +78,7 @@ Una vez que tenemos el host, desde cualquier navegador web (preferiblemente CHRO
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4?si=Y7gq-jEYym9Ae7HF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4?si=Y7gq-jEYym9Ae7HF" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |||
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -95,7 +95,7 @@ Ahora defina la contraseña como **khimo**.
 
 - Ir a "Admin -> Zones".
 - Presionar "Agregar Área" y luego el "+" para agregar la zona.
-- Use el nombre de su equipo para el área, y elija un nombre y una imagen.
+- Usar el nombre de su equipo para el área, y elegir un nombre y una imagen.
 
 Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden elegir una foto que los represente para la habitación.
 
@@ -108,7 +108,7 @@ Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden el
 - Ir a "Admin -> Systems"
 - Presionar el símbolo "+" en su zona y agregar el controlador "Philips Hue CLIP"
 
-Dirección de Philips hue:
+Dirección de Philips hue: 
 
 
 ---

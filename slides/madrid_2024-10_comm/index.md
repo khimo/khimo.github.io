@@ -15,7 +15,7 @@ layout: slides
 
 
 <br/>
-<small>Simple integrations that works</small>
+<small>Simple integrations that work</small>
 <br/>
 <small>Madrid, 2024-10</small>
 
@@ -37,7 +37,7 @@ in 5 minutes of configuration time
 
 ---
 
-## SIMPLE TO SETUP: 
+## SIMPLE TO SET UP: 
 <small>You can fully set this up!</small>
 
 
@@ -46,7 +46,7 @@ in 5 minutes of configuration time
 
 
 1. Define the Zones
-1. Connect to the third party system
+1. Connect to the third-party system
 1. Load the resources in each zone
 1. Done
 
@@ -66,7 +66,7 @@ in 5 minutes of configuration time
 <img src="res/halo_2.webp" class="r-frame" height="280" />
 
 ###### by Khimo and Bang & Olufsen
-<small>integrations that works</small> 
+<small>integrations that work</small> 
 
 
 ---
@@ -75,7 +75,7 @@ in 5 minutes of configuration time
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-A macro is a **List of events** that triggers 
+A macro is a **list of events** that triggers 
 <br/> a sorted list of **commands**
 
 
@@ -85,17 +85,17 @@ A macro is a **List of events** that triggers
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 <video data-autoplay autoplay controls width=650 src="./res/ai.webm"></video>
-<small>The AI assistant could do the macros for you</small>
+<small>The AI assistant can create the macros for you</small>
 
 ---
 
-## 2 flavours:
+## 2 Flavors:
 <!-- .slide: data-background-image="./res/jean.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
 <br/>
 
-Essential <small> entry level </small> 
+Essential <small> entry-level </small> 
 
 <br/>
 
@@ -103,8 +103,8 @@ Essential <small> entry level </small>
 
 
 Note:
-  - Essentia:l An entry home controller (From factory) 
-  - PRO: Essential  + free remote access + new goodies (must buy an upgrade) 
+  - Essential: An entry home controller (From factory) 
+  - PRO: Essential + free remote access + new features (must buy an upgrade) 
 
 ----
 ### Essential <small>Entry level</small>
@@ -119,7 +119,7 @@ Note:
 - *Product groups*
 
 Note:
-BLI its designed for the end user. Out of the box, could be setted up by some non-technical easy steps.
+BLI is designed for the end user. Out of the box, it can be set up with some non-technical easy steps.
 
 
 ----
@@ -129,9 +129,9 @@ BLI its designed for the end user. Out of the box, could be setted up by some no
 <!-- .slide: class="whiteBack" data-background-image="./res/building.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Realtime admin panel <br/> <small>Macro programming, AI assistant, Multiuser, Realtime</small>
-- Hundred of devices drivers<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
-- Remote access<br/><small>Use the app from outside of your homea</small>
-- Remote programming <b>[ NEW ]</b> <br/><small>Use tunnels to program the BLI remotelly</small>
+- Hundreds of device drivers<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
+- Remote access<br/><small>Use the app from outside your home</small>
+- Remote programming <b>[ NEW ]</b> <br/><small>Use tunnels to program the BLI remotely</small>
 
 ---
 
@@ -305,13 +305,13 @@ https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 
 <br/>
 
-**One person is responsable** <br/> <small> To update producs.</small>
+**One person is responsible** <br/> <small> To update products.</small>
 
 ----
 
 <!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
 #### Advanced Use Cases: 
-#### Condominios: Mirigi: smart concierge.
+#### Condominiums: Mirigi: smart concierge.
 
 <br/>
 
@@ -380,3 +380,4 @@ Sell products throughout the entire building!
 ---
 
 # Thanks!
+
