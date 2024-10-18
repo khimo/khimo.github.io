@@ -5,7 +5,7 @@ layout: slides
 
 [comment]: <> (For a new horizontal slide use: \n----\n)
 [comment]: <> (For a new vertical slide use: \n|||n)
-[comment]: <> (To write slide notes uses \nNote:)
+[comment]: <> (To write slide notes use \nNote:)
 
 
 ## BeoLiving Intelligence
@@ -20,82 +20,97 @@ layout: slides
 <small>Madrid, 2024-10</small>
 
 ----
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Entrenamiento técnico: Ejercicio 1
 
-<p> Construir una configuración rápida con todos los recursos del hogar obteniendo la interfaz de usuario automáticamente </p>
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+## Configuración
+| BLI  |  Philips HUE IP  | Halo SN | 
+|---|---|---|
+|  Unidad 25  |  1  | |
+|  Unidad 82  |  1  | |
+|  Unidad 83  |  2  | |
+|  Unidad 58  |  2  | |
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Desempaquetado | Primeros pasos
+## Entrenamiento Técnico: Ejercicio 1
+
+<p> Construir una configuración rápida con todos los recursos del hogar, obteniendo la interfaz de usuario automáticamente </p>
+
+---
+
+<iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### Desempaquetado | Primeros Pasos
 
 1. Conectar a la red
 1. Encontrar en la red
 2. Obtener acceso (Restablecimiento de contraseña)
 3. Actualización de firmware
 
----
-
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Botón de usuario
-
-- **Función 2**: Establecer la contraseña del nombre de usuario _admin_ a _"admin"_ (válido para los siguientes) 5 minutos. Consulte la sección [*Interfaz de configuración*](06-web_interface_usage#setup-interface) para más información.
-- **Función 3**: Establecer la configuración de red a IP fija (192.168.1.10).
-- **Función 4**: Establecer la configuración de red para usar DHCP.
-- **Función 5**: Borrar toda la configuración y ajustes.
 
 ---
 
 ### 1 | Encontrar en la Red
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-- Usando la App BeoLiving:
+- Usando la App BeoLiving
 
 - En una red con un solo BLI, desde iOS, Android, MacOS, Linux: http://bli.local
 
 Una vez que tenemos el host, desde cualquier navegador web (preferiblemente CHROME) ingresamos: https://HOST/
 
-|||
-
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-
-#### 1 | Encontrar en la Red: Usando la App BeoLiving:
-     1. Instalar la APP
-     2. Iniciar sesión en el dispositivo
-     3. Solicitar acceso
-     4. Acceder
-     5. Ir a "Configuración -> Dispositivo -> Más información -> [HOST]"
-
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-### 2 | Restablecimiento de contraseña / Inicio de sesión
+#### 1 | Encontrar en la Red: Usando la App BeoLiving:
+<img src="./res/screens/BLA_find_host.gif" style="height: 60vh;">
 
-- Usar la función 2 del BOTÓN DE USUARIO para RESTABLECER la contraseña de admin
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Botón de Usuario
+
+Funciones:
+- **1**: Disparar un evento de BeoLiving Intelligence
+- **2**: Establecer la **contraseña** de _admin_ a _"admin"_ (por 5 minutos)
+- **3**: **IP Fija** (192.168.1.10).
+- **4**: **DHCP**.
+- **5**: <b style="color:orange">Borrar</b> toda la configuración y ajustes.
+
+---
+
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+### 2 | Restablecimiento de Contraseña / Inicio de Sesión
+
+- Usar la función 2 del BOTÓN DE USUARIO para RESTABLECER la contraseña de admin 
 
 |||
 
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4?si=Y7gq-jEYym9Ae7HF" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4?si=Y7gq-jEYym9Ae7HF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |||
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
 Presione y mantenga presionado el botón hasta que el LED parpadee dos veces en rojo, suelte el botón, el LED parpadeará rápidamente, toque el botón para confirmar.
 
-Ahora ingrese al navegador y use el usuario **admin** y la contraseña **admin**, esta contraseña será válida por 5 minutos después del procedimiento del botón de usuario.
+Ahora ingrese al navegador y use usuario **admin** y contraseña **admin**, esta contraseña será válida por 5 minutos después del procedimiento del botón de usuario.
 
 Ahora defina la contraseña como **khimo**.
 
 -----
 
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 3 | Definir estructura del hogar, Áreas y Zonas
+### 3 | Estructura del Hogar, Áreas y Zonas
 
 - Ir a "Admin -> Zones".
-- Presionar "Agregar Área" y luego el "+" para agregar la zona.
-- Usar el nombre de su equipo para el área, y elegir un nombre y una imagen.
+- Presionar "Add Area" y luego el "+" para agregar la zona.
+- Use el nombre de su equipo para el área, y elija un nombre y una imagen.
 
 Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden elegir una foto que los represente para la habitación.
 
@@ -103,12 +118,22 @@ Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden el
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-### 4. Agregar sistemas:
+### 4.1 Agregar Sistemas:
 
 - Ir a "Admin -> Systems"
-- Presionar el símbolo "+" en su zona y agregar el controlador "Philips Hue CLIP"
+- Presionar el símbolo "[+]" en su zona 
+- Agregar el controlador "Philips Hue CLIP"
 
-Dirección de Philips hue: 
+Dirección de Philips hue: FIXME
+
+
+---
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### 4.2 | Sistema: Enlace a BeoCloud: PIN de Integración
+
+FIXME: Crear un PIN de integración por grupo
+<img src="./res/screens/BEO_integration.gif" style="height: 60vh;">
 
 
 ---
@@ -116,30 +141,23 @@ Dirección de Philips hue:
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-#### 5.1. Mozart (B&O Control Link]
+#### 5.1. Recursos:  Mozart (B&O Control Link]
 
-- Ir a "Admin -> Resources"
-- Ir a "Control Link"
-- Presionar "Mostrar recursos descubiertos"
+- "Admin -> Resources"
+- "Control Link"
+- [Mostrar recursos descubiertos]
 - Agregar su producto a su zona
 
    **NOTA:** Los productos pueden ser asignados por SN o por IP.
----
-
-#### 5.1 BIS | Enlace a BeoCloud
-- Ir a "Systems -> B&O ControlLink"
-- Agregar el "Beo cloud accessPIN"
-
-<small> Este PIN está disponible en la App B&O en Configuración -> Integraciones </small>
-
 
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### 5.2. Philips HUE 
+#### 5.2 Philips HUE: Recursos
 
-- Ir a ["Resources" -> la zona del equipo -> Philips HUE]
-- Ir a "Cargar recursos de sistemas conectados" e importar los recursos a su zona
+- "Resources" -> la zona del equipo -> Philips HUE
+- [Cargar recursos de sistemas conectados]
+- Importar los recursos a su zona
 
  Todos deben importar las luces en su zona.
 
@@ -160,37 +178,45 @@ Dirección de Philips hue:
 
 ---
 
-<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 7. Mantenimiento de la tienda:
+<!-- .slide: data-background-image="./res/living1.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### 7. Ciclo de Vida de la Configuración
 
-Discutimos cómo mantener la tienda funcionando cuando los números de serie cambian todo el tiempo.
-
-----
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Entrenamiento técnico: Ejercicio 2
-
-<p> Lista de reproducción de Halo </p>
+- EDICIÓN EN VIVO
+- Potente historial de configuración
+- Herramientas -> Configuración
 
 ---
 
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### 8. Mantenimiento de Almacenamiento:
+
+- IP Fija DHCP 
+
+o
+
+- Mantenimiento SN
+
+----
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
+
+### ¿Tomamos un descanso, tiempo para relajarse?
+
+----
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Ejercicio 2: Lista de Reproducción de Halo
+
 - Ir a "Interfaces -> Halo"
 - Agregar un botón elegante
-- Crear un macro con este botón usando IA
+- Crear una macro con este botón usando IA
 
 "Reproducir los Beatles cuando se presione el tercer botón de la segunda página"
 
 ----
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Entrenamiento técnico: Ejercicio 3
-
-<p> Volumen de Halo </p>
-
----
-
-<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-
-## Entrenamiento técnico: Ejercicio 3
+#### Ejercicio 3: Volumen de Halo
 
 - Ir a "Interfaces -> Halo"
 - Agregar un botón de comportamiento de volumen
@@ -198,9 +224,20 @@ Discutimos cómo mantener la tienda funcionando cuando los números de serie cam
 
 ---
 
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
+
+#### Ejercicio 4: Vinilo NFC
+
+- Instalar controlador NFC
+- Agregar recurso READER
+- Capturar ETIQUETAS en MACROS
+
+---
+
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-##### Entrenamiento técnico: Túnel remoto de Khimo y especialistas remotos
+#### Túnel Remoto de Khimo y Especialistas Remotos
 <div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
 
 <iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
@@ -209,6 +246,54 @@ Discutimos cómo mantener la tienda funcionando cuando los números de serie cam
 </div>
 
 ---
+
+<!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Ejercicio 5: Grupos de Productos
+
+<p> Vamos a crear un grupo de productos </p>
+
+---
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Ejercicio 6: Soporte de Cámara / Panel de Control del Hogar
+
+```yml
+FIXME: 
+Camera IP:
+Camera URL:
+```
+
+---
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
+
+#### Avanzado: Ejercicio 6: Conmutador de Atenuador Lua
+
+```lua
+function(event, engine) 
+    local result = engine.query("Main/Hall/DIMMER/Light")
+    if result[1].get_number("LEVEL") == 0 then
+   		Debug("Encendiendo: Main/Hall/DIMMER/Light")
+    	engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=100");
+    else
+   		Debug("Apagando: Main/Hall/DIMMER/Light")
+      engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=0");
+    end
+end
+```
+
+---
+
+## HOJA DE RUTA:
+
+- Historial de Monitoreo
+- Notificaciones Push
+- Controladores
+- Pantallas Pequeñas
+- IA
+
 
 
 <!-- .slide: data-background-image="./res/end.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->

@@ -135,7 +135,7 @@ BLI é projetado para o utilizador final. Pronto a usar, pode ser configurado co
 
 ---
 
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ## Porquê?
 
 
@@ -165,7 +165,8 @@ Criamos **relações** com os nossos clientes<br/><small>relações que crescem<
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
 <b>BEM-VINDO</b> <br/>
-<b>FORA</b> <br/>
+<b>FESTA</b> <br/>
+<b>AUSENTE</b> <br/>
 
 <small>A integração mais simples que faz a diferença</small>
 
@@ -179,6 +180,7 @@ Criamos **relações** com os nossos clientes<br/><small>relações que crescem<
 
 <b>ABRIR</b> <br/>
 <b>MODO DEMO</b> <br/>
+<b>MULTIROOM</b> <br/>
 <b>FECHAR</b> <br/>
 
 <small>Faz uma demonstração sem tocar numa app!</small>
@@ -296,7 +298,7 @@ https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 ---
 
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
-### Diretrizes de Sucesso para Lojas
+### Diretrizes da Loja para o Sucesso
 
 <br/>
 
@@ -334,7 +336,7 @@ Um concierge inteligente SAS que integra com BeoLiving Intelligence e B&O.
 - Estacionamento com Valet
 - Restaurantes / Lojas
 - Despesas
-- Sondagens
+- Votações
 - BeoLiving Intelligence
 - Reservas
 - Mais...

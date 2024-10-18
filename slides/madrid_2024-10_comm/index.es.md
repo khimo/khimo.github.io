@@ -104,14 +104,14 @@ Esencial <small> nivel de entrada </small>
 
 Note:
   - Esencial: Un controlador de hogar de entrada (De fábrica) 
-  - PRO: Esencial + acceso remoto gratuito + nuevas características (debe comprar una actualización) 
+  - PRO: Esencial + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
 
 ----
 ### Esencial <small>Nivel de entrada</small>
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
-- Configuración desde la **BeoLiving App**
+- Configuración desde la **App BeoLiving**
 - Asistentes de **Voz**
 - Philips Hue
 - B&O - **AV y Halo**
@@ -131,7 +131,7 @@ BLI está diseñado para el usuario final. Fuera de la caja, se puede configurar
 - Panel de administración en tiempo real <br/> <small>Programación de macros, asistente de IA, Multiusuario, Tiempo real</small>
 - Cientos de controladores de dispositivos<br/> <small>(Lutron, KNX, Fibaro, Shelly, ...)</small>
 - Acceso remoto<br/><small>Usa la app desde fuera de tu hogar</small>
-- Programación remota <b>[ NUEVO ]</b> <br/><small>Usa túneles para programar el BLI remotamente</small>
+- Programación remota <b>[ NUEVO ]</b> <br/><small>Usa túneles para programar el BLI de forma remota</small>
 
 ---
 
@@ -165,6 +165,7 @@ Creamos **relaciones** con nuestros clientes<br/><small>relaciones que crecen</s
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
 <b>BIENVENIDO</b> <br/>
+<b>FIESTA</b> <br/>
 <b>FUERA</b> <br/>
 
 <small>La integración más simple que hace el caso</small>
@@ -179,6 +180,7 @@ Creamos **relaciones** con nuestros clientes<br/><small>relaciones que crecen</s
 
 <b>ABRIR</b> <br/>
 <b>MODO DEMO</b> <br/>
+<b>MULTIROOM</b> <br/>
 <b>CERRAR</b> <br/>
 
 <small>¡Haz una demostración sin tocar una app!</small>
@@ -246,7 +248,7 @@ o enviar una notificación de TV para abrir la puerta con tu control remoto.
 
 
 ---
-###### Casos de USO Avanzados 
+###### Casos de Uso Avanzados 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### Del legado al presente
@@ -257,7 +259,7 @@ Usa el BLI como un habilitador de tecnología:
 
 Alexa / Google Home / IA 
 
-Acceso remoto / BeoLiving App / Halo
+Acceso remoto / App BeoLiving / Halo
 
 ----
 

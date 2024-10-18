@@ -5,7 +5,7 @@ layout: slides
 
 [comment]: <> (For a new horizontal slide use: \n----\n)
 [comment]: <> (For a new vertical slide use: \n|||n)
-[comment]: <> (To write slide notes uses \nNote:)
+[comment]: <> (To write slide notes use \nNote:)
 
 
 ## BeoLiving Intelligence
@@ -20,69 +20,84 @@ layout: slides
 <small>Madrid, 2024-10</small>
 
 ----
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Technical training: Exercise 1
 
-<p> Build a quick setup with all the resources of the home getting the UI automatically </p>
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+## Setup
+| BLI  |  Philips HUE IP  | Halo SN | 
+|---|---|---|
+|  Unit 25  |  1  | |
+|  Unit 82  |  1  | |
+|  Unit 83  |  2  | |
+|  Unit 58  |  2  | |
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### Unboxing | First steps
+## Technical Training: Exercise 1
+
+<p> Build a quick setup with all the home resources, getting the UI automatically </p>
+
+---
+
+<iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+----
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### Unboxing | First Steps
 
 1. Connect to the network
 1. Find on the network
 2. Get access (Password reset)
 3. Firmware upgrade
 
----
-
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### User button
-
-- **Function 2**: Set _admin_ username's password to _"admin"_ (valid for the following) 5 minutes. Check the [*Setup interface*](06-web_interface_usage#setup-interface) section for further information.
-- **Function 3**: Set network settings to fixed IP (192.168.1.10).
-- **Function 4**: Set network settings to use DHCP.
-- **Function 5**: Erase all configuration and settings.
 
 ---
 
 ### 1 | Find on Network
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-- Using the BeoLiving App:
+- Using the BeoLiving App
 
 - On a network with a single BLI, from iOS, Android, MacOS, Linux: http://bli.local
 
 Once we have the host, from any web browser (preferably CHROME) we enter: https://HOST/
 
-|||
-
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-
-#### 1 | Find on Network: Using the BeoLiving App:
-     1. Install the APP
-     2. Log in to the device
-     3. Request access
-     4. Access
-     5. Go to "Settings -> Device -> More info -> [HOST]"
-
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-### 2 | Password reset / Login
+#### 1 | Find on Network: Using the BeoLiving App:
+<img src="./res/screens/BLA_find_host.gif" style="height: 60vh;">
+
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### User Button
+
+Functions:
+- **1**: Fire a BeoLiving Intelligence event
+- **2**: Set _admin_ **password** to _"admin"_ (for 5 mins)
+- **3**: **Fixed IP** (192.168.1.10).
+- **4**: **DHCP**.
+- **5**: <b style="color:orange">Erase</b> all configuration and settings.
+
+---
+
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+### 2 | Password Reset / Login
 
 - Use USER BUTTON function 2 to RESET admin password 
 
 |||
 
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xxjk1Tv4PM4?si=Y7gq-jEYym9Ae7HF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 |||
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-Press and keep pressed the button until the LED blinks twice in red, release the button, the LED will be flashing rapidly, tap on the button to confirm.
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+Press and hold the button until the LED blinks twice in red, release the button, the LED will be flashing rapidly, tap on the button to confirm.
 
 Now go into the browser and use user **admin** and password **admin**, this password will be valid for 5 minutes after the user button procedure.
 
@@ -91,7 +106,7 @@ Now define the password as  **khimo**.
 -----
 
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 3 | Define Home structure, Areas and Zones
+### 3 |Home Structure, Areas, and Zones
 
 - Go to "Admin -> Zones".
 - Press "Add Area" and then the "+" to add the zone.
@@ -103,12 +118,22 @@ Each team will have its own area and zone with the name of their team, they can 
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-### 4. Add systems:
+### 4.1 Add Systems:
 
 - Go to "Admin -> Systems"
-- Press the "+" symbol in your zone and add "Philips Hue CLIP" driver
+- Press the "[+]" symbol in your zone 
+- Add "Philips Hue CLIP" driver
 
-Philips hue address: 
+Philips hue address: FIXME
+
+
+---
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### 4.2 | System: Link to BeoCloud: Integration PIN
+
+FIXME: Create one integration PIN per group
+<img src="./res/screens/BEO_integration.gif" style="height: 60vh;">
 
 
 ---
@@ -116,30 +141,23 @@ Philips hue address:
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 
-#### 5.1. Mozart (B&O Control Link]
+#### 5.1. Resources:  Mozart (B&O Control Link]
 
-- Go to "Admin -> Resources"
-- Go to "Control Link"
-- Press "Show discovered resources"
+- "Admin -> Resources"
+- "Control Link"
+- [Show discovered resources]
 - Add your product into your zone
 
    **NOTE:** Products can be assigned by SN or by IP.
----
-
-#### 5.1 BIS | Link to BeoCloud
-- Go to "Systems -> B&O ControlLink"
-- Add the "Beo cloud accessPIN"
-
-<small> This PIN is availabe in the B&O App in Settings -> Integrations </small>
-
 
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### 5.2. Philips HUE 
+#### 5.2 Philips HUE: Resources
 
-- Go to ["Resources" -> the team's zone -> Philips HUE]
-- Go to "Load resources from connected systems" and import the resources into your zone
+- "Resources" -> the team's zone -> Philips HUE
+- [Load resources from connected systems]
+- Import the resources into your zone
 
  Everyone must import the lights in their zone.
 
@@ -160,47 +178,66 @@ Philips hue address:
 
 ---
 
-<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 7. Store maintenance:
+<!-- .slide: data-background-image="./res/living1.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### 7. Configuration LifeCycle
 
-We discuss how to keep the store running when the serial numbers change all the time.
-
-----
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Technical training: Exercise 2
-
-<p> Halo Playlist </p>
+- LIVE EDIT
+- Powerful config history
+- Tools -> Config
 
 ---
 
+<!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+### 8. Store Maintenance:
+
+- Fixed IP DHCP 
+
+or
+
+- SN maintenance
+
+----
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
+
+### Take a break, time to relax?
+
+----
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+#### Exercise 2: Halo Playlist
+
 - Go to "Interfaces -> Halo"
 - Add one fancy button
-- Create a macro with this button usin AI
+- Create a macro with this button using AI
 
-"Play the beatles when the third button of the second page is pressed"
+"Play the Beatles when the third button of the second page is pressed"
 
 ----
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Technical training: Exercise 3
-
-<p> Halo Volume </p>
-
----
-
-<!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-
-## Technical training: Exercise 3
+#### Exercise 3: Halo Volume
 
 - Go to "Interfaces -> Halo"
-- Add one volume behaviour button
+- Add one volume behavior button
 - Play with it!
 
 ---
 
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
+
+#### Exercise 4: Vinyl NFC
+
+- Install NFC driver
+- Add READER resource
+- Capture TAGS on MACROS
+
+---
+
+
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-##### Technical training: Khimo remote tunnel and remote specialists
+#### Khimo Remote Tunnel and Remote Specialists
 <div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
 
 <iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
@@ -209,6 +246,54 @@ We discuss how to keep the store running when the serial numbers change all the 
 </div>
 
 ---
+
+<!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Exercise 5: Product Groups
+
+<p> Let's create a product group </p>
+
+---
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Exercise 6: Camera Support / Home Control Panel
+
+```yml
+FIXME: 
+Camera IP:
+Camera URL:
+```
+
+---
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
+
+#### Advanced: Exercise 6: Lua Dimmer Toggle
+
+```lua
+function(event, engine) 
+    local result = engine.query("Main/Hall/DIMMER/Light")
+    if result[1].get_number("LEVEL") == 0 then
+   		Debug("Turning ON: Main/Hall/DIMMER/Light")
+    	engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=100");
+    else
+   		Debug("Turning OFF: Main/Hall/DIMMER/Light")
+      engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=0");
+    end
+end
+```
+
+---
+
+## ROADMAP:
+
+- Monitoring History
+- Push Notifications
+- Drivers
+- Small Screens
+- AI
+
 
 
 <!-- .slide: data-background-image="./res/end.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->

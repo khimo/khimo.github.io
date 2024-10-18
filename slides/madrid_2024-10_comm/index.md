@@ -165,6 +165,7 @@ We create **relationships** with our customers<br/><small>relationships that gro
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
 <b>WELCOME</b> <br/>
+<b>PARTY</b> <br/>
 <b>AWAY</b> <br/>
 
 <small>The simplest integration that makes the case</small>
@@ -179,6 +180,7 @@ We create **relationships** with our customers<br/><small>relationships that gro
 
 <b>OPEN</b> <br/>
 <b>DEMO MODE</b> <br/>
+<b>MULTIROOM</b> <br/>
 <b>CLOSE</b> <br/>
 
 <small>Do a demonstration without touching an app!</small>
