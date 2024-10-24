@@ -38,19 +38,23 @@ en 5 minutos de tiempo de configuración
 ---
 
 ## FÁCIL DE CONFIGURAR: 
-<small>¡Puedes configurarlo completamente!</small>
+
+<br/>
+
+<!-- .slide: data-background-image="./res/living1.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" class="container" -->
 
 
-<!-- .slide: data-background-image="./res/living.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" class="container" -->
 
-
-
-1. Define las Zones
-1. Conéctate al sistema de terceros
+1. Define las estructura de la casa
+1. Conéctate al sistemas de terceros
 1. Carga los resources en cada zone
 1. Listo
 
-<small>¡Todas las interfaces están pobladas y listas para usar en menos de 80 segundos! </small>
+<br/>
+<br/>
+
+<small>¡Todas las interfaces están prontas y listas para usar en minutos! </small>
+
 
 |||
 
@@ -141,7 +145,7 @@ BLI está diseñado para el usuario final. Fuera de la caja, se puede configurar
 <br/>
 <br/>
 
-##  <!-- .element: class="fragment current-visible" --> PORQUE DEBEMOS **AÑADIR VALOR Y DESTACAR**
+##  <!-- .element: class="fragment current-visible" --> **AÑADIR VALOR Y DESTACAR**
 
 Note:
   - Porque el mercado es competitivo
@@ -166,7 +170,6 @@ Note:
 <p>
 <i>Las tecnologías más profundas son aquellas que desaparecen.</i> <small>Mark Weiser</small>
 </p>
-</div>
 
 
 Note:
@@ -184,11 +187,11 @@ Note:
 <div>  <!-- .element: class="fragment current-visible" --> 
   <br/>
   <p>
-  Menos fricción para el usuario
+  Vendemos más productos
   </p>
   <br/>
   <p>
-  Construimos relaciones con nuestros clientes, relaciones que crecen
+  Construimos relaciones con nuestros clientes,<br/> relaciones que crecen
   </p>
   <br/>
 </div>
@@ -202,19 +205,19 @@ Note:
 ---
 
 <!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## CASOS DE USO
-## Soluciones Simples Que Marcan la Diferencia
+## Experiencias
+### Simples Que Marcan la Diferencia
 
 ---
 
 <!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#aaa" class="has-light-background" -->
-#### Casos de Uso: UN BOTÓN
+#### UN BOTÓN
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
 <b>BIENVENIDO</b> <br/>
 <b>FIESTA</b> <br/>
-<b>FUERA</b> <br/>
+<b>IR A DORMIR</b> <br/>
 
 <small>La integración más simple que hace la diferencia</small>
 
@@ -222,7 +225,7 @@ Note:
 ---
 
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#aaa" -->
-#### Casos de Uso: Automatización simple de tienda
+#### Automatización simple de tienda
 
 <img src="./res/alloff.jpg" class="r-frame" width="200" />
 
@@ -239,7 +242,7 @@ Note:
 
 <!-- .slide: data-background-image="./res/framebl8.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-#### Casos de Uso: Experiencia de cine
+#### Experiencia de cine
 
 <br/>
 
@@ -259,7 +262,7 @@ Persianas
 ----
 
 <!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso: BeoRemote One y Halo 
+#### BeoRemote One y Halo 
 ### <small>Como control remoto de automatización del hogar</small>
 
 <img src="./res/halo.png" class="r-frame" height="200" />
@@ -272,7 +275,7 @@ Maneja el volumen de múltiples productos
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso: Grupos de productos persistentes
+#### Grupos de productos persistentes
 
 **Enlace persistente** entre múltiples altavoces
 
@@ -283,7 +286,7 @@ todos los altavoces funcionando como uno
 ---
 
 <!-- .slide: data-background-image="./res/door.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso: Anuncios / Notificaciones
+#### Anuncios / Notificaciones
 
 <br/>
 
@@ -296,7 +299,8 @@ o enviar una notificación de TV para abrir la puerta con tu control remoto.
 
 
 ---
-###### Casos de Uso Avanzados 
+
+###### Soluciones Avanzadas 
 
 <!-- .slide: data-background-image="./res/knx.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### Del legado al presente
@@ -312,7 +316,7 @@ Acceso remoto / BeoLiving App / Halo
 ----
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
-###### Casos de Uso Avanzados 
+###### Experiencias Avanzadas
 ### Soluciones Completas para el Hogar Asequibles
 
 <br/>
@@ -328,7 +332,7 @@ Todo **integrado usando el BLI**
 ---
 
 <!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso Avanzados: Centro de Experiencia de Boston
+#### Experiencia Avanzados: Centro de Experiencia de Boston
 
 <video id="videoBoston" controls style="width: 100%; max-width: 1024px; max-height: 75vw;">
   <source src="./res/boston_experience_center_short.webm" type="video/webm">
@@ -337,7 +341,7 @@ Todo **integrado usando el BLI**
 ---
 
 <!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso Avanzados: Centro de Experiencia de Boston
+#### Experiencia Avanzados: Centro de Experiencia de Boston
 
 <img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
 
@@ -346,7 +350,9 @@ https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 ---
 
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
-### Directrices de la Tienda para el Éxito
+### Criterios de éxito para automatismos en Tienda
+
+
 
 <br/>
 
@@ -360,7 +366,7 @@ https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 ----
 
 <!-- .slide: data-background-image="./res/asia.jpg" data-background-opacity="0.3" data-background-color="#010000" class="has-light-background" -->
-#### Casos de Uso Avanzados: 
+#### Experiencia Avanzados: 
 #### Condominios: Mirigi: conserje inteligente.
 
 <br/>
