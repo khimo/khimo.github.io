@@ -45,9 +45,9 @@ en 5 minutos de tiempo de configuración
 
 
 
-1. Define las Zonas
+1. Define las Zones
 1. Conéctate al sistema de terceros
-1. Carga los recursos en cada zona
+1. Carga los resources en cada zone
 1. Listo
 
 <small>¡Todas las interfaces están pobladas y listas para usar en menos de 80 segundos! </small>
@@ -95,7 +95,7 @@ Una macro es una **lista de eventos** que desencadena
 
 <br/>
 
-Esencial <small> nivel de entrada </small> 
+Essential <small> nivel de entrada </small> 
 
 <br/>
 
@@ -103,15 +103,15 @@ Esencial <small> nivel de entrada </small>
 
 
 Note:
-  - Esencial: Un controlador de hogar de entrada (De fábrica) 
-  - PRO: Esencial + acceso remoto gratuito + nuevas funciones (debe comprar una actualización) 
+  - Essential: Un controlador de hogar de entrada (De fábrica) 
+  - PRO: Essential + acceso remoto gratuito + nuevas características (debe comprar una actualización) 
 
 ----
-### Esencial <small>Nivel de entrada</small>
+### Essential <small>Nivel de entrada</small>
 <!-- .slide: data-background-image="./res/alone.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 - Plug & Play
-- Configuración desde la **App BeoLiving**
+- Configuración desde la **BeoLiving App**
 - Asistentes de **Voz**
 - Philips Hue
 - B&O - **AV y Halo**
@@ -136,26 +136,74 @@ BLI está diseñado para el usuario final. Fuera de la caja, se puede configurar
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
-## ¿Por qué?
 
-
-Debemos **destacarnos**
-
+## ¿Por qué? 
+<br/>
 <br/>
 
-Estamos **vendiendo experiencias**
-<br/><small> no solo productos</small>
+##  <!-- .element: class="fragment current-visible" --> PORQUE DEBEMOS **AÑADIR VALOR Y DESTACAR**
 
-<br/>
-
-Creamos **relaciones** con nuestros clientes<br/><small>relaciones que crecen</small>
+Note:
+  - Porque el mercado es competitivo
+  - Mucha oferta y precios
+  - Debemos añadir más valor a nuestra oferta
 
 
 ---
 
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## ¿Cómo?
+
+<br/>
+
+<div>  <!-- .element: class="fragment current-visible" --> 
+<h2>Vendiendo experiencias </h2><small> no productos </small>
+
+<br/>
+<br/>
+
+<p>
+<i>Las tecnologías más profundas son aquellas que desaparecen.</i> <small>Mark Weiser</small>
+</p>
+</div>
+
+
+Note:
+  - Si hacemos la tecnología más simple, podemos ofrecer más valor.
+  - Porque podemos ofrecer más valor.
+  - El BeoLiving Intelligence es tu habilitador de experiencias.
+
+
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## ¿Por qué experiencias?
+
+<div>  <!-- .element: class="fragment current-visible" --> 
+  <br/>
+  <p>
+  Menos fricción para el usuario
+  </p>
+  <br/>
+  <p>
+  Construimos relaciones con nuestros clientes, relaciones que crecen
+  </p>
+  <br/>
+</div>
+
+
+Note:
+  - Si es fácil de usar, puede controlar más tecnología y luego puedes vender más tecnología.
+  - Ofrecemos más valor
+  - Creamos una relación con el usuario, lo que permite un contacto continuo y surgirán nuevas oportunidades de esto.
+
+---
+
 <!-- .slide: data-background-image="./res/pointing.jpeg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Casos de USO
-## Soluciones Simples Que Hacen la Diferencia
+## CASOS DE USO
+## Soluciones Simples Que Marcan la Diferencia
 
 ---
 
@@ -168,7 +216,7 @@ Creamos **relaciones** con nuestros clientes<br/><small>relaciones que crecen</s
 <b>FIESTA</b> <br/>
 <b>FUERA</b> <br/>
 
-<small>La integración más simple que hace el caso</small>
+<small>La integración más simple que hace la diferencia</small>
 
 
 ---
@@ -259,7 +307,7 @@ Usa el BLI como un habilitador de tecnología:
 
 Alexa / Google Home / IA 
 
-Acceso remoto / App BeoLiving / Halo
+Acceso remoto / BeoLiving App / Halo
 
 ----
 
@@ -288,7 +336,7 @@ Todo **integrado usando el BLI**
 
 ---
 
-<!-- .slide: data-background-image="./res/living4.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Casos de Uso Avanzados: Centro de Experiencia de Boston
 
 <img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
@@ -380,6 +428,9 @@ Un conserje inteligente SAS que se integra con BeoLiving Intelligence y B&O.
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
 
 ---
+
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 # ¡Gracias!
 

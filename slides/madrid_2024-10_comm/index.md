@@ -136,20 +136,69 @@ BLI is designed for the end user. Out of the box, it can be set up with some non
 ---
 
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
-## Why?
+
+## Why? 
+<br/>
+<br/>
+
+##  <!-- .element: class="fragment current-visible" --> BECAUSE WE MUST **ADD VALUE AND STAND OUT**
+
+Note:
+  - Because the market is competitive
+  - Plenty of offering and pricing
+  - We must add more value to our offering
 
 
-We must **stand out**
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## How?
 
 <br/>
 
-We are **selling experiences**
-<br/><small> not just products</small>
+<div>  <!-- .element: class="fragment current-visible" --> 
+<h2>By selling expierences </h2><small> not products </small>
 
 <br/>
+<br/>
 
-We create **relationships** with our customers<br/><small>relationships that grow</small>
+<p>
+<i>“The most profound technologies are those that disappear.”</i> <small>Mark weiser</small>
+</p>
+</div>
 
+
+Note:
+  - If we make technology simpler, we can offer more value.
+  - Because we can offer more value.
+  - The BeoLiving Intelligence is your experience enabler.
+
+
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## Why experiences?
+
+<div>  <!-- .element: class="fragment current-visible" --> 
+  <br/>
+  <p>
+  Less friction for the user
+  </p>
+  <br/>
+  <p>
+  We build relationships with our customers,<br/>
+ relationships that grows
+  </p>
+  <br/>
+</div>
+
+
+Note:
+  - If it is easy to use, he can control more technology and then you can sell more technology.
+  - We offer more value
+  - We create a relationship with the user, which allows for continuous contact and new opportunities will arise from this.
 
 ---
 
@@ -288,7 +337,7 @@ Everything **integrated using the BLI**
 
 ---
 
-<!-- .slide: data-background-image="./res/living4.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Advanced Use Cases: Boston Experience Center
 
 <img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
@@ -380,6 +429,9 @@ Sell products throughout the entire building!
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
 
 ---
+
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 # Thanks!
 

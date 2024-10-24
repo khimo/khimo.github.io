@@ -119,7 +119,7 @@ Note:
 - *Grupos de produtos*
 
 Note:
-BLI é projetado para o utilizador final. Pronto a usar, pode ser configurado com alguns passos fáceis e não técnicos.
+BLI é projetado para o utilizador final. Fora da caixa, pode ser configurado com alguns passos fáceis e não técnicos.
 
 
 ----
@@ -135,21 +135,69 @@ BLI é projetado para o utilizador final. Pronto a usar, pode ser configurado co
 
 ---
 
-<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-## Porquê?
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## Porquê? 
+<br/>
+<br/>
+
+##  <!-- .element: class="fragment current-visible" --> PORQUE DEVEMOS **ADICIONAR VALOR E DESTACAR-NOS**
+
+Note:
+  - Porque o mercado é competitivo
+  - Muita oferta e preços
+  - Devemos adicionar mais valor à nossa oferta
 
 
-Devemos **destacar-nos**
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## Como?
 
 <br/>
 
-Estamos a **vender experiências**
-<br/><small> não apenas produtos</small>
+<div>  <!-- .element: class="fragment current-visible" --> 
+<h2>Vendendo experiências </h2><small> não produtos </small>
 
 <br/>
+<br/>
 
-Criamos **relações** com os nossos clientes<br/><small>relações que crescem</small>
+<p>
+<i>As tecnologias mais profundas são aquelas que desaparecem.</i> <small>Mark Weiser</small>
+</p>
+</div>
 
+
+Note:
+  - Se tornarmos a tecnologia mais simples, podemos oferecer mais valor.
+  - Porque podemos oferecer mais valor.
+  - O BeoLiving Intelligence é o teu facilitador de experiências.
+
+
+---
+
+<!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" -->
+
+## Porquê experiências?
+
+<div>  <!-- .element: class="fragment current-visible" --> 
+  <br/>
+  <p>
+  Menos fricção para o utilizador
+  </p>
+  <br/>
+  <p>
+  Construímos relações com os nossos clientes, relações que crescem
+  </p>
+  <br/>
+</div>
+
+
+Note:
+  - Se for fácil de usar, ele pode controlar mais tecnologia e então podes vender mais tecnologia.
+  - Oferecemos mais valor
+  - Criamos uma relação com o utilizador, o que permite um contacto contínuo e novas oportunidades surgirão a partir disso.
 
 ---
 
@@ -219,14 +267,14 @@ Cortinas
 
 Controla luzes, cortinas e áudio com os Controles Remotos B&O
 
-Controla o volume de múltiplos produtos
+Controla o volume de vários produtos
 
 ---
 
 <!-- .slide: data-background-image="./res/comercial.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Casos de Uso: Grupos de Produtos Persistentes
 
-**Ligação persistente** entre múltiplos altifalantes
+**Ligação persistente** entre vários altifalantes
 
 todos os altifalantes a funcionar como um só
 
@@ -288,7 +336,7 @@ Tudo **integrado usando o BLI**
 
 ---
 
-<!-- .slide: data-background-image="./res/living4.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 #### Casos de Uso Avançados: Centro de Experiência de Boston
 
 <img src="./res/QR_youtube_boston.png" class="r-frame" width="300" />
@@ -298,7 +346,7 @@ https://youtu.be/tw-Rtd1mpjk?si=tOHtOhisV6ZBgIFQ
 ---
 
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
-### Diretrizes da Loja para o Sucesso
+### Diretrizes de Loja para o Sucesso
 
 <br/>
 
@@ -380,6 +428,9 @@ Vende produtos em todo o edifício!
 <b><a href="https://mirigi.com/"> mirigi.com </a> </b>
 
 ---
+
+
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
 # Obrigado!
 

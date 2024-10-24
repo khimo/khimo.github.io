@@ -38,7 +38,12 @@ layout: slides
 
 ---
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+<video id="videoBoston" controls autoplay data-autoplay mute style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./assets/define_link_load.webm" type="video/webm">
+  <source src="./assets/define_link_load.mp4" type="video/mp4">
+</video>
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -106,13 +111,18 @@ Now define the password as  **khimo**.
 -----
 
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 3 |Home Structure, Areas, and Zones
+### 3 | Home Structure, Areas, and Zones
 
-- Go to "Admin -> Zones".
-- Press "Add Area" and then the "+" to add the zone.
-- Use your team name for the area, and choose a name and picture.
+- Go to "Admin -> Zones"
 
-Each team will have its own area and zone with the name of their team, they can choose a photo that represents them for the room.
+- Press "Add Area" 
+
+- Set the area name to your city name
+
+- Press the the "+" to add the zone
+
+- Use your team name for the zone and choose a picture for it
+
 
 ---
 
@@ -121,7 +131,9 @@ Each team will have its own area and zone with the name of their team, they can 
 ### 4.1 Add Systems:
 
 - Go to "Admin -> Systems"
+
 - Press the "[+]" symbol in your zone 
+
 - Add "Philips Hue CLIP" driver
 
 Philips hue address: FIXME
@@ -144,9 +156,13 @@ FIXME: Create one integration PIN per group
 #### 5.1. Resources:  Mozart (B&O Control Link]
 
 - "Admin -> Resources"
+
 - "Control Link"
+
 - [Show discovered resources]
+
 - Add your product into your zone
+
 
    **NOTE:** Products can be assigned by SN or by IP.
 
@@ -156,8 +172,11 @@ FIXME: Create one integration PIN per group
 #### 5.2 Philips HUE: Resources
 
 - "Resources" -> the team's zone -> Philips HUE
+
 - [Load resources from connected systems]
+
 - Import the resources into your zone
+
 
  Everyone must import the lights in their zone.
 
@@ -172,9 +191,13 @@ FIXME: Create one integration PIN per group
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### 6. We explore the interfaces and explore what we have learned:
+
 - BeoLiving App
+
 - Halo
+
 - TV
+
 
 ---
 
@@ -182,8 +205,11 @@ FIXME: Create one integration PIN per group
 ### 7. Configuration LifeCycle
 
 - LIVE EDIT
+
 - Powerful config history
+
 - Tools -> Config
+
 
 ---
 
@@ -208,10 +234,17 @@ or
 #### Exercise 2: Halo Playlist
 
 - Go to "Interfaces -> Halo"
+
 - Add one fancy button
+
 - Create a macro with this button using AI
 
+
 "Play the Beatles when the third button of the second page is pressed"
+
+Note:
+  - Task: create a Macro for halo
+  - Task2: extend the macro to be visible in the APP/and TV (Intefaces/Zones).
 
 ----
 
@@ -219,31 +252,38 @@ or
 #### Exercise 3: Halo Volume
 
 - Go to "Interfaces -> Halo"
+
 - Add one volume behavior button
+
 - Play with it!
+
+Note:
+  - Task: create a Volume behaivour Button
+  - Test it!
 
 ---
 
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
 
-#### Exercise 4: Vinyl NFC
+#### Exercise 4: The BOSTON Experience: NFC 
 
 - Install NFC driver
+
 - Add READER resource
+
 - Capture TAGS on MACROS
 
----
+
+||||
 
 
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-#### Khimo Remote Tunnel and Remote Specialists
-<div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
+#### Advanced Use Cases: Boston Experience Center
 
-<iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
-
-
-</div>
+<video id="videoBoston" controls autoplay data-autoplay style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./res/boston_experience_center_short.webm" type="video/webm">
+</video>
 
 ---
 
@@ -267,9 +307,22 @@ Camera URL:
 
 ---
 
+<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Exercise 6: Khimo Remote Tunnel and Remote Specialists
+
+<br/>
+<a href="https://khimo.com/installer">khimo.com/installer</a>
+
+<br/>
+<small>One group per BeoLiving Intelligence invites a remote support specialist, and we test the remote access.</small>
+
+
+---
+
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
 
-#### Advanced: Exercise 6: Lua Dimmer Toggle
+#### Advanced: Exercise 7: Lua Dimmer Toggle
 
 ```lua
 function(event, engine) 
@@ -283,6 +336,40 @@ function(event, engine)
     end
 end
 ```
+
+Note:
+  - Each team adapts the script to their DIMMER, making it works from the app
+  - They can play use it from the app
+
+---
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
+
+#### Advanced: Exercise 7: Lua Dimmer Toggle
+
+```lua
+function(event, engine) 
+    local result = engine.query("Main/Hall/DIMMER/Light")
+    if result[1].get_number("LEVEL") == 0 then
+   		Debug("Turning ON: Main/Hall/DIMMER/Light")
+    	engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=100");
+    else
+   		Debug("Turning OFF: Main/Hall/DIMMER/Light")
+      engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=0");
+    end
+end
+```
+
+---
+
+<!-- .slide: data-background-image="./res/living1.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Documentation
+
+<a href="https://khimo.github.io">khimo.github.io</a>
+
+<a href="mailto:support@khimo.com">support@khimo.com</a>
+
 
 ---
 

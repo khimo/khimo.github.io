@@ -38,7 +38,12 @@ layout: slides
 
 ---
 
-<iframe width="700" height="515" src="https://www.youtube.com/embed/FXQ7Jgaq1dU?si=FQe_y2xDKxErVLAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+<video id="videoBoston" controls autoplay data-autoplay mute style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./assets/define_link_load.webm" type="video/webm">
+  <source src="./assets/define_link_load.mp4" type="video/mp4">
+</video>
 
 ----
 <!-- .slide: data-background-image="./res/living3.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
@@ -86,7 +91,7 @@ Funciones:
 
 ### 2 | Restablecimiento de Contraseña / Inicio de Sesión
 
-- Usar la función 2 del BOTÓN DE USUARIO para RESTABLECER la contraseña de admin 
+- Usar la función 2 del BOTÓN DE USUARIO para RESTABLECER la contraseña de admin
 
 |||
 
@@ -97,9 +102,9 @@ Funciones:
 |||
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-Presione y mantenga presionado el botón hasta que el LED parpadee dos veces en rojo, suelte el botón, el LED parpadeará rápidamente, toque el botón para confirmar.
+Presione y mantenga el botón hasta que el LED parpadee dos veces en rojo, suelte el botón, el LED parpadeará rápidamente, toque el botón para confirmar.
 
-Ahora ingrese al navegador y use usuario **admin** y contraseña **admin**, esta contraseña será válida por 5 minutos después del procedimiento del botón de usuario.
+Ahora ingrese al navegador y use el usuario **admin** y la contraseña **admin**, esta contraseña será válida por 5 minutos después del procedimiento del botón de usuario.
 
 Ahora defina la contraseña como **khimo**.
 
@@ -108,11 +113,16 @@ Ahora defina la contraseña como **khimo**.
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### 3 | Estructura del Hogar, Áreas y Zonas
 
-- Ir a "Admin -> Zones".
-- Presionar "Add Area" y luego el "+" para agregar la zona.
-- Use el nombre de su equipo para el área, y elija un nombre y una imagen.
+- Ir a "Admin -> Zones"
 
-Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden elegir una foto que los represente para la habitación.
+- Presionar "Add Area"
+
+- Establecer el nombre del área con el nombre de su ciudad
+
+- Presionar el "+" para agregar la zona
+
+- Usar el nombre de su equipo para la zona y elegir una imagen para ella
+
 
 ---
 
@@ -121,7 +131,9 @@ Cada equipo tendrá su propia área y zona con el nombre de su equipo, pueden el
 ### 4.1 Agregar Sistemas:
 
 - Ir a "Admin -> Systems"
-- Presionar el símbolo "[+]" en su zona 
+
+- Presionar el símbolo "[+]" en su zona
+
 - Agregar el controlador "Philips Hue CLIP"
 
 Dirección de Philips hue: FIXME
@@ -144,9 +156,13 @@ FIXME: Crear un PIN de integración por grupo
 #### 5.1. Recursos:  Mozart (B&O Control Link]
 
 - "Admin -> Resources"
+
 - "Control Link"
+
 - [Mostrar recursos descubiertos]
+
 - Agregar su producto a su zona
+
 
    **NOTA:** Los productos pueden ser asignados por SN o por IP.
 
@@ -156,8 +172,11 @@ FIXME: Crear un PIN de integración por grupo
 #### 5.2 Philips HUE: Recursos
 
 - "Resources" -> la zona del equipo -> Philips HUE
+
 - [Cargar recursos de sistemas conectados]
+
 - Importar los recursos a su zona
+
 
  Todos deben importar las luces en su zona.
 
@@ -172,9 +191,13 @@ FIXME: Crear un PIN de integración por grupo
 
 <!-- .slide: data-background-image="./res/living.jpg" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 ### 6. Exploramos las interfaces y exploramos lo que hemos aprendido:
+
 - App BeoLiving
+
 - Halo
+
 - TV
+
 
 ---
 
@@ -182,13 +205,16 @@ FIXME: Crear un PIN de integración por grupo
 ### 7. Ciclo de Vida de la Configuración
 
 - EDICIÓN EN VIVO
+
 - Potente historial de configuración
+
 - Herramientas -> Configuración
+
 
 ---
 
 <!-- .slide: data-background-image="./res/living2.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
-### 8. Mantenimiento de Almacenamiento:
+### 8. Mantenimiento de la Tienda:
 
 - IP Fija DHCP 
 
@@ -208,10 +234,17 @@ o
 #### Ejercicio 2: Lista de Reproducción de Halo
 
 - Ir a "Interfaces -> Halo"
+
 - Agregar un botón elegante
-- Crear una macro con este botón usando IA
+
+- Crear un macro con este botón usando IA
+
 
 "Reproducir los Beatles cuando se presione el tercer botón de la segunda página"
+
+Note:
+  - Tarea: crear un Macro para halo
+  - Tarea2: extender el macro para que sea visible en la APP/y TV (Interfaces/Zones).
 
 ----
 
@@ -219,31 +252,38 @@ o
 #### Ejercicio 3: Volumen de Halo
 
 - Ir a "Interfaces -> Halo"
+
 - Agregar un botón de comportamiento de volumen
+
 - ¡Juega con él!
+
+Note:
+  - Tarea: crear un Botón de comportamiento de Volumen
+  - ¡Pruébalo!
 
 ---
 
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#aaa"  data-background-video-loop data-background-video-muted -->
 
-#### Ejercicio 4: Vinilo NFC
+#### Ejercicio 4: La Experiencia BOSTON: NFC 
 
 - Instalar controlador NFC
+
 - Agregar recurso READER
+
 - Capturar ETIQUETAS en MACROS
 
----
+
+||||
 
 
-<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+<!-- .slide: data-background-image="./res/living4.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
 
-#### Túnel Remoto de Khimo y Especialistas Remotos
-<div style="width: 80vw; height: 80vh;  margin: 0 -5vw; padding: 0 -10vw">
+#### Casos de Uso Avanzados: Centro de Experiencia de Boston
 
-<iframe style="width: 100%; height:100%;" src="http://bli.local/admin/#Setup" title="BLI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="unsafe-url" allow="cross-origin; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; cookies" allowfullscreen></iframe>
-
-
-</div>
+<video id="videoBoston" controls autoplay data-autoplay style="width: 100%; max-width: 1024px; max-height: 75vw;">
+  <source src="./res/boston_experience_center_short.webm" type="video/webm">
+</video>
 
 ---
 
@@ -267,9 +307,22 @@ Camera URL:
 
 ---
 
+<!-- .slide: data-background-image="./res/haloroom.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Ejercicio 6: Túnel Remoto de Khimo y Especialistas Remotos
+
+<br/>
+<a href="https://khimo.com/installer">khimo.com/installer</a>
+
+<br/>
+<small>Un grupo por BeoLiving Intelligence invita a un especialista de soporte remoto, y probamos el acceso remoto.</small>
+
+
+---
+
 <!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
 
-#### Avanzado: Ejercicio 6: Conmutador de Atenuador Lua
+#### Avanzado: Ejercicio 7: Conmutador de Atenuador Lua
 
 ```lua
 function(event, engine) 
@@ -283,6 +336,40 @@ function(event, engine)
     end
 end
 ```
+
+Note:
+  - Cada equipo adapta el script a su ATENUADOR, haciéndolo funcionar desde la aplicación
+  - Pueden jugar usándolo desde la aplicación
+
+---
+
+<!-- .slide: data-background-video="./res/boston_experience_center_short.webm"   data-background-color="#111"  data-background-video-loop data-background-video-muted -->
+
+#### Avanzado: Ejercicio 7: Conmutador de Atenuador Lua
+
+```lua
+function(event, engine) 
+    local result = engine.query("Main/Hall/DIMMER/Light")
+    if result[1].get_number("LEVEL") == 0 then
+   		Debug("Encendiendo: Main/Hall/DIMMER/Light")
+    	engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=100");
+    else
+   		Debug("Apagando: Main/Hall/DIMMER/Light")
+      engine.fire("Main/Hall/DIMMER/Light/SET?LEVEL=0");
+    end
+end
+```
+
+---
+
+<!-- .slide: data-background-image="./res/living1.png" data-background-opacity="0.2" data-background-color="#010000" class="has-light-background" -->
+
+#### Documentación
+
+<a href="https://khimo.github.io">khimo.github.io</a>
+
+<a href="mailto:support@khimo.com">support@khimo.com</a>
+
 
 ---
 
