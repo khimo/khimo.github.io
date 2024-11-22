@@ -47,7 +47,7 @@ Please note that this macro should be triggered by a RENDERER STATE_UPDATE event
 --
 -- How to use it::
 --  1. Create a Macro
---  2. As event add all the STATE_UPDATE of all the RENDERER where you want to
+--  2. As event add all the STATE_UPDATE of all the RENDERER where you want to 
 --  have the notification, eg: event: */*/RENDERER/*/STATE_UPDATE for all RENDERERs
 --  3. Press the Convert to code button in the commands table
 --  4. Copy this whole file into the code text area
@@ -61,14 +61,15 @@ function (event, engine)
   -- --------------------------------------------------------
 
   -- Volume level for the AUDIO OVERLAY from 0 to 100:
-  local VOLUME = 50
+  local VOLUME = 30
 
-  -- International language code (e.g: en-us, es-es)
+
+  -- International language code (e.g: en-uk, en-us, es-es)
   local LANGUAGE = "en-us"
 
   -- This is the template used to create the spoken message, just change it to adapt to your language:
   -- Valid variables: $zone, $area, $name (origin product area, zone, name)
-  local MSG_TEMPLATE = "Joining from $zone on $area area"
+  local MSG_TEMPLATE = "Now joining from $zone"
 
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU REALLY UNDERSTAND IT!
@@ -106,11 +107,16 @@ function (event, engine)
     return cmd .. table.concat(attrs,"&")
   end
 
-  if (event.updated("SELECTED_SOURCE")) then
+  if (
+    event.updated("SELECTED_SOURCE")         and   -- the source was changed
+    #event.get_string("SELECTED_SOURCE") > 0 and   -- the source is defined
+    event.get_boolean("ONLINE")              and   -- is online
+    #event.get_string("SELECTED_SOURCE_INPUT") > 0 -- input is defined
+    ) then
     local selected_source = event.get_string("SELECTED_SOURCE")
-
     -- Create the address of the resource from the event origin
     local event_resource = event.area() .. "/" .. event.zone() .. "/RENDERER/" .. event.name()
+
     if (selected_source ~= event_resource) then
 
       local components = extract_resource_components(selected_source)
@@ -122,7 +128,7 @@ function (event, engine)
       -- Delay the command to ensure the product is ready
       engine.delay(0, 200)
 
-      -- Send the audio overlay message to the address with the now_playing
+      -- Send the audio overlay message to the address with the now_playing  
       engine.fire(command)
     end
   end
