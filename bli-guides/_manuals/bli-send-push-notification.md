@@ -7,7 +7,7 @@ layout: pagetoc
 ### Introduction
 The BeoLiving Intelligence allows sending *push notifications* to all devices for a single user or to all devices of all users.
 
-> Push notifications work on users configured on the BeoLiving Intelligence. These user may be manually configured or paswword-less users.
+> Push notifications work on users configured on the BeoLiving Intelligence. These user may be manually configured or password-less users.
 
 > Make sure the BeoLiving Intelligence and BeoLivin App are up-to-date.
 
