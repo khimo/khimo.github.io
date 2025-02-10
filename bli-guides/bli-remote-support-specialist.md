@@ -69,7 +69,7 @@ The remote support specialis will be able to perform the following actions on th
 + _Select a source on the device_.
 
 
-## Remote Access to Admin Panel via Khimo Cloud Link (Configuration Tunnels)
+## Remote configuration tunnels
 
 Remote Support Specialists can also access the BeoLiving Intelligence admin panel remotely using the Khimo Cloud Link and configuration tunnels. This allows the remote support specialists (installer) to access the admin webpage without being onsite.
 
