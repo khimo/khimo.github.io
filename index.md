@@ -200,6 +200,14 @@ The next table shows the comparison between **BeoLiving Intelligence ESSENTIAL**
         <i class="fa fa-check" style="color: #eb5946"></i>
       </td>
     </tr>    
+    <tr title="As a remote support specialist, you can configure the BLI from the cloud without being on site.">
+      <td>Configuration tunnels</td>
+      <td class="text-center">
+      </td>
+      <td class="text-center">
+        <i class="fa fa-check" style="color: #eb5946"></i>
+      </td>
+    </tr>    
   </tbody>
 </table>
 
