@@ -364,10 +364,9 @@ installers_ shows the main differences between both controllers and explains the
 
 ## Remote support
 
-With **BeoLiving Intelligence**, you can now invite an installer through the _BeoLiving App_ or its web-interface (_PRO_) to get remote support of all
- _Bang & Olufsen NetworkLink products_ in your installation. This new role is what we call "_Remote support specialist_". In the following 
-document you will find out how to grant a remote support specialist access to your _BeoLiving Intelligence_ and which type of control and product states 
-are available.
+With **BeoLiving Intelligence**, you can now invite an installer through the _BeoLiving App_ or its web interface (_PRO_) to receive remote support for all _Bang & Olufsen NetworkLink products_ in your installation. This new role is called a "_Remote Support Specialist_". In the following document, you will learn how to grant a remote support specialist access to your _BeoLiving Intelligence_ and what types of control and product states are available.
+
+When using the **PRO** version, the remote support specialist can also open a **Configuration Tunnel** from the cloud, allowing them to remotely and securely access the BLI configuration from the cloud, saving a lot of time!
 
 <div class="row justify-content-md-center">
   <div class="col-lg-4"> 
