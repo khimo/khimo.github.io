@@ -9,17 +9,31 @@ layout: pagetoc
 The connection between a Bang & Olufsen TV and a BeoLiving Intelligence enables the user to access the Home Control Panel (similar to web interface) on the TV's screen.
 It will also enable scene execution with a BeoRemote as explained in the [How to control Your BLI with the One Controller](/bli-guides/ideas/howto-OneRemote-BLI).
 
-**This document gives connection instrucctions to the BeoVision Eclipse, the BeoVision Horizon and the BeoPlay V1.**
 
-> All these B&O products can be added as NetworkLink [Resources](/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necessarily uncovering its full potential.
 
 > Adding your TV as a resource enables the possibility of controlling it through the BeoLiving App by selecting & controlling sources (Audio & video sources). But by setting up the connection through the TV, access to the HOME CONTROL panel is enabled along with the possibility to trigger macros through shortcuts on your control.
 
+### B&O ControlLink (Mozart) TV
+
+On Mozart-based TVs, the BLI automatically connects to the TV and announces itself, automatically receiving all Light and Control events. Defining the resource in the BLI is sufficient to receive these events.
+
+By default, the **HOME CONTROL** panel is also configured on the TV as soon as the BLI connects to it. You can **disable** this behavior in the BLI Interface tab by following these steps:
+- Open the BeoLiving Intelligence Admin panel.
+- Navigate to Interfaces.
+- Navigate to the specific product you want to configure.
+- Uncheck the [Home control owner] checkbox.
 
 
-### BeoVision Eclipse
 
-#### Part 1: Connect your B&O smart TV to a BLI
+### Legacy ASE TV's
+
+**This section provides connection instructions for BeoVision Eclipse, BeoVision Horizon, and BeoPlay V1.**
+
+> All these B&O products can be added as NetworkLink [Resources](/bli-guides/bli-pro-user-guide/#resources) to your BeoLiving Intelligence or BeoLink Gateway through the setup page, enabling you to set sources for the TV but not necessarily uncovering its full potential.
+
+#### BeoVision Eclipse
+
+##### Part 1: Connect your B&O smart TV to a BLI
 
 1. With the TV on any source, press MENU to access the main menu.
 1. Go to Settings and open by pressing the center button.
