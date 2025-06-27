@@ -7,7 +7,7 @@ layout: pagetoc
 
 ### Introduction
 
-Have you ever wanted to trigger your favorite Bang & Olufsen "MyButton" (also known as a Favourite) directly from a physical button in your home, perhaps from a KNX keypad or another Home Automation system? This tutorial shows you how to achieve just that, without writing any Lua code. By linking an external button press to a specific MyButton on your BeoLiving Intelligence (BLI) RENDERER product, you can instantly launch content previously assigned to that MyButton, such as your preferred Spotify playlist, a specific internet radio station, or a curated music flow.
+Have you ever wanted to trigger your favorite Bang & Olufsen "MyButton" (also known as a Favourite) directly from a physical button in your home, perhaps from a KNX keypad or another Home Automation system? This tutorial shows you how to achieve just that, without writing any Lua code. By linking an external button press to a specific MyButton on your Bang & Olufsen Mozart (RENDERER) product, you can instantly launch content previously assigned to that MyButton, such as your preferred Spotify playlist, a specific internet radio station, or a curated music flow.
 
 This automation is perfect for creating intuitive and seamless control experiences, allowing users to effortlessly activate their favorite audio experiences with a single physical touch.
 
