@@ -1,19 +1,19 @@
 ---
-title: Shelly 2nd generation
+title: Shelly JSON-RPC (2nd & 3rd generation)
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 keywords: Shelly, JSON-RPC, multicast DNS, HTTP, Cover, SHADE, Input, BUTTON, GPIO, Switch, DIMMER
 description: This driver implements communication with the second generation of Shelly devices using the JSON-RPC 2.0 protocol over websockt managing covers, inputs and switches.
 ---
-# Shelly 2nd generation
+# Shelly JSON-RPC 2.0
 
-This driver implements communication with the second generation of Shelly devices (Shelly-NG) using the JSON-RPC 2.0 protocol over websockt. It also implements device discovery using multicast DNS and HTTP protocol to query the device capabilities.
+This driver implements communication with the second & third generation of Shelly devices using the JSON-RPC 2.0 protocol over websockt. It also implements device discovery using multicast DNS and HTTP protocol to query the device capabilities.
 
-The driver integrates the following Shelly components, allowing them to be used as BeoLiving Intelligence resources:
-
+The driver integrates the following Shelly components, allowing them to be used as BeoLiving Intelligence resources
 - Cover: SHADE, either with or without level control
 - Input: As BUTTON or GPIO
 - Switch: As BUTTON with status, as DIMMER, or as GPIO
+- Light: As DIMMER  with status, as DIMMER
 
 Resource addresses are composed of either the MAC address or the IP of the Shelly device together with the ID of the component, e.g.: 441793ac3804/0
 
@@ -24,8 +24,15 @@ Any Shelly device with the listed components should be compatible, currently tes
 - Pro4PM
 - Pro1
 - Plus2PM
+- Pro Dimmer 2PM
 
 ## Changelog:
+### 2025/09/16
+- Renamed to indicate compatibility with 3rd-generation devices
+
+### 2025/03/31
+- Improve connection robustness.
+
 ### 2024/01/03 
 - Improve connection stability, always use strings for IDs.
 

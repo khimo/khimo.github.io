@@ -98,7 +98,7 @@ For overwriting this configuration, you can go to the "Interfaces" tab, select t
 <dt>_SET_SPEAKER_GROUP</dt><dd>Set the current speaker group</dd>
 <dt>_SET_LISTENING_POSITION</dt><dd>Set the listening position</dd>
 <dt>_TRIGGER_SCENE</dt><dd>Trigger a specific scene</dd>
-<dt>_PRESET</dt><dd>Trigger a specific preset</dd>
+<dt>_PRESET</dt><dd>Triggers a specific preset (also known as MyButton or Favourite) to launch the same experiences as the dot buttons on the BeoRemote One.</dd>
 <dt>_MOVE_CURTAIN</dt><dd>Move the curtain to the specified position</dd>
 
 </dl>
