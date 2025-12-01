@@ -1,17 +1,19 @@
 ---
-title: Lutron LEAP - Caseta, RA2 Select, RadioRA3, HomeWorks
+title: Lutron LEAP - Caseta, RA2 Select, RadioRA3, HomeWorks QSX, Athena, MyRoom XC
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
-keywords: Lutron, LEAP, Caseta, RA2 Select, RadioRA3, HomeWorks, BUTTON, BUTTON WITH LED, DIMMER, SWITCH, MOTOR, SHADE, SHADE WITH TILT, SHADE WITH TILT WHEN CLOSED, TILT, KETRA DIMMER, OCCUPANCY, WHITE TUNE, AREA SCENE, PRESET, SINGLE SETPOINT THERMOSTAT, DUAL SETPOINT THERMOSTAT, SET, SET COLOR, SET VIBRANCY, SET COLOR TEMPERATURE, RAISE, LOWER, STOP, OPEN, CLOSE, SET SETPOINT, SET MODE, SET FAN AUTO
+keywords: Lutron, LEAP, Caseta, Caséta, QSX, Athena, MyRoom XC, RA2 Select, RadioRA3, HomeWorks, BUTTON, BUTTON WITH LED, DIMMER, SWITCH, MOTOR, SHADE, SHADE WITH TILT, SHADE WITH TILT WHEN CLOSED, TILT, KETRA DIMMER, OCCUPANCY, WHITE TUNE, AREA SCENE, PRESET, SINGLE SETPOINT THERMOSTAT, DUAL SETPOINT THERMOSTAT, SET, SET COLOR, SET VIBRANCY, SET COLOR TEMPERATURE, RAISE, LOWER, STOP, OPEN, CLOSE, SET SETPOINT, SET MODE, SET FAN AUTO
 description: Lutron LEAP driver allows to integrate Lutron RA2 Select, RadioRA3, Caseta and HomeWorks systems managing buttons, dimmers, shades, occupancy sensors, thermostats and scenes.
 ---
-# Lutron RA2 Extensible Application Protocol (LEAP)
+# Lutron Extensible Application Protocol (LEAP)
 
-LEAP is the protocol used to integrate Lutron RA2 Select, RadioRA3, Caseta and HomeWorks
-systems.
-
-LEAP development is ongoing so only those devices and features already supported
-by the protocol at the time of developing this driver are supported.
+LEAP is the protocol used to integrate with the following Lutron systems:
+- Caséta
+- RA2 Select
+- RA3
+- HomeWorks QSX
+- Athena
+- MyRoom XC
 
 **Note**: If you've been using this driver with a Lutron system and you wish to change it (eg. from HomeWorks to RA2 Select),
 the driver must be deleted and re-added in order to achieve the connection. 
