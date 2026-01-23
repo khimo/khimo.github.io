@@ -1,56 +1,93 @@
 ---
 title: Control External Projectors Based on Renderer Input
-description: Learn how to set up a BeoLiving Intelligence macro to automatically control an external projector based on the selected input of a renderer. This guide provides a step-by-step breakdown of the Lua code, enabling your projector to turn on when specific inputs are selected and turn off when the renderer stops or switches to other inputs.
-keywords: BeoLiving Intelligence, projector control, macro, Lua, automation, home theater, RENDERER, STATE_UPDATE, INPUT, external projector
+description: Learn how to set up a BeoLiving Intelligence macro to automatically control an external projector based on your renderer's input selection. This guide provides a step-by-step breakdown of the Lua code, enabling seamless integration between your audio/video renderers and external projectors.
+keywords: BeoLiving Intelligence, external projector, macro, Lua, automation, home theater, RENDERER, projector control, input selection, STATE_UPDATE
 layout: pagetoc
 ---
 
 ### Introduction
 
-This tutorial will help you set up a macro that automatically controls an external projector based on the status of a renderer (such as a TV or media player). The macro monitors the renderer's input selection and state changes to:
+This tutorial will help you set up a macro that automatically controls an external projector based on the input selection and state of a renderer. When you select certain inputs on your renderer (e.g., TV sources), the projector will automatically turn on. When you select other inputs or stop the renderer, the projector will turn off.
 
-- **Turn on the projector** when specific inputs are selected (e.g., HDMI inputs connected to the projector)
-- **Turn off the projector** when other inputs are selected (optional behavior)
-- **Turn off the projector** when the renderer enters Stop state
+This is particularly useful for home theater setups where you want the projector to automatically turn on when watching TV content and turn off when listening to music or when playback stops.
 
-This is particularly useful in home theater setups where you want the projector to automatically turn on when you switch to a projector-connected input, and turn off when you want to listen to music or stop playback.
+### Features
+
+- **Automatic Turn On**: The projector turns on when specific renderer inputs are selected
+- **Automatic Turn Off**: The projector turns off when the renderer stops or when non-projector inputs are selected
+- **Wildcard Input Matching**: Use wildcards to match multiple inputs (e.g., `tv://*` matches all TV inputs)
+- **Customizable Commands**: Define custom turn on/off command sequences to control additional devices beyond just the projector
+
+### Customizable ON/OFF Behaviors
+
+One of the most powerful features of this macro is the ability to customize the turn on and turn off command sequences. You are not limited to just controlling the projector—you can trigger any combination of commands to create a complete home theater experience.
+
+**Examples of what you can automate:**
+
+- **Close the shades** when the projector turns on, and open them when it turns off
+- **Activate a TV lift** to raise or lower the projector screen
+- **Adjust lighting** to dim lights for viewing and restore them afterwards
+- **Control multiple projectors** or displays simultaneously
+- **Set specific projector inputs** or picture modes
+
+To add additional commands, simply add more entries to the `TURN_ON_COMMANDS` and `TURN_OFF_COMMANDS` lists in the settings section. For example:
+
+```lua
+local TURN_ON_COMMANDS = {
+  TARGET_PROJECTOR .. "/_TURN_ON",
+  "Main/Cinema/SHADE/Blackout shades/LOWER",
+  "Main/Cinema/DIMMER/Ceiling lights/SET?LEVEL=10"
+}
+
+local TURN_OFF_COMMANDS = {
+  TARGET_PROJECTOR .. "/_STANDBY",
+  "Main/Cinema/SHADE/Blackout shades/RAISE",
+  "Main/Cinema/DIMMER/Ceiling lights/SET?LEVEL=80"
+}
+```
 
 ### Setup Instructions
 
 To set up the external projector control macro, follow these steps:
 
 1. Open the BeoLiving Intelligence admin panel.
-2. Go to the Macro tab.
+2. Go to the **Macro** tab.
 3. Create a new Macro.
-4. Add the trigger for this macro, which will be the STATE_UPDATE event of the RENDERER you want to tie to the external projector.
-5. Click the "Convert to code" button in the commands table.
+4. Add the trigger for this macro, which will be the **STATE_UPDATE** event of the renderer you want to tie to the external projector:
+   - Select the **RENDERER** resource type
+   - Choose your target renderer (e.g., your TV or media player)
+   - Select the **STATE_UPDATE** event
+5. Click the **Convert to code** button in the commands table.
 6. Copy the entire code from "The Macro Lua Code" section below.
 7. Paste the code into the code text area of the Macro.
-8. Replace the placeholder addresses and settings in the SETTINGS section with your actual values:
-   - **TARGET_PROJECTOR**: Set the full address of your projector (e.g., `Main/Theater/_PROJECTOR/MyProjector`)
-   - **RENDERER_INPUTS**: Define which inputs should trigger the projector to turn on. You can use the `*` wildcard to match multiple inputs (e.g., `tv://*` matches all TV inputs)
-   - **TURN_PROJECTOR_OFF_ON_OTHER_INPUTS**: Set to `true` if you want the projector to turn off when an input not in the list is selected, or `false` to leave the projector state unchanged
+8. Update the **SETTINGS** section with your actual values:
+   - **TARGET_PROJECTOR**: The full address of your projector (e.g., `Main/Cinema/_PROJECTOR/MyProjector`)
+   - **RENDERER_INPUTS**: List of inputs that should turn on the projector
+   - **TURN_OFF_ON_OTHER_INPUTS**: Set to `true` if selecting a non-listed input should turn off the projector
+   - **TURN_ON_COMMANDS**: Commands to execute when turning on—add shades, lights, TV lifts, or any other devices here
+   - **TURN_OFF_COMMANDS**: Commands to execute when turning off—restore your room to its normal state
 9. Test the macro:
-   - Turn on the renderer and select one of the inputs defined in RENDERER_INPUTS - the projector should turn on
-   - Select an input not in the list - the projector should turn off (if TURN_PROJECTOR_OFF_ON_OTHER_INPUTS is true)
-   - Stop the renderer - the projector should turn off
+   - Turn on the renderer and select one of the inputs listed in `RENDERER_INPUTS`
+   - Verify that the external projector turns on
+   - Select a different input or stop the renderer
+   - Verify that the projector turns off
 
-### Understanding Wildcard Matching
+### Understanding Input Wildcards
 
-The `RENDERER_INPUTS` setting supports wildcard matching using the `*` character. This allows you to match multiple inputs with a single entry:
+The `RENDERER_INPUTS` setting supports wildcards using `*` to match multiple inputs. For example:
 
 | Pattern | Matches |
 |---------|---------|
-| `tv://hdmi_1` | Only the exact input `tv://hdmi_1` |
-| `tv://hdmi_*` | Any input starting with `tv://hdmi_` (e.g., `tv://hdmi_1`, `tv://hdmi_2`) |
-| `tv://*` | Any TV input (e.g., `tv://hdmi_1`, `tv://mainTv/com.webos.app.livetv`) |
+| `tv://*` | `tv://hdmi_1`, `tv://hdmi_2`, `tv://mainTv/com.webos.app.livetv`, etc. |
+| `hdmi_*` | `hdmi_1`, `hdmi_2`, `hdmi_3`, etc. |
+| `*` | Any input |
 
 ### The Macro Lua Code
 
 ```lua
 -- === External Projector control - BeoLiving Intelligence lua macro ==
--- This code allows to turn on and off an external projector based on
--- the status of a given renderer.
+-- This code allows to turn on and off an external projector, and perform
+-- other setup actions based on the status of a given renderer.
 --
 -- Customize it by changing the SETTINGS section to define:
 --  - TARGET_PROJECTOR: the full address of the projector to control.
@@ -59,8 +96,12 @@ The `RENDERER_INPUTS` setting supports wildcard matching using the `*` character
 --    "the rest of the name", so the following entry: "tv://*" matches
 --    all of the following: "tv://hdmi_1", "tv://hdmi_2", "tv://hdmi_3"
 --    and "tv://mainTv/com.webos.app.livetv"
---  - TURN_PROJECTOR_OFF_ON_OTHER_INPUTS: true if selecting an input that
+--  - TURN_OFF_ON_OTHER_INPUTS: true if selecting an input that
 --    is not contained on RENDERER_INPUTS should turn the projector off.
+--  - TURN_ON_COMMANDS: The list of commands to fire when turning on.
+--    By default it just turns the projector on.
+--  - TURN_OFF_COMMANDS: The list of commands to fire when turning off.
+--    By default it just turns the projector off (standby).
 --
 -- This function should be triggered by a RENDERER STATE_UPDATE event of the
 -- the product that you want to tie to the external projector.
@@ -85,12 +126,25 @@ function(event, engine)
   -- Inputs of the renderer that should turn on the projector
   local RENDERER_INPUTS = {"tv://*"}
 
-  -- Should we turn the projector off if another input is selected?
-  local TURN_PROJECTOR_OFF_ON_OTHER_INPUTS = true
+  -- Should we turn off if another input is selected?
+  local TURN_OFF_ON_OTHER_INPUTS = true
+
+  -- List of commands for TURN_ON
+  local TURN_ON_COMMANDS = {TARGET_PROJECTOR .. "/_TURN_ON"}
+
+  -- List of commands for TURN_OFF
+  local TURN_OFF_COMMANDS = {TARGET_PROJECTOR .. "/_STANDBY"}
 
   -- --------------------------------------------------------
   -- DO NOT EDIT BELOW HERE UNLESS YOU UNDERSTAND THE CODE!
   -- --------------------------------------------------------
+
+  -- Helper function: fire a list of commands
+  local function fire_all(list)
+    for _, v in pairs(list) do
+      engine.fire(v)
+    end
+  end
 
   -- Helper function: check if item is contained in list,
   -- * wildcard is accepted.
@@ -109,13 +163,11 @@ function(event, engine)
     local input = event.get_string("INPUT")
     if is_contained(input, RENDERER_INPUTS) then
       -- The power was just changed to ON
-      Debug("Valid INPUT selected, will turn projector on")
-      -- Turn on the configured projector
-      engine.fire(TARGET_PROJECTOR .. "/_TURN_ON")
-    elseif TURN_PROJECTOR_OFF_ON_OTHER_INPUTS then
-      Debug("Not valid INPUT selected, will turn projector off")
-      -- Put the configured projector in standby
-      engine.fire(TARGET_PROJECTOR .. "/_STANDBY")
+      Debug("Valid INPUT selected, will turn on")
+      fire_all(TURN_ON_COMMANDS)
+    elseif TURN_OFF_ON_OTHER_INPUTS then
+      Debug("Not valid INPUT selected, will turn off")
+      fire_all(TURN_OFF_COMMANDS)
     end
   end
 
@@ -125,8 +177,7 @@ function(event, engine)
     local st = event.get_string("STATE")
     if st == "Stop" then
       Debug("RENDERER stopped, will turn projector off")
-      -- Put the configured projector in standby
-      engine.fire(TARGET_PROJECTOR .. "/_STANDBY")
+      fire_all(TURN_OFF_COMMANDS)
     end
   end
 end
