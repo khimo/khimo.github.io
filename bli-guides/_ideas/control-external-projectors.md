@@ -1,20 +1,20 @@
 ---
 title: Control External Projectors Based on Renderer Input
-description: Learn how to set up a BeoLiving Intelligence macro to automatically control an external projector based on your renderer's input selection. This guide provides a step-by-step breakdown of the Lua code, enabling seamless integration between your audio/video renderers and external projectors.
+description: Learn how to set up a BeoLiving Intelligence macro to automatically control an external projector based on your device's input selection. This guide provides a step-by-step breakdown of the Lua code, enabling seamless integration between your audio/video devices and external projectors.
 keywords: BeoLiving Intelligence, external projector, macro, Lua, automation, home theater, RENDERER, projector control, input selection, STATE_UPDATE
 layout: pagetoc
 ---
 
 ### Introduction
 
-This tutorial will help you set up a macro that automatically controls an external projector based on the input selection and state of a renderer. When you select certain inputs on your renderer (e.g., TV sources), the projector will automatically turn on. When you select other inputs or stop the renderer, the projector will turn off.
+This tutorial will help you set up a macro that automatically controls an external projector based on the input selection and state of an audio/video device, such as the Beovision Theater or the Beosound Premiere. When you select certain inputs on your device (e.g., TV sources), the projector will automatically turn on. When you select other inputs or stop the device, the projector will turn off.
 
 This is particularly useful for home theater setups where you want the projector to automatically turn on when watching TV content and turn off when listening to music or when playback stops.
 
 ### Features
 
-- **Automatic Turn On**: The projector turns on when specific renderer inputs are selected
-- **Automatic Turn Off**: The projector turns off when the renderer stops or when non-projector inputs are selected
+- **Automatic Turn On**: The projector turns on when specific inputs are selected
+- **Automatic Turn Off**: The projector turns off when the device stops or when non-projector inputs are selected
 - **Wildcard Input Matching**: Use wildcards to match multiple inputs (e.g., `tv://*` matches all TV inputs)
 - **Customizable Commands**: Define custom turn on/off command sequences to control additional devices beyond just the projector
 
@@ -53,9 +53,9 @@ To set up the external projector control macro, follow these steps:
 1. Open the BeoLiving Intelligence admin panel.
 2. Go to the **Macro** tab.
 3. Create a new Macro.
-4. Add the trigger for this macro, which will be the **STATE_UPDATE** event of the renderer you want to tie to the external projector:
+4. Add the trigger for this macro, which will be the **STATE_UPDATE** event of the device you want to tie to the external projector:
    - Select the **RENDERER** resource type
-   - Choose your target renderer (e.g., your TV or media player)
+   - Choose your target device (e.g., your TV or media player)
    - Select the **STATE_UPDATE** event
 5. Click the **Convert to code** button in the commands table.
 6. Copy the entire code from "The Macro Lua Code" section below.
@@ -67,9 +67,9 @@ To set up the external projector control macro, follow these steps:
    - **TURN_ON_COMMANDS**: Commands to execute when turning on—add shades, lights, TV lifts, or any other devices here
    - **TURN_OFF_COMMANDS**: Commands to execute when turning off—restore your room to its normal state
 9. Test the macro:
-   - Turn on the renderer and select one of the inputs listed in `RENDERER_INPUTS`
+   - Turn on the audio/video device and select one of the inputs listed in `RENDERER_INPUTS`
    - Verify that the external projector turns on
-   - Select a different input or stop the renderer
+   - Select a different input or stop the device
    - Verify that the projector turns off
 
 ### Understanding Input Wildcards
