@@ -5,26 +5,26 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: WeMo Air Purifier, SOAP, IP, WiFi, Off, Slow, Medium, Fast, Auto, Ionizer On, Ionizer Off, Air Purifier, Air quality, Expired filter time, Filter life, Filter present, Ionizer status, Mode
 description: WeMo Air Purifier driver supports communication with Holmes Smart Air Purifier with WeMo using SOAP IP connection over WiFi.
 ---
-WeMo / Air Purifier 
-========================= 
+WeMo / Air Purifier
+=========================
 
-This driver supports communication directly with the Holmes Smart Air Purifier with WeMo, allowing to control and receive feedback from the device. 
+This driver supports communication directly with the Holmes Smart Air Purifier with WeMo, allowing to control and receive feedback from the device.
 
-Connection to the system is done via SOAP IP connection over WiFi directly with the WeMo device. 
+Connection to the system is done via SOAP IP connection over WiFi directly with the WeMo device.
 
-The WeMo driver checks connection and polls the device every 10 seconds for status updates. 
+The WeMo driver checks connection and polls the device every 10 seconds for status updates.
 
-The Driver will also check for a status update emediately following any control commands sent to the device for quick feedback updates 
+The Driver will also check for a status update emediately following any control commands sent to the device for quick feedback updates
 
 
 Communications:
 ---------------
 
-To establish communication the following is needed: 
+To establish communication the following is needed:
 
- - Host: The IP address of the WeMo device. 
+ - Host: The IP address of the WeMo device.
 
- - Port: The port number for the communication (default is port 49153) 
+ - Port: The port number for the communication (default is port 49153)
 
 
 
@@ -32,7 +32,7 @@ To establish communication the following is needed:
 Resources:
 ---------------
 
-Available resources are as following: 
+Available resources are as following:
 
  - Off: Sets the Air Purifier in Off mode, State indicates the Wemo Device is Off
 
@@ -51,12 +51,12 @@ Available resources are as following:
  - Air Purifier: State Feedback data
 
 
-State Updates: 
+State Updates:
 ---------------
 
 Available State updates are as following:
 
- - Air quality: Integer value stating Air Quality 
+ - Air quality: Integer value stating Air Quality
 
 
  - Expired filter time: Integer value stating Expired filter time
@@ -65,7 +65,7 @@ Available State updates are as following:
  - Filter life: Feedback for Filter Life
 
 
- - Filter present: Feedback for Filter presence status 
+ - Filter present: Feedback for Filter presence status
 
 
  - Ionizer status: Status of current Ionizer activity, On or Off
