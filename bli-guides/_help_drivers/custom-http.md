@@ -16,7 +16,7 @@ Connection
 The Connection Settings has the next parameters:
 
 - **Base url** : Base URL of destination for each HTTP Request. For each resource that has an endpoint specified, the URL of the request is the concatenation of `Base url + endpoint`.
-- **Headers** *(OPTIONAL)* : Specify the Headers for each HTTP request made by the driver as *JSON Object*. Eg: `{"Header1": "valueX", "Header2": "valueY"}`. If this field is left empty the next headers are used by default: `{"Accept": "*/*", "Content-Length": "${Length}","Host": "${Host URL}"}`. 
+- **Headers** *(OPTIONAL)* : Specify the Headers for each HTTP request made by the driver as *JSON Object*. Eg: `{"Header1": "valueX", "Header2": "valueY"}`. If this field is left empty the next headers are used by default: `{"Accept": "*/*", "Content-Length": "${Length}","Host": "${Host URL}"}`.
 - **Poll url** *(OPTIONAL)* : If this field is not empty, the driver makes a GET HTTP Request to the *Poll url* every 60 seconds. The driver state depends if the returned status code is `2XX Success` or not. On the other hand, if this field is left empty, the driver state is determined by the last returned status code of a request made. In this case the driver state will be equal to Online if the returned status code is `2XX Success` and Offline if not.
 
 Resources
@@ -37,9 +37,9 @@ Each resource is composed by:
 
 #### Resource Address Format
 
-The resource address has the next format `ENDPOINT;PAYLOAD`, which `ENDPOINT` will be used as the endpoint url (concatenated next to the *Base url* value) and `PAYLOAD` the payload data of the HTTP request. Both the `ENDPOINT` and `PAYLOAD` are *OPTIONAL*. If only `PAYLOAD` is specified, the usage of `;` is **MANDATORY**. Usage of ";" (semi-colon) on `ENDPOINT` must be encoded as `%3B`. 
+The resource address has the next format `ENDPOINT;PAYLOAD`, which `ENDPOINT` will be used as the endpoint url (concatenated next to the *Base url* value) and `PAYLOAD` the payload data of the HTTP request. Both the `ENDPOINT` and `PAYLOAD` are *OPTIONAL*. If only `PAYLOAD` is specified, the usage of `;` is **MANDATORY**. Usage of ";" (semi-colon) on `ENDPOINT` must be encoded as `%3B`.
 
-Also, an **EMPTY** resource address is valid. 
+Also, an **EMPTY** resource address is valid.
 
 ##### Resource address examples
 

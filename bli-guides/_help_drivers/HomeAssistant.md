@@ -6,6 +6,7 @@ keywords: Home Assistant, Web socket, SHADE, DIMMER, THERMOSTAT_1SP, THERMOSTAT_
 description: Home Assistant driver integrates a Home Assistant hub into the BeoLiving intelligence using Web socket protocol, allowing to manage shades, lights, thermostats and alarms.
 ---
 
+
 # Home Assistant Driver
 
 Integrates a Home Assistant hub into the BeoLiving intelligence, allowing to import resources, retrieve states, and send commands to Home Assistant entities.
@@ -199,8 +200,9 @@ Press the "Capture" button, executed events sent by the systems in your installa
  - Added shades with tilt, fixed shades with level
 ### v0.3 | 2021/12/10
  - Added shades with only tilt, fixed thermostats so they can be used with the app.
- ### v0.4 | 2023/1/5
+### v0.4 | 2023/1/5
  - Added new light integration according to new Home Assistant protocol
+### v0.5 | 2025/09/22
+ - Corrects HVAC structure navigation
  
 *Please, report any issue with this driver to: support+drivers@khimo.com*
-

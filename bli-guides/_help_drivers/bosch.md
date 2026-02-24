@@ -44,6 +44,12 @@ monitor air temperature, humidity and purity.
  5. *Light Control*, which acts as a non-dimmable dimmer [1].
  6. *Shutter Control*, which acts as a general purpose shutter [2].
  7. *Shade Control*, which acts as a shade with level [2].
+ 8. *Smoke Detector*
+ 9. *Switch Module*
+ 10. *Contact Sensor*
+ 11. *Alarm*
+ 12. *Scenario*
+ 13. *User State*
 
 Notes:
  1. Smart Plugs and Light Control resources are discovered with the same addresses.
@@ -61,5 +67,16 @@ Controller once the connection is established.
 ### v2.0 | June 2023
  - Corrects several bugs.
  - Implements shutter control.
+### v2.1 | Oct 2024 - Many thanks to Brad Smith
+ - Adds alarm state to Twinguard.
+ - Adds smoke detector device.
+ - Adds switch control and light switch control support for relay and shutter with child lock.
+ - Shutter control and shade control support child lock and events state.
+ - Added Contact Sensor II and Contact Sensor II Plus with eventing contact closure, vibration detection (when supported) and eventing of bypass state.
+ - Implements an alarm for intruder detection system.
+ - Adds Smoke detection system as a resource.
+ - Adds scenarios as a BUTTON resource.
+ - Adds user states as a resource.
+ - Several error corrections and functionality improvements.
 
 *Please, report any issue with this driver to: support+drivers_bosch@khimo.com.*

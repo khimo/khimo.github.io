@@ -33,7 +33,7 @@ The driver will do the best to find the MAC address automatically, if you have a
 
 E.g:
  - 192.168.1.120
- - 192.168.0.33;AA:BB:CC:DD:EE:11 
+ - 192.168.0.33;AA:BB:CC:DD:EE:11
  - uuid:1a6b23c4-d567-e4h8-94f0-f1gbfcb7df55 *(Discovered resource address)*
 
 ## Resource discovery
@@ -77,4 +77,4 @@ Press the "Capture" button, excecuted events sent by the systems in your install
 ### v0.2 | 2020
  - Addition of a resource type that handles relative volume only.
 
-*Please, report any issue with this driver to: support+drivers_lgwebos@khimo.com.*
+*Please, report any issue with this driver to: support+drivers_lgwebos@khimo.com.*<|||file_end|||>

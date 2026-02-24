@@ -8,6 +8,10 @@ description: This driver supports communication with a Philips Hue bridge, allow
 Philips Hue
 ===============================
 
+## ATTENTION!!
+
+**From september 2024, this driver will be DEPRECATED. Existing installations will continue to work, but new ones must use the Philips Hue CLIP API driver instead.**
+
 This driver supports communication with a Philips Hue bridge,
 allowing to control lights, lighting groups, and activate scenes.
 
@@ -74,15 +78,15 @@ and color temperature.
 Both lights and groups are mapped to the DIMMER Standard Resource
 type, and allow full control of every state variable, such as
 brightness, hue or color coordinates and color temperature depending on the above
-categories. 
+categories.
 
 Also, as a DIMMER, they provide the SET LEVEL command which acts
 on the *brightness* and *on* state variables. As a simple example,
 setting the level to 100 implies setting "on" to true and "bri" to
-255 on the Philips Hue bridge. 
+255 on the Philips Hue bridge.
 When using an "On Off Light" the SET LEVEL command only sets "on"
 to true on the Philips Hue Bridge if LEVEL is greater than 0 (or
-"off" on the contrary). 
+"off" on the contrary).
 
 The scene is mapped to a BUTTON Standard Resource type, and the button
 PRESS recalls the scene on the Philips Hue bridge.
@@ -109,4 +113,4 @@ the _TIMED SET command should be used.
 
  - v2.3 | 03/03/2023
 
-    Updates IP synchronization to latest method.
+    Updates IP synchronization to latest method.<|||file_end|||>

@@ -5,6 +5,7 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Lutron, LEAP, Caseta, Caséta, QSX, Athena, MyRoom XC, RA2 Select, RadioRA3, HomeWorks, BUTTON, BUTTON WITH LED, DIMMER, SWITCH, MOTOR, SHADE, SHADE WITH TILT, SHADE WITH TILT WHEN CLOSED, TILT, KETRA DIMMER, OCCUPANCY, WHITE TUNE, AREA SCENE, PRESET, SINGLE SETPOINT THERMOSTAT, DUAL SETPOINT THERMOSTAT, SET, SET COLOR, SET VIBRANCY, SET COLOR TEMPERATURE, RAISE, LOWER, STOP, OPEN, CLOSE, SET SETPOINT, SET MODE, SET FAN AUTO
 description: Lutron LEAP driver allows to integrate Lutron RA2 Select, RadioRA3, Caseta and HomeWorks systems managing buttons, dimmers, shades, occupancy sensors, thermostats and scenes.
 ---
+
 # Lutron Extensible Application Protocol (LEAP)
 
 LEAP is the protocol used to integrate with the following Lutron systems:
@@ -47,7 +48,7 @@ Button without feedback, good for Pico controls, but can be used for any Lutron 
 Button with feedback LED, used for Keypads.
 Only available for HomeWorks setups.
 
-*Warning*: Buttons events received by the BLI will depend in the configuration of the button in Lutron side. If nothing is configured in lutron for a given event, you will not get the Event in the BLI. In order to get most buttons events it is recommended to setup the button in Lutron as "Conditional" and add at lease one "dummy" action (e.g.: an unnafected action in a lighting zone). 
+> **Warning**: Button events received by BLI depend on the Lutron configuration. If nothing is configured in Lutron for a given event (HOLD, MULTI_TAP, etc.), you will not receive that event in BLI. To get most button events, setup the button in Lutron as "Conditional" and add at least one "dummy" action (e.g.: a dummy state variable change or an unaffected lighting zone action). 
 
 ### DIMMER
 Simple dimmer with Level, used for Lutron *Dimmed* zones.
@@ -112,6 +113,14 @@ SET MODE (Heat, Cool, Auto, Em.Heat, Off) and SET FAN AUTO (Auto, On). Heat and 
 compulsory difference between them stated by the Lutron device, which is kept when changing setpoints.
 
 ### Changelog
+#### v0.7 | 2026/01/21 Button events and logging improvements
+ - Fix BUTTON and BUTTON WITH LED event handling (PRESS, HOLD, RELEASE) after system restart
+ - Improve debug logging performance
+ - Add documentation about Lutron button event configuration requirements
+
+#### v0.6 | 2025/12/01 Athena and MyRoom XC
+ Adds support for Athena and MyRoom XC.
+
 #### v0.5 | 12/10/2022
  - Adds support to OpenCloseStop as MOTOR shade
 
@@ -138,4 +147,3 @@ Switches
 Test. Tried to tes using our dimmer but:- "This request is not supported : Only switched zones can be sent to a switched level"
 
 -->
-

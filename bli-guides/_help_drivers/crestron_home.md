@@ -2,9 +2,10 @@
 title: Crestron Home
 layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
-keywords: Crestron Home, HTTP, Dimmer, Switch, Scene, BUTTON
-description: Driver for managing Crestron Home devices as Dimmer, Switch and Scene (BUTTON) resource types.
+keywords: Crestron Home, HTTP, Dimmer, Switch, Scene, BUTTON, SHADE, THERMOSTAT
+description: Driver for managing Crestron Home devices as Dimmer, Switch, Scene (BUTTON), Shade and Thermostat resource types.
 ---
+
 Crestron Home
 ===============================
 
@@ -39,6 +40,8 @@ The Crestron Home driver supports commanding the following devices:
 + **Dimmer**: supports on/off control and dimming.
 + **Switch**: supports on/off control.
 + **Scene**: supports recalling the scene.
++ **Shade**: supports shades with level management.
++ **Thermostat**: supports 2 set-point thermostat management.
 
 Dimmers are mapped to a DIMMER Standard Resource.
 Switches and Scenes are mapped to BUTTON Standard Resources.
@@ -48,3 +51,9 @@ Switches and Scenes are mapped to BUTTON Standard Resources.
  - v1 | 24/4/2023.
 
     First version
+
+ - v1.1 | 11/8/2025.
+
+    Implements shades and thermostats.
+
+**Please, report any issue with this driver to: support+drivers_crestron_home@khimo.com.**

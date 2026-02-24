@@ -6,6 +6,7 @@ keywords: Niko Home Control, Dimmable Light, Non Dimmable Light, Switch, Thermos
 description: Niko Home Control driver allows to manage dimmers, switches, thermostats, shades, locks and garage doors.
 ---
 
+
 # Niko Home Control
 
 ## Connecting

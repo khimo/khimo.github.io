@@ -71,9 +71,3 @@ Resource State
    - **_RainLevel3Hrs**: Rain volume (milimeters).
    - **_Snow**: True if it will snow, false otherwise.
    - **_SnowLevel3Hrs**: Snow volume (milimeters).
-
-
-
-
-
-

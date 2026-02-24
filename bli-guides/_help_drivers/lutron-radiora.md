@@ -77,4 +77,3 @@ Resource State
    - **STATE**: The state of the LED (0 means OFF and 1 ON)
  + Phantom LED
    - **STATE**: The state of the LED (0 means OFF and 1 ON)
-

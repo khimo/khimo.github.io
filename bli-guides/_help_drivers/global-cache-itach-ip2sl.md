@@ -91,4 +91,4 @@ button on the resources page, for each received string ending with the end
 of line sequence, an unknown resource will show up using it as address.
 
 Also the end of line is appended to commands before sending them to the
-external system.
+external system.<|||file_end|||>

@@ -14,7 +14,8 @@ The Halo's interface, controllable through the wheel and touch screen, consists 
 
 ## Connecting
 
-The Beoremote Halo should be previously configured and connected to the network using the Bang&Olufsen app. Devices are automatically discovered and should simply be added as BLI resources on the BLI's Setup website.
+The Beoremote Halo should be previously configured and connected to the network using the Bang & Olufsen app. Devices are automatically discovered and should simply be added as BLI resources on the BLI's Setup website. In cases where discovery is not working, because the device is in a different physical network, you may add the resource by using a fixed IP. This is not recommended, and while doing it, you should be careful when defining the IP and making the appropriate IP reservation for the Halo, to avoid IP collisions in the network.
+
 
 ### Adding the resource
 A Halo should be added as a resource in the *Resources* tab, under the *B&O Halo Remote* system. If the device is connected to the same network as the BLI, it will appear after clicking *Show discovered resources*.
@@ -68,7 +69,7 @@ Regarding **Shades**, they can have different capabilities, the ones taken into 
 
 ## Automatic configuration
 
-It is possible to create an automatic configuration for each Halo, relative to the room where it is located. It is enabled by checking the "Use automatic Halo configuration" option. BeoLiving Essential users always use the automatic configuration. 
+It is possible to create an automatic configuration for each Halo, relative to the room where it is located. It is enabled by checking the "Use automatic Halo configuration" option. BeoLiving Intelligence Essential users always use the automatic configuration. 
 
 Setting this option will get the available scenes and resources of the current room and it will try to complete the 3 pages (8 buttons each) in this order:
 

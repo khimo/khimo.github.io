@@ -78,7 +78,8 @@ Commands, events and states
      + \_FAN TIMER ACTIVE: Indicates whether or not the fan is active.
  + **Home/Away**
    - **Home**: sets the corresponding home away status to home.
-   - **Away**: sets the corresponding home away status to away.
+   - **Away**: sets the corresponding home away status to
+away.
    - **Toggle**: toggles the corresponding home away status.
  + **Rush Hour**:
    - **State variables**:

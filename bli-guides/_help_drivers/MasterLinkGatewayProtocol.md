@@ -28,7 +28,7 @@ Connection settings are:
 
 The available resource are:
  - **MasterLink video product (RENDERER):** resources will send all their commands to MasterLink destination VIDEO.
- - **MasterLink audio product (RENDERER):** will send all their commands to the AUDIO destination. 
+ - **MasterLink audio product (RENDERER):** will send all their commands to the AUDIO destination.
 
 > This is the only difference between these resources, all the available commands and sources will be the same for each of them.
 
@@ -71,21 +71,21 @@ Press the "Capture" button, excecuted events sent by the systems in your install
 
 
 ## Changelog
- 
+
 ### v0.1 | 2019/09/01
  - Initial version
 
-### v0.2 | 2019/12/27 
+### v0.2 | 2019/12/27
  - Adds support to custom commands and Light & Control events
 
-### v0.3 | 2020/02/28 
+### v0.3 | 2020/02/28
  - Corrects WIND and STOP commands, improves inline help.
 
-### v0.4 | 2020/02/28 
+### v0.4 | 2020/02/28
  - Minor fix.
 
 ### v0.6 | 2020/07/29
  - Added configuration parameters to resources
 
 
-*Please, report any issue with this driver to: support+drivers@khimo.com*
+*Please, report any issue with this driver to: support+drivers@khimo.com*<|||file_end|||>

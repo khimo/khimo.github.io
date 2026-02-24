@@ -202,4 +202,4 @@ Grafik controller:
 
 
 
-*Please, report any issue with this driver to: support+drivers@khimo.com*
+*Please, report any issue with this driver to: support+drivers@khimo.com*<|||file_end|||>

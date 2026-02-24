@@ -5,6 +5,7 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Dynalite, Dynet-1, RS232, DIMMER, BUTTON, SHADE
 description: Dynalite is a lighting and automation control system that offers power dimmer controllers, signal dimmer controllers and more. This driver supports Connection via RS232 and manages DIMMER, BUTTON and SHADE resource types.
 ---
+
 # Dynalite driver | Dynet-1
 
 Dynalite is a lighting and automation control system that offers power dimmer controllers, signal dimmer controllers, and more.
@@ -75,4 +76,3 @@ To set up a Dynalite control to only affect the BeoLiving Intelligence, this con
 
 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
-
