@@ -5,6 +5,7 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Philips Hue, CLIP API, DIMMER, GPIO, BUTTON, On Off Light, Dimmable Light, Color Temperature Light, Color Light, Extended Color Light, Group, Motion, Motion Camera, Entertainment, Scene, Hue Button, Hue Rotary, Temperature, Light Level, Contact, battery, zigbee, FADE
 description: Philips Hue CLIP API v2 driver controls lights, groups, sensors (motion, temperature, light level, contact), buttons, rotary dials and scenes. Supports battery monitoring, zigbee connectivity and smooth fade transitions.
 ---
+
 Philips Hue CLIP API
 ===============================
 
@@ -29,7 +30,7 @@ turned on with the new selected color.
 
 If system connection can't be established specifying Hue Bridge Hostname
 on *Bridge host*, bad configuration or absence of the DNS server on the
-BeoLiving Intelligence LAN could be responsible for the issue.
+{{productName}} LAN could be responsible for the issue.
 Try using the IP address of the Bridge. Default Hostname of Hue Bridge
 is ```Philips-hue```.
 
@@ -142,4 +143,4 @@ on the resource state.
  - Fixed undefined variable `var` in SSE error logging (now uses the actual error value).
  - Fixed `requestResources` always returning count 0 instead of the actual discovered count.
 
-#### v1.0 | First version<|||file_end|||>
+#### v1.0 | First version
