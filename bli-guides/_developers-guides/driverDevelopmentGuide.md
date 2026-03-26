@@ -2561,7 +2561,7 @@ This is what [urlStreamInterrupt](#urlStreamInterrupt) is meant for, each time a
 
 <a id="SRT"></a>
 
-# Standard Resoure Types
+# Standard Resource Types
 
 
 <a id="org931bff7"></a>
@@ -2619,64 +2619,48 @@ By convention, all SRTs and their standard actions are identified by a symbol. F
 
 The following are the SRTs already defined:
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+| SRT | Symbol |
+| :--- | :--- |
+| Button | `BUTTON` |
+| Dimmer | `DIMMER` |
+| Shade | `SHADE` |
+| Thermostat 1 setpoint | `THERMOSTAT_1SP` |
+| Thermostat 2 setpoints | `THERMOSTAT_2SP` |
+| GPIO | `GPIO` |
+| A/V Renderer (Modern) | `RENDERER` |
+| A/V Renderer (Legacy B&O) | `AV_RENDERER` |
+| Alarm | `ALARM` |
+| Alarm Zone | `ALARM_ZONE` |
+| Alarm Sensor | `ALARM_SENSOR` |
 
 
-<colgroup>
-<col  class="org-left" />
+<a id="global-capabilities"></a>
 
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">SRT</th>
-<th scope="col" class="org-left">Symbol</th>
-</tr>
-</thead>
+### Global capabilities
 
-<tbody>
-<tr>
-<td class="org-left">Button</td>
-<td class="org-left">`BUTTON`</td>
-</tr>
+Any resource type can optionally include the following global state variables:
 
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| `ONLINE` | Bool (`0`/`1`) | Device connection status. `1` means online. |
+| `BATTERY` | Int (0-100) | Battery level percentage. |
 
-<tr>
-<td class="org-left">Dimmer</td>
-<td class="org-left">`DIMMER`</td>
-</tr>
+These are not specific to any SRT and can be added to any resource type definition. For example:
 
-
-<tr>
-<td class="org-left">Shade</td>
-<td class="org-left">`SHADE`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Thermostat 1 setpoint</td>
-<td class="org-left">`THERMOSTAT_1SP`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Thermostat 2 setpoints</td>
-<td class="org-left">`THERMOSTAT_2SP`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">GPIO</td>
-<td class="org-left">`GPIO`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">A/V renderer</td>
-<td class="org-left">`AV_RENDERER`</td>
-</tr>
-</tbody>
-</table>
+```lua
+    resource_types= {
+       ["My sensor"]= {
+          standardResourceType= "GPIO",
+          address= stringArgument("address", "0"),
+          commands= {},
+          states= {
+             enumArgument("STATE", {0, 1}, 0),
+             enumArgument("ONLINE", {0, 1}, 0),
+             numericArgument("BATTERY", 0, 0, 100)
+          }
+       }
+    }
+```
 
 
 <a id="orgac2fc59"></a>
@@ -2879,6 +2863,13 @@ Commands and events:
 
 
 <tr>
+<td class="org-left">`SET COLOR TEMPERATURE`</td>
+<td class="org-left">command</td>
+<td class="org-left">Set the color temperature (Kelvin) for the dimmer.</td>
+</tr>
+
+
+<tr>
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">event</td>
 <td class="org-left">State update notification.</td>
@@ -2922,6 +2913,13 @@ Attributes:
 
 
 <tr>
+<td class="org-left">`COLOR TEMPERATURE`</td>
+<td class="org-left">`SET COLOR TEMPERATURE`</td>
+<td class="org-left">Requested color temperature (Kelvin).</td>
+</tr>
+
+
+<tr>
 <td class="org-left">`LEVEL`</td>
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">Dimmer level feedback.</td>
@@ -2933,6 +2931,13 @@ Attributes:
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">Color value feedback.</td>
 </tr>
+
+
+<tr>
+<td class="org-left">`COLOR TEMPERATURE`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Color temperature feedback (Kelvin).</td>
+</tr>
 </tbody>
 </table>
 
@@ -2942,14 +2947,17 @@ Color value is specified as a string containing the Hue, Saturation and Brightne
 
 The H value is an integer from 0 to 360, and both S and B are an integer from 0 to 100.
 
+Color temperature is specified as an integer value in Kelvin (typically 2000 to 10000).
+
 Example commands:
 
     Upstairs/Bedroom/DIMMER/Downlight/SET?LEVEL=32
     Upstairs/Bedroom/DIMMER/Downlight/SET COLOR?COLOR=hsv(120,66,87)
+    Upstairs/Bedroom/DIMMER/Downlight/SET COLOR TEMPERATURE?COLOR TEMPERATURE=4000
 
 Example events:
 
-    Upstairs/Bedroom/DIMMER/Downlight/STATE_UPDATE?LEVEL=32&COLOR=hsv(120,66,87)
+    Upstairs/Bedroom/DIMMER/Downlight/STATE_UPDATE?LEVEL=32&COLOR=hsv(120,66,87)&COLOR TEMPERATURE=4000
 
 
 <a id="org8e5466b"></a>
@@ -3034,6 +3042,13 @@ Commands and events:
 
 
 <tr>
+<td class="org-left">`SET TILT`</td>
+<td class="org-left">command</td>
+<td class="org-left">Set tilt angle.</td>
+</tr>
+
+
+<tr>
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">event</td>
 <td class="org-left">State update notification.</td>
@@ -3077,14 +3092,30 @@ Attributes:
 
 
 <tr>
+<td class="org-left">`TILT`</td>
+<td class="org-left">`SET TILT`</td>
+<td class="org-left">Requested tilt angle.</td>
+</tr>
+
+
+<tr>
 <td class="org-left">`LEVEL`</td>
 <td class="org-left">`STATE_UPDATE`</td>
-<td class="org-left">Dimmer level feedback.</td>
+<td class="org-left">Shade level feedback.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`TILT`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Tilt angle feedback.</td>
 </tr>
 </tbody>
 </table>
 
 The level parameter is an integer between 0 and 100. A level of 0 indicates a closed shade (minimum natural lighting), or lowered awning. The level 100 corresponds to an open shade, or raised awning (maximum lighting).
+
+The tilt parameter is an integer between 0 and 100. A value of 0 indicates fully closed, 50 indicates open (horizontal), and 100 indicates closed in the inverse direction.
 
 Preset numbers supported are 0 through 30.
 
@@ -3160,7 +3191,14 @@ Commands and events:
 <tr>
 <td class="org-left">`SET ECO MODE`</td>
 <td class="org-left">command</td>
-<td class="org-left">Set echo mode on/off.</td>
+<td class="org-left">Set eco mode on/off.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`SET FAN SPEED`</td>
+<td class="org-left">command</td>
+<td class="org-left">Set fan speed.</td>
 </tr>
 </tbody>
 </table>
@@ -3218,6 +3256,20 @@ Attributes:
 <td class="org-left">`FAN AUTO` (M)</td>
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">Fan auto mode on/off.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FAN SPEED`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Current fan speed (Auto/Low/Medium/High or custom).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`HUMIDITY`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Relative humidity 0-100%.</td>
 </tr>
 
 
@@ -3288,6 +3340,8 @@ Operation mode is one of:
 </tr>
 </tbody>
 </table>
+
+Fan speed values are one of `Auto`, `Low`, `Medium`, `High`, or custom values starting with `_`.
 
 
 <a id="org78769ea"></a>
@@ -3360,7 +3414,14 @@ Commands and events:
 <tr>
 <td class="org-left">`SET ECO MODE`</td>
 <td class="org-left">command</td>
-<td class="org-left">Set echo mode on/off.</td>
+<td class="org-left">Set eco mode on/off.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`SET FAN SPEED`</td>
+<td class="org-left">command</td>
+<td class="org-left">Set fan speed.</td>
 </tr>
 </tbody>
 </table>
@@ -3425,6 +3486,20 @@ Attributes:
 <td class="org-left">`FAN AUTO` (M)</td>
 <td class="org-left">`STATE_UPDATE`</td>
 <td class="org-left">Fan auto mode on/off.</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`FAN SPEED`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Current fan speed (Auto/Low/Medium/High or custom).</td>
+</tr>
+
+
+<tr>
+<td class="org-left">`HUMIDITY`</td>
+<td class="org-left">`STATE_UPDATE`</td>
+<td class="org-left">Relative humidity 0-100%.</td>
 </tr>
 
 
@@ -3495,6 +3570,8 @@ Operation mode is one of:
 </tr>
 </tbody>
 </table>
+
+Fan speed values are one of `Auto`, `Low`, `Medium`, `High`, or custom values starting with `_`.
 
 
 <a id="org1217558"></a>
@@ -3587,14 +3664,313 @@ Attributes:
 </tbody>
 </table>
 
+**Note:** Do NOT use `VALUE` attribute for `STATE_UPDATE`. Use `STATE` for state feedback and `VALUE` only for the `SET` command.
+
 Example command:
 
     Garden/Pool/GPIO/Filter/SET?VALUE=true
 
+Example event:
+
+    Garden/Pool/GPIO/Filter/STATE_UPDATE?STATE=1
+
+
+<a id="RENDERER"></a>
+
+## RENDERER type
+
+Audio/Video rendering device (TV, Receiver, Speaker). This is the modern SRT for AV devices, built entirely via capabilities.
+
+The RENDERER type is defined by combining capabilities. Each capability adds specific commands, states and queries to the resource.
+
+A RENDERER must implement the three mandatory capabilities (POWER, INPUT, VOLUME) and may implement any combination of the optional ones.
+
+### Mandatory capabilities
+
+#### POWER (mandatory)
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `TURN_ON` (M) | command | None | Turn on the device. |
+| `STANDBY` (M) | command | None | Put the device in standby. |
+| `REBOOT` | command | None | Reboot the device. |
+
+No specific states. Use the [global capability](#global-capabilities) `ONLINE` for connection status (recommended).
+
+#### INPUT (mandatory)
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `SELECT_INPUT` (M) | command | `INPUT` (String): input source ID | Select the active input source. |
+| `LIST_INPUTS` (M) | query | None | Returns available inputs. |
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `INPUT` (M) | String | Current input source ID. |
+
+#### VOLUME (mandatory)
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `VOLUME_UP` (M) | command | None | Increase volume one step. |
+| `VOLUME_DOWN` (M) | command | None | Decrease volume one step. |
+| `SET_VOLUME` | command | `VOLUME` (Int 0-100): target level | Set absolute volume level. |
+| `SET_MUTE` | command | `MUTE` (Bool): mute state | Set mute on/off. |
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `VOLUME` | Int 0-100 | Current volume level. |
+| `MUTE` | Bool | Current mute state. |
+
+### Optional capabilities
+
+The following capabilities are optional. A driver includes a capability by defining the corresponding commands and states.
+
+#### NAVIGATION
+
+All commands take no arguments.
+
+| Symbol | Type | Description |
+| :--- | :--- | :--- |
+| `UP` | command | Navigate up. |
+| `DOWN` | command | Navigate down. |
+| `LEFT` | command | Navigate left. |
+| `RIGHT` | command | Navigate right. |
+| `ENTER` | command | Confirm / select. |
+| `RETURN` | command | Go back. |
+| `EXIT` | command | Exit current context. |
+| `RED` | command | Red function key. |
+| `GREEN` | command | Green function key. |
+| `YELLOW` | command | Yellow function key. |
+| `BLUE` | command | Blue function key. |
+
+#### PLAYER
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `PLAY` (M) | command | None | Start playback. |
+| `PAUSE` (M) | command | None | Pause playback. |
+| `STOP` (M) | command | None | Stop playback. |
+| `NEXT` (M) | command | None | Next track / chapter. |
+| `PREV` (M) | command | None | Previous track / chapter. |
+| `SEEK` | command | `TIME` (Int): position in seconds | Seek to position. |
+| `WIND` | command | None | Fast forward. |
+| `REWIND` | command | None | Rewind. |
+| `SET_MODE` | command | `MODE` (String): playback mode | Set playback mode (e.g. repeat, shuffle). |
+
+(M) = mandatory if the PLAYER capability is included.
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `NOW_PLAYING` (M) | String | Current track / program name. |
+| `NOW_PLAYING_DETAILS` | String | Additional details (artist, album, etc.). |
+| `NOW_PLAYING_ART` | String | URL to artwork image. |
+| `STATE` | String | Playback state (e.g. play, pause, stop). |
+| `MODE` | String | Current playback mode. |
+
+(M) = mandatory if the PLAYER capability is included.
+
+#### CHANNEL
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `CHANNEL_UP` (M) | command | None | Next channel. |
+| `CHANNEL_DOWN` (M) | command | None | Previous channel. |
+| `SEND_DIGIT` (M) | command | `DIGIT` (Int): single digit 0-9 | Send a digit for channel entry. |
+| `SELECT_CHANNEL` | command | `CHANNEL` (String): channel ID | Select channel directly. |
+| `LIST_CHANNELS` | query | None | Returns available channels. |
+
+(M) = mandatory if the CHANNEL capability is included.
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `CURRENT_CHANNEL` | String | Current channel name or ID. |
+
+#### APPLICATION
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `LAUNCH` (M) | command | `APPLICATION` (String): app name or ID | Launch an application. |
+| `LIST_APPLICATIONS` (M) | query | None | Returns available applications. |
+
+(M) = mandatory if the APPLICATION capability is included.
+
+#### CONTENT
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `SET_CONTENT_ID` (M) | command | `ID` (String): content identifier, `PROVIDER_TYPE` (String): provider name | Play specific content by ID and provider. |
+
+(M) = mandatory if the CONTENT capability is included.
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `CONTENT_ID` (M) | String | Current content identifier. |
+
+#### PLAYQUEUE
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `ADD_ITEM` (M) | command | Item data | Add item to play queue. |
+| `CLEAR` (M) | command | None | Clear the play queue. |
+| `REMOVE_ITEM` (M) | command | Item index | Remove item from play queue. |
+| `MOVE_ITEM` | command | From/To indices | Move item within play queue. |
+| `SET_INDEX` (M) | command | `INDEX` (Int): queue position | Jump to queue position. |
+| `SET_SHUFFLE` | command | `SHUFFLE` (Bool): on/off | Set shuffle mode. |
+| `SET_REPEAT` | command | `REPEAT` (String): repeat mode | Set repeat mode. |
+| `LIST_PLAYQUEUE_ITEMS` (M) | query | None | Returns play queue contents. |
+
+(M) = mandatory if the PLAYQUEUE capability is included.
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `PLAYQUEUE_INDEX` (M) | Int | Current position in queue. |
+| `PLAYQUEUE_VERSION` (M) | Int | Queue version (increments on changes). |
+| `SHUFFLE` | Bool | Shuffle mode on/off. |
+| `REPEAT` | String | Repeat mode. |
+
+#### MULTIROOM
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `JOIN` (M) | command | Target renderer | Join another renderer's session. |
+| `LINK` (M) | command | Target renderer | Link with another renderer. |
+| `UNLINK` (M) | command | None | Unlink from multiroom group. |
+| `EXPAND` | command | Target renderer | Expand playback to another renderer. |
+
+(M) = mandatory if the MULTIROOM capability is included.
+
+| State | Type | Description |
+| :--- | :--- | :--- |
+| `MULTIROOM_ORIGIN` (M) | String | Origin renderer ID. |
+| `MULTIROOM_TYPE` (M) | String | Type of multiroom grouping. |
+
+#### KEYBOARD
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `SEND_TEXT` (M) | command | `TEXT` (String): text to input | Send text input to the device. |
+
+(M) = mandatory if the KEYBOARD capability is included.
+
+#### CUSTOM_COMMAND
+
+| Symbol | Type | Arguments | Description |
+| :--- | :--- | :--- | :--- |
+| `CUSTOM_COMMAND` (M) | command | `COMMAND` (String): command name | Execute a device-specific command. |
+| `LIST_CUSTOM_COMMANDS` (M) | query | None | Returns available custom commands. |
+
+(M) = mandatory if the CUSTOM_COMMAND capability is included.
+
+### Example specification
+
+```lua
+    resource_types= {
+       ["My TV"]= {
+          standardResourceType= "RENDERER",
+          address= stringArgument("address", "0"),
+          commands= {
+             TURN_ON= {},
+             STANDBY= {},
+             SELECT_INPUT= {
+                arguments= { stringArgument("INPUT", "") }
+             },
+             VOLUME_UP= {},
+             VOLUME_DOWN= {},
+             SET_VOLUME= {
+                arguments= { numericArgument("VOLUME", 0, 0, 100) }
+             },
+             SET_MUTE= {
+                arguments= { boolArgument("MUTE", false) }
+             },
+             -- Navigation
+             UP= {}, DOWN= {}, LEFT= {}, RIGHT= {},
+             ENTER= {}, RETURN= {}, EXIT= {},
+             -- Player
+             PLAY= {}, PAUSE= {}, STOP= {},
+             NEXT= {}, PREV= {}
+          },
+          states= {
+             enumArgument("ONLINE", {0, 1}, 0),        -- global capability
+             stringArgument("INPUT", ""),                -- INPUT capability (mandatory)
+             numericArgument("VOLUME", 0, 0, 100),      -- VOLUME capability (optional state)
+             boolArgument("MUTE", false),                -- VOLUME capability (optional state)
+             stringArgument("NOW_PLAYING", ""),           -- PLAYER capability
+             stringArgument("NOW_PLAYING_DETAILS", ""),   -- PLAYER capability
+             stringArgument("STATE", "")                  -- PLAYER capability
+          }
+       }
+    }
+```
+
+### Example command
+
+    Living/Main/RENDERER/TV/SELECT_INPUT?INPUT=hdmi1
+    Living/Main/RENDERER/TV/SET_VOLUME?VOLUME=45
+
+### Example event
+
+    Living/Main/RENDERER/TV/STATE_UPDATE?INPUT=hdmi1&VOLUME=45&MUTE=false
+
+
+<a id="ALARM"></a>
+
+## ALARM type
+
+Security system panel or partition.
+
+Commands and events:
+
+| Symbol | Type | Description |
+| :--- | :--- | :--- |
+| `ARM` (M) | command | Arm the system. Arguments: `MODE`, `CODE`. |
+| `DISARM` (M) | command | Disarm the system. Argument: `CODE`. |
+| `TRIGGER ALARM` | command | Trigger a panic/burglary/fire alarm. Argument: `ALARM`. |
+| `STATE_UPDATE` | event | State update notification. |
+
+States:
+
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| `MODE` (M) | Enum | `ARM HOME`, `ARM AWAY`, `DISARM` |
+| `ALARM` (M) | Bool | `true` if alarm triggered |
+| `READY` (M) | Bool | `true` if system ready to arm |
+| `ALARM_FIRE` | Bool | Fire alarm triggered |
+| `ALARM_BURGLARY` | Bool | Burglary alarm triggered |
+| `ALARM_PANIC` | Bool | Panic alarm triggered |
+| `ONLINE` | Bool | Connection status |
+
+Arm modes:
+
+-   `ARM HOME`: Alarm armed with zones bypassed. No delay after armed.
+-   `ARM AWAY`: Alarm armed with no zones bypassed. No delay after armed.
+-   `DISARM`: Alarm disarmed.
+
+
+<a id="ALARM_ZONE"></a>
+
+## ALARM\_ZONE type
+
+Zones allow users to see details like where the alarm was fired or which zone is open causing the alarm not to be ready to arm.
+
+States:
+
+| Attribute | Type | Description |
+| :--- | :--- | :--- |
+| `OPEN` (M) | Bool | Zone is open/triggered (not ready to arm) |
+| `ALARM` (M) | Bool | Zone is in alarm |
+| `TROUBLE` | Bool | Zone has trouble |
+| `BYPASSED` | Bool | Zone is bypassed |
+| `ONLINE` | Bool | Connection status |
+
+The state of the ALARM resource should reflect the states of its zones in a global way.
+
 
 <a id="orgfbaff66"></a>
 
-## AV\_RENDERER type
+## AV\_RENDERER type (Legacy)
+
+> **Note:** This is a legacy resource type used only for Bang & Olufsen products controlled via the MasterLink/Network Link protocol. For modern AV device integration, use the [RENDERER](#RENDERER) type instead.
 
 Commands and events:
 
