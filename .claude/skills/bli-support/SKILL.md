@@ -40,19 +40,31 @@ Use Grep and Read to find relevant content. Key areas to search:
 **Search strategy:**
 1. Identify keywords from the question
 2. Grep for those keywords in the current working directory
-3. Read the most relevant files fully before composing the answer
-4. Note the corresponding public URL (replace local path with `https://khimo.github.io`)
+3. If precise driver command/state details are needed that docs don't cover, ask the user to share the relevant driver source file
+4. Read the most relevant files fully before composing the answer
+5. For every URL you plan to include in the email, verify it exists (see step 2)
 
-### 2. Map local paths to public URLs
+### 2. Map local paths to public URLs and VERIFY them
 
-| Local path | Public URL |
-|------------|-----------|
-| `bli-guides/bli-faq.md` | `https://khimo.github.io/bli-guides/bli-faq` |
-| `bli-guides/_help_drivers/Foo.md` | `https://khimo.github.io/bli-guides/Foo` |
-| `bli-guides/_manuals/bar.md` | `https://khimo.github.io/bli-guides/bar` |
-| Any `bli-guides/XYZ.md` | `https://khimo.github.io/bli-guides/XYZ` |
+URL structure is defined by Jekyll collections in `_config.yml` (`collections_dir: bli-guides`):
 
-When in doubt, check `_config.yml` for collection permalink rules.
+| Local path pattern | Public URL pattern |
+|--------------------|--------------------|
+| `bli-guides/XYZ.md` (plain page) | `https://khimo.github.io/bli-guides/XYZ` |
+| `bli-guides/_help_drivers/Foo.md` | `https://khimo.github.io/help_drivers/Foo/` |
+| `bli-guides/_manuals/bar.md` | `https://khimo.github.io/bli-guides/manuals/bar` |
+| `bli-guides/_ideas/baz.md` | `https://khimo.github.io/bli-guides/ideas/baz` |
+| `bli-guides/_bli-pro-user-guide/qux.md` | `https://khimo.github.io/bli-guides/bli-pro-user-guide/qux` |
+| `bli-guides/_bli_advanced_user_guide/qux.md` | `https://khimo.github.io/bli-guides/bli_advanced_user_guide/qux` |
+| `bli-guides/_lua-macro-snippets/foo.md` | `https://khimo.github.io/bli-guides/manuals/howto-lua-macros/foo` |
+| `bli-guides/_developers-guides/foo.md` | `https://khimo.github.io/bli-guides/developers-guides/foo` |
+
+**URL verification checklist — complete before sending the email:**
+- [ ] Identify the collection the source file belongs to using the table above
+- [ ] Construct the public URL following the matching pattern
+- [ ] Confirm the file actually exists: `Glob` for the source `.md` file
+- [ ] Confirm the page is live: use WebFetch on the constructed URL and verify it returns real content (not a 404)
+- [ ] Only include URLs that pass both checks — omit or say "see our documentation" otherwise
 
 ### 3. Draft the email
 
@@ -91,7 +103,8 @@ support@khimo.com | https://khimo.github.io
 ## Common Mistakes
 
 - Answering without reading the actual docs — always Grep + Read first
-- Linking to the wrong section — verify the URL maps correctly
+- **Wrong URL for driver docs**: `_help_drivers/` maps to `/help_drivers/` (NOT `/bli-guides/`), always use the table above
+- Including URLs without verifying them in `_site/` — broken links damage credibility
 - Using internal file paths in the email — always use the public `https://khimo.github.io/...` URL
 - Writing a generic reply that ignores the specific question
 - Forgetting to sign as "The Khimo Team"
