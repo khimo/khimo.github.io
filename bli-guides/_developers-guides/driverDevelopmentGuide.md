@@ -1488,6 +1488,42 @@ Each one is named after the log level it generates as follows:
 ### utils
 
 
+<a id="jsonToTable"></a>
+
+#### jsonToTable
+
+Global helper function to parse a JSON string into a Lua table, defined as:
+
+```lua
+    function jsonToTable(jsonStr)
+```
+
+Where:
+
+-   `jsonStr`: A string containing valid JSON.
+
+Returns a Lua table representing the parsed JSON structure.
+
+**Note:** Do NOT use `loadExtraLib("json")` for JSON operations. Always use the global `jsonToTable` and `tableToJson` functions instead.
+
+
+<a id="tableToJson"></a>
+
+#### tableToJson
+
+Global helper function to serialize a Lua table into a JSON string, defined as:
+
+```lua
+    function tableToJson(luaTable)
+```
+
+Where:
+
+-   `luaTable`: A Lua table to serialize.
+
+Returns a string containing the JSON representation of the table.
+
+
 <a id="tableConcat"></a>
 
 #### tableConcat
@@ -2619,19 +2655,31 @@ By convention, all SRTs and their standard actions are identified by a symbol. F
 
 The following are the SRTs already defined:
 
-| SRT | Symbol |
-| :--- | :--- |
-| Button | `BUTTON` |
-| Dimmer | `DIMMER` |
-| Shade | `SHADE` |
-| Thermostat 1 setpoint | `THERMOSTAT_1SP` |
-| Thermostat 2 setpoints | `THERMOSTAT_2SP` |
-| GPIO | `GPIO` |
-| A/V Renderer (Modern) | `RENDERER` |
-| A/V Renderer (Legacy B&O) | `AV_RENDERER` |
-| Alarm | `ALARM` |
-| Alarm Zone | `ALARM_ZONE` |
-| Alarm Sensor | `ALARM_SENSOR` |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">SRT</th>
+<th scope="col" class="org-left">Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left">Button</td><td class="org-left"><code>BUTTON</code></td></tr>
+<tr><td class="org-left">Dimmer</td><td class="org-left"><code>DIMMER</code></td></tr>
+<tr><td class="org-left">Shade</td><td class="org-left"><code>SHADE</code></td></tr>
+<tr><td class="org-left">Thermostat 1 setpoint</td><td class="org-left"><code>THERMOSTAT_1SP</code></td></tr>
+<tr><td class="org-left">Thermostat 2 setpoints</td><td class="org-left"><code>THERMOSTAT_2SP</code></td></tr>
+<tr><td class="org-left">GPIO</td><td class="org-left"><code>GPIO</code></td></tr>
+<tr><td class="org-left">A/V Renderer (Modern)</td><td class="org-left"><code>RENDERER</code></td></tr>
+<tr><td class="org-left">A/V Renderer (Legacy B&amp;O)</td><td class="org-left"><code>AV_RENDERER</code></td></tr>
+<tr><td class="org-left">Alarm</td><td class="org-left"><code>ALARM</code></td></tr>
+<tr><td class="org-left">Alarm Zone</td><td class="org-left"><code>ALARM_ZONE</code></td></tr>
+<tr><td class="org-left">Alarm Sensor</td><td class="org-left"><code>ALARM_SENSOR</code></td></tr>
+</tbody>
+</table>
 
 
 <a id="global-capabilities"></a>
@@ -2640,10 +2688,24 @@ The following are the SRTs already defined:
 
 Any resource type can optionally include the following global state variables:
 
-| Attribute | Type | Description |
-| :--- | :--- | :--- |
-| `ONLINE` | Bool (`0`/`1`) | Device connection status. `1` means online. |
-| `BATTERY` | Int (0-100) | Battery level percentage. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Attribute</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>ONLINE</code></td><td class="org-left">Bool (<code>0</code>/<code>1</code>)</td><td class="org-left">Device connection status. <code>1</code> means online.</td></tr>
+<tr><td class="org-left"><code>BATTERY</code></td><td class="org-left">Int (0-100)</td><td class="org-left">Battery level percentage.</td></tr>
+</tbody>
+</table>
 
 These are not specific to any SRT and can be added to any resource type definition. For example:
 
@@ -3689,38 +3751,114 @@ A RENDERER must implement the three mandatory capabilities (POWER, INPUT, VOLUME
 
 #### POWER (mandatory)
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `TURN_ON` (M) | command | None | Turn on the device. |
-| `STANDBY` (M) | command | None | Put the device in standby. |
-| `REBOOT` | command | None | Reboot the device. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>TURN_ON</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Turn on the device.</td></tr>
+<tr><td class="org-left"><code>STANDBY</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Put the device in standby.</td></tr>
+<tr><td class="org-left"><code>REBOOT</code></td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Reboot the device.</td></tr>
+</tbody>
+</table>
 
 No specific states. Use the [global capability](#global-capabilities) `ONLINE` for connection status (recommended).
 
 #### INPUT (mandatory)
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `SELECT_INPUT` (M) | command | `INPUT` (String): input source ID | Select the active input source. |
-| `LIST_INPUTS` (M) | query | None | Returns available inputs. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>SELECT_INPUT</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>INPUT</code> (String): input source ID</td><td class="org-left">Select the active input source.</td></tr>
+<tr><td class="org-left"><code>LIST_INPUTS</code> (M)</td><td class="org-left">query</td><td class="org-left">None</td><td class="org-left">Returns available inputs.</td></tr>
+</tbody>
+</table>
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `INPUT` (M) | String | Current input source ID. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>INPUT</code> (M)</td><td class="org-left">String</td><td class="org-left">Current input source ID.</td></tr>
+</tbody>
+</table>
 
 #### VOLUME (mandatory)
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `VOLUME_UP` (M) | command | None | Increase volume one step. |
-| `VOLUME_DOWN` (M) | command | None | Decrease volume one step. |
-| `SET_VOLUME` | command | `VOLUME` (Int 0-100): target level | Set absolute volume level. |
-| `SET_MUTE` | command | `MUTE` (Bool): mute state | Set mute on/off. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>VOLUME_UP</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Increase volume one step.</td></tr>
+<tr><td class="org-left"><code>VOLUME_DOWN</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Decrease volume one step.</td></tr>
+<tr><td class="org-left"><code>SET_VOLUME</code></td><td class="org-left">command</td><td class="org-left"><code>VOLUME</code> (Int 0-100): target level</td><td class="org-left">Set absolute volume level.</td></tr>
+<tr><td class="org-left"><code>SET_MUTE</code></td><td class="org-left">command</td><td class="org-left"><code>MUTE</code> (Bool): mute state</td><td class="org-left">Set mute on/off.</td></tr>
+</tbody>
+</table>
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `VOLUME` | Int 0-100 | Current volume level. |
-| `MUTE` | Bool | Current mute state. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>VOLUME</code></td><td class="org-left">Int 0-100</td><td class="org-left">Current volume level.</td></tr>
+<tr><td class="org-left"><code>MUTE</code></td><td class="org-left">Bool</td><td class="org-left">Current mute state.</td></tr>
+</tbody>
+</table>
 
 ### Optional capabilities
 
@@ -3730,135 +3868,347 @@ The following capabilities are optional. A driver includes a capability by defin
 
 All commands take no arguments.
 
-| Symbol | Type | Description |
-| :--- | :--- | :--- |
-| `UP` | command | Navigate up. |
-| `DOWN` | command | Navigate down. |
-| `LEFT` | command | Navigate left. |
-| `RIGHT` | command | Navigate right. |
-| `ENTER` | command | Confirm / select. |
-| `RETURN` | command | Go back. |
-| `EXIT` | command | Exit current context. |
-| `RED` | command | Red function key. |
-| `GREEN` | command | Green function key. |
-| `YELLOW` | command | Yellow function key. |
-| `BLUE` | command | Blue function key. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>UP</code></td><td class="org-left">command</td><td class="org-left">Navigate up.</td></tr>
+<tr><td class="org-left"><code>DOWN</code></td><td class="org-left">command</td><td class="org-left">Navigate down.</td></tr>
+<tr><td class="org-left"><code>LEFT</code></td><td class="org-left">command</td><td class="org-left">Navigate left.</td></tr>
+<tr><td class="org-left"><code>RIGHT</code></td><td class="org-left">command</td><td class="org-left">Navigate right.</td></tr>
+<tr><td class="org-left"><code>ENTER</code></td><td class="org-left">command</td><td class="org-left">Confirm / select.</td></tr>
+<tr><td class="org-left"><code>RETURN</code></td><td class="org-left">command</td><td class="org-left">Go back.</td></tr>
+<tr><td class="org-left"><code>EXIT</code></td><td class="org-left">command</td><td class="org-left">Exit current context.</td></tr>
+<tr><td class="org-left"><code>RED</code></td><td class="org-left">command</td><td class="org-left">Red function key.</td></tr>
+<tr><td class="org-left"><code>GREEN</code></td><td class="org-left">command</td><td class="org-left">Green function key.</td></tr>
+<tr><td class="org-left"><code>YELLOW</code></td><td class="org-left">command</td><td class="org-left">Yellow function key.</td></tr>
+<tr><td class="org-left"><code>BLUE</code></td><td class="org-left">command</td><td class="org-left">Blue function key.</td></tr>
+</tbody>
+</table>
 
 #### PLAYER
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `PLAY` (M) | command | None | Start playback. |
-| `PAUSE` (M) | command | None | Pause playback. |
-| `STOP` (M) | command | None | Stop playback. |
-| `NEXT` (M) | command | None | Next track / chapter. |
-| `PREV` (M) | command | None | Previous track / chapter. |
-| `SEEK` | command | `TIME` (Int): position in seconds | Seek to position. |
-| `WIND` | command | None | Fast forward. |
-| `REWIND` | command | None | Rewind. |
-| `SET_MODE` | command | `MODE` (String): playback mode | Set playback mode (e.g. repeat, shuffle). |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>PLAY</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Start playback.</td></tr>
+<tr><td class="org-left"><code>PAUSE</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Pause playback.</td></tr>
+<tr><td class="org-left"><code>STOP</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Stop playback.</td></tr>
+<tr><td class="org-left"><code>NEXT</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Next track / chapter.</td></tr>
+<tr><td class="org-left"><code>PREV</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Previous track / chapter.</td></tr>
+<tr><td class="org-left"><code>SEEK</code></td><td class="org-left">command</td><td class="org-left"><code>TIME</code> (Int): position in seconds</td><td class="org-left">Seek to position.</td></tr>
+<tr><td class="org-left"><code>WIND</code></td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Fast forward.</td></tr>
+<tr><td class="org-left"><code>REWIND</code></td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Rewind.</td></tr>
+<tr><td class="org-left"><code>SET_MODE</code></td><td class="org-left">command</td><td class="org-left"><code>MODE</code> (String): playback mode</td><td class="org-left">Set playback mode (e.g. repeat, shuffle).</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the PLAYER capability is included.
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `NOW_PLAYING` (M) | String | Current track / program name. |
-| `NOW_PLAYING_DETAILS` | String | Additional details (artist, album, etc.). |
-| `NOW_PLAYING_ART` | String | URL to artwork image. |
-| `STATE` | String | Playback state (e.g. play, pause, stop). |
-| `MODE` | String | Current playback mode. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>NOW_PLAYING</code> (M)</td><td class="org-left">String</td><td class="org-left">Current track / program name.</td></tr>
+<tr><td class="org-left"><code>NOW_PLAYING_DETAILS</code></td><td class="org-left">String</td><td class="org-left">Additional details (artist, album, etc.).</td></tr>
+<tr><td class="org-left"><code>NOW_PLAYING_ART</code></td><td class="org-left">String</td><td class="org-left">URL to artwork image.</td></tr>
+<tr><td class="org-left"><code>STATE</code></td><td class="org-left">String</td><td class="org-left">Playback state (e.g. play, pause, stop).</td></tr>
+<tr><td class="org-left"><code>MODE</code></td><td class="org-left">String</td><td class="org-left">Current playback mode.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the PLAYER capability is included.
 
 #### CHANNEL
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `CHANNEL_UP` (M) | command | None | Next channel. |
-| `CHANNEL_DOWN` (M) | command | None | Previous channel. |
-| `SEND_DIGIT` (M) | command | `DIGIT` (Int): single digit 0-9 | Send a digit for channel entry. |
-| `SELECT_CHANNEL` | command | `CHANNEL` (String): channel ID | Select channel directly. |
-| `LIST_CHANNELS` | query | None | Returns available channels. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>CHANNEL_UP</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Next channel.</td></tr>
+<tr><td class="org-left"><code>CHANNEL_DOWN</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Previous channel.</td></tr>
+<tr><td class="org-left"><code>SEND_DIGIT</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>DIGIT</code> (Int): single digit 0-9</td><td class="org-left">Send a digit for channel entry.</td></tr>
+<tr><td class="org-left"><code>SELECT_CHANNEL</code></td><td class="org-left">command</td><td class="org-left"><code>CHANNEL</code> (String): channel ID</td><td class="org-left">Select channel directly.</td></tr>
+<tr><td class="org-left"><code>LIST_CHANNELS</code></td><td class="org-left">query</td><td class="org-left">None</td><td class="org-left">Returns available channels.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the CHANNEL capability is included.
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `CURRENT_CHANNEL` | String | Current channel name or ID. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>CURRENT_CHANNEL</code></td><td class="org-left">String</td><td class="org-left">Current channel name or ID.</td></tr>
+</tbody>
+</table>
 
 #### APPLICATION
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `LAUNCH` (M) | command | `APPLICATION` (String): app name or ID | Launch an application. |
-| `LIST_APPLICATIONS` (M) | query | None | Returns available applications. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>LAUNCH</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>APPLICATION</code> (String): app name or ID</td><td class="org-left">Launch an application.</td></tr>
+<tr><td class="org-left"><code>LIST_APPLICATIONS</code> (M)</td><td class="org-left">query</td><td class="org-left">None</td><td class="org-left">Returns available applications.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the APPLICATION capability is included.
 
 #### CONTENT
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `SET_CONTENT_ID` (M) | command | `ID` (String): content identifier, `PROVIDER_TYPE` (String): provider name | Play specific content by ID and provider. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>SET_CONTENT_ID</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>ID</code> (String): content identifier, <code>PROVIDER_TYPE</code> (String): provider name</td><td class="org-left">Play specific content by ID and provider.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the CONTENT capability is included.
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `CONTENT_ID` (M) | String | Current content identifier. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>CONTENT_ID</code> (M)</td><td class="org-left">String</td><td class="org-left">Current content identifier.</td></tr>
+</tbody>
+</table>
 
 #### PLAYQUEUE
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `ADD_ITEM` (M) | command | Item data | Add item to play queue. |
-| `CLEAR` (M) | command | None | Clear the play queue. |
-| `REMOVE_ITEM` (M) | command | Item index | Remove item from play queue. |
-| `MOVE_ITEM` | command | From/To indices | Move item within play queue. |
-| `SET_INDEX` (M) | command | `INDEX` (Int): queue position | Jump to queue position. |
-| `SET_SHUFFLE` | command | `SHUFFLE` (Bool): on/off | Set shuffle mode. |
-| `SET_REPEAT` | command | `REPEAT` (String): repeat mode | Set repeat mode. |
-| `LIST_PLAYQUEUE_ITEMS` (M) | query | None | Returns play queue contents. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>ADD_ITEM</code> (M)</td><td class="org-left">command</td><td class="org-left">Item data</td><td class="org-left">Add item to play queue.</td></tr>
+<tr><td class="org-left"><code>CLEAR</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Clear the play queue.</td></tr>
+<tr><td class="org-left"><code>REMOVE_ITEM</code> (M)</td><td class="org-left">command</td><td class="org-left">Item index</td><td class="org-left">Remove item from play queue.</td></tr>
+<tr><td class="org-left"><code>MOVE_ITEM</code></td><td class="org-left">command</td><td class="org-left">From/To indices</td><td class="org-left">Move item within play queue.</td></tr>
+<tr><td class="org-left"><code>SET_INDEX</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>INDEX</code> (Int): queue position</td><td class="org-left">Jump to queue position.</td></tr>
+<tr><td class="org-left"><code>SET_SHUFFLE</code></td><td class="org-left">command</td><td class="org-left"><code>SHUFFLE</code> (Bool): on/off</td><td class="org-left">Set shuffle mode.</td></tr>
+<tr><td class="org-left"><code>SET_REPEAT</code></td><td class="org-left">command</td><td class="org-left"><code>REPEAT</code> (String): repeat mode</td><td class="org-left">Set repeat mode.</td></tr>
+<tr><td class="org-left"><code>LIST_PLAYQUEUE_ITEMS</code> (M)</td><td class="org-left">query</td><td class="org-left">None</td><td class="org-left">Returns play queue contents.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the PLAYQUEUE capability is included.
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `PLAYQUEUE_INDEX` (M) | Int | Current position in queue. |
-| `PLAYQUEUE_VERSION` (M) | Int | Queue version (increments on changes). |
-| `SHUFFLE` | Bool | Shuffle mode on/off. |
-| `REPEAT` | String | Repeat mode. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>PLAYQUEUE_INDEX</code> (M)</td><td class="org-left">Int</td><td class="org-left">Current position in queue.</td></tr>
+<tr><td class="org-left"><code>PLAYQUEUE_VERSION</code> (M)</td><td class="org-left">Int</td><td class="org-left">Queue version (increments on changes).</td></tr>
+<tr><td class="org-left"><code>SHUFFLE</code></td><td class="org-left">Bool</td><td class="org-left">Shuffle mode on/off.</td></tr>
+<tr><td class="org-left"><code>REPEAT</code></td><td class="org-left">String</td><td class="org-left">Repeat mode.</td></tr>
+</tbody>
+</table>
 
 #### MULTIROOM
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `JOIN` (M) | command | Target renderer | Join another renderer's session. |
-| `LINK` (M) | command | Target renderer | Link with another renderer. |
-| `UNLINK` (M) | command | None | Unlink from multiroom group. |
-| `EXPAND` | command | Target renderer | Expand playback to another renderer. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>JOIN</code> (M)</td><td class="org-left">command</td><td class="org-left">Target renderer</td><td class="org-left">Join another renderer's session.</td></tr>
+<tr><td class="org-left"><code>LINK</code> (M)</td><td class="org-left">command</td><td class="org-left">Target renderer</td><td class="org-left">Link with another renderer.</td></tr>
+<tr><td class="org-left"><code>UNLINK</code> (M)</td><td class="org-left">command</td><td class="org-left">None</td><td class="org-left">Unlink from multiroom group.</td></tr>
+<tr><td class="org-left"><code>EXPAND</code></td><td class="org-left">command</td><td class="org-left">Target renderer</td><td class="org-left">Expand playback to another renderer.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the MULTIROOM capability is included.
 
-| State | Type | Description |
-| :--- | :--- | :--- |
-| `MULTIROOM_ORIGIN` (M) | String | Origin renderer ID. |
-| `MULTIROOM_TYPE` (M) | String | Type of multiroom grouping. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">State</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>MULTIROOM_ORIGIN</code> (M)</td><td class="org-left">String</td><td class="org-left">Origin renderer ID.</td></tr>
+<tr><td class="org-left"><code>MULTIROOM_TYPE</code> (M)</td><td class="org-left">String</td><td class="org-left">Type of multiroom grouping.</td></tr>
+</tbody>
+</table>
 
 #### KEYBOARD
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `SEND_TEXT` (M) | command | `TEXT` (String): text to input | Send text input to the device. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>SEND_TEXT</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>TEXT</code> (String): text to input</td><td class="org-left">Send text input to the device.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the KEYBOARD capability is included.
 
 #### CUSTOM_COMMAND
 
-| Symbol | Type | Arguments | Description |
-| :--- | :--- | :--- | :--- |
-| `CUSTOM_COMMAND` (M) | command | `COMMAND` (String): command name | Execute a device-specific command. |
-| `LIST_CUSTOM_COMMANDS` (M) | query | None | Returns available custom commands. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Arguments</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>CUSTOM_COMMAND</code> (M)</td><td class="org-left">command</td><td class="org-left"><code>COMMAND</code> (String): command name</td><td class="org-left">Execute a device-specific command.</td></tr>
+<tr><td class="org-left"><code>LIST_CUSTOM_COMMANDS</code> (M)</td><td class="org-left">query</td><td class="org-left">None</td><td class="org-left">Returns available custom commands.</td></tr>
+</tbody>
+</table>
 
 (M) = mandatory if the CUSTOM_COMMAND capability is included.
 
@@ -3921,24 +4271,52 @@ Security system panel or partition.
 
 Commands and events:
 
-| Symbol | Type | Description |
-| :--- | :--- | :--- |
-| `ARM` (M) | command | Arm the system. Arguments: `MODE`, `CODE`. |
-| `DISARM` (M) | command | Disarm the system. Argument: `CODE`. |
-| `TRIGGER ALARM` | command | Trigger a panic/burglary/fire alarm. Argument: `ALARM`. |
-| `STATE_UPDATE` | event | State update notification. |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symbol</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>ARM</code> (M)</td><td class="org-left">command</td><td class="org-left">Arm the system. Arguments: <code>MODE</code>, <code>CODE</code>.</td></tr>
+<tr><td class="org-left"><code>DISARM</code> (M)</td><td class="org-left">command</td><td class="org-left">Disarm the system. Argument: <code>CODE</code>.</td></tr>
+<tr><td class="org-left"><code>TRIGGER ALARM</code></td><td class="org-left">command</td><td class="org-left">Trigger a panic/burglary/fire alarm. Argument: <code>ALARM</code>.</td></tr>
+<tr><td class="org-left"><code>STATE_UPDATE</code></td><td class="org-left">event</td><td class="org-left">State update notification.</td></tr>
+</tbody>
+</table>
 
 States:
 
-| Attribute | Type | Description |
-| :--- | :--- | :--- |
-| `MODE` (M) | Enum | `ARM HOME`, `ARM AWAY`, `DISARM` |
-| `ALARM` (M) | Bool | `true` if alarm triggered |
-| `READY` (M) | Bool | `true` if system ready to arm |
-| `ALARM_FIRE` | Bool | Fire alarm triggered |
-| `ALARM_BURGLARY` | Bool | Burglary alarm triggered |
-| `ALARM_PANIC` | Bool | Panic alarm triggered |
-| `ONLINE` | Bool | Connection status |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Attribute</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>MODE</code> (M)</td><td class="org-left">Enum</td><td class="org-left"><code>ARM HOME</code>, <code>ARM AWAY</code>, <code>DISARM</code></td></tr>
+<tr><td class="org-left"><code>ALARM</code> (M)</td><td class="org-left">Bool</td><td class="org-left"><code>true</code> if alarm triggered</td></tr>
+<tr><td class="org-left"><code>READY</code> (M)</td><td class="org-left">Bool</td><td class="org-left"><code>true</code> if system ready to arm</td></tr>
+<tr><td class="org-left"><code>ALARM_FIRE</code></td><td class="org-left">Bool</td><td class="org-left">Fire alarm triggered</td></tr>
+<tr><td class="org-left"><code>ALARM_BURGLARY</code></td><td class="org-left">Bool</td><td class="org-left">Burglary alarm triggered</td></tr>
+<tr><td class="org-left"><code>ALARM_PANIC</code></td><td class="org-left">Bool</td><td class="org-left">Panic alarm triggered</td></tr>
+<tr><td class="org-left"><code>ONLINE</code></td><td class="org-left">Bool</td><td class="org-left">Connection status</td></tr>
+</tbody>
+</table>
 
 Arm modes:
 
@@ -3955,13 +4333,27 @@ Zones allow users to see details like where the alarm was fired or which zone is
 
 States:
 
-| Attribute | Type | Description |
-| :--- | :--- | :--- |
-| `OPEN` (M) | Bool | Zone is open/triggered (not ready to arm) |
-| `ALARM` (M) | Bool | Zone is in alarm |
-| `TROUBLE` | Bool | Zone has trouble |
-| `BYPASSED` | Bool | Zone is bypassed |
-| `ONLINE` | Bool | Connection status |
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left" />
+<col class="org-left" />
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Attribute</th>
+<th scope="col" class="org-left">Type</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="org-left"><code>OPEN</code> (M)</td><td class="org-left">Bool</td><td class="org-left">Zone is open/triggered (not ready to arm)</td></tr>
+<tr><td class="org-left"><code>ALARM</code> (M)</td><td class="org-left">Bool</td><td class="org-left">Zone is in alarm</td></tr>
+<tr><td class="org-left"><code>TROUBLE</code></td><td class="org-left">Bool</td><td class="org-left">Zone has trouble</td></tr>
+<tr><td class="org-left"><code>BYPASSED</code></td><td class="org-left">Bool</td><td class="org-left">Zone is bypassed</td></tr>
+<tr><td class="org-left"><code>ONLINE</code></td><td class="org-left">Bool</td><td class="org-left">Connection status</td></tr>
+</tbody>
+</table>
 
 The state of the ALARM resource should reflect the states of its zones in a global way.
 
