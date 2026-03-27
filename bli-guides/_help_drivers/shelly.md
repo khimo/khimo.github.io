@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Shelly, HTTP, DIMMER, SHADE, GPIO, SHDM-1, SHDM-2, SHSW-25.roller, SHSW-25.roller-w-level, SHSW-25.relay, SHSW-25.dimmer, SHSW-1, SHSW-1.relay, SHPLG-S.relay, SHPLG-S, SHSW-L.relay, SHSW-L.dimmer, SHIX3-1.relay, RGBW2.color, RGBW2.white, SHDW-1, SHMOS-01, SHMOS-02
 description: This driver integrates with the Shelly's local HTTP API managing dimmers, shades, relays, switches, sensors and plugs resource types.
 ---
+
+
 # Shelly
 
 This driver integrates with the Shelly's local HTTP API.
@@ -36,7 +38,8 @@ The available resource are:
 - **SHSW-L.dimmer (DIMMER)**: A Shelly 1L device represented by an ON/OFF DIMMER resource.
 - **SHIX3-1.relay (GPIO)**: A Shelly Ix3 device represented by a GPIO resource. "Momentary" or "Toggle Switch" can be chosen as button type on the Shelly's web interface.
 This resource has no commands, input events of "Momentary" buttons (eg SHORTPUSH, LONGPUSH etc.) appear as events. This only works with a really small polling time (couple of seconds), and even then, some events may be lost if they happen too close to each other.
-- **RGBW2.color (DIMMER)**: A shelly RGBW2 device in color mode. [**]
+- **RGBW2.color (DIMMER)**: A shelly RGBW2 device in color mode. This resource controlls the RGB channels, while the white channel can be controlled with the RGBW2.color.white resource. [**]
+- **RGBW2.color.white (DIMMER)**: White channel of a shelly RGBW2 device in color mode. [**]
 - **RGBW2.white (DIMMER)**: A shelly RGBW2 in white mode. One resource added for each white channel. [**]
 - **SHDW-1**: A door and window sensor that provides basic open/close notifications as a GPIO. Be aware that this sensor is not very responsive.
 - **SHMOS-01** & **SHMOS-02**: Motion sensors that provide basic notifications of motion and vibrations modeled as GPIO. Be aware that these sensors have latency and may not be very accurate.  This device has **NOT been tested** by Khimo, so if you are able to test it please let us know by email.
@@ -112,3 +115,6 @@ Resource discovery is available and will detect the corresponding resources that
 ### V0.16 | 28/8/2023
 - Fixes shade state synchronization
 
+### V0.17 | 2/5/2024
+- Removes control of white channel from RGBW2.color resource
+- Adds RGBW2.color.white resource

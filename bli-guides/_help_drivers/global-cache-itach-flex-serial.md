@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: iTach Flex Serial, RS232, RS485, FLOW_NONE, FLOW_HARDWARE, DUPLEX_HALF, DUPLEX_FULL
 description: iTach Flex Serial driver allows to control RS232 and RS485 serial devices using RS232 and RS485 link cables.
 ---
+
+
 # Global Cache iTach FLEX SERIAL
 
 This driver supports communication with a Global Cache iTach Flex with RS232 and RS485 link cables,

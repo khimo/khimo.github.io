@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Venstar Thermostat, Venstar Thermostat Heat, Venstar Thermostat Cool, Venstar Thermostat 2sp Heat or Cool, Venstar Thermostat 2sp, SET HEAT SP, SET COOL SP, SET MODE, SET FAN AUTO
 description: Venstar Thermostat driver allows to connect and control multiple Venstar thermostats.
 ---
+
+
 # Venstar Thermostats
 This driver supports communication with Venstar thermostats.
 All the communication use the API described at the following URL: https://developer.venstar.com/restcalls.html (API version 4, Firmware version 3.12 or above)
@@ -61,4 +63,3 @@ The address of the resource is the IP address of the device (e.g: `192.168.42.83
      + MODE: The current mode: Heat or Off.
      + ONLINE: Indicates if the thermostat is connected with the BeoLiving Intelligence.
      + FAN AUTO: Indicates if the fan is in auto mode or not.
-

@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Rako Bridge, REST, Dimmer, Scene, BUTTON, SET, OFF, _FADE UP, _FADE DOWN, _STOP, PRESS
 description: RAKO BRIDGE DRIVER integrates Rako Bridge, allowing to control dimmers and fire scenes.
 ---
+
+
 # RAKO BRIDGE DRIVER
 
 This driver integrates Rako Bridge with the BLI/BLGW, allowing to set dimmer levels and fire scenes on the Rako modules.

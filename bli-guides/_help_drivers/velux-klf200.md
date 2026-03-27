@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Velux KLF200, DIMMER, GPIO, SHADE, Scene, SET, LOWER, RAISE, STOP, PRESS
 description: Velux KLF200 driver provides integration with Velux systems managing lights, on/off switches, windows openers and scenes.
 ---
+
+
 # Velux KLF200 - firmware v0.2.0.0.0.0 and greater
 
 This driver was developed to interact ONLY with the firmware v0.2.0.0.71.0 and above. If your velux system is outdated please update it before setting up this driver, otherwise it won't be able to connect and control your system.

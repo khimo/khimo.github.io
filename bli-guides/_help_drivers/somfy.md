@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Somfy, UNIVERSAL RTS INTERFACE II, RS232, RS485, TCP
 description: Somfy UNIVERSAL RTS Interface II driver allows to control Somfy's RTS motors.
 ---
+
+
 # Somfy - UNIVERSAL RTS INTERFACE II
 
 The addressable Universal RTS Interface II (URTSI II) can be used to communicate

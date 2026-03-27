@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Generic Modbus, Modbus, _MODBUS_REGISTER, WRITE, WRITTEN
 description: Generic Modbus driver allows to interact with systems using Modbus protocol with a _MODBUS_REGISTER resource.
 ---
+
+
 # Generic Modbus driver
 
 This driver is intended to interact with any system that uses Modbus protocol.

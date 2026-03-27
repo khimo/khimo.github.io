@@ -5,74 +5,94 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: WeMo, Mr Coffee Maker, SOAP, IP, WiFi, Make Coffee, Coffee Done, Ready to Brew, Coffee Maker, Brewed, Brewing, Clean Advice, Cleaning, Filter advise, Filter life, Filter present, Last Cleaned, Mode time, Time remaining, Water level reached, Mode
 description: WeMo Coffee Maker driver supports communication with WeMo enabled Mr Coffee Maker using SOAP IP connection over WiFi.
 ---
-WeMo / Mr Coffee Maker 
-========================= 
 
-This driver supports communication directly with the WeMo enabled Mr Coffee Maker, allowing to control and receive feedback from the device. 
+driver_help= "WeMo / Mr Coffee Maker \
+========================= \
+\
+This driver supports communication directly with the WeMo enabled Mr Coffee Maker, allowing to control and receive feedback from the device. \
+\
+Connection to the system is done via SOAP IP connection over WiFi directly with the WeMo device. \
+\
+The WeMo driver checks connection and polls the device every 10 seconds for status updates. \
+\
+The Driver will also check for a status update immediately following any control commands sent to the device for quick feedback updates \
+\
+\
+Communications:\
+---------------\
+\
+To establish communication the following is needed: \
+\
+ - Host: The IP address of the WeMo device. \
+\
+ - Port: The port number for the communication (default is port 49153) \
+\
+\
+\
+\
+Resources:\
+---------------\
+\
+Available resources are as following: \
+\
+ - Make Coffee: Initiate brewing Coffee, State indicates brewing is in progress\
+\
+ - Coffee Done: LED State indicates the Freshly Brewed Coffee is ready for enjoyment\
+\
+ - Ready to Brew: LED State indicates the Coffee Maker is ready to Brew Coffee\
+\
+ - Coffee Maker: State Feedback data\
+\
+\
+State Updates: \
+---------------\
+\
+Available State updates are as following:\
+\
+ - Brewed: Integer value stating Brewed Status \
+\
+\
+ - Brewing: Integer value stating Brewing Status\
+\
+\
+ - Clean Advice: True/False Feedback for Cleaning Advice from Coffee Maker\
+\
+\
+ - Cleaning: Feedback for Cleaning status \
+\
+\
+ - Filter advise: Filter status feedback\
+\
+\
+ - Last Cleaned: Status feedback for last cleaned status\
+\
+\
+ - Mode time: Feedback for Mode Time\
+\
+\
+ - Time remaining: Feedback for Time Remaining\
+\
+\
+ - Water level reached: True/False Feedback for Water Level reached\
+\
+\
+ - Mode: States current mode as either: Refill, Cleaning Brewing, Brewed, Brew Failed Carafe Removed, Cleaning Soaking, Refill Water, Place Carafe, Brewing or Ready\
+"
+        
+                           
+driver_load_system_help = "Loads all the resources needed for the Coffee Maker."
 
-Connection to the system is done via SOAP IP connection over WiFi directly with the WeMo device. 
+driver_default_channel= "tcp"
 
-The WeMo driver checks connection and polls the device every 10 seconds for status updates. 
+local wemoArgs= {
+   stringArgumentMinMax("_Host", "172.16.5.108", 1, 255, { context_help= "The host name or ip address of the WeMo device"}),
+   numericArgument("_Port", 49153, 0, 65535, { context_help= "Port number of the WeMo device"}),
+   boolArgument("checkServerCertificate", true, { hidden = "true" } )
+}
 
-The Driver will also check for a status update immediately following any control commands sent to the device for quick feedback updates 
-
-
-Communications:
----------------
-
-To establish communication the following is needed: 
-
- - Host: The IP address of the WeMo device. 
-
- - Port: The port number for the communication (default is port 49153) 
-
-
-
-
-Resources:
----------------
-
-Available resources are as following: 
-
- - Make Coffee: Initiate brewing Coffee, State indicates brewing is in progress
-
- - Coffee Done: LED State indicates the Freshly Brewed Coffee is ready for enjoyment
-
- - Ready to Brew: LED State indicates the Coffee Maker is ready to Brew Coffee
-
- - Coffee Maker: State Feedback data
-
-
-State Updates: 
----------------
-
-Available State updates are as following:
-
- - Brewed: Integer value stating Brewed Status 
-
-
- - Brewing: Integer value stating Brewing Status
-
-
- - Clean Advice: True/False Feedback for Cleaning Advice from Coffee Maker
-
-
- - Cleaning: Feedback for Cleaning status 
-
-
- - Filter advise: Filter status feedback
-
-
- - Last Cleaned: Status feedback for last cleaned status
-
-
- - Mode time: Feedback for Mode Time
-
-
- - Time remaining: Feedback for Time Remaining
-
-
- - Water level reached: True/False Feedback for Water Level reached
-
-
- - Mode: States current mode as either: Refill, Cleaning Brewing, Brewed, Brew Failed Carafe Removed, Cleaning Soaking, Refill Water, Place Carafe, Brewing or Ready
+local channelHelp = [[
+**Connection to the WeMo Coffee Maker**
+\
+This driver supports communication directly with the WeMo enabled Mr Coffee Maker, allowing to control and receive feedback from the device. \
+\
+Connection to the system is done via SOAP IP connection over WiFi directly with the WeMo device. \

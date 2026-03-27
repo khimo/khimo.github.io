@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: ABB-free@home, ABB, free@home cloud API, myBUILDINGS, myBUSCH-JAEGER, AC THERMOSTAT, SHADE, DIMMER, SET ECO MODE, SET FAN AUTO, SET MODE, SET SETPOINT, LOWER, RAISE, STOP
 description: ABB-free@home driver integrates ABB-free@home devices into the BLI family managing Thermostat, Shade, Dimmer and Lamp resource types.
 ---
+
+
 # ABB-free@home Driver
 
 Free@home is a collection of devices interconnected together into a single ecosystem that can be configured to have specific behaviors. This driver communicates with your free@home system to integrate its devices into the BLI family.
@@ -70,4 +72,3 @@ Press the "Capture" button, and executed events sent by the systems in your inst
 - Improves handling of non existant resources
 
 *Please report any issues with this driver to: support+drivers@khimo.com*
-

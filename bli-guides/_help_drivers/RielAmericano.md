@@ -5,6 +5,9 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: BOSS, RielAmericano, RS232, RS485, TCP, DualWay Shade, DualWay Shade with position control, DualWay Shade with position control and Tilt, Deluxe Shade
 description: This driver implements the Riel Americano BOSS serial ASCII protocol managing DualWay shades, DualWay shades with position control and Deluxe shades resource types.
 ---
+
+driver_help =
+    [[
 # BOSS by RielAmericano
 
 This driver implements the Riel Americano BOSS serial ASCII protocol. It was tested with DualWay shades and DualWay shades with position control.

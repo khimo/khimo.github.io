@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Rachio Irrigation, Device, Zone, _STOP WATER, _RAIN DELAY, SET, _PAUSE ZONE RUN, _RESUME ZONE RUN, _START
 description: Rachio Irrigation driver integrates Rachio Irrigation controllers managing Device and Zone resource types.
 ---
+
+
 ## Rachio / Irrigation
 
 This driver supports communication with the Rachio Irrigation controllers through the cloud. 

@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: CoolMasterNet, RS232, TCP, Air Conditioning unit, Ventilation unit, Water Heater unit
 description: CoolMasterNet driver integrates all HVACs configured in the CoolMasterNet bridge, it supports RS232 or TCP Ethernet connections.
 ---
+
+
 # CoolMasterNet HVAC Bridge
 
 The CoolMasterNet driver on the BeoLiving Intelligence integrates all HVAC´s configured in the CoolMasterNet bridge. 
@@ -60,4 +62,3 @@ CoolMasterNet Driver of BeoLiving Intelligence has the capability of import all 
 ## Changelog
 
 - v0.3 | 2022-03-04: Simplify the driver to improve the handling of multiple resources.
-

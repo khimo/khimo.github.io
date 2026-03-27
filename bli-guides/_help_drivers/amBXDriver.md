@@ -5,9 +5,11 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: amBX, amBX space
 description: Driver for managing amBX space resource.
 ---
+
+
 # amBXDriver
 
-This driver allows to create resources that represents “spaces” which can run any Light-Scene in a “slot”.
+This driver allows to create resources that represents “spaces” which can run any Light-Scene in a “slot”.   
 
 
 ## Resources

@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: iRobot Roomba, Thinking Cleaner, IP, WiFi, Off
 description: This driver supports communication directly with iRobot Roomba cleaners using the Thinking Cleaner WiFi interface module.
 ---
+
+
 # Thinking Cleaner for Roomba by iRobot
 
 This driver supports communication directly with the iRobot Roomba cleaners using the Thinking Cleaner WiFi interface module. 

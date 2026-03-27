@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: TP-Link Smart Plug, HS100/110, HS105, SET, TOGGLE
 description: TP-Link Smart Plug driver allows to control the relay state of TP-Link Smart Plug's HS100/110.
 ---
+
+
 # TP-Link Smart Plug
 
 This driver supports communication with TP-Link Smart Plug's HS100/110, allowing to control different the relay state of the switch. Integration with models HS105 is not ensured.

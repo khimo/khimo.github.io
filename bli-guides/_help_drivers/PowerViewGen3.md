@@ -6,6 +6,8 @@ keywords:  PowerView, Hunter Douglas, Gen3, BOTTOM UP, BOTTOM UP WITH TILT, TOP 
 description: PowerView - Hunter Douglas - Gen3 hub driver allows to control Hunter Douglas shades with PowerView Motorization.
 ---
 
+
+
 # PowerView - Hunter Douglas - gen3 hub
 
 This driver works with the PowerView Hub Generation 3, allowing to control Hunter Douglas shades with PowerView Motorization.
@@ -43,4 +45,3 @@ Supported Resources are:
   * First version with support for gen3 hub
 
 *Please, report any issue with this driver to: support+drivers@khimo.com*
-

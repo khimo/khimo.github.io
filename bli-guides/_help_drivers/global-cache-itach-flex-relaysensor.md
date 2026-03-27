@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: iTach Flex Relay & Sensor, RELAY_SPST, RELAY_SPDT, RELAY_DPDT, SENSOR_CC_VS, BUTTON, _GPIO, PRESS, _SET
 description: iTach Flex Relay & Sensor driver controls Relays (SPST, SPDT, DPDT), detects Contact Clousures and senses Voltages.
 ---
+
+
 # Global Cache iTach FLEX RELAY/SENSOR
 
 This driver supports communication with a Global Cache iTach Flex with Relay & Sensor link cable connected, allowing to control Relays (SPST, SPDT, DPDT), detect Contact Clousures and sense Voltages.

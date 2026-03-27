@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Vitrea, WiFi, VBox-PRO, DIMMER, _BOILER, LIGHT_SWITCH, SHADE, SCENARIO, BUTTON, _SATELLITE_KEY, SET, _STOP, _TOGGLE, _TURN, RAISE, LOWER, PRESS, _PRESS, _RELEASE, _HOLD
 description: VITREA DRIVER integrates Vitrea systems managing lights, dimmers, shades, boilers and scenes on the VBox-PRO Wireless Controller.
 ---
+
+
 # VITREA DRIVER
 
 This driver connects the Beolink Gateway with Vitrea, allowing to control lights, dimmers, shades, boilers and fire scenes on the VBox-PRO Wireless Controller.

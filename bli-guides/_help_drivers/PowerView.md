@@ -6,6 +6,8 @@ keywords:  PowerView, Hunter Douglas, Gen2, BOTTOM UP, BOTTOM UP WITH TILT, TOP 
 description: PowerView - Hunter Douglas - Gen2 driver allows to control Hunter Douglas shades with PowerView Motorization.
 ---
 
+
+
 # PowerView - Hunter Douglas - Gen2
 
 This driver works with the PowerView Hub, allowing to control Hunter Douglas shades with PowerView Motorization.
@@ -46,4 +48,3 @@ Supported Resources are:
   * Adds the reference to genertion 2 hub
   
 *Please, report any issue with this driver to: support+drivers@khimo.com*
-

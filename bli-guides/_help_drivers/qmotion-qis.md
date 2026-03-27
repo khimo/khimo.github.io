@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: QMotion QIS Shades, RS485, RS232, Qmotion Blind/Shade, QMotion Group of Blinds/Shades, SHADE, SET LEVEL, RAISE, LOWER, STOP, LEVEL
 description: QMotion QIS Shades driver integrates QMotion QIS shades with the BeoLink Gateway using RS485 protocol.
 ---
+
+
 # QMotion QIS Shades
 
 The QMotion QIS Shades driver on the Beolink Gateway integrates all individual QMotion Shades and Shade Groups configured in QMotion QIS. 

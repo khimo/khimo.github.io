@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Generic Home Automation Dimmers, TCP/IP, Button, Dimmer, Shade, HVAC
 description: Generic Home Automation Dimmers Driver implements a generic protocol for communicating with programmable Home Automations systems managing buttons, dimmers, shades and HVAC resource types.
 ---
+
+
 # Generic Home Automation Dimmers
 
 The Generic Home Automation Dimmers Driver implements a generic protocol for communicating with devices in programeble Home Automations systems like Crestron, Control4, Savant, AMX, etc.

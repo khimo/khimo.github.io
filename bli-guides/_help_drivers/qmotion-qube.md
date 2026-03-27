@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: QMotion Qube, HTTP, Qmotion Blind/Shade, QMotion Group of Blinds/Shades, SHADE, SET LEVEL, RAISE, LOWER, STOP, LEVEL
 description: QMotion Qube driver integrates QMotion Zigbee shades with the BeoLink Gateway using HTTP protocol.
 ---
+
+
 # QMotion Zigbee Shades
 
 The QMotion Zigbee Shades driver on the Beolink Gateway integrates all individual QMotion Shades and Shade Groups configured in the Qube gateway. 

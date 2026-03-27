@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: DoorBird, BirdGuard, DoorBird LAN-2-LAN API, BUTTON, GPIO, OPEN_DOOR, LIGHT_ON, MOTION_SENSOR, DOORBELL
 description: DoorBird driver interacts with DoorBird and BirdGuard units for controlling door locks, light and motion sensors.
 ---
+
+
 # DoorBird 
 
 BeoLink Gateway can interact with DoorBird and BirdGuard units, being capable of opening door lock, turning unit light and fire an event when motion sensor detect activity or doorbell button is pressed on the camera.
@@ -87,4 +89,3 @@ In order to get live images from DoorBird unit, it's necessary to add the camera
 **v0.8**
    
   * Improves in-line setup help
-

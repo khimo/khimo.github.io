@@ -5,6 +5,8 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Atlona OmniStream, Websockets, MATRIX, _ENCODER
 description: This driver allows to control Atlona OmniStream devices via Websockets, it manages MATRIX and _ENCODER resource types.
 ---
+
+
 # Atlona OmniStream
 
 Integration with the Atlona OmniStream devices
@@ -91,4 +93,3 @@ Sources should be edited to match user requirements in the *Interfaces tab*. The
  - Fixed issues with connection. Added possibility of more than one outputs in decoder.
 ## v0.3
  - Fixed bug in resource state, added Keep Alive functionality.
-
