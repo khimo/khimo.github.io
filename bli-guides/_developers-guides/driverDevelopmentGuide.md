@@ -632,6 +632,29 @@ A typical example of resource with state is a dimmer with feedback as shown in t
 ```
 
 
+<a id="queries"></a>
+
+#### queries
+
+Queries define requests that BLI can make to the driver to retrieve dynamic data from the third party system for the corresponding resource.
+Unlike commands (which trigger actions) or states (which are continuously synchronized), queries are executed on demand — typically when the user clicks **Synchronize** in the admin UI.
+
+For each resource type, an optional table of queries may be provided in which keys are the query names (e.g. `LIST_INPUTS`) and values are tables with the following data:
+
+-   **`context_help`**: Context help describing what the query returns.
+
+Example of queries for a RENDERER resource type:
+
+```lua
+    queries = {
+        LIST_INPUTS = { context_help = "Lists the available input sources." },
+        LIST_APPLICATIONS = { context_help = "Lists the installed applications." }
+    }
+```
+
+The driver must implement a corresponding [query](#query) function to handle these queries and return the appropriate data. See the [RENDERER type](#RENDERER-type) section for the expected response formats.
+
+
 <a id="driver_label"></a>
 
 ## driver\_label
@@ -1139,6 +1162,44 @@ Where `commandNumbers` is defined as:
     local commandNumbers= { PRESS = 3, RELEASE = 4, HOLD = 5,
                             ["_MULTI TAP"] = 6, ["_HOLD RELEASE"] = 32, SET= 1 }
 ```
+
+<a id="query"></a>
+
+## query
+
+This function is called whenever BLI needs to retrieve dynamic data from the third party system for a resource.
+Queries are triggered when the user clicks **Synchronize** in the admin UI for a resource that has queries defined in its specification.
+
+The function prototype must be:
+
+```lua
+    function query(queryName, resource, queryArgs)
+```
+
+Where:
+
+-   **`queryName`** is the name of the query being executed, e.g. `"LIST_INPUTS"`.
+-   **`resource`** is the [resource](#resource-Lua-instance) for which the query is being executed.
+-   **`queryArgs`** is a table containing any arguments for the query (usually empty).
+
+The function must return a table with the query result data.
+
+```lua
+    function query(queryName, resource, queryArgs)
+        if queryName == "LIST_INPUTS" then
+            return {
+                inputs = {
+                    { address = "HDMI1", name = "HDMI 1", type = "internal", capabilities = {} },
+                    { address = "HDMI2", name = "HDMI 2", type = "internal", capabilities = {} },
+                    { address = "TV",    name = "TV Tuner", type = "internal", capabilities = {"CHANNEL"} }
+                }
+            }
+        end
+    end
+```
+
+See the [RENDERER type](#RENDERER-type) section for the expected response formats for standard queries like `LIST_INPUTS`, `LIST_APPLICATIONS`, etc.
+
 
 <a id="onResourceDelete"></a>
 
@@ -4212,6 +4273,66 @@ All commands take no arguments.
 
 (M) = mandatory if the CUSTOM_COMMAND capability is included.
 
+### Query response formats
+
+When the driver implements the [query](#query) function for a RENDERER or MATRIX resource, the returned data must follow these structures:
+
+#### LIST\_INPUTS
+
+Returns the available input sources for the resource. Each input entry has the following fields:
+
+-   **`address`** (string, required): The input identifier, used as the value for `SELECT_INPUT` commands.
+-   **`name`** (string, optional): Display name for the input. Defaults to the address if not provided.
+-   **`type`** (string, required): `"internal"` — the input is handled by the resource itself. This is currently the only supported value.
+-   **`capabilities`** (list of strings, optional): Capabilities available when this input is selected. Valid values correspond to capability names: `"POWER"`, `"INPUT"`, `"VOLUME"`, `"NAVIGATION"`, `"PLAYER"`, `"APPLICATION"`, `"CHANNEL"`, `"CUSTOM_COMMAND"`, `"CONTENT"`, `"PLAYQUEUE"`, `"MULTIROOM"`, `"KEYBOARD"`.
+
+```json
+{
+  "inputs": [
+    { "address": "HDMI1", "name": "HDMI 1", "type": "internal", "capabilities": [] },
+    { "address": "HDMI2", "name": "HDMI 2", "type": "internal", "capabilities": [] },
+    { "address": "TV",    "name": "TV Tuner", "type": "internal", "capabilities": ["CHANNEL"] },
+    { "address": "NET",   "name": "Network",  "type": "internal", "capabilities": ["NAVIGATION", "CONTENT"] }
+  ]
+}
+```
+
+#### LIST\_APPLICATIONS
+
+Returns the available applications.
+
+```json
+{
+  "applications": [
+    { "name": "Netflix", "icon": "https://..." },
+    { "name": "YouTube", "icon": "https://..." }
+  ]
+}
+```
+
+#### LIST\_CHANNELS
+
+Returns the available channels.
+
+```json
+{
+  "channels": [
+    { "name": "BBC One", "icon": "https://..." },
+    { "name": "Channel 2", "icon": "https://..." }
+  ]
+}
+```
+
+#### LIST\_CUSTOM\_COMMANDS
+
+Returns the available custom commands.
+
+```json
+{
+  "customCommands": ["PictureMode", "SoundMode", "AspectRatio"]
+}
+```
+
 ### Example specification
 
 ```lua
@@ -4239,6 +4360,10 @@ All commands take no arguments.
              -- Player
              PLAY= {}, PAUSE= {}, STOP= {},
              NEXT= {}, PREV= {}
+          },
+          queries= {
+             LIST_INPUTS = { context_help = "Lists the available input sources." },
+             LIST_APPLICATIONS = { context_help = "Lists the installed applications." }
           },
           states= {
              enumArgument("ONLINE", {0, 1}, 0),        -- global capability
