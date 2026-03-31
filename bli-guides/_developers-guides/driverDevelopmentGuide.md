@@ -1182,7 +1182,9 @@ Where:
 -   **`resource`** is the [resource](#resource-Lua-instance) for which the query is being executed.
 -   **`queryArgs`** is a table containing any arguments for the query (usually empty).
 
-The function must return a table with the query result data.
+Like `executeCommand`, this function should return as soon as possible. If the data is already cached or can be computed immediately, return a table with the result directly.
+
+#### Synchronous query
 
 ```lua
     function query(queryName, resource, queryArgs)
@@ -1197,6 +1199,29 @@ The function must return a table with the query result data.
         end
     end
 ```
+
+#### Asynchronous query
+
+If the driver needs to communicate with the device to gather the data and cannot return immediately, an optional fourth parameter `cont_fn` (continuation function) is provided. In this case the `query` function must **not** return a value — instead, it calls `cont_fn` when the data is ready.
+
+```lua
+    function query(queryName, resource, queryArgs, cont_fn)
+        if queryName == "LIST_INPUTS" then
+            copas.addthread(function()
+                local inputs = fetchInputsFromDevice(resource.address)
+                if inputs then
+                    cont_fn(true, { inputs = inputs })
+                else
+                    cont_fn(false)
+                end
+            end)
+        end
+    end
+```
+
+The continuation function `cont_fn` takes two arguments:
+-   **`ok`** (boolean): `true` if the query succeeded, `false` otherwise.
+-   **`values`** (table, optional): the query result data (only when `ok` is `true`).
 
 See the [RENDERER type](#RENDERER-type) section for the expected response formats for standard queries like `LIST_INPUTS`, `LIST_APPLICATIONS`, etc.
 
