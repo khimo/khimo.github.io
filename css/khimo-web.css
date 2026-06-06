@@ -137,6 +137,11 @@ header.hero{
   /* hero overflow:hidden (khimo.css) clips text at narrow widths — allow overflow */
   :root header.hero{overflow:visible!important}}
 
+/* Hero stat "90+" — the "+" sits smaller & lifted, an elegant "more than" mark
+   (inherits the coral of .stat-n). */
+.hero-stat .stat-n .stat-plus{
+  font-size:.55em;font-weight:700;vertical-align:.18em;margin-left:1px;letter-spacing:0}
+
 /* ---- Horizontal overflow guard ------------------------------------------ */
 body{overflow-x:hidden}
 

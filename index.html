@@ -5,6 +5,8 @@ description: BeoLiving Intelligence — the first plug & play smart-home control
 summary: "BeoLiving Intelligence is a plug & play smart-home controller that brings Bang & Olufsen speakers, lights, blinds, climate and cameras into one app — the landing page covering what it is, what it connects and how to get started."
 keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, home automation, get started, integrations"
 ---
+{%- comment -%} Driver count floored to the nearest ten, shown as "N+" (e.g. 91 -> 90+) — auto-updates as drivers are added. {%- endcomment -%}
+{%- assign drivers_floor = site.help_drivers | size | divided_by: 10 | times: 10 -%}
 
   <!-- ============ HERO ============ -->
   <header class="hero" id="page-top">
@@ -219,7 +221,7 @@ keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, h
              CSS sets .hd-dev, .hd-ui opacity:0 and shows .hd-dev-1, .hd-ui-1 at opacity:1,
              hides .hd-sig elements, freezes .hd-core-heart/ring. No extra elements needed. -->
       </svg>
-      <div class="hero-stat"><span class="stat-n">92</span><span class="stat-l">brands &amp; systems · integrated</span></div>
+      <div class="hero-stat"><span class="stat-n">{{ drivers_floor }}<span class="stat-plus">+</span></span><span class="stat-l">brands &amp; systems · integrated</span></div>
     </div>
   </header>
 
@@ -258,7 +260,7 @@ keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, h
   <section id="connects">
     <div class="wrap">
       <h2><span class="num">02</span>What it connects</h2>
-      <p class="lead">From every Bang &amp; Olufsen product — TVs, audio and remotes — to lighting, shades, climate, cameras, security and voice, across <strong>92</strong> brands and systems, and growing.</p>
+      <p class="lead">From every Bang &amp; Olufsen product — TVs, audio and remotes — to lighting, shades, climate, cameras, security and voice, across <strong>{{ drivers_floor }}+</strong> brands and systems, and growing.</p>
       <div class="grid devices">
         <div class="card dev-7">
           <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -329,7 +331,7 @@ keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, h
         <div class="tier"><div class="tg">Out of the box</div><h3>Essential</h3>
           <p>The fastlane to home automation — configure it yourself from the BeoLiving App for iOS.</p></div>
         <div class="tier pro"><div class="tg">One-time license</div><h3>PRO</h3>
-          <p>Real-time configuration, Lua macros, web interface and integration with 92 brands.</p></div>
+          <p>Real-time configuration, Lua macros, web interface and integration with {{ drivers_floor }}+ brands.</p></div>
       </div>
 
       <div class="cmp">
@@ -368,7 +370,7 @@ keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, h
         <div class="grp">
           <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-3M12 14.5v1"/></svg><h4>Integrations</h4></div>
           <ul>
-            <li><span class="mk pro">PRO</span>Integration with 92 popular home-automation brands</li>
+            <li><span class="mk pro">PRO</span>Integration with {{ drivers_floor }}+ popular home-automation brands</li>
             <li><span class="mk pro">PRO</span>MasterLink legacy products via a BLGW or MLGW</li>
           </ul>
         </div>
@@ -424,7 +426,7 @@ keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, h
         <a class="card" href="/bli-guides/ideas/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8a11 11 0 0 0-6 20c1.3 1 1.8 2 1.8 3.5h8.4C28.2 30 28.7 29 30 28a11 11 0 0 0-6-20Z"/><path d="M20 36h8M22 40h4" stroke="#F1574B" stroke-opacity=".8"/></svg>
           <h4>Integration ideas</h4><p>Step-by-step how-to guides &amp; recipes.</p></a>
         <a class="card" href="/help_drivers/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="14" height="14" rx="2"/><rect x="26" y="8" width="14" height="14" rx="2"/><rect x="8" y="26" width="14" height="14" rx="2"/><rect x="26" y="26" width="14" height="14" rx="2" stroke="#F1574B" stroke-opacity=".75"/></svg>
-          <h4>Supported systems</h4><p>Documentation for 92 third-party drivers.</p></a>
+          <h4>Supported systems</h4><p>Documentation for {{ drivers_floor }}+ third-party drivers.</p></a>
         <a class="card" href="https://rise.articulate.com/share/tLKzK6yv60sTjCUvhZstA-_vusQrFsPa" target="_blank" rel="noopener"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="24" height="24" rx="3"/><path d="M32 20l8-4v16l-8-4" stroke="#F1574B" stroke-opacity=".75"/></svg>
           <h4>B&amp;O online training</h4><p>Official B&amp;O technical courses for the BLI.</p></a>
         <a class="card" href="/bli-guides/developers-guides/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18l-6 6 6 6M34 18l6 6-6 6"/><circle cx="24" cy="24" r="2.4" fill="#F1574B" stroke="#F1574B" stroke-opacity=".8"/></svg>
