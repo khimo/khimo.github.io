@@ -1,17 +1,8 @@
-    <div class="foot" style="width: 100%; border-top: solid grey 1px; opacity: 0.7;">
-      {% if page.collection %}
-        {% assign mycol = site.collections | where: "label", page.collection  %}
-        {% assign relative_path = mycol[0].directory | replace: site.source, ""  %}
-        
-        <!--
-        <h6> <center>Improve this document: <a href="{{ site.github.repository_url }}/edit/master/blob/master/{{ page.relative_path }}"> <small class="icon-github"></small> Edit on github!</a></center> </h6>
-        <h6> <center>Improve this document: <a href="{{ site.github.repository_url }}/edit/master{{ relative_path }}/../{{ page.path }}">Edit on github!</a></center> </h6>
-//-->
-      {% else %}
-                <!--
-
-        <h6> <center>Improve this document: <a href="{{ site.github.repository_url }}/edit/master/{{ page.path }}">Edit on github!</a></center> </h6>
-//-->
-
-      {% endif %}
-    </div>
+<footer>
+  <div role="group" aria-label="Display preferences">
+    <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+      <span class="dot"></span><span class="tlabel">Dark</span>&nbsp;mode</button>
+  </div><br>
+  BeoLiving Intelligence — the Bang &amp; Olufsen × khimo smart-home controller<br>
+  <span style="opacity:.85">© khimo.com · <a href="mailto:support@khimo.com">support@khimo.com</a></span>
+</footer>

@@ -1,38 +1,20 @@
-    <!-- Bootstrap core JavaScript -->
+    <!-- jQuery + Bootstrap bundle: still drive the auto sidebar TOC (bootstrap-toc) + scrollspy in docs -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/creative.js"></script>
-
-
-
+    <!-- anchor-js: hover anchors on documentation headings -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
     <script>
-(function () {
-'use strict';
-
-anchors.options.placement = 'left';
-
-anchors.add('.pagecontent  h2, .pagecontent  h3, .pagecontent h4, .pagecontent > h5, .pagecontent > h6');
-
-})();
+      (function () { 'use strict';
+        if (window.anchors) {
+          anchors.options.placement = 'left';
+          anchors.add('.pagecontent h2, .pagecontent h3, .pagecontent h4, .pagecontent > h5, .pagecontent > h6');
+        }
+      })();
     </script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.0/anchor.min.js"></script>
-<script>
-(function () {
-  'use strict';
-
-  anchors.options.placement = 'left';
-
-  anchors.add('.pagecontent  h2, .pagecontent  h3, .pagecontent h4, .pagecontent > h5, .pagecontent > h6');
-
-})();
-</script>
+    <!-- khimo design system behaviours: theme toggle, scroll progress, reveals + global menu -->
+    <script src="/js/khimo.js"></script>
+    <script src="/js/khimo-web.js"></script>
+    <!-- doc engine: section numbering + TOC + scrollspy (replaces bootstrap-toc) -->
+    <script src="/js/khimo-doc.js"></script>

@@ -1,0 +1,24 @@
+<!-- pagefind-meta.html — feeds the static Pagefind index.
+     Renders per-page AI summary + keywords (from front-matter) as Pagefind
+     metadata so they enrich ranked results and snippets. Zero visual output.
+
+     Front-matter convention (any page/collection doc):
+       summary:  "One-paragraph AI summary of the page."
+       keywords: "comma, separated, keywords"   (or a YAML list)
+       search_exclude: true   # to keep a page OUT of the index
+
+     The title is taken automatically by Pagefind from <title>/<h1>; we also
+     pass it explicitly so collection docs index cleanly. -->
+{%- if page.summary %}
+  <meta data-pagefind-meta="summary" content="{{ page.summary | strip_newlines | escape }}">
+{%- endif %}
+{%- if page.keywords %}
+  {%- if page.keywords.first %}
+  <meta data-pagefind-meta="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+  {%- else %}
+  <meta data-pagefind-meta="keywords" content="{{ page.keywords | escape }}">
+  {%- endif %}
+{%- endif %}
+{%- if page.title %}
+  <meta data-pagefind-meta="title" content="{{ page.title | strip_html | escape }}">
+{%- endif %}

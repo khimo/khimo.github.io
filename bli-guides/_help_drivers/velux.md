@@ -4,6 +4,7 @@ layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 keywords: Velux, Ethernet, Velux Scene Button, PRESS
 description: Velux driver provides communication with Velux systems through Ethernet interfaces managing Velux Scene Button resource type.
+legacy: true
 ---
 Velux
 =====

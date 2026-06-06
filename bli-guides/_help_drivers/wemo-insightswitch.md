@@ -4,6 +4,7 @@ layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 keywords: WeMo Insight Switch, SOAP, IP, WiFi, Toggle, On, Off
 description: WeMo Insight Switch driver supports communication with WeMo Insight Switch using SOAP IP connection over WiFi.
+legacy: true
 ---
 
 driver_help= "WeMo / Insight Switch \

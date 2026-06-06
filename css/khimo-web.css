@@ -1,0 +1,360 @@
+/* ============================================================================
+   khimo-web.css — web extensions to "The Signal" (khimo.css)
+   Covers: global menu, CTA buttons, landing sections (logo wall, edition
+   comparison), and the page-header/breadcrumb primitives for content pages.
+   Depends on khimo.css for all --khimo-* tokens and both themes.
+   ============================================================================ */
+
+/* ---- Global menu -------------------------------------------------------- */
+.khimo-menu{position:fixed;top:0;left:0;right:0;height:56px;z-index:900;
+  display:flex;align-items:center;gap:24px;padding:0 clamp(16px,4vw,40px);
+  background:color-mix(in srgb,var(--khimo-bg) 82%,transparent);
+  backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);
+  border-bottom:1px solid var(--khimo-border)}
+.khimo-menu .brand{display:flex;align-items:center;gap:10px;text-decoration:none;
+  font-weight:700;letter-spacing:-.02em;color:var(--ink);font-size:15.5px;flex:0 0 auto}
+.khimo-menu .brand:hover{text-decoration:none;color:var(--ink)}
+/* Brand mark: a plain coral square at the top that, once scrolled, becomes the
+   khimo logo flag HANGING below the bar (coral square + white "khimo" wordmark,
+   à la khimo.com); the "BeoLiving by khimo" lockup fades out. */
+.khimo-menu .brand .sq{width:18px;height:18px;border-radius:3px;background:var(--khimo-coral);
+  flex:0 0 auto;display:inline-block}
+.khimo-menu.scrolled .brand .sq{
+  position:absolute;top:0;left:clamp(16px,4vw,40px);
+  width:52px;height:74px;border-radius:0 0 6px 6px;
+  background:var(--khimo-coral) var(--khimo-logo) center 60% / 72% auto no-repeat;
+  box-shadow:0 12px 24px rgba(0,0,0,.22);
+  animation:khimoDrop .32s cubic-bezier(.2,0,0,1)}
+@keyframes khimoDrop{from{transform:translateY(-12px);opacity:.25}to{transform:none;opacity:1}}
+/* the title stays — it just slides right to make room for the hanging badge */
+.khimo-menu .brand{transition:padding-left .3s cubic-bezier(.2,0,0,1)}
+.khimo-menu.scrolled .brand{padding-left:62px}
+@media(prefers-reduced-motion:reduce){.khimo-menu.scrolled .brand .sq{animation:none}}
+.khimo-menu .brand .sub{color:var(--khimo-text-tertiary);font-weight:500;font-size:11px;
+  font-family:"JetBrains Mono",monospace;letter-spacing:.04em}
+.khimo-menu nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.khimo-menu nav a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  color:var(--muted);font-size:14px;font-weight:500;padding:8px 12px;border-radius:var(--khimo-radius-sm);
+  transition:color .15s,background .15s;position:relative}
+.khimo-menu nav a:hover{color:var(--ink);text-decoration:none;background:var(--khimo-surface-1)}
+.khimo-menu nav a.active{color:var(--khimo-coral);box-shadow:inset 0 -2px 0 var(--khimo-coral)}
+.khimo-menu nav a.icon{padding:8px 10px}
+.khimo-menu nav a.icon svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7}
+
+/* dropdown */
+.khimo-menu .has-menu{position:relative}
+.khimo-menu .has-menu .panel{position:absolute;top:calc(100% + 8px);right:0;min-width:230px;
+  background:var(--khimo-surface-1);border:1px solid var(--khimo-border);border-radius:var(--radius);
+  box-shadow:var(--khimo-shadow-lg);padding:6px;display:none;flex-direction:column;gap:2px}
+.khimo-menu .has-menu.open .panel{display:flex}
+.khimo-menu .panel a{color:var(--muted);font-size:13.5px;padding:8px 12px;border-radius:var(--khimo-radius-sm)}
+.khimo-menu .panel a:hover{color:var(--ink);background:var(--khimo-surface-2)}
+.khimo-menu .panel .div{height:1px;background:var(--khimo-border);margin:4px 6px}
+.khimo-menu .panel .lbl{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--khimo-text-tertiary);padding:8px 12px 4px}
+
+/* mobile burger sheet */
+.khimo-menu .burger{margin-left:auto;display:none;width:38px;height:38px;border:1px solid var(--khimo-border);
+  background:transparent;border-radius:var(--khimo-radius-sm);cursor:pointer;align-items:center;justify-content:center}
+.khimo-menu .burger svg{width:20px;height:20px;stroke:var(--ink);stroke-width:1.8;fill:none}
+
+@media(max-width:820px){
+  .khimo-menu .burger{display:inline-flex}
+  .khimo-menu nav{position:fixed;top:56px;left:0;right:0;margin:0;flex-direction:column;align-items:stretch;
+    gap:2px;padding:12px clamp(16px,4vw,40px) 20px;background:var(--khimo-bg);
+    border-bottom:1px solid var(--khimo-border);transform:translateY(-12px);opacity:0;pointer-events:none;
+    transition:opacity .2s,transform .2s}
+  .khimo-menu.open nav{transform:none;opacity:1;pointer-events:auto}
+  .khimo-menu nav a{padding:11px 12px;font-size:15px}
+  .khimo-menu nav a.active{box-shadow:inset 3px 0 0 var(--khimo-coral)}
+  .khimo-menu .has-menu .panel{position:static;display:flex;border:none;box-shadow:none;background:transparent;
+    padding:0 0 0 12px;min-width:0}
+  .khimo-menu .has-menu .panel a{padding:9px 12px}
+}
+@media(prefers-reduced-motion:reduce){.khimo-menu nav{transition:none}}
+
+/* ---- Fixed-menu page offsets -------------------------------------------- */
+/* Hero padding-top clears the 56px bar; khimo.css sets min-height:100svh.
+   We add only the menu clearance — the hero handles its own generous vertical padding. */
+body.has-menu header.hero{padding-top:56px}
+
+/* Sticky TOC sits flush below the fixed bar */
+body.has-menu nav.toc{top:56px}
+
+/* Freeze the hero wordmark: the fixed menu already provides persistent branding,
+   so the khimo.js scroll-recede animation is counter-productive here.
+   !important overrides the JS-written inline style on every scroll tick.          */
+body.has-menu header.hero .logo{
+  opacity:1!important;
+  transform:none!important;
+  transition:none!important}
+
+/* ---- Section anchor offset ---------------------------------------------- */
+/* scroll-margin-top: section anchors must clear fixed menu (56px) + sticky TOC (~44px) */
+section[id]{scroll-margin-top:108px}
+@media(max-width:820px){section[id]{scroll-margin-top:56px}}
+
+/* ---- .wrap alignment: the TOC uses .wrap; sections now all use .wrap too.
+   khimo.css defines .wrap{max-width:1080px;margin:0 auto;padding:0 24px}.
+   We extend padding to be responsive and match the hero gutter.               */
+.wrap{padding-left:clamp(20px,5vw,64px);padding-right:clamp(20px,5vw,64px)}
+
+/* ---- Hero: align content gutters with sections below -------------------- */
+/* Hero is full-bleed (gradient bg spans the viewport), but the inner content
+   columns align to the same horizontal gutter as the .wrap column.           */
+header.hero{
+  padding-left:clamp(20px,5vw,64px);
+  padding-right:clamp(20px,5vw,64px)}
+
+/* Cap the hero grid to the content column width so it doesn't sprawl
+   beyond 1080px on ultra-wide screens                                        */
+header.hero{
+  max-width:none;              /* hero stays full-bleed */
+  box-sizing:border-box}
+
+/* At very wide screens, centre the two-column layout within a max-width */
+@media(min-width:1200px){
+  header.hero{
+    padding-left:max(clamp(20px,5vw,64px), calc((100vw - 1080px) / 2));
+    padding-right:max(clamp(20px,5vw,64px), calc((100vw - 1080px) / 2))}}
+
+/* ---- Hero mobile -------------------------------------------------------- */
+@media(max-width:820px){
+  /* hero-left padding already reset by khimo.css; just ensure stat is in column */
+  .hero-right{flex-direction:column;gap:12px;height:auto;margin-top:8px}
+  .hero-stat{margin-top:8px}
+
+  /* khimo.css desktop rule clamps h1 at 40px minimum, which is too wide for 375px.
+     !important overrides the specificity battle entirely.
+     overflow-wrap + white-space:normal ensure long words wrap rather than clip.       */
+  :root header.hero h1{
+    font-size:clamp(22px,7.5vw,40px)!important;
+    letter-spacing:-.03em!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    white-space:normal!important}
+
+  /* hero overflow:hidden (khimo.css) clips text at narrow widths — allow overflow */
+  :root header.hero{overflow:visible!important}}
+
+/* ---- Horizontal overflow guard ------------------------------------------ */
+body{overflow-x:hidden}
+
+/* ---- CTA buttons -------------------------------------------------------- */
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;
+  padding:11px 20px;border-radius:var(--khimo-radius-sm);text-decoration:none;
+  border:1px solid transparent;transition:transform .15s,background .15s,border-color .15s;line-height:1;cursor:pointer}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--khimo-coral);color:#fff}
+.btn-primary:hover{background:var(--khimo-coral-dark);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--khimo-border-emphasis)}
+.btn-ghost:hover{border-color:var(--khimo-coral);color:var(--khimo-coral)}
+
+/* ---- Card-as-link ------------------------------------------------------- */
+a.card{text-decoration:none;color:var(--ink);display:block}
+a.card h4{color:var(--ink)}
+a.card:hover{text-decoration:none}
+a.card:hover h4{color:var(--khimo-coral)}
+
+/* ---- "Works with" logo wall --------------------------------------------- */
+.logo-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(116px,1fr));gap:10px;margin-top:8px}
+.logo-wall .tile{aspect-ratio:16/10;background:#fff;border:1px solid var(--khimo-border);
+  border-radius:var(--khimo-radius-sm);display:flex;align-items:center;justify-content:center;padding:12px;
+  transition:transform .15s,border-color .15s}
+.logo-wall .tile:hover{transform:translateY(-2px);border-color:var(--khimo-border-emphasis)}
+.logo-wall .tile img{max-width:100%;max-height:100%;object-fit:contain;mix-blend-mode:multiply}
+.logo-wall .tile.more{background:var(--khimo-surface-1);color:var(--muted);text-decoration:none;
+  font-size:13px;font-weight:600;flex-direction:column;gap:2px;text-align:center}
+.logo-wall .tile.more b{color:var(--khimo-coral);font-size:20px;letter-spacing:-.03em}
+.logo-wall .tile.more:hover{color:var(--ink)}
+/* dark theme: multiply blending against dark bg inverts logos — use normal instead */
+.logo-wall .tile img{mix-blend-mode:normal}
+[data-theme="light"] .logo-wall .tile img{mix-blend-mode:multiply}
+/* light theme: tile bg should be white for multiply blending to work */
+[data-theme="light"] .logo-wall .tile{background:#fff}
+
+/* ---- Edition tiers (two-up before comparison grid) ---------------------- */
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px}
+.tier{background:var(--khimo-surface-1);border:1px solid var(--khimo-border);
+  border-radius:var(--radius);padding:22px 24px}
+.tier.pro{border-color:rgba(241,87,75,.35)}
+.tier .tg{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--khimo-text-tertiary);margin-bottom:8px}
+/* Override the khimo.css h3 small-caps label style for tier headings only */
+.tier h3{font-size:20px;font-weight:700;letter-spacing:-.025em;color:var(--ink);
+  text-transform:none;margin:0 0 8px}
+.tier p{margin:0;color:var(--muted);font-size:13.5px}
+@media(max-width:600px){.tiers{grid-template-columns:1fr}}
+
+/* ---- Edition comparison ------------------------------------------------- */
+.cmp{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:8px}
+.cmp .grp{background:var(--khimo-surface-1);border:1px solid var(--khimo-border);border-radius:var(--radius);padding:18px 18px 14px}
+.cmp .grp-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.cmp .grp-head svg{width:24px;height:24px;stroke:var(--khimo-text-tertiary);fill:none;stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.cmp .grp-head h4{margin:0;font-size:15px;font-weight:600;color:var(--ink);
+  text-transform:none;letter-spacing:normal}
+.cmp ul{list-style:none;margin:0;padding:0}
+.cmp li{display:flex;align-items:flex-start;gap:10px;padding:7px 0;font-size:13.5px;color:var(--muted);
+  border-top:1px solid var(--khimo-border)}
+.cmp li:first-child{border-top:none}
+.cmp li .mk{flex:0 0 auto;margin-top:1px}
+.cmp li .ck{color:var(--khimo-coral);font-size:13px}
+.cmp li .pro{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;font-weight:600;
+  color:var(--khimo-coral);background:var(--khimo-coral-tint);border:1px solid rgba(241,87,75,.35);
+  border-radius:3px;padding:2px 5px;line-height:1}
+.cmp-legend{display:flex;gap:20px;flex-wrap:wrap;margin:14px 0 0;font-size:12.5px;color:var(--khimo-text-tertiary)}
+.cmp-legend span{display:inline-flex;align-items:center;gap:7px}
+.cmp-legend .ck{color:var(--khimo-coral)}
+.cmp-legend .pro{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.08em;font-weight:600;
+  color:var(--khimo-coral);background:var(--khimo-coral-tint);border:1px solid rgba(241,87,75,.35);border-radius:3px;padding:2px 5px}
+
+/* ---- Video frame -------------------------------------------------------- */
+.vidframe{position:relative;border:1px solid var(--khimo-border);border-radius:var(--radius);overflow:hidden;
+  aspect-ratio:16/9;background:var(--khimo-surface-2);margin-top:8px}
+.vidframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ---- Sequence diagram: don't let narrow viewports break layout ---------- */
+.seq{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---- page header + breadcrumbs (content pages) -------------------------- */
+.page-head{padding:84px 0 0;max-width:var(--khimo-measure,72ch)}
+.breadcrumbs{font-size:12.5px;color:var(--khimo-text-tertiary);margin:0 0 10px;display:flex;gap:7px;flex-wrap:wrap}
+.breadcrumbs a{color:var(--khimo-text-tertiary);text-decoration:none}
+.breadcrumbs a:hover{color:var(--khimo-coral)}
+.breadcrumbs .sep{opacity:.5}
+.page-head h1{font-size:clamp(28px,4vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1.1;margin:0;
+  overflow-wrap:break-word;word-break:normal}
+
+.proposal-flag{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.1em}
+
+/* ============================================================================
+   HERO DIAGRAM ANIMATIONS — "The Signal" living flow
+   Three-node animated diagram: Devices → BeoLiving Intelligence → UI surface
+   All motion gated by @media (prefers-reduced-motion: no-preference).
+   ============================================================================ */
+
+/* ── Icon base color: override currentColor to a readable mid-tone ──────────
+   Node backgrounds are var(--khimo-surface-1) (#141618). The icon structural
+   strokes use currentColor; we set it to text-secondary for legibility.
+   Coral-accented elements use explicit #F1574B and are unaffected by this. */
+.hd-dev, .hd-ui {
+  color: var(--khimo-text-secondary, #9AA1AD);
+}
+[data-theme="light"] .hd-dev, [data-theme="light"] .hd-ui {
+  color: var(--khimo-text-secondary, #535A66);
+}
+
+/* ── Device icon cycling (left node) ────────────────────────────────────────
+   5 icons, 10s total cycle, each visible 2s (20% of cycle).
+   Stagger by 2s each. Timing: 0.3s ease-in, 1.4s hold, 0.3s ease-out.
+   keyframe: 0% hidden → 6% fade-in → 14% hold → 20% fade-out → 100% hidden */
+@keyframes hd-icon-cycle {
+  0%        { opacity: 0; }
+  3%        { opacity: 1; }
+  17%       { opacity: 1; }
+  20%       { opacity: 0; }
+  100%      { opacity: 0; }
+}
+
+/* ── UI surface icon cycling (right node) ────────────────────────────────────
+   3 icons, 9s total cycle, each visible 3s (33.3% of cycle).
+   Stagger by 3s each. Same ease-in/hold/ease-out shape. */
+@keyframes hd-ui-cycle {
+  0%        { opacity: 0; }
+  4%        { opacity: 1; }
+  30%       { opacity: 1; }
+  33%       { opacity: 0; }
+  100%      { opacity: 0; }
+}
+
+/* ── Core pulse ring — expands + fades on signal arrival ─────────────────── */
+@keyframes hd-core-pulse {
+  0%  { opacity: 0;    transform: scale(1);    }
+  12% { opacity: 0.55; transform: scale(1.04); }
+  60% { opacity: 0.1;  transform: scale(1.14); }
+  100%{ opacity: 0;    transform: scale(1.2);  }
+}
+
+/* ── Core heart breathe — continuous subtle scale ────────────────────────── */
+@keyframes hd-core-breathe {
+  0%,100% { transform: scale(1);    opacity: 1; }
+  45%     { transform: scale(1.18); opacity: 0.9; }
+  55%     { transform: scale(1.18); opacity: 0.9; }
+}
+
+/* ── Apply animations only when motion is allowed ────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Device icons — start hidden; each cycles on 10s loop */
+  .hd-dev { opacity: 0; }
+  .hd-dev-1 { animation: hd-icon-cycle 10s ease-in-out  0.0s  infinite; }
+  .hd-dev-2 { animation: hd-icon-cycle 10s ease-in-out  2.0s  infinite; }
+  .hd-dev-3 { animation: hd-icon-cycle 10s ease-in-out  4.0s  infinite; }
+  .hd-dev-4 { animation: hd-icon-cycle 10s ease-in-out  6.0s  infinite; }
+  .hd-dev-5 { animation: hd-icon-cycle 10s ease-in-out  8.0s  infinite; }
+
+  /* UI surface icons — start hidden; each cycles on 9s loop */
+  .hd-ui { opacity: 0; }
+  .hd-ui-1 { animation: hd-ui-cycle 9s ease-in-out  0.0s  infinite; }
+  .hd-ui-2 { animation: hd-ui-cycle 9s ease-in-out  3.0s  infinite; }
+  .hd-ui-3 { animation: hd-ui-cycle 9s ease-in-out  6.0s  infinite; }
+
+  /* Core pulse ring — fires every 2.6s in sync with the main forward signal */
+  .hd-core-ring {
+    transform-origin: 260px 130px;
+    animation: hd-core-pulse 2.6s cubic-bezier(0.2, 0, 0.4, 1) 1.25s infinite;
+  }
+
+  /* Core heart breathe — 2.6s period, in sync with signal */
+  .hd-core-heart {
+    transform-origin: 260px 130px;
+    animation: hd-core-breathe 2.6s ease-in-out 0.0s infinite;
+  }
+
+  /* Static overlay hidden when animated */
+  .hd-static { display: none; }
+}
+
+/* ── Reduced-motion: freeze to composed static frame ────────────────────────
+   Show icon-1 (lights) for left, icon-1 (mobile) for right, signal at rest. */
+@media (prefers-reduced-motion: reduce) {
+  /* Hide all cycling icons and signal animations */
+  .hd-dev   { opacity: 0; }
+  .hd-ui    { opacity: 0; }
+  .hd-sig   { display: none; }
+  .hd-core-ring { display: none; }
+
+  /* Show the first icons as static */
+  .hd-dev-1 { opacity: 1; }
+  .hd-ui-1  { opacity: 1; }
+
+  /* Core heart stays still */
+  .hd-core-heart { opacity: 1; }
+}
+
+/* ── Mobile / small-screen scaling ──────────────────────────────────────────
+   The SVG already scales via viewBox; ensure it doesn't overflow its container.
+   At ≤820px, hero stacks; hero-diagram gets max-width:100% via khimo.css.
+   We keep the diagram legible by slightly boosting node visibility at narrow widths. */
+@media (max-width: 520px) {
+  .hero-diagram { width: 100%; }
+}
+
+/* ── Smooth reveal on load for the whole diagram ────────────────────────── */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-diagram {
+    animation: hd-diagram-fadein 0.8s cubic-bezier(0.2, 0, 0, 1) both;
+  }
+  @keyframes hd-diagram-fadein {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+
+
+
+
+

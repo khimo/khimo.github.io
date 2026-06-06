@@ -4,6 +4,7 @@ layout: drivertoc
 notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 keywords: WeMo Slow Cooker, SOAP, IP, WiFi, Off, Low, Keep Warm, High
 description: WeMo Slow Cooker driver supports communication with the WeMo enabled Slow Cooker using SOAP IP connection over WiFi.
+legacy: true
 ---
 
 driver_help= "WeMo / Slow Cooker \

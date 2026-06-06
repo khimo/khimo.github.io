@@ -1,0 +1,454 @@
+---
+layout: khimo-landing
+title: BeoLiving Intelligence — by khimo
+description: BeoLiving Intelligence — the first plug & play smart-home controller for Bang & Olufsen, by khimo.
+summary: "BeoLiving Intelligence is a plug & play smart-home controller that brings Bang & Olufsen speakers, lights, blinds, climate and cameras into one app — the landing page covering what it is, what it connects and how to get started."
+keywords: "beoliving intelligence, bli, bang & olufsen, smart home controller, home automation, get started, integrations"
+---
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="page-top">
+    <div class="glow a"></div><div class="glow b"></div>
+    <div class="hero-left">
+      <div class="logo" role="img" aria-label="khimo"></div>
+      <div class="badge">BeoLiving Intelligence</div>
+      <h1>Your whole home, winding into one signal.</h1>
+      <p>The first plug &amp; play smart-home controller for Bang &amp; Olufsen — bringing your speakers, lights, blinds, climate and cameras into a single, beautifully simple app.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#start">Start now →</a>
+        <a class="btn btn-ghost" href="#connects">See what it connects</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <!--
+        HERO DIAGRAM v2 — "The Signal" living flow
+        Node layout in 520×260 viewBox:
+          Left  node: cx=76,  cy=130  r=34  (devices)
+          Center node: cx=260, cy=130  r=46  (BeoLiving Intelligence — the brain)
+          Right  node: cx=444, cy=130  r=34  (UI surface)
+        Icons: drawn at scale 0.52 in a 48×48 space, centered on node (translate(cx,cy) scale(0.52) translate(-24,-24))
+        Tracks: two arcs L→C, both used by signal pulses and return feedback
+      -->
+      <svg class="hero-diagram" viewBox="0 0 520 260" fill="none" aria-hidden="true">
+        <defs>
+          <!-- Radial coral glow for center node depth -->
+          <radialGradient id="hd-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"   stop-color="#F1574B" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#F1574B" stop-opacity="0"/>
+          </radialGradient>
+          <!-- Subtle surface glow for side nodes -->
+          <radialGradient id="hd-glow-sm" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"   stop-color="#F1574B" stop-opacity="0.06"/>
+            <stop offset="100%" stop-color="#F1574B" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- ── TRACK LAYER — two faint background arcs ── -->
+        <!-- Top arc track -->
+        <path d="M110 130 C170 130,205 72,260 72 C315 72,350 130,410 130"
+              stroke="var(--khimo-border)" stroke-width="1.4"/>
+        <!-- Bottom arc track -->
+        <path d="M110 130 C170 130,205 188,260 188 C315 188,350 130,410 130"
+              stroke="var(--khimo-border)" stroke-width="1.4"/>
+
+        <!-- ── SIGNAL PULSES ── -->
+        <!-- Primary forward: L→C→R on top arc, two staggered dashes -->
+        <path class="hd-sig"
+              d="M110 130 C170 130,205 72,260 72 C315 72,350 130,410 130"
+              stroke="#F1574B" stroke-width="2" stroke-dasharray="55 390" stroke-dashoffset="445">
+          <animate attributeName="stroke-dashoffset" values="445;-55"
+                   dur="2.6s" begin="0s" repeatCount="indefinite"
+                   calcMode="spline" keySplines="0.42 0 0.18 1" keyTimes="0;1"/></path>
+        <path class="hd-sig"
+              d="M110 130 C170 130,205 72,260 72 C315 72,350 130,410 130"
+              stroke="#F1574B" stroke-width="2" stroke-dasharray="55 390" stroke-dashoffset="445">
+          <animate attributeName="stroke-dashoffset" values="445;-55"
+                   dur="2.6s" begin="1.3s" repeatCount="indefinite"
+                   calcMode="spline" keySplines="0.42 0 0.18 1" keyTimes="0;1"/></path>
+        <!-- Return feedback: R→L on bottom arc, dimmer, slower -->
+        <path class="hd-sig hd-sig-ret"
+              d="M410 130 C350 130,315 188,260 188 C205 188,170 130,110 130"
+              stroke="#F1574B" stroke-width="1.5" stroke-dasharray="38 410" stroke-dashoffset="448" opacity="0.45">
+          <animate attributeName="stroke-dashoffset" values="448;-38"
+                   dur="3.8s" begin="5.2s" repeatCount="indefinite"
+                   calcMode="spline" keySplines="0.42 0 0.18 1" keyTimes="0;1"/></path>
+
+        <!-- ── LEFT NODE — "Your devices" ── -->
+        <circle cx="76" cy="130" r="36" fill="var(--khimo-surface-1)" stroke="var(--khimo-border-emphasis)" stroke-width="1.4"/>
+        <circle cx="76" cy="130" r="34" fill="url(#hd-glow-sm)"/>
+
+        <!--
+          Icon placement: translate(cx,cy) scale(0.58) translate(-24,-24)
+          Icons drawn in 0–48 space; scale maps them to fit within node radius 36.
+        -->
+
+        <!-- DEV-1: Lights — coral rays = glow/active; currentColor = structural -->
+        <g class="hd-dev hd-dev-1"
+           transform="translate(76,130) scale(0.58) translate(-24,-24)">
+          <circle cx="24" cy="21" r="9" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="24" y1="5"  x2="24" y2="3"  stroke="#F1574B" stroke-opacity=".85" stroke-width="1.6"/>
+          <line x1="35" y1="10" x2="37" y2="8"  stroke="#F1574B" stroke-opacity=".85" stroke-width="1.6"/>
+          <line x1="13" y1="10" x2="11" y2="8"  stroke="#F1574B" stroke-opacity=".85" stroke-width="1.6"/>
+          <line x1="40" y1="21" x2="42" y2="21" stroke="#F1574B" stroke-opacity=".5"  stroke-width="1.4"/>
+          <line x1="8"  y1="21" x2="6"  y2="21" stroke="#F1574B" stroke-opacity=".5"  stroke-width="1.4"/>
+          <path d="M20 31h8M21 34.5h6M22 38h4" stroke="currentColor" stroke-width="1.5"/>
+        </g>
+
+        <!-- DEV-2: Blinds / shades — coral cord = motion -->
+        <g class="hd-dev hd-dev-2"
+           transform="translate(76,130) scale(0.58) translate(-24,-24)">
+          <rect x="9" y="6" width="30" height="28" rx="2" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="9"  y1="14" x2="39" y2="14" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="9"  y1="21" x2="39" y2="21" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="9"  y1="28" x2="39" y2="28" stroke="currentColor" stroke-width="1.4"/>
+          <!-- coral pull-cord -->
+          <line x1="24" y1="34" x2="24" y2="42" stroke="#F1574B" stroke-opacity=".8" stroke-width="1.6"/>
+          <circle cx="24" cy="43" r="2.2" fill="#F1574B" fill-opacity=".8" stroke="none"/>
+        </g>
+
+        <!-- DEV-3: Thermostat — coral arc = active temp zone -->
+        <g class="hd-dev hd-dev-3"
+           transform="translate(76,130) scale(0.58) translate(-24,-24)">
+          <!-- dial background arc -->
+          <path d="M8 34 A18 18 0 0 1 40 34" stroke="currentColor" stroke-width="1.6"/>
+          <!-- coral active zone -->
+          <path d="M13 34 A13 13 0 0 1 35 34" stroke="#F1574B" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+          <!-- needle -->
+          <circle cx="24" cy="34" r="3" fill="currentColor" stroke="none"/>
+          <line x1="24" y1="34" x2="24" y2="18" stroke="currentColor" stroke-width="1.5"/>
+          <!-- degree marks -->
+          <line x1="24" y1="16" x2="24" y2="13" stroke="currentColor" stroke-width="1.2" stroke-opacity=".5"/>
+        </g>
+
+        <!-- DEV-4: Camera — coral lens dot = live feed -->
+        <g class="hd-dev hd-dev-4"
+           transform="translate(76,130) scale(0.58) translate(-24,-24)">
+          <path d="M7 16h7l3-4h14l3 4h7v22H7z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="24" cy="27" r="8" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="24" cy="27" r="3" fill="#F1574B" stroke="none"/>
+          <!-- record dot -->
+          <circle cx="36" cy="19" r="2" fill="#F1574B" fill-opacity=".7" stroke="none"/>
+        </g>
+
+        <!-- DEV-5: B&O speaker — coral wave = live audio -->
+        <g class="hd-dev hd-dev-5"
+           transform="translate(76,130) scale(0.58) translate(-24,-24)">
+          <!-- B&O tall slim speaker body -->
+          <rect x="14" y="5" width="12" height="36" rx="3" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="20" cy="24" r="5" stroke="currentColor" stroke-width="1.3"/>
+          <!-- coral sound waves -->
+          <path d="M28 18 a 9 9 0 0 1 0 12" stroke="#F1574B" stroke-opacity=".8" stroke-width="1.6"/>
+          <path d="M32 14 a 15 15 0 0 1 0 20" stroke="#F1574B" stroke-opacity=".45" stroke-width="1.4"/>
+        </g>
+
+        <!-- Left label -->
+        <text x="76" y="185" text-anchor="middle" font-size="11" fill="var(--khimo-text-tertiary)"
+              font-family="Inter,sans-serif" letter-spacing="0.04em">Your devices</text>
+
+        <!-- ── CENTER NODE — the actual BeoLiving Intelligence device ── -->
+        <!-- Outer pulse ring — expands when a signal reaches the device -->
+        <circle class="hd-core-ring" cx="260" cy="130" r="58" fill="none" stroke="#F1574B" stroke-width="1.4" opacity="0"/>
+        <!-- Soft drop shadow under the device -->
+        <ellipse cx="260" cy="176" rx="42" ry="3.5" fill="rgba(0,0,0,.22)"/>
+        <!-- BLI hardware body: white rounded square (matches the real product) -->
+        <rect x="218" y="88" width="84" height="84" rx="14" ry="14"
+              fill="#FFFFFF" stroke="rgba(20,22,26,.14)" stroke-width="1"/>
+        <!-- Subtle top catch-light, like a sealed enclosure -->
+        <rect x="220" y="89.5" width="80" height="1.6" rx="0.8" fill="rgba(255,255,255,.95)" opacity=".7"/>
+        <!-- LED ring — slate blue, like the real device -->
+        <circle cx="260" cy="130" r="23" fill="none" stroke="#5F6FA5" stroke-width="1.5" opacity=".8"/>
+
+        <!-- Center label — sits BELOW the bottom return-feedback arc so the line never crosses the text -->
+        <text x="260" y="206" text-anchor="middle" font-size="11" fill="var(--khimo-text-tertiary)"
+              font-family="Inter,sans-serif" letter-spacing="0.04em">BeoLiving Intelligence</text>
+
+        <!-- ── RIGHT NODE — UI surface ── -->
+        <circle cx="444" cy="130" r="36" fill="var(--khimo-surface-1)" stroke="var(--khimo-border)" stroke-width="1.4"/>
+        <circle cx="444" cy="130" r="34" fill="url(#hd-glow-sm)" opacity=".5"/>
+
+        <!-- UI-1: Mobile app — coral home dot = connected -->
+        <g class="hd-ui hd-ui-1"
+           transform="translate(444,130) scale(0.58) translate(-24,-24)">
+          <rect x="11" y="3" width="26" height="42" rx="4" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="15" y="9" width="18" height="26" rx="2" stroke="currentColor" stroke-width="1.3"/>
+          <!-- coral status dot — app live -->
+          <circle cx="24" cy="40" r="2.5" fill="#F1574B" stroke="none"/>
+          <!-- small content lines on screen -->
+          <line x1="17" y1="14" x2="27" y2="14" stroke="currentColor" stroke-width="1" stroke-opacity=".5"/>
+          <line x1="17" y1="18" x2="23" y2="18" stroke="currentColor" stroke-width="1" stroke-opacity=".5"/>
+        </g>
+
+        <!-- UI-2: B&O Halo remote — coral arc = active -->
+        <g class="hd-ui hd-ui-2"
+           transform="translate(444,130) scale(0.58) translate(-24,-24)">
+          <!-- Halo outer ring -->
+          <circle cx="24" cy="24" r="19" stroke="currentColor" stroke-width="1.6"/>
+          <!-- Halo inner ring -->
+          <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="1.3"/>
+          <!-- coral active arc — selected zone -->
+          <path d="M24 5 A19 19 0 0 1 40.5 14.5" stroke="#F1574B" stroke-opacity=".85" stroke-width="2.4" stroke-linecap="round"/>
+          <!-- center control knob -->
+          <circle cx="24" cy="24" r="4" fill="var(--khimo-surface-2)" stroke="currentColor" stroke-width="1.2"/>
+        </g>
+
+        <!-- UI-3: TV screen — coral panel = BLI app on screen -->
+        <g class="hd-ui hd-ui-3"
+           transform="translate(444,130) scale(0.58) translate(-24,-24)">
+          <rect x="4"  y="6"  width="40" height="28" rx="3" stroke="currentColor" stroke-width="1.6"/>
+          <!-- screen text lines -->
+          <line x1="9"  y1="14" x2="22" y2="14" stroke="currentColor" stroke-width="1.1" stroke-opacity=".5"/>
+          <line x1="9"  y1="18" x2="17" y2="18" stroke="currentColor" stroke-width="1.1" stroke-opacity=".5"/>
+          <line x1="9"  y1="22" x2="20" y2="22" stroke="currentColor" stroke-width="1.1" stroke-opacity=".5"/>
+          <!-- coral BLI app panel on screen -->
+          <rect x="26" y="11" width="12" height="17" rx="2" fill="#F1574B" fill-opacity=".18" stroke="#F1574B" stroke-opacity=".75" stroke-width="1.3"/>
+          <line x1="29" y1="16" x2="35" y2="16" stroke="#F1574B" stroke-opacity=".7" stroke-width="1"/>
+          <line x1="29" y1="19" x2="33" y2="19" stroke="#F1574B" stroke-opacity=".5" stroke-width="1"/>
+          <!-- stand -->
+          <line x1="24" y1="34" x2="24" y2="40" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="18" y1="40" x2="30" y2="40" stroke="currentColor" stroke-width="1.4"/>
+        </g>
+
+        <!-- Right label -->
+        <text x="444" y="185" text-anchor="middle" font-size="11" fill="var(--khimo-text-tertiary)"
+              font-family="Inter,sans-serif" letter-spacing="0.04em">Control surface</text>
+
+        <!-- ── REDUCED MOTION: static freeze-frame ──
+             CSS sets .hd-dev, .hd-ui opacity:0 and shows .hd-dev-1, .hd-ui-1 at opacity:1,
+             hides .hd-sig elements, freezes .hd-core-heart/ring. No extra elements needed. -->
+      </svg>
+      <div class="hero-stat"><span class="stat-n">92</span><span class="stat-l">brands &amp; systems · integrated</span></div>
+    </div>
+  </header>
+
+  <!-- ============ TOC ============ -->
+  <nav class="toc" aria-label="Page contents"><div class="wrap">
+    <a href="#overview">Overview</a>
+    <a href="#connects">Integrations</a>
+    <a href="#editions">Editions</a>
+    <a href="#start">Get started</a>
+    <a href="#pro">Go further</a>
+    <a href="#support">Support</a>
+  </div></nav>
+
+  <main>
+  <!-- ============ 01 OVERVIEW ============ -->
+  <section id="overview">
+    <div class="wrap">
+      <h2><span class="num">01</span>Overview</h2>
+      <p class="lead">BeoLiving Intelligence is the first plug &amp; play smart-home controller for Bang &amp; Olufsen — the successor to the BeoLink Gateway, born from the B&amp;O × khimo partnership that dates back to 2005. It expands how your B&amp;O products work together and lets them interact with the rest of your home, all through the beautifully simple BeoLiving App on your phone or tablet.</p>
+      <p class="lead">It works straight out of the box in <strong>Essential</strong> mode — easy to install and configure yourself. Upgrade once to <strong>PRO</strong> for a full professional smart-home solution.</p>
+      <div class="seq">
+        <div class="seq-head"><span class="a-bli">BeoLiving App</span><span></span><span class="a-c4">Your home</span></div>
+        <div class="seqrow dirR"><div class="who">App</div>
+          <div class="msg">"Good evening" scene<span class="bar"></span></div>
+          <div class="who">BLI →</div></div>
+        <div class="seqrow seq-note"><div class="note">BLI dims the Hue lights · lowers the blinds · sets the B&amp;O speakers to a playlist</div></div>
+        <div class="seqrow dirL"><div class="who">←</div>
+          <div class="msg">live device states &amp; feedback<span class="bar"></span></div>
+          <div class="who">BLI</div></div>
+      </div>
+      <div class="tip">Getting the essential integration running is effortless. And for the professional tier, a meticulously crafted admin panel lets a trained technician — guided by the built-in AI agent — compose a fully automated home, with finely defined interfaces that speak one design language across the entire portfolio: from the TV screen to the Bang &amp; Olufsen remote to the mobile apps.</div>
+    </div>
+  </section>
+
+  <!-- ============ 02 INTEGRATIONS ============ -->
+  <section id="connects">
+    <div class="wrap">
+      <h2><span class="num">02</span>What it connects</h2>
+      <p class="lead">From every Bang &amp; Olufsen product — TVs, audio and remotes — to lighting, shades, climate, cameras, security and voice, across <strong>92</strong> brands and systems, and growing.</p>
+      <div class="grid devices">
+        <div class="card dev-7">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="9" width="28" height="19" rx="2"/><path d="M14 33h12M20 28v5"/>
+            <rect x="37" y="14" width="5" height="24" rx="2.5"/>
+            <path d="M12 15h12M12 19h8" stroke="#F1574B" stroke-opacity=".8"/><circle cx="39.5" cy="33" r="1.4" fill="#F1574B" stroke="none"/></svg>
+          <h4>Every Bang &amp; Olufsen product</h4><p class="caps">TVs · audio · NetworkLink · Mozart · multiroom · Halo &amp; B&amp;O remotes</p>
+          <p>Fire any home-automation scene straight from a B&amp;O remote — and check your whole home's status right on the TV screen.</p></div>
+        <div class="card dev-5">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 8a10 10 0 0 0-6 18c1.4 1.1 2 2.2 2 4h8c0-1.8.6-2.9 2-4a10 10 0 0 0-6-18Z"/><path d="M20 38h8M21 42h6"/>
+            <path d="M24 3v-2M37 11l1.6-1.6M11 11 9.4 9.4" stroke="#F1574B" stroke-opacity=".8"/></svg>
+          <h4>Lighting</h4><p class="caps">Philips Hue · KNX · Lutron · on/off · dimming · color</p></div>
+        <div class="card dev-4">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="8" width="30" height="28" rx="2"/><path d="M9 16h30M9 22h30M9 28h30"/><path d="M24 36v6M21 39l3 3 3-3" stroke="#F1574B" stroke-opacity=".8"/></svg>
+          <h4>Blinds &amp; shades</h4><p class="caps">Somfy · PowerView · QMotion · Velux</p></div>
+        <div class="card dev-4">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="2"/><path d="M24 24l7-7" stroke="#F1574B" stroke-opacity=".85"/><path d="M24 9v3M39 24h-3M24 39v-3M9 24h3"/></svg>
+          <h4>Climate</h4><p class="caps">Nest · ecobee · Honeywell · tekmar · Sensibo</p></div>
+        <div class="card dev-4">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 16h7l3-4h12l3 4h7v22H8z"/><circle cx="24" cy="27" r="7"/><circle cx="24" cy="27" r="2.4" fill="#F1574B" stroke="#F1574B" stroke-opacity=".85"/></svg>
+          <h4>Cameras</h4><p class="caps">ONVIF · DoorBird · live view on TV</p></div>
+        <div class="card dev-6">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="12" y="22" width="24" height="18" rx="3"/><path d="M17 22v-5a7 7 0 0 1 14 0v5"/><path d="M24 29v4" stroke="#F1574B" stroke-opacity=".85"/><circle cx="24" cy="28" r="1.6" fill="#F1574B" stroke="none"/></svg>
+          <h4>Security &amp; access</h4><p class="caps">DSC · Vista · Nuki · door locks · alarms</p></div>
+        <div class="card dev-6">
+          <svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10 24h4M38 24h-4"/><path d="M17 18v12M31 18v12"/><path d="M24 11v26" stroke="#F1574B" stroke-opacity=".85"/></svg>
+          <h4>Voice &amp; triggers</h4><p class="caps">Alexa · Google Assistant · Siri Shortcuts · IFTTT</p></div>
+      </div>
+
+      <h3>Works with</h3>
+      <div class="logo-wall">
+        {%- comment -%} Dynamic: random supported systems (picked fresh each build), each linking to its driver page. {%- endcomment -%}
+        {%- comment -%} Exclude drivers flagged `legacy: true` (discontinued/replaced systems shouldn't show on the landing). {%- endcomment -%}
+        {%- assign current_drivers = site.help_drivers | where_exp: 'd', 'd.legacy != true' -%}
+        {%- assign total = current_drivers | size -%}
+        {%- assign picks = current_drivers | sample: 30 -%}
+        {%- assign shown = 0 -%}
+        {%- for d in picks -%}
+          {%- if shown < 15 -%}
+            {%- assign slug = d.url | remove: 'help_drivers' | remove: '/' -%}
+            {%- assign logo = '/logos/' | append: slug | append: '.jpg' -%}
+            {%- assign exists = site.static_files | where: 'path', logo -%}
+            {%- if exists.size != 0 -%}
+        <a class="tile" href="{{ d.url }}" title="{{ d.title }}"><img src="{{ logo }}" alt="{{ d.title }}" loading="lazy"></a>
+              {%- assign shown = shown | plus: 1 -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign more = total | minus: shown -%}
+        <a class="tile more" href="/help_drivers/"><b>+{{ more }}</b>more systems</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 EDITIONS ============ -->
+  <section id="editions">
+    <div class="wrap">
+      <h2><span class="num">03</span>Editions</h2>
+      <p class="lead">Start free with everything you need to live the experience. Upgrade once, with a one-time license, to PRO — the custom installer's dream controller.</p>
+
+      <div class="tiers">
+        <div class="tier"><div class="tg">Out of the box</div><h3>Essential</h3>
+          <p>The fastlane to home automation — configure it yourself from the BeoLiving App for iOS.</p></div>
+        <div class="tier pro"><div class="tg">One-time license</div><h3>PRO</h3>
+          <p>Real-time configuration, Lua macros, web interface and integration with 92 brands.</p></div>
+      </div>
+
+      <div class="cmp">
+        <div class="grp">
+          <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h4>Control &amp; devices</h4></div>
+          <ul>
+            <li><span class="mk ck">✓</span>Bang &amp; Olufsen products</li>
+            <li><span class="mk ck">✓</span>Philips Hue products</li>
+            <li><span class="mk ck">✓</span>ONVIF-enabled cameras</li>
+            <li><span class="mk ck">✓</span>Control through Bang &amp; Olufsen TVs</li>
+            <li><span class="mk pro">PRO</span>Control through its web interface</li>
+            <li><span class="mk pro">PRO</span>Web interface advanced configuration</li>
+            <li><span class="mk pro">PRO</span><strong>AI-guided setup</strong> — the industry's first AI agent built into the home-automation configuration process</li>
+          </ul>
+        </div>
+        <div class="grp">
+          <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4-8 4-8-4 8-4Z"/><path d="M4 12l8 4 8-4M4 17l8 4 8-4"/></svg><h4>Scenes &amp; automation</h4></div>
+          <ul>
+            <li><span class="mk ck">✓</span>Create scenes through the BeoLiving App</li>
+            <li><span class="mk pro">PRO</span><strong>The AI agent builds the automation for you</strong> — describe what you want in plain words and it writes the scene</li>
+            <li><span class="mk pro">PRO</span>Lua macro commands</li>
+            <li><span class="mk pro">PRO</span>B&amp;O Light &amp; Control functions as macro triggers</li>
+          </ul>
+        </div>
+        <div class="grp">
+          <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h2M18 12h2M9 7v10M15 7v10M12 4v16"/></svg><h4>Voice &amp; remote</h4></div>
+          <ul>
+            <li><span class="mk ck">✓</span>Voice control through Alexa</li>
+            <li><span class="mk ck">✓</span>Voice control through Google Assistant</li>
+            <li><span class="mk ck">✓</span>IFTTT support</li>
+            <li><span class="mk ck">✓</span>Halo Remote automatic configuration</li>
+            <li><span class="mk pro">PRO</span>Voice &amp; remote control through Siri Shortcuts</li>
+            <li><span class="mk pro">PRO</span>Customization of the Halo Remote</li>
+          </ul>
+        </div>
+        <div class="grp">
+          <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M6 8.5v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-3M12 14.5v1"/></svg><h4>Integrations</h4></div>
+          <ul>
+            <li><span class="mk pro">PRO</span>Integration with 92 popular home-automation brands</li>
+            <li><span class="mk pro">PRO</span>MasterLink legacy products via a BLGW or MLGW</li>
+          </ul>
+        </div>
+        <div class="grp">
+          <div class="grp-head"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7a4 4 0 1 0-5 5l-5 5 2 2 5-5a4 4 0 0 0 5-5l-2 2-2-2 2-2Z"/></svg><h4>Service &amp; customization</h4></div>
+          <ul>
+            <li><span class="mk ck">✓</span>Remote support specialist</li>
+            <li><span class="mk pro">PRO</span>Customization of the BeoLiving App</li>
+            <li><span class="mk pro">PRO</span>Configuration tunnels (cloud access)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cmp-legend">
+        <span><span class="mk ck">✓</span> Essential &amp; PRO</span>
+        <span><span class="pro">PRO</span> PRO only</span>
+      </div>
+
+      <p class="lead" style="margin-top:22px;font-size:14px">Migrating from a BeoLink Gateway? PRO mode takes only a few steps — see the <a href="/bli-guides/bli-for-blgw-installers.html">BLGW installer guide</a> for the main differences and how to migrate.</p>
+
+    </div>
+  </section>
+
+  <!-- ============ 04 GET STARTED ============ -->
+  <section id="start">
+    <div class="wrap">
+      <h2><span class="num">04</span>Get started</h2>
+      <p class="lead">A few simple, non-technical steps and it's ready to shine. Add your B&amp;O speakers, Philips Hue lights and ONVIF cameras, recreate your home's zones, and set daily scenes.</p>
+      <div class="steps">
+        <div class="step"><span class="side bliside">Quick setup</span>
+          <h4>Power up &amp; connect</h4><p>Plug the BLI into your network and power it up. Add your devices from the BeoLiving App for iOS. <a href="/bli-guides/bli-quick-setup-guide.html">Quick setup guide →</a></p></div>
+        <div class="step"><span class="side bliside">User guide</span>
+          <h4>Build your home</h4><p>Recreate every zone, set daily scenes, and learn everything the BLI can do. <a href="/bli-guides/bli_advanced_user_guide/">User guide →</a></p></div>
+        <div class="step"><span class="side bliside">Link 3rd parties</span>
+          <h4>Add voice &amp; services</h4><p>Enable Alexa, Google Assistant and IFTTT. <a href="/bli-guides/bli-link-third-party-service.html">Link third parties →</a></p></div>
+      </div>
+      <div class="callout"><strong>Note:</strong> configuring an Essential BLI is done from the iOS BeoLiving App. The Android app allows control, but not configuration.</div>
+      <p class="lead" style="margin-top:20px;font-size:14.5px">Prefer to watch? See the <a href="https://www.youtube.com/watch?v=iLQhc2VGZVo" target="_blank" rel="noopener">4-minute Essential setup video</a> — or jump straight into the <a href="/bli-guides/bli-pro-user-guide/">PRO setup</a> if you're building a professional solution.</p>
+    </div>
+  </section>
+
+  <!-- ============ 05 GO FURTHER WITH PRO ============ -->
+  <section id="pro">
+    <div class="wrap">
+      <h2><span class="num">05</span>Go further with PRO</h2>
+      <p class="lead">PRO turns the BLI into the custom installer's dream controller. With its real-time configuration platform it's the simplest yet most powerful way to integrate, control and automate an entire home — even one without a single B&amp;O product — all as one entity through the BeoLiving App.</p>
+      <div class="grid">
+        <a class="card" href="/bli-guides/bli-pro-user-guide/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 10h20a4 4 0 0 1 4 4v24H14a4 4 0 0 1-4-4z"/><path d="M34 14h4v24H18" stroke="#F1574B" stroke-opacity=".7"/></svg>
+          <h4>PRO user guide</h4><p>Enjoy the full power of the platform.</p></a>
+        <a class="card" href="/bli-guides/manuals/howto-lua-macros/index"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 16l-8 8 8 8M30 16l8 8-8 8"/><path d="M26 12l-4 24" stroke="#F1574B" stroke-opacity=".75"/></svg>
+          <h4>Lua macros</h4><p>Craft rich, complex automations in code.</p></a>
+        <a class="card" href="/bli-guides/ideas/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 8a11 11 0 0 0-6 20c1.3 1 1.8 2 1.8 3.5h8.4C28.2 30 28.7 29 30 28a11 11 0 0 0-6-20Z"/><path d="M20 36h8M22 40h4" stroke="#F1574B" stroke-opacity=".8"/></svg>
+          <h4>Integration ideas</h4><p>Step-by-step how-to guides &amp; recipes.</p></a>
+        <a class="card" href="/help_drivers/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="14" height="14" rx="2"/><rect x="26" y="8" width="14" height="14" rx="2"/><rect x="8" y="26" width="14" height="14" rx="2"/><rect x="26" y="26" width="14" height="14" rx="2" stroke="#F1574B" stroke-opacity=".75"/></svg>
+          <h4>Supported systems</h4><p>Documentation for 92 third-party drivers.</p></a>
+        <a class="card" href="https://rise.articulate.com/share/tLKzK6yv60sTjCUvhZstA-_vusQrFsPa" target="_blank" rel="noopener"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="24" height="24" rx="3"/><path d="M32 20l8-4v16l-8-4" stroke="#F1574B" stroke-opacity=".75"/></svg>
+          <h4>B&amp;O online training</h4><p>Official B&amp;O technical courses for the BLI.</p></a>
+        <a class="card" href="/bli-guides/developers-guides/"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18l-6 6 6 6M34 18l6 6-6 6"/><circle cx="24" cy="24" r="2.4" fill="#F1574B" stroke="#F1574B" stroke-opacity=".8"/></svg>
+          <h4>Integration developers</h4><p>Build your own drivers.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 SUPPORT ============ -->
+  <section id="support">
+    <div class="wrap">
+      <h2><span class="num">06</span>Support</h2>
+      <p class="lead">Remote help, answers and specs — whenever you need them.</p>
+
+      <h3>Remote support</h3>
+      <p class="lead">Invite an installer through the BeoLiving App or its web interface to receive remote support for all your Bang &amp; Olufsen NetworkLink products. On PRO, a Remote Support Specialist can also open a secure <strong>Configuration Tunnel</strong> from the cloud to access the BLI configuration remotely — saving a lot of time. <a href="/bli-guides/bli-remote-support-specialist.html">How to invite a specialist →</a></p>
+
+      <h3>Help &amp; reference</h3>
+      <div class="grid">
+        <a class="card" href="/bli-guides/bli-troubleshooting.html"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M24 16v8l5 3" stroke="#F1574B" stroke-opacity=".8"/></svg>
+          <h4>Troubleshooting</h4><p>Resolve the most common issues.</p></a>
+        <a class="card" href="/bli-guides/bli-faq.html"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="15"/><path d="M20 19a4 4 0 0 1 6 3c0 3-3 3-3 6" stroke="#F1574B" stroke-opacity=".8"/><circle cx="23" cy="33" r="1.4" fill="#F1574B" stroke="none"/></svg>
+          <h4>F.A.Q.</h4><p>Frequently asked questions.</p></a>
+        <a class="card" href="/bli-guides/bli-specs.html"><svg class="dico" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h14l6 6v26H14z"/><path d="M28 8v6h6" stroke="#F1574B" stroke-opacity=".75"/><path d="M19 24h10M19 30h10"/></svg>
+          <h4>Specifications</h4><p>Hardware specifications.</p></a>
+      </div>
+
+      <h3>Contact</h3>
+      <p class="lead">For assistance with the BeoLiving Intelligence or the BeoLiving App, email <a href="mailto:support@khimo.com">support@khimo.com</a> or call <strong>+1 (305) 692 0362</strong> (we'll call you back). Please include detailed information — your BLI's serial number, firmware version and mode (Essential or PRO), and any screenshots that illustrate the issue.</p>
+    </div>
+  </section>
+  </main>

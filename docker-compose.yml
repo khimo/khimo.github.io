@@ -1,0 +1,74 @@
+# Local preview / build for khimo.github.io (GitHub Pages / Jekyll).
+#
+#   docker compose up           → serve at http://localhost:4000 (live reload)
+#   docker compose run --rm build → one-off static build into ./_site
+#
+# Uses the github-pages gem from the repo Gemfile so the local build matches
+# what GitHub Pages produces. The bundle is cached in a named volume.
+services:
+  site:
+    image: ruby:3.3
+    working_dir: /srv/jekyll
+    command: >
+      bash -c "bundle install &&
+               bundle exec jekyll serve --host 0.0.0.0 --port 4000 --force_polling --livereload --incremental"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - bundle:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+      - PAGES_REPO_NWO=khimo/khimo.github.io
+
+  build:
+    image: ruby:3.3
+    working_dir: /srv/jekyll
+    command: >
+      bash -c "bundle install &&
+               bundle exec jekyll build"
+    volumes:
+      - .:/srv/jekyll
+      - bundle:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=production
+      - PAGES_REPO_NWO=khimo/khimo.github.io
+
+  # Pagefind: build the static client-side search index from the built _site.
+  # Run AFTER the jekyll build: `docker compose run --rm build && docker compose run --rm pagefind`
+  # Outputs the compressed/chunked/hashed index into _site/pagefind/.
+  pagefind:
+    image: node:20-slim
+    working_dir: /site
+    command: ["npx", "-y", "pagefind@1", "--site", "_site"]
+    volumes:
+      - .:/site
+      - npm-cache:/root/.npm
+
+  # Semantic search index: embed every page chunk with Transformers.js
+  # (Xenova/bge-small-en-v1.5) and write _site/search-index.json.
+  # Run AFTER the jekyll build:
+  #   docker compose run --rm build && docker compose run --rm embeddings
+  # The transformers package lives in a named node_modules volume and the HF
+  # model weights (~25 MB) are cached in hf-cache, so re-runs are fast.
+  embeddings:
+    image: node:20-slim
+    working_dir: /site
+    command: >
+      bash -c "npm install --no-save --prefer-offline @huggingface/transformers@3 &&
+               node bin/build-embeddings.mjs"
+    environment:
+      - HF_HOME=/cache/hf
+      - TRANSFORMERS_CACHE=/cache/hf
+    volumes:
+      - .:/site
+      - npm-cache:/root/.npm
+      - node-modules:/site/node_modules
+      - hf-cache:/cache/hf
+
+volumes:
+  bundle:
+  npm-cache:
+  node-modules:
+  hf-cache:

@@ -1,0 +1,23 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="{{ page.description | default: 'BeoLiving Intelligence — the first plug & play smart-home controller for Bang & Olufsen, by khimo.' }}">
+  <meta name="author" content="support@khimo.com">
+  <meta name="keywords" content="{{ page.keywords | default: 'BLI' }}, BeoLiving Intelligence, Khimo, B&O, Home Automation, Bang&Olufsen, Smart Home">
+  <title>{{ page.title | default: 'BeoLiving Intelligence — by khimo' }}</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/khimo.css">
+  <link rel="stylesheet" href="/css/khimo-web.css">
+
+  {% include pagefind-meta.html %}
+
+  <!-- THEME BOOT (pre-paint, no flash) -->
+  <script>try{var t=localStorage.getItem('khimo-theme');
+  if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)t='light';
+  if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>

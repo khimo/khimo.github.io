@@ -1,133 +1,189 @@
 ---
 layout: page
 title: Supported Systems (BLI PRO)
-toc: true 
+toc: true
 ---
 
 <style>
-.newspaper {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
+/* ---- Supported Systems page — khimo design language -------------------- */
+
+/* Search bar: khimo surface, hairline border, coral focus ring */
+.hd-search-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 32px 0 36px;
+  max-width: 560px;
 }
-.logos {
-	width:290px;
-  	height:60px;
-  	object-fit:scale-down;
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-	/*border: 1px solid #ddd;
-  	border-radius: 4px;*/
-  	padding: 5px;
+#searchbox {
+  flex: 1;
+  background: var(--khimo-surface-1);
+  border: 1px solid var(--khimo-border);
+  border-radius: var(--khimo-radius-sm);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
 }
-.logos Img{ 
-	width:65%;
-	height:100%;
-	object-fit:scale-down;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-	}
-.help_driver {
-  margin: 3ex auto;
-  border: 1px solid #d3d3d380;
+#searchbox::placeholder { color: var(--khimo-text-tertiary); }
+#searchbox:focus {
+  border-color: var(--khimo-coral);
+  box-shadow: 0 0 0 3px rgba(241,87,75,.12);
 }
-a {
-    color: #ababab;
-    transition: all 0.2s;
-    font-size: 10pt;
-    margin-bottom: 0;
+.hd-filter-btn {
+  background: transparent;
+  border: 1px solid var(--khimo-border-emphasis);
+  border-radius: var(--khimo-radius-sm);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+  white-space: nowrap;
+}
+.hd-filter-btn:hover {
+  border-color: var(--khimo-coral);
+  color: var(--khimo-coral);
 }
 
+/* Results counter — muted mono label */
+#results {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--khimo-text-tertiary);
+  margin-bottom: 12px;
+  min-height: 0;
+}
+
+/* Driver grid: auto-fill, even gaps, minimum 200px card */
+#helpdrivers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+/* Each driver card: surface + hairline, logo on white tile */
+.help_driver {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+/* White logo tile — the SAME normalized container as the landing .logo-wall .tile */
+.hd-logo-tile {
+  height: 122px;
+  background: #fff;
+  border: 1px solid var(--khimo-border);
+  border-radius: var(--khimo-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform .15s, border-color .15s, box-shadow .15s;
+}
+.help_driver:hover .hd-logo-tile {
+  transform: translateY(-3px);
+  border-color: var(--khimo-border-emphasis);
+  box-shadow: var(--khimo-shadow-md);
+}
+.hd-logo-tile img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+  display: block;
+  /* the tile IS the container — the logo image must not get .pagecontent img's border */
+  border: none;
+  border-radius: 0;
+}
+[data-theme="light"] .hd-logo-tile img {
+  mix-blend-mode: multiply;
+}
+
+/* Driver title — normal ink colour, coral ONLY on hover (card hover, not link).
+   .pagecontent a would make all links coral — override with high specificity. */
+.pagecontent .hd-title,
+.hd-title {
+  padding: 12px 2px 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--muted) !important;
+  text-decoration: none;
+  border-bottom: none !important;
+  display: block;
+  transition: color .15s;
+}
+.pagecontent .help_driver:hover .hd-title,
+.help_driver:hover .hd-title {
+  color: var(--khimo-coral) !important;
+}
+
+/* Hidden metadata for search — keep out of visual flow */
+.hd-meta { display: none; }
 </style>
 
-
-A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems in the market. Here you will find <em>BeoLiving Intelligence</em> help and usage guides for some of them:
-
-<br>
-<p>
- 
-</p>
+<p>A <em>PRO BeoLiving Intelligence</em> supports the most used Smart Home systems in the market. Here you will find <em>BeoLiving Intelligence</em> help and usage guides for some of them:</p>
 
 <script>
 function filterByName() {
-  const target = document.querySelectorAll("#searchbox")[0];
+  const target = document.querySelector("#searchbox");
   const searchTerm = target.value.trim().toLowerCase();
   const listItems = document.querySelectorAll("#helpdrivers .help_driver");
   let countHidden = 0;
   let countShow = 0;
 
   listItems.forEach(function(item) {
-    item.style.display = 'revert';
-
+    item.style.display = '';
     if (!item.textContent.toLowerCase().includes(searchTerm)) {
       item.style.display = 'none';
       countHidden++;
     } else {
       countShow++;
     }
-  })
-  if (countHidden > 0) {
-    const result = document.querySelectorAll("#results")[0];
-    results.innerHTML = "Showing " + countShow + " of a total of " + (countShow + countHidden);
-  } else {
-      results.innerHTML = ""
+  });
+  const results = document.querySelector("#results");
+  if (results) {
+    results.innerHTML = countHidden > 0
+      ? "Showing " + countShow + " of " + (countShow + countHidden)
+      : "";
   }
 }
 </script>
 
-<div class="container">
-  <div class="jumbotron">
-    <div class="d-flex justify-content-center">
-      <div>
-      <form class="form-inline ">
-<input class="form-control form-control-lg" type="search" id="searchbox" placeholder="Search by name or features" aria-label="Search" oninput="filterByName(event)" >
-
-        <button class="btn my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
-      </form>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="results">
-    </div>
-  </div>
+<div class="hd-search-wrap">
+  <input type="search" id="searchbox" placeholder="Search by name or features" aria-label="Search" oninput="filterByName()">
+  <button class="hd-filter-btn" type="button" onclick="filterByName()">Filter</button>
 </div>
 
+<div id="results"></div>
 
-<div class="row" id="helpdrivers" align="center">
-
-
-   {% for help_driver in site.help_drivers %}
-   	<div class="help_driver">
-		<a class=logos target="_blank" href="{{ help_driver.url }}" >
-      {% assign filename = help_driver.url | remove: "help_drivers" | remove: "/"  | append: ".jpg" %}
-      {% assign path = "/logos/" | append:filename %}
-      {% assign file_exists = site.static_files | where: "path", path  %}
-      {% if file_exists.size != 0 %}
-      <img src="/logos/{{ help_driver.url | remove: "help_drivers" | remove: "/" }}.jpg" title="{{help_driver.title}}"  />
-      {% else %}
-  			<img src="/logos/driverdefault.jpg"  title="{{path}}"   />
-      {% endif %}
-		</a>
-    <div style="display: none"> 
-      <pre>{{ help_driver.path  }}</pre>
-      <pre>{{ help_driver.keywords }} </pre>
-      <pre>{{ help_driver.description }} </pre>
+<div id="helpdrivers">
+  {% for help_driver in site.help_drivers %}
+    {% assign filename = help_driver.url | remove: "help_drivers" | remove: "/" | append: ".jpg" %}
+    {% assign path = "/logos/" | append: filename %}
+    {% assign file_exists = site.static_files | where: "path", path %}
+    <div class="help_driver">
+      <a class="hd-logo-tile" href="{{ help_driver.url }}">
+        {% if file_exists.size != 0 %}
+          <img src="/logos/{{ help_driver.url | remove: 'help_drivers' | remove: '/' }}.jpg" alt="{{ help_driver.title }}" loading="lazy">
+        {% else %}
+          <img src="/logos/driverdefault.jpg" alt="{{ help_driver.title }}" loading="lazy">
+        {% endif %}
+      </a>
+      <div class="hd-meta">
+        {{ help_driver.keywords }}
+        {{ help_driver.description }}
+      </div>
+      <a class="hd-title" href="{{ help_driver.url }}">{{ help_driver.title }}</a>
     </div>
-		<center><a href="{{ help_driver.url }}">{{ help_driver.title }}</a></center>
-		</div>
-
-       	<!-- if last column in row -->
-       	{% assign fullrow = forloop.counter | divisibleby:"3" %}
-       	{% if fullrow and forloop.last != true %}
-       		</div><div class="row">
-       	{% endif %}
-   {% endfor %}
-
-   </div>
-
+  {% endfor %}
 </div>

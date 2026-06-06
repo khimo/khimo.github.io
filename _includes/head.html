@@ -9,28 +9,31 @@
 
     <title>{{ page.title }}</title>
 
-    <!-- Bootstrap Core CSS -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Bootstrap (kept for the grid / utilities used inside documentation content) -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
+    <!-- Font Awesome (icons used inside documentation content) -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- add after bootstrap.min.css -->
+    <!-- bootstrap-toc CSS (auto sidebar TOC, restyled by khimo-content.css) -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+    <!-- Pygments syntax tokens -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+    <!-- khimo design system — fonts + tokens/themes + web (menu) + content language.
+         Loaded AFTER Bootstrap so the khimo language wins on type, colour and chrome. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/khimo.css">
+    <link rel="stylesheet" href="/css/khimo-web.css">
+    <link rel="stylesheet" href="/css/khimo-content.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    {% include pagefind-meta.html %}
+
+    <!-- THEME BOOT (pre-paint, no flash) -->
+    <script>try{var t=localStorage.getItem('khimo-theme');
+    if(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)t='light';
+    if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 
 </head>

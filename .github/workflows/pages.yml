@@ -1,0 +1,75 @@
+# Build & deploy khimo.github.io to GitHub Pages WITH both static search
+# indexes. GitHub's classic "Deploy from a branch" only runs Jekyll, so to get
+# the post-build steps we deploy via GitHub Actions instead.
+#
+# ONE-TIME SETUP: repo → Settings → Pages → "Build and deployment" →
+#   Source: GitHub Actions   (switch away from "Deploy from a branch").
+#
+# Pipeline:  Jekyll build (_site)  →  Pagefind index (_site/pagefind/)  →
+#            semantic embedding index (_site/search-index.json)         →  deploy.
+name: Build and deploy (Jekyll + Pagefind + semantic search)
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          PAGES_REPO_NWO: ${{ github.repository }}
+
+      - name: Build Pagefind search index
+        run: npx -y pagefind@1 --site _site
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build semantic embedding index (search-index.json)
+        run: |
+          npm install --no-save @huggingface/transformers@3
+          node bin/build-embeddings.mjs
+        env:
+          # Cache HF model weights under the runner workspace.
+          HF_HOME: ${{ github.workspace }}/.hf-cache
+          TRANSFORMERS_CACHE: ${{ github.workspace }}/.hf-cache
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

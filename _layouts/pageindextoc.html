@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  {% include head.html %}
-
-  <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0"  >
-
+{% include head.html %}
+<body class="has-menu" id="page-top" data-spy="scroll" data-target="#toc" data-offset="90">
+  <div id="scrollProgress"></div>
   {% include nav.html %}
 
-    <header class="text-center text-white d-flex bg-primary" style="min-height:35%; background-image: none;">
-    <div class="container my-auto">
-      <div class="row">
-         <div class="col-lg-10 mx-auto" style="padding-top: 56px">
-          <h1 class="text-uppercase">
-            <strong>{{ page.title }}</strong>
-          </h1>
-        </div>
-      </div>
-    </div>
+  <div class="doc-shell">
 
+    <aside class="rail" aria-label="Page navigation">
+      <nav id="toc"></nav>
+    </aside>
+
+    <header class="page-head" role="banner">
+      <div class="ph-meta">
+        <span class="ph-type-label">Reference</span>
+      </div>
+      <h1 class="ph-title">{{ page.title }}</h1>
+      {% if page.tagline %}<p class="ph-lead">{{ page.tagline }}</p>{% endif %}
+      <div class="ph-rule"></div>
     </header>
 
-    <section class="" id="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-          <nav id="toc" class="sticky-top" style="top: 60px">
-          </nav>
-        </div>
+    <main id="pagecontent" class="pagecontent" data-pagefind-body>
+      {{ content }}
+    </main>
 
-        <div id="pagecontent" class="col-sm-9 pagecontent">
-          {% include toc.html html=content sanitize=true h_min=1 h_max=1 ordered=true %}
-          {{ content }}
-          </div>
-      </div>
-    </div>
-    </section>
-    {% include foot.html %}
-    {% include scripts.html %}
-    
-   
+  </div><!-- /.doc-shell -->
 
+  {% include foot.html %}
+  {% include scripts.html %}
   </body>
-
 </html>

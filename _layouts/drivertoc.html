@@ -1,79 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  {% include head.html %}
-
-  <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0" class="nicetables" >
-
+{% include head.html %}
+<body class="has-menu nicetables" id="page-top" data-spy="scroll" data-target="#toc" data-offset="90">
+  <div id="scrollProgress"></div>
   {% include nav.html %}
-    <header class="text-center text-white d-flex bg-primary" style="min-height:35%; background-image: none;">
-    <div class="container my-auto">
-      <div class="row">
-         <div class="col-lg-10 mx-auto" style="padding-top: 56px">
-          <h1 class="text-uppercase">
-            <strong>{{ page.title }}</strong>
-          </h1>
-        </div>
-      </div>
-    </div>
 
+  <!--
+    Unified doc shell: a single CSS grid (rail | content) that spans
+    from the page-head down through the body. This guarantees that
+    the page-head title and the body text share the exact same left edge.
+
+    Column 1 = rail (220px fixed, collapses ≤900px)
+    Column 2 = content (minmax(0,1fr))
+
+    The rail <aside> uses grid-row: 1 / -1  so it spans all rows and
+    stays sticky. The page-head and pagecontent each occupy column 2.
+  -->
+  <div class="doc-shell">
+
+    <!-- Rail: spans all rows so it stays beside both header and content -->
+    <aside class="rail" aria-label="Page navigation">
+      {% assign filename = page.id | remove: "help_drivers" | remove: "/" | append: ".jpg" %}
+      {% assign path = "/logos/" | append: filename %}
+      {% assign file_exists = site.static_files | where: "path", path %}
+      {% if file_exists.size != 0 %}
+        <div class="driver-logo"><img src="{{ path }}" alt="{{ page.title }} logo"/></div>
+      {% endif %}
+      <nav id="toc"></nav>
+    </aside>
+
+    <!-- Page head: sits in the content column, title left-edge == body left-edge -->
+    <header class="page-head" role="banner">
+      <!-- Mobile-only driver logo (rail is hidden on phone) -->
+      {% if file_exists.size != 0 %}
+        <div class="driver-logo-mobile"><img src="{{ path }}" alt="{{ page.title }} logo"/></div>
+      {% endif %}
+      <div class="ph-meta">
+        {% include breadcrumbs.html path=page.path title=page.title %}
+        <span class="ph-type-label">Driver</span>
+      </div>
+      <h1 class="ph-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="ph-lead">{{ page.description }}</p>{% endif %}
+      <div class="ph-rule"></div>
     </header>
-    <div class="container">
-      {% include breadcrumbs.html path=page.path title=page.title %}
-    </div>
 
-    <section class="" id="content">
-    <div class="container">
-      <div class="row">
+    <!-- Content column -->
+    <main id="pagecontent" class="pagecontent" data-pagefind-body>
+      {{ content }}
+    </main>
 
+  </div><!-- /.doc-shell -->
 
-
-        <div class="col-sm-3">
-          {% assign filename = page.id | remove: "help_drivers" | remove: "/"  | append: ".jpg" %}
-          {% assign path = "/logos/" | append:filename %}
-          {% assign file_exists = site.static_files | where: "path", path  %}
-          {% if file_exists.size != 0 %}
-            <img src="{{path}}"  class="img-fluid mx-auto d-block" style="max-width:70%"/>
-            <hr/>
-          {% else %}
-          <!--
-            {{ path }}
-          -->
-          {% endif %}
-
-          <nav id="toc" class="sticky-top" style="top: 60px">
-          </nav>
-        </div>
-
-        <div id="pagecontent" class="col-sm-9 pagecontent">
-          {{ content }}
-          </div>
-      </div>
-    </div>
-    </section>
-
-    {% include foot.html %}
-    {% include scripts.html %}
-    
-    <!-- add after bootstrap.min.js -->
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
-    <script>
-      
-      function initializeToc() {
-        var navSelector = '#toc';
-        var $myNav = $(navSelector);
-        Toc.init($myNav);
-        $('body').scrollspy({
-          target: navSelector
-        });
-      }
-      $(function () {
-        // delay initialization a little to be sure that everything is ready
-        setTimeout( initializeToc, 100 );  
-      })
-      
-    </script> 
-
-  </body>
-
+  {% include foot.html %}
+  {% include scripts.html %}
+</body>
 </html>

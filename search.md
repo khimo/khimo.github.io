@@ -1,14 +1,15 @@
 ---
 title: Search
 layout: page
+description: Search the BeoLiving Intelligence documentation.
 ---
 
-<div class="row justify-content-md-center">
-    <div class="col-lg-12"> 
-     <div> 
-         
-         
-         <script>
+<link rel="stylesheet" href="/css/khimo-cse.css">
+
+<div class="khimo-cse">
+  <p class="lead">Search the BeoLiving Intelligence guides, FAQ, driver references and troubleshooting documentation.</p>
+
+  <script>
   (function() {
     var cx = '018416565019272299707:wghlqorseru';
     var gcse = document.createElement('script');
@@ -18,8 +19,6 @@ layout: page
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
-</script>
-<gcse:search></gcse:search>
-        </div>
-    </div>
+  </script>
+  <gcse:search></gcse:search>
 </div>

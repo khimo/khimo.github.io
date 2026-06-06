@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  {% include head.html %}
-
-  <body id="page-top"  data-spy="scroll" data-target="#toc" data-offset="0"  >
-
+{% include head.html %}
+<body class="has-menu" id="page-top" data-spy="scroll" data-target="#toc" data-offset="90">
+  <div id="scrollProgress"></div>
   {% include nav.html %}
-    <header class="text-center text-white d-flex bg-primary" style="min-height:35%; background-image: none;">
-    <div class="container my-auto">
-      <div class="row">
-         <div class="col-lg-10 mx-auto" style="padding-top: 56px">
-          <h1 class="text-uppercase">
-            <strong>{{ page.title }}</strong>
-          </h1>
-        </div>
-      </div>
-    </div>
 
+  <div class="doc-shell">
+
+    <aside class="rail" aria-label="Page navigation">
+      <nav id="toc"></nav>
+    </aside>
+
+    <header class="page-head" role="banner">
+      <div class="ph-meta">
+        {% include breadcrumbs.html path=page.path title=page.title %}
+        <span class="ph-type-label">Guide</span>
+      </div>
+      <h1 class="ph-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="ph-lead">{{ page.description }}</p>
+      {% elsif page.tagline %}<p class="ph-lead">{{ page.tagline }}</p>
+      {% elsif page.summary %}<p class="ph-lead">{{ page.summary }}</p>{% endif %}
+      <div class="ph-rule"></div>
     </header>
-    <div class="container">
-      {% include breadcrumbs.html path=page.path title=page.title %}
-    </div>
 
-    <section class="" id="content">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3">
-          <nav id="toc" class="sticky-top" style="top: 60px">
-          </nav>
-        </div>
+    <main id="pagecontent" class="pagecontent" data-pagefind-body>
+      {{ content }}
+    </main>
 
-        <div id="pagecontent" class="col-sm-9 pagecontent">
-          {{ content }}
-          </div>
-      </div>
-    </div>
-    </section>
+  </div><!-- /.doc-shell -->
 
-    {% include foot.html %}
-    {% include scripts.html %}
-    
-    <!-- add after bootstrap.min.js -->
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
-    <script>
-      
-      function initializeToc() {
-        var navSelector = '#toc';
-        var $myNav = $(navSelector);
-        Toc.init($myNav);
-        $('body').scrollspy({
-          target: navSelector
-        });
-      }
-      $(function () {
-        // delay initialization a little to be sure that everything is ready
-        setTimeout( initializeToc, 100 );  
-      })
-      
-    </script> 
-
+  {% include foot.html %}
+  {% include scripts.html %}
   </body>
-
 </html>

@@ -1,0 +1,546 @@
+/* khimo-cse.css — Google CSE (Custom Search Engine) themed to "The Signal" design language.
+   Overrides the .gsc-* inline DOM that the CSE injects. Many CSE styles are set inline
+   or inside a shadow-like IFRAME-less structure, so !important is required throughout.
+
+   Design rules:
+   - Surface tokens from khimo.css (--khimo-*) are already loaded globally.
+   - Coral (#F1574B) appears ONLY on: focus ring, search button, result-title hover, active tab.
+   - Everything else: near-black surfaces, warm-grey text, hairline borders.
+   - Dark (default) + light (data-theme="light" on <html>) both handled.
+*/
+
+/* ============================================================================
+   CONTAINER SHELL
+   =========================================================================== */
+
+/* Kill Google's default white box + serif font + inline border */
+.gsc-control-cse,
+.gsc-control-cse.gsc-control-cse-en {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+}
+
+/* The wrapper div Google adds around the whole widget */
+.gsst_a,
+.gsc-search-box,
+.gsc-search-box-tools {
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+}
+
+/* Remove the Google table layout padding */
+.gsc-search-box .gsc-input {
+  padding-right: 0 !important;
+}
+
+/* ============================================================================
+   SEARCH INPUT
+   =========================================================================== */
+
+/* ONE field = .gsc-input-box. Everything Google nests inside (table → td →
+   input) is collapsed to transparent so there's no doubled box; the only
+   visible surface, border, radius and coral focus ring live here. The khimo
+   magnifier is our OWN SVG painted on this box (left-centre) — we hide Google's
+   so we control its colour/position and it never overlaps the text. */
+.gsc-input-box {
+  background-color: var(--khimo-surface-1, #141618) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%237C828C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M21 21l-4.3-4.3'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: 18px center !important;
+  background-size: 18px 18px !important;
+  border: 1px solid var(--khimo-border, #2A2D32) !important;
+  border-radius: var(--khimo-radius-md, 10px) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+/* Focus: the orange border the user loves — drawn ENTIRELY as a box-shadow ring
+   (which follows the 10px corner radius perfectly), NOT as a CSS border. A real
+   1px border on this rounded box chops/squares at the corners under fractional
+   device-pixel rendering; the box-shadow ring does not. So we leave the actual
+   border as the static hairline and paint a solid 2px coral ring + faint glow. */
+.gsc-input-box:focus-within {
+  box-shadow: 0 0 0 2px var(--khimo-coral, #F1574B),
+              0 0 0 5px rgba(241, 87, 75, 0.16) !important;
+}
+
+/* Collapse the inner table/cells so only .gsc-input-box reads as the field.
+   td.gsc-input wraps the field with an ASYMMETRIC padding (11px 0 11px 16px)
+   that shifts the field 16px right (flush on the right, inset on the left) —
+   zero it so the field aligns flush within the container. */
+.gsc-search-box,
+.gsc-search-box-tools,
+td.gsc-input,
+table.gstl_50,
+table.gstl_50 > tbody,
+table.gstl_50 tr {
+  background: transparent !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* table.gsc-search-box has overflow:hidden + radius:14px, which CLIPS the
+   coral focus box-shadow ring on .gsc-input-box (a rounded shadow clipped to a
+   rect looks chopped at the corners, or vanishes). Let the ring show fully. */
+table.gsc-search-box,
+form.gsc-search-box {
+  overflow: visible !important;
+}
+
+/* The actual <input>: transparent, full-width, vertically centred; left padding
+   clears our 18px magnifier (18px offset + 18px glyph + gap). Equal top/bottom. */
+input.gsc-input,
+.gsc-input-box input.gsc-input {
+  background: transparent none !important;
+  background-image: none !important;
+  text-indent: 0 !important;
+  color: var(--khimo-text-primary, #F2F3F5) !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  padding: 13px 16px 13px 46px !important;
+  width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+input.gsc-input::placeholder,
+.gsc-input-box input.gsc-input::placeholder {
+  color: var(--khimo-text-tertiary, #5C6370) !important;
+}
+
+/* Google's own magnifier lives as a background-image on the input CELL (.gsib_a)
+   — hide it (we paint our own on .gsc-input-box). Centre the cell content. */
+.gsib_a {
+  padding: 0 !important;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  vertical-align: middle !important;
+}
+
+.gsib_b {
+  display: none !important;
+}
+
+/* ============================================================================
+   SEARCH BUTTON
+   =========================================================================== */
+
+/* The <td> cell holding the button */
+.gsc-search-button {
+  padding: 0 0 0 8px !important;
+}
+
+/* SVG-based button (v2) */
+.gsc-search-button-v2,
+button.gsc-search-button-v2 {
+  background: var(--khimo-coral, #F1574B) !important;
+  border: none !important;
+  border-radius: var(--khimo-radius-sm, 6px) !important;
+  padding: 10px 16px !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease !important;
+  height: auto !important;
+  min-width: 42px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+}
+
+.gsc-search-button-v2:hover,
+button.gsc-search-button-v2:hover {
+  background: var(--khimo-coral-dark, #C8392E) !important;
+}
+
+/* The SVG inside the v2 button */
+.gsc-search-button-v2 svg,
+button.gsc-search-button-v2 svg {
+  fill: #fff !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Text-based fallback button */
+.gsc-search-button input.gsc-search-button {
+  background: var(--khimo-coral, #F1574B) !important;
+  border: none !important;
+  border-radius: var(--khimo-radius-sm, 6px) !important;
+  color: #fff !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  cursor: pointer !important;
+  transition: background 0.15s ease !important;
+}
+
+.gsc-search-button input.gsc-search-button:hover {
+  background: var(--khimo-coral-dark, #C8392E) !important;
+}
+
+/* ============================================================================
+   REFINEMENTS / TABS
+   =========================================================================== */
+
+.gsc-tabsArea {
+  border-bottom: 1px solid var(--khimo-border, #2A2D32) !important;
+  margin-bottom: 18px !important;
+}
+
+.gsc-tabHeader {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  color: var(--khimo-text-secondary, #9AA1AD) !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+  padding: 8px 14px !important;
+  cursor: pointer !important;
+  transition: color 0.15s ease, border-color 0.15s ease !important;
+}
+
+.gsc-tabHeader:hover {
+  color: var(--khimo-text-primary, #F2F3F5) !important;
+  background: transparent !important;
+}
+
+.gsc-tabHeader.gsc-tabhActive,
+.gsc-tabHeader.gsc-tabhActive:hover {
+  color: var(--khimo-coral, #F1574B) !important;
+  border-bottom-color: var(--khimo-coral, #F1574B) !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+}
+
+/* ============================================================================
+   RESULTS AREA
+   =========================================================================== */
+
+.gsc-results-wrapper-overlay,
+.gsc-results-wrapper-nooverlay {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.gsc-results .gsc-cursor-box {
+  margin-top: 24px !important;
+}
+
+/* Each individual result */
+.gsc-webResult.gsc-result,
+.gsc-result {
+  background: var(--khimo-surface-1, #141618) !important;
+  border: 1px solid var(--khimo-border, #2A2D32) !important;
+  border-radius: var(--khimo-radius-md, 10px) !important;
+  padding: 18px 20px !important;
+  margin-bottom: 12px !important;
+  transition: border-color 0.15s ease, transform 0.15s ease !important;
+}
+
+.gsc-webResult.gsc-result:hover,
+.gsc-result:hover {
+  border-color: var(--khimo-border-emphasis, #3A3E45) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Result title link */
+.gs-title,
+.gs-title * {
+  color: var(--khimo-text-primary, #F2F3F5) !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  text-decoration: none !important;
+}
+
+.gs-title:hover,
+.gs-title:hover * {
+  color: var(--khimo-coral, #F1574B) !important;
+  text-decoration: none !important;
+}
+
+/* Visited state — keep on-brand, don't go purple */
+.gs-title:visited,
+.gs-title:visited * {
+  color: var(--khimo-text-secondary, #9AA1AD) !important;
+}
+
+/* Breadcrumb / visible URL */
+.gs-visibleUrl,
+.gs-visibleUrl-long,
+.gs-visibleUrl-breadcrumb {
+  color: var(--khimo-text-tertiary, #5C6370) !important;
+  font-family: var(--khimo-font-mono, 'JetBrains Mono', monospace) !important;
+  font-size: 11.5px !important;
+  word-break: break-all !important;
+}
+
+/* Snippet / description */
+.gs-snippet {
+  color: var(--khimo-text-secondary, #9AA1AD) !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+/* Highlighted query matches inside snippet */
+.gs-snippet b {
+  color: var(--khimo-text-primary, #F2F3F5) !important;
+  font-weight: 600 !important;
+}
+
+/* Image thumbnail next to results (if any) */
+.gs-image-box {
+  border: 1px solid var(--khimo-border, #2A2D32) !important;
+  border-radius: var(--khimo-radius-sm, 6px) !important;
+  overflow: hidden !important;
+}
+
+/* ============================================================================
+   PAGINATION
+   =========================================================================== */
+
+.gsc-cursor-box {
+  border-top: 1px solid var(--khimo-border, #2A2D32) !important;
+  padding-top: 18px !important;
+  text-align: left !important;
+}
+
+.gsc-cursor-page {
+  background: var(--khimo-surface-2, #1C1E22) !important;
+  border: 1px solid var(--khimo-border, #2A2D32) !important;
+  border-radius: var(--khimo-radius-sm, 6px) !important;
+  color: var(--khimo-text-secondary, #9AA1AD) !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  padding: 6px 12px !important;
+  margin: 0 4px !important;
+  cursor: pointer !important;
+  transition: border-color 0.15s ease, color 0.15s ease !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+.gsc-cursor-page:hover {
+  border-color: var(--khimo-border-emphasis, #3A3E45) !important;
+  color: var(--khimo-text-primary, #F2F3F5) !important;
+}
+
+.gsc-cursor-current-page {
+  background: transparent !important;
+  border-color: var(--khimo-coral, #F1574B) !important;
+  color: var(--khimo-coral, #F1574B) !important;
+  font-weight: 600 !important;
+}
+
+/* ============================================================================
+   "POWERED BY GOOGLE" / ADS / PROMOTIONAL AREA
+   (Must remain visible per Google ToS — just de-emphasise it)
+   =========================================================================== */
+
+.gcsc-find-more-on-google,
+.gcsc-find-more-on-google-root {
+  opacity: 0.45 !important;
+  margin-top: 20px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid var(--khimo-border, #2A2D32) !important;
+}
+
+.gcsc-find-more-on-google:hover,
+.gcsc-find-more-on-google-root:hover {
+  opacity: 0.75 !important;
+}
+
+/* Google-provided promo text colour */
+.gcsc-find-more-on-google a {
+  color: var(--khimo-text-tertiary, #5C6370) !important;
+  font-size: 12px !important;
+  font-family: var(--khimo-font-sans, 'Inter', system-ui, sans-serif) !important;
+}
+
+/* Google branding logo — keep it but make it tiny and muted */
+.gsc-branding,
+.gsc-branding-img,
+.gsc-branding-clickable {
+  opacity: 0.35 !important;
+  filter: grayscale(1) !important;
+}
+
+/* Ad results — keep visible but visually quieter */
+.gsc-adBlock {
+  background: var(--khimo-surface-2, #1C1E22) !important;
+  border: 1px solid var(--khimo-border, #2A2D32) !important;
+  border-radius: var(--khimo-radius-md, 10px) !important;
+  padding: 14px 18px !important;
+  margin-bottom: 10px !important;
+  opacity: 0.7 !important;
+}
+
+/* ============================================================================
+   NO-RESULTS / LOADING STATES
+   =========================================================================== */
+
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+  color: var(--khimo-text-tertiary, #5C6370) !important;
+  font-style: italic !important;
+  font-size: 14px !important;
+  padding: 20px 0 !important;
+}
+
+/* Loading animation area */
+.gsc-loading,
+.gsc-loading-fade {
+  background: transparent !important;
+}
+
+/* ============================================================================
+   LIGHT THEME OVERRIDES
+   When <html data-theme="light"> the body background flips to #F4F5F7 and
+   surfaces flip to white / light-grey. CSE hardcodes dark text, which is
+   actually fine on light surfaces — but the input and cards need new tokens.
+   =========================================================================== */
+
+[data-theme="light"] .gsc-input-box {
+  /* background-COLOR only — a `background:` shorthand here would wipe the
+     magnifier background-image set on the base rule. */
+  background-color: #FFFFFF !important;
+  border-color: #D1D5DB !important;
+}
+
+[data-theme="light"] input.gsc-input,
+[data-theme="light"] .gsc-input-box input.gsc-input {
+  color: #14161A !important;
+}
+
+[data-theme="light"] input.gsc-input::placeholder,
+[data-theme="light"] .gsc-input-box input.gsc-input::placeholder {
+  color: #6B737F !important;
+}
+
+[data-theme="light"] .gsc-webResult.gsc-result,
+[data-theme="light"] .gsc-result {
+  background: #FFFFFF !important;
+  border-color: #E3E6EB !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .gsc-webResult.gsc-result:hover,
+[data-theme="light"] .gsc-result:hover {
+  border-color: #BEC4CE !important;
+}
+
+[data-theme="light"] .gs-title,
+[data-theme="light"] .gs-title * {
+  color: #14161A !important;
+}
+
+[data-theme="light"] .gs-snippet {
+  color: #535A66 !important;
+}
+
+[data-theme="light"] .gs-visibleUrl,
+[data-theme="light"] .gs-visibleUrl-long {
+  color: #6B737F !important;
+}
+
+[data-theme="light"] .gsc-cursor-page {
+  background: #F4F5F7 !important;
+  border-color: #D1D5DB !important;
+  color: #535A66 !important;
+}
+
+[data-theme="light"] .gsc-cursor-page:hover {
+  border-color: #BEC4CE !important;
+  color: #14161A !important;
+}
+
+[data-theme="light"] .gsc-cursor-current-page {
+  background: transparent !important;
+  border-color: var(--khimo-coral, #F1574B) !important;
+  color: var(--khimo-coral, #F1574B) !important;
+}
+
+[data-theme="light"] .gsc-tabHeader {
+  color: #535A66 !important;
+}
+
+[data-theme="light"] .gsc-tabHeader.gsc-tabhActive {
+  color: var(--khimo-coral, #F1574B) !important;
+}
+
+[data-theme="light"] .gsc-tabsArea {
+  border-color: #E3E6EB !important;
+}
+
+[data-theme="light"] .gsc-cursor-box {
+  border-color: #E3E6EB !important;
+}
+
+[data-theme="light"] .gsc-adBlock {
+  background: #F4F5F7 !important;
+  border-color: #E3E6EB !important;
+}
+
+[data-theme="light"] .gcsc-find-more-on-google,
+[data-theme="light"] .gcsc-find-more-on-google-root {
+  border-color: #E3E6EB !important;
+}
+
+[data-theme="light"] .gcsc-find-more-on-google a {
+  color: #6B737F !important;
+}
+
+/* ============================================================================
+   RESPONSIVE
+   =========================================================================== */
+
+@media (max-width: 560px) {
+  .gsc-webResult.gsc-result,
+  .gsc-result {
+    padding: 14px 16px !important;
+  }
+
+  .gs-title,
+  .gs-title * {
+    font-size: 15.5px !important;
+  }
+
+  .gsc-search-button-v2,
+  button.gsc-search-button-v2 {
+    padding: 9px 12px !important;
+    min-width: 38px !important;
+  }
+}
+
+/* ============================================================================
+   REDUCED MOTION
+   =========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .gsc-webResult.gsc-result,
+  .gsc-result {
+    transition: border-color 0.15s ease !important;
+  }
+
+  .gsc-webResult.gsc-result:hover,
+  .gsc-result:hover {
+    transform: none !important;
+  }
+}

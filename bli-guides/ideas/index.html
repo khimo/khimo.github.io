@@ -1,79 +1,114 @@
 ---
 title: How-To Guides for Practical Integration Ideas
 layout: page
-toc: true 
+toc: true
 ---
+
+<style>
+/* ---- Ideas index search bar -------------------------------------------- */
+.ideas-search-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 24px 0 12px;
+  max-width: 480px;
+}
+#searchbox {
+  flex: 1;
+  background: var(--khimo-surface-1);
+  border: 1px solid var(--khimo-border);
+  border-radius: var(--khimo-radius-sm);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+#searchbox::placeholder { color: var(--khimo-text-tertiary); }
+#searchbox:focus {
+  border-color: var(--khimo-coral);
+  box-shadow: 0 0 0 3px rgba(241,87,75,.12);
+}
+.ideas-filter-btn {
+  background: transparent;
+  border: 1px solid var(--khimo-border-emphasis);
+  border-radius: var(--khimo-radius-sm);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: border-color .15s, color .15s;
+}
+.ideas-filter-btn:hover {
+  border-color: var(--khimo-coral);
+  color: var(--khimo-coral);
+}
+#results {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--khimo-text-tertiary);
+  margin-bottom: 24px;
+}
+
+/* Idea entry: clean list with border divider */
+.idea {
+  padding: 24px 0;
+  border-top: 1px solid var(--khimo-border);
+}
+.idea:first-child { border-top: none; }
+</style>
+
 <script>
 function filterByName() {
-  const target = document.querySelectorAll("#searchbox")[0];
+  const target = document.querySelector("#searchbox");
   const searchTerm = target.value.trim().toLowerCase();
   const listItems = document.querySelectorAll("#ideas .idea");
   let countHidden = 0;
   let countShow = 0;
 
   listItems.forEach(function(item) {
-    item.style.display = 'revert';
-
+    item.style.display = '';
     if (!item.textContent.toLowerCase().includes(searchTerm)) {
       item.style.display = 'none';
       countHidden++;
     } else {
       countShow++;
     }
-  })
-  if (countHidden > 0) {
-    const result = document.querySelectorAll("#results")[0];
-    results.innerHTML = "Showing " + countShow + " of a total of " + (countShow + countHidden);
-  } else {
-      results.innerHTML = ""
+  });
+  const results = document.querySelector("#results");
+  if (results) {
+    results.innerHTML = countHidden > 0
+      ? "Showing " + countShow + " of " + (countShow + countHidden)
+      : "";
   }
 }
 </script>
 
-
-
-<div class="container">
-  <div class="jumbotron">
-
 <p><strong>Discover exciting ideas and practical setup guides</strong> to enhance your <strong>BeoLiving Intelligence</strong> experience! Below, you'll find a comprehensive list of ideas to explore.</p>
 
-<p>Whether you're a tech enthusiast or a beginner, our guides will help you integrate and automate your home effortlessly. You can scroll down or use the search box to find the most relevant ideas and follow <strong>step-by-step instructions</strong> for various products to maximize your smart home devices.</p>
+<p>Whether you're a tech enthusiast or a beginner, our guides will help you integrate and automate your home effortlessly. From setting up your first smart light to creating complex automation routines — we've got you covered. If you have a unique idea or specific use case you'd like to see, reach out at <a href="mailto:support+ideas@khimo.com">support+ideas@khimo.com</a>.</p>
 
-<p>From setting up your first smart light to creating complex automation routines, we've got you covered. We're continually expanding our list of guides!</p>
-
-<p>If you have a unique idea or specific use case you'd like to see, reach out to us at <a href="mailto:support+ideas@khimo.com"><strong>support+ideas@khimo.com</strong></a>.</p>
-
-
-<br/>
-<br/>
-    <div class="d-flex justify-content-center">
-      <div>
-      <form class="form-inline ">
-        <input class="form-control form-control-lg" type="search" id="searchbox" placeholder="Search" aria-label="Filter" oninput="filterByName(event)" >
-        <button class="btn my-2 my-sm-0" type="submit" onclick="filterByName(event)">Filter</button>
-      </form>
-      </div>
-    </div>
-  </div>
-  <div class="d-flex justify-content-center">
-    <div id="results">
-    </div>
-  </div>
+<div class="ideas-search-wrap">
+  <input type="search" id="searchbox" placeholder="Search guides…" aria-label="Filter ideas" oninput="filterByName()">
+  <button class="ideas-filter-btn" type="button" onclick="filterByName()">Filter</button>
 </div>
+
+<div id="results"></div>
 
 <div id="ideas">
   {% for idea in site.ideas %}
   <div class="idea">
     <h2><a href="{{ idea.url }}">{{ idea.title }}</a></h2>
-    <div style="display: none"> 
-      <pre>{{ idea.path  }}</pre>
-      <pre>{{ idea.keywords }} </pre>
+    <div style="display:none">
+      {{ idea.keywords }}
     </div>
     <blockquote>
-      <p>
-        {{ idea.description }}
-      </p>
+      <p>{{ idea.description }}</p>
     </blockquote>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>

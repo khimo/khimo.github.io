@@ -51,3 +51,25 @@ collections_dir: bli-guides
 plugins:
   - jekyll-toc
   - jekyll-sitemap
+
+# Preserve the static search indexes across Jekyll rebuilds. Both are generated
+# AFTER the Jekyll build: Pagefind into _site/pagefind/, and the semantic
+# embedding index into _site/search-index.json (used by /search2.html).
+keep_files:
+  - pagefind
+  - search-index.json
+
+# Internal-only dirs/files kept OUT of the published site
+exclude:
+  - tasks/                 # file-based task tracker (also contains literal {% raw %}{% include %}{% endraw %} text that breaks the build)
+  - redesign-proposal/     # standalone landing prototype + design-system docs
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Makefile
+  - create_email_anser.sh
+  - vendor/bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/          # transformers package for the embeddings build step

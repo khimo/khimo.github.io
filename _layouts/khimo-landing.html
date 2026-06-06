@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include khimo-head.html %}
+<body class="has-menu" id="top">
+  <div id="scrollProgress"></div>
+  {% include khimo-nav.html %}
+
+  <div data-pagefind-body>
+  {{ content }}
+  </div>
+
+  <footer>
+    <div role="group" aria-label="Display preferences">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle light and dark theme">
+        <span class="dot"></span><span class="tlabel">Dark</span>&nbsp;mode</button>
+    </div><br>
+    BeoLiving Intelligence — the Bang &amp; Olufsen × khimo smart-home controller<br>
+    <span style="opacity:.85">© khimo.com · <a href="mailto:support@khimo.com">support@khimo.com</a></span>
+  </footer>
+
+  <script src="/js/khimo.js"></script>
+  <script src="/js/khimo-web.js"></script>
+</body>
+</html>

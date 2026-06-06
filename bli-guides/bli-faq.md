@@ -1,6 +1,8 @@
 ---
 title:  BeoLiving Intelligence - FAQ
 layout: pagetoc
+summary: "Frequently asked questions about BeoLiving Intelligence, covering the differences between ESSENTIAL and PRO modes, licensing, supported devices, the BeoLiving app and common setup questions."
+keywords: "faq, frequently asked questions, essential vs pro, modes, licensing, beoliving app, supported devices"
 ---
 ## Modes
 
