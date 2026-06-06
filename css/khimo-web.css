@@ -272,9 +272,16 @@ a.card:hover h4{color:var(--khimo-coral)}
 /* ── Core pulse ring — expands + fades on signal arrival ─────────────────── */
 @keyframes hd-core-pulse {
   0%  { opacity: 0;    transform: scale(1);    }
-  12% { opacity: 0.55; transform: scale(1.04); }
-  60% { opacity: 0.1;  transform: scale(1.14); }
+  12% { opacity: 0.7;  transform: scale(1.04); }
+  60% { opacity: 0.14; transform: scale(1.14); }
   100%{ opacity: 0;    transform: scale(1.2);  }
+}
+
+/* ── Core orbit — a coral arc travelling continuously around the device ───── */
+/* circumference of the r=64 ring ≈ 402 (2π·64); the 70-unit dash loops around. */
+@keyframes hd-core-orbit {
+  from { stroke-dashoffset: 402; }
+  to   { stroke-dashoffset: 0;   }
 }
 
 /* ── Core heart breathe — continuous subtle scale ────────────────────────── */
@@ -305,6 +312,12 @@ a.card:hover h4{color:var(--khimo-coral)}
   .hd-core-ring {
     transform-origin: 260px 130px;
     animation: hd-core-pulse 2.6s cubic-bezier(0.2, 0, 0.4, 1) 1.25s infinite;
+  }
+
+  /* Core orbit — coral arc circling the device continuously (keeps it "alive") */
+  .hd-core-orbit {
+    opacity: 0.6 !important;
+    animation: hd-core-orbit 3.4s linear infinite;
   }
 
   /* Core heart breathe — 2.6s period, in sync with signal */
