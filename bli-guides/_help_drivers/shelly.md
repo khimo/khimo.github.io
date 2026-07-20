@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Shelly, HTTP, DIMMER, SHADE, GPIO, SHDM-1, SHDM-2, SHSW-25.roller, SHSW-25.roller-w-level, SHSW-25.relay, SHSW-25.dimmer, SHSW-1, SHSW-1.relay, SHPLG-S.relay, SHPLG-S, SHSW-L.relay, SHSW-L.dimmer, SHIX3-1.relay, RGBW2.color, RGBW2.white, SHDW-1, SHMOS-01, SHMOS-02
 description: This driver integrates with the Shelly's local HTTP API managing dimmers, shades, relays, switches, sensors and plugs resource types.
 ---
-
-
 # Shelly
 
 This driver integrates with the Shelly's local HTTP API.
@@ -118,3 +116,4 @@ Resource discovery is available and will detect the corresponding resources that
 ### V0.17 | 2/5/2024
 - Removes control of white channel from RGBW2.color resource
 - Adds RGBW2.color.white resource
+

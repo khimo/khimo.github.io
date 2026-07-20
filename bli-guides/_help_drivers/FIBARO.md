@@ -5,7 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: FIBARO, Fibaro, NICE, HC2, HC3, Yubii, Zooz, Home Center, HTTP, GPIO, DIMMER, RGBW, SHADE, THERMOSTAT_1SP, BUTTON, Fibaro Blind/Shade, Fibaro ON/OFF device, Fibaro dimmer, Fibaro RGBW light, Fibaro Thermostat, Fibaro Temperature Sensor, Fibaro Motion Sensor, Fibaro Door/Window Sensor, Fibaro Scene, SET, TOGGLE, SET COLOR, SET PROGRAM, RAISE, LOWER, STOP, SET MODE, SET SETPOINT, PRESS, BATTERY
 description: Fibaro / NICE driver integrates ON/OFF devices, dimmers, RGBW lights, roller shutters, thermostats, motion sensors, door/window sensors and scenes from Fibaro Home Center 2, Home Center 3, Yubii Home and Zooz Z-Box Hub via HTTP REST API.
 ---
-
 Fibaro (NICE Group)
 =======================
 The Fibaro driver on the BeoLiving Intelligence integrates devices configured in **Fibaro Home Center 2 (HC2)**, **Home Center 3 (HC3)**, and NICE-branded hubs (Yubii Home and Zooz Z-Box Hub).
@@ -136,6 +135,22 @@ Resource discovery is available and automatically detects most supported devices
 **Devices not discovered** that are supported by the driver can be added manually if you know the device ID number from the Fibaro interface.
 
 # Changelog
+## v0.2 | 24/07/2020
+ - Adds protections to errors while parsing initial state
+## v0.3 | 2/08/2020
+ - Adds protections to RGBW resources incomplete status feedback
+## v0.5 | 4/08/2020
+ - Corrects handling of shades and dimmers value limit (99)
+## v0.6 | 5/08/2020
+ - Adds logs to the refreshState query
+## v0.7 | 07/10/2020
+ - Improves in-line setup help
+## v0.8 | 22/03/2021
+ - Added thermostats and temp sensors support
+ - Added motion sensor support
+ - Other minor changes
+## v0.9 | 07/04/2021
+ - Fixes dimmer resource type
 ## v1.2 | 26/03/2026
  - Fixes SHADE RAISE/LOWER commands: use open/close (not turnOn/turnOff) — confirmed correct for both HC2 and HC3
  - Fixes DIMMER and SHADE initial state loading: apply 99→100 conversion consistently with event updates
@@ -156,19 +171,3 @@ Resource discovery is available and automatically detects most supported devices
  - Fixes RGBW lastColorSet key bug in state updates
  - Improves driver documentation
 
-## v0.9 | 07/04/2021
- - Fixes dimmer resource type
-## v0.8 | 22/03/2021
- - Added thermostats and temp sensors support
- - Added motion sensor support
- - Other minor changes
-## v0.7 | 07/10/2020
- - Improves in-line setup help
-## v0.6 | 5/08/2020
- - Adds logs to the refreshState query
-## v0.5 | 4/08/2020
- - Corrects handling of shades and dimmers value limit (99)
-## v0.3 | 2/08/2020
- - Adds protections to RGBW resources incomplete status feedback
-## v0.2 | 24/07/2020
- - Adds protections to errors while parsing initial state

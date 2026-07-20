@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: ABB-free@home, ABB, free@home cloud API, myBUILDINGS, myBUSCH-JAEGER, AC THERMOSTAT, SHADE, DIMMER, SET ECO MODE, SET FAN AUTO, SET MODE, SET SETPOINT, LOWER, RAISE, STOP
 description: ABB-free@home driver integrates ABB-free@home devices into the BLI family managing Thermostat, Shade, Dimmer and Lamp resource types.
 ---
-
-
 # ABB-free@home Driver
 
 Free@home is a collection of devices interconnected together into a single ecosystem that can be configured to have specific behaviors. This driver communicates with your free@home system to integrate its devices into the BLI family.
@@ -70,5 +68,10 @@ Press the "Capture" button, and executed events sent by the systems in your inst
 - Improvements in handling of shade status.
 ### v0.4 | 07/3/2023
 - Improves handling of non existant resources
+### v0.5 | 10/06/2026
+- Adds support for FID 1810 dimmer actuators (e.g. DA/M.4.210.2.11): SET/DIM commands now use the correct input datapoint (AL_SET_ABSOLUTE_VALUE, pairingID 1).
+- Fixes state cache update incorrectly searching inputs for output datapoints (pairingID 272, AL_BRIGHTNESS_LEVEL), eliminating the repeated "No such input datapoint 272" log error.
+- FID 1810 channels now appear in "Import resources", allowing all actuator channels to be discovered.
 
 *Please report any issues with this driver to: support+drivers@khimo.com*
+

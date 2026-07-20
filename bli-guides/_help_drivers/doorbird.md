@@ -5,14 +5,12 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: DoorBird, BirdGuard, DoorBird LAN-2-LAN API, BUTTON, GPIO, OPEN_DOOR, LIGHT_ON, MOTION_SENSOR, DOORBELL
 description: DoorBird driver interacts with DoorBird and BirdGuard units for controlling door locks, light and motion sensors.
 ---
-
-
 # DoorBird 
 
-BeoLink Gateway can interact with DoorBird and BirdGuard units, being capable of opening door lock, turning unit light and fire an event when motion sensor detect activity or doorbell button is pressed on the camera.
-In order to get video image on the BeoLink Gateway from the DoorBird unit, it's necessary to add the camera on Interfaces Tab and fill the respective fields.
+BeoLink Gateway can interact with DoorBird and BirdGuard units to open door locks, turn on the station light, and report motion or doorbell activity.
+To display DoorBird video on BeoLink Gateway, add the camera on the Interfaces tab and complete the fields described below.
 
-*Note*: SIP communication with DoorBird units are not yet supported.
+*Note*: SIP communication with DoorBird units is not supported by this driver.
 
 ## Supported DoorBird Devices
 
@@ -24,7 +22,10 @@ In order to get video image on the BeoLink Gateway from the DoorBird unit, it's 
     * Firmware Version 000099 and above 
 * DoorBird Video Door Station D21x 
     * Hardware version 1.00 and above 
-    * Firmware Version 000108 and above 
+    * Firmware Version 000108 and above
+* DoorBird Video Door Station D11x
+    * Hardware version 1.00 and above
+    * Firmware Version 000130 and above
 * BirdGuard B10x 
     * Hardware version 1.00 and above 
     * Firmware Version 000099 and above
@@ -35,29 +36,29 @@ BeoLink Gateway can connect and interact with a DoorBird/BirdGuard unit through 
 
 The Connection Settings parameters are:
 
-* *Host Ip*: IP address of DoorBird unit.
-* *Login*: Username of DoorBird unit.
-* *Password*: Password corresponded with the username used of DoorBird unit.
+* *Host IP*: IP address of the DoorBird unit. Configure a DHCP reservation or static IP so this address does not change.
+* *Login*: Username of the DoorBird unit.
+* *Password*: Password associated with the configured username.
+* *Use Digest Authentication*: Authenticate through the HTTP challenge instead of sending credentials as query parameters. This is recommended when supported by the installed firmware.
 
 ## Available Resources
 
 The available resources are:
 
-* *OPEN\_DOOR*: Resource for open door locks/relays. On BeoLink Gateway, this resource is mapped as *BUTTON* resource type. Has a *PRESS* command for open door lock.
-* *LIGHT\_ON*: Resource for turn the light on of DoorBird unit. 
-* *MOTION\_SENSOR*: Resource that fire event when motion sensor on DoorBird unit detects activity. 
-* *DOORBELL*: Resource that fire event when door bell button is pressed on DoorBird unit.
+* *OPEN\_DOOR*: Opens a door lock or relay. This is a *BUTTON* resource with a *PRESS* command.
+* *LIGHT\_ON*: Turns on the DoorBird station light. This is a *BUTTON* resource with a *PRESS* command.
+* *MOTION\_SENSOR*: Reports activity detected by the DoorBird motion sensor.
+* *DOORBELL*: Reports presses of the DoorBird doorbell button.
 
-*MONTION_SENSOR* and *DOORBELL* are mapped as *GPIO* resource type on BeoLink Gateway. They have two state values {0,1}. Default state value is 0 (no motion detected or door bell pressed). When activity is notified in one of these resources, state changes to 1 and the to 0 (as a pulse). On these resources there is no command execution.
+*MOTION_SENSOR* and *DOORBELL* are mapped as *GPIO* resources on BeoLink Gateway. They have two state values: 0 and 1. The default state is 0 (no motion detected or doorbell pressed). When activity is reported, the state changes to 1 and then back to 0 as a pulse. These resources do not provide commands.
 
-*OPEN\_DOOR* and *LIGHT\_ON* are mapped as *BUTTON* resource type on BeoLink Gateway. The unique command available is the *PRESS* command, which executes the corresponded action depending on the resource (opens the door or turn the light on).
+*OPEN\_DOOR* and *LIGHT\_ON* are mapped as *BUTTON* resources on BeoLink Gateway. Their *PRESS* command performs the corresponding action: opening the door or turning on the light.
 
-**Resource address doesn't apply** to any resource type except by *OPEN\_DOOR*. Address of *OPEN\_DOOR* refers to an specific relay of your 
-DoorBird unit. **DoorBird I/O DOOR CONTROLLER** is supported. If an *OPEN\_DOOR* resource address is empty, will refer to relay *1*. For the rest of resource types **leave resource address empty**.
+**Resource addresses apply only to *OPEN\_DOOR*.** Its address selects a specific DoorBird relay, including a relay on a DoorBird I/O Door Controller. An empty *OPEN\_DOOR* address selects physical relay *1*. Leave the address empty for all other resource types.
 
 ## Get Live Image
 
-In order to get live images from DoorBird unit, it's necessary to add the camera in Interfaces Tab and set the next fields as below:
+To display live images from the DoorBird unit, add the camera on the Interfaces tab and configure these fields:
 
 * **Camera access:**
 
@@ -67,8 +68,8 @@ In order to get live images from DoorBird unit, it's necessary to add the camera
 
 * **Camera resources path/Video & Images:**
 
-  * *Low resolution mjpeg* : Equal to ```/bha-api/video.cgi``` to get mpjpeg stream from DoorBird unit.
-  * *Low resolution image* : Equal to ```/bha-api/image.cgi``` to get snapshots from DoorBird unit.
+  * *Low resolution MJPEG*: Set to ```/bha-api/video.cgi``` for the DoorBird MJPEG stream.
+  * *Low resolution image*: Set to ```/bha-api/image.cgi``` for DoorBird snapshots.
 
 ## Changelog
 
@@ -89,3 +90,11 @@ In order to get live images from DoorBird unit, it's necessary to add the camera
 **v0.8**
    
   * Improves in-line setup help
+
+**v0.9**
+
+  * Adds support for DoorBird D11x devices.
+  * Adds optional Digest authentication.
+  * Handles temporary authentication lockouts (HTTP status 423).
+  * Improves monitor parsing, stream recovery, and relay discovery.
+

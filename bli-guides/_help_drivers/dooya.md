@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Dooya, TCP, OUTPUT_SCENE, _INPUT_SCENE, BUTTON
 description: Dooya driver manages scenarios between BeoLink Gateway and Dooya System through TCP protocol.
 ---
-
-
 # Dooya System
 
 BeoLink Gateway and Dooya System are capable of fire up to 50 presets scenarios between each system.  

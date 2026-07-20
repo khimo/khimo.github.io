@@ -1,11 +1,10 @@
 ---
 title: LaMetric Time
 layout: drivertoc
+notice: DoNotEdit, created automatically from the driver metadata, must be updated on the driver itself
 keywords: LaMetric Time, Clock
 description: LaMetric Time (Community, build by Brad Smith)
 ---
-
-
 ## LaMetric Time (Community)
 
 Allows display of notifications and alerts on a LaMetric Time device. Additional resources allow interaction

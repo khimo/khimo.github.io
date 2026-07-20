@@ -6,7 +6,6 @@ keywords: DigitalSTROM, Ethernet, Dimmer with State, Dimmer with No State, Dimme
 description: This driver provides integration with DigitalSTROM system, allowing to control Lights, Light Groups, Shades, Shade Groups and fire global independent scenes.
 ---
 
-
 # DigitalSTROM
 
 This driver supports communication with DigitalSTROM system, allowing to control Lights, Light Groups, Shades, Shade Groups and fire global independent scenes.

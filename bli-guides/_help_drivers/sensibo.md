@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Sensibo, REST, API KEY, AC Thermostat, _SET SETPOINT, _SET FAN AUTO, _SET MODE
 description: Sensibo driver integrates Sensibo system, allowing to control AC devices through IR commands.
 ---
-
-
 # Sensibo
 
 Sensibo is a system that connects to any air conditioning through IR commands in order to give you
@@ -46,3 +44,4 @@ able to run commands over it:
   - _SET SETPOINT_ in order to choose the target temperature of the AC;
   - _SET FAN AUTO_ to enable or disable Fan Auto Mode on the AC;
   - _SET MODE_ will set any of Auto, Heat, Cool, Dry or Off modes.
+

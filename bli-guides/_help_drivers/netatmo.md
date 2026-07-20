@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: Netatmo, Smart Radiator Valve, Smart Thermostat, Smarther with Netatmo, Smart Modulating Thermostat, Netatmo lock, Smart Home Weather Station, Set Setpoint, Set Mode, Follow Schedule, SET
 description: Netatmo driver integrates Smart Thermostat, Smart Radiator Valve, Smarther with Netatmo, Smart Modulating Thermostat, Netatmo lock and Smart Home Weather Station devices.
 ---
-
-
 # Netatmo
 
 **DISCLAIMER:** This driver has **only** been tested for the Smart Radiator Valve. Other resources may not work. All feedback is welcome at support+netatmo@khimo.com
@@ -61,3 +59,5 @@ This means that the state will not be updating in real time, worst case scenario
 ### v0.2 | 16/9/2025
 
 - Corrects station data processing
+
+

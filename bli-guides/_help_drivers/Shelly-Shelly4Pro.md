@@ -6,7 +6,6 @@ keywords: Shelly, IP, WiFi, Off, On
 description: This driver supports communication directly with Shelly 4 Pro using WiFi connection.
 ---
 
-
 # Shelly / 4 Pro 
 
 This driver supports communication directly with the Shelly 4 Pro. 

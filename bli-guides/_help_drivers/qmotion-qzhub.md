@@ -5,8 +5,6 @@ notice: DoNotEdit, created automatically from the driver metadata, must be updat
 keywords: QMotion QzHub, QMotion QzHub App, SHADE, SET LEVEL, RAISE, LOWER, STOP, Group
 description: QMotion QzHub driver integrates QMotion QzHub shades with the BeoLink Gateway.
 ---
-
-
 QMotion QzHub
 ================================================================================
 The QMotion QzHub driver on the Beolink Gateway integrates all the Shade Groups configured in the QzHub gateway. 
@@ -47,3 +45,5 @@ Changelog
 ---------
    - V0.1 | 2020-12-03
       - Initial version.
+
+
